@@ -645,6 +645,11 @@
     "id": "ps5-dualsense",
     "n": "PS5 DualSense",
     "ne": "PS5 DualSense"
+   },
+   {
+    "id": "xbox-one",
+    "n": "Xbox One",
+    "ne": "Xbox One"
    }
   ]
  },
