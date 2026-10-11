@@ -629,7 +629,24 @@
    "sub": "xbox-series-x"
   }
  },
- "added": [],
+ "added": [
+  {
+   "n": "Overlay Controller Xbox Series X - Medical Castle Classic",
+   "ne": "Xbox Series X Controller Overlay - Medical Castle Classic",
+   "d": "Edisi overlay controller Xbox Series X bertema Medical Castle yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Medical Castle Classic theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 99000,
+   "usd": 8,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-controller-overlay-night-cream-edition.html",
+   "ctl": true,
+   "pv": "key",
+   "cvk": "g",
+   "sub": "xbox-series-x"
+  }
+ ],
  "rate": 12500,
  "wa": "628881708640",
  "gameNames": {},
