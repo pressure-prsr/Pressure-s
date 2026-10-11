@@ -2,6 +2,7 @@
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<link rel="manifest" href="manifest.json"><meta name="theme-color" content="#c15f3c"><link rel="icon" href="logo.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="icon-192.png"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="Pressure Admin">
 <meta name="robots" content="noindex">
 <title>Pressure's Admin</title>
 <style>
@@ -42,6 +43,7 @@ label{display:grid;gap:5px;font-size:13px;font-weight:600;color:var(--mu);margin
 .ck input{width:20px;height:20px}
 #msg{position:fixed;left:14px;right:14px;bottom:calc(76px + env(safe-area-inset-bottom));background:var(--ink);color:var(--bg);padding:11px 14px;border-radius:10px;z-index:30;display:none;font-size:14px}
 .note{font-size:13px;color:var(--mu);margin:0 0 12px}
+.urow{display:flex;gap:6px;margin-bottom:8px}.urow input{flex:1;min-width:0}.urow .ub{padding:0 12px}
 </style></head><body>
 <header><h1>Pressure's Admin</h1><button class="b g" id="bBulk" type="button" aria-label="Bulk price change">%</button><button class="b g" id="bUn" type="button" aria-label="Undo">↶</button><button class="b g" id="bAdd" type="button">+ Overlay</button><button class="b g" id="bSet" type="button" aria-label="Settings">⚙</button></header>
 <main>
@@ -64,7 +66,9 @@ label{display:grid;gap:5px;font-size:13px;font-weight:600;color:var(--mu);margin
 <label class="ck"><input type="checkbox" id="fa"> Price agreed at order (no fixed price)</label>
 <label>Category<select id="fc"></select></label>
 <label>Sub kategori<select id="fsb"></select></label>
-<div class="two"><label>Label (e.g. New)<input id="ft"></label><label>Strikethrough price (Rp)<input id="fo" type="number" inputmode="numeric" min="0"></label></div>
+<button class="b g" id="fsbN" type="button" style="width:100%;margin:-4px 0 12px">+ Sub kategori baru</button>
+<div class="two"><label>Label (ID, e.g. Baru)<input id="ft"></label><label>Label (EN, e.g. New)<input id="fte"></label></div>
+<div class="two"><label>Strikethrough price (Rp)<input id="fo" type="number" inputmode="numeric" min="0"></label><label>Strikethrough price (USD)<input id="fou" type="number" inputmode="numeric" min="0"></label></div>
 <label class="ck"><input type="checkbox" id="fv"> Visible on the site</label>
 <label id="fpvl">Preview on the site<select id="fpv"></select></label>
 <div id="pv"></div>
@@ -102,8 +106,8 @@ label{display:grid;gap:5px;font-size:13px;font-weight:600;color:var(--mu);margin
 <div class="row"><button class="b g" id="bX" type="button">Batal</button><button class="b" id="bGo" type="button">Pilih file</button></div>
 </div></div>
 <div class="sh" id="shU"><div>
-<h2 id="uT">Sub kategori</h2><p class="note">Satu per baris. Boleh ditulis "Nama ID | Name EN". Paket memilih sub kategori dari daftar ini lewat Edit package.</p>
-<label>Daftar<textarea id="ul" style="min-height:140px"></textarea></label>
+<h2 id="uT">Sub kategori</h2><p class="note">Isi nama Indonesia dan Inggris. Mengubah nama tidak memutus hubungan dengan paketnya. Di web, sub kategori yang belum punya paket tidak ditampilkan.</p>
+<div id="ul"></div><button class="b g" id="uA" type="button" style="width:100%;margin:6px 0 12px">+ Tambah sub kategori</button>
 <div class="row"><button class="b g" id="uX" type="button">Batal</button><button class="b" id="uS" type="button">Simpan</button></div>
 </div></div>
 <div class="sh" id="shP"><div>
@@ -115,6 +119,7 @@ label{display:grid;gap:5px;font-size:13px;font-weight:600;color:var(--mu);margin
 <h2 id="gT">Category</h2>
 <label>Name<input id="gn"></label>
 <p class="note">A new category becomes its own tab on the site. Add its packages from the Packages tab.</p>
+<div id="gSub"></div>
 <div class="row"><button class="b g" id="gX" type="button">Cancel</button><button class="b d" id="gD" type="button">Delete</button><button class="b" id="gS" type="button">Done</button></div>
 </div></div>
 <div class="sh" id="shI"><div>
@@ -189,7 +194,7 @@ var IM={joki:"Boosting",livery:"Livery",other:"Overlay · Stream",ctl:"Overlay �
 function syncGN(){var n=C.gameNames||{};GN={"nfs-heat":n["nfs-heat"]||"NFS Heat","crew-motorfest":n["crew-motorfest"]||"Crew Motorfest"};(C.gamesAdded||[]).forEach(function(g){GN[g.id]=g.nama});GN["other|stream"]="Other · Stream";GN["other|controller"]="Other · Controller"}
 function gall(){var n=C.gameNames||{},a=[["nfs-heat","NFS Heat"],["crew-motorfest","Crew Motorfest"],["other","Other"]].map(function(x){return {id:x[0],nama:n[x[0]]||x[1],base:1}});(C.gamesAdded||[]).forEach(function(g,i){a.push({id:g.id,nama:g.nama,i:i})});return a}
 function rg(){var h='<button class="b" id="gNew" type="button" style="width:100%;margin-bottom:10px">+ Add category</button>';gall().forEach(function(g,i){h+='<button type="button" class="it" data-g="'+i+'"><div><b>'+esc(g.nama)+'</b><small>'+(g.base?"Built-in":"Custom")+'</small></div></button>'});$("list").innerHTML=h}
-function openG(i){cg=i<0?{isNew:1}:gall()[i];$("gT").textContent=cg.isNew?"New category":"Edit category";$("gn").value=cg.nama||"";$("gD").style.display=(cg.base||cg.isNew)?"none":"";$("shG").classList.add("on")}
+function openG(i){cg=i<0?{isNew:1}:gall()[i];$("gT").textContent=cg.isNew?"New category":"Edit category";$("gn").value=cg.nama||"";$("gD").style.display=(cg.base||cg.isNew)?"none":"";gSubR();$("shG").classList.add("on")}
 function saveG(){var n=$("gn").value.trim(),id,b;if(!n){msg("Name is required.");return}
  if(cg.isNew){b=id=slug(n);while(GN[id]||id==="other")id=b+"-"+Math.floor(Math.random()*99);(C.gamesAdded=C.gamesAdded||[]).push({id:id,nama:n})}
  else if(cg.base){(C.gameNames=C.gameNames||{})[cg.id]=n}else C.gamesAdded[cg.i].nama=n;
@@ -211,7 +216,7 @@ function jopts2(o){var g=o.games||[],pk=o.paketOnly||[],ns=all().filter(function
  $("jpk").innerHTML=ns.map(function(n){return '<option value="'+esc(n)+'"'+(pk.indexOf(n)>-1?" selected":"")+'>'+esc(n)+'</option>'}).join("");
  $("jph").src=o.foto||"";$("jph").style.display=o.foto?"":"none";cjFoto=null}
 var autoNew=0,et=true,dt=true,ut=true,TL=[];
-var DICT=[["Paket Lengkap","Full Package"],["Pembuat Livery","Livery Creator"],["Sesi Foto Bareng Penjoki","Photo Session with Booster"],["Unlock Semua Mobil","Unlock All Cars"],["Kumpulkan Semua","Collect All"],["Untuk OBS atau Streamlabs","For OBS or Streamlabs"],["bergerak mengikuti gamepad","that follows your gamepad"],["disepakati saat pemesanan","agreed at order"],["Menaikkan reputasi","Raise reputation"],["di dalam game","in the game"],["dikerjakan oleh","done by"],["Penjoki","Booster"],["penjoki","booster"],["Paket","Package"],["Uang","Money"],["Juta","Million"],["Semua","All"],["Mobil","Cars"],["Kumpulkan","Collect"],["Menaikkan","Raise"],["reputasi","reputation"],["hingga","up to"],["oleh","by"],["dan","and"],["atau","or"],["untuk","for"],["dengan","with"],["yang","that"],["dalam","in"],["bertema","themed"],["Edisi","Edition"],["pengumpulan","farming"],["Pengumpulan","Farming"],["Selesaikan","Complete"],["Membuka","Unlock"],["Buka","Unlock"],["seluruh","every"],["tombol","buttons"],["Tombol","Buttons"],["stik","sticks"],["Dilengkapi","Includes"],["animasi","animations"],["Tampilan","Look"],["Warna","Color"],["Revisi","Revisions"],["maksimal","up to"],["kali","times"],["rekaman","footage"],["Foto","Photo"],["Sesi","Session"],["Bareng","with"],["Bonus","Bonus"],["Kontak","Contact"],["Harga","Price"],["Tanya","Ask"],["Kerjakan","Do"],["Hari","Days"],["Jam","Hours"],["Menit","Minutes"],["Kustom","Custom"],["Desain","Design"],["Tanpa","Without"],["Rekaman","Footage"]];
+var DICT=[["Paket Lengkap","Full Package"],["Pembuat Livery","Livery Creator"],["Sesi Foto Bareng Penjoki","Photo Session with Booster"],["Unlock Semua Mobil","Unlock All Cars"],["Kumpulkan Semua","Collect All"],["Untuk OBS atau Streamlabs","For OBS or Streamlabs"],["bergerak mengikuti gamepad","that follows your gamepad"],["disepakati saat pemesanan","agreed at order"],["Menaikkan reputasi","Raise reputation"],["di dalam game","in the game"],["dikerjakan oleh","done by"],["Penjoki","Booster"],["penjoki","booster"],["Paket","Package"],["Uang","Money"],["Juta","Million"],["Semua","All"],["Mobil","Cars"],["Kumpulkan","Collect"],["Menaikkan","Raise"],["reputasi","reputation"],["hingga","up to"],["oleh","by"],["dan","and"],["atau","or"],["untuk","for"],["dengan","with"],["yang","that"],["dalam","in"],["bertema","themed"],["Edisi","Edition"],["pengumpulan","farming"],["Pengumpulan","Farming"],["Selesaikan","Complete"],["Membuka","Unlock"],["Buka","Unlock"],["seluruh","every"],["tombol","buttons"],["Tombol","Buttons"],["stik","sticks"],["Dilengkapi","Includes"],["animasi","animations"],["Tampilan","Look"],["Warna","Color"],["Revisi","Revisions"],["maksimal","up to"],["kali","times"],["rekaman","footage"],["Foto","Photo"],["Sesi","Session"],["Bareng","with"],["Bonus","Bonus"],["Kontak","Contact"],["Harga","Price"],["Tanya","Ask"],["Kerjakan","Do"],["Hari","Days"],["Jam","Hours"],["Menit","Minutes"],["Kustom","Custom"],["Desain","Design"],["Tanpa","Without"],["Rekaman","Footage"],["Baru","New"],["Diskon","Sale"],["Terlaris","Best Seller"],["Terbaik","Best"],["Hemat","Save"],["Populer","Popular"],["Terbatas","Limited"],["Spesial","Special"],["Gratis","Free"],["Favorit","Favorite"]];
 DICT.sort(function(a,b){return b[0].length-a[0].length});
 function tr(s){if(!s)return"";DICT.forEach(function(p){s=s.replace(new RegExp("\\b"+p[0]+"\\b","gi"),function(m){var r=p[1];return m[0]===m[0].toUpperCase()?r[0].toUpperCase()+r.slice(1):r})});return s}
 function usd(v){v=+v||0;return v?Math.max(1,Math.round(v/(C.rate||12500))):""}
@@ -229,34 +234,41 @@ function mkFrom(t){var th="",g,o,f;if(JSON.stringify(t).indexOf("{T}")>-1){th=pr
  C.added.push(o);$("shP").classList.remove("on");autoNew=1;openE("+"+(C.added.length-1));cur.isNew=1}
 var PVK=[["o","Pixel Arcade (Xbox)"],["w","Water Ring (Xbox)"],["s","Silk Classic (Xbox)"],["g","Fantasy RPG Gold (Xbox)"],["k1","Dark Glass (Xbox)"],["k2","Esports Angular (Xbox)"],["k3","Comic Pop Art (Xbox)"],["k4","Manga Ink (Xbox)"],["k5","Pirate Ship (Xbox)"],["k6","Street Graffiti 3D (Xbox)"],["d","Shadow Fight 2 (PS5)"],["d2","Art Deco (PS5)"]];
 function pvName(k){var r=PVK.filter(function(x){return x[0]===k})[0];return r?r[1]:k}
-function mockPad(){var on=1,t0=performance.now(),T=12000;
+function mockPad(kind){var on=1,t0=performance.now(),T=16000,K=kind||"xbox",cyc=K==="cycle",ord=["xbox","ps5","switch"],lap=-1,cur=cyc?"xbox":K,
+ids={xbox:"Xbox Controller (STANDARD GAMEPAD Vendor: 045e Product: 0b12)",ps5:"Wireless Controller (STANDARD GAMEPAD Vendor: 054c Product: 0ce6)","switch":"Pro Controller (STANDARD GAMEPAD Vendor: 057e Product: 2009)"};
 addEventListener("message",function(e){if(e.data==="pv:play")on=1;if(e.data==="pv:pause")on=0});
 function pu(t,s,e){return t>=s&&t<e?Math.sin((t-s)/(e-s)*Math.PI):0}
 function sq(t,s,l,k){var i=Math.floor((t-s)/k);return i>=0&&i<l.length&&(t-s)%k<k*.7?l[i]:-1}
-function make(t){var b=[],a=[0,0,0,0],i,s;for(i=0;i<17;i++)b.push(0);
+function make(t){var b=[],a=[0,0,0,0],i,s,r;for(i=0;i<18;i++)b.push(0);
 s=sq(t,300,[0,1,2,3],450);if(s>=0)b[s]=1;
 s=sq(t,2300,[4,5],550);if(s>=0)b[s]=1;
 b[6]=pu(t,3500,4700);b[7]=pu(t,4700,5900);
 s=sq(t,6000,[12,15,13,14],420);if(s>=0)b[s]=1;
 s=sq(t,7800,[8,9],500);if(s>=0)b[s]=1;
-if(t>9000&&t<10500){a[0]=Math.cos((t-9000)/1500*6.283)*.85;a[1]=Math.sin((t-9000)/1500*6.283)*.85}
-if(t>10500&&t<12000){a[2]=Math.cos((t-10500)/1500*6.283)*.85;a[3]=Math.sin((t-10500)/1500*6.283)*.85}
+s=sq(t,8900,[10,11],500);if(s>=0)b[s]=1;
+if(t>10000&&t<11500){r=(t-10000)/1500*6.283;a[0]=Math.cos(r)*.85;a[1]=Math.sin(r)*.85}
+if(t>11500&&t<13000){r=(t-11500)/1500*6.283;a[2]=Math.cos(r)*.85;a[3]=Math.sin(r)*.85}
+if(t>13000&&t<14200){r=(t-13000)/1200*6.283;a[0]=Math.sin(r)*.9;a[1]=-Math.cos(r)*.6;a[2]=-Math.sin(r)*.9;a[3]=Math.cos(r)*.6;b[0]=1;b[7]=pu(t,13000,14200)}
+if(t>14200&&t<15000&&cur==="ps5")b[17]=1;
+s=sq(t,15000,[0,1,2,3,0,2,1,3],110);if(s>=0)b[s]=1;
 b[16]=0;
-return {id:"Xbox Controller (STANDARD GAMEPAD Vendor: 045e Product: 0b12)",index:0,connected:true,mapping:"standard",timestamp:t,axes:a,buttons:b.map(function(x){return {pressed:x>.5,touched:x>0,value:x}})}}
+return {id:ids[cur],index:0,connected:true,mapping:"standard",timestamp:t,axes:a,buttons:b.map(function(x){return {pressed:x>.5,touched:x>0,value:x}})}}
 var last=make(0);
-try{navigator.getGamepads=function(){if(on)last=make((performance.now()-t0)%T);return [last,null,null,null]}}catch(e){}
-addEventListener("load",function(){var ev=new Event("gamepadconnected");ev.gamepad=last;dispatchEvent(ev)})}
-function injMock(h){var S="<script>("+mockPad.toString()+")()<\/script>",m=/<head[^>]*>/i.exec(h)||/<html[^>]*>/i.exec(h),d=/^\s*<!doctype[^>]*>/i;
-return m?h.slice(0,m.index+m[0].length)+S+h.slice(m.index+m[0].length):(d.test(h)?h.replace(d,function(x){return x+S}):S+h)}
+function fire(n){var ev=new Event(n);ev.gamepad=last;dispatchEvent(ev)}
+try{navigator.getGamepads=function(){var el=performance.now()-t0,n=Math.floor(el/T);if(cyc&&n!==lap){lap=n;if(n>0){fire("gamepaddisconnected");cur=ord[n%ord.length];last=make(0);fire("gamepadconnected")}else cur=ord[0]}if(on)last=make(el%T);return [last,null,null,null]}}catch(e){}
+addEventListener("load",function(){fire("gamepadconnected")})}
+function injMock(h,kind){var S="<script>("+mockPad.toString()+")("+JSON.stringify(kind||"xbox")+")<\/script>",m=/<head[^>]*>/i.exec(h)||/<html[^>]*>/i.exec(h),d=/^\s*<!doctype[^>]*>/i;
+ return m?h.slice(0,m.index+m[0].length)+S+h.slice(m.index+m[0].length):(d.test(h)?h.replace(d,function(x){return x+S}):S+h)}
+
 function pvSel(o){var c=ck(o)==="other|controller";$("fpvl").style.display=c?"":"none";
-$("fpv").innerHTML='<option value="">Keep current</option><option value="demo">Auto demo: simulated button presses (uses your file)</option><option value="asis">My file as-is (no simulated presses)</option><optgroup label="Same preview as an existing overlay">'+PVK.map(function(x){return '<option value="key:'+x[0]+'">'+esc(x[1])+'</option>'}).join("")+'</optgroup>';
-$("fpv").value=o.pv==="key"?"key:"+o.cvk:(o.file?(o.pv||"demo"):"")}
-function pvApply(o){var v=$("fpv").value;if(v==="")return true;if(v.indexOf("key:")===0){o.cvk=v.slice(4);o.pv="key";o.ctl=true;return true}
-if(!o.file){msg("Add your overlay file first (Replace file) to use this preview mode.",5000);return false}o.pv=v;return true}
-function pvw(o,m){var d=$("pv"),f,go;d.innerHTML="";m=m===undefined?(o.pv==="key"?"key:"+o.cvk:(o.pv||"demo")):m;
+$("fpv").innerHTML='<option value="">Keep current</option><option value="demo">Auto demo · Xbox controller (uses your file)</option><option value="demo:ps5">Auto demo · PS5 DualSense</option><option value="demo:switch">Auto demo · Switch Pro Controller</option><option value="demo:cycle">Auto demo · all controllers in turn (Xbox, PS5, Switch)</option><option value="asis">My file as-is (no simulated presses)</option><optgroup label="Same preview as an existing overlay">'+PVK.map(function(x){return '<option value="key:'+x[0]+'">'+esc(x[1])+'</option>'}).join("")+'</optgroup>';
+$("fpv").value=o.pv==="key"?"key:"+o.cvk:(o.file?(o.pv==="demo"&&o.pk&&o.pk!=="xbox"?"demo:"+o.pk:(o.pv||"demo")):"")}
+function pvApply(o){var v=$("fpv").value;if(v==="")return true;if(v.indexOf("key:")===0){o.cvk=v.slice(4);o.pv="key";o.ctl=true;delete o.pk;return true}
+if(!o.file){msg("Add your overlay file first (Replace file) to use this preview mode.",5000);return false}if(v.indexOf("demo")===0){o.pv="demo";var kd=v.split(":")[1]||"xbox";if(kd==="xbox")delete o.pk;else o.pk=kd}else{o.pv=v;delete o.pk}return true}
+function pvw(o,m){var d=$("pv"),f,go;d.innerHTML="";m=m===undefined?(o.pv==="key"?"key:"+o.cvk:(o.pv==="demo"&&o.pk&&o.pk!=="xbox"?"demo:"+o.pk:(o.pv||"demo"))):m;
 if(m.indexOf("key:")===0){d.innerHTML='<p class="note">Uses the existing site preview: '+esc(pvName(m.slice(4)))+'. It plays on the site after you publish.</p>';return}
 if(!o.file)return;f=document.createElement("iframe");f.setAttribute("sandbox","allow-scripts");f.style.cssText="width:100%;height:200px;border:1px solid var(--ln);border-radius:12px;margin-bottom:12px;background:#000";d.appendChild(f);
-go=function(t){f.srcdoc=m==="asis"?t:injMock(t)};
+go=function(t){f.srcdoc=m==="asis"?t:injMock(t,m.indexOf("demo:")===0?m.slice(5):"xbox")};
 if(pend[o.file]!=null)go(pend[o.file]);else fetch(o.file).then(function(r){return r.text()}).then(go).catch(function(){f.src=o.file})}
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function find(k){return k[0]==="+"?{o:C.added[+k.slice(1)],add:1,i:+k.slice(1)}:{o:C.items[k],add:0,k:k}}
@@ -265,14 +277,15 @@ function openE(k){var e=find(k),o=e.o,fresh=autoNew;autoNew=0;cur=e;
  $("fn").value=o.n||"";$("fne").value=o.ne||"";$("fd").value=o.d||"";$("fde").value=o.de||"";
  $("fh").value=o.h==null?"":o.h;$("fu").value=o.usd==null?"":o.usd;$("fa").checked=o.h==null;
  $("fc").innerHTML=Object.keys(GN).map(function(g){return '<option value="'+g+'"'+(g===ck(o)?" selected":"")+'>'+GN[g]+'</option>'}).join("");
- sbOpts(ck(o),o.sub);$("fv").checked=!o.hide;$("ft").value=o.tag||"";$("fo").value=o.old||"";$("eR").style.display=ck(o)==="other|controller"?"":"none";$("eL").style.display=o.file?"":"none";pvSel(o);pvw(o);tglP();
+ sbOpts(ck(o),o.sub);$("fv").checked=!o.hide;$("ft").value=o.tag||"";$("fo").value=o.old||"";$("fte").value=o.tage||"";$("fou").value=o.oldu||"";tgT=!!(o.tage&&o.tage!==tr(o.tag||""));olT=!!(o.oldu&&o.oldu!==usd(o.old));$("eR").style.display=ck(o)==="other|controller"?"":"none";$("eL").style.display=o.file?"":"none";pvSel(o);pvw(o);tglP();
  et=!(fresh&&!o.ne);dt=!(fresh&&!o.de);ut=!(fresh&&!o.usd);if(!et)$("fne").value=tr($("fn").value);if(!dt)$("fde").value=tr($("fd").value);if(!ut&&o.h)$("fu").value=usd($("fh").value);$("shE").classList.add("on")}
+var tgT=0,olT=0;
 function tglP(){var a=$("fa").checked;$("fh").disabled=a;$("fu").disabled=a}
 function saveE(){var o=cur.o,c=$("fc").value.split("|");
  if(!$("fn").value.trim()){msg("Name (ID) is required.");return}cur.saved=1;if(pvApply(o)===false){cur.saved=0;return}
  var oldN=o.n;o.n=$("fn").value.trim();syncPk(oldN,o.n);o.ne=$("fne").value.trim()||o.n;o.d=$("fd").value.trim();o.de=$("fde").value.trim()||o.d;
  if($("fa").checked){o.h=null;delete o.usd}else{o.h=+$("fh").value||0;o.usd=+$("fu").value||0}
- o.g=c[0];o.os=c[1]||"stream";if($("fsb").value)o.sub=$("fsb").value;else delete o.sub;o.hide=!$("fv").checked;o.tag=$("ft").value.trim();if(!o.tag)delete o.tag;o.old=+$("fo").value||0;if(!o.old)delete o.old;
+ o.g=c[0];o.os=c[1]||"stream";if($("fsb").value)o.sub=$("fsb").value;else delete o.sub;o.hide=!$("fv").checked;o.tag=$("ft").value.trim();if(!o.tag)delete o.tag;o.old=+$("fo").value||0;if(!o.old)delete o.old;o.tage=$("fte").value.trim()||tr(o.tag||"");if(!o.tag||o.tage===o.tag)delete o.tage;if(o.old)o.oldu=+$("fou").value||+usd(o.old)||0;else delete o.oldu;
  $("shE").classList.remove("on");mark()}
 function delE(){var o=cur.o;if(!confirm("Delete \""+o.n+"\"? You can also just hide it instead."))return;
  if(cur.add){var p=o.file;C.added.splice(cur.i,1);if(p)delete pend[p]}else o.del=true;
@@ -403,10 +416,26 @@ function subsOf(k){return (C.subs&&C.subs[k])||[]}
 function subN(o){var s=subsOf(ck(o)).filter(function(x){return x.id===o.sub})[0];return s?" · "+esc(s.n):""}
 function sbOpts(k,v){$("fsb").innerHTML='<option value="">—</option>'+subsOf(k).map(function(s){return '<option value="'+esc(s.id)+'"'+(s.id===v?" selected":"")+'>'+esc(s.n)+'</option>'}).join("")}
 function ensureSub(k,name){var a=subsOf(k),id=slug(name);if(!a.some(function(x){return x.id===id}))(C.subs=C.subs||{})[k]=a.concat([{id:id,n:name,ne:name}]);return id}
-function uOpen(){$("uT").textContent="Sub kategori · "+GN[flt];$("ul").value=subsOf(flt).map(function(s){return s.n+(s.ne&&s.ne!==s.n?" | "+s.ne:"")}).join("\n");$("shU").classList.add("on")}
-$("uS").addEventListener("click",function(){var old=subsOf(flt),used={},arr=[];$("ul").value.split("\n").forEach(function(l){var p=l.split("|"),n=p[0].trim(),e,id,m,k=2;if(!n)return;e=(p[1]||"").trim()||n;m=old.filter(function(x){return x.n===n})[0];id=m?m.id:slug(n);while(used[id])id=slug(n)+"-"+(k++);used[id]=1;arr.push({id:id,n:n,ne:e})});
- C.subs=C.subs||{};if(arr.length)C.subs[flt]=arr;else delete C.subs[flt];$("shU").classList.remove("on");mark()});
+var ukey="";
+function uRow(x){return '<div class="urow" data-id="'+esc(x.id||"")+'"><input class="un" placeholder="Nama (ID)" value="'+esc(x.n||"")+'"><input class="ue" placeholder="Name (EN)" value="'+esc(x.ne&&x.ne!==x.n?x.ne:"")+'"><button type="button" class="b g ub" data-a="up" aria-label="Naik">&#9650;</button><button type="button" class="b g ub" data-a="del" aria-label="Hapus">&#10005;</button></div>'}
+function uCount(id){var n=0;all().forEach(function(e){if(!e.o.del&&ck(e.o)===ukey&&e.o.sub===id)n++});return n}
+function uOpen(k){ukey=k||flt;$("uT").textContent="Sub kategori \u00b7 "+(GN[ukey]||ukey);$("ul").innerHTML=subsOf(ukey).map(uRow).join("");$("shU").classList.add("on")}
+$("ul").addEventListener("click",function(e){var b=e.target.closest(".ub");if(!b)return;var r=b.closest(".urow"),id,n;
+ if(b.dataset.a==="del"){id=r.dataset.id;n=id?uCount(id):0;if(n&&!confirm(n+" paket memakai sub kategori ini. Hapus tetap? Paketnya tidak ikut dihapus, hanya dilepas dari sub kategori."))return;r.remove()}
+ else if(r.previousElementSibling)r.parentNode.insertBefore(r,r.previousElementSibling)});
+$("uA").addEventListener("click",function(){$("ul").insertAdjacentHTML("beforeend",uRow({}));var i=$("ul").querySelectorAll(".un");i[i.length-1].focus()});
+$("uS").addEventListener("click",function(){var used={},arr=[];
+ [].forEach.call($("ul").querySelectorAll(".urow"),function(r){var n=r.querySelector(".un").value.trim(),e=r.querySelector(".ue").value.trim(),id=r.dataset.id||slug(n),b,k=2;if(!n)return;b=id;while(used[id])id=b+"-"+(k++);used[id]=1;arr.push({id:id,n:n,ne:e||n})});
+ all().forEach(function(e){if(ck(e.o)===ukey&&e.o.sub&&!used[e.o.sub])delete e.o.sub});
+ C.subs=C.subs||{};if(arr.length)C.subs[ukey]=arr;else delete C.subs[ukey];$("shU").classList.remove("on");mark()});
 $("uX").addEventListener("click",function(){$("shU").classList.remove("on")});
+$("fsbN").addEventListener("click",function(){var n=(prompt("Nama sub kategori baru?")||"").trim();if(!n)return;var k=$("fc").value,id=ensureSub(k,n);sbOpts(k,id);mark()});
+$("ft").addEventListener("input",function(){if(!tgT)$("fte").value=tr(this.value.trim())});
+$("fte").addEventListener("input",function(){tgT=1});
+$("fo").addEventListener("input",function(){if(!olT)$("fou").value=usd(this.value)});
+$("fou").addEventListener("input",function(){olT=1});
+$("gSub").addEventListener("click",function(e){var b=e.target.closest("[data-sk]");if(!b)return;$("shG").classList.remove("on");uOpen(b.dataset.sk)});
+function gSubR(){var h="",ks;if(cg.isNew)h='<p class="note">Simpan kategori ini dulu, lalu buka lagi untuk menambah sub kategori.</p>';else{ks=cg.id==="other"?["other|stream","other|controller"]:[cg.id];h=ks.map(function(k){var n=subsOf(k).length;return '<button class="b g" type="button" data-sk="'+esc(k)+'" style="width:100%;margin-bottom:8px">Sub kategori \u00b7 '+esc(GN[k]||k)+(n?" ("+n+")":"")+'</button>'}).join("")}$("gSub").innerHTML=h}
 $("shU").addEventListener("click",function(e){if(e.target===this)this.classList.remove("on")});
 $("fc").addEventListener("change",function(){sbOpts(this.value,"")});
 function undo(){if(hist.length<2){msg("Tidak ada yang bisa dibatalkan.");return}hist.pop();C=JSON.parse(hist[hist.length-1]);dirty=true;$("bPub").disabled=false;try{localStorage.setItem("adm_draft",JSON.stringify({C:C,pend:pend}))}catch(e){}render();msg("Dibatalkan.")}
@@ -415,4 +444,5 @@ $("eL").addEventListener("click",function(){var u=new URL(cur.o.file,location.hr
 $("bIm").addEventListener("click",function(){$("jsonin").click()});
 $("jsonin").addEventListener("change",function(){var f=this.files[0],r=new FileReader();this.value="";if(!f)return;r.onload=function(){var j;try{j=JSON.parse(r.result)}catch(e){msg("File JSON tidak valid.");return}if(!j||typeof j!=="object"||!j.items){msg("Ini bukan catalog.json.");return}if(!confirm("Ganti katalog yang sedang dibuka dengan isi file ini? (Bisa dibatalkan dengan tombol undo)"))return;C=j;C.items=C.items||{};C.added=C.added||[];mark();msg("Katalog diimpor. Tekan Publish untuk menayangkan.",6000)};r.readAsText(f)});
 render();unlock().then(load);
-</script></body></html>
+</script><script>if("serviceWorker"in navigator)addEventListener("load",function(){navigator.serviceWorker.register("sw.js").catch(function(){})})</script>
+</body></html>
