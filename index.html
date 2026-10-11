@@ -582,9 +582,9 @@ function ctlPost(f){try{f.contentWindow.postMessage(f._v?"pv:play":"pv:pause","*
 var ctlIO=window.IntersectionObserver?new IntersectionObserver(function(es){es.forEach(function(e){var f=e.target;f._v=e.isIntersecting;if(f._v&&!f._l){f._l=1;ctlLoad(f)}else ctlPost(f)})},{threshold:.05}):null;
 function ctlInit(){var a=document.querySelectorAll("iframe.ctl"),i,f;if(ctlIO)ctlIO.disconnect();for(i=0;i<a.length;i++){f=a[i];f._v=true;f.addEventListener("load",function(){ctlPost(this)});if(ctlIO)ctlIO.observe(f);else{f._l=1;ctlLoad(f)}}}
 function cf(p){var nm=pn_(p),pr=pprice(p),
- prh=p.custom?'<div class="price cu">'+t("custom")+' <small>'+t("custom_s")+'</small></div>':pr===null?'<div class="price ask">'+t("harga_s")+'</div>':'<div class="price">'+pr+(p.sesi?' <small>'+t("per_sesi")+'</small>':'')+'</div>',
+ prh=p.custom?'<div class="price cu">'+t("custom")+' <small>'+t("custom_s")+'</small></div>':pr===null?'<div class="price ask">'+t("harga_s")+'</div>':'<div class="price">'+(p.old?'<s style="font-size:.6em;font-weight:400;color:var(--muted);margin-right:6px">'+oldp(p)+'</s>':'')+pr+(p.sesi?' <small>'+t("per_sesi")+'</small>':'')+'</div>',
  bt=pr===null?'<a class="btn" href="#pesan" data-ask="'+p.n+'">'+t("tanya")+'</a>':'<a class="btn ghost" href="#pesan" data-p="'+p.n+'">'+t("pilih_p")+'</a>';
- return '<div class="card'+(p.star&&!p.nb?' star':'')+'">'+(p.img?'<img class="pv" data-lb="1" loading="lazy" decoding="async" src="'+p.img+'" alt="'+nm+'">':(p.cv?(p.cv===2?pdh():cvh()):p.ctl?ctlh(p):''))+(p.star?'<div class="badge">⭐ Pro Player</div>':'')+'<h3>'+nm+'</h3>'+(p.overlay&&!p.show?'':'<p>'+pd_(p)+'</p>')+prh+bt+'</div>'}
+ return '<div class="card'+(p.star&&!p.nb?' star':'')+'">'+(p.img?'<img class="pv" data-lb="1" loading="lazy" decoding="async" src="'+p.img+'" alt="'+nm+'">':(p.cv?(p.cv===2?pdh():cvh()):(p.file&&p.pv!=="key")?fileh(p):p.ctl?ctlh(p):''))+(p.star?'<div class="badge">⭐ Pro Player</div>':'')+'<h3>'+nm+tagh(p)+'</h3>'+(p.overlay&&!p.show?'':'<p>'+pd_(p)+'</p>')+prh+bt+'</div>'}
 function jc(j){var av=j.foto?'<img class="av'+(j.eks?' g':'')+'" loading="lazy" decoding="async" src="'+j.foto+'" alt="'+j.nama+'" width="56" height="56">':'<div class="av">'+j.nama[0]+'</div>',
  bd=j.tipe==="livery"?'<div class="badge">'+t("livcr")+'</div>':j.eks?'<div class="badge g"><span class="dotg"></span>'+t("eks")+' · ⭐ Pro Player</div>':'<div class="badge">⭐ Pro Player</div>',
  st=j.rating!==undefined?'<p class="rt">'+t("rating")+' <span class="cnt" data-v="'+j.rating+'" data-f="1">'+j.rating+'</span>'+(j.order!==undefined?' &middot; <span class="cnt" data-v="'+j.order+'" data-f="0">'+j.order+'</span> '+t("orders"):'')+'</p>':'',
@@ -617,7 +617,7 @@ function render(){
  $("fp").innerHTML=g.paket.filter(function(p){return avail(p)&&(!!p.livery===lv)&&(!oth||((p.cat||"overlay")===ocat&&(p.os||"stream")===osub))}).map(function(p){return '<option data-n="'+p.n+'">'+pn_(p)+' - '+(pprice(p)||t(p.custom?"custom":"harga_s2"))+'</option>'}).join("");
  if(pP&&lastG===cur&&lastS===m)selP(pP);
  fillJ();ctx(oth&&osub==="controller"?"ctl":m);ddAll();
- lastG=cur;lastS=m;hint();obsCards();cvInit();pdFit();ctlInit();
+ lastG=cur;lastS=m;hint();obsCards();cvInit();pdFit();ctlInit();fvInit();
 }
 function applyStatic(){document.documentElement.lang=LANG;document.title=t("ttl");
  var a=document.querySelectorAll("[data-t]"),i;for(i=0;i<a.length;i++)a[i].innerHTML=t(a[i].getAttribute("data-t"));
@@ -664,7 +664,94 @@ $("f").addEventListener("submit",function(e){
  L.push(t("f_cat")+": "+($("c").value||"-"));
  wa(L.join("\n"));
 });
-applyStatic();render();
+/* ===== catalog.json: data dari admin panel ===== */
+var CAT_RATE=12500,CAT_V=Date.now();
+function esc2(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function oldp(p){return LANG==="en"?"$"+Math.round(p.old/CAT_RATE):rp(p.old)}
+function tagh(p){return p.tag?' <span style="display:inline-block;vertical-align:middle;margin-left:6px;padding:2px 8px;border-radius:99px;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:600">'+esc2(p.tag)+'</span>':""}
+function mockPad(){var on=1,t0=performance.now(),T=12000;
+addEventListener("message",function(e){if(e.data==="pv:play")on=1;if(e.data==="pv:pause")on=0});
+function pu(t,s,e){return t>=s&&t<e?Math.sin((t-s)/(e-s)*Math.PI):0}
+function sq(t,s,l,k){var i=Math.floor((t-s)/k);return i>=0&&i<l.length&&(t-s)%k<k*.7?l[i]:-1}
+function make(t){var b=[],a=[0,0,0,0],i,s;for(i=0;i<17;i++)b.push(0);
+s=sq(t,300,[0,1,2,3],450);if(s>=0)b[s]=1;
+s=sq(t,2300,[4,5],550);if(s>=0)b[s]=1;
+b[6]=pu(t,3500,4700);b[7]=pu(t,4700,5900);
+s=sq(t,6000,[12,15,13,14],420);if(s>=0)b[s]=1;
+s=sq(t,7800,[8,9],500);if(s>=0)b[s]=1;
+if(t>9000&&t<10500){a[0]=Math.cos((t-9000)/1500*6.283)*.85;a[1]=Math.sin((t-9000)/1500*6.283)*.85}
+if(t>10500&&t<12000){a[2]=Math.cos((t-10500)/1500*6.283)*.85;a[3]=Math.sin((t-10500)/1500*6.283)*.85}
+b[16]=0;
+return {id:"Xbox Controller (STANDARD GAMEPAD Vendor: 045e Product: 0b12)",index:0,connected:true,mapping:"standard",timestamp:t,axes:a,buttons:b.map(function(x){return {pressed:x>.5,touched:x>0,value:x}})}}
+var last=make(0);
+try{navigator.getGamepads=function(){if(on)last=make((performance.now()-t0)%T);return [last,null,null,null]}}catch(e){}
+addEventListener("load",function(){var ev=new Event("gamepadconnected");ev.gamepad=last;dispatchEvent(ev)})}
+function injMock(h){var S="<script>("+mockPad.toString()+")()<\/script>",m=/<head[^>]*>/i.exec(h)||/<html[^>]*>/i.exec(h),d=/^\s*<!doctype[^>]*>/i;
+ return m?h.slice(0,m.index+m[0].length)+S+h.slice(m.index+m[0].length):(d.test(h)?h.replace(d,function(x){return x+S}):S+h)}
+function fileh(p){return '<div class="ctlv"'+((p.os==="controller"||p.ctl)?"":' style="aspect-ratio:16/9"')+'><iframe class="fvx" data-f="'+esc2(p.file)+'" data-m="'+(p.pv==="asis"?"asis":"demo")+'" title="'+esc2(pn_(p))+'" sandbox="allow-scripts" tabindex="-1"></iframe></div>'}
+var FVC={};
+function fvLoad(f){var u=f.getAttribute("data-f"),m=f.getAttribute("data-m");
+ (FVC[u]||(FVC[u]=fetch(u+"?v="+CAT_V).then(function(r){if(!r.ok)throw 0;return r.text()}))).then(function(h){f.srcdoc=m==="asis"?h:injMock(h)}).catch(function(){})}
+function fvInit(){var a=document.querySelectorAll("iframe.fvx"),i;
+ for(i=0;i<a.length;i++)(function(f){if(f._l)return;
+  if(window.IntersectionObserver){var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){f._l=1;o.disconnect();fvLoad(f)}},{rootMargin:"200px"});o.observe(f)}
+  else{f._l=1;fvLoad(f)}})(a[i])}
+function applySite(s){if(!s)return;var a,i;
+ if(s.brand!=null){a=document.querySelectorAll(".brand");for(i=0;i<a.length;i++)a[i].textContent=s.brand}
+ if(s.footer!=null){a=document.querySelector("footer .wrap");if(a)a.textContent=s.footer}
+ [["discord","Discord"],["instagram","Instagram"]].forEach(function(x){if(s[x[0]]==null)return;
+  var l=document.querySelectorAll('a.ic[aria-label="'+x[1]+'"]'),j;
+  for(j=0;j<l.length;j++){if(s[x[0]]){l[j].href=s[x[0]];l[j].style.display=""}else l[j].style.display="none"}})}
+function applyCatalog(c){
+ if(!c||typeof c!=="object")return;
+ var k,f,o,e,i;
+ CAT_RATE=+c.rate||12500;
+ if(c.wa)WA=String(c.wa);
+ if(c.texts)for(k in c.texts)if(Array.isArray(c.texts[k]))T[k]=c.texts[k];
+ ["joki","livery","other","ctl"].forEach(function(m){
+  if(c.steps&&Array.isArray(c.steps[m]))STEPS[m]=c.steps[m];
+  if(c.info&&Array.isArray(c.info[m]))INFO[m]=c.info[m]});
+ /* kategori */
+ var G=JSON.parse(JSON.stringify(GAMES0)),gn=c.gameNames||{},oi=-1;
+ G.forEach(function(g,j){if(gn[g.id])g.nama=gn[g.id];if(g.other)oi=j});
+ (c.gamesAdded||[]).forEach(function(g){if(g&&g.id&&!G.some(function(x){return x.id===g.id})){G.splice(oi<0?G.length:oi,0,{id:g.id,nama:g.nama,paket:[]});if(oi>=0)oi++}});
+ /* paket */
+ var map={},base=[];
+ G.forEach(function(g){g.paket.forEach(function(p){p.g=g.id;map[g.id+"|"+p.n]={p:p};base.push(p)})});
+ var all=[],used=[],items=c.items||{};
+ for(k in items){o=items[k];e=map[k];if(!e)continue;
+  for(f in o)e.p[f]=o[f];
+  all.push(e.p);used.push(e.p)}
+ base.forEach(function(p){if(used.indexOf(p)<0)all.push(p)});
+ (c.added||[]).forEach(function(a){var p=JSON.parse(JSON.stringify(a));if(!p.g)p.g="other";all.push(p)});
+ G.forEach(function(g){g.paket=[]});
+ var cats={};
+ all.forEach(function(p){if(p.del)return;
+  var g=G.filter(function(x){return x.id===p.g})[0];if(!g)return;
+  var ck=g.other?"other|"+(p.os||"stream"):g.id;
+  (cats[ck]=cats[ck]||[]).push({p:p,g:g})});
+ for(k in cats){cats[k].forEach(function(x,j){x.i=j;x.x=x.p.ord!=null?x.p.ord:j});
+  cats[k].sort(function(a,b){return a.x-b.x||a.i-b.i});
+  cats[k].forEach(function(x){x.g.paket.push(x.p)})}
+ G.forEach(function(g){g.paket=g.paket.filter(function(p){return !p.hide})});
+ GAMES=G;
+ /* penjoki */
+ var jk=c.joki||{};
+ JOKI0=JOKI0.filter(function(j){var o=jk[j.nama],f;
+  if(o){for(f in o)if(f!=="foto"||o.foto)j[f]=o[f];
+   if(o.galAdd&&o.galAdd.length&&!j._ga){j.gal=(j.gal||[]).concat(o.galAdd);j._ga=1}}
+  return !(o&&o.del)});
+ (c.jokiAdded||[]).forEach(function(o){if(!o||o.del||!o.nama)return;
+  var x=JSON.parse(JSON.stringify(o));if(!x.foto)x.foto=PHF(x.nama);
+  if(x.galAdd&&x.galAdd.length)x.gal=(x.gal||[]).concat(x.galAdd);
+  if(!x.games)x.games=[];JOKI0.push(x)});
+ JOKI=JOKI0.filter(function(j){return !j.hide});
+ applySite(c.site)}
+function bootSite(c){try{applyCatalog(c)}catch(e){try{console.error("catalog.json gagal diterapkan",e)}catch(x){}}applyStatic();render()}
+(function(){var done=0;function go(c){if(done)return;done=1;bootSite(c)}
+ var to=setTimeout(function(){go(null)},4000);
+ fetch("catalog.json?v="+CAT_V,{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(c){clearTimeout(to);go(c)}).catch(function(){clearTimeout(to);go(null)})})();
+
 </script>
 <div id="adm" role="dialog" aria-label="Panel Admin"></div>
 <script id="adminjs">
