@@ -212,7 +212,8 @@
    "cvs": true,
    "os": "controller",
    "g": "other",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 1
   },
   "other|Overlay Controller Xbox Series X - Water Ring Edition": {
    "n": "Overlay Controller Xbox Series X - Water Ring Edition",
@@ -228,7 +229,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 2
   },
   "other|Overlay Controller Xbox Series X - Silk Classic": {
    "n": "Overlay Controller Xbox Series X - Silk Classic",
@@ -244,7 +246,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 3
   },
   "other|Overlay Controller Xbox Series X - Fantasy RPG Gold Edition": {
    "n": "Overlay Controller Xbox Series X - Fantasy RPG Gold Edition",
@@ -260,7 +263,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 4
   },
   "other|Overlay Controller PS5 DualSense - Shadow Fight 2 Classic": {
    "n": "Overlay Controller PS5 DualSense - Shadow Fight 2 Classic",
@@ -276,7 +280,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "ps5-dualsense"
+   "sub": "ps5-dualsense",
+   "ord": 5
   },
   "other|Overlay Controller Xbox Series X - Dark Glass Classic": {
    "n": "Overlay Controller Xbox Series X - Dark Glass Classic",
@@ -292,7 +297,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 6
   },
   "other|Overlay Controller Xbox Series X - Esports Angular Classic": {
    "n": "Overlay Controller Xbox Series X - Esports Angular Classic",
@@ -308,7 +314,9 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 7,
+   "hide": false
   },
   "other|Overlay Controller Xbox Series X - Comic Pop Art Classic": {
    "n": "Overlay Controller Xbox Series X - Comic Pop Art Classic",
@@ -324,7 +332,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 8
   },
   "other|Overlay Controller Xbox Series X - Manga Ink Edition": {
    "n": "Overlay Controller Xbox Series X - Manga Ink Edition",
@@ -340,7 +349,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 9
   },
   "other|Overlay Controller Xbox Series X - Pirate Ship Edition": {
    "n": "Overlay Controller Xbox Series X - Pirate Ship Edition",
@@ -356,7 +366,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 10
   },
   "other|Overlay Controller Xbox Series X - Street Graffiti 3D Classic": {
    "n": "Overlay Controller Xbox Series X - Street Graffiti 3D Classic",
@@ -372,7 +383,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 11
   },
   "other|Overlay Controller PS5 DualSense - Art Deco Classic": {
    "n": "Overlay Controller PS5 DualSense - Art Deco Classic",
@@ -388,7 +400,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "ps5-dualsense"
+   "sub": "ps5-dualsense",
+   "ord": 12
   },
   "other|Overlay Controller Xbox Series X - Watercolor Classic": {
    "n": "Overlay Controller Xbox Series X - Watercolor Classic",
@@ -404,7 +417,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 13
   },
   "other|Overlay Controller Xbox Series X - Military Tactical Classic": {
    "n": "Overlay Controller Xbox Series X - Military Tactical Classic",
@@ -420,7 +434,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 14
   },
   "other|Overlay Controller Xbox Series X - Arcade Cabinet Edition": {
    "n": "Overlay Controller Xbox Series X - Arcade Cabinet Edition",
@@ -436,7 +451,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 15
   },
   "other|Overlay Controller Xbox Series X - VHS Analog Edition": {
    "n": "Overlay Controller Xbox Series X - VHS Analog Edition",
@@ -452,7 +468,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 16
   },
   "other|Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition": {
    "n": "Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition",
@@ -468,7 +485,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 17
   },
   "other|Overlay Controller Xbox Series X - Pixel 8-bit Classic": {
    "n": "Overlay Controller Xbox Series X - Pixel 8-bit Classic",
@@ -484,7 +502,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 18
   },
   "other|Overlay Controller Xbox Series X - Steampunk Brass Edition": {
    "n": "Overlay Controller Xbox Series X - Steampunk Brass Edition",
@@ -500,7 +519,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 19
   },
   "other|Overlay Controller Xbox Series X - Western Saloon Edition": {
    "n": "Overlay Controller Xbox Series X - Western Saloon Edition",
@@ -516,7 +536,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 20
   },
   "other|Overlay Controller Xbox Series X - Tropical Summer Beach Classic": {
    "n": "Overlay Controller Xbox Series X - Tropical Summer Beach Classic",
@@ -532,7 +553,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 21
   },
   "other|Overlay Controller Xbox Series X - Mecha Edition": {
    "n": "Overlay Controller Xbox Series X - Mecha Edition",
@@ -548,7 +570,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 22
   },
   "other|Overlay Controller Xbox Series X - Retro 90s CRT Edition": {
    "n": "Overlay Controller Xbox Series X - Retro 90s CRT Edition",
@@ -564,7 +587,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 23
   },
   "other|Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition": {
    "n": "Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition",
@@ -580,7 +604,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 24
   },
   "other|Overlay Controller Xbox Series X - Cyber Tokyo Night Classic": {
    "n": "Overlay Controller Xbox Series X - Cyber Tokyo Night Classic",
@@ -596,7 +621,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 25
   },
   "other|Overlay Controller Xbox Series X - Sakura Edition": {
    "n": "Overlay Controller Xbox Series X - Sakura Edition",
@@ -612,7 +638,8 @@
    "os": "controller",
    "g": "other",
    "pv": "key",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 26
   },
   "other|Overlay Controller Xbox Series X (Custom)": {
    "n": "Overlay Controller Xbox Series X (Custom)",
@@ -626,7 +653,8 @@
    "ctl": true,
    "os": "controller",
    "g": "other",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 27
   }
  },
  "added": [
@@ -644,7 +672,8 @@
    "ctl": true,
    "pv": "key",
    "cvk": "g",
-   "sub": "xbox-series-x"
+   "sub": "xbox-series-x",
+   "ord": 0
   }
  ],
  "rate": 12500,
