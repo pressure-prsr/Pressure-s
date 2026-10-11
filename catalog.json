@@ -1,0 +1,1288 @@
+{
+ "v": 1,
+ "items": {
+  "nfs-heat|Time Track Bonus Footage oleh Pro Player": {
+   "n": "Time Track Bonus Footage oleh Pro Player",
+   "ne": "Time Track Bonus Footage by Pro Player",
+   "d": "Time Track dikerjakan pro player, disertai rekaman gameplay sebagai bonus. Harga menyesuaikan track dan disepakati saat pemesanan.",
+   "de": "A Time Track done by a pro player, with gameplay footage as a bonus. The price depends on the track and is agreed at order.",
+   "h": null,
+   "star": true,
+   "g": "nfs-heat"
+  },
+  "nfs-heat|Rep Level 50": {
+   "n": "Rep Level 50",
+   "ne": "Rep Level 50",
+   "d": "Menaikkan reputasi hingga level 50.",
+   "de": "Raise your reputation up to level 50.",
+   "h": 148000,
+   "usd": 13,
+   "bebas": true,
+   "g": "nfs-heat"
+  },
+  "nfs-heat|Uang 100 Juta": {
+   "n": "Uang 100 Juta",
+   "ne": "100 Million Money",
+   "d": "Pengumpulan uang dalam game.",
+   "de": "In-game money farming.",
+   "h": 100000,
+   "usd": 11,
+   "bebas": true,
+   "g": "nfs-heat"
+  },
+  "nfs-heat|Unlock Semua Mobil": {
+   "n": "Unlock Semua Mobil",
+   "ne": "Unlock All Cars",
+   "d": "Membuka mobil sesuai daftar.",
+   "de": "Unlock the cars on the list.",
+   "h": 295000,
+   "usd": 22,
+   "bebas": true,
+   "g": "nfs-heat"
+  },
+  "nfs-heat|Kumpulkan Semua Collectible": {
+   "n": "Kumpulkan Semua Collectible",
+   "ne": "Collect All Collectibles",
+   "d": "Mengumpulkan seluruh collectible di Palm City.",
+   "de": "Collect every collectible in Palm City.",
+   "h": 185000,
+   "usd": 15,
+   "bebas": true,
+   "g": "nfs-heat"
+  },
+  "nfs-heat|Sesi Foto Bareng Penjoki": {
+   "n": "Sesi Foto Bareng Penjoki",
+   "ne": "Photo Session with a Booster",
+   "d": "Foto sepuasnya di dalam game bersama penjoki, di lokasi pilihanmu. Satu sesi maksimal 1,5 jam.",
+   "de": "Unlimited in-game photos with a booster at a location of your choice. One session lasts up to 1.5 hours.",
+   "h": 25000,
+   "usd": 8,
+   "sesi": true,
+   "hide": true,
+   "star": true,
+   "nb": true,
+   "except": [
+    "Say_CheeseXX3"
+   ],
+   "g": "nfs-heat"
+  },
+  "nfs-heat|Sesi Foto Bareng Say_CheeseXX3": {
+   "n": "Sesi Foto Bareng Say_CheeseXX3",
+   "ne": "Photo Session with Say_CheeseXX3",
+   "d": "Foto sepuasnya di dalam game bersama penjoki eksklusif Say_CheeseXX3. Satu sesi maksimal 1,5 jam.",
+   "de": "Unlimited in-game photos with our exclusive booster Say_CheeseXX3. One session lasts up to 1.5 hours.",
+   "h": 50000,
+   "usd": 11,
+   "sesi": true,
+   "hide": true,
+   "star": true,
+   "nb": true,
+   "only": [
+    "Say_CheeseXX3"
+   ],
+   "g": "nfs-heat"
+  },
+  "nfs-heat|Livery Custom": {
+   "n": "Livery Custom",
+   "ne": "Custom Livery",
+   "d": "Desain livery sesuai permintaanmu di NFS Heat. Harga disepakati saat pemesanan.",
+   "de": "A livery designed to your request in NFS Heat. The price is agreed at order.",
+   "h": null,
+   "livery": true,
+   "only": [
+    "NYXoriaLaika"
+   ],
+   "g": "nfs-heat"
+  },
+  "crew-motorfest|Rank sampai Legend oleh Pro Player": {
+   "n": "Rank sampai Legend oleh Pro Player",
+   "ne": "Rank to Legend by Pro Player",
+   "d": "Push rank hingga Legend oleh pro player.",
+   "de": "Rank push up to Legend by a pro player.",
+   "h": 399000,
+   "usd": 33,
+   "star": true,
+   "g": "crew-motorfest"
+  },
+  "crew-motorfest|Level 100": {
+   "n": "Level 100",
+   "ne": "Level 100",
+   "d": "Menaikkan level akun.",
+   "de": "Level your account up to 100.",
+   "h": 190000,
+   "usd": 21,
+   "g": "crew-motorfest"
+  },
+  "crew-motorfest|Bucks 500K": {
+   "n": "Bucks 500K",
+   "ne": "500K Bucks",
+   "d": "Pengumpulan Bucks.",
+   "de": "Bucks farming.",
+   "h": 120000,
+   "usd": 17,
+   "g": "crew-motorfest"
+  },
+  "crew-motorfest|Selesaikan Playlist": {
+   "n": "Selesaikan Playlist",
+   "ne": "Complete a Playlist",
+   "d": "Satu playlist hingga tamat.",
+   "de": "Finish one playlist.",
+   "h": 240000,
+   "usd": 31,
+   "hide": true,
+   "g": "crew-motorfest"
+  },
+  "crew-motorfest|Summit sampai Platinum": {
+   "n": "Summit sampai Platinum",
+   "ne": "Summit to Platinum",
+   "d": "Mencapai rank Platinum di Summit. Tersedia selama periode Summit aktif.",
+   "de": "Reach Platinum rank in the Summit. Available while the Summit is active.",
+   "h": 190000,
+   "usd": 21,
+   "g": "crew-motorfest"
+  },
+  "crew-motorfest|Sesi Foto Bareng Penjoki": {
+   "n": "Sesi Foto Bareng Penjoki",
+   "ne": "Photo Session with a Booster",
+   "d": "Foto sepuasnya di dalam game bersama penjoki, di lokasi pilihanmu. Satu sesi maksimal 1,5 jam.",
+   "de": "Unlimited in-game photos with a booster at a location of your choice. One session lasts up to 1.5 hours.",
+   "h": 25000,
+   "usd": 12,
+   "sesi": true,
+   "hide": true,
+   "star": true,
+   "nb": true,
+   "except": [
+    "Say_CheeseXX3"
+   ],
+   "g": "crew-motorfest"
+  },
+  "crew-motorfest|Sesi Foto Bareng Say_CheeseXX3": {
+   "n": "Sesi Foto Bareng Say_CheeseXX3",
+   "ne": "Photo Session with Say_CheeseXX3",
+   "d": "Foto sepuasnya di dalam game bersama penjoki eksklusif Say_CheeseXX3. Satu sesi maksimal 1,5 jam.",
+   "de": "Unlimited in-game photos with our exclusive booster Say_CheeseXX3. One session lasts up to 1.5 hours.",
+   "h": 50000,
+   "usd": 13,
+   "sesi": true,
+   "hide": true,
+   "star": true,
+   "nb": true,
+   "only": [
+    "Say_CheeseXX3"
+   ],
+   "g": "crew-motorfest"
+  },
+  "other|Overlay Lantern & Moss Terrarium (Paket Lengkap)": {
+   "n": "Overlay Lantern & Moss Terrarium (Paket Lengkap)",
+   "ne": "Overlay: Lantern & Moss Terrarium (Full Package)",
+   "d": "Paket lengkap bertema hutan malam: 4 screen animasi, 6 overlay, 28 alert, 114 panel, 14 frame kamera, 13 chat box, 7 background, dan 46 elemen dekorasi. Untuk OBS atau Streamlabs.",
+   "de": "A complete night-forest package: 4 animated screens, 6 overlays, 28 alerts, 114 panels, 14 camera frames, 13 chat boxes, 7 backgrounds, and 46 decorative elements. For OBS or Streamlabs.",
+   "h": 199000,
+   "usd": 17,
+   "overlay": true,
+   "show": true,
+   "cv": true,
+   "g": "other",
+   "os": "stream"
+  },
+  "other|Overlay Still Pond (Paket Lengkap)": {
+   "n": "Overlay Still Pond (Paket Lengkap)",
+   "ne": "Overlay: Still Pond (Full Package)",
+   "d": "Paket lengkap bertema kolam tenang: 5 scene animasi (Starting Soon, BRB, Ending, Offline, Just Chatting), 26 frame gaming, 25 kartu vtuber, 10 kartu webcam, 8 event bar, 32 panel, 10 aksesori panel, 2 stat slider, 4 elemen animasi, 10 ikon, chat widget, dan partikel. Untuk OBS atau TikTok LIVE Studio, lengkap dengan panduan pasang.",
+   "de": "A complete still-pond package: 5 animated scenes (Starting Soon, BRB, Ending, Offline, Just Chatting), 26 gaming frames, 25 vtuber cards, 10 webcam cards, 8 event bars, 32 panels, 10 panel accessories, 2 stat sliders, 4 animated elements, 10 icons, a chat widget, and particles. For OBS or TikTok LIVE Studio, with a setup guide.",
+   "h": 199000,
+   "usd": 17,
+   "overlay": true,
+   "show": true,
+   "cv": 2,
+   "g": "other",
+   "os": "stream"
+  },
+  "other|Overlay Controller Xbox Series X - Pixel Arcade Edition": {
+   "n": "Overlay Controller Xbox Series X - Pixel Arcade Edition",
+   "ne": "Xbox Series X Controller Overlay - Pixel Arcade Edition",
+   "d": "Edisi khusus overlay controller Xbox Series X bertema Pixel Arcade yang bergerak mengikuti gamepad. Sekali beli dapat 3 pilihan desain: Dino Atas, Dino Tengah, dan Tanpa Dino.",
+   "de": "A special-edition Pixel Arcade Xbox Series X controller overlay that follows your gamepad. One purchase includes 3 design options: Dino Top, Dino Center, and No Dino.",
+   "h": 259000,
+   "usd": 23,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvs": true,
+   "os": "controller",
+   "g": "other",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Water Ring Edition": {
+   "n": "Overlay Controller Xbox Series X - Water Ring Edition",
+   "ne": "Xbox Series X Controller Overlay - Water Ring Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Water Ring yang bergerak mengikuti gamepad. Trigger LT dan RT jadi pompa air: tekan untuk menyemprot dan mengangkat ring ke tiang, seperti mainan ring air klasik. Tombol, stik, dan bumper ikut menyala saat ditekan, dengan tampilan kaca bernuansa ungu dan pink.",
+   "de": "A Water Ring Edition Xbox Series X controller overlay that follows your gamepad. LT and RT become water pumps: press them to spray water and lift the rings onto the pegs, like the classic water ring toy. Buttons, sticks, and bumpers light up as you press them, in a glassy purple and pink look.",
+   "h": 225000,
+   "usd": 20,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "w",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Silk Classic": {
+   "n": "Overlay Controller Xbox Series X - Silk Classic",
+   "ne": "Xbox Series X Controller Overlay - Silk Classic",
+   "d": "Edisi overlay controller Xbox Series X bertema Silk yang bergerak mengikuti gamepad. Tampilan putih mulus dengan aksen coral. Trigger LT dan RT berupa meter isi yang menampilkan persentase hingga MAX, stik ikut bergeser, dan setiap tombol yang ditekan muncul sebagai riwayat dengan hitungan kombo. Warna aksen bisa disesuaikan.",
+   "de": "A Silk Classic Xbox Series X controller overlay that follows your gamepad, with a smooth white body and coral accents. LT and RT are fill meters that show a percentage up to MAX, the sticks shift as you move them, and each button press appears in a history with a combo counter. The accent color is adjustable.",
+   "h": 99000,
+   "usd": 8,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "s",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Fantasy RPG Gold Edition": {
+   "n": "Overlay Controller Xbox Series X - Fantasy RPG Gold Edition",
+   "ne": "Xbox Series X Controller Overlay - Fantasy RPG Gold Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Fantasy RPG Gold yang bergerak mengikuti gamepad. Badan bernuansa emas dengan tombol A, B, X, Y berbentuk permata. Trigger LT dan RT terisi sesuai tekanan, dan stik bergeser mengikuti gerakan. Empat input terakhir muncul di gulungan mantra, dan setelah 8 input beruntun aktif Mode Ultimate lengkap dengan hitung mundur. Warna aksen dan tulisan Ultimate bisa disesuaikan.",
+   "de": "A Fantasy RPG Gold Edition Xbox Series X controller overlay that follows your gamepad. A golden body with gem-shaped A, B, X, and Y buttons. LT and RT fill according to how far you press, and the sticks shift as you move them. Your last four inputs appear on a spell scroll, and after 8 inputs in a row Ultimate Mode kicks in with a countdown. The accent color and the Ultimate text are adjustable.",
+   "h": 299000,
+   "usd": 23,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "g",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller PS5 DualSense - Shadow Fight 2 Classic": {
+   "n": "Overlay Controller PS5 DualSense - Shadow Fight 2 Classic",
+   "ne": "PS5 DualSense Controller Overlay - Shadow Fight 2 Edition",
+   "d": "Edisi overlay controller PS5 DualSense bertema Shadow Fight 2 yang bergerak mengikuti gamepad. Body 3D dua nada coklat gelap dan coklat terang dengan sambungan yang halus. Trigger L2 dan R2 bergerak sesuai tekanan, stik bergeser mengikuti gerakan, dan tombol, bumper, serta touchpad menyala saat ditekan. Warna aksen bisa disesuaikan.",
+   "de": "A Shadow Fight 2 Edition PS5 DualSense controller overlay that follows your gamepad. A 3D two-tone body in dark and light brown with a smooth seam. L2 and R2 move with how far you press, the sticks shift as you move them, and the buttons, bumpers, and touchpad light up when pressed. The accent color is adjustable.",
+   "h": 150000,
+   "usd": 9,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "d",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "ps5-dualsense"
+  },
+  "other|Overlay Controller Xbox Series X - Dark Glass Classic": {
+   "n": "Overlay Controller Xbox Series X - Dark Glass Classic",
+   "ne": "Xbox Series X Controller Overlay - Dark Glass Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Dark Glass yang bergerak mengikuti gamepad. Body kaca gelap dengan aksen biru es. Trigger LT dan RT berupa meter isi, stik bergeser mengikuti gerakan, dan tiga input terakhir muncul sebagai riwayat singkat. Warna aksen bisa disesuaikan.",
+   "de": "A Dark Glass Edition Xbox Series X controller overlay that follows your gamepad. A dark glass body with an icy blue accent. LT and RT are fill meters, the sticks shift as you move them, and your last three inputs appear as a short history. The accent color is adjustable.",
+   "h": 99000,
+   "usd": 9,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k1",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Esports Angular Classic": {
+   "n": "Overlay Controller Xbox Series X - Esports Angular Classic",
+   "ne": "Xbox Series X Controller Overlay - Esports Angular Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Esports dengan bentuk bersudut tegas dan aksen cyan. Setiap tombol yang ditekan disapu kilatan cahaya, trigger LT dan RT terisi sesuai tekanan, dan stik menampilkan penunjuk arah delapan sektor. Warna aksen bisa disesuaikan.",
+   "de": "An Esports Angular Edition Xbox Series X controller overlay that follows your gamepad, with sharp angular shapes and a cyan accent. A light sweep crosses every button you press, LT and RT fill with how far you press, and each stick shows an eight-sector direction indicator. The accent color is adjustable.",
+   "h": 99000,
+   "usd": 9,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k2",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Comic Pop Art Classic": {
+   "n": "Overlay Controller Xbox Series X - Comic Pop Art Classic",
+   "ne": "Xbox Series X Controller Overlay - Comic Pop Art Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Comic Pop Art dengan titik halftone dan aksen kuning mencolok. Tekan LT atau RT sampai penuh untuk memompa balon di dalam body, dan setelah lima pompaan balon meledak lalu warna body berganti di antara tujuh palet. Stik ikut bergeser, dan tombol menyala saat ditekan.",
+   "de": "A Comic Pop Art Edition Xbox Series X controller overlay that follows your gamepad, with halftone dots and a bold yellow accent. Press LT or RT all the way to pump a balloon inside the body, and after five pumps it bursts and the body switches between seven color palettes. The sticks shift as you move them, and buttons light up when pressed.",
+   "h": 85000,
+   "usd": 8,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k3",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Manga Ink Edition": {
+   "n": "Overlay Controller Xbox Series X - Manga Ink Edition",
+   "ne": "Xbox Series X Controller Overlay - Manga Ink Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema manga hitam-putih yang bergerak mengikuti gamepad. Setiap tombol yang ditekan memunculkan efek garis ledakan, dan tekan beruntun untuk memunculkan garis kecepatan. Tekan L3 dan R3 hampir bersamaan untuk berpindah ke mode bertekstur dengan efek lingkaran yang menyapu. Trigger LT dan RT terisi sesuai tekanan.",
+   "de": "A black-and-white manga Xbox Series X controller overlay that follows your gamepad. Each button press triggers a burst-line effect, and pressing in quick succession brings up speed lines. Press L3 and R3 almost together to switch to a textured mode with a sweeping circle effect. LT and RT fill with how far you press.",
+   "h": 195000,
+   "usd": 15,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k4",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Pirate Ship Edition": {
+   "n": "Overlay Controller Xbox Series X - Pirate Ship Edition",
+   "ne": "Xbox Series X Controller Overlay - Pirate Ship Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema bajak laut yang bergerak mengikuti gamepad. Trigger LT dan RT mengisi air, tombol A, B, X, Y memunculkan riak dan koin, dan peti harta terisi seiring kamu menekan tombol. Di tengah body, kapal berlayar di peta antara pulau dan tanda X. Warna aksen bisa disesuaikan.",
+   "de": "A pirate-themed Xbox Series X controller overlay that follows your gamepad. LT and RT fill with water, the A, B, X, and Y buttons make ripples and coins, and a treasure chest fills up as you press. In the middle of the body, a ship sails across a map between an island and an X. The accent color is adjustable.",
+   "h": 199000,
+   "usd": 15,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k5",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Street Graffiti 3D Classic": {
+   "n": "Overlay Controller Xbox Series X - Street Graffiti 3D Classic",
+   "ne": "Xbox Series X Controller Overlay - Street Graffiti 3D Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema graffiti jalanan 3D yang bergerak mengikuti gamepad. Setiap tombol yang ditekan menuliskan hurufnya sebagai coretan di tembok dengan warna tombol itu, lengkap dengan cipratan cat, kabut, dan tetesan. Trigger LT dan RT terisi sesuai tekanan, dan stik bergeser mengikuti gerakan.",
+   "de": "A 3D street graffiti Xbox Series X controller overlay that follows your gamepad. Each button you press scrawls its letter on the wall in that button's color, with paint splashes, mist, and drips. LT and RT fill with how far you press, and the sticks shift as you move them.",
+   "h": 99000,
+   "usd": 12,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k6",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller PS5 DualSense - Art Deco Classic": {
+   "n": "Overlay Controller PS5 DualSense - Art Deco Classic",
+   "ne": "PS5 DualSense Controller Overlay - Art Deco Edition",
+   "d": "Edisi overlay controller PS5 DualSense bertema Art Deco yang bergerak mengikuti gamepad. Body 3D hitam dengan ornamen geometris emas. Trigger L2 dan R2 bergerak sesuai tekanan, stik bergeser mengikuti gerakan, dan tombol menyala saat ditekan. Warna aksen bisa disesuaikan.",
+   "de": "An Art Deco Edition PS5 DualSense controller overlay that follows your gamepad. A black 3D body with gold geometric ornaments. L2 and R2 move with how far you press, the sticks shift as you move them, and buttons light up when pressed. The accent color is adjustable.",
+   "h": 105000,
+   "usd": 9,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "d2",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "ps5-dualsense"
+  },
+  "other|Overlay Controller Xbox Series X - Watercolor Classic": {
+   "n": "Overlay Controller Xbox Series X - Watercolor Classic",
+   "ne": "Xbox Series X Controller Overlay - Watercolor Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Watercolor yang bergerak mengikuti gamepad. Body biru keunguan dengan noda cat air lembut. Setiap tombol yang ditekan memercikkan tinta, dan enam input terakhir muncul sebagai tetesan warna di palet atas. Trigger LT dan RT berupa meter isi dengan penanda puncak, dan stik bergeser mengikuti gerakan. Warna aksen bisa disesuaikan.",
+   "de": "A Watercolor Edition Xbox Series X controller overlay that follows your gamepad. A soft indigo body with gentle watercolor washes. Every button you press splashes ink, and your last six inputs appear as paint drops on the palette strip above. LT and RT are fill meters with a peak marker, and the sticks shift as you move them. The accent color is adjustable.",
+   "h": 99000,
+   "usd": 8,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k7",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Military Tactical Classic": {
+   "n": "Overlay Controller Xbox Series X - Military Tactical Classic",
+   "ne": "Xbox Series X Controller Overlay - Military Tactical Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Military Tactical yang bergerak mengikuti gamepad. Body hijau army dengan garis kontur peta, huruf stensil pada tombol A, B, X, dan Y, dan display Home berupa radar yang terus menyapu. Trigger LT dan RT terisi oranye sesuai tekanan, dan stik bergeser mengikuti gerakan. Warna aksen bisa disesuaikan.",
+   "de": "A Military Tactical Edition Xbox Series X controller overlay that follows your gamepad. An army-green body with map contour lines, stencil lettering on the A, B, X, and Y buttons, and a Home display shaped like a constantly sweeping radar. LT and RT fill in orange as you press, and the sticks shift as you move them. The accent color is adjustable.",
+   "h": 99000,
+   "usd": 8,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k8",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Arcade Cabinet Edition": {
+   "n": "Overlay Controller Xbox Series X - Arcade Cabinet Edition",
+   "ne": "Xbox Series X Controller Overlay - Arcade Cabinet Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Arcade Cabinet yang bergerak mengikuti gamepad. Stik berbentuk joystick merah ala mesin arcade, dan panel atas menampilkan hitungan CREDIT yang bertambah setiap tombol ditekan, lengkap dengan koin yang jatuh ke slot. Display Home menampilkan INSERT COIN, trigger LT dan RT terisi hingga tulisan MAX, dan tombol menyala saat ditekan.",
+   "de": "An Arcade Cabinet Edition Xbox Series X controller overlay that follows your gamepad. The sticks look like red arcade joysticks, and the top panel shows a CREDIT counter that goes up with every button press, complete with a coin dropping into the slot. The Home display reads INSERT COIN, LT and RT fill up to a MAX label, and the buttons light up as you press them.",
+   "h": 220000,
+   "usd": 18,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k9",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - VHS Analog Edition": {
+   "n": "Overlay Controller Xbox Series X - VHS Analog Edition",
+   "ne": "Xbox Series X Controller Overlay - VHS Analog Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema VHS Analog yang bergerak mengikuti gamepad. Body bergaris scanline dengan stiker kaset VHS T-120 dan stik berbentuk roda kaset. Display Home jadi counter VCR dengan mode PLAY, FF, REW, dan PAUSE lengkap dengan hitungan waktu. Trigger LT dan RT terisi bergaris cyan, dan sesekali garis tracking glitch lewat di body. Warna aksen bisa disesuaikan.",
+   "de": "A VHS Analog Edition Xbox Series X controller overlay that follows your gamepad. A scanlined body with a VHS T-120 tape sticker and sticks shaped like tape reels. The Home display becomes a VCR counter with PLAY, FF, REW, and PAUSE modes and a running timecode. LT and RT fill with cyan scanlines, and a tracking glitch line occasionally sweeps across the body. The accent color is adjustable.",
+   "h": 245000,
+   "usd": 20,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k10",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition": {
+   "n": "Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition",
+   "ne": "Xbox Series X Controller Overlay - Samurai Ukiyo-e Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Samurai Ukiyo-e yang bergerak mengikuti gamepad. Body biru indigo dengan gulungan di plat atas yang mencatat riwayat input, serta panji matahari merah dan ombak besar di bawah. Setelah tiga input beruntun, display Home menampilkan tebasan dan kanji kombo yang berubah menjadi 極 saat kombo makin panjang. Cincin merah menyala di stik yang ditekan, dan trigger terisi sesuai tekanan. Warna aksen bisa disesuaikan.",
+   "de": "A Samurai Ukiyo-e Edition Xbox Series X controller overlay that follows your gamepad. An indigo body with a scroll on the top plate that records your input history, and a banner with a red sun and a great wave below. After three inputs in a row, the Home display shows a slash and a combo kanji that turns into 極 as the combo grows. A red ring lights up on the stick you press, and the triggers fill with how far you press. The accent color is adjustable.",
+   "h": 199000,
+   "usd": 18,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k11",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Pixel 8-bit Classic": {
+   "n": "Overlay Controller Xbox Series X - Pixel 8-bit Classic",
+   "ne": "Xbox Series X Controller Overlay - Pixel 8-bit Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Pixel 8-bit yang bergerak mengikuti gamepad. Body ungu bertekstur dither dengan tombol segi delapan ala piksel dan stik bermata. Display Home adalah mini game: setiap tombol yang ditekan memunculkan duri, kena duri mengurangi satu dari tiga hati, dan saat hati habis muncul GAME OVER sebelum game mengulang. Trigger LT dan RT terisi bergaris. Warna aksen bisa disesuaikan.",
+   "de": "A Pixel 8-bit Edition Xbox Series X controller overlay that follows your gamepad. A purple dithered body with octagonal pixel buttons and sticks with little eyes. The Home display is a mini game: every button press spawns a spike, a hit costs one of three hearts, and when the hearts run out GAME OVER appears before the game restarts. LT and RT fill with stripes. The accent color is adjustable.",
+   "h": 99000,
+   "usd": 8,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k12",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Steampunk Brass Edition": {
+   "n": "Overlay Controller Xbox Series X - Steampunk Brass Edition",
+   "ne": "Xbox Series X Controller Overlay - Steampunk Brass Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Steampunk Brass yang bergerak mengikuti gamepad. Body kuningan dan kayu dengan roda gigi berputar serta kereta mainan yang berjalan di rel mengelilingi body. Display Home berupa speedometer berjarum: makin banyak tombol ditekan jarum makin naik, RT penuh membawanya ke batas dengan asap yang terus keluar, dan jarum turun mengikuti tekanan RT. Trigger LT dan RT terisi sesuai tekanan. Warna aksen bisa disesuaikan.",
+   "de": "A Steampunk Brass Edition Xbox Series X controller overlay that follows your gamepad. A brass and wood body with spinning gears and a toy train that runs on rails around the body. The Home display is a needle speedometer: the more buttons you press, the higher the needle climbs, a full RT pushes it to the limit with steam that keeps coming, and the needle drops as you ease off RT. LT and RT fill with how far you press. The accent color is adjustable.",
+   "h": 220000,
+   "usd": 19,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k13",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Western Saloon Edition": {
+   "n": "Overlay Controller Xbox Series X - Western Saloon Edition",
+   "ne": "Xbox Series X Controller Overlay - Western Saloon Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Western Saloon yang bergerak mengikuti gamepad. Body papan kayu dengan lencana sheriff di display Home dan poster buron di plat atas yang berganti-ganti: WANTED $5000, DEAD OR ALIVE, REWARD $9999, lengkap dengan cap BUSTED!. Setiap tombol yang ditekan meninggalkan lubang peluru, dan tombol menyala keemasan. Trigger LT dan RT terisi sesuai tekanan. Warna aksen bisa disesuaikan.",
+   "de": "A Western Saloon Edition Xbox Series X controller overlay that follows your gamepad. A wooden plank body with a sheriff badge on the Home display and a wanted poster on the top plate that cycles through WANTED $5000, DEAD OR ALIVE, and REWARD $9999, plus a BUSTED! stamp. Every button you press leaves a bullet hole, and the buttons glow gold. LT and RT fill with how far you press. The accent color is adjustable.",
+   "h": 185000,
+   "usd": 17,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k14",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Tropical Summer Beach Classic": {
+   "n": "Overlay Controller Xbox Series X - Tropical Summer Beach Classic",
+   "ne": "Xbox Series X Controller Overlay - Tropical Summer Beach Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Tropical Summer Beach yang bergerak mengikuti gamepad. Body memakai tekstur foto pantai tropis dengan pasir, laut, dan daun palem, dan display Home berupa matahari. Setiap tombol yang ditekan menambah meter Ombak Combo: makin tinggi meter, makin tinggi ombak bergulung di body, dan ombak surut setelah 2,5 detik tanpa input. Trigger LT dan RT terisi sesuai tekanan. Warna aksen bisa disesuaikan.",
+   "de": "A Tropical Summer Beach Edition Xbox Series X controller overlay that follows your gamepad. The body uses a tropical beach photo texture with sand, sea, and palm leaves, and the Home display is a sun. Every button press raises the Wave Combo meter: the higher the meter, the higher the waves rolling across the body, and they recede after 2.5 seconds without input. LT and RT fill with how far you press. The accent color is adjustable.",
+   "h": 99000,
+   "usd": 8,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k15",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Mecha Edition": {
+   "n": "Overlay Controller Xbox Series X - Mecha Edition",
+   "ne": "Xbox Series X Controller Overlay - Mecha Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Mecha yang bergerak mengikuti gamepad. Body baja abu-abu dengan baut, pelat UNIT-X, dan strip peringatan kuning-hitam di plat atas. Display Home berupa inti reaktor cyan dengan cincin yang terus berputar. Trigger LT dan RT terisi bergaris kuning sesuai tekanan, stik bergeser mengikuti gerakan, dan tombol menyala saat ditekan. Warna aksen bisa disesuaikan.",
+   "de": "A Mecha Edition Xbox Series X controller overlay that follows your gamepad. A steel-gray body with bolts, a UNIT-X plate, and a yellow-black warning strip on the top plate. The Home display is a cyan reactor core with a ring that keeps spinning. LT and RT fill with yellow stripes as you press, the sticks shift as you move them, and the buttons light up when pressed. The accent color is adjustable.",
+   "h": 199000,
+   "usd": 17,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k16",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Retro 90s CRT Edition": {
+   "n": "Overlay Controller Xbox Series X - Retro 90s CRT Edition",
+   "ne": "Xbox Series X Controller Overlay - Retro 90s CRT Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Retro 90s ala komputer Windows jadul yang bergerak mengikuti gamepad. Body krem hangat dengan jendela XBOX.EXE di plat atas lengkap dengan tombol minimize, maximize, dan close, serta ikon bendera warna-warni di display Home. Setiap tombol yang ditekan memunculkan kursor klik di tombol itu, trigger LT dan RT terisi sesuai tekanan, dan stik bergeser mengikuti gerakan.",
+   "de": "A Retro 90s Edition Xbox Series X controller overlay styled like an old Windows PC that follows your gamepad. A warm cream body with an XBOX.EXE window on the top plate, complete with minimize, maximize, and close buttons, and a colorful flag icon on the Home display. Every button you press shows a click cursor on it, LT and RT fill with how far you press, and the sticks shift as you move them.",
+   "h": 245000,
+   "usd": 20,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k17",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition": {
+   "n": "Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition",
+   "ne": "Xbox Series X Controller Overlay - Cozy Lo-fi Laundromat Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Cozy Lo-fi Laundromat Night yang bergerak mengikuti gamepad. Body bergambar suasana laundromat malam yang hangat: papan neon LAUNDRY NIGHT, deretan mesin cuci, jadwal laundry, lampu gantung, dan jendela kota malam di display Home. Stik berwarna lavender, trigger LT dan RT terisi bergaris, dan tombol menyala saat ditekan. Warna aksen bisa disesuaikan.",
+   "de": "A Cozy Lo-fi Laundromat Night Edition Xbox Series X controller overlay that follows your gamepad. The body is illustrated as a warm night laundromat: a LAUNDRY NIGHT neon sign, a row of washing machines, a laundry schedule, a hanging lamp, and a night city window on the Home display. Lavender sticks, LT and RT fill with stripes, and the buttons light up when pressed. The accent color is adjustable.",
+   "h": 159000,
+   "usd": 10,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k18",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Cyber Tokyo Night Classic": {
+   "n": "Overlay Controller Xbox Series X - Cyber Tokyo Night Classic",
+   "ne": "Xbox Series X Controller Overlay - Cyber Tokyo Night Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Cyber Tokyo Night yang bergerak mengikuti gamepad. Body semi-transparan berlatar gedung-gedung Tokyo malam dengan garis neon pink dan cyan. Setiap input muncul sebagai label katakana di bawah controller, misalnya アールティー untuk RT, dan riak cahaya cyan menyebar saat stik ditekan. Trigger LT dan RT terisi sesuai tekanan. Warna aksen bisa disesuaikan.",
+   "de": "A Cyber Tokyo Night Edition Xbox Series X controller overlay that follows your gamepad. A semi-transparent body over a Tokyo night skyline with pink and cyan neon edges. Every input shows up as a katakana label below the controller, for example アールティー for RT, and a cyan ripple of light spreads when you press a stick. LT and RT fill with how far you press. The accent color is adjustable.",
+   "h": 99000,
+   "usd": 8,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k19",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X - Sakura Edition": {
+   "n": "Overlay Controller Xbox Series X - Sakura Edition",
+   "ne": "Xbox Series X Controller Overlay - Sakura Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Sakura Jepang yang bergerak mengikuti gamepad. Body merah muda dengan ranting bunga sakura dan kelopak yang berguguran, stik dan D-pad berlambang bunga di tengah, serta display Home berupa pohon sakura. Trigger LT dan RT terisi sesuai tekanan, dan stik bergeser mengikuti gerakan. Warna aksen bisa disesuaikan.",
+   "de": "A Sakura Edition Xbox Series X controller overlay that follows your gamepad. A pink body with cherry blossom branches and falling petals, sticks and a D-pad with a flower at the center, and a cherry tree on the Home display. LT and RT fill with how far you press, and the sticks shift as you move them. The accent color is adjustable.",
+   "h": 145000,
+   "usd": 10,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "cvk": "k20",
+   "os": "controller",
+   "g": "other",
+   "pv": "key",
+   "sub": "xbox-series-x"
+  },
+  "other|Overlay Controller Xbox Series X (Custom)": {
+   "n": "Overlay Controller Xbox Series X (Custom)",
+   "ne": "Xbox Series X Controller Overlay (Custom)",
+   "d": "Overlay controller Xbox Series X 3D yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Tampilan bisa disesuaikan dengan permintaanmu.",
+   "de": "A 3D Xbox Series X controller overlay that follows your gamepad. Buttons, sticks, and triggers react as you press them. The look can be tailored to your request.",
+   "h": null,
+   "custom": true,
+   "overlay": true,
+   "show": true,
+   "ctl": true,
+   "os": "controller",
+   "g": "other",
+   "sub": "xbox-series-x"
+  }
+ },
+ "added": [],
+ "rate": 12500,
+ "wa": "628881708640",
+ "gameNames": {},
+ "gamesAdded": [],
+ "subs": {
+  "other|controller": [
+   {
+    "id": "xbox-series-x",
+    "n": "Xbox Series X",
+    "ne": "Xbox Series X"
+   },
+   {
+    "id": "ps5-dualsense",
+    "n": "PS5 DualSense",
+    "ne": "PS5 DualSense"
+   }
+  ]
+ },
+ "joki": {
+  "Say_CheeseXX3": {
+   "eks": true,
+   "platform": "PC",
+   "games": [
+    "nfs-heat",
+    "crew-motorfest"
+   ],
+   "rating": 4.9,
+   "order": 46,
+   "online": true
+  },
+  "SwiftPressure": {
+   "hide": true,
+   "eks": true,
+   "platform": "PC",
+   "games": [
+    "nfs-heat",
+    "crew-motorfest"
+   ],
+   "rating": 5,
+   "order": 112,
+   "online": true
+  },
+  "Starboy_1199": {
+   "platform": "PS",
+   "games": [
+    "nfs-heat"
+   ],
+   "paketOnly": [
+    "Time Track Bonus Footage oleh Pro Player"
+   ],
+   "rating": 4.5,
+   "online": true
+  },
+  "PRSR_Reynn": {
+   "platform": "PC",
+   "games": [
+    "crew-motorfest"
+   ],
+   "rating": 4.7,
+   "online": true
+  },
+  "NYXoriaLaika": {
+   "tipe": "livery",
+   "games": [
+    "nfs-heat"
+   ],
+   "rating": 4.1,
+   "online": true
+  }
+ },
+ "jokiAdded": [],
+ "texts": {
+  "ttl": [
+   "Pressure's | Jasa Joki dan Livery Game",
+   "Pressure's | Game Boosting & Custom Livery"
+  ],
+  "hero_h": [
+   "Target Tercapai Tanpa Grinding",
+   "Goals Reached, No Grinding"
+  ],
+  "hero_p": [
+   "Semua kebutuhan game dan streaming-mu, dalam satu tempat.",
+   "Everything for your gaming and streaming, in one place."
+  ],
+  "s1": [
+   "1. Pilih game dan paket",
+   "1. Choose a game and package"
+  ],
+  "l1": [
+   "Pilih game dan jenis layanan.",
+   "Choose a game and a service."
+  ],
+  "sl_joki": [
+   "Paket bertanda bintang dikerjakan langsung oleh pro player.",
+   "Starred packages are done directly by a pro player."
+  ],
+  "sl_liv": [
+   "Pilih paket, lalu tanya harga ke admin.",
+   "Choose a package, then ask the admin for a price."
+  ],
+  "tab_stream": [
+   "Stream",
+   "Stream"
+  ],
+  "tab_ctl": [
+   "Controller",
+   "Controller"
+  ],
+  "custom": [
+   "Custom",
+   "Custom"
+  ],
+  "custom_s": [
+   "Chat admin dulu sebelum membeli",
+   "Chat the admin first before buying"
+  ],
+  "tab_ov": [
+   "Overlay",
+   "Overlay"
+  ],
+  "cat_oth_s": [
+   "Other · Overlay · Stream",
+   "Other · Overlay · Stream"
+  ],
+  "cat_oth_c": [
+   "Other · Overlay · Controller",
+   "Other · Overlay · Controller"
+  ],
+  "sl_ctl": [
+   "Pilih Edition siap pakai, atau chat admin untuk controller custom.",
+   "Pick a ready-made Edition, or chat the admin for a custom controller."
+  ],
+  "sl_oth": [
+   "Pilih overlay, lalu pesan lewat form di bawah.",
+   "Choose an overlay, then order through the form below."
+  ],
+  "foto_h": [
+   "Sesi Foto Bareng",
+   "Photo Sessions"
+  ],
+  "foto_p": [
+   "Foto bareng penjoki di dalam game. Foto tidak dibatasi, satu sesi maksimal 1,5 jam.",
+   "In-game photos with your booster. Unlimited photos, up to 1.5 hours per session."
+  ],
+  "jt_j": [
+   "Penjoki",
+   "Boosters"
+  ],
+  "jt_l": [
+   "Pembuat livery",
+   "Livery creators"
+  ],
+  "cara_h": [
+   "Cara order",
+   "How to order"
+  ],
+  "info_h": [
+   "Informasi",
+   "Information"
+  ],
+  "info_p": [
+   "Pembayaran, garansi, serta syarat dan ketentuan.",
+   "Payment, guarantee, and terms."
+  ],
+  "testi_h": [
+   "Testimoni",
+   "Testimonials"
+  ],
+  "testi_p": [
+   "Hasil pengerjaan dari pelanggan kami.",
+   "Results from our customers."
+  ],
+  "testi_e": [
+   "Testimoni pelanggan akan tampil di sini.",
+   "Customer testimonials will appear here."
+  ],
+  "stat_h": [
+   "Cek status pesanan",
+   "Check order status"
+  ],
+  "stat_p": [
+   "Masukkan kode order dari admin untuk melihat status pesananmu.",
+   "Enter the order code from the admin to see your order status."
+  ],
+  "stat_ph": [
+   "Kode order",
+   "Order code"
+  ],
+  "stat_b": [
+   "Cek status",
+   "Check status"
+  ],
+  "s3": [
+   "3. Form pesanan",
+   "3. Order form"
+  ],
+  "f_p": [
+   "Setelah dikirim, kamu diarahkan ke WhatsApp admin.",
+   "After sending, you will be taken to the admin's WhatsApp."
+  ],
+  "f_n": [
+   "Nama",
+   "Name"
+  ],
+  "f_game": [
+   "Kategori",
+   "Category"
+  ],
+  "f_paket": [
+   "Paket",
+   "Package"
+  ],
+  "f_joki": [
+   "Penjoki",
+   "Booster"
+  ],
+  "f_liv": [
+   "Pembuat livery",
+   "Livery creator"
+  ],
+  "f_cat": [
+   "Catatan",
+   "Notes"
+  ],
+  "f_catph": [
+   "Target, jadwal, atau permintaan lain",
+   "Goals, schedule, or any other request"
+  ],
+  "f_btn": [
+   "Pesan lewat WhatsApp",
+   "Order via WhatsApp"
+  ],
+  "f_note": [
+   "Jangan kirim kata sandi lewat form ini.",
+   "Never send your password through this form."
+  ],
+  "f_err": [
+   "Pilih penjoki dulu.",
+   "Please choose a booster first."
+  ],
+  "m_game": [
+   "Game",
+   "Game"
+  ],
+  "m_info": [
+   "Informasi",
+   "Information"
+  ],
+  "m_stat": [
+   "Cek status",
+   "Check status"
+  ],
+  "m_pesan": [
+   "Pesan",
+   "Order"
+  ],
+  "tab_joki": [
+   "Joki",
+   "Boosting"
+  ],
+  "tab_liv": [
+   "Livery",
+   "Livery"
+  ],
+  "bebas": [
+   "Bebas (dipilihkan admin)",
+   "Any (assigned by admin)"
+  ],
+  "pilih_j": [
+   "Pilih penjoki",
+   "Choose a booster"
+  ],
+  "harga_s": [
+   "Harga disepakati saat pemesanan",
+   "Price agreed at order"
+  ],
+  "harga_s2": [
+   "harga disepakati",
+   "price agreed"
+  ],
+  "per_sesi": [
+   "per sesi",
+   "per session"
+  ],
+  "tanya": [
+   "Tanya harga ke admin",
+   "Ask admin for price"
+  ],
+  "pilih_p": [
+   "Pilih paket",
+   "Select"
+  ],
+  "pilih_jk": [
+   "Pilih penjoki",
+   "Choose booster"
+  ],
+  "pilih_lv": [
+   "Pilih pembuat livery",
+   "Choose creator"
+  ],
+  "lihat": [
+   "Lihat livery",
+   "View liveries"
+  ],
+  "sembunyi": [
+   "Sembunyikan livery",
+   "Hide liveries"
+  ],
+  "eks": [
+   "Penjoki eksklusif",
+   "Exclusive booster"
+  ],
+  "livcr": [
+   "Pembuat Livery",
+   "Livery Creator"
+  ],
+  "online": [
+   "Online",
+   "Online"
+  ],
+  "offline": [
+   "Offline",
+   "Offline"
+  ],
+  "platform": [
+   "Platform:",
+   "Platform:"
+  ],
+  "rating": [
+   "Rating",
+   "Rating"
+  ],
+  "orders": [
+   "order selesai",
+   "orders completed"
+  ],
+  "khusus": [
+   "Khusus paket:",
+   "Only for:"
+  ],
+  "wa_hi": [
+   "Halo Pressure's, saya mau pesan.",
+   "Hello Pressure's, I'd like to place an order."
+  ],
+  "wa_tanya": [
+   "Halo Pressure's, saya mau tanya harga paket ",
+   "Hello Pressure's, I'd like to ask the price for "
+  ],
+  "wa_stat": [
+   "Halo Pressure's, saya mau cek status pesanan dengan kode: ",
+   "Hello Pressure's, I'd like to check my order status. Code: "
+  ],
+  "wa_cat": [
+   "Kategori",
+   "Category"
+  ],
+  "wa_nama": [
+   "Nama",
+   "Name"
+  ],
+  "wa_game": [
+   "Game",
+   "Game"
+  ],
+  "wa_paket": [
+   "Paket",
+   "Package"
+  ],
+  "wa_joki": [
+   "Penjoki",
+   "Booster"
+  ],
+  "wa_bebas": [
+   "Bebas",
+   "Any"
+  ],
+  "cat_oth": [
+   "Other · Overlay",
+   "Other · Overlay"
+  ],
+  "f_btn_ask": [
+   "Kirim permintaan harga lewat WhatsApp",
+   "Request a price via WhatsApp"
+  ],
+  "cat_joki": [
+   "Joki",
+   "Boosting"
+  ],
+  "cat_liv": [
+   "Livery",
+   "Livery"
+  ],
+  "cat_ov": [
+   "Overlay",
+   "Overlay"
+  ],
+  "gv_l": [
+   "Tampilan",
+   "View"
+  ],
+  "gv_1": [
+   "1 kolom",
+   "1 column"
+  ],
+  "gv_2": [
+   "2 kolom",
+   "2 columns"
+  ],
+  "gv_3": [
+   "3 kolom",
+   "3 columns"
+  ],
+  "tg_a": [
+   "Animasi",
+   "Animated"
+  ],
+  "tg_s": [
+   "Statis",
+   "Static"
+  ],
+  "cvp": [
+   "Sebelumnya",
+   "Previous"
+  ],
+  "cvn": [
+   "Berikutnya",
+   "Next"
+  ]
+ },
+ "steps": {
+  "joki": [
+   [
+    "Isi form",
+    "Fill in the form",
+    "Game, paket, dan penjoki.",
+    "Game, package, and booster."
+   ],
+   [
+    "Konfirmasi admin",
+    "Admin confirms",
+    "Admin mengecek dan mengirim total bayar.",
+    "The admin checks and sends the total."
+   ],
+   [
+    "Bayar lewat QRIS",
+    "Pay via PayPal",
+    "QRIS dikirim admin setelah total dikonfirmasi.",
+    "The admin sends a PayPal invoice once the total is confirmed."
+   ],
+   [
+    "Pantau hasil",
+    "Track progress",
+    "Update berkala sampai selesai.",
+    "Regular updates until it is done."
+   ]
+  ],
+  "livery": [
+   [
+    "Tanya harga",
+    "Ask for a price",
+    "Hubungi admin lewat WhatsApp dan sepakati desain.",
+    "Message the admin on WhatsApp and agree on the design."
+   ],
+   [
+    "Bayar lewat QRIS",
+    "Pay via PayPal",
+    "Bayar ke admin setelah harga disepakati.",
+    "Pay the admin once the price is agreed."
+   ],
+   [
+    "Terima kontak",
+    "Get the contact",
+    "Admin memberi kontak pembuat livery setelah pembayaran dikonfirmasi.",
+    "The admin shares the creator's contact after payment is confirmed."
+   ],
+   [
+    "Konfirmasi",
+    "Confirm",
+    "Dana diteruskan ke pembuat setelah kamu menyatakan livery sudah sesuai.",
+    "Funds go to the creator after you confirm the livery is as agreed."
+   ]
+  ],
+  "other": [
+   [
+    "Pilih overlay",
+    "Choose an overlay",
+    "Pilih overlay dan isi form pesanan.",
+    "Pick an overlay and fill in the order form."
+   ],
+   [
+    "Konfirmasi admin",
+    "Admin confirms",
+    "Admin mengecek pesanan dan mengirim total bayar.",
+    "The admin checks the order and sends the total."
+   ],
+   [
+    "Bayar lewat QRIS",
+    "Pay via PayPal",
+    "Bayar ke admin lewat QRIS.",
+    "Pay the admin via PayPal."
+   ],
+   [
+    "Terima file",
+    "Get your files",
+    "Tautan unduhan dikirim setelah pembayaran dikonfirmasi.",
+    "The download link is sent after payment is confirmed."
+   ]
+  ],
+  "ctl": [
+   [
+    "Pilih controller",
+    "Pick a controller",
+    "Pilih Edition siap pakai, atau Custom kalau ingin tampilan sendiri.",
+    "Pick a ready-made Edition, or Custom if you want your own look."
+   ],
+   [
+    "Kirim pesanan",
+    "Send your order",
+    "Isi form di bawah, lalu lanjut ke WhatsApp admin. Untuk Custom, sepakati tampilan dan total dulu.",
+    "Fill in the form below and continue to the admin on WhatsApp. For Custom, agree on the look and total first."
+   ],
+   [
+    "Bayar lewat QRIS",
+    "Pay via PayPal",
+    "Bayar ke admin lewat QRIS setelah total disetujui.",
+    "Pay the admin via PayPal once the total is agreed."
+   ],
+   [
+    "Terima file",
+    "Get your files",
+    "Tautan unduhan dikirim setelah pembayaran dikonfirmasi.",
+    "The download link is sent after payment is confirmed."
+   ]
+  ]
+ },
+ "info": {
+  "joki": [
+   [
+    "Pembayaran",
+    "Payment",
+    "Bayar instan lewat <b>QRIS</b> dengan DANA, OVO, GoPay, ShopeePay, atau m-banking. Pembayaran langsung diterima. Setelah membayar, kirim bukti ke admin lewat WhatsApp agar pengerjaan segera dimulai.",
+    "Pay with <b>PayPal</b>. Once the price is agreed, the admin sends you a PayPal invoice. Work starts after payment is confirmed."
+   ],
+   [
+    "Garansi",
+    "Guarantee",
+    "Jika target paket tidak tercapai karena kesalahan penjoki, pengerjaan diulang tanpa biaya tambahan.",
+    "If the package goal is not reached because of the booster's mistake, we redo it at no extra cost."
+   ],
+   [
+    "Syarat dan ketentuan",
+    "Terms",
+    [
+     "Pelanggan memberikan data akun yang benar.",
+     "Pelanggan tidak login selama pengerjaan berlangsung.",
+     "Kata sandi tidak pernah diminta lewat form."
+    ],
+    [
+     "You provide the correct account details.",
+     "Do not log in while the work is in progress.",
+     "We never ask for your password through the form."
+    ]
+   ]
+  ],
+  "livery": [
+   [
+    "Pembayaran",
+    "Payment",
+    "Bayar instan lewat <b>QRIS</b> dengan DANA, OVO, GoPay, ShopeePay, atau m-banking ke admin. Setelah pembayaran dikonfirmasi, admin memberikan kontak pembuat livery.",
+    "Pay the admin with <b>PayPal</b>. Once payment is confirmed, the admin shares the livery creator's contact."
+   ],
+   [
+    "Garansi",
+    "Guarantee",
+    "Revisi maksimal 2 kali sampai livery sesuai desain yang disepakati.",
+    "Up to 2 revisions until the livery matches the agreed design."
+   ],
+   [
+    "Syarat dan ketentuan",
+    "Terms",
+    [
+     "Pelanggan memberikan referensi desain yang jelas.",
+     "Seluruh pembayaran dilakukan lewat admin.",
+     "Transaksi langsung di luar admin tidak mendapat perlindungan."
+    ],
+    [
+     "You provide a clear design reference.",
+     "All payments are made through the admin.",
+     "Deals made directly outside the admin are not protected."
+    ]
+   ]
+  ],
+  "other": [
+   [
+    "Pembayaran",
+    "Payment",
+    "Bayar lewat <b>QRIS</b> ke admin. Setelah pembayaran dikonfirmasi, tautan unduhan overlay dikirim.",
+    "Pay the admin with <b>PayPal</b>. Once payment is confirmed, the overlay download link is sent."
+   ],
+   [
+    "Garansi",
+    "Guarantee",
+    "Jika file tidak bisa dibuka, kami bantu sampai overlay berjalan di OBS atau Streamlabs.",
+    "If the files do not work, we help until the overlay runs in OBS or Streamlabs."
+   ],
+   [
+    "Syarat dan ketentuan",
+    "Terms",
+    [
+     "Lisensi untuk dipakai di channel milikmu sendiri.",
+     "Overlay tidak boleh dijual ulang atau dibagikan.",
+     "Pembayaran dilakukan lewat admin."
+    ],
+    [
+     "Licensed for use on your own channel.",
+     "The overlay may not be resold or shared.",
+     "All payments are made through the admin."
+    ]
+   ]
+  ],
+  "ctl": [
+   [
+    "Pembayaran",
+    "Payment",
+    "Bayar lewat <b>QRIS</b> ke admin. Setelah pembayaran dikonfirmasi, tautan unduhan overlay dikirim.",
+    "Pay the admin with <b>PayPal</b>. Once payment is confirmed, the overlay download link is sent."
+   ],
+   [
+    "Garansi",
+    "Guarantee",
+    "Jika file tidak bisa dibuka, kami bantu sampai overlay berjalan di OBS atau Streamlabs.",
+    "If the files do not work, we help until the overlay runs in OBS or Streamlabs."
+   ],
+   [
+    "Syarat dan ketentuan",
+    "Terms",
+    [
+     "Lisensi untuk dipakai di channel milikmu sendiri.",
+     "Overlay tidak boleh dijual ulang atau dibagikan.",
+     "Pembayaran dilakukan lewat admin."
+    ],
+    [
+     "Licensed for use on your own channel.",
+     "The overlay may not be resold or shared.",
+     "All payments are made through the admin."
+    ]
+   ]
+  ]
+ },
+ "site": {
+  "brand": "Pressure's",
+  "footer": "© 2026 Pressure's",
+  "discord": "https://discord.gg/ycBBCmmGf",
+  "instagram": "https://www.instagram.com/prsr.id"
+ }
+}
