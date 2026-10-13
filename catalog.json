@@ -703,8 +703,8 @@
   {
    "n": "Overlay Controller Xbox One OG - Ice Crystal Edition",
    "ne": "Xbox One OG Controller Overlay - Ice Crystal Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Ice Crystal yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Ice Crystal theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Edisi overlay controller Xbox One OG bertema Ice Crystal yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox One OG controller overlay, Ice Crystal theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
    "h": 50000,
    "g": "other",
    "os": "controller",
@@ -719,6 +719,17 @@
    "oldu": 12,
    "usd": 4,
    "ord": 0
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Classic Grey Edition",
+   "ne": "Xbox Series X Controller Overlay - Classic Grey Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Classic Grey yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Classic Grey theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 199000,
+   "usd": 17,
+   "g": "other",
+   "os": "controller",
+   "hide": false
   }
  ],
  "rate": 12500,
@@ -1390,6 +1401,17 @@
    "de": "Xbox Series X controller overlay, Cloud Pastel theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs etc.",
    "h": 159000,
    "usd": 10,
+   "g": "other",
+   "os": "controller"
+  },
+  {
+   "l": "Xbox One OG",
+   "n": "Overlay Controller Xbox One OG - Ice Crystal Edition",
+   "ne": "Xbox One OG Controller Overlay - Ice Crystal Edition",
+   "d": "Edisi overlay controller Xbox One OG bertema Ice Crystal yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox One OG controller overlay, Ice Crystal theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 50000,
+   "usd": 4,
    "g": "other",
    "os": "controller"
   }
