@@ -327,6 +327,9 @@ main.oth #info,main.oth #status{background:transparent}
 <div class="fld"><span class="fl" data-t="f_paket"></span><div class="dd" id="ddfp" data-for="fp"><button class="dd-b" id="dbfp" type="button" aria-haspopup="listbox" aria-expanded="false"><span class="dd-t" id="dtfp"></span><svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><ul class="dd-l" role="listbox" id="dlfp"></ul></div><select id="fp" hidden></select></div>
 <div class="fld" id="fldfj"><span class="fl" id="fjl"></span><div class="dd" id="ddfj" data-for="fj"><button class="dd-b" id="dbfj" type="button" aria-haspopup="listbox" aria-expanded="false"><span class="dd-t" id="dtfj"></span><svg class="chev" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg></button><ul class="dd-l" role="listbox" id="dlfj"></ul></div><select id="fj" hidden></select><p class="emsg" id="fjerr" hidden data-t="f_err"></p></div>
 <label><span data-t="f_cat"></span><textarea id="c" data-tp="f_catph"></textarea></label>
+<label id="fem" style="display:none"><span data-t="f_email"></span><input id="em" type="email" autocomplete="email" inputmode="email"></label>
+<button class="btn" type="button" id="pbtn" style="display:none" data-t="pay_btn"></button>
+<p class="note" id="pmsg" style="display:none" role="status"></p>
 <button class="btn" type="submit" id="sbtn"></button>
 <p class="note" data-t="f_note"></p>
 </form></div></section>
@@ -523,7 +526,7 @@ function pn(){var o=$("fp").selectedOptions[0];return o?o.dataset.n:""}
 function selP(n){var o=$("fp").options;for(var i=0;i<o.length;i++){if(o[i].dataset.n===n){$("fp").selectedIndex=i;return}}}
 function jopts(pk){var l=pk.overlay?[]:JOKI.filter(function(j){return ok(j,pk)}),h="",req=false;if(pk.sesi){if(l.length>1){h='<option value="" disabled selected>'+t("pilih_j")+'</option>';req=true}}else if(!pk.livery&&!pk.overlay)h='<option value="">'+t("bebas")+'</option>';h+=l.map(function(j){return '<option>'+j.nama+'</option>'}).join("");return {h:h,req:req,n:l.length}}
 function fillJ(){var n=pn(),cv=$("fj").value,pk=game().paket.filter(function(p){return p.n===n})[0]||{},o=jopts(pk);$("fj").innerHTML=o.h;$("fj").dataset.req=o.req?"1":"";$("fjerr").hidden=true;$("ddfj").classList.remove("err");if(!o.req&&cv&&Array.prototype.some.call($("fj").options,function(x){return x.text===cv}))$("fj").value=cv;ddAll();updBtn()}
-function updBtn(){var n=pn(),sp=game().paket.filter(function(p){return p.n===n})[0]||{};$("sbtn").textContent=t(sp.h===null?"f_btn_ask":"f_btn")}
+function updBtn(){var n=pn(),sp=game().paket.filter(function(p){return p.n===n})[0]||{};$("sbtn").textContent=t(sp.h===null?"f_btn_ask":"f_btn");payUI()}
 /* dropdown di dalam web */
 var DDS=["fg","fp","fj"];
 function dparts(s){var i=s.lastIndexOf(" - ");return i>0?[s.slice(0,i),s.slice(i+3)]:[s,""]}
@@ -655,6 +658,30 @@ $("ov").addEventListener("click",closeMenu);
 $("drawer").addEventListener("click",function(e){if(e.target.tagName=="A")closeMenu()});
 document.addEventListener("keydown",function(e){if(e.key==="Escape"){closeDD();closeMenu()}});
 $("cek").addEventListener("click",function(){var k=$("kode").value.trim();if(!k){$("kode").focus();return}wa(t("wa_stat")+k)});
+/* ===== pembayaran otomatis (Midtrans lewat Cloudflare Worker) ===== */
+var PAY_API="https://pressures-shop.rizkysaputra7665.workers.dev",PAYP=null;
+T.f_email=["Email (untuk link overlay)","Email (for the overlay link)"];
+T.pay_btn=["Bayar otomatis (QRIS / e-wallet)","Pay automatically"];
+T.pay_wait=["Memproses...","Processing..."];
+T.pay_need=["Isi nama dan email yang valid dulu.","Enter your name and a valid email first."];
+T.pay_err=["Pembayaran otomatis belum tersedia untuk paket ini. Gunakan tombol WhatsApp.","Automatic payment is not available for this package. Please use WhatsApp."];
+function pslug(s){return String(s).toLowerCase().replace(/^overlay (controller )?/,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")}
+function payOk(){var sp=game().paket.filter(function(p){return p.n===pn()})[0]||{};return mode()==="other"&&!!sp.overlay&&!sp.custom&&sp.h>0&&LANG!=="en"}
+function payUI(){var on=payOk();$("fem").style.display=on?"":"none";$("pbtn").style.display=on?"":"none";$("pmsg").style.display="none";$("sbtn").classList.toggle("ghost",on);if(on)$("pbtn").innerHTML=t("pay_btn")}
+function payProducts(){return PAYP||(PAYP=fetch(PAY_API+"/api/products").then(function(r){if(!r.ok)throw 0;return r.json()}).catch(function(){PAYP=null;return []}))}
+$("pbtn").addEventListener("click",function(){
+ var b=this,m=$("pmsg"),nm=$("n").value.trim(),em=$("em").value.trim(),sp=game().paket.filter(function(p){return p.n===pn()})[0]||{};
+ function say(x){m.textContent=x;m.style.display=""}
+ if(!nm||!/^\S+@\S+\.\S+$/.test(em)){say(t("pay_need"));return}
+ b.disabled=true;say(t("pay_wait"));
+ payProducts().then(function(l){
+  var k=pslug(sp.n),pr=l.filter(function(x){return pslug(x.name)===k})[0];
+  if(!pr)throw 0;
+  if(pr.price!==sp.h){try{console.warn("Harga catalog dan Worker beda",sp.n,sp.h,pr.price)}catch(e){}throw 0}
+  return fetch(PAY_API+"/api/checkout",{method:"POST",body:JSON.stringify({name:nm,email:em,product_id:pr.id})}).then(function(r){return r.json()})})
+ .then(function(d){if(d&&d.redirect_url){location.href=d.redirect_url}else throw 0})
+ .catch(function(){say(t("pay_err"));b.disabled=false})});
+payUI();
 $("f").addEventListener("submit",function(e){
  e.preventDefault();
  if($("fj").dataset.req&&!$("fj").value){var d=$("ddfj");d.classList.remove("err");void d.offsetWidth;d.classList.add("err");$("fjerr").hidden=false;return}
