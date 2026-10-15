@@ -667,7 +667,7 @@ T.pay_need=["Isi nama dan email yang valid dulu.","Enter your name and a valid e
 T.pay_err=["Pembayaran otomatis belum tersedia untuk paket ini. Gunakan tombol WhatsApp.","Automatic payment is not available for this package. Please use WhatsApp."];
 function pslug(s){return String(s).toLowerCase().replace(/^overlay (controller )?/,"").replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"")}
 function payOk(){var sp=game().paket.filter(function(p){return p.n===pn()})[0]||{};return mode()==="other"&&!!(sp.overlay||sp.ctl||sp.os==="controller")&&!sp.custom&&sp.h>0&&LANG!=="en"}
-function payUI(){var on=payOk();$("fem").style.display=on?"":"none";$("pbtn").style.display=on?"":"none";$("pmsg").style.display="none";$("sbtn").classList.toggle("ghost",on);if(on)$("pbtn").innerHTML=t("pay_btn")}
+function payUI(){var on=payOk();$("fem").style.display=on?"":"none";$("pbtn").style.display=on?"":"none";$("pmsg").style.display="none";$("sbtn").classList.toggle("ghost",on);if(on){$("pbtn").innerHTML=t("pay_btn");var sp=game().paket.filter(function(p){return p.n===pn()})[0]||{},nm=pn();payProducts().then(function(l){var k=pslug(sp.n),pr=l.filter(function(x){return pslug(x.name)===k})[0];if(nm!==pn()||(pr&&pr.price===sp.h))return;$("fem").style.display="none";$("pbtn").style.display="none";$("sbtn").classList.remove("ghost")})}}
 function payProducts(){return PAYP||(PAYP=fetch(PAY_API+"/api/products").then(function(r){if(!r.ok)throw 0;return r.json()}).catch(function(){PAYP=null;return []}))}
 $("pbtn").addEventListener("click",function(){
  var b=this,m=$("pmsg"),nm=$("n").value.trim(),em=$("em").value.trim(),sp=game().paket.filter(function(p){return p.n===pn()})[0]||{};
