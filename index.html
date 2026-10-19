@@ -703,7 +703,7 @@ var CAT_RATE=12500,CAT_V=Date.now();
 function esc2(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function oldp(p){return LANG==="en"?"$"+(p.oldu||Math.round(p.old/CAT_RATE)):rp(p.old||Math.round(p.oldu*CAT_RATE))}
 function tagh(p){var tg=LANG==="en"?(p.tage||p.tag):p.tag;return tg?' <span style="display:inline-block;vertical-align:middle;margin-left:6px;padding:2px 8px;border-radius:99px;background:var(--accent);color:var(--accent-ink);font-size:12px;font-weight:600">'+esc2(tg)+'</span>':""}
-function mockPad(kind){var on=1,t0=performance.now(),T=16000,K=kind||"xbox",cyc=K==="cycle",ord=["xbox","ps5","switch"],lap=-1,cur=cyc?"xbox":K,
+function mockPad(kind,seq){var on=1,t0=performance.now(),T=16000,K=kind||"xbox",cyc=K==="cycle",ord=["xbox","ps5","switch"],lap=-1,cur=cyc?"xbox":K,
 ids={xbox:"Xbox Controller (STANDARD GAMEPAD Vendor: 045e Product: 0b12)",ps5:"Wireless Controller (STANDARD GAMEPAD Vendor: 054c Product: 0ce6)","switch":"Pro Controller (STANDARD GAMEPAD Vendor: 057e Product: 2009)"};
 addEventListener("message",function(e){if(e.data==="pv:play")on=1;if(e.data==="pv:pause")on=0});
 function pu(t,s,e){return t>=s&&t<e?Math.sin((t-s)/(e-s)*Math.PI):0}
@@ -722,16 +722,17 @@ if(t>14200&&t<15000&&cur==="ps5")b[17]=1;
 s=sq(t,15000,[0,1,2,3,0,2,1,3],110);if(s>=0)b[s]=1;
 b[16]=0;
 return {id:ids[cur],index:0,connected:true,mapping:"standard",timestamp:t,axes:a,buttons:b.map(function(x){return {pressed:x>.5,touched:x>0,value:x}})}}
+var SQ=seq?String(seq).split(","):[];if(SQ.length){var GR={ab:[250,2250,[0,1,2,3],[]],bump:[2250,3500,[4,5],[]],trig:[3450,6100,[6,7],[]],dpad:[6150,7600,[12,13,14,15],[]],menu:[7750,9700,[8,9,10,11],[]],ls:[9950,11850,[],[0,1]],rs:[11650,13200,[],[2,3]],mash:[14950,16000,[0,1,2,3],[]]},SG=[],tot=0,mk=make;SQ.forEach(function(k){var g=GR[k];if(g){SG.push({w:g,o:tot});tot+=g[1]-g[0]+120}});if(SG.length){T=tot;make=function(t){var i,g=SG[0],r,o,j,ax=[],bt=[];for(i=0;i<SG.length;i++)if(t>=SG[i].o)g=SG[i];o=Math.min(g.w[0]+t-g.o,g.w[1]);r=mk(o);for(j=0;j<r.axes.length;j++)ax.push(g.w[3].indexOf(j)>=0?r.axes[j]:0);for(j=0;j<r.buttons.length;j++)bt.push(g.w[2].indexOf(j)>=0?r.buttons[j]:{pressed:false,touched:false,value:0});r.axes=ax;r.buttons=bt;r.timestamp=t;return r}}}
 var last=make(0);
 function fire(n){var ev=new Event(n);ev.gamepad=last;dispatchEvent(ev)}
 try{navigator.getGamepads=function(){var el=performance.now()-t0,n=Math.floor(el/T);if(cyc&&n!==lap){lap=n;if(n>0){fire("gamepaddisconnected");cur=ord[n%ord.length];last=make(0);fire("gamepadconnected")}else cur=ord[0]}if(on)last=make(el%T);return [last,null,null,null]}}catch(e){}
 addEventListener("load",function(){fire("gamepadconnected")})}
-function injMock(h,kind){var S="<script>("+mockPad.toString()+")("+JSON.stringify(kind||"xbox")+")<\/script>",m=/<head[^>]*>/i.exec(h)||/<html[^>]*>/i.exec(h),d=/^\s*<!doctype[^>]*>/i;
+function injMock(h,kind,seq){var S="<script>("+mockPad.toString()+")("+JSON.stringify(kind||"xbox")+","+JSON.stringify(seq||"")+")<\/script>",m=/<head[^>]*>/i.exec(h)||/<html[^>]*>/i.exec(h),d=/^\s*<!doctype[^>]*>/i;
  return m?h.slice(0,m.index+m[0].length)+S+h.slice(m.index+m[0].length):(d.test(h)?h.replace(d,function(x){return x+S}):S+h)}
-function fileh(p){return '<div class="ctlv"'+((p.os==="controller"||p.ctl)?"":' style="aspect-ratio:16/9"')+'><iframe class="fvx" data-f="'+esc2(p.file)+'" data-m="'+(p.pv==="asis"?"asis":"demo")+'" data-k="'+esc2(p.pk||"xbox")+'" title="'+esc2(pn_(p))+'" sandbox="allow-scripts" tabindex="-1"></iframe></div>'}
+function fileh(p){return '<div class="ctlv"'+((p.os==="controller"||p.ctl)?"":' style="aspect-ratio:16/9"')+'><iframe class="fvx" data-f="'+esc2(p.srv?PAY_API+"/pv/"+(p.shop||String(p.n).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,80)):p.file)+'" data-s="'+esc2(p.pks||"")+'" data-m="'+(p.pv==="asis"?"asis":"demo")+'" data-k="'+esc2(p.pk||"xbox")+'" title="'+esc2(pn_(p))+'" sandbox="allow-scripts" tabindex="-1"></iframe></div>'}
 var FVC={};
 function fvLoad(f){var u=f.getAttribute("data-f"),m=f.getAttribute("data-m"),kd=f.getAttribute("data-k")||"xbox";
- (FVC[u]||(FVC[u]=fetch(u+"?v="+CAT_V).then(function(r){if(!r.ok)throw 0;return r.text()}))).then(function(h){f.srcdoc=m==="asis"?h:injMock(h,kd)}).catch(function(){})}
+ (FVC[u]||(FVC[u]=fetch(u+"?v="+CAT_V).then(function(r){if(!r.ok)throw 0;return r.text()}))).then(function(h){f.srcdoc=m==="asis"?h:injMock(h,kd,f.getAttribute("data-s"))}).catch(function(){})}
 function fvInit(){var a=document.querySelectorAll("iframe.fvx"),i;
  for(i=0;i<a.length;i++)(function(f){if(f._l)return;
   if(window.IntersectionObserver){var o=new IntersectionObserver(function(es){if(es[0].isIntersecting){f._l=1;o.disconnect();fvLoad(f)}},{rootMargin:"200px"});o.observe(f)}

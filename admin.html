@@ -358,7 +358,7 @@ function cat(c){var a=all().filter(function(e){return !e.o.del&&ck(e.o)===c});a.
 function move(d){var a=cat(ck(cur.o)),i=a.findIndex(function(e){return e.o===cur.o}),j=i+d,t;if(i<0||j<0||j>=a.length)return;t=a[i];a[i]=a[j];a[j]=t;a.forEach(function(e,n){e.o.ord=n});mark()}
 
 function all(){var a=[],k;for(k in C.items)a.push({k:k,o:C.items[k],add:0});C.added.forEach(function(o,i){a.push({k:"+"+i,o:o,add:1,i:i})});return a}
-function render(){syncGN();tabsR();$("q").style.display=(view==="pr"||view==="pw"||view==="bd"||view==="bse"||view==="ai"||view==="so"||view==="sl"||view==="sp")?"none":"";if(view!=="p"){$("chips").innerHTML="";return {j:rj,g:rg,i:ri,s:rs,bd:rbd,ai:rai,pr:rpr,pw:rpw,promo:rpromo,bse:rbse,so:rso,sl:rsl,sp:rsp}[view]()}
+function render(){syncGN();tabsR();$("q").style.display=(view==="pr"||view==="pw"||view==="bd"||view==="bse"||view==="ai"||view==="so"||view==="sl"||view==="sp"||view==="up")?"none":"";if(view!=="p"){$("chips").innerHTML="";return {j:rj,g:rg,i:ri,s:rs,bd:rbd,ai:rai,pr:rpr,pw:rpw,promo:rpromo,bse:rbse,so:rso,sl:rsl,sp:rsp,up:rup}[view]()}
  var keys=["all"].concat(Object.keys(GN));
  $("chips").innerHTML=keys.map(function(k){return '<button type="button" data-f="'+k+'" class="'+(k===flt?"on":"")+'">'+(k==="all"?"All":GN[k])+'</button>'}).join("");
  var q=$("q").value.trim().toLowerCase(),h="";
@@ -1018,7 +1018,7 @@ return {render:render,gen:gen,S:function(){return S},trace:trace,setImg:setImg,p
 function rbse(){BSE.render()}
 /*BSE-END*/
 
-var TG=[["Katalog",[["p","Packages"],["j","Boosters"],["g","Categories"]]],["Konten",[["i","Steps & Info"],["s","Site texts"]]],["Studio",[["bd","Builder"],["pr","Prompt"],["pw","Preview web"],["promo","Promosi"],["bse","Base"]]],["Penjualan",[["so","Order"],["sl","Link"],["sp","Produk & file"]]]];
+var TG=[["Katalog",[["up","Upload"],["p","Packages"],["j","Boosters"],["g","Categories"]]],["Konten",[["i","Steps & Info"],["s","Site texts"]]],["Studio",[["bd","Builder"],["pr","Prompt"],["pw","Preview web"],["promo","Promosi"],["bse","Base"]]],["Penjualan",[["so","Order"],["sl","Link"],["sp","Produk & file"]]]];
 
 var rpromo=(function(){
 var $=function(i){return document.getElementById(i)};
@@ -2069,7 +2069,7 @@ function mkFrom(t){var th="",g,o,f;if(JSON.stringify(t).indexOf("{T}")>-1){th=pr
  C.added.push(o);$("shP").classList.remove("on");autoNew=1;openE("+"+(C.added.length-1));cur.isNew=1}
 var PVK=[["o","Pixel Arcade (Xbox)"],["w","Water Ring (Xbox)"],["s","Silk Classic (Xbox)"],["g","Fantasy RPG Gold (Xbox)"],["k1","Dark Glass (Xbox)"],["k2","Esports Angular (Xbox)"],["k3","Comic Pop Art (Xbox)"],["k4","Manga Ink (Xbox)"],["k5","Pirate Ship (Xbox)"],["k6","Street Graffiti 3D (Xbox)"],["d","Shadow Fight 2 (PS5)"],["d2","Art Deco (PS5)"]];
 function pvName(k){var r=PVK.filter(function(x){return x[0]===k})[0];return r?r[1]:k}
-function mockPad(kind){var on=1,t0=performance.now(),T=16000,K=kind||"xbox",cyc=K==="cycle",ord=["xbox","ps5","switch"],lap=-1,cur=cyc?"xbox":K,
+function mockPad(kind,seq){var on=1,t0=performance.now(),T=16000,K=kind||"xbox",cyc=K==="cycle",ord=["xbox","ps5","switch"],lap=-1,cur=cyc?"xbox":K,
 ids={xbox:"Xbox Controller (STANDARD GAMEPAD Vendor: 045e Product: 0b12)",ps5:"Wireless Controller (STANDARD GAMEPAD Vendor: 054c Product: 0ce6)","switch":"Pro Controller (STANDARD GAMEPAD Vendor: 057e Product: 2009)"};
 addEventListener("message",function(e){if(e.data==="pv:play")on=1;if(e.data==="pv:pause")on=0});
 /*demo-halus*/
@@ -2099,11 +2099,12 @@ P(0,13200,300);
 if(cur==="ps5")P(17,14300,640);
 for(i=0;i<MS.length;i++)P(MS[i][0],MS[i][1],MS[i][2]);
 return {id:ids[cur],index:0,connected:true,mapping:"standard",timestamp:t,axes:a,buttons:b.map(function(x){return {pressed:x>.5,touched:x>0,value:x}})}}
+var SQ=seq?String(seq).split(","):[];if(SQ.length){var GR={ab:[250,2250,[0,1,2,3],[]],bump:[2250,3500,[4,5],[]],trig:[3450,6100,[6,7],[]],dpad:[6150,7600,[12,13,14,15],[]],menu:[7750,9700,[8,9,10,11],[]],ls:[9950,11850,[],[0,1]],rs:[11650,13200,[],[2,3]],mash:[14950,16000,[0,1,2,3],[]]},SG=[],tot=0,mk=make;SQ.forEach(function(k){var g=GR[k];if(g){SG.push({w:g,o:tot});tot+=g[1]-g[0]+120}});if(SG.length){T=tot;make=function(t){var i,g=SG[0],r,o,j,ax=[],bt=[];for(i=0;i<SG.length;i++)if(t>=SG[i].o)g=SG[i];o=Math.min(g.w[0]+t-g.o,g.w[1]);r=mk(o);for(j=0;j<r.axes.length;j++)ax.push(g.w[3].indexOf(j)>=0?r.axes[j]:0);for(j=0;j<r.buttons.length;j++)bt.push(g.w[2].indexOf(j)>=0?r.buttons[j]:{pressed:false,touched:false,value:0});r.axes=ax;r.buttons=bt;r.timestamp=t;return r}}}
 var last=make(0);
 function fire(n){var ev=new Event(n);ev.gamepad=last;dispatchEvent(ev)}
 try{navigator.getGamepads=function(){var el=performance.now()-t0,n=Math.floor(el/T);if(cyc&&n!==lap){lap=n;if(n>0){fire("gamepaddisconnected");cur=ord[n%ord.length];last=make(0);fire("gamepadconnected")}else cur=ord[0]}if(on)last=make(el%T);return [last,null,null,null]}}catch(e){}
 addEventListener("load",function(){fire("gamepadconnected")})}
-function injMock(h,kind){var S="<script>("+mockPad.toString()+")("+JSON.stringify(kind||"xbox")+")<\/script>",m=/<head[^>]*>/i.exec(h)||/<html[^>]*>/i.exec(h),d=/^\s*<!doctype[^>]*>/i;
+function injMock(h,kind,seq){var S="<script>("+mockPad.toString()+")("+JSON.stringify(kind||"xbox")+","+JSON.stringify(seq||"")+")<\/script>",m=/<head[^>]*>/i.exec(h)||/<html[^>]*>/i.exec(h),d=/^\s*<!doctype[^>]*>/i;
  return m?h.slice(0,m.index+m[0].length)+S+h.slice(m.index+m[0].length):(d.test(h)?h.replace(d,function(x){return x+S}):S+h)}
 
 function pvSel(o){var c=ck(o)==="other|controller";$("fpvl").style.display=c?"":"none";
@@ -2114,7 +2115,7 @@ if(!o.file){msg("Add your overlay file first (Replace file) to use this preview 
 function pvw(o,m){var d=$("pv"),f,go;d.innerHTML="";m=m===undefined?(o.pv==="key"?"key:"+o.cvk:(o.pv==="demo"&&o.pk&&o.pk!=="xbox"?"demo:"+o.pk:(o.pv||"demo"))):m;
 if(m.indexOf("key:")===0){f=document.createElement("iframe");f.setAttribute("sandbox","allow-scripts");d.appendChild(f);refPv(m.slice(4),f);d.insertAdjacentHTML("beforeend",'<p class="note">Preview '+esc(pvName(m.slice(4)))+' (sama seperti di index).</p>');return}
 if(!o.file)return;f=document.createElement("iframe");f.setAttribute("sandbox","allow-scripts");f.style.cssText="width:100%;height:200px;border:1px solid var(--ln);border-radius:12px;margin-bottom:12px;background:#000";d.appendChild(f);
-go=function(t){f.srcdoc=m==="asis"?t:injMock(t,m.indexOf("demo:")===0?m.slice(5):"xbox")};
+go=function(t){f.srcdoc=m==="asis"?t:injMock(t,m.indexOf("demo:")===0?m.slice(5):"xbox",o.pks)};
 if(pend[o.file]!=null)go(pend[o.file]);else fetch(o.file).then(function(r){return r.text()}).then(go).catch(function(){f.src=o.file})}
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function find(k){return k[0]==="+"?{o:C.added[+k.slice(1)],add:1,i:+k.slice(1)}:{o:C.items[k],add:0,k:k}}
@@ -2175,13 +2176,51 @@ function ghx(path,method,body){return fetch("https://api.github.com/repos/"+S.re
 /* ---- Satu alur: unggah HTML controller sekali -> repo privat -> produk, harga & link di toko ---- */
 function pRepo(){return S.prepo||((S.repo||"").split("/")[0]+"/pressure-overlays")}
 function pGh(path,method,body){return fetch("https://api.github.com/repos/"+pRepo()+path,{method:method,headers:{Authorization:"Bearer "+S.token,Accept:"application/vnd.github+json"},body:body?JSON.stringify(body):undefined}).then(function(r){return r.json().catch(function(){return {}}).then(function(j){if(r.status===404&&method==="GET"&&path)return null;if(!r.ok)throw new Error("Repo privat "+pRepo()+": "+r.status+(j&&j.message?" "+j.message:""));return j})})}
+/* ---- Upload cepat (sub tab Katalog > Upload) ---- */
+var UPS={t:"",f:"",nm:"",sub:"xbox-series-x",h:"",u:"",sq:["ab","bump","trig","dpad","menu","ls","rs"]},
+UPG=[["ab","ABXY"],["bump","Bumper"],["trig","Trigger"],["dpad","D-pad"],["menu","Menu & tekan stik"],["ls","Analog kiri"],["rs","Analog kanan"],["mash","ABXY cepat"]],
+UPT=[["xbox-series-x","Xbox Series X"],["xbox-one-s","Xbox One S"],["xbox-one-og","Xbox One OG"],["ps5-dualsense","PS5 DualSense"]],UPD="ab,bump,trig,dpad,menu,ls,rs";
+function upSlug(s){return String(s).toLowerCase().replace(/\.html?$/,"").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
+function upTheme(f){return f.replace(/\.html?$/i,"").replace(/[-_]+/g," ").replace(/\b(controller|overlay|edition|edisi)\b/ig,"").replace(/\s+/g," ").trim().replace(/\b[a-z]/g,function(c){return c.toUpperCase()}).replace(/\b(Og|Ps5|Rpg|Rgb|Hd|Ui)\b/g,function(c){return c.toUpperCase()})}
+function upDet(f){f=f.toLowerCase();return /dualsense|ps5/.test(f)?"ps5-dualsense":/one[-_ ]?s([-_ .]|$)/.test(f)?"xbox-one-s":/one[-_ ]?og|(^|[-_ ])og([-_ .]|$)/.test(f)?"xbox-one-og":"xbox-series-x"}
+function upFind(f){var r=null;all().forEach(function(e){if(!e.o.del&&e.o.file===f)r=e});return r}
+function upSync(){var g=function(i){return $(i)?$(i).value:null};if($("upN")){UPS.nm=g("upN");UPS.sub=g("upT")}if($("upH")){UPS.h=g("upH");UPS.u=g("upU")}}
+function upSeq(){return UPS.sq.join(",")===UPD?"":UPS.sq.join(",")}
+function rup(){var S0=UPS,L=$("list"),f=S0.f?"overlays/"+S0.f+".html":"",ex=f?upFind(f):null,h;
+ if(ex&&S0.h===""){S0.h=ex.o.h||"";S0.u=ex.o.usd||""}
+ h='<p class="note" style="margin-bottom:10px">Pilih file HTML, isi harga, lalu Simpan. File masuk ke repo privat dan produk langsung siap dijual.</p><label class="b g" style="display:block;text-align:center;margin-bottom:12px">'+(S0.t?"Ganti file":"Pilih file HTML")+'<input id="upF" type="file" accept=".html,text/html" style="display:none"></label>';
+ if(S0.t){
+  h+=ex?'<p class="note" style="margin-bottom:8px">Produk lama ditemukan: <b>'+esc(ex.o.n)+'</b>. Judul dan deskripsi dipertahankan, file & preview diperbarui.</p>':'<label>Nama tema<input id="upN" value="'+esc(S0.nm)+'"></label><label>Jenis controller<select id="upT">'+UPT.map(function(t){return '<option value="'+t[0]+'"'+(t[0]===S0.sub?" selected":"")+'>'+t[1]+'</option>'}).join("")+'</select></label>';
+  h+='<label>Harga (Rp)<input id="upH" inputmode="numeric" value="'+esc(S0.h)+'" placeholder="mis. 129000"></label><label>Harga USD (kosongkan = otomatis)<input id="upU" inputmode="numeric" value="'+esc(S0.u)+'"></label>';
+  h+='<p class="note" style="margin:10px 0 6px">Preview demo (ketuk sesuai urutan):</p><div>'+UPG.map(function(g){var i=S0.sq.indexOf(g[0]);return '<button type="button" data-g="'+g[0]+'" class="b'+(i<0?" g":"")+'" style="width:auto;display:inline-block;padding:6px 11px;margin:0 6px 6px 0">'+(i<0?"":(i+1)+" · ")+g[1]+'</button>'}).join("")+'</div><iframe id="upV" sandbox="allow-scripts" style="width:100%;height:210px;border:1px solid var(--ln);border-radius:12px;margin:8px 0 12px;background:#000"></iframe><button type="button" class="b" id="upS" style="width:100%">Simpan & siap dijual</button>'}
+ L.innerHTML=h;
+ $("upF").onchange=function(){var fl=this.files[0];if(!fl)return;var r=new FileReader();r.onload=function(){var t=String(r.result);if(t.indexOf("getGamepads")<0)msg("File ini tidak memakai Gamepad API, preview demo mungkin diam.",6000);UPS.t=t;UPS.f=upSlug(fl.name);UPS.nm=upTheme(fl.name);UPS.sub=upDet(fl.name);UPS.h="";UPS.u="";rup()};r.readAsText(fl)};
+ if(!S0.t)return;
+ var v=$("upV");if(v)v.srcdoc=injMock(S0.t,S0.sub==="ps5-dualsense"?"ps5":(ex&&ex.o.pk)||"xbox",upSeq());
+ [].forEach.call(L.querySelectorAll("[data-g]"),function(b){b.onclick=function(){upSync();var k=b.getAttribute("data-g"),i=UPS.sq.indexOf(k);if(i<0)UPS.sq.push(k);else UPS.sq.splice(i,1);rup()}});
+ $("upS").onclick=upSave}
+function upSave(){upSync();var S0=UPS,f="overlays/"+S0.f+".html",h=parseInt(String(S0.h).replace(/\D/g,""),10)||0,u,ex=upFind(f),o,ty,th,pk=upSeq();
+ if(!S0.t){msg("Pilih file HTML dulu.");return}
+ if(h<=0){msg("Isi harga dulu.");return}
+ if(!S0.sq.length){msg("Pilih minimal satu gerakan demo.");return}
+ u=parseInt(S0.u,10)||Math.max(1,Math.round(h/(C.rate||12500)));
+ mark();
+ if(ex){o=ex.o;o.h=h;o.usd=u;o.file=f;o.hide=false;if(!(o.pv==="key"&&o.cvk))o.pv="demo"}
+ else{ty=UPT.filter(function(t){return t[0]===S0.sub})[0][1];th=(S0.nm||"").trim()||"Custom";
+  o={n:"Overlay Controller "+ty+" - "+th+" Edition",ne:ty+" Controller Overlay - "+th+" Edition",d:"Edisi overlay controller "+ty+" bertema "+th+" yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",de:ty+" controller overlay, "+th+" theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",h:h,usd:u,g:"other",os:"controller",hide:false,file:f,ctl:true,pv:"demo",sub:S0.sub,tag:"Baru",tage:"New"};
+  if(S0.sub==="ps5-dualsense")o.pk="ps5";C.added.push(o)}
+ if(pk)o.pks=pk;else delete o.pks;
+ pend[f]=S0.t;
+ UPS.t="";UPS.f="";UPS.h="";UPS.u="";UPS.sq=UPD.split(",");
+ rup();publish()}
+
 function sellList(){var r=[];Object.keys(pend).forEach(function(p){if(typeof pend[p]!=="string"||!/^overlays\/[^/]+\.html$/.test(p))return;var e=all().filter(function(x){return !x.o.del&&x.o.file===p})[0];if(e&&e.o.h>0&&!e.o.custom)r.push({p:p,o:e.o})});return r}
 function sellFlow(){var L=sellList(),i=0,br;if(!L.length)return Promise.resolve();
  if(!SPW){var w=prompt("Password admin penjualan (untuk mendaftarkan produk ke toko):");if(!w)return Promise.reject(new Error("Password penjualan diperlukan"));SPW=w;try{localStorage.setItem("spw",w)}catch(x){}}
  return pGh("","GET").then(function(r){br=r.default_branch;var nx=function(){if(i>=L.length)return;var x=L[i++],o=x.o,c=sCat(o.n)||["stream","Stream Overlay"];msg("Menjual "+i+"/"+L.length+": "+o.n+"…",0);
   return pGh("/contents/"+x.p+"?ref="+br,"GET").then(function(ex){return pGh("/contents/"+x.p,"PUT",{message:"admin: "+o.n,content:enc(pend[x.p]),branch:br,sha:ex&&ex.sha||undefined})})
   .then(function(){return sApi("/admin/api/sell",{name:o.n,cat:c[0],cat_name:c[1],price:o.h,src:"https://raw.githubusercontent.com/"+pRepo()+"/"+br+"/"+x.p}).then(function(r){return r.json()})})
-  .then(function(j){if(!j.id)throw new Error(j.error||"Gagal mendaftarkan produk");o.shop=j.id;o.pv="key";delete pend[x.p];SD=null}).then(nx)};return nx()})}
+  .then(function(j){if(!j.id)throw new Error(j.error||"Gagal mendaftarkan produk");o.shop=j.id;o.srv=1;if(!o.pv||(o.pv==="key"&&!o.cvk))o.pv="demo";delete pend[x.p];SD=null}).then(nx)};return nx()})}
 /* file yang dijual tidak ada di situs publik: pratinjau di admin diambil lewat Worker */
 var _fch=window.fetch;window.fetch=function(u){var s=typeof u==="string"?u:(u&&u.url)||"",e;if(SPW&&/^overlays\/[^?#]+\.html/.test(s)){e=all().filter(function(x){return x.o.shop&&x.o.file&&s.indexOf(x.o.file)===0})[0];if(e)return sApi("/admin/preview/"+encodeURIComponent(e.o.shop))}return _fch.apply(this,arguments)};
 function publish(){if(!cfg()){$("shS").classList.add("on");msg("Add repo and token first.");return}
