@@ -1,7 +1,4 @@
 {
- "0": {
-  "joki": []
- },
  "v": 1,
  "items": {
   "nfs-heat|Time Track Bonus Footage oleh Pro Player": {
@@ -216,7 +213,7 @@
    "os": "controller",
    "g": "other",
    "sub": "xbox-series-x",
-   "ord": 7
+   "ord": 6
   },
   "other|Overlay Controller Xbox Series X - Water Ring Edition": {
    "n": "Overlay Controller Xbox Series X - Water Ring Edition",
@@ -233,7 +230,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 8
+   "ord": 7
   },
   "other|Overlay Controller Xbox Series X - Silk Classic": {
    "n": "Overlay Controller Xbox Series X - Silk Classic",
@@ -250,7 +247,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 9
+   "ord": 8
   },
   "other|Overlay Controller Xbox Series X - Fantasy RPG Gold Edition": {
    "n": "Overlay Controller Xbox Series X - Fantasy RPG Gold Edition",
@@ -267,7 +264,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 10
+   "ord": 9
   },
   "other|Overlay Controller PS5 DualSense - Shadow Fight 2 Classic": {
    "n": "Overlay Controller PS5 DualSense - Shadow Fight 2 Classic",
@@ -284,7 +281,7 @@
    "g": "other",
    "pv": "key",
    "sub": "ps5-dualsense",
-   "ord": 11
+   "ord": 10
   },
   "other|Overlay Controller Xbox Series X - Dark Glass Classic": {
    "n": "Overlay Controller Xbox Series X - Dark Glass Classic",
@@ -301,7 +298,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 12
+   "ord": 11
   },
   "other|Overlay Controller Xbox Series X - Esports Angular Classic": {
    "n": "Overlay Controller Xbox Series X - Esports Angular Classic",
@@ -318,7 +315,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 13
+   "ord": 12
   },
   "other|Overlay Controller Xbox Series X - Comic Pop Art Classic": {
    "n": "Overlay Controller Xbox Series X - Comic Pop Art Classic",
@@ -335,7 +332,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 14
+   "ord": 13
   },
   "other|Overlay Controller Xbox Series X - Manga Ink Edition": {
    "n": "Overlay Controller Xbox Series X - Manga Ink Edition",
@@ -352,7 +349,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 15
+   "ord": 14
   },
   "other|Overlay Controller Xbox Series X - Pirate Ship Edition": {
    "n": "Overlay Controller Xbox Series X - Pirate Ship Edition",
@@ -369,7 +366,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 16
+   "ord": 15
   },
   "other|Overlay Controller Xbox Series X - Street Graffiti 3D Classic": {
    "n": "Overlay Controller Xbox Series X - Street Graffiti 3D Classic",
@@ -386,7 +383,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 17
+   "ord": 16
   },
   "other|Overlay Controller PS5 DualSense - Art Deco Classic": {
    "n": "Overlay Controller PS5 DualSense - Art Deco Classic",
@@ -403,7 +400,7 @@
    "g": "other",
    "pv": "key",
    "sub": "ps5-dualsense",
-   "ord": 18
+   "ord": 17
   },
   "other|Overlay Controller Xbox Series X - Watercolor Classic": {
    "n": "Overlay Controller Xbox Series X - Watercolor Classic",
@@ -420,7 +417,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 19
+   "ord": 18
   },
   "other|Overlay Controller Xbox Series X - Military Tactical Classic": {
    "n": "Overlay Controller Xbox Series X - Military Tactical Classic",
@@ -437,7 +434,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 20
+   "ord": 19
   },
   "other|Overlay Controller Xbox Series X - Arcade Cabinet Edition": {
    "n": "Overlay Controller Xbox Series X - Arcade Cabinet Edition",
@@ -454,7 +451,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 21
+   "ord": 20
   },
   "other|Overlay Controller Xbox Series X - VHS Analog Edition": {
    "n": "Overlay Controller Xbox Series X - VHS Analog Edition",
@@ -471,7 +468,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 22
+   "ord": 21
   },
   "other|Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition": {
    "n": "Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition",
@@ -488,7 +485,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 23
+   "ord": 22
   },
   "other|Overlay Controller Xbox Series X - Pixel 8-bit Classic": {
    "n": "Overlay Controller Xbox Series X - Pixel 8-bit Classic",
@@ -505,7 +502,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 24
+   "ord": 23
   },
   "other|Overlay Controller Xbox Series X - Steampunk Brass Edition": {
    "n": "Overlay Controller Xbox Series X - Steampunk Brass Edition",
@@ -522,7 +519,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 25
+   "ord": 24
   },
   "other|Overlay Controller Xbox Series X - Western Saloon Edition": {
    "n": "Overlay Controller Xbox Series X - Western Saloon Edition",
@@ -539,7 +536,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 26
+   "ord": 25
   },
   "other|Overlay Controller Xbox Series X - Tropical Summer Beach Classic": {
    "n": "Overlay Controller Xbox Series X - Tropical Summer Beach Classic",
@@ -556,7 +553,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 27
+   "ord": 26
   },
   "other|Overlay Controller Xbox Series X - Mecha Edition": {
    "n": "Overlay Controller Xbox Series X - Mecha Edition",
@@ -573,7 +570,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 28
+   "ord": 27
   },
   "other|Overlay Controller Xbox Series X - Retro 90s CRT Edition": {
    "n": "Overlay Controller Xbox Series X - Retro 90s CRT Edition",
@@ -590,7 +587,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 29
+   "ord": 28
   },
   "other|Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition": {
    "n": "Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition",
@@ -607,7 +604,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 30
+   "ord": 29
   },
   "other|Overlay Controller Xbox Series X - Cyber Tokyo Night Classic": {
    "n": "Overlay Controller Xbox Series X - Cyber Tokyo Night Classic",
@@ -624,7 +621,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 31
+   "ord": 30
   },
   "other|Overlay Controller Xbox Series X - Sakura Edition": {
    "n": "Overlay Controller Xbox Series X - Sakura Edition",
@@ -641,7 +638,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 32
+   "ord": 31
   },
   "other|Overlay Controller Xbox Series X (Custom)": {
    "n": "Overlay Controller Xbox Series X (Custom)",
@@ -656,7 +653,7 @@
    "os": "controller",
    "g": "other",
    "sub": "xbox-series-x",
-   "ord": 37
+   "ord": 36
   }
  },
  "added": [
@@ -675,10 +672,24 @@
    "old": 199000,
    "tage": "New",
    "oldu": 16,
-   "ord": 6,
+   "ord": 5,
    "file": "overlays/xbox-series-x-controller-overlay-cloud-pastel-edition.html",
    "ctl": true,
-   "pv": "demo"
+   "pv": "demo",
+   "ft": [
+    "Tombol, stik, dan trigger bereaksi real-time",
+    "Awan lembut melayang di atas body gamepad",
+    "Chip awan muncul di plat atas tiap tombol ditekan",
+    "Maskot Kumo: senang saat input, mata bintang saat trigger penuh, tidur saat idle",
+    "Tombol Home hanya hiasan"
+   ],
+   "fte": [
+    "Buttons, sticks and triggers react in real time",
+    "Soft clouds drift across the gamepad body",
+    "A cloud chip rises on the top plate for every press",
+    "Kumo mascot: happy on input, star eyes at full trigger, sleeps when idle",
+    "Home button is decoration only"
+   ]
   },
   {
    "n": "Overlay Controller Xbox One OG - Ice Crystal Edition",
@@ -698,7 +709,21 @@
    "tage": "New",
    "oldu": 12,
    "usd": 4,
-   "ord": 5
+   "ord": 4,
+   "ft": [
+    "Tombol, stik, dan trigger bereaksi dengan efek es",
+    "Trigger terisi seperti kristal es",
+    "Milestone tiap 100 tekanan dengan efek khusus",
+    "Urutan tombol rahasia memecahkan kristal",
+    "Tombol Home hanya hiasan"
+   ],
+   "fte": [
+    "Buttons, sticks and triggers react with ice effects",
+    "Triggers fill up like ice crystal",
+    "Milestone effect every 100 presses",
+    "A secret button sequence shatters the crystal",
+    "Home button is decoration only"
+   ]
   },
   {
    "n": "Overlay Controller Xbox Series X - Classic Grey Edition",
@@ -710,7 +735,7 @@
    "g": "other",
    "os": "controller",
    "hide": false,
-   "ord": 2,
+   "ord": 1,
    "file": "overlays/xbox-series-x-controller-overlay-classic-grey-edition.html",
    "ctl": true,
    "pv": "demo",
@@ -718,7 +743,21 @@
    "tag": "Baru",
    "old": 199000,
    "tage": "New",
-   "oldu": 16
+   "oldu": 16,
+   "ft": [
+    "Jam digital 7-segmen di body",
+    "Meter VU bereaksi saat tombol ditekan",
+    "TV mini di tengah gamepad",
+    "Efek glitch layar",
+    "Jejak gerak mengikuti stik"
+   ],
+   "fte": [
+    "7-segment digital clock on the body",
+    "VU meter reacts to presses",
+    "Mini TV on the gamepad",
+    "Screen glitch effect",
+    "Motion trail follows the sticks"
+   ]
   },
   {
    "n": "Overlay Controller Xbox Series X - Mint Mixel Sword Edition",
@@ -738,7 +777,21 @@
    "old": 199000,
    "tage": "New",
    "oldu": 16,
-   "ord": 4
+   "ord": 3,
+   "ft": [
+    "Meter Ultimate terisi tiap tombol ditekan, mode Ultimate 5 detik lalu cooldown",
+    "Bar XP dan LV naik tiap 100 tekanan",
+    "Tahan L3 + R3 sekitar 1 detik: sapuan pedang",
+    "Layar meredup saat idle 15 detik",
+    "Tombol Home hanya hiasan"
+   ],
+   "fte": [
+    "Ultimate meter fills with every press, 5-second Ultimate mode then cooldown",
+    "XP bar and LV rise every 100 presses",
+    "Hold L3 + R3 for about 1 second: sword sweep",
+    "Dims when idle for 15 seconds",
+    "Home button is decoration only"
+   ]
   },
   {
    "n": "Overlay Controller Xbox One S - Sunset Galaxy Edition",
@@ -757,8 +810,22 @@
    "old": 120000,
    "tage": "New",
    "oldu": 10,
-   "ord": 3,
-   "sub": "xbox-one-s"
+   "ord": 2,
+   "sub": "xbox-one-s",
+   "ft": [
+    "Spiral galaksi berputar, makin cepat saat tekan tombol cepat (hype)",
+    "Percikan bintang saat ABXY ditekan",
+    "Hack Terminal: segmen terisi, LED merah jadi hijau",
+    "Meter langit dengan matahari dan bulan sesuai jam nyata",
+    "Kode rahasia (Konami) memicu efek spesial"
+   ],
+   "fte": [
+    "Galaxy spiral spins faster when you press quickly (hype)",
+    "Star sparks on ABXY presses",
+    "Hack Terminal: segments fill, LED turns red to green",
+    "Sky meter with sun and moon following real time",
+    "Secret code (Konami) triggers a special effect"
+   ]
   },
   {
    "n": "Overlay Controller Xbox One OG - Retro Arcade One OG Edition",
@@ -774,7 +841,21 @@
    "file": "overlays/retro-arcade-one-og.html",
    "pv": "demo",
    "hide": false,
-   "ord": 33
+   "ord": 32,
+   "ft": [
+    "Kode Konami (↑↑↓↓←→←→ B A): hujan koin 4 detik",
+    "Level up dengan ledakan piksel tiap 100 tekanan",
+    "Percikan piksel saat ABXY ditekan",
+    "Meter combo naik saat menekan cepat",
+    "Mode tidur saat idle, bisa diatur lewat ?idle="
+   ],
+   "fte": [
+    "Konami code (Up Up Down Down Left Right Left Right B A): 4-second coin rain",
+    "Level-up pixel burst every 100 presses",
+    "Pixel sparks on ABXY presses",
+    "Combo meter rises when you press fast",
+    "Sleep mode when idle, adjustable with ?idle="
+   ]
   },
   {
    "n": "Overlay Controller Xbox One OG - Pastel Rocket Launch One OG Edition",
@@ -791,7 +872,21 @@
    "file": "overlays/pastel-rocket-launch-one-og.html",
    "pv": "demo",
    "hide": false,
-   "ord": 34
+   "ord": 33,
+   "ft": [
+    "Roket naik bertahap tiap 25 tekanan",
+    "Peluncuran roket tiap 100 tekanan",
+    "Mode hype: api menyala saat menekan cepat",
+    "Tekan X 5 kali dalam 1,5 detik: efek spesial",
+    "Baterai naik saat aktif, turun saat idle"
+   ],
+   "fte": [
+    "Rocket climbs a step every 25 presses",
+    "Rocket launch every 100 presses",
+    "Hype mode: flames ignite when you press fast",
+    "Press X 5 times within 1.5 seconds: special effect",
+    "Battery rises when active, drains when idle"
+   ]
   },
   {
    "n": "Overlay Controller Xbox Series X - Crimson Jellyfish Drift Edition",
@@ -806,8 +901,22 @@
    "file": "overlays/crimson-jellyfish-drift.html",
    "pv": "demo",
    "hide": false,
-   "ord": 35,
-   "sub": "xbox-series-x"
+   "ord": 34,
+   "sub": "xbox-series-x",
+   "ft": [
+    "Suasana laut siang, senja, atau malam (?theme=day|dusk|night)",
+    "Gelembung naik tiap tombol ditekan",
+    "Jam analog gelembung dengan waktu nyata",
+    "Putar stik 360 derajat: pusaran air",
+    "Meter arus laut dan jejak gelembung di stik"
+   ],
+   "fte": [
+    "Day, dusk, or night ocean mood (?theme=day|dusk|night)",
+    "Bubbles rise on every press",
+    "Bubble analog clock showing real time",
+    "Spin a stick 360 degrees: whirlpool",
+    "Ocean current meter and bubble trail on the sticks"
+   ]
   },
   {
    "n": "Overlay Controller Xbox One S - Holo Planet Rings One S Edition",
@@ -824,7 +933,21 @@
    "file": "overlays/holo-planet-rings-one-s.html",
    "pv": "demo",
    "hide": false,
-   "ord": 36
+   "ord": 35,
+   "ft": [
+    "Body berdenyut seperti planet",
+    "Pendamping mengorbit mengikuti stik, mode BOOST saat stik penuh",
+    "Meter mood dan level cincin planet",
+    "Portal dan hujan meteor",
+    "Tombol Home hanya hiasan"
+   ],
+   "fte": [
+    "Body pulses like a planet",
+    "A companion orbits following the sticks, BOOST mode at full tilt",
+    "Mood meter and planet ring level",
+    "Portal and meteor shower",
+    "Home button is decoration only"
+   ]
   },
   {
    "n": "Overlay Controller Xbox One S - Neon Phoenix Wings One S Edition",
@@ -841,82 +964,25 @@
    "file": "overlays/neon-phoenix-wings-one-s.html",
    "pv": "demo",
    "hide": false,
-   "ord": 1,
-   "tag": "Baru",
-   "old": 199000,
-   "tage": "New",
-   "oldu": 16
-  },
-  {
-   "n": "Overlay Controller Xbox Series X - Pastel Waterfall Edition",
-   "ne": "Xbox Series X Controller Overlay - Pastel Waterfall Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Pastel Waterfall yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Dilengkapi animasi bertema. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Pastel Waterfall theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. Includes themed animations. For OBS or Streamlabs.",
-   "h": 99000,
-   "usd": 7,
-   "g": "other",
-   "os": "controller",
-   "ctl": true,
-   "sub": "xbox-series-x",
-   "file": "overlays/pastel-waterfall.html",
-   "pv": "key",
-   "hide": false,
    "ord": 0,
+   "tag": "Baru",
    "old": 199000,
+   "tage": "New",
    "oldu": 16,
-   "shop": "overlay-controller-xbox-series-x-pastel-waterfall-edition"
-  },
-  {
-   "n": "Overlay Controller Xbox Series X - Sunset Sky Castle Xbox Series X 3d Edition",
-   "ne": "Xbox Series X Controller Overlay - Sunset Sky Castle Xbox Series X 3d Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Sunset Sky Castle Xbox Series X 3d yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Sunset Sky Castle Xbox Series X 3d theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
-   "h": 99000,
-   "usd": 7,
-   "g": "other",
-   "os": "controller",
-   "hide": false,
-   "file": "overlays/sunset-sky-castle-xbox-series-x-overlay-3d.html",
-   "ctl": true,
-   "pv": "demo",
-   "sub": "xbox-series-x",
-   "tag": "Baru",
-   "tage": "New",
-   "pks": "ab,bump,trig,dpad,menu,ls,rs,mash",
-   "shop": "overlay-controller-xbox-series-x-sunset-sky-castle-xbox-series-x-3d-edition",
-   "srv": 1
-  },
-  {
-   "n": "Overlay Controller Xbox Series X - Gold Cyber City Edition",
-   "ne": "Xbox Series X Controller Overlay - Gold Cyber City Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Gold Cyber City yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Gold Cyber City theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
-   "h": 99000,
-   "usd": 8,
-   "g": "other",
-   "os": "controller",
-   "hide": false,
-   "file": "overlays/gold-cyber-city-xbox-series-x-overlay-3d.html",
-   "ctl": true,
-   "pv": "demo",
-   "sub": "xbox-series-x",
-   "tag": "Baru",
-   "tage": "New",
-   "nd": "2026-10-19",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Slot spinner 3 gulungan, jackpot tiap 7 putaran",
+    "Hitung total tekan dan combo secara langsung",
+    "Sayap api bereaksi saat tombol ditekan",
+    "Milestone tiap 100 tekanan",
+    "Urutan tombol rahasia memicu efek spesial"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
-   ],
-   "shop": "overlay-controller-xbox-series-x-gold-cyber-city-edition",
-   "srv": 1
+    "3-reel slot spinner, jackpot every 7 spins",
+    "Live press counter and combo",
+    "Fire wings react to presses",
+    "Milestone every 100 presses",
+    "A secret button sequence triggers a special effect"
+   ]
   }
  ],
  "rate": 12500,
@@ -1617,6 +1683,5 @@
    "n": "Xbox One OG",
    "h": 199000
   }
- ],
- "pSync": 0
+ ]
 }

@@ -1,0 +1,596 @@
+[
+ {
+  "file": "xbox-controller-pixel-arcade-v13-no-dino.html",
+  "nama": "Pixel Arcade (v13, tanpa dino)",
+  "ft": [
+   "Tiap tombol ditekan memunculkan satu balok Tetris di layar",
+   "Balok berputar dan jatuh sendiri, baris penuh terhapus",
+   "Menekan cepat mempercepat jatuhnya balok",
+   "Game over otomatis reset",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Every button press drops a new Tetris block on the screen",
+   "Blocks rotate and fall by themselves, full rows clear",
+   "Pressing fast speeds up the falling blocks",
+   "Auto reset after game over",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-overlay-luxury-black-gold-pebbled.html",
+  "nama": "Luxury Black & Gold",
+  "ft": [
+   "Gold Rush Meter: tombol beruntun mengisi garis emas 3 level",
+   "Kilau emas sekali saat meter penuh",
+   "Body bisa digeser di layar HP untuk memiringkan",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Gold Rush Meter: rapid presses fill a 3-level gold line",
+   "One-time gold shine when the meter is full",
+   "Drag the body on a phone screen to tilt it",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "overlay-xbox-military-tactical.html",
+  "nama": "Military Tactical",
+  "ft": [
+   "Denyut lingkaran taktis di tiap tombol yang ditekan",
+   "Trigger terisi penuh dengan glow ikut turun",
+   "Stik dan tombol bereaksi real-time",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Tactical pulse rings on every press",
+   "Triggers fill fully with glow following the trigger body",
+   "Sticks and buttons react in real time",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-overlay-mecha.html",
+  "nama": "Mecha",
+  "ft": [
+   "Tombol, stik, dan trigger bereaksi real-time",
+   "Trigger terisi dan turun mengikuti tarikan",
+   "Preview HP: seret trigger vertikal, ketuk stik = L3/R3",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Buttons, sticks and triggers react in real time",
+   "Triggers fill and drop following the pull",
+   "On phone: drag triggers vertically, tap a stick = L3/R3",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-steampunk-brass-train-on-body-v2.html",
+  "nama": "Steampunk Brass (kereta di body)",
+  "ft": [
+   "Roda gigi berputar bertahap tiap tombol warna ditekan",
+   "Jarum RT naik sesuai tarikan trigger",
+   "RT penuh: jarum naik cepat ke batas lalu menahan",
+   "RT dilepas: jarum turun sesuai persenan",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Gears turn a step with every colored button press",
+   "RT needle follows the trigger pull",
+   "Full RT: needle rushes to the limit and holds",
+   "Release RT: needle drops with the percentage",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-samurai-ukiyo-e-gulungan-ombak-tinta-animasi-sapuan-kuas.html",
+  "nama": "Samurai Ukiyo-e",
+  "ft": [
+   "Sapuan kuas tinta untuk tiap input",
+   "Gulungan plat mencatat riwayat input dengan cap hanko",
+   "Idle 5 detik: gulungan kembali ke segel",
+   "Tebasan Combo di display Home saat 3+ input beruntun",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "An ink brush stroke for every input",
+   "The plate scroll logs input history with hanko stamps",
+   "Idle for 5 seconds: scroll returns to the seal",
+   "Slash Combo on the Home display for 3+ quick inputs",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "cozy-lofi-laundromat-xbox-series-x-overlay-3d.html",
+  "nama": "Cozy Lo-fi Laundromat",
+  "ft": [
+   "Efek pop di tiap tombol yang ditekan",
+   "Warna lampu suasana berubah sesuai tombol",
+   "Drum mesin cuci bereaksi pada gerakan stik",
+   "Preview HP: ketuk tombol, tahan LT/RT, geser stik",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Pop effect on every press",
+   "Mood light color changes with the button",
+   "Washer drums react to stick movement",
+   "On phone: tap buttons, hold LT/RT, drag sticks",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-pixel-8bit-overlay.html",
+  "nama": "Pixel 8-bit",
+  "ft": [
+   "Mini game di display Home: tombol jadi duri besar",
+   "Kena duri: nyawa hati -1, habis = GAME OVER lalu reset",
+   "Tekan LT + RT bersamaan untuk memulihkan hati",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Mini game on the Home display: buttons become big spikes",
+   "Hit a spike: lose a heart, none left = GAME OVER then reset",
+   "Press LT + RT together to heal a heart",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-overlay-arcade-cabinet.html",
+  "nama": "Arcade Cabinet",
+  "ft": [
+   "Credit Coin: koin jatuh ke slot, kredit naik sampai 99",
+   "Animasi pop di tombol yang ditekan",
+   "Tombol, stik, dan trigger bereaksi real-time",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Credit Coin: a coin drops into the slot, credits rise up to 99",
+   "Pop animation on pressed buttons",
+   "Buttons, sticks and triggers react in real time",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-overlay-vhs-analog.html",
+  "nama": "VHS Analog",
+  "ft": [
+   "Display Home berupa counter kaset",
+   "Trigger bergetar saat ditarik lebih dari setengah",
+   "Preview HP: tekan tombol, geser stik, seret trigger",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Home display works as a tape counter",
+   "Triggers jitter when pulled past halfway",
+   "On phone: press buttons, drag sticks, drag triggers",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-sakura.html",
+  "nama": "Sakura Jepang",
+  "ft": [
+   "Kelopak sakura ambient di belakang controller",
+   "Badai kelopak sesuai meter input",
+   "Semburan kelopak tiap tombol ditekan",
+   "Ranting dan torii menghias body",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Ambient sakura petals behind the controller",
+   "Petal storm following the input meter",
+   "A burst of petals on every press",
+   "Branches and torii decorate the body",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-retro-90s-crt-windows.html",
+  "nama": "Retro 90s CRT/Windows",
+  "ft": [
+   "Kursor klik muncul di tombol yang ditekan",
+   "Efek klik pada kursor tiap input",
+   "Kursor hilang otomatis sesudah 0,65 detik",
+   "Tombol, stik, dan trigger bereaksi real-time",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "A click cursor appears on the pressed button",
+   "Click effect on the cursor for every input",
+   "The cursor fades out after 0.65 seconds",
+   "Buttons, sticks and triggers react in real time",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-cyber-tokyo-night-papa.html",
+  "nama": "Cyber Tokyo Night",
+  "ft": [
+   "Papan neon menampilkan tulisan Jepang untuk tiap tombol",
+   "Papan berkedip saat tombol atau trigger ditekan",
+   "Trigger terisi penuh dengan glow ikut turun",
+   "Tombol, stik, dan trigger bereaksi real-time",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "The neon sign shows Japanese text for every button",
+   "The sign flashes on button or trigger presses",
+   "Triggers fill fully with glow following the body",
+   "Buttons, sticks and triggers react in real time",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-western-saloon-.html",
+  "nama": "Western Saloon",
+  "ft": [
+   "Lubang peluru muncul di papan tiap tombol ditekan",
+   "Pintu saloon berayun saat ada input",
+   "Cap stempel pada poster buron",
+   "Tombol, stik, dan trigger bereaksi real-time",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Bullet holes appear on the board for every press",
+   "Saloon doors swing on input",
+   "A stamp lands on the wanted poster",
+   "Buttons, sticks and triggers react in real time",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-tropical-summer-beach-.html",
+  "nama": "Tropical Summer Beach",
+  "ft": [
+   "Tekan tombol menekan pasir basah, butir pasir terpental, busa pantai menyapu",
+   "Ombak Combo: makin banyak tekanan, makin tinggi ombak",
+   "Diam 2,5 detik: ombak surut",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Pressing a button dents the wet sand, sand grains fly, sea foam sweeps in",
+   "Wave Combo: more presses, higher waves",
+   "Idle for 2.5 seconds: the wave recedes",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-watercolor-.html",
+  "nama": "Watercolor",
+  "ft": [
+   "Tiap tombol memercikkan cat air",
+   "Gelembung warna mekar di tombol yang ditekan",
+   "Riwayat percikan hilang sesudah 5 detik tanpa input",
+   "Tombol, stik, dan trigger bereaksi real-time",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Every button splashes watercolor paint",
+   "A color bloom grows on the pressed button",
+   "Splash history fades after 5 seconds without input",
+   "Buttons, sticks and triggers react in real time",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-overlay-sky-night-3d.html",
+  "nama": "Sky Night",
+  "ft": [
+   "Langit malam dengan bulan dan bintang",
+   "Tombol, stik, dan trigger bereaksi real-time",
+   "Preview HP: ketuk tombol, seret stik dan trigger",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Night sky with moon and stars",
+   "Buttons, sticks and triggers react in real time",
+   "On phone: tap buttons, drag sticks and triggers",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-controller-pirate-ship-v2.html",
+  "nama": "Pirate Ship",
+  "ft": [
+   "Kapal berlayar di peta antara pulau dan X",
+   "Riak air, koin, dan peti harta bereaksi pada input",
+   "Kapal mengangguk saat tombol ditekan",
+   "Roda kemudi hanya hiasan, ikut berputar"
+  ],
+  "fte": [
+   "The ship sails on the map between the island and X",
+   "Water ripples, coins and treasure chest react to input",
+   "The ship nods on button presses",
+   "The helm wheel is decoration and spins along"
+  ]
+ },
+ {
+  "file": "xbox-series-x-dark-glassmorphism.html",
+  "nama": "Dark Glassmorphism",
+  "ft": [
+   "Log input kaca: 3 slot menampilkan tombol terakhir",
+   "Tiap slot menyala 1,5 detik dengan warna tombol",
+   "Tombol, stik, dan trigger bereaksi real-time",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Glass input log: 3 slots show the latest buttons",
+   "Each slot lights up for 1.5 seconds in the button color",
+   "Buttons, sticks and triggers react in real time",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-overlay-manga-hitam-putih.html",
+  "nama": "Manga Hitam-Putih",
+  "ft": [
+   "Tekan L3 dan R3 hampir bersamaan: ganti mode hitam-putih dan berwarna",
+   "Transisi menyapu dengan efek reveal",
+   "Tombol combo tercatat sebagai riwayat",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Press L3 and R3 almost together: switch black-and-white and color modes",
+   "The transition sweeps in with a reveal effect",
+   "Combo buttons are logged as history",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "crimson-retro-future-xbox-series-x-overlay-3d.html",
+  "nama": "Crimson Retro Future",
+  "ft": [
+   "Lampu indikator menyala sesuai input",
+   "Awakening Form saat input terus berjalan",
+   "Kode Konami memicu efek spesial",
+   "Milestone dan mode standby saat idle",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Indicator lamps follow your input",
+   "Awakening Form while input keeps flowing",
+   "Konami code triggers a special effect",
+   "Milestone effect and standby mode when idle",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "sunset-sky-castle-xbox-series-x-overlay-3d.html",
+  "nama": "Sunset Sky Castle",
+  "ft": [
+   "Awan bergeser di body dan jalur awan di plat atas",
+   "Langit jadi malam saat idle 20 detik atau jam malam, siang jam 9-16",
+   "Mode hype saat 8+ tekanan dalam 1 detik",
+   "Tahan View + Menu 2 detik: kastil terbang naik",
+   "Summon Gate dan percikan bintang di ABXY"
+  ],
+  "fte": [
+   "Clouds drift on the body and along the top plate input path",
+   "Sky turns night after 20 seconds idle or at night time, day from 9 to 16",
+   "Hype mode on 8+ presses within 1 second",
+   "Hold View + Menu for 2 seconds: the castle flies up",
+   "Summon Gate and star sparks on ABXY"
+  ]
+ },
+ {
+  "file": "gold-cyber-city-xbox-series-x-overlay-3d.html",
+  "nama": "Gold Cyber City",
+  "ft": [
+   "Meter APM 4 zona: makin cepat menekan, makin tinggi zona",
+   "Mode fast saat zona tertinggi tercapai",
+   "Tahan LB + RB 3 detik: Overdrive 6 detik",
+   "Efek khusus tiap 100 tekanan",
+   "Tampilan meredup saat idle 20 detik"
+  ],
+  "fte": [
+   "4-zone APM meter: pressing faster lifts the zone",
+   "Fast mode at the highest zone",
+   "Hold LB + RB for 3 seconds: 6-second Overdrive",
+   "Special effect every 100 presses",
+   "Dims when idle for 20 seconds"
+  ]
+ },
+ {
+  "file": "mono-wizard-tower-xbox-series-x-overlay-3d.html",
+  "nama": "Mono Wizard Tower",
+  "ft": [
+   "Ultimate Mode dengan meter dan state machine",
+   "Efek milestone",
+   "Easter egg rahasia",
+   "Mode idle saat tidak ada input",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Ultimate Mode with a meter and state machine",
+   "Milestone effect",
+   "Secret easter egg",
+   "Idle mode when there is no input",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "sunset-samurai-blade-xbox-series-x-overlay-3d.html",
+  "nama": "Sunset Samurai Blade",
+  "ft": [
+   "Bilah combo dengan kilau berjalan saat tombol beruntun",
+   "Tahan View + Menu 2 detik: iaido (kilau lambat)",
+   "Thunder Strike dan kode Konami",
+   "Stack penuh memicu blood moon 9 detik",
+   "Home: matahari mengikuti jam nyata lalu jadi blood moon"
+  ],
+  "fte": [
+   "Combo blade with a running glint on rapid presses",
+   "Hold View + Menu for 2 seconds: iaido (slow glint)",
+   "Thunder Strike and Konami code",
+   "A full stack triggers a 9-second blood moon",
+   "Home: sun follows real time then becomes a blood moon"
+  ]
+ },
+ {
+  "file": "sunset-crystal-cave-xbox-series-x-overlay-3d.html",
+  "nama": "Sunset Crystal Cave",
+  "ft": [
+   "Peti harta membuka dan menutup mengikuti input",
+   "Slime dan kristal bereaksi saat tombol ditekan",
+   "Hitungan combo dan guncangan layar",
+   "Percikan kristal dan hujan permata",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "The treasure chest opens and closes with input",
+   "Slime and crystals react to presses",
+   "Combo counter and screen shake",
+   "Crystal sparks and gem rain",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "pastel-waterfall-xbox-series-x-overlay-3d.html",
+  "nama": "Pastel Waterfall",
+  "ft": [
+   "Sunrise Meter naik seiring input",
+   "Air terjun dan matahari pastel bereaksi pada tekanan",
+   "Easter egg rahasia",
+   "Tilt 3D bisa diatur lewat ?tilt=derajat",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Sunrise Meter rises with input",
+   "Waterfall and pastel sun react to presses",
+   "Secret easter egg",
+   "3D tilt adjustable with ?tilt=degrees",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-series-x-overlay-prsr-green-v23-no-audi.html",
+  "nama": "PRSR Green v23",
+  "ft": [
+   "LCD log input menampilkan tombol yang ditekan",
+   "Jarum speedometer di plat atas",
+   "LB + A: gelombang dan ganti skin body",
+   "LCD Home menampilkan balapan 5 detik lalu PRSR",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "LCD input log shows pressed buttons",
+   "Speedometer needle on the top plate",
+   "LB + A: wave effect and body skin swap",
+   "Home LCD shows a 5-second race then PRSR",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-controller-pixel-arcade-v13.html",
+  "nama": "Pixel Arcade (v13, dengan dino)",
+  "ft": [
+   "Tiap tombol ditekan memunculkan satu balok Tetris di layar atas",
+   "Tiap tombol juga memunculkan rintangan (kaktus atau burung) untuk dino",
+   "Dino melompat dan merunduk sendiri, skor berjalan",
+   "Kena rintangan: GAME OVER lalu reset otomatis",
+   "Menekan cepat mempercepat game",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Every button press drops a Tetris block on the top screen",
+   "Every press also spawns an obstacle (cactus or bird) for the dino",
+   "The dino jumps and ducks by itself, with a running score",
+   "Hit an obstacle: GAME OVER then auto reset",
+   "Pressing fast speeds up the games",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-controller-pixel-arcade-v12-dino-center.html",
+  "nama": "Pixel Arcade (v12, dino di tengah)",
+  "ft": [
+   "Tiap tombol ditekan memunculkan satu balok Tetris di layar atas",
+   "Tiap tombol juga memunculkan rintangan (kaktus atau burung) untuk dino",
+   "Dino melompat dan merunduk sendiri, skor berjalan",
+   "Kena rintangan: GAME OVER lalu reset otomatis",
+   "Menekan cepat mempercepat game",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Every button press drops a Tetris block on the top screen",
+   "Every press also spawns an obstacle (cactus or bird) for the dino",
+   "The dino jumps and ducks by itself, with a running score",
+   "Hit an obstacle: GAME OVER then auto reset",
+   "Pressing fast speeds up the games",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-controller-fantasy-rpg-gold-edition-v6-obs.html",
+  "nama": "Fantasy RPG Gold (v6 OBS)",
+  "ft": [
+   "Gulungan Mantra: 4 input terakhir tampil sebagai permata berlabel",
+   "Gulungan menggulung otomatis saat idle",
+   "8 input beruntun memicu mode Ultimate dengan peta menyebar",
+   "Tulisan gulungan saat Ultimate bisa diganti lewat ?ult=NAMA (maks 16 huruf)",
+   "Rune menyala berlawanan arah dorongan stik, L3/R3 menyalakan semua",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Spell Scroll: the last 4 inputs show as labeled gems",
+   "The scroll rolls up by itself when idle",
+   "8 inputs in a row trigger Ultimate mode with a spreading map",
+   "Scroll text during Ultimate can be set with ?ult=NAME (max 16 letters)",
+   "Runes light opposite the stick push, L3/R3 lights them all",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-controller-silk-edition-v8.html",
+  "nama": "Silk Edition v8",
+  "ft": [
+   "Riwayat input: tombol yang ditekan berjejer sebagai titik di baris riwayat",
+   "Riwayat memudar sendiri sesudah beberapa saat",
+   "Penanda puncak trigger tertahan lalu turun perlahan",
+   "Tombol, stik, dan trigger bereaksi real-time",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Input history: pressed buttons line up as dots in a history row",
+   "History fades by itself after a while",
+   "Trigger peak marker holds then slowly drops",
+   "Buttons, sticks and triggers react in real time",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "xbox-controller-ocean-obs-transparan-ringan.html",
+  "nama": "Light Blue Ocean (OBS ringan)",
+  "ft": [
+   "Trigger terisi seperti air laut dengan gelombang di permukaan",
+   "Gelombang memudar saat trigger penuh",
+   "Versi ringan untuk OBS dengan latar transparan",
+   "Tombol, stik, dan trigger bereaksi real-time",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Triggers fill like seawater with waves on the surface",
+   "Waves fade out when the trigger is full",
+   "Light version for OBS with a transparent background",
+   "Buttons, sticks and triggers react in real time",
+   "Home button is decoration only"
+  ]
+ },
+ {
+  "file": "base-xbox-series-x-overlay-3d.html",
+  "nama": "Base Minimal Gelap 3D",
+  "ft": [
+   "Desain minimal gelap 3D sebagai dasar semua edisi",
+   "Tombol, stik, dan trigger bereaksi real-time",
+   "Trigger terisi penuh dengan glow ikut turun",
+   "Tombol Home hanya hiasan"
+  ],
+  "fte": [
+   "Minimal dark 3D design used as the base for every edition",
+   "Buttons, sticks and triggers react in real time",
+   "Triggers fill fully with glow following the body",
+   "Home button is decoration only"
+  ]
+ }
+]
