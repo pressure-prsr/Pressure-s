@@ -256,7 +256,10 @@
    "pv": "demo",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-pixel-arcade-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 207000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Water Ring Edition": {
    "n": "Overlay Controller Xbox Series X - Water Ring Edition",
@@ -287,7 +290,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-water-ring-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-water-ring-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 180000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Silk Classic": {
    "n": "Overlay Controller Xbox Series X - Silk Classic",
@@ -322,7 +328,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-silk-classic.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-silk-classic",
-   "srv": 1
+   "srv": 1,
+   "pr": 79000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Fantasy RPG Gold Edition": {
    "n": "Overlay Controller Xbox Series X - Fantasy RPG Gold Edition",
@@ -359,7 +368,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-fantasy-rpg-gold-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-fantasy-rpg-gold-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 239000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller PS5 DualSense - Shadow Fight 2 Classic": {
    "n": "Overlay Controller PS5 DualSense - Shadow Fight 2 Classic",
@@ -427,7 +439,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-dark-glass-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-dark-glass-classic",
-   "srv": 1
+   "srv": 1,
+   "pr": 79000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Esports Angular Classic": {
    "n": "Overlay Controller Xbox Series X - Esports Angular Classic",
@@ -462,7 +477,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-esports-angular-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-esports-angular-classic",
-   "srv": 1
+   "srv": 1,
+   "pr": 79000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Comic Pop Art Classic": {
    "n": "Overlay Controller Xbox Series X - Comic Pop Art Classic",
@@ -495,7 +513,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-comic-pop-art-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-comic-pop-art-classic",
-   "srv": 1
+   "srv": 1,
+   "pr": 68000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Manga Ink Edition": {
    "n": "Overlay Controller Xbox Series X - Manga Ink Edition",
@@ -530,7 +551,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-manga-ink-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-manga-ink-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 156000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Pirate Ship Edition": {
    "n": "Overlay Controller Xbox Series X - Pirate Ship Edition",
@@ -565,7 +589,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-pirate-ship-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-pirate-ship-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 159000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Street Graffiti 3D Classic": {
    "n": "Overlay Controller Xbox Series X - Street Graffiti 3D Classic",
@@ -598,7 +625,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-street-graffiti-3d-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-street-graffiti-3d-classic",
-   "srv": 1
+   "srv": 1,
+   "pr": 79000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller PS5 DualSense - Art Deco Classic": {
    "n": "Overlay Controller PS5 DualSense - Art Deco Classic",
@@ -668,7 +698,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-watercolor-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-watercolor-classic",
-   "srv": 1
+   "srv": 1,
+   "pr": 79000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Military Tactical Classic": {
    "n": "Overlay Controller Xbox Series X - Military Tactical Classic",
@@ -705,7 +738,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-military-tactical-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-military-tactical-classic",
-   "srv": 1
+   "srv": 1,
+   "pr": 79000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Arcade Cabinet Edition": {
    "n": "Overlay Controller Xbox Series X - Arcade Cabinet Edition",
@@ -740,7 +776,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-arcade-cabinet-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-arcade-cabinet-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 176000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - VHS Analog Edition": {
    "n": "Overlay Controller Xbox Series X - VHS Analog Edition",
@@ -777,7 +816,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-vhs-analog-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-vhs-analog-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 196000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition": {
    "n": "Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition",
@@ -814,7 +856,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-samurai-ukiyo-e-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-samurai-ukiyo-e-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 159000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Pixel 8-bit Classic": {
    "n": "Overlay Controller Xbox Series X - Pixel 8-bit Classic",
@@ -847,7 +892,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-pixel-8-bit-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-pixel-8-bit-classic",
-   "srv": 1
+   "srv": 1,
+   "pr": 79000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Steampunk Brass Edition": {
    "n": "Overlay Controller Xbox Series X - Steampunk Brass Edition",
@@ -884,7 +932,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-steampunk-brass-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-steampunk-brass-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 176000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Western Saloon Edition": {
    "n": "Overlay Controller Xbox Series X - Western Saloon Edition",
@@ -921,7 +972,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-western-saloon-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-western-saloon-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 148000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Tropical Summer Beach Classic": {
    "n": "Overlay Controller Xbox Series X - Tropical Summer Beach Classic",
@@ -956,7 +1010,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-tropical-summer-beach-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-tropical-summer-beach-classic",
-   "srv": 1
+   "srv": 1,
+   "pr": 79000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Mecha Edition": {
    "n": "Overlay Controller Xbox Series X - Mecha Edition",
@@ -991,7 +1048,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-mecha-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-mecha-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 159000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Retro 90s CRT Edition": {
    "n": "Overlay Controller Xbox Series X - Retro 90s CRT Edition",
@@ -1024,7 +1084,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-retro-90s-crt-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-retro-90s-crt-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 196000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition": {
    "n": "Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition",
@@ -1059,7 +1122,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-cozy-lo-fi-laundromat-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-cozy-lo-fi-laundromat-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 127000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Cyber Tokyo Night Classic": {
    "n": "Overlay Controller Xbox Series X - Cyber Tokyo Night Classic",
@@ -1094,7 +1160,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-cyber-tokyo-night-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-cyber-tokyo-night-classic",
-   "srv": 1
+   "srv": 1,
+   "pr": 79000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X - Sakura Edition": {
    "n": "Overlay Controller Xbox Series X - Sakura Edition",
@@ -1129,7 +1198,10 @@
    "file": "overlays/xbox-series-x-controller-overlay-sakura-edition.html",
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-sakura-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 116000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   "other|Overlay Controller Xbox Series X (Custom)": {
    "n": "Overlay Controller Xbox Series X (Custom)",
@@ -1193,7 +1265,10 @@
    ],
    "nd": "2026-10-19",
    "shop": "overlay-controller-xbox-series-x-cloud-pastel-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 103000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   {
    "n": "Overlay Controller Xbox One OG - Ice Crystal Edition",
@@ -1364,7 +1439,10 @@
     "Ocean current meter and bubble trail on the sticks"
    ],
    "shop": "overlay-controller-xbox-series-x-crimson-jellyfish-drift-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 159000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   {
    "n": "Overlay Controller Xbox One S - Holo Planet Rings One S Edition",
@@ -1468,7 +1546,10 @@
    ],
    "shop": "overlay-controller-xbox-series-x-classic-gray-edition",
    "srv": 1,
-   "ord": 1
+   "ord": 1,
+   "pr": 103000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
   },
   {
    "n": "Overlay Controller Xbox Series X - Mint Pixel Sword Edition",
@@ -1501,7 +1582,42 @@
    ],
    "shop": "overlay-controller-xbox-series-x-mint-pixel-sword-edition",
    "srv": 1,
-   "ord": 13
+   "ord": 13,
+   "pr": 103000,
+   "ps": "2026-10-19",
+   "pe": "2026-10-20"
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Gold Cyber City Edition",
+   "ne": "Xbox Series X Controller Overlay - Gold Cyber City Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Gold Cyber City yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Gold Cyber City theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 129000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/gold-cyber-city-xbox-series-x-overlay-3d.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-19",
+   "ft": [
+    "Bergerak real-time mengikuti gamepad",
+    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
+    "Warna aksen bisa disesuaikan",
+    "Siap dipakai di OBS dan Streamlabs"
+   ],
+   "fte": [
+    "Moves in real time with your gamepad",
+    "Buttons, sticks, and triggers react as you press them",
+    "Adjustable accent color",
+    "Ready for OBS and Streamlabs"
+   ],
+   "shop": "overlay-controller-xbox-series-x-gold-cyber-city-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
@@ -2202,5 +2318,6 @@
    "n": "Xbox One OG",
    "h": 199000
   }
- ]
+ ],
+ "pSync": 1
 }
