@@ -1,4 +1,7 @@
 {
+ "0": {
+  "joki": []
+ },
  "v": 1,
  "items": {
   "nfs-heat|Time Track Bonus Footage oleh Pro Player": {
@@ -881,6 +884,38 @@
    "tage": "New",
    "pks": "ab,bump,trig,dpad,menu,ls,rs,mash",
    "shop": "overlay-controller-xbox-series-x-sunset-sky-castle-xbox-series-x-3d-edition",
+   "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Gold Cyber City Edition",
+   "ne": "Xbox Series X Controller Overlay - Gold Cyber City Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Gold Cyber City yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Gold Cyber City theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 99000,
+   "usd": 8,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/gold-cyber-city-xbox-series-x-overlay-3d.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-19",
+   "ft": [
+    "Bergerak real-time mengikuti gamepad",
+    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
+    "Warna aksen bisa disesuaikan",
+    "Siap dipakai di OBS dan Streamlabs"
+   ],
+   "fte": [
+    "Moves in real time with your gamepad",
+    "Buttons, sticks, and triggers react as you press them",
+    "Adjustable accent color",
+    "Ready for OBS and Streamlabs"
+   ],
+   "shop": "overlay-controller-xbox-series-x-gold-cyber-city-edition",
    "srv": 1
   }
  ],
