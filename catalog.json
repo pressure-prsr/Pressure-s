@@ -253,7 +253,11 @@
     "LT and RT become water pumps: press to spray water and lift the rings onto the pegs",
     "Buttons, sticks, and bumpers light up when pressed",
     "Glassy purple and pink look"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-water-ring-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-water-ring-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Silk Classic": {
    "n": "Overlay Controller Xbox Series X - Silk Classic",
@@ -284,7 +288,11 @@
     "Sticks shift as you move them",
     "Button press history with a combo counter",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-silk-classic.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-silk-classic",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Fantasy RPG Gold Edition": {
    "n": "Overlay Controller Xbox Series X - Fantasy RPG Gold Edition",
@@ -317,7 +325,11 @@
     "Ultimate Mode kicks in after 8 inputs in a row, with a countdown",
     "Adjustable Ultimate text",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-fantasy-rpg-gold-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-fantasy-rpg-gold-edition",
+   "srv": 1
   },
   "other|Overlay Controller PS5 DualSense - Shadow Fight 2 Classic": {
    "n": "Overlay Controller PS5 DualSense - Shadow Fight 2 Classic",
@@ -346,7 +358,11 @@
     "L2 and R2 move with how far you press",
     "Sticks shift, buttons, bumpers, and touchpad light up when pressed",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/ps5-dualsense-controller-overlay-shadow-fight-2-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-ps5-dualsense-shadow-fight-2-classic",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Dark Glass Classic": {
    "n": "Overlay Controller Xbox Series X - Dark Glass Classic",
@@ -377,7 +393,11 @@
     "Sticks shift as you move them",
     "Your last three inputs appear as a short history",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-dark-glass-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-dark-glass-classic",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Esports Angular Classic": {
    "n": "Overlay Controller Xbox Series X - Esports Angular Classic",
@@ -408,7 +428,11 @@
     "LT and RT fill with how far you press",
     "Sticks show an eight-sector direction indicator",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-esports-angular-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-esports-angular-classic",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Comic Pop Art Classic": {
    "n": "Overlay Controller Xbox Series X - Comic Pop Art Classic",
@@ -437,7 +461,11 @@
     "Press LT or RT all the way to pump a balloon inside the body",
     "After five pumps the balloon bursts and the body switches between seven palettes",
     "Sticks shift, buttons light up when pressed"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-comic-pop-art-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-comic-pop-art-classic",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Manga Ink Edition": {
    "n": "Overlay Controller Xbox Series X - Manga Ink Edition",
@@ -468,7 +496,11 @@
     "Speed lines appear when you press in quick succession",
     "Press L3 and R3 almost together to switch to a textured mode with a sweeping circle effect",
     "LT and RT fill with how far you press"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-manga-ink-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-manga-ink-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Pirate Ship Edition": {
    "n": "Overlay Controller Xbox Series X - Pirate Ship Edition",
@@ -499,7 +531,11 @@
     "A treasure chest fills up as you press",
     "A ship sails across a map between an island and an X in the middle of the body",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-pirate-ship-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-pirate-ship-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Street Graffiti 3D Classic": {
    "n": "Overlay Controller Xbox Series X - Street Graffiti 3D Classic",
@@ -528,7 +564,11 @@
     "Paint splashes, mist, and drips",
     "LT and RT fill with how far you press",
     "Sticks shift as you move them"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-street-graffiti-3d-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-street-graffiti-3d-classic",
+   "srv": 1
   },
   "other|Overlay Controller PS5 DualSense - Art Deco Classic": {
    "n": "Overlay Controller PS5 DualSense - Art Deco Classic",
@@ -557,7 +597,11 @@
     "L2 and R2 move with how far you press",
     "Sticks shift as you move them, buttons light up when pressed",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/ps5-dualsense-controller-overlay-art-deco-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-ps5-dualsense-art-deco-classic",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Watercolor Classic": {
    "n": "Overlay Controller Xbox Series X - Watercolor Classic",
@@ -590,7 +634,11 @@
     "LT and RT are fill meters with a peak marker",
     "Sticks shift as you move them",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-watercolor-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-watercolor-classic",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Military Tactical Classic": {
    "n": "Overlay Controller Xbox Series X - Military Tactical Classic",
@@ -623,7 +671,11 @@
     "LT and RT fill in orange as you press",
     "Sticks shift as you move them",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-military-tactical-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-military-tactical-classic",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Arcade Cabinet Edition": {
    "n": "Overlay Controller Xbox Series X - Arcade Cabinet Edition",
@@ -654,7 +706,11 @@
     "Home display reads INSERT COIN",
     "LT and RT fill up to a MAX label",
     "Buttons light up when pressed"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-arcade-cabinet-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-arcade-cabinet-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - VHS Analog Edition": {
    "n": "Overlay Controller Xbox Series X - VHS Analog Edition",
@@ -687,7 +743,11 @@
     "LT and RT fill with cyan scanlines",
     "A tracking glitch line occasionally sweeps across the body",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-vhs-analog-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-vhs-analog-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition": {
    "n": "Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition",
@@ -720,7 +780,11 @@
     "A red ring lights up on the stick you press",
     "Triggers fill with how far you press",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-samurai-ukiyo-e-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-samurai-ukiyo-e-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Pixel 8-bit Classic": {
    "n": "Overlay Controller Xbox Series X - Pixel 8-bit Classic",
@@ -749,7 +813,11 @@
     "Mini game on the Home display: button presses spawn spikes, three hearts, then GAME OVER and restart",
     "LT and RT fill with stripes",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-pixel-8-bit-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-pixel-8-bit-classic",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Steampunk Brass Edition": {
    "n": "Overlay Controller Xbox Series X - Steampunk Brass Edition",
@@ -782,7 +850,11 @@
     "A full RT pushes the needle to the limit with steam, then it drops as you ease off",
     "LT and RT fill with how far you press",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-steampunk-brass-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-steampunk-brass-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Western Saloon Edition": {
    "n": "Overlay Controller Xbox Series X - Western Saloon Edition",
@@ -815,7 +887,11 @@
     "Buttons glow gold",
     "LT and RT fill with how far you press",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-western-saloon-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-western-saloon-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Tropical Summer Beach Classic": {
    "n": "Overlay Controller Xbox Series X - Tropical Summer Beach Classic",
@@ -846,7 +922,11 @@
     "Wave Combo meter: the more you press, the higher the waves on the body, receding after 2.5 seconds without input",
     "LT and RT fill with how far you press",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-tropical-summer-beach-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-tropical-summer-beach-classic",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Mecha Edition": {
    "n": "Overlay Controller Xbox Series X - Mecha Edition",
@@ -877,7 +957,11 @@
     "LT and RT fill with yellow stripes",
     "Sticks shift, buttons light up when pressed",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-mecha-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-mecha-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Retro 90s CRT Edition": {
    "n": "Overlay Controller Xbox Series X - Retro 90s CRT Edition",
@@ -906,7 +990,11 @@
     "Minimize, maximize, close buttons and a colorful flag icon on the Home display",
     "A click cursor shows on the button you press",
     "LT and RT fill with how far you press, sticks shift"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-retro-90s-crt-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-retro-90s-crt-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition": {
    "n": "Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition",
@@ -937,7 +1025,11 @@
     "Lavender sticks",
     "LT and RT fill with stripes, buttons light up when pressed",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-cozy-lo-fi-laundromat-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-cozy-lo-fi-laundromat-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Cyber Tokyo Night Classic": {
    "n": "Overlay Controller Xbox Series X - Cyber Tokyo Night Classic",
@@ -968,7 +1060,11 @@
     "A cyan ripple of light spreads when you press a stick",
     "LT and RT fill with how far you press",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-cyber-tokyo-night-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-cyber-tokyo-night-classic",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Sakura Edition": {
    "n": "Overlay Controller Xbox Series X - Sakura Edition",
@@ -999,7 +1095,11 @@
     "Home display is a cherry tree",
     "LT and RT fill with how far you press, sticks shift",
     "Adjustable accent color"
-   ]
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-sakura-edition.html",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-sakura-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X (Custom)": {
    "n": "Overlay Controller Xbox Series X (Custom)",
@@ -1061,7 +1161,9 @@
     "Kumo mascot: happy on input, star eyes at full trigger, sleeps when idle",
     "Home button is decoration only"
    ],
-   "nd": "2026-10-19"
+   "nd": "2026-10-19",
+   "shop": "overlay-controller-xbox-series-x-cloud-pastel-edition",
+   "srv": 1
   },
   {
    "n": "Overlay Controller Xbox One OG - Ice Crystal Edition",
