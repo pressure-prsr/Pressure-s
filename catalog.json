@@ -213,7 +213,20 @@
    "os": "controller",
    "g": "other",
    "sub": "xbox-series-x",
-   "ord": 6
+   "ord": 6,
+   "ft": [
+    "3 pilihan desain dalam sekali beli: Dino Atas, Dino Tengah, Tanpa Dino",
+    "Bergerak real-time mengikuti gamepad"
+   ],
+   "fte": [
+    "3 design options in one purchase: Dino Top, Dino Center, No Dino",
+    "Moves in real time with your gamepad"
+   ],
+   "file": "overlays/xbox-series-x-controller-overlay-pixel-arcade-edition.html",
+   "pv": "demo",
+   "hide": false,
+   "shop": "overlay-controller-xbox-series-x-pixel-arcade-edition",
+   "srv": 1
   },
   "other|Overlay Controller Xbox Series X - Water Ring Edition": {
    "n": "Overlay Controller Xbox Series X - Water Ring Edition",
@@ -230,7 +243,17 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 7
+   "ord": 7,
+   "ft": [
+    "LT dan RT jadi pompa air: tekan untuk menyemprot dan mengangkat ring ke tiang",
+    "Tombol, stik, dan bumper menyala saat ditekan",
+    "Tampilan kaca bernuansa ungu dan pink"
+   ],
+   "fte": [
+    "LT and RT become water pumps: press to spray water and lift the rings onto the pegs",
+    "Buttons, sticks, and bumpers light up when pressed",
+    "Glassy purple and pink look"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Silk Classic": {
    "n": "Overlay Controller Xbox Series X - Silk Classic",
@@ -247,7 +270,21 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 8
+   "ord": 8,
+   "ft": [
+    "Tampilan putih mulus dengan aksen coral",
+    "Trigger LT dan RT berupa meter isi dengan persentase hingga MAX",
+    "Stik bergeser mengikuti gerakan",
+    "Riwayat tombol yang ditekan lengkap dengan hitungan kombo",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Smooth white look with coral accents",
+    "LT and RT are fill meters showing a percentage up to MAX",
+    "Sticks shift as you move them",
+    "Button press history with a combo counter",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Fantasy RPG Gold Edition": {
    "n": "Overlay Controller Xbox Series X - Fantasy RPG Gold Edition",
@@ -264,7 +301,23 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 9
+   "ord": 9,
+   "ft": [
+    "Badan emas dengan tombol A, B, X, Y berbentuk permata",
+    "Trigger LT dan RT terisi sesuai tekanan, stik bergeser mengikuti gerakan",
+    "Gulungan mantra menampilkan 4 input terakhir",
+    "Mode Ultimate aktif setelah 8 input beruntun, lengkap dengan hitung mundur",
+    "Tulisan Ultimate bisa disesuaikan",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Golden body with gem-shaped A, B, X, and Y buttons",
+    "LT and RT fill with how far you press, sticks shift as you move them",
+    "Spell scroll shows your last 4 inputs",
+    "Ultimate Mode kicks in after 8 inputs in a row, with a countdown",
+    "Adjustable Ultimate text",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller PS5 DualSense - Shadow Fight 2 Classic": {
    "n": "Overlay Controller PS5 DualSense - Shadow Fight 2 Classic",
@@ -281,7 +334,19 @@
    "g": "other",
    "pv": "key",
    "sub": "ps5-dualsense",
-   "ord": 10
+   "ord": 10,
+   "ft": [
+    "Body 3D dua nada coklat dengan sambungan halus",
+    "Trigger L2 dan R2 bergerak sesuai tekanan",
+    "Stik bergeser, tombol, bumper, dan touchpad menyala saat ditekan",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "3D two-tone brown body with a smooth seam",
+    "L2 and R2 move with how far you press",
+    "Sticks shift, buttons, bumpers, and touchpad light up when pressed",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Dark Glass Classic": {
    "n": "Overlay Controller Xbox Series X - Dark Glass Classic",
@@ -298,7 +363,21 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 11
+   "ord": 11,
+   "ft": [
+    "Body kaca gelap dengan aksen biru es",
+    "Trigger LT dan RT berupa meter isi",
+    "Stik bergeser mengikuti gerakan",
+    "Tiga input terakhir muncul sebagai riwayat singkat",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Dark glass body with an icy blue accent",
+    "LT and RT are fill meters",
+    "Sticks shift as you move them",
+    "Your last three inputs appear as a short history",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Esports Angular Classic": {
    "n": "Overlay Controller Xbox Series X - Esports Angular Classic",
@@ -315,7 +394,21 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 12
+   "ord": 12,
+   "ft": [
+    "Bentuk bersudut tegas dengan aksen cyan",
+    "Kilatan cahaya menyapu setiap tombol yang ditekan",
+    "Trigger LT dan RT terisi sesuai tekanan",
+    "Stik punya penunjuk arah delapan sektor",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Sharp angular shapes with a cyan accent",
+    "A light sweep crosses every button you press",
+    "LT and RT fill with how far you press",
+    "Sticks show an eight-sector direction indicator",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Comic Pop Art Classic": {
    "n": "Overlay Controller Xbox Series X - Comic Pop Art Classic",
@@ -332,7 +425,19 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 13
+   "ord": 13,
+   "ft": [
+    "Titik halftone dengan aksen kuning mencolok",
+    "Tekan LT atau RT sampai penuh untuk memompa balon di dalam body",
+    "Setelah lima pompaan balon meledak dan warna body berganti di antara tujuh palet",
+    "Stik bergeser, tombol menyala saat ditekan"
+   ],
+   "fte": [
+    "Halftone dots with a bold yellow accent",
+    "Press LT or RT all the way to pump a balloon inside the body",
+    "After five pumps the balloon bursts and the body switches between seven palettes",
+    "Sticks shift, buttons light up when pressed"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Manga Ink Edition": {
    "n": "Overlay Controller Xbox Series X - Manga Ink Edition",
@@ -349,7 +454,21 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 14
+   "ord": 14,
+   "ft": [
+    "Tampilan manga hitam-putih",
+    "Efek garis ledakan di setiap tombol yang ditekan",
+    "Garis kecepatan muncul saat menekan beruntun",
+    "Tekan L3 dan R3 hampir bersamaan untuk pindah ke mode bertekstur dengan efek lingkaran menyapu",
+    "Trigger LT dan RT terisi sesuai tekanan"
+   ],
+   "fte": [
+    "Black-and-white manga look",
+    "Burst-line effect on every button press",
+    "Speed lines appear when you press in quick succession",
+    "Press L3 and R3 almost together to switch to a textured mode with a sweeping circle effect",
+    "LT and RT fill with how far you press"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Pirate Ship Edition": {
    "n": "Overlay Controller Xbox Series X - Pirate Ship Edition",
@@ -366,7 +485,21 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 15
+   "ord": 15,
+   "ft": [
+    "Trigger LT dan RT mengisi air",
+    "Tombol A, B, X, Y memunculkan riak dan koin",
+    "Peti harta terisi seiring kamu menekan tombol",
+    "Kapal berlayar di peta antara pulau dan tanda X di tengah body",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "LT and RT fill with water",
+    "A, B, X, and Y make ripples and coins",
+    "A treasure chest fills up as you press",
+    "A ship sails across a map between an island and an X in the middle of the body",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Street Graffiti 3D Classic": {
    "n": "Overlay Controller Xbox Series X - Street Graffiti 3D Classic",
@@ -383,7 +516,19 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 16
+   "ord": 16,
+   "ft": [
+    "Tombol yang ditekan menuliskan hurufnya sebagai coretan di tembok dengan warna tombol itu",
+    "Cipratan cat, kabut, dan tetesan",
+    "Trigger LT dan RT terisi sesuai tekanan",
+    "Stik bergeser mengikuti gerakan"
+   ],
+   "fte": [
+    "Each button you press scrawls its letter on the wall in that button's color",
+    "Paint splashes, mist, and drips",
+    "LT and RT fill with how far you press",
+    "Sticks shift as you move them"
+   ]
   },
   "other|Overlay Controller PS5 DualSense - Art Deco Classic": {
    "n": "Overlay Controller PS5 DualSense - Art Deco Classic",
@@ -400,7 +545,19 @@
    "g": "other",
    "pv": "key",
    "sub": "ps5-dualsense",
-   "ord": 17
+   "ord": 17,
+   "ft": [
+    "Body 3D hitam dengan ornamen geometris emas",
+    "Trigger L2 dan R2 bergerak sesuai tekanan",
+    "Stik bergeser mengikuti gerakan, tombol menyala saat ditekan",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Black 3D body with gold geometric ornaments",
+    "L2 and R2 move with how far you press",
+    "Sticks shift as you move them, buttons light up when pressed",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Watercolor Classic": {
    "n": "Overlay Controller Xbox Series X - Watercolor Classic",
@@ -417,7 +574,23 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 18
+   "ord": 18,
+   "ft": [
+    "Body biru keunguan dengan noda cat air lembut",
+    "Setiap tombol yang ditekan memercikkan tinta",
+    "Enam input terakhir muncul sebagai tetesan warna di palet atas",
+    "Trigger LT dan RT berupa meter isi dengan penanda puncak",
+    "Stik bergeser mengikuti gerakan",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Soft indigo body with gentle watercolor washes",
+    "Every button press splashes ink",
+    "Your last six inputs appear as paint drops on the palette strip",
+    "LT and RT are fill meters with a peak marker",
+    "Sticks shift as you move them",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Military Tactical Classic": {
    "n": "Overlay Controller Xbox Series X - Military Tactical Classic",
@@ -434,7 +607,23 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 19
+   "ord": 19,
+   "ft": [
+    "Body hijau army dengan garis kontur peta",
+    "Huruf stensil pada tombol A, B, X, dan Y",
+    "Display Home berupa radar yang terus menyapu",
+    "Trigger LT dan RT terisi oranye sesuai tekanan",
+    "Stik bergeser mengikuti gerakan",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Army-green body with map contour lines",
+    "Stencil lettering on A, B, X, and Y",
+    "Home display is a constantly sweeping radar",
+    "LT and RT fill in orange as you press",
+    "Sticks shift as you move them",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Arcade Cabinet Edition": {
    "n": "Overlay Controller Xbox Series X - Arcade Cabinet Edition",
@@ -451,7 +640,21 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 20
+   "ord": 20,
+   "ft": [
+    "Stik berbentuk joystick merah ala mesin arcade",
+    "Hitungan CREDIT bertambah setiap tombol ditekan, lengkap dengan koin jatuh ke slot",
+    "Display Home menampilkan INSERT COIN",
+    "Trigger LT dan RT terisi hingga tulisan MAX",
+    "Tombol menyala saat ditekan"
+   ],
+   "fte": [
+    "Sticks look like red arcade joysticks",
+    "CREDIT counter goes up with every button press, with a coin dropping into the slot",
+    "Home display reads INSERT COIN",
+    "LT and RT fill up to a MAX label",
+    "Buttons light up when pressed"
+   ]
   },
   "other|Overlay Controller Xbox Series X - VHS Analog Edition": {
    "n": "Overlay Controller Xbox Series X - VHS Analog Edition",
@@ -468,7 +671,23 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 21
+   "ord": 21,
+   "ft": [
+    "Body bergaris scanline dengan stiker kaset VHS T-120",
+    "Stik berbentuk roda kaset",
+    "Display Home jadi counter VCR dengan mode PLAY, FF, REW, PAUSE, dan hitungan waktu",
+    "Trigger LT dan RT terisi bergaris cyan",
+    "Garis tracking glitch sesekali lewat di body",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Scanlined body with a VHS T-120 tape sticker",
+    "Sticks shaped like tape reels",
+    "Home display becomes a VCR counter with PLAY, FF, REW, PAUSE modes and a timecode",
+    "LT and RT fill with cyan scanlines",
+    "A tracking glitch line occasionally sweeps across the body",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition": {
    "n": "Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition",
@@ -485,7 +704,23 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 22
+   "ord": 22,
+   "ft": [
+    "Body biru indigo dengan panji matahari merah dan ombak besar",
+    "Gulungan di plat atas mencatat riwayat input",
+    "Setelah tiga input beruntun, display Home menampilkan tebasan dan kanji kombo yang berubah menjadi 極",
+    "Cincin merah menyala di stik yang ditekan",
+    "Trigger terisi sesuai tekanan",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Indigo body with a red sun banner and a great wave",
+    "Scroll on the top plate records your input history",
+    "After three inputs in a row, the Home display shows a slash and a combo kanji that turns into 極",
+    "A red ring lights up on the stick you press",
+    "Triggers fill with how far you press",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Pixel 8-bit Classic": {
    "n": "Overlay Controller Xbox Series X - Pixel 8-bit Classic",
@@ -502,7 +737,19 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 23
+   "ord": 23,
+   "ft": [
+    "Body ungu bertekstur dither, tombol segi delapan, dan stik bermata",
+    "Mini game di display Home: tombol yang ditekan memunculkan duri, tiga hati, lalu GAME OVER dan mengulang",
+    "Trigger LT dan RT terisi bergaris",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Purple dithered body, octagonal buttons, and sticks with little eyes",
+    "Mini game on the Home display: button presses spawn spikes, three hearts, then GAME OVER and restart",
+    "LT and RT fill with stripes",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Steampunk Brass Edition": {
    "n": "Overlay Controller Xbox Series X - Steampunk Brass Edition",
@@ -519,7 +766,23 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 24
+   "ord": 24,
+   "ft": [
+    "Body kuningan dan kayu dengan roda gigi berputar",
+    "Kereta mainan berjalan di rel mengelilingi body",
+    "Display Home berupa speedometer berjarum: makin banyak tombol ditekan, jarum makin naik",
+    "RT penuh membawa jarum ke batas dengan asap, lalu turun saat RT dilepas",
+    "Trigger LT dan RT terisi sesuai tekanan",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Brass and wood body with spinning gears",
+    "A toy train runs on rails around the body",
+    "Home display is a needle speedometer: the more buttons you press, the higher it climbs",
+    "A full RT pushes the needle to the limit with steam, then it drops as you ease off",
+    "LT and RT fill with how far you press",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Western Saloon Edition": {
    "n": "Overlay Controller Xbox Series X - Western Saloon Edition",
@@ -536,7 +799,23 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 25
+   "ord": 25,
+   "ft": [
+    "Body papan kayu dengan lencana sheriff di display Home",
+    "Poster buron berganti-ganti: WANTED $5000, DEAD OR ALIVE, REWARD $9999, plus cap BUSTED!",
+    "Lubang peluru muncul setiap tombol ditekan",
+    "Tombol menyala keemasan",
+    "Trigger LT dan RT terisi sesuai tekanan",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Wooden plank body with a sheriff badge on the Home display",
+    "Wanted poster cycles through WANTED $5000, DEAD OR ALIVE, REWARD $9999, plus a BUSTED! stamp",
+    "A bullet hole appears with every button press",
+    "Buttons glow gold",
+    "LT and RT fill with how far you press",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Tropical Summer Beach Classic": {
    "n": "Overlay Controller Xbox Series X - Tropical Summer Beach Classic",
@@ -553,7 +832,21 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 26
+   "ord": 26,
+   "ft": [
+    "Tekstur foto pantai tropis dengan pasir, laut, dan daun palem",
+    "Display Home berupa matahari",
+    "Meter Ombak Combo: makin banyak tombol ditekan, makin tinggi ombak di body, surut setelah 2,5 detik tanpa input",
+    "Trigger LT dan RT terisi sesuai tekanan",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Tropical beach photo texture with sand, sea, and palm leaves",
+    "Home display is a sun",
+    "Wave Combo meter: the more you press, the higher the waves on the body, receding after 2.5 seconds without input",
+    "LT and RT fill with how far you press",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Mecha Edition": {
    "n": "Overlay Controller Xbox Series X - Mecha Edition",
@@ -570,7 +863,21 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 27
+   "ord": 27,
+   "ft": [
+    "Body baja abu-abu dengan baut, pelat UNIT-X, dan strip peringatan kuning-hitam",
+    "Display Home berupa inti reaktor cyan dengan cincin berputar",
+    "Trigger LT dan RT terisi bergaris kuning",
+    "Stik bergeser, tombol menyala saat ditekan",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Steel-gray body with bolts, a UNIT-X plate, and a yellow-black warning strip",
+    "Home display is a cyan reactor core with a spinning ring",
+    "LT and RT fill with yellow stripes",
+    "Sticks shift, buttons light up when pressed",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Retro 90s CRT Edition": {
    "n": "Overlay Controller Xbox Series X - Retro 90s CRT Edition",
@@ -587,7 +894,19 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 28
+   "ord": 28,
+   "ft": [
+    "Gaya komputer Windows jadul dengan jendela XBOX.EXE di plat atas",
+    "Tombol minimize, maximize, close, dan ikon bendera warna-warni di display Home",
+    "Kursor klik muncul di tombol yang ditekan",
+    "Trigger LT dan RT terisi sesuai tekanan, stik bergeser"
+   ],
+   "fte": [
+    "Old Windows PC style with an XBOX.EXE window on the top plate",
+    "Minimize, maximize, close buttons and a colorful flag icon on the Home display",
+    "A click cursor shows on the button you press",
+    "LT and RT fill with how far you press, sticks shift"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition": {
    "n": "Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition",
@@ -604,7 +923,21 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 29
+   "ord": 29,
+   "ft": [
+    "Body bergambar laundromat malam: papan neon LAUNDRY NIGHT, deretan mesin cuci, jadwal laundry, lampu gantung",
+    "Jendela kota malam di display Home",
+    "Stik berwarna lavender",
+    "Trigger LT dan RT terisi bergaris, tombol menyala saat ditekan",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Body illustrated as a night laundromat: LAUNDRY NIGHT neon sign, row of washing machines, laundry schedule, hanging lamp",
+    "Night city window on the Home display",
+    "Lavender sticks",
+    "LT and RT fill with stripes, buttons light up when pressed",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Cyber Tokyo Night Classic": {
    "n": "Overlay Controller Xbox Series X - Cyber Tokyo Night Classic",
@@ -621,7 +954,21 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 30
+   "ord": 30,
+   "ft": [
+    "Body semi-transparan berlatar gedung Tokyo malam dengan neon pink dan cyan",
+    "Setiap input muncul sebagai label katakana di bawah controller, misalnya アールティー untuk RT",
+    "Riak cahaya cyan menyebar saat stik ditekan",
+    "Trigger LT dan RT terisi sesuai tekanan",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Semi-transparent body over a Tokyo night skyline with pink and cyan neon",
+    "Every input shows as a katakana label below the controller, for example アールティー for RT",
+    "A cyan ripple of light spreads when you press a stick",
+    "LT and RT fill with how far you press",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X - Sakura Edition": {
    "n": "Overlay Controller Xbox Series X - Sakura Edition",
@@ -638,7 +985,21 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 31
+   "ord": 31,
+   "ft": [
+    "Body merah muda dengan ranting sakura dan kelopak berguguran",
+    "Stik dan D-pad berlambang bunga di tengah",
+    "Display Home berupa pohon sakura",
+    "Trigger LT dan RT terisi sesuai tekanan, stik bergeser",
+    "Warna aksen bisa disesuaikan"
+   ],
+   "fte": [
+    "Pink body with cherry blossom branches and falling petals",
+    "Sticks and D-pad with a flower at the center",
+    "Home display is a cherry tree",
+    "LT and RT fill with how far you press, sticks shift",
+    "Adjustable accent color"
+   ]
   },
   "other|Overlay Controller Xbox Series X (Custom)": {
    "n": "Overlay Controller Xbox Series X (Custom)",
@@ -653,7 +1014,17 @@
    "os": "controller",
    "g": "other",
    "sub": "xbox-series-x",
-   "ord": 36
+   "ord": 36,
+   "ft": [
+    "Bergerak real-time mengikuti gamepad",
+    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
+    "Tampilan disesuaikan dengan permintaanmu"
+   ],
+   "fte": [
+    "Moves in real time with your gamepad",
+    "Buttons, sticks, and triggers react as you press them",
+    "Look tailored to your request"
+   ]
   }
  },
  "added": [
@@ -689,7 +1060,8 @@
     "A cloud chip rises on the top plate for every press",
     "Kumo mascot: happy on input, star eyes at full trigger, sleeps when idle",
     "Home button is decoration only"
-   ]
+   ],
+   "nd": "2026-10-19"
   },
   {
    "n": "Overlay Controller Xbox One OG - Ice Crystal Edition",
@@ -723,7 +1095,10 @@
     "Milestone effect every 100 presses",
     "A secret button sequence shatters the crystal",
     "Home button is decoration only"
-   ]
+   ],
+   "nd": "2026-10-19",
+   "shop": "overlay-controller-xbox-one-og-ice-crystal-edition",
+   "srv": 1
   },
   {
    "n": "Overlay Controller Xbox Series X - Classic Grey Edition",
@@ -757,7 +1132,8 @@
     "Mini TV on the gamepad",
     "Screen glitch effect",
     "Motion trail follows the sticks"
-   ]
+   ],
+   "nd": "2026-10-19"
   },
   {
    "n": "Overlay Controller Xbox Series X - Mint Mixel Sword Edition",
@@ -791,7 +1167,8 @@
     "Hold L3 + R3 for about 1 second: sword sweep",
     "Dims when idle for 15 seconds",
     "Home button is decoration only"
-   ]
+   ],
+   "nd": "2026-10-19"
   },
   {
    "n": "Overlay Controller Xbox One S - Sunset Galaxy Edition",
@@ -825,7 +1202,8 @@
     "Hack Terminal: segments fill, LED turns red to green",
     "Sky meter with sun and moon following real time",
     "Secret code (Konami) triggers a special effect"
-   ]
+   ],
+   "nd": "2026-10-19"
   },
   {
    "n": "Overlay Controller Xbox One OG - Retro Arcade One OG Edition",
@@ -982,7 +1360,10 @@
     "Fire wings react to presses",
     "Milestone every 100 presses",
     "A secret button sequence triggers a special effect"
-   ]
+   ],
+   "nd": "2026-10-19",
+   "shop": "overlay-controller-xbox-one-s-neon-phoenix-wings-one-s-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
