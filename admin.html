@@ -253,6 +253,7 @@ body.pm .pms.nosel{max-height:0;opacity:0;overflow:hidden;padding-top:0;padding-
 
 .tr.ts button{-webkit-appearance:none;appearance:none;background:var(--sf);color:var(--ink);border:1px solid var(--ln);border-radius:10px;font-weight:700}
 .tr.ts button.on{background:var(--ac);border-color:var(--ac);color:var(--ai)}
+.sc{display:inline-block;margin:6px 6px 0 0;padding:2px 9px;border-radius:99px;font-size:11px;font-weight:700;border:1px solid var(--ln);color:var(--mu)}.sc.ok{color:var(--ok);border-color:var(--ok)}.sc.er{color:var(--er);border-color:var(--er)}textarea.bkT{width:100%;box-sizing:border-box}
 </style></head><body>
 <header><button class="b g" id="bExit" type="button" aria-label="Kembali">←</button><h1><span class="lg">Pressure's </span>Admin</h1><button class="b g" id="bBulk" type="button" aria-label="Bulk price change">%</button><button class="b g" id="bUn" type="button" aria-label="Undo">↶</button><button class="b g" id="bRe" type="button" aria-label="Redo">↷</button><button class="b g" id="bHelp" type="button" aria-label="Peta fitur" title="Peta fitur">?</button><button class="b g" id="bFull" type="button" aria-label="Layar penuh editor" title="Layar penuh editor">⛶</button><button class="b" id="bAdd" type="button">+ Overlay</button><button class="b" id="bPub" type="button" aria-label="Publish" disabled><span class="pl">Publish </span>⬆</button><button class="b g" id="bSet" type="button" aria-label="Settings">⚙</button></header>
 <div id="pmHelp" role="dialog" aria-label="Peta fitur promosi"><div class="hp"><div class="hh"><b>Peta fitur promosi</b><button type="button" id="hpX" aria-label="Tutup">✕</button></div>
@@ -386,9 +387,10 @@ function rso(){sGet("so",function(){var h=sRe();
  SD.orders.forEach(function(o){h+='<div class="it" style="cursor:default"><div><b>'+esc(o.product_name||"-")+'</b><small>'+esc(o.name)+' · '+esc(o.email)+'</small><br><small>'+sDt(o.created_at)+' · '+esc(o.order_id)+'</small></div><i style="text-align:right">'+sRp(o.amount)+'<br><small>'+(o.status==="paid"?"✓ lunas":esc(o.status))+'</small></i></div>'});
  $("list").innerHTML=h+(SD.orders.length?"":'<p class="note">Belum ada order.</p>')})}
 function rsl(){sGet("sl",function(){
- var po=SD.products.map(function(p){return '<option value="'+esc(p.id)+'">'+esc(p.name)+'</option>'}).join("");
- var h=sRe()+'<details class="fs" open><summary>Buat link manual</summary><div class="fb"><label>Produk<select id="slP">'+po+'</select></label><label>Email (opsional)<input id="slE"></label><label>Catatan<input id="slN"></label><div class="two"><label>Masa aktif hari (kosong = otomatis, 0 = bebas)<input id="slD" type="number"></label><label>Maks unduhan zip (kosong = otomatis)<input id="slM" type="number"></label></div><button class="b" data-sa="mk" type="button" style="width:100%;margin-bottom:10px">Buat link</button><div id="slO"></div></div></details>';
- SD.links.forEach(function(l){var hm=(SD.hosted||{})[l.product_id]!==undefined,u=SD.origin+(hm?"/o/":"/d/")+l.token;h+='<div class="it lk" style="cursor:default;flex-wrap:wrap"><div><b>'+esc(l.pname||"-")+'</b><small>'+(hm?"overlay":"zip")+' · '+esc(l.source)+' · '+esc(l.email||"")+' '+esc(l.note||"")+'</small><br><small>'+(hm?"Dibuka "+l.downloads+"× · IP "+((SD.ips||{})[l.token]||0)+"/"+(SD.maxips||5):"Unduh "+l.downloads+"/"+(l.max_downloads||"∞"))+' · exp '+sDt(l.expires_at)+(l.active?"":" · nonaktif")+'</small></div><button class="b g" data-sa="cp" data-u="'+esc(u)+'" type="button">Salin</button><button class="b g" data-sa="tg" data-t="'+esc(l.token)+'" data-v="'+(l.active?0:1)+'" type="button">'+(l.active?"Matikan":"Aktifkan")+'</button>'+(hm?'<button class="b g" data-sa="ri" data-t="'+esc(l.token)+'" type="button">Reset IP</button>':"")+'</div>'});
+ var h=sRe()+'<div class="fs" style="padding:12px 14px"><p class="note" style="margin:0 0 10px"><b>Kirim link ke pembeli</b><br>Pilih produk, tekan tombol, lalu tempel pesannya ke WhatsApp.</p><label>Cari produk<input id="slQ" placeholder="ketik nama produk" autocomplete="off"></label><label>Produk<select id="slP">'+slOpts("")+'</select></label><label>Catatan pembeli (opsional)<input id="slN" placeholder="nama atau nomor WA"></label><details style="margin:0 0 10px"><summary class="note" style="cursor:pointer">Pengaturan link (opsional)</summary><div class="two" style="margin-top:8px"><label>Masa aktif hari (kosong = otomatis, 0 = bebas)<input id="slD" type="number"></label><label>Maks unduhan zip (kosong = otomatis)<input id="slM" type="number"></label></div></details><button class="b" data-sa="bk" type="button" style="width:100%">Buat link dan salin pesan</button><div id="slO" class="bkO"></div></div>';
+ h+='<p style="margin:18px 0 8px;padding:5px 10px;border-left:3px solid var(--ac,#e8590c);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.9">Link yang sudah dibuat ('+SD.links.length+')</p>';
+ var LL=SD.links.slice();if(LL.length&&LL[0].created_at!==undefined)LL.sort(function(a,b){return (b.created_at||0)-(a.created_at||0)});
+ LL.forEach(function(l){var hm=(SD.hosted||{})[l.product_id]!==undefined,u=SD.origin+(hm?"/o/":"/d/")+l.token;h+='<div class="it lk" style="cursor:default;flex-wrap:wrap"><div><b>'+esc(sShort(l.pname||"-"))+'</b><small>'+(l.note?esc(l.note)+' · ':'')+(l.email?esc(l.email)+' · ':'')+(hm?"overlay":"zip")+' · '+esc(l.source||"")+'</small><br><small>'+(hm?"Dibuka "+l.downloads+"× · IP "+((SD.ips||{})[l.token]||0)+"/"+(SD.maxips||5):"Unduh "+l.downloads+"/"+(l.max_downloads||"∞"))+' · exp '+sDt(l.expires_at)+(l.active?"":" · nonaktif")+'</small></div><button class="b" data-sa="cl" data-u="'+esc(u)+'" data-p="'+esc(l.product_id)+'" type="button">Salin pesan</button><button class="b g" data-sa="cp" data-u="'+esc(u)+'" type="button">Salin link</button><button class="b g" data-sa="tg" data-t="'+esc(l.token)+'" data-v="'+(l.active?0:1)+'" type="button">'+(l.active?"Matikan":"Aktifkan")+'</button>'+(hm?'<button class="b g" data-sa="ri" data-t="'+esc(l.token)+'" type="button">Reset IP</button>':"")+'</div>'});
  $("list").innerHTML=h+(SD.links.length?"":'<p class="note">Belum ada link.</p>')})}
 function sSlug(n){return String(n).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
 function scats(){var m={},o=[];SCATS.forEach(function(c){if(c[0]!=="stream"){m[c[0]]=1;o.push(c)}});
@@ -398,20 +400,23 @@ function scats(){var m={},o=[];SCATS.forEach(function(c){if(c[0]!=="stream"){m[c
 function sNm(n){return String(n||"").replace(/^Overlay (Controller )?/i,"").replace(/\s+/g," ").trim().toLowerCase()}
 function sCat(n){var t=String(n||"").toLowerCase(),b=null;scats().forEach(function(c){if(c[0]!=="stream"&&t.indexOf(c[1].toLowerCase())>-1&&(!b||c[1].length>b[1].length))b=c});return b}
 var sAutoDone=false;
-function sSync(){var L=sPend();if(!L.length)return Promise.resolve(0);var i=0,er=0,ok=0,nx=function(){if(i>=L.length)return Promise.resolve();var x=L[i++];return sApi("/admin/api/product-new",{name:x.name,cat:x.cat,cat_name:x.cn,price:x.price,active:false}).then(function(r){return r.json()}).then(function(j){if(j&&j.error){if(!/sudah ada/.test(j.error))er++}else ok++}).then(nx)};
- return nx().then(function(){return {ok:ok,er:er}})}
+var sSyncP=null;
+function sSync(){if(sSyncP)return sSyncP;
+ sSyncP=sApi("/admin/api/data").then(function(r){return r.json()}).then(function(d){SD=d;var L=sPend(),i=0,er=0,ok=0,nx=function(){if(i>=L.length)return Promise.resolve();var x=L[i++];return sApi("/admin/api/product-new",{name:x.name,cat:x.cat,cat_name:x.cn,price:x.price,active:false}).then(function(r){return r.json()}).then(function(j){if(j&&j.error){if(!/sudah ada/.test(j.error))er++}else ok++}).then(nx)};
+  return nx().then(function(){return {ok:ok,er:er}})}).then(function(r){sSyncP=null;return r},function(e){sSyncP=null;throw e});
+ return sSyncP}
 function sProdOrder(){var nm={},ord=[],g={},out=[];((SD&&SD.cats)||[]).forEach(function(c){nm[c.id]=c.name;ord.push(c.id)});scats().forEach(function(c){if(!nm[c[0]]){nm[c[0]]=c[1]}if(ord.indexOf(c[0])<0)ord.push(c[0])});
- SD.products.forEach(function(p){(g[p.cat]=g[p.cat]||[]).push(p);if(ord.indexOf(p.cat)<0)ord.push(p.cat)});
- var si=ord.indexOf("stream");if(si>=0){ord.splice(si,1);ord.push("stream")}
+ var dd=sDup().dup;nm._dup="Duplikat nonaktif";SD.products.forEach(function(p){var ct=(dd[p.id]&&!p.active)?"_dup":p.cat;(g[ct]=g[ct]||[]).push(p);if(ord.indexOf(ct)<0)ord.push(ct)});
+ var si=ord.indexOf("stream");if(si>=0){ord.splice(si,1);ord.push("stream")}var di=ord.indexOf("_dup");if(di>=0){ord.splice(di,1);ord.push("_dup")}
  ord.forEach(function(id){if(!g[id])return;out.push({hdr:(nm[id]||id)+" ("+g[id].length+")"});spSort(g[id]).forEach(function(p){out.push(p)})});return out}
 function sPend(){var have={},r=[],seen={};SD.products.forEach(function(p){have[sNm(p.name)]=1});
  try{all().forEach(function(e){var o=e.o,k=sNm(o.n);if(o.del||ck(o)!=="other|controller"||have[k]||seen[k])return;var c=sCat(o.n);if(!c)return;seen[k]=1;r.push({name:o.n,cat:c[0],cn:c[1],price:o.h||0})})}catch(x){}return r}
 function rsp(){sGet("sp",function(){
  if(!sAutoDone&&sPend().length){sAutoDone=true;$("list").innerHTML='<p class="note">Menambah produk baru dari katalog controller…</p>';sSync().then(function(r){SD=null;if(r.ok)msg(r.ok+" produk baru ditambah (nonaktif, centang Dijual setelah dicek)"+(r.er?", "+r.er+" gagal":""),6000);if(view==="sp")render()}).catch(function(x){if(view==="sp")sErr(x)});return}
  var np=sPend().length,co=scats().map(function(c){return '<option value="'+c[0]+'">'+c[1]+'</option>'}).join("");
- var h=spBar()+'<button class="b'+(np?"":" g")+'" data-sa="sy" type="button" style="width:100%;margin-bottom:10px">Sinkron dari katalog controller'+(np?" ("+np+" baru)":" · sudah sinkron")+'</button><details class="fs"><summary>+ Produk baru</summary><div class="fb"><label>Nama produk<input id="snN"></label><div class="two"><label>Jenis<select id="snC">'+co+'</select></label><label>Harga (Rp)<input id="snH" type="number" inputmode="numeric"></label></div><button class="b" data-sa="nw" type="button" style="width:100%;margin-bottom:10px">Tambah</button></div></details>';
+ var h=spBar()+sBanner()+'<button class="b'+(np?"":" g")+'" data-sa="sy" type="button" style="width:100%;margin-bottom:10px">Sinkron dari katalog controller'+(np?" ("+np+" baru)":" · sudah sinkron")+'</button><details class="fs"><summary>+ Produk baru</summary><div class="fb"><label>Nama produk<input id="snN"></label><div class="two"><label>Jenis<select id="snC">'+co+'</select></label><label>Harga (Rp)<input id="snH" type="number" inputmode="numeric"></label></div><button class="b" data-sa="nw" type="button" style="width:100%;margin-bottom:10px">Tambah</button></div></details>';
  sProdOrder().forEach(function(p){if(p.hdr){h+='<p style="margin:18px 0 8px;padding:5px 10px;border-left:3px solid var(--ac,#e8590c);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.9">'+esc(p.hdr)+'</p>';return}var has=p.r2_key in SD.files,hs=(SD.hosted||{})[p.id];
-  h+='<details class="fs" data-id="'+esc(p.id)+'"><summary><span>'+esc(p.name.replace(/^Overlay (Controller )?/,""))+'<br><small class="tl">'+sRp(p.price)+' · '+(has?"✓ file "+(SD.files[p.r2_key]/1048576).toFixed(1)+" MB":"✗ file belum ada")+(hs!==undefined?" · ✓ link":"")+(p.active?"":" · nonaktif")+'</small></span>'+spBtn()+'</summary><div class="fb"><div class="two"><label>Harga (Rp)<input class="spH" type="number" inputmode="numeric" value="'+p.price+'"></label><label>Kunci file<input class="spK" value="'+esc(p.r2_key)+'"></label></div><label class="ck"><input type="checkbox" class="spA"'+(p.active?" checked":"")+'> Dijual (aktif)</label><button class="b g" data-sa="sv" type="button" style="width:100%;margin-bottom:10px">Simpan</button><label>Upload zip<input type="file" class="spF" accept=".zip"></label><button class="b" data-sa="up" type="button" style="width:100%">Upload file</button><p class="note spS"></p><hr><p class="note"><b>Link overlay (OBS)</b>: '+(hs!==undefined?(SD.hsrc&&SD.hsrc[p.id]?'✓ dari link GitHub':'✓ ada ('+Math.round(hs/1024)+' KB)')+' · <a href="'+SD.origin+'/admin/preview/'+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">Lihat</a>':'✗ belum ada')+'</p><label>Upload file HTML<input type="file" class="spHF" accept=".html,.htm"></label><button class="b" data-sa="hu" type="button" style="width:100%">Upload HTML</button><label style="margin-top:12px">Atau pakai link GitHub Pages<input class="spHU" inputmode="url" placeholder="https://pressure-prsr.github.io/Pressure-s/overlay/file.html" value="'+esc((SD.hsrc&&SD.hsrc[p.id])||"")+'"></label><button class="b" data-sa="hl" type="button" style="width:100%">Simpan link</button>'+(hs!==undefined?'<button class="b g" data-sa="hd" type="button" style="width:100%;margin-top:8px">Hapus overlay link</button>':'')+'<p class="note spHS"></p></div></details>'});
+  h+='<details class="fs" data-id="'+esc(p.id)+'"><summary><span>'+esc(p.name.replace(/^Overlay (Controller )?/,""))+'<br><small class="tl">'+sRp(p.price)+'</small><br>'+sChips(p)+'</span>'+spBtn()+'</summary><div class="fb">'+sBuyBox(p)+'<div class="two"><label>Harga (Rp)<input class="spH" type="number" inputmode="numeric" value="'+p.price+'"></label><label>Kunci file<input class="spK" value="'+esc(p.r2_key)+'"></label></div><label class="ck"><input type="checkbox" class="spA"'+(p.active?" checked":"")+'> Dijual (aktif)</label><button class="b g" data-sa="sv" type="button" style="width:100%;margin-bottom:10px">Simpan</button><label>Upload zip<input type="file" class="spF" accept=".zip"></label><button class="b" data-sa="up" type="button" style="width:100%">Upload file</button><p class="note spS"></p><hr><p class="note"><b>Link overlay (OBS)</b>: '+(hs!==undefined?(SD.hsrc&&SD.hsrc[p.id]?'✓ dari link GitHub':'✓ ada ('+Math.round(hs/1024)+' KB)')+' · <a href="'+SD.origin+'/admin/preview/'+encodeURIComponent(p.id)+'" target="_blank" rel="noopener">Lihat</a>':'✗ belum ada')+'</p><label>Upload file HTML<input type="file" class="spHF" accept=".html,.htm"></label><button class="b" data-sa="hu" type="button" style="width:100%">Upload HTML</button><label style="margin-top:12px">Atau pakai link GitHub Pages<input class="spHU" inputmode="url" placeholder="https://pressure-prsr.github.io/Pressure-s/overlay/file.html" value="'+esc((SD.hsrc&&SD.hsrc[p.id])||"")+'"></label><button class="b" data-sa="hl" type="button" style="width:100%">Simpan link</button>'+(hs!==undefined?'<button class="b g" data-sa="hd" type="button" style="width:100%;margin-top:8px">Hapus overlay link</button>':'')+'<p class="note spHS"></p></div></details>'});
  $("list").innerHTML=h})}
 $("list").addEventListener("click",function(e){var b=e.target.closest("[data-sa]");if(!b)return;var a=b.dataset.sa,d;
  if(a==="re"){e.preventDefault();SD=null;sAutoDone=false;render();return}
@@ -1018,7 +1023,7 @@ return {render:render,gen:gen,S:function(){return S},trace:trace,setImg:setImg,p
 function rbse(){BSE.render()}
 /*BSE-END*/
 
-var TG=[["Katalog",[["up","Upload"],["p","Packages"],["dk","Diskon"],["j","Boosters"],["g","Categories"]]],["Konten",[["i","Steps & Info"],["s","Site texts"]]],["Studio",[["bd","Builder"],["pr","Prompt"],["pw","Preview web"],["promo","Promosi"],["bse","Base"]]],["Penjualan",[["so","Order"],["sl","Link"],["sp","Produk & file"],["ck","Cek produk"]]]];
+var TG=[["Katalog",[["up","Upload"],["p","Packages"],["dk","Diskon"],["j","Boosters"],["g","Categories"]]],["Konten",[["i","Steps & Info"],["s","Site texts"]]],["Studio",[["bd","Builder"],["pr","Prompt"],["pw","Preview web"],["promo","Promosi"],["bse","Base"]]],["Penjualan",[["sl","Kirim link"],["sp","Produk"],["so","Order"],["ck","Cek produk"]]]];
 
 var rpromo=(function(){
 var $=function(i){return document.getElementById(i)};
@@ -2341,7 +2346,7 @@ function spSort(arr){var a=arr.slice(),m=SPS,has=function(p){return p.r2_key in 
  else if(m==="nf")a.sort(function(x,y){return (has(x)?1:0)-(has(y)?1:0)});
  else if(m==="off")a.sort(function(x,y){return (x.active?1:0)-(y.active?1:0)});
  return a}
-function spBar(){return '<label>Urutkan<select id="spM">'+[["web","Urutan di web"],["az","Nama A-Z"],["lo","Harga termurah"],["hi","Harga termahal"],["nf","File belum ada"],["off","Nonaktif dulu"]].map(function(m){return '<option value="'+m[0]+'"'+(m[0]===SPS?" selected":"")+'>'+m[1]+'</option>'}).join("")+'</select></label><div class="two" style="margin:8px 0 12px"><button class="b g" data-sa="ao" type="button">Rapikan otomatis</button><button class="b g" data-sa="re" type="button">Muat ulang</button></div>'}
+function spBar(){return '<label>Urutkan<select id="spM">'+[["web","Urutan di web"],["az","Nama A-Z"],["lo","Harga termurah"],["hi","Harga termahal"],["nf","File belum ada"],["off","Nonaktif dulu"]].map(function(m){return '<option value="'+m[0]+'"'+(m[0]===SPS?" selected":"")+'>'+m[1]+'</option>'}).join("")+'</select></label><div class="two" style="margin:8px 0 12px"><button class="b g" data-sa="ao" type="button">Urutkan otomatis</button><button class="b g" data-sa="re" type="button">Muat ulang</button></div>'}
 function spBtn(){return SPS==="web"?'<span style="float:right;display:inline-flex;gap:6px;margin-left:8px"><button type="button" class="b g" data-sa="mu" style="width:34px;height:34px;padding:0;line-height:1">▲</button><button type="button" class="b g" data-sa="md" style="width:34px;height:34px;padding:0;line-height:1">▼</button></span>':""}
 function spMove(id,dir){var p=SD.products.filter(function(x){return x.id===id})[0],e=p&&spEnt(p);if(!e){msg("Produk ini belum ada di katalog controller.");return}
  var L=spOrdList(),s=spSub(e),G=L.filter(function(x){return spSub(x)===s}),gi=-1,n,a,b,t;G.forEach(function(x,i){if(x.o===e.o)gi=i});n=G[gi+dir];if(gi<0||!n)return;if(!!n.o.feat!==!!e.o.feat){msg("Unggulan selalu di atas produk biasa. Ubah lewat Edit.",4000);return}
@@ -2381,7 +2386,7 @@ function sellFlow(){var L=sellList(),i=0,br;if(!L.length)return Promise.resolve(
  if(!SPW){var w=prompt("Password admin penjualan (untuk mendaftarkan produk ke toko):");if(!w)return Promise.reject(new Error("Password penjualan diperlukan"));SPW=w;try{localStorage.setItem("spw",w)}catch(x){}}
  return pGh("","GET").then(function(r){br=r.default_branch;var nx=function(){if(i>=L.length)return;var x=L[i++],o=x.o,c=sCat(o.n)||["stream","Stream Overlay"];msg("Menjual "+i+"/"+L.length+": "+o.n+"…",0);
   return pGh("/contents/"+x.p+"?ref="+br,"GET").then(function(ex){return pGh("/contents/"+x.p,"PUT",{message:"admin: "+o.n,content:enc(pend[x.p]),branch:br,sha:ex&&ex.sha||undefined})})
-  .then(function(){return sApi("/admin/api/sell",{name:o.n,cat:c[0],cat_name:c[1],price:o.h,src:"https://raw.githubusercontent.com/"+pRepo()+"/"+br+"/"+x.p}).then(function(r){return r.json()})})
+  .then(function(){return sSellOne(o,c,"https://raw.githubusercontent.com/"+pRepo()+"/"+br+"/"+x.p)})
   .then(function(j){if(!j.id)throw new Error(j.error||"Gagal mendaftarkan produk");o.shop=j.id;o.srv=1;if(!o.pv||(o.pv==="key"&&!o.cvk))o.pv="demo";delete pend[x.p];SD=null}).then(nx)};return nx()})}
 /* file yang dijual tidak ada di situs publik: pratinjau di admin diambil lewat Worker */
 var _fch=window.fetch;window.fetch=function(u){var s=typeof u==="string"?u:(u&&u.url)||"",e;if(SPW&&/^overlays\/[^?#]+\.html/.test(s)){e=all().filter(function(x){return x.o.shop&&x.o.file&&s.indexOf(x.o.file)===0})[0];if(e)return sApi("/admin/preview/"+encodeURIComponent(e.o.shop))}return _fch.apply(this,arguments)};
@@ -2539,6 +2544,62 @@ $("sitein").addEventListener("change",function(){
   L.forEach(function(x){if(x.n==="catalog.json"){C=JSON.parse(x.t);C.items=C.items||{};C.added=C.added||[]}else pend[x.n]=x.t});
   mark();
   msg(L.length+" file diantrekan ("+names+"). Tekan Publish untuk menayangkan."+(hasA?" Setelah Publish, muat ulang halaman admin.":""),9000)})});
+/* ---- Penjualan: dobel, link pembeli, tampilan ---- */
+function sShort(n){return String(n||"").replace(/^Overlay (Controller )?/i,"")}
+function sSz(n){n=+n||0;return n<1024?n+" B":n<1048576?Math.round(n/1024)+" KB":(n/1048576).toFixed(1)+" MB"}
+function sHas(p){return (p.r2_key in SD.files)&&SD.files[p.r2_key]>0}
+function sHost(p){return (SD.hosted||{})[p.id]!==undefined}
+function sRdy(p){return sHas(p)||sHost(p)}
+function sRef(){var r={};((SD&&SD.links)||[]).forEach(function(l){r[l.product_id]=(r[l.product_id]||0)+1});((SD&&SD.orders)||[]).forEach(function(o){if(o.product_id)r[o.product_id]=(r[o.product_id]||0)+1});return r}
+function sScore(p,r){return (r[p.id]?8:0)+(sHost(p)?4:0)+(sHas(p)?2:0)+(p.active?1:0)}
+function sBest(a){var r=sRef(),b=null,bs=-1;a.forEach(function(p){var x=sScore(p,r);if(x>bs){bs=x;b=p}});return b}
+function sDup(){if(sDup.k===SD&&sDup.v)return sDup.v;var r=sRef(),g={},dup={},n=0;
+ SD.products.forEach(function(p,i){var k=sNm(p.name);(g[k]=g[k]||[]).push({p:p,i:i})});
+ Object.keys(g).forEach(function(k){var a=g[k];if(a.length<2)return;a.forEach(function(x){x.s=sScore(x.p,r)});a.sort(function(x,y){return y.s-x.s||x.i-y.i});a.slice(1).forEach(function(x){dup[x.p.id]=a[0].p.id});n++});
+ sDup.k=SD;sDup.v={dup:dup,groups:n,count:Object.keys(dup).length};return sDup.v}
+function sChips(p){var I=sDup(),z=sHas(p),hs=sHost(p),c=[];
+ c.push(p.active?'<span class="sc ok">Dijual</span>':'<span class="sc">Nonaktif</span>');
+ if(z)c.push('<span class="sc ok">ZIP '+sSz(SD.files[p.r2_key])+'</span>');
+ if(hs)c.push('<span class="sc ok">Overlay siap</span>');
+ if(!z&&!hs)c.push('<span class="sc er">Belum ada file</span>');
+ if(I.dup[p.id])c.push('<span class="sc er">Dobel</span>');
+ return c.join("")}
+function sBanner(){var I=sDup(),act=SD.products.filter(function(p){return I.dup[p.id]&&p.active}).length,n=SD.products.length,ok=SD.products.filter(function(p){return p.active}).length,rd=SD.products.filter(function(p){return sRdy(p)}).length;
+ var h='<p class="note" style="margin:0 0 10px">'+n+' produk · '+ok+' dijual · '+rd+' sudah ada file atau overlay</p>';
+ if(I.count)h+='<div class="fs" style="padding:12px 14px;border-color:var(--er)"><p class="note" style="margin:0 0 8px"><b style="color:var(--er)">'+I.count+' produk dobel</b> (nama sama). Yang paling lengkap dipakai, sisanya sebaiknya dinonaktifkan dan disembunyikan di bagian bawah daftar.</p>'+(act?'<button class="b" data-sa="dd" type="button" style="width:100%">Nonaktifkan '+act+' produk dobel</button>':'<p class="note" style="margin:0">Semua dobel sudah nonaktif dan ada di grup paling bawah.</p>')+'</div>';
+ return h}
+function sBuyBox(p){var r=sRdy(p);return '<div style="margin:6px 0 12px"><p class="note" style="margin:0 0 6px"><b>Link untuk pembeli</b></p>'+(r?'<label>Catatan pembeli (opsional)<input class="bkN" placeholder="nama atau nomor WA"></label><button class="b" data-sa="bl" type="button" style="width:100%">Buat link dan salin pesan</button>':'<p class="note">Belum bisa dibuat: produk ini belum punya file atau overlay. Upload dulu di bagian bawah.</p>')+'<div class="bkO"></div></div><hr>'}
+function slOpts(q){q=String(q||"").toLowerCase();var I=sDup().dup,L=SD.products.filter(function(p){return !(I[p.id]&&!p.active)&&(!q||p.name.toLowerCase().indexOf(q)>-1)});
+ L.sort(function(a,b){return (sRdy(b)?1:0)-(sRdy(a)?1:0)||a.name.localeCompare(b.name)});
+ return L.map(function(p){var r=sRdy(p);return '<option value="'+esc(p.id)+'"'+(r?"":" disabled")+'>'+esc(sShort(p.name))+' · '+sRp(p.price)+(r?"":" (belum ada file)")+'</option>'}).join("")}
+function sMsg(p,u){var hm=(SD.hosted||{})[p.id]!==undefined;return "Terima kasih sudah membeli "+sShort(p.name)+" 🙏\n\n"+(hm?"Ini link overlay kamu (tempel di OBS sebagai Browser Source):":"Ini link download kamu:")+"\n"+u+"\n\nSilakan salin link ini dan jangan dibagikan ke siapa pun. Kalau link dibagikan, link otomatis mati."}
+function sNew(o,c,src){return sApi("/admin/api/sell",{name:o.n,cat:c[0],cat_name:c[1],price:o.h,src:src}).then(function(r){return r.json()})}
+function sSellOne(o,c,src){return sApi("/admin/api/data").then(function(r){return r.json()}).then(function(d){SD=d;
+ var k=sNm(o.n),ex=d.products.filter(function(p){return sNm(p.name)===k});
+ if(!ex.length)return sNew(o,c,src);
+ var e=sBest(ex);
+ return sApi("/admin/api/html?id="+encodeURIComponent(e.id),src,true).then(function(r){return r.json().then(function(j){if(!r.ok||(j&&j.error))throw new Error((j&&j.error)||"gagal");return sApi("/admin/api/product",{id:e.id,price:o.h,r2_key:e.r2_key,active:e.active}).then(function(){return {id:e.id}})})}).catch(function(x){if(x&&x.auth)throw x;return sNew(o,c,src)})})}
+function sBuy(pid,note,days,max,out,btn){var p=SD&&SD.products.filter(function(x){return x.id===pid})[0];if(!p){msg("Produk tidak ditemukan, tekan Muat ulang");return}
+ if(!sRdy(p)){out.innerHTML='<p class="note">Produk ini belum punya file atau overlay, jadi link belum bisa dibuat. Upload dulu.</p>';return}
+ btn.disabled=true;out.innerHTML='<p class="note">Membuat link…</p>';
+ sApi("/admin/api/link",{product_id:pid,email:"",note:note||"",days:days||"",max:max||""}).then(function(r){return r.json()}).then(function(j){btn.disabled=false;
+  if(!j.url){out.innerHTML='<p class="note">'+esc(j.error||"Gagal membuat link")+'</p>';return}
+  var m=sMsg(p,j.url);
+  out.innerHTML='<p class="note" style="margin:10px 0 6px">Link dibuat. Pesan untuk pembeli:</p><textarea class="bkT" readonly rows="7">'+esc(m)+'</textarea><div class="two" style="margin-top:8px"><button class="b" data-sa="cm" type="button">Salin pesan</button><button class="b g" data-sa="cp" data-u="'+esc(j.url)+'" type="button">Salin link saja</button></div>';
+  try{navigator.clipboard.writeText(m).then(function(){msg("Pesan disalin. Tinggal tempel ke WhatsApp.",4000)},function(){msg("Link dibuat. Tekan Salin pesan.",4000)})}catch(x){}
+  sApi("/admin/api/data").then(function(r){return r.json()}).then(function(d){SD=d}).catch(function(){})
+ }).catch(function(x){btn.disabled=false;out.innerHTML="";sErr(x)})}
+$("list").addEventListener("input",function(e){if(e.target.id==="slQ"&&SD){var q=$("slP");if(q)q.innerHTML=slOpts(e.target.value)}});
+$("list").addEventListener("click",function(e){var b=e.target.closest("[data-sa]");if(!b)return;var a=b.dataset.sa,d,p,t,o;
+ if(a==="bk"){if(!$("slP").value){msg("Pilih produk dulu");return}sBuy($("slP").value,$("slN").value,$("slD").value,$("slM").value,$("slO"),b);return}
+ if(a==="bl"){d=b.closest("details");sBuy(d.dataset.id,d.querySelector(".bkN").value,"","",d.querySelector(".bkO"),b);return}
+ if(a==="cm"){o=b.closest(".bkO");t=o&&o.querySelector(".bkT");if(!t)return;navigator.clipboard.writeText(t.value).then(function(){msg("Pesan disalin")},function(){t.focus();t.select();msg("Tahan lalu pilih Salin",5000)});return}
+ if(a==="cl"){p=SD.products.filter(function(x){return x.id===b.dataset.p})[0]||{id:b.dataset.p,name:"produk"};t=sMsg(p,b.dataset.u);navigator.clipboard.writeText(t).then(function(){msg("Pesan disalin")},function(){msg(t,9000)});return}
+ if(a==="dd"){var I=sDup(),L=SD.products.filter(function(x){return I.dup[x.id]&&x.active});if(!L.length)return;
+  if(!confirm("Nonaktifkan "+L.length+" produk dobel?\n\nProduk yang paling lengkap tetap dipakai. Kamu bisa mengaktifkannya lagi kapan saja."))return;
+  b.disabled=true;msg("Merapikan…",0);var i=0,nx=function(){if(i>=L.length)return Promise.resolve();var x=L[i++];return sApi("/admin/api/product",{id:x.id,price:x.price,r2_key:x.r2_key,active:false}).then(nx)};
+  nx().then(function(){SD=null;msg(L.length+" produk dobel dinonaktifkan",5000);render()}).catch(function(x){b.disabled=false;sErr(x)});return}
+});
 render();unlock().then(load);
 </script><script>/* ---- preview acuan (index) ---- */
 function refFile(k){var nm=pvName(k).replace(/\s*\(.*\)/,'').toLowerCase(),e=all().filter(function(x){return !x.o.del&&x.o.file&&(x.o.cvk===k||((x.o.n||'')+' '+(x.o.ne||'')).toLowerCase().indexOf(nm)>-1)})[0];return e?e.o.file:'overlays/'+slug(nm)+'.html'}
