@@ -1242,7 +1242,7 @@
    "g": "other",
    "os": "controller",
    "hide": false,
-   "ord": 1,
+   "ord": 3,
    "file": "overlays/xbox-series-x-controller-overlay-classic-grey-edition.html",
    "ctl": true,
    "pv": "demo",
@@ -1287,7 +1287,7 @@
    "old": 199000,
    "tage": "New",
    "oldu": 16,
-   "ord": 3,
+   "ord": 1,
    "ft": [
     "Meter Ultimate terisi tiap tombol ditekan, mode Ultimate 5 detik lalu cooldown",
     "Bar XP dan LV naik tiap 100 tekanan",
@@ -1541,7 +1541,8 @@
     "Ready for OBS and Streamlabs"
    ],
    "shop": "overlay-controller-xbox-series-x-classic-gray-edition",
-   "srv": 1
+   "srv": 1,
+   "ord": 37
   },
   {
    "n": "Overlay Controller Xbox Series X - Mint Pixel Sword Edition",
@@ -1573,7 +1574,8 @@
     "Ready for OBS and Streamlabs"
    ],
    "shop": "overlay-controller-xbox-series-x-mint-pixel-sword-edition",
-   "srv": 1
+   "srv": 1,
+   "ord": 38
   }
  ],
  "rate": 12500,
