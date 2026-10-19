@@ -1233,43 +1233,6 @@
    "srv": 1
   },
   {
-   "n": "Overlay Controller Xbox Series X - Mint Mixel Sword Edition",
-   "ne": "Xbox Series X Controller Overlay - Mint Mixel Sword Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Mint Mixel Sword yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Mint Mixel Sword theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
-   "h": 99000,
-   "usd": 8,
-   "g": "other",
-   "os": "controller",
-   "hide": false,
-   "file": "overlays/xbox-series-x-controller-overlay-mint-mixel-sword-edition.html",
-   "ctl": true,
-   "pv": "demo",
-   "sub": "xbox-series-x",
-   "tag": "Baru",
-   "old": 199000,
-   "tage": "New",
-   "oldu": 16,
-   "ord": 14,
-   "ft": [
-    "Meter Ultimate terisi tiap tombol ditekan, mode Ultimate 5 detik lalu cooldown",
-    "Bar XP dan LV naik tiap 100 tekanan",
-    "Tahan L3 + R3 sekitar 1 detik: sapuan pedang",
-    "Layar meredup saat idle 15 detik",
-    "Tombol Home hanya hiasan"
-   ],
-   "fte": [
-    "Ultimate meter fills with every press, 5-second Ultimate mode then cooldown",
-    "XP bar and LV rise every 100 presses",
-    "Hold L3 + R3 for about 1 second: sword sweep",
-    "Dims when idle for 15 seconds",
-    "Home button is decoration only"
-   ],
-   "nd": "2026-10-19",
-   "shop": "overlay-controller-xbox-series-x-mint-mixel-sword-edition",
-   "srv": 1
-  },
-  {
    "n": "Overlay Controller Xbox One S - Sunset Galaxy Edition",
    "ne": "Xbox One S Controller Overlay - Ice Crystal Edition",
    "d": "Edisi overlay controller Xbox One S bertema Ice Crystal yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
