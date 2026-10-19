@@ -1,4 +1,34 @@
 {
+ "0": {
+  "joki": []
+ },
+ "1": {
+  "joki": []
+ },
+ "2": {
+  "joki": []
+ },
+ "3": {
+  "joki": []
+ },
+ "4": {
+  "joki": []
+ },
+ "5": {
+  "joki": []
+ },
+ "6": {
+  "joki": []
+ },
+ "7": {
+  "joki": []
+ },
+ "8": {
+  "joki": []
+ },
+ "9": {
+  "joki": []
+ },
  "v": 1,
  "items": {
   "nfs-heat|Time Track Bonus Footage oleh Pro Player": {
@@ -1134,7 +1164,7 @@
    "d": "Edisi overlay controller Xbox Series X bertema Cloud Pastel yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs etc.",
    "de": "Xbox Series X controller overlay, Cloud Pastel theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs etc.",
    "h": 129000,
-   "usd": 8,
+   "usd": 10,
    "g": "other",
    "os": "controller",
    "hide": false,
@@ -1208,7 +1238,7 @@
    "d": "Edisi overlay controller Xbox Series X bertema Classic Grey yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
    "de": "Xbox Series X controller overlay, Classic Grey theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
    "h": 159000,
-   "usd": 14,
+   "usd": 13,
    "g": "other",
    "os": "controller",
    "hide": false,
@@ -1235,7 +1265,9 @@
     "Screen glitch effect",
     "Motion trail follows the sticks"
    ],
-   "nd": "2026-10-19"
+   "nd": "2026-10-19",
+   "shop": "overlay-controller-xbox-series-x-classic-grey-edition",
+   "srv": 1
   },
   {
    "n": "Overlay Controller Xbox Series X - Mint Mixel Sword Edition",
@@ -1243,7 +1275,7 @@
    "d": "Edisi overlay controller Xbox Series X bertema Mint Mixel Sword yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
    "de": "Xbox Series X controller overlay, Mint Mixel Sword theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
    "h": 99000,
-   "usd": 7,
+   "usd": 8,
    "g": "other",
    "os": "controller",
    "hide": false,
@@ -1270,7 +1302,9 @@
     "Dims when idle for 15 seconds",
     "Home button is decoration only"
    ],
-   "nd": "2026-10-19"
+   "nd": "2026-10-19",
+   "shop": "overlay-controller-xbox-series-x-mint-mixel-sword-edition",
+   "srv": 1
   },
   {
    "n": "Overlay Controller Xbox One S - Sunset Galaxy Edition",
@@ -1305,7 +1339,9 @@
     "Sky meter with sun and moon following real time",
     "Secret code (Konami) triggers a special effect"
    ],
-   "nd": "2026-10-19"
+   "nd": "2026-10-19",
+   "shop": "overlay-controller-xbox-one-s-sunset-galaxy-edition",
+   "srv": 1
   },
   {
    "n": "Overlay Controller Xbox One OG - Retro Arcade One OG Edition",
@@ -1313,7 +1349,7 @@
    "d": "Edisi overlay controller Xbox One OG bertema Retro Arcade One OG yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Dilengkapi animasi bertema. Untuk OBS atau Streamlabs.",
    "de": "Xbox Xbox One OG controller overlay, Retro Arcade One OG theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. Includes themed animations. For OBS or Streamlabs.",
    "h": 199000,
-   "usd": 17,
+   "usd": 16,
    "g": "other",
    "os": "controller",
    "ctl": true,
@@ -1335,7 +1371,9 @@
     "Pixel sparks on ABXY presses",
     "Combo meter rises when you press fast",
     "Sleep mode when idle, adjustable with ?idle="
-   ]
+   ],
+   "shop": "overlay-controller-xbox-one-og-retro-arcade-one-og-edition",
+   "srv": 1
   },
   {
    "n": "Overlay Controller Xbox One OG - Pastel Rocket Launch One OG Edition",
@@ -1343,7 +1381,7 @@
    "d": "Edisi overlay controller Xbox One OG bertema Pastel Rocket Launch One OG yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Dilengkapi animasi bertema. Untuk OBS atau Streamlabs.",
    "de": "Xbox One OG controller overlay, Pastel Rocket Launch One OG theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. Includes themed animations. For OBS or Streamlabs.",
    "h": 199000,
-   "usd": 17,
+   "usd": 16,
    "g": "other",
    "os": "controller",
    "ctl": true,
@@ -1366,7 +1404,9 @@
     "Hype mode: flames ignite when you press fast",
     "Press X 5 times within 1.5 seconds: special effect",
     "Battery rises when active, drains when idle"
-   ]
+   ],
+   "shop": "overlay-controller-xbox-one-og-pastel-rocket-launch-one-og-edition",
+   "srv": 1
   },
   {
    "n": "Overlay Controller Xbox Series X - Crimson Jellyfish Drift Edition",
@@ -1374,7 +1414,7 @@
    "d": "Edisi overlay controller Xbox Series X bertema Crimson Jellyfish Drift yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Dilengkapi animasi bertema. Untuk OBS atau Streamlabs.",
    "de": "Xbox Series X controller overlay, Crimson Jellyfish Drift theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. Includes themed animations. For OBS or Streamlabs.",
    "h": 199000,
-   "usd": 17,
+   "usd": 16,
    "g": "other",
    "os": "controller",
    "ctl": true,
@@ -1396,7 +1436,9 @@
     "Bubble analog clock showing real time",
     "Spin a stick 360 degrees: whirlpool",
     "Ocean current meter and bubble trail on the sticks"
-   ]
+   ],
+   "shop": "overlay-controller-xbox-series-x-crimson-jellyfish-drift-edition",
+   "srv": 1
   },
   {
    "n": "Overlay Controller Xbox One S - Holo Planet Rings One S Edition",
@@ -1404,7 +1446,7 @@
    "d": "Edisi overlay controller Xbox One S bertema Holo Planet Rings One S yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Dilengkapi animasi bertema. Untuk OBS atau Streamlabs.",
    "de": "Xbox One S controller overlay, Holo Planet Rings One S theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. Includes themed animations. For OBS or Streamlabs.",
    "h": 199000,
-   "usd": 17,
+   "usd": 16,
    "g": "other",
    "os": "controller",
    "ctl": true,
@@ -1427,7 +1469,9 @@
     "Mood meter and planet ring level",
     "Portal and meteor shower",
     "Home button is decoration only"
-   ]
+   ],
+   "shop": "overlay-controller-xbox-one-s-holo-planet-rings-one-s-edition",
+   "srv": 1
   },
   {
    "n": "Overlay Controller Xbox One S - Neon Phoenix Wings One S Edition",
@@ -1435,7 +1479,7 @@
    "d": "Edisi overlay controller Xbox One S bertema Neon Phoenix Wings One S yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Dilengkapi animasi bertema. Untuk OBS atau Streamlabs.",
    "de": "Xbox One S controller overlay, Neon Phoenix Wings One S theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. Includes themed animations. For OBS or Streamlabs.",
    "h": 139000,
-   "usd": 8,
+   "usd": 11,
    "g": "other",
    "os": "controller",
    "ctl": true,
@@ -1497,6 +1541,38 @@
     "Ready for OBS and Streamlabs"
    ],
    "shop": "overlay-controller-xbox-series-x-classic-gray-edition",
+   "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Mint Pixel Sword Edition",
+   "ne": "Xbox Series X Controller Overlay - Mint Pixel Sword Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Mint Pixel Sword yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Mint Pixel Sword theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 129000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/mint-pixel-sword-xbox-series-x-overlay-3d.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-19",
+   "ft": [
+    "Bergerak real-time mengikuti gamepad",
+    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
+    "Warna aksen bisa disesuaikan",
+    "Siap dipakai di OBS dan Streamlabs"
+   ],
+   "fte": [
+    "Moves in real time with your gamepad",
+    "Buttons, sticks, and triggers react as you press them",
+    "Adjustable accent color",
+    "Ready for OBS and Streamlabs"
+   ],
+   "shop": "overlay-controller-xbox-series-x-mint-pixel-sword-edition",
    "srv": 1
   }
  ],
