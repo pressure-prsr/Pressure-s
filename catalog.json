@@ -1233,43 +1233,6 @@
    "srv": 1
   },
   {
-   "n": "Overlay Controller Xbox Series X - Classic Grey Edition",
-   "ne": "Xbox Series X Controller Overlay - Classic Grey Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Classic Grey yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Classic Grey theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
-   "h": 159000,
-   "usd": 13,
-   "g": "other",
-   "os": "controller",
-   "hide": false,
-   "ord": 2,
-   "file": "overlays/xbox-series-x-controller-overlay-classic-grey-edition.html",
-   "ctl": true,
-   "pv": "demo",
-   "sub": "xbox-series-x",
-   "tag": "Baru",
-   "old": 199000,
-   "tage": "New",
-   "oldu": 16,
-   "ft": [
-    "Jam digital 7-segmen di body",
-    "Meter VU bereaksi saat tombol ditekan",
-    "TV mini di tengah gamepad",
-    "Efek glitch layar",
-    "Jejak gerak mengikuti stik"
-   ],
-   "fte": [
-    "7-segment digital clock on the body",
-    "VU meter reacts to presses",
-    "Mini TV on the gamepad",
-    "Screen glitch effect",
-    "Motion trail follows the sticks"
-   ],
-   "nd": "2026-10-19",
-   "shop": "overlay-controller-xbox-series-x-classic-grey-edition",
-   "srv": 1
-  },
-  {
    "n": "Overlay Controller Xbox Series X - Mint Mixel Sword Edition",
    "ne": "Xbox Series X Controller Overlay - Mint Mixel Sword Edition",
    "d": "Edisi overlay controller Xbox Series X bertema Mint Mixel Sword yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
