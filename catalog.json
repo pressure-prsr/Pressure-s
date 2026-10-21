@@ -243,7 +243,7 @@
    "os": "controller",
    "g": "other",
    "sub": "xbox-series-x",
-   "ord": 18,
+   "ord": 19,
    "ft": [
     "3 pilihan desain dalam sekali beli: Dino Atas, Dino Tengah, Tanpa Dino",
     "Bergerak real-time mengikuti gamepad"
@@ -276,7 +276,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 27,
+   "ord": 28,
    "ft": [
     "LT dan RT jadi pompa air: tekan untuk menyemprot dan mengangkat ring ke tiang",
     "Tombol, stik, dan bumper menyala saat ditekan",
@@ -310,7 +310,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 22,
+   "ord": 23,
    "ft": [
     "Tampilan putih mulus dengan aksen coral",
     "Trigger LT dan RT berupa meter isi dengan persentase hingga MAX",
@@ -348,7 +348,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 10,
+   "ord": 11,
    "ft": [
     "Badan emas dengan tombol A, B, X, Y berbentuk permata",
     "Trigger LT dan RT terisi sesuai tekanan, stik bergeser mengikuti gerakan",
@@ -388,7 +388,7 @@
    "g": "other",
    "pv": "key",
    "sub": "ps5-dualsense",
-   "ord": 38,
+   "ord": 39,
    "ft": [
     "Body 3D dua nada coklat dengan sambungan halus",
     "Trigger L2 dan R2 bergerak sesuai tekanan",
@@ -459,7 +459,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 9,
+   "ord": 10,
    "ft": [
     "Bentuk bersudut tegas dengan aksen cyan",
     "Kilatan cahaya menyapu setiap tombol yang ditekan",
@@ -533,7 +533,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 12,
+   "ord": 13,
    "ft": [
     "Tampilan manga hitam-putih",
     "Efek garis ledakan di setiap tombol yang ditekan",
@@ -571,7 +571,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 16,
+   "ord": 17,
    "ft": [
     "Trigger LT dan RT mengisi air",
     "Tombol A, B, X, Y memunculkan riak dan koin",
@@ -609,7 +609,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 24,
+   "ord": 25,
    "ft": [
     "Tombol yang ditekan menuliskan hurufnya sebagai coretan di tembok dengan warna tombol itu",
     "Cipratan cat, kabut, dan tetesan",
@@ -645,7 +645,7 @@
    "g": "other",
    "pv": "key",
    "sub": "ps5-dualsense",
-   "ord": 37,
+   "ord": 38,
    "ft": [
     "Body 3D hitam dengan ornamen geometris emas",
     "Trigger L2 dan R2 bergerak sesuai tekanan",
@@ -678,7 +678,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 28,
+   "ord": 29,
    "ft": [
     "Body biru keunguan dengan noda cat air lembut",
     "Setiap tombol yang ditekan memercikkan tinta",
@@ -718,7 +718,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 14,
+   "ord": 15,
    "ft": [
     "Body hijau army dengan garis kontur peta",
     "Huruf stensil pada tombol A, B, X, dan Y",
@@ -796,7 +796,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 26,
+   "ord": 27,
    "ft": [
     "Body bergaris scanline dengan stiker kaset VHS T-120",
     "Stik berbentuk roda kaset",
@@ -836,7 +836,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 21,
+   "ord": 22,
    "ft": [
     "Body biru indigo dengan panji matahari merah dan ombak besar",
     "Gulungan di plat atas mencatat riwayat input",
@@ -876,7 +876,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 17,
+   "ord": 18,
    "ft": [
     "Body ungu bertekstur dither, tombol segi delapan, dan stik bermata",
     "Mini game di display Home: tombol yang ditekan memunculkan duri, tiga hati, lalu GAME OVER dan mengulang",
@@ -912,7 +912,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 23,
+   "ord": 24,
    "ft": [
     "Body kuningan dan kayu dengan roda gigi berputar",
     "Kereta mainan berjalan di rel mengelilingi body",
@@ -952,7 +952,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 29,
+   "ord": 30,
    "ft": [
     "Body papan kayu dengan lencana sheriff di display Home",
     "Poster buron berganti-ganti: WANTED $5000, DEAD OR ALIVE, REWARD $9999, plus cap BUSTED!",
@@ -992,7 +992,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 25,
+   "ord": 26,
    "ft": [
     "Tekstur foto pantai tropis dengan pasir, laut, dan daun palem",
     "Display Home berupa matahari",
@@ -1030,7 +1030,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 13,
+   "ord": 14,
    "ft": [
     "Body baja abu-abu dengan baut, pelat UNIT-X, dan strip peringatan kuning-hitam",
     "Display Home berupa inti reaktor cyan dengan cincin berputar",
@@ -1068,7 +1068,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 19,
+   "ord": 20,
    "ft": [
     "Gaya komputer Windows jadul dengan jendela XBOX.EXE di plat atas",
     "Tombol minimize, maximize, close, dan ikon bendera warna-warni di display Home",
@@ -1180,7 +1180,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 20,
+   "ord": 21,
    "ft": [
     "Body merah muda dengan ranting sakura dan kelopak berguguran",
     "Stik dan D-pad berlambang bunga di tengah",
@@ -1216,7 +1216,7 @@
    "os": "controller",
    "g": "other",
    "sub": "xbox-series-x",
-   "ord": 30,
+   "ord": 31,
    "ft": [
     "Bergerak real-time mengikuti gamepad",
     "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
@@ -1288,7 +1288,7 @@
    "tage": "New",
    "oldu": 12,
    "usd": 4,
-   "ord": 34,
+   "ord": 35,
    "ft": [
     "Tombol, stik, dan trigger bereaksi dengan efek es",
     "Trigger terisi seperti kristal es",
@@ -1324,7 +1324,7 @@
    "old": 120000,
    "tage": "New",
    "oldu": 10,
-   "ord": 33,
+   "ord": 34,
    "sub": "xbox-one-s",
    "ft": [
     "Spiral galaksi berputar, makin cepat saat tekan tombol cepat (hype)",
@@ -1358,7 +1358,7 @@
    "file": "overlays/retro-arcade-one-og.html",
    "pv": "demo",
    "hide": false,
-   "ord": 36,
+   "ord": 37,
    "ft": [
     "Kode Konami (↑↑↓↓←→←→ B A): hujan koin 4 detik",
     "Level up dengan ledakan piksel tiap 100 tekanan",
@@ -1391,7 +1391,7 @@
    "file": "overlays/pastel-rocket-launch-one-og.html",
    "pv": "demo",
    "hide": false,
-   "ord": 35,
+   "ord": 36,
    "ft": [
     "Roket naik bertahap tiap 25 tekanan",
     "Peluncuran roket tiap 100 tekanan",
@@ -1459,7 +1459,7 @@
    "file": "overlays/holo-planet-rings-one-s.html",
    "pv": "demo",
    "hide": false,
-   "ord": 31,
+   "ord": 32,
    "ft": [
     "Body berdenyut seperti planet",
     "Pendamping mengorbit mengikuti stik, mode BOOST saat stik penuh",
@@ -1492,7 +1492,7 @@
    "file": "overlays/neon-phoenix-wings-one-s.html",
    "pv": "demo",
    "hide": false,
-   "ord": 32,
+   "ord": 33,
    "tag": "Baru",
    "old": 199000,
    "tage": "New",
@@ -1582,7 +1582,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-mint-pixel-sword-edition",
    "srv": 1,
-   "ord": 15,
+   "ord": 16,
    "pr": 110000,
    "ps": "2026-10-21",
    "pe": "2026-10-23"
@@ -1618,7 +1618,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-gold-cyber-city-edition",
    "srv": 1,
-   "ord": 11,
+   "ord": 12,
    "pr": 110000,
    "ps": "2026-10-21",
    "pe": "2026-10-23"
@@ -1705,7 +1705,8 @@
     "Press-effect and trigger color can be changed to your taste"
    ],
    "shop": "overlay-controller-xbox-series-x-ember-carbon-veins-edition",
-   "srv": 1
+   "srv": 1,
+   "ord": 9
   }
  ],
  "rate": 12500,
