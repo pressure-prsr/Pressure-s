@@ -1745,6 +1745,46 @@
    ],
    "shop": "overlay-controller-xbox-series-x-torn-paper-red-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Brushed Copper Edition",
+   "ne": "Xbox Series X Controller Overlay - Brushed Copper Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Brushed Copper yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Brushed Copper theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 50000,
+   "usd": 4,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-brushed-copper.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-21",
+   "ft": [
+    "Body tembaga polos dengan gradasi 3D",
+    "Trigger terisi tembaga cair yang naik saat ditarik",
+    "Peta panas: tombol yang sering ditekan makin berwarna",
+    "Tungku di layar Home menyala makin terang sesuai tekanan",
+    "Meter uap 5 segmen naik mengikuti seberapa sibuk bermain",
+    "Bumper menyala oranye bara saat ditekan",
+    "Garis aksen di tengah bawah menyala saat tombol ditekan",
+    "Tiap 5 menit palu mengetuk dan koin jatuh di layar Home"
+   ],
+   "fte": [
+    "Plain copper body with 3D shading",
+    "Triggers fill with molten copper as you pull them",
+    "Heat map: the more you press a button, the more it glows",
+    "The Home furnace burns brighter the harder you play",
+    "5-segment steam meter rises with how busy your play is",
+    "Bumpers glow ember orange when pressed",
+    "Accent line at the bottom center lights up when you press a button",
+    "Every 5 minutes a hammer strikes and a coin drops on the Home screen"
+   ],
+   "shop": "overlay-controller-xbox-series-x-brushed-copper-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
