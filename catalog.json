@@ -1785,6 +1785,44 @@
    ],
    "shop": "overlay-controller-xbox-series-x-brushed-copper-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Crimson Stripe Club Edition",
+   "ne": "Xbox Series X Controller Overlay - Crimson Stripe Club Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Crimson Stripe Club yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Crimson Stripe Club theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 129000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-crimson-stripe-club.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-21",
+   "ft": [
+    "Goresan cakar merah bergaya klub olahraga di body",
+    "Pajangan kapak kayu dan besi di dalam kotak kaca di bagian atas",
+    "Layar Home berganti siang, senja, malam sesuai jam",
+    "Trigger terisi merah dengan garis klub ikut bergeser",
+    "Bumper disapu warna merah, stik punya riak saat diklik",
+    "Suasana Home berubah saat permainan makin ramai",
+    "Tekan L3 dan R3 bersamaan untuk menukar merah dan krem"
+   ],
+   "fte": [
+    "Red claw-slash artwork on the body in a sports club style",
+    "Wood and iron axe on display inside a glass case on the top",
+    "Home screen changes day, dusk, night by real time",
+    "Triggers fill with red while club stripes slide along",
+    "Bumpers sweep red, sticks ripple when clicked",
+    "Home mood changes as the play gets busier",
+    "Press L3 and R3 together to swap red and cream"
+   ],
+   "shop": "overlay-controller-xbox-series-x-crimson-stripe-club-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
