@@ -1866,6 +1866,46 @@
    ],
    "shop": "overlay-controller-xbox-series-x-magenta-carbon-pulse-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Rescue Unit Safety Edition",
+   "ne": "Xbox Series X Controller Overlay - Rescue Unit Safety Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Rescue Unit Safety yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Rescue Unit Safety theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 99000,
+   "usd": 8,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-rescue-unit-safety.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-22",
+   "ft": [
+    "Body putih panel mecha dengan strip bahaya dan ring pelampung oranye",
+    "Lampu darurat berputar pelan di layar tengah",
+    "Inti energi 4 segmen menyala saat tombol A B X Y ditekan",
+    "Pesan bergilir dan meter level siaga naik saat tombol sering ditekan",
+    "Mode hype: lampu tengah berputar cepat saat tombol ditekan cepat",
+    "Tahan LB, RB, dan A untuk sirene darurat selama 3 detik",
+    "Trigger terisi oranye penuh, bumper dan D-pad menyala saat ditekan",
+    "Mode standby: lampu melambat dan inti bernapas saat controller diam"
+   ],
+   "fte": [
+    "White mecha-panel body with hazard stripes and an orange life ring",
+    "Slow-spinning emergency light on the center display",
+    "4-segment energy core lights up as you press A, B, X, Y",
+    "Rotating status messages and an alert-level meter that rises as you press more",
+    "Hype mode: the center light spins faster during rapid presses",
+    "Hold LB, RB and A for a 3-second emergency siren",
+    "Triggers fill with solid orange, bumpers and D-pad light up",
+    "Standby mode: the light slows and the core breathes when idle"
+   ],
+   "shop": "overlay-controller-xbox-series-x-rescue-unit-safety-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
