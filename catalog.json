@@ -1707,6 +1707,44 @@
    "shop": "overlay-controller-xbox-series-x-ember-carbon-veins-edition",
    "srv": 1,
    "ord": 9
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Torn Paper Red Edition",
+   "ne": "Xbox Series X Controller Overlay - Torn Paper Red Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Torn Paper Red yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Torn Paper Red theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 129000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-torn-paper-red.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-21",
+   "ft": [
+    "Gaya kertas sobek merah krem, goresan di body bergeser pelan",
+    "Setelah 500 tekan, darah perlahan memenuhi body controller",
+    "Tombol, trigger, dan bumper merah dengan tepi sobek saat ditekan",
+    "Kepingan kertas beterbangan dari tombol ABXY",
+    "Display Home menampilkan nomor bab, naik tiap 100 tekan",
+    "Judul bab berganti di plat atas, lengkap dengan progres tekan",
+    "Kode Konami dan kombo LB+RB+Y memicu kejutan"
+   ],
+   "fte": [
+    "Torn paper red and cream style with slowly drifting body art",
+    "After 500 presses, blood slowly fills the controller body",
+    "Buttons, triggers and bumpers turn red with torn edges when pressed",
+    "Paper shards fly off the ABXY buttons",
+    "Home display shows a chapter number that rises every 100 presses",
+    "Chapter title changes on the top plate with a press progress bar",
+    "Konami code and LB+RB+Y combo trigger surprises"
+   ],
+   "shop": "overlay-controller-xbox-series-x-torn-paper-red-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
