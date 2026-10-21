@@ -1826,6 +1826,46 @@
    "shop": "overlay-controller-xbox-series-x-crimson-stripe-club-edition",
    "srv": 1,
    "ord": 8
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Magenta Carbon Pulse Edition",
+   "ne": "Xbox Series X Controller Overlay - Magenta Carbon Pulse Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Magenta Carbon Pulse yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Magenta Carbon Pulse theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 105000,
+   "usd": 8,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-magenta-carbon-pulse.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-22",
+   "ft": [
+    "Body karbon dengan lambang magenta, cahaya detak berjalan kiri ke kanan",
+    "Display Home: detak berjalan tiap tombol ditekan",
+    "Penghitung tekan: total di Home, A B X Y di plat atas",
+    "Meter mood bertingkat di bawah tengah naik saat bermain",
+    "Napas pelan magenta saat controller didiamkan",
+    "Tahan LB dan RB: lambang grip berkedip",
+    "Riak ring saat stik digerakkan, bumper menyala magenta",
+    "Setiap 100 tekan, body berdenyut sebagai penanda"
+   ],
+   "fte": [
+    "Carbon body with a magenta emblem and a heartbeat light sweeping left to right",
+    "Home display: a heartbeat runs across on every press",
+    "Press counter: total on Home, A B X Y on the top plate",
+    "Mood meter below the center rises as you play",
+    "Soft magenta breathing when the controller is idle",
+    "Hold LB and RB: the grip emblems blink",
+    "Ripple ring on stick move, bumpers glow magenta",
+    "Every 100 presses the body pulses as a milestone"
+   ],
+   "shop": "overlay-controller-xbox-series-x-magenta-carbon-pulse-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
