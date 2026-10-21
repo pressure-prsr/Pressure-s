@@ -1618,6 +1618,46 @@
    ],
    "shop": "overlay-controller-xbox-series-x-gold-cyber-city-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Cobalt Carbon Strike Edition",
+   "ne": "Xbox Series X Controller Overlay - Cobalt Carbon Strike Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Cobalt Carbon Strike yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Cobalt Carbon Strike theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 129000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-cobalt-carbon-strike.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-21",
+   "ft": [
+    "Body karbon hitam dengan lambang biru kobalt besar",
+    "Garis biru di bumper berkedip dan menyala penuh saat ditekan",
+    "Riwayat 5 input terakhir tampil sebagai ikon yang bergeser",
+    "Maskot robot di layar Home yang bereaksi saat tombol ditekan",
+    "Hitungan combo, rekor combo, dan total tekan",
+    "Mode tidur saat diam, mode hype saat main cepat, kode rahasia",
+    "Jejak biru di stik dan riak cincin saat stik ditekan",
+    "Trigger terisi biru penuh dengan garis ukuran yang menyala"
+   ],
+   "fte": [
+    "Black carbon body with a large cobalt blue emblem",
+    "Blue bumper lines blink and light up fully when pressed",
+    "History of the last 5 inputs shown as sliding icons",
+    "Robot mascot on the Home screen that reacts to button presses",
+    "Combo count, best combo, and total presses",
+    "Sleep mode when idle, hype mode when playing fast, secret codes",
+    "Blue trail on sticks and ripple ring when a stick is pressed",
+    "Triggers fill fully with blue and glowing level marks"
+   ],
+   "shop": "overlay-controller-xbox-series-x-cobalt-carbon-strike-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
