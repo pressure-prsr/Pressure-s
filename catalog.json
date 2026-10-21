@@ -1949,6 +1949,78 @@
    "shop": "overlay-controller-xbox-series-x-orange-black-stripe-edition",
    "srv": 1,
    "ord": 20
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Neon Fox Tail Edition",
+   "ne": "Xbox Series X Controller Overlay - Neon Fox Tail Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Neon Fox Tail yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Neon Fox Tail theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 130000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/neon-fox-tail-xbox-series-x-overlay-3d.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-22",
+   "ft": [
+    "Bergerak real-time mengikuti gamepad",
+    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
+    "Warna aksen bisa disesuaikan",
+    "Siap dipakai di OBS dan Streamlabs"
+   ],
+   "fte": [
+    "Moves in real time with your gamepad",
+    "Buttons, sticks, and triggers react as you press them",
+    "Adjustable accent color",
+    "Ready for OBS and Streamlabs"
+   ],
+   "shop": "overlay-controller-xbox-series-x-neon-fox-tail-edition",
+   "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Cyan Radial Burst Edition",
+   "ne": "Xbox Series X Controller Overlay - Cyan Radial Burst Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Cyan Radial Burst yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Cyan Radial Burst theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 129000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-cyan-radial-burst.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-22",
+   "ft": [
+    "Body 3D bermotif sinar cyan besar yang berdenyut mengikuti tempo main",
+    "Orb pengisi di layar Home: tahan trigger untuk mengisi, lepas jadi gelombang",
+    "Layar Home berisi matahari mini dan jam sinar sesuai waktu nyata",
+    "Plat atas dengan penghitung tekan, combo, dan meter mood",
+    "Sinar di sisi grip menyala saat tombol sisi itu ditekan",
+    "Saat didiamkan muncul bintang dan komet di layar Home",
+    "Kode Konami atau tahan LB dan RB 3 detik memicu ledakan sinar",
+    "Warna aksen bisa diganti lewat pengaturan accent di alamat web"
+   ],
+   "fte": [
+    "3D body with a big cyan ray pattern that pulses with your play tempo",
+    "Charge orb on the Home screen: hold a trigger to charge, release for a shockwave",
+    "Home screen shows a mini sun and ray clock in real time",
+    "Top plate with press counter, combo, and mood meter",
+    "Rays on the grip light up when buttons on that side are pressed",
+    "Stars and a comet appear on the Home screen when left idle",
+    "Konami code or holding LB and RB for 3 seconds triggers a ray burst",
+    "Accent color can be changed with the accent setting in the web address"
+   ],
+   "shop": "overlay-controller-xbox-series-x-cyan-radial-burst-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
