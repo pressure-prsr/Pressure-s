@@ -1666,6 +1666,46 @@
    "pr": 110000,
    "ps": "2026-10-21",
    "pe": "2026-10-23"
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Ember Carbon Veins Edition",
+   "ne": "Xbox Series X Controller Overlay - Ember Carbon Veins Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Ember Carbon Veins yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Ember Carbon Veins theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 129000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-ember-carbon-veins.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-21",
+   "ft": [
+    "Body karbon dengan lambang api dan urat oranye menyala",
+    "Urat oranye menyala bergantian dan bernapas pelan saat controller diam",
+    "Mata naga di tengah yang berkedip dan mengikuti stik kiri",
+    "Mode Rage: tekan cepat, retakan merah menyebar di body",
+    "Trigger terisi lava oranye, tombol dan stik punya percikan bara",
+    "Kode Konami dan L3+R3 memicu animasi kejutan",
+    "Titik bara, meter combo, dan kilat urat tiap 100 tekan",
+    "Warna efek tekan dan trigger bisa diganti sesuai selera"
+   ],
+   "fte": [
+    "Carbon body with a flame emblem and glowing orange veins",
+    "Orange veins glow in turns and breathe softly when the controller is idle",
+    "A dragon eye in the center that blinks and follows the left stick",
+    "Rage Mode: mash buttons and red cracks spread across the body",
+    "Triggers fill with orange lava, buttons and sticks throw ember sparks",
+    "Konami code and L3+R3 trigger surprise animations",
+    "Ember dots, a combo meter, and a vein flash every 100 presses",
+    "Press-effect and trigger color can be changed to your taste"
+   ],
+   "shop": "overlay-controller-xbox-series-x-ember-carbon-veins-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
