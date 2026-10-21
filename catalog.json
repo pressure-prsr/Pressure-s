@@ -1906,6 +1906,46 @@
    ],
    "shop": "overlay-controller-xbox-series-x-rescue-unit-safety-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Orange Black Stripe Edition",
+   "ne": "Xbox Series X Controller Overlay - Orange Black Stripe Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Orange Black Stripe yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Orange Black Stripe theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 115000,
+   "usd": 9,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-orange-black-stripe.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-22",
+   "ft": [
+    "Body belang harimau oranye-hitam dengan goresan cakar",
+    "Mata harimau di display Home yang berkedip dan tidur saat diam",
+    "Mode Rage: tekan cepat membuat mata harimau memerah",
+    "Meter mood Jinak ke Buas di plat atas mengikuti kecepatan tekan",
+    "Trigger terisi cakar oranye yang naik bergantian",
+    "Riak oranye di stik dan tombol ABXY yang membesar saat ditekan",
+    "Kode rahasia Konami dan cakaran besar dari kombinasi LB RB LT RT",
+    "Hitungan milestone tiap 100 tekan dan mode Hype"
+   ],
+   "fte": [
+    "Orange and black tiger-stripe body with claw slashes",
+    "Tiger eye on the Home display that blinks and sleeps when idle",
+    "Rage mode: fast button mashing turns the tiger eye red",
+    "Mood meter from Calm to Wild on the top plate follows press speed",
+    "Triggers fill with orange claw blades rising one after another",
+    "Orange ripple on sticks and ABXY buttons that grow when pressed",
+    "Konami secret code and a big claw slash from the LB RB LT RT combo",
+    "Milestone every 100 presses and a Hype mode"
+   ],
+   "shop": "overlay-controller-xbox-series-x-orange-black-stripe-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
