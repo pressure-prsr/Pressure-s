@@ -243,7 +243,7 @@
    "os": "controller",
    "g": "other",
    "sub": "xbox-series-x",
-   "ord": 16,
+   "ord": 18,
    "ft": [
     "3 pilihan desain dalam sekali beli: Dino Atas, Dino Tengah, Tanpa Dino",
     "Bergerak real-time mengikuti gamepad"
@@ -257,9 +257,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-pixel-arcade-edition",
    "srv": 1,
-   "pr": 207000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 220000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Water Ring Edition": {
    "n": "Overlay Controller Xbox Series X - Water Ring Edition",
@@ -276,7 +276,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 25,
+   "ord": 27,
    "ft": [
     "LT dan RT jadi pompa air: tekan untuk menyemprot dan mengangkat ring ke tiang",
     "Tombol, stik, dan bumper menyala saat ditekan",
@@ -291,9 +291,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-water-ring-edition",
    "srv": 1,
-   "pr": 180000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 191000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Silk Classic": {
    "n": "Overlay Controller Xbox Series X - Silk Classic",
@@ -310,7 +310,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 20,
+   "ord": 22,
    "ft": [
     "Tampilan putih mulus dengan aksen coral",
     "Trigger LT dan RT berupa meter isi dengan persentase hingga MAX",
@@ -329,9 +329,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-silk-classic",
    "srv": 1,
-   "pr": 79000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 84000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Fantasy RPG Gold Edition": {
    "n": "Overlay Controller Xbox Series X - Fantasy RPG Gold Edition",
@@ -348,7 +348,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 9,
+   "ord": 10,
    "ft": [
     "Badan emas dengan tombol A, B, X, Y berbentuk permata",
     "Trigger LT dan RT terisi sesuai tekanan, stik bergeser mengikuti gerakan",
@@ -369,9 +369,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-fantasy-rpg-gold-edition",
    "srv": 1,
-   "pr": 239000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 254000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller PS5 DualSense - Shadow Fight 2 Classic": {
    "n": "Overlay Controller PS5 DualSense - Shadow Fight 2 Classic",
@@ -388,7 +388,7 @@
    "g": "other",
    "pv": "key",
    "sub": "ps5-dualsense",
-   "ord": 36,
+   "ord": 38,
    "ft": [
     "Body 3D dua nada coklat dengan sambungan halus",
     "Trigger L2 dan R2 bergerak sesuai tekanan",
@@ -421,7 +421,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 7,
+   "ord": 8,
    "ft": [
     "Body kaca gelap dengan aksen biru es",
     "Trigger LT dan RT berupa meter isi",
@@ -440,9 +440,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-dark-glass-classic",
    "srv": 1,
-   "pr": 79000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 84000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Esports Angular Classic": {
    "n": "Overlay Controller Xbox Series X - Esports Angular Classic",
@@ -459,7 +459,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 8,
+   "ord": 9,
    "ft": [
     "Bentuk bersudut tegas dengan aksen cyan",
     "Kilatan cahaya menyapu setiap tombol yang ditekan",
@@ -478,9 +478,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-esports-angular-classic",
    "srv": 1,
-   "pr": 79000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 84000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Comic Pop Art Classic": {
    "n": "Overlay Controller Xbox Series X - Comic Pop Art Classic",
@@ -497,7 +497,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 3,
+   "ord": 4,
    "ft": [
     "Titik halftone dengan aksen kuning mencolok",
     "Tekan LT atau RT sampai penuh untuk memompa balon di dalam body",
@@ -514,9 +514,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-comic-pop-art-classic",
    "srv": 1,
-   "pr": 68000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 72000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Manga Ink Edition": {
    "n": "Overlay Controller Xbox Series X - Manga Ink Edition",
@@ -533,7 +533,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 10,
+   "ord": 12,
    "ft": [
     "Tampilan manga hitam-putih",
     "Efek garis ledakan di setiap tombol yang ditekan",
@@ -552,9 +552,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-manga-ink-edition",
    "srv": 1,
-   "pr": 156000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 166000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Pirate Ship Edition": {
    "n": "Overlay Controller Xbox Series X - Pirate Ship Edition",
@@ -571,7 +571,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 14,
+   "ord": 16,
    "ft": [
     "Trigger LT dan RT mengisi air",
     "Tombol A, B, X, Y memunculkan riak dan koin",
@@ -590,9 +590,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-pirate-ship-edition",
    "srv": 1,
-   "pr": 159000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 169000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Street Graffiti 3D Classic": {
    "n": "Overlay Controller Xbox Series X - Street Graffiti 3D Classic",
@@ -609,7 +609,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 22,
+   "ord": 24,
    "ft": [
     "Tombol yang ditekan menuliskan hurufnya sebagai coretan di tembok dengan warna tombol itu",
     "Cipratan cat, kabut, dan tetesan",
@@ -626,9 +626,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-street-graffiti-3d-classic",
    "srv": 1,
-   "pr": 79000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 84000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller PS5 DualSense - Art Deco Classic": {
    "n": "Overlay Controller PS5 DualSense - Art Deco Classic",
@@ -645,7 +645,7 @@
    "g": "other",
    "pv": "key",
    "sub": "ps5-dualsense",
-   "ord": 35,
+   "ord": 37,
    "ft": [
     "Body 3D hitam dengan ornamen geometris emas",
     "Trigger L2 dan R2 bergerak sesuai tekanan",
@@ -678,7 +678,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 26,
+   "ord": 28,
    "ft": [
     "Body biru keunguan dengan noda cat air lembut",
     "Setiap tombol yang ditekan memercikkan tinta",
@@ -699,9 +699,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-watercolor-classic",
    "srv": 1,
-   "pr": 79000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 84000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Military Tactical Classic": {
    "n": "Overlay Controller Xbox Series X - Military Tactical Classic",
@@ -718,7 +718,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 12,
+   "ord": 14,
    "ft": [
     "Body hijau army dengan garis kontur peta",
     "Huruf stensil pada tombol A, B, X, dan Y",
@@ -739,9 +739,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-military-tactical-classic",
    "srv": 1,
-   "pr": 79000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 84000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Arcade Cabinet Edition": {
    "n": "Overlay Controller Xbox Series X - Arcade Cabinet Edition",
@@ -777,9 +777,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-arcade-cabinet-edition",
    "srv": 1,
-   "pr": 176000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 187000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - VHS Analog Edition": {
    "n": "Overlay Controller Xbox Series X - VHS Analog Edition",
@@ -796,7 +796,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 24,
+   "ord": 26,
    "ft": [
     "Body bergaris scanline dengan stiker kaset VHS T-120",
     "Stik berbentuk roda kaset",
@@ -817,9 +817,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-vhs-analog-edition",
    "srv": 1,
-   "pr": 196000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 208000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition": {
    "n": "Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition",
@@ -836,7 +836,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 19,
+   "ord": 21,
    "ft": [
     "Body biru indigo dengan panji matahari merah dan ombak besar",
     "Gulungan di plat atas mencatat riwayat input",
@@ -857,9 +857,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-samurai-ukiyo-e-edition",
    "srv": 1,
-   "pr": 159000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 169000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Pixel 8-bit Classic": {
    "n": "Overlay Controller Xbox Series X - Pixel 8-bit Classic",
@@ -876,7 +876,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 15,
+   "ord": 17,
    "ft": [
     "Body ungu bertekstur dither, tombol segi delapan, dan stik bermata",
     "Mini game di display Home: tombol yang ditekan memunculkan duri, tiga hati, lalu GAME OVER dan mengulang",
@@ -893,9 +893,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-pixel-8-bit-classic",
    "srv": 1,
-   "pr": 79000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 84000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Steampunk Brass Edition": {
    "n": "Overlay Controller Xbox Series X - Steampunk Brass Edition",
@@ -912,7 +912,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 21,
+   "ord": 23,
    "ft": [
     "Body kuningan dan kayu dengan roda gigi berputar",
     "Kereta mainan berjalan di rel mengelilingi body",
@@ -933,9 +933,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-steampunk-brass-edition",
    "srv": 1,
-   "pr": 176000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 187000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Western Saloon Edition": {
    "n": "Overlay Controller Xbox Series X - Western Saloon Edition",
@@ -952,7 +952,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 27,
+   "ord": 29,
    "ft": [
     "Body papan kayu dengan lencana sheriff di display Home",
     "Poster buron berganti-ganti: WANTED $5000, DEAD OR ALIVE, REWARD $9999, plus cap BUSTED!",
@@ -973,9 +973,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-western-saloon-edition",
    "srv": 1,
-   "pr": 148000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 157000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Tropical Summer Beach Classic": {
    "n": "Overlay Controller Xbox Series X - Tropical Summer Beach Classic",
@@ -992,7 +992,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 23,
+   "ord": 25,
    "ft": [
     "Tekstur foto pantai tropis dengan pasir, laut, dan daun palem",
     "Display Home berupa matahari",
@@ -1011,9 +1011,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-tropical-summer-beach-classic",
    "srv": 1,
-   "pr": 79000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 84000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Mecha Edition": {
    "n": "Overlay Controller Xbox Series X - Mecha Edition",
@@ -1030,7 +1030,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 11,
+   "ord": 13,
    "ft": [
     "Body baja abu-abu dengan baut, pelat UNIT-X, dan strip peringatan kuning-hitam",
     "Display Home berupa inti reaktor cyan dengan cincin berputar",
@@ -1049,9 +1049,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-mecha-edition",
    "srv": 1,
-   "pr": 159000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 169000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Retro 90s CRT Edition": {
    "n": "Overlay Controller Xbox Series X - Retro 90s CRT Edition",
@@ -1068,7 +1068,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 17,
+   "ord": 19,
    "ft": [
     "Gaya komputer Windows jadul dengan jendela XBOX.EXE di plat atas",
     "Tombol minimize, maximize, close, dan ikon bendera warna-warni di display Home",
@@ -1085,9 +1085,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-retro-90s-crt-edition",
    "srv": 1,
-   "pr": 196000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 208000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition": {
    "n": "Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition",
@@ -1104,7 +1104,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 4,
+   "ord": 5,
    "ft": [
     "Body bergambar laundromat malam: papan neon LAUNDRY NIGHT, deretan mesin cuci, jadwal laundry, lampu gantung",
     "Jendela kota malam di display Home",
@@ -1123,9 +1123,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-cozy-lo-fi-laundromat-edition",
    "srv": 1,
-   "pr": 127000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 135000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Cyber Tokyo Night Classic": {
    "n": "Overlay Controller Xbox Series X - Cyber Tokyo Night Classic",
@@ -1142,7 +1142,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 6,
+   "ord": 7,
    "ft": [
     "Body semi-transparan berlatar gedung Tokyo malam dengan neon pink dan cyan",
     "Setiap input muncul sebagai label katakana di bawah controller, misalnya アールティー untuk RT",
@@ -1161,9 +1161,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-cyber-tokyo-night-classic",
    "srv": 1,
-   "pr": 79000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 84000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X - Sakura Edition": {
    "n": "Overlay Controller Xbox Series X - Sakura Edition",
@@ -1180,7 +1180,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 18,
+   "ord": 20,
    "ft": [
     "Body merah muda dengan ranting sakura dan kelopak berguguran",
     "Stik dan D-pad berlambang bunga di tengah",
@@ -1199,9 +1199,9 @@
    "hide": false,
    "shop": "overlay-controller-xbox-series-x-sakura-edition",
    "srv": 1,
-   "pr": 116000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 123000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   "other|Overlay Controller Xbox Series X (Custom)": {
    "n": "Overlay Controller Xbox Series X (Custom)",
@@ -1216,7 +1216,7 @@
    "os": "controller",
    "g": "other",
    "sub": "xbox-series-x",
-   "ord": 28,
+   "ord": 30,
    "ft": [
     "Bergerak real-time mengikuti gamepad",
     "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
@@ -1266,9 +1266,9 @@
    "nd": "2026-10-19",
    "shop": "overlay-controller-xbox-series-x-cloud-pastel-edition",
    "srv": 1,
-   "pr": 103000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 110000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   {
    "n": "Overlay Controller Xbox One OG - Ice Crystal Edition",
@@ -1288,7 +1288,7 @@
    "tage": "New",
    "oldu": 12,
    "usd": 4,
-   "ord": 32,
+   "ord": 34,
    "ft": [
     "Tombol, stik, dan trigger bereaksi dengan efek es",
     "Trigger terisi seperti kristal es",
@@ -1324,7 +1324,7 @@
    "old": 120000,
    "tage": "New",
    "oldu": 10,
-   "ord": 31,
+   "ord": 33,
    "sub": "xbox-one-s",
    "ft": [
     "Spiral galaksi berputar, makin cepat saat tekan tombol cepat (hype)",
@@ -1358,7 +1358,7 @@
    "file": "overlays/retro-arcade-one-og.html",
    "pv": "demo",
    "hide": false,
-   "ord": 34,
+   "ord": 36,
    "ft": [
     "Kode Konami (↑↑↓↓←→←→ B A): hujan koin 4 detik",
     "Level up dengan ledakan piksel tiap 100 tekanan",
@@ -1391,7 +1391,7 @@
    "file": "overlays/pastel-rocket-launch-one-og.html",
    "pv": "demo",
    "hide": false,
-   "ord": 33,
+   "ord": 35,
    "ft": [
     "Roket naik bertahap tiap 25 tekanan",
     "Peluncuran roket tiap 100 tekanan",
@@ -1422,7 +1422,7 @@
    "file": "overlays/crimson-jellyfish-drift.html",
    "pv": "demo",
    "hide": false,
-   "ord": 5,
+   "ord": 6,
    "sub": "xbox-series-x",
    "ft": [
     "Suasana laut siang, senja, atau malam (?theme=day|dusk|night)",
@@ -1440,9 +1440,9 @@
    ],
    "shop": "overlay-controller-xbox-series-x-crimson-jellyfish-drift-edition",
    "srv": 1,
-   "pr": 159000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 169000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   {
    "n": "Overlay Controller Xbox One S - Holo Planet Rings One S Edition",
@@ -1459,7 +1459,7 @@
    "file": "overlays/holo-planet-rings-one-s.html",
    "pv": "demo",
    "hide": false,
-   "ord": 29,
+   "ord": 31,
    "ft": [
     "Body berdenyut seperti planet",
     "Pendamping mengorbit mengikuti stik, mode BOOST saat stik penuh",
@@ -1492,7 +1492,7 @@
    "file": "overlays/neon-phoenix-wings-one-s.html",
    "pv": "demo",
    "hide": false,
-   "ord": 30,
+   "ord": 32,
    "tag": "Baru",
    "old": 199000,
    "tage": "New",
@@ -1547,9 +1547,9 @@
    "shop": "overlay-controller-xbox-series-x-classic-gray-edition",
    "srv": 1,
    "ord": 1,
-   "pr": 103000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "pr": 110000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   {
    "n": "Overlay Controller Xbox Series X - Mint Pixel Sword Edition",
@@ -1582,10 +1582,10 @@
    ],
    "shop": "overlay-controller-xbox-series-x-mint-pixel-sword-edition",
    "srv": 1,
-   "ord": 13,
-   "pr": 103000,
-   "ps": "2026-10-19",
-   "pe": "2026-10-20"
+   "ord": 15,
+   "pr": 110000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   {
    "n": "Overlay Controller Xbox Series X - Gold Cyber City Edition",
@@ -1617,7 +1617,11 @@
     "Ready for OBS and Streamlabs"
    ],
    "shop": "overlay-controller-xbox-series-x-gold-cyber-city-edition",
-   "srv": 1
+   "srv": 1,
+   "ord": 11,
+   "pr": 110000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   },
   {
    "n": "Overlay Controller Xbox Series X - Cobalt Carbon Strike Edition",
@@ -1657,7 +1661,11 @@
     "Triggers fill fully with blue and glowing level marks"
    ],
    "shop": "overlay-controller-xbox-series-x-cobalt-carbon-strike-edition",
-   "srv": 1
+   "srv": 1,
+   "ord": 3,
+   "pr": 110000,
+   "ps": "2026-10-21",
+   "pe": "2026-10-23"
   }
  ],
  "rate": 12500,
