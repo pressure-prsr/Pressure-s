@@ -2096,6 +2096,46 @@
    ],
    "shop": "overlay-controller-xbox-series-x-sunny-perforated-mesh-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Sumi Stroke Mono Edition",
+   "ne": "Xbox Series X Controller Overlay - Sumi Stroke Mono Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Sumi Stroke Mono yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Sumi Stroke Mono theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 135000,
+   "usd": 11,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-sumi-stroke-mono.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-22",
+   "ft": [
+    "Body bergambar goresan sumi hitam-putih",
+    "Rage Mode setelah 8 kali tekan: kilatan menerangi body dan jadi merah emas",
+    "Display Home zirah Spartan putih, berubah merah emas saat Rage Mode",
+    "Plate bertuliskan PEACE dan RAGE MODE",
+    "Duel Spark: dua kilatan beradu saat tekan A dan B, skor titik tinta",
+    "Percikan tinta saat tombol A B X Y ditekan",
+    "Sapuan kuas di bumper dan isi tinta naik di trigger",
+    "Tetes tinta saat didiamkan dan kode Konami memicu ledakan tinta"
+   ],
+   "fte": [
+    "Black-and-white sumi brush stroke body art",
+    "Rage Mode after 8 presses: a flash lights up the body and turns it red and gold",
+    "Home display with a white Spartan helmet that turns red and gold in Rage Mode",
+    "Plate that reads PEACE and RAGE MODE",
+    "Duel Spark: two flashes clash when you press A and B, ink dot score",
+    "Ink splatter when A B X Y buttons are pressed",
+    "Brush sweep on bumpers and rising ink fill on triggers",
+    "Ink drops when left idle and the Konami code triggers an ink burst"
+   ],
+   "shop": "overlay-controller-xbox-series-x-sumi-stroke-mono-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
