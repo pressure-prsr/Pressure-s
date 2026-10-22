@@ -2056,6 +2056,46 @@
    "shop": "overlay-controller-xbox-series-x-holo-solar-eclipse-edition",
    "srv": 1,
    "ord": 48
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Sunny Perforated Mesh Edition",
+   "ne": "Xbox Series X Controller Overlay - Sunny Perforated Mesh Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Sunny Perforated Mesh yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Sunny Perforated Mesh theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 110000,
+   "usd": 9,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-sunny-perforated-mesh.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-22",
+   "ft": [
+    "Body charcoal dengan lambang petir matahari kuning besar",
+    "Panel berlubang di grip yang menyala bergantian",
+    "Energy Core 4 segmen di tengah menyala per tombol A B X Y",
+    "Mode hype: lubang berkedip cepat saat tombol ditekan cepat",
+    "Cincin riak kuning saat stik ditekan",
+    "Trigger terisi kuning penuh saat ditarik",
+    "Warna aksen bisa diganti lewat link",
+    "Bisa dicoba lewat sentuhan di layar HP"
+   ],
+   "fte": [
+    "Charcoal body with a big yellow lightning sun emblem",
+    "Perforated grip panels that light up in turns",
+    "4-segment Energy Core in the center lights per A B X Y button",
+    "Hype mode: holes blink faster when buttons are pressed fast",
+    "Yellow ripple rings when a stick is pressed",
+    "Triggers fill up yellow when pulled",
+    "Accent color can be changed through the link",
+    "Playable by touch on a phone screen"
+   ],
+   "shop": "overlay-controller-xbox-series-x-sunny-perforated-mesh-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
