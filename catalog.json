@@ -2256,6 +2256,46 @@
    ],
    "shop": "overlay-controller-xbox-series-x-cyan-chevron-run-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Raven Wing Indigo Edition",
+   "ne": "Xbox Series X Controller Overlay - Raven Wing Indigo Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Raven Wing Indigo yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Raven Wing Indigo theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 159000,
+   "usd": 13,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-raven-wing-indigo.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-23",
+   "ft": [
+    "Sayap gagak indigo bercahaya di body karbon",
+    "Gagak terbang di layar tengah, kepakan makin cepat saat tombol ditekan",
+    "Kepala gagak mengikuti stik, bulan menampilkan fase sesuai tanggal",
+    "Bola energi terisi tiap tekan, penuh memicu aksi ultimate gagak",
+    "Penghitung tekan dan lencana peringkat gagak",
+    "Trigger terisi motif bulu, tombol dan stik punya riak cahaya",
+    "Sayap kecil mengepak pelan, tahan View+Menu atau LB+RB untuk kejutan",
+    "Warna aksen bisa diganti lewat pengaturan"
+   ],
+   "fte": [
+    "Glowing indigo raven wings on a carbon body",
+    "Raven flies on the center screen, flapping faster as you press",
+    "Raven head follows the stick, moon shows the phase of the day",
+    "Energy orbs fill with every press, full stack triggers a raven ultimate",
+    "Press counter and raven rank badge",
+    "Feather-pattern trigger fill, ripple glow on buttons and sticks",
+    "Small wings flap gently, hold View+Menu or LB+RB for a surprise",
+    "Accent color can be changed through settings"
+   ],
+   "shop": "overlay-controller-xbox-series-x-raven-wing-indigo-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
