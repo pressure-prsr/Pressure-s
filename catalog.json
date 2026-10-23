@@ -2136,6 +2136,46 @@
    ],
    "shop": "overlay-controller-xbox-series-x-sumi-stroke-mono-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Phoenix Amber Edition",
+   "ne": "Xbox Series X Controller Overlay - Phoenix Amber Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Phoenix Amber yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Phoenix Amber theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 129000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-phoenix-amber.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-23",
+   "ft": [
+    "Body karbon dengan lambang bulu feniks amber besar",
+    "Bulu di body menyala bergantian dan bereaksi saat tombol ditekan",
+    "Isi trigger naik seperti bara saat ditarik",
+    "Cincin bara mengembang di stik dan tombol ABXY",
+    "Kilau amber menyapu bumper saat ditekan",
+    "Display Home berupa bulu feniks yang berdenyut",
+    "Bar bulu terisi per jumlah tekan, merayakan tiap 100 tekan",
+    "Awakening Form: LB+RB+LT+RT membuka bentuk akhir feniks"
+   ],
+   "fte": [
+    "Carbon body with a large amber phoenix feather emblem",
+    "Body feathers glow in turns and react to button presses",
+    "Trigger fill rises like embers when pulled",
+    "Ember rings expand on the sticks and ABXY buttons",
+    "Amber shine sweeps across the bumpers when pressed",
+    "Home display shows a pulsing phoenix feather",
+    "Feather bar fills with each press and celebrates every 100 presses",
+    "Awakening Form: LB+RB+LT+RT unlocks the final phoenix form"
+   ],
+   "shop": "overlay-controller-xbox-series-x-phoenix-amber-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
