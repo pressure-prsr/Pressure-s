@@ -2216,6 +2216,46 @@
    ],
    "shop": "overlay-controller-xbox-series-x-venom-coil-carbon-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Cyan Chevron Run Edition",
+   "ne": "Xbox Series X Controller Overlay - Cyan Chevron Run Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Cyan Chevron Run yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Cyan Chevron Run theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 120000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-cyan-chevron-run.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-23",
+   "ft": [
+    "Motif panah chevron cyan besar di bodi controller",
+    "Api nitro menyala di layar Home saat RT ditarik penuh",
+    "Speedometer di layar Home, jarumnya ikut tarikan trigger",
+    "Deretan panah di plat atas menyala sesuai tarikan RT",
+    "Kode Konami memicu sapuan panah ke seluruh bodi",
+    "Jejak panah di stik dan riak cahaya di tombol A B X Y",
+    "Trigger terisi warna cyan dengan panah kecil di dalamnya",
+    "Panah di D-pad menyala saat ditekan"
+   ],
+   "fte": [
+    "Large cyan chevron arrow pattern on the controller body",
+    "Nitro flame ignites on the Home display when RT is fully pulled",
+    "Speedometer on the Home display, needle follows the trigger pull",
+    "Row of arrows on the top plate lights up with the RT pull",
+    "Konami code triggers an arrow sweep across the whole body",
+    "Arrow trails on the sticks and light ripples on the A B X Y buttons",
+    "Triggers fill with cyan and small arrows inside",
+    "D-pad arrows light up when pressed"
+   ],
+   "shop": "overlay-controller-xbox-series-x-cyan-chevron-run-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
