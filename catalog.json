@@ -2296,6 +2296,44 @@
    ],
    "shop": "overlay-controller-xbox-series-x-raven-wing-indigo-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Lime Claw Scratch Edition",
+   "ne": "Xbox Series X Controller Overlay - Lime Claw Scratch Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Lime Claw Scratch yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Lime Claw Scratch theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 129000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-lime-claw-scratch.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-23",
+   "ft": [
+    "Body bergambar goresan cakar lime neon di atas charcoal",
+    "Tombol menyala lime dan memunculkan goresan cakar saat ditekan",
+    "Trigger terisi lime penuh",
+    "Stik lime polos tanpa goresan",
+    "Display Home berikon cakar dengan penghitung waktu sesi",
+    "Plate atas berisi jumlah tekan, 10 segmen lime yang menyala tiap tekan lalu berkilat saat penuh, dan level",
+    "Kode Konami memicu sapuan cakar, level naik tiap 500 tekan"
+   ],
+   "fte": [
+    "Body art with neon lime claw scratches on charcoal",
+    "Buttons glow lime and flash claw marks when pressed",
+    "Triggers fill solid lime",
+    "Plain lime sticks without scratches",
+    "Home display with claw icon and session timer",
+    "Top plate shows press count, 10 lime segments that light per press and flash when full, and level",
+    "Konami code triggers a claw sweep, level up every 500 presses"
+   ],
+   "shop": "overlay-controller-xbox-series-x-lime-claw-scratch-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
