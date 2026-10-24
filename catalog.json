@@ -2494,6 +2494,46 @@
    ],
    "shop": "overlay-controller-xbox-series-x-toxic-lime-weave-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Violet Carbon Fang V5 Edition",
+   "ne": "Xbox Series X Controller Overlay - Violet Carbon Fang V5 Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Violet Carbon Fang V5 yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Violet Carbon Fang V5 theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 149000,
+   "usd": 12,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-violet-carbon-fang-v5.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-25",
+   "ft": [
+    "Body karbon hitam dengan taring ungu neon besar di grip",
+    "Boss Bar: bar nyawa boss turun tiap tombol ditekan, pulih saat diam",
+    "Tombol Home jadi mata boss yang melirik mengikuti stik",
+    "Mata boss berubah ekspresi sesuai sisa nyawa boss",
+    "Taring makin terang saat tombol ditekan makin cepat",
+    "Taring ungu berkilau bergantian di grip",
+    "Trigger terisi ungu bergerigi seperti taring, bumper menyala saat ditekan",
+    "Warna aksen ungu bisa diganti lewat pengaturan warna"
+   ],
+   "fte": [
+    "Black carbon body with a big neon violet fang on the grip",
+    "Boss Bar: the boss health bar drops with every press and recovers when idle",
+    "The Home button becomes a boss eye that follows the sticks",
+    "The boss eye changes expression with the boss health left",
+    "Fangs glow brighter the faster you press the buttons",
+    "Violet fangs sparkle in turns on the grips",
+    "Triggers fill with jagged violet like fangs, bumpers light up when pressed",
+    "The violet accent color can be changed with the color setting"
+   ],
+   "shop": "overlay-controller-xbox-series-x-violet-carbon-fang-v5-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
