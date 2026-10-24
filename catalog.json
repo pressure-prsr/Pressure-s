@@ -2413,6 +2413,46 @@
    ],
    "shop": "overlay-controller-xbox-series-x-leather-stitch-tan-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Anodized Violet Edition",
+   "ne": "Xbox Series X Controller Overlay - Anodized Violet Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Anodized Violet yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Anodized Violet theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 150000,
+   "usd": 12,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-anodized-violet.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-24",
+   "ft": [
+    "Body aluminium anodized ungu dengan serat logam dan kilau yang bergerak pelan",
+    "Hologram controller mini di tengah yang miring mengikuti gerakan stik",
+    "Papan hitungan tekan dan combo di bagian atas controller",
+    "Trigger terisi penuh warna ungu terang saat ditarik, label tetap terlihat",
+    "Percikan cahaya di tombol ABXY dan riak cahaya di stik",
+    "Lengan D-pad menyala bergantian saat controller dibiarkan diam",
+    "Kejutan tersembunyi: kode tombol rahasia dan tekan A berulang kali",
+    "Warna aksen bisa diganti lewat pengaturan accent"
+   ],
+   "fte": [
+    "Purple anodized aluminium body with metal grain and a slow moving shine",
+    "Mini hologram controller in the center that tilts with the stick movement",
+    "Press and combo counter board on top of the controller",
+    "Triggers fill up with bright purple when pulled, labels stay visible",
+    "Light sparks on the ABXY buttons and light ripples on the sticks",
+    "D-pad arms light up in turn when the controller is left idle",
+    "Hidden surprises: a secret button code and pressing A repeatedly",
+    "Accent color can be changed with the accent setting"
+   ],
+   "shop": "overlay-controller-xbox-series-x-anodized-violet-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
