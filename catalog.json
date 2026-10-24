@@ -2373,6 +2373,46 @@
    ],
    "shop": "overlay-controller-xbox-series-x-atomic-teal-retro-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Leather Stitch Tan Edition",
+   "ne": "Xbox Series X Controller Overlay - Leather Stitch Tan Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Leather Stitch Tan yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Leather Stitch Tan theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 129000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-leather-stitch-tan.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-24",
+   "ft": [
+    "Body kulit tan dengan jahitan krem dan butiran kulit",
+    "Uang dolar keluar dari plat atas lalu jatuh seperti mesin ATM",
+    "Display Home: gantungan kunci mobil bergoyang kiri kanan",
+    "Meter benang di tengah bawah terisi tiap tombol ditekan",
+    "Trigger terisi penuh seperti kulit ditarik, tanpa bolong",
+    "Stik meninggalkan jejak titik benang saat digerakkan",
+    "Kulit menghangat dan gantungan kunci makin kencang saat ditekan cepat",
+    "Kode Konami menyalakan semua jahitan sekaligus"
+   ],
+   "fte": [
+    "Tan leather body with cream stitches and leather grain",
+    "Dollar bills fly out of the top plate and fall like an ATM payout",
+    "Home display: a car key fob swinging left and right",
+    "Thread meter at bottom center fills with every button press",
+    "Triggers fill fully like pulled leather, with no gaps",
+    "Sticks leave a trail of thread dots when moved",
+    "Leather warms up and the key fob swings harder when you press fast",
+    "Konami code lights up every stitch at once"
+   ],
+   "shop": "overlay-controller-xbox-series-x-leather-stitch-tan-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
