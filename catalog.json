@@ -2456,6 +2456,44 @@
    "shop": "overlay-controller-xbox-series-x-anodized-violet-edition",
    "srv": 1,
    "ord": 0
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Toxic Lime Weave Edition",
+   "ne": "Xbox Series X Controller Overlay - Toxic Lime Weave Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Toxic Lime Weave yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Toxic Lime Weave theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 185000,
+   "usd": 15,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-toxic-lime-weave.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-25",
+   "ft": [
+    "Body anyaman karbon dengan lambang tetes lime beracun",
+    "Speedometer APM di layar Home, jarum naik saat tombol ditekan cepat",
+    "Kolam lime dengan gelembung naik pelan di layar Home",
+    "Meter 5 segmen di plat atas, jadi garis detak saat diam",
+    "Trigger terisi cairan lime, bumper menyala saat ditekan",
+    "Riak lime di tombol ABXY dan cincin D-pad berdenyut",
+    "Tahan L3+R3 untuk glitch kejutan, garis tepi menyala saat meter penuh"
+   ],
+   "fte": [
+    "Carbon weave body with a toxic lime droplet emblem",
+    "APM speedometer on the Home display, needle rises with fast presses",
+    "Lime pool with slowly rising bubbles on the Home display",
+    "5-segment meter on the top plate, turns into a heartbeat line when idle",
+    "Triggers fill with lime liquid, bumpers light up when pressed",
+    "Lime ripples on ABXY buttons and a pulsing D-pad ring",
+    "Hold L3+R3 for a surprise glitch, edge glows when the meter is full"
+   ],
+   "shop": "overlay-controller-xbox-series-x-toxic-lime-weave-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
