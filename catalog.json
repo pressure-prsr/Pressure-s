@@ -2575,6 +2575,33 @@
    "shop": "overlay-controller-xbox-series-x-mint-carbon-frost-edition",
    "srv": 1,
    "ord": 26
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Hex Circuit Teal Hack Terminal Edition",
+   "ne": "Xbox Series X Controller Overlay - Hex Circuit Teal Hack Terminal Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Hex Circuit Teal Hack Terminal yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Hex Circuit Teal Hack Terminal theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 110000,
+   "usd": 9,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-hex-circuit-teal-hack-terminal.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-25",
+   "ft": [
+    "Edisi Hex Circuit Teal (papan sirkuit heksagon teal) di base Xbox Series X v3; mekanik Hack Terminal (bar 10 segmen di plat atas, kunci hex di Home, hitung node dibobol per sesi), Konami menyalakan semua jalur, riak hex ABXY, cincin stik, sapuan bumper, trigger isi penuh tanpa lubang; parameter ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(hack,combo,trail,awaken)",
+    "PRSR-FITUR-"
+   ],
+   "fte": [
+    "Hex Circuit Teal edition on Xbox Series X base v3; Hack Terminal mechanic (10-segment bar on top plate, hex lock on Home, per-session breached-node counter), Konami lights all traces, ABXY hex ripple, stick ring, bumper sweep, solid trigger fill with no holes; params ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(hack,combo,trail,awaken)"
+   ],
+   "shop": "overlay-controller-xbox-series-x-hex-circuit-teal-hack-terminal-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
