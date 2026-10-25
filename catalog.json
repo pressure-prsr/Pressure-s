@@ -2534,6 +2534,44 @@
    ],
    "shop": "overlay-controller-xbox-series-x-violet-carbon-fang-v5-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Mint Carbon Frost Edition",
+   "ne": "Xbox Series X Controller Overlay - Mint Carbon Frost Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Mint Carbon Frost yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Mint Carbon Frost theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 149000,
+   "usd": 12,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-mint-carbon-frost.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-25",
+   "ft": [
+    "Body karbon bergelombang dengan kristal es besar di grip",
+    "Layar kaca bersalju seperti bola salju, jadi badai salju setelah 8 kali tekan",
+    "Layar tengah berupa kristal salju yang ganti bentuk tiap tombol ditekan, 100 bentuk",
+    "Kilau es makin banyak saat permainan makin seru",
+    "Trigger terisi es mint dari bawah sampai penuh",
+    "Analog karet bergerigi dan tombol menyala mint saat ditekan",
+    "Aksen mint bisa diganti warnanya lewat link"
+   ],
+   "fte": [
+    "Wavy carbon body with a big ice crystal on the grip",
+    "Snowy glass screen like a snow globe that turns into a blizzard after 8 presses",
+    "Center screen shows a snow crystal that changes shape on every press, 100 shapes",
+    "More ice sparkles appear as play gets more intense",
+    "Triggers fill with mint ice from the bottom to full",
+    "Rubber textured sticks and buttons glow mint when pressed",
+    "Mint accent color can be changed through the link"
+   ],
+   "shop": "overlay-controller-xbox-series-x-mint-carbon-frost-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
