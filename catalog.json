@@ -243,7 +243,7 @@
    "os": "controller",
    "g": "other",
    "sub": "xbox-series-x",
-   "ord": 32,
+   "ord": 33,
    "ft": [
     "3 pilihan desain dalam sekali beli: Dino Atas, Dino Tengah, Tanpa Dino",
     "Bergerak real-time mengikuti gamepad"
@@ -276,7 +276,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 47,
+   "ord": 50,
    "ft": [
     "LT dan RT jadi pompa air: tekan untuk menyemprot dan mengangkat ring ke tiang",
     "Tombol, stik, dan bumper menyala saat ditekan",
@@ -310,7 +310,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 38,
+   "ord": 39,
    "ft": [
     "Tampilan putih mulus dengan aksen coral",
     "Trigger LT dan RT berupa meter isi dengan persentase hingga MAX",
@@ -388,7 +388,7 @@
    "g": "other",
    "pv": "key",
    "sub": "ps5-dualsense",
-   "ord": 58,
+   "ord": 61,
    "ft": [
     "Body 3D dua nada coklat dengan sambungan halus",
     "Trigger L2 dan R2 bergerak sesuai tekanan",
@@ -571,7 +571,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 30,
+   "ord": 31,
    "ft": [
     "Trigger LT dan RT mengisi air",
     "Tombol A, B, X, Y memunculkan riak dan koin",
@@ -609,7 +609,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 40,
+   "ord": 41,
    "ft": [
     "Tombol yang ditekan menuliskan hurufnya sebagai coretan di tembok dengan warna tombol itu",
     "Cipratan cat, kabut, dan tetesan",
@@ -645,7 +645,7 @@
    "g": "other",
    "pv": "key",
    "sub": "ps5-dualsense",
-   "ord": 57,
+   "ord": 60,
    "ft": [
     "Body 3D hitam dengan ornamen geometris emas",
     "Trigger L2 dan R2 bergerak sesuai tekanan",
@@ -678,7 +678,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 48,
+   "ord": 51,
    "ft": [
     "Body biru keunguan dengan noda cat air lembut",
     "Setiap tombol yang ditekan memercikkan tinta",
@@ -796,7 +796,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 46,
+   "ord": 48,
    "ft": [
     "Body bergaris scanline dengan stiker kaset VHS T-120",
     "Stik berbentuk roda kaset",
@@ -836,7 +836,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 37,
+   "ord": 38,
    "ft": [
     "Body biru indigo dengan panji matahari merah dan ombak besar",
     "Gulungan di plat atas mencatat riwayat input",
@@ -876,7 +876,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 31,
+   "ord": 32,
    "ft": [
     "Body ungu bertekstur dither, tombol segi delapan, dan stik bermata",
     "Mini game di display Home: tombol yang ditekan memunculkan duri, tiga hati, lalu GAME OVER dan mengulang",
@@ -912,7 +912,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 39,
+   "ord": 40,
    "ft": [
     "Body kuningan dan kayu dengan roda gigi berputar",
     "Kereta mainan berjalan di rel mengelilingi body",
@@ -952,7 +952,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 49,
+   "ord": 52,
    "ft": [
     "Body papan kayu dengan lencana sheriff di display Home",
     "Poster buron berganti-ganti: WANTED $5000, DEAD OR ALIVE, REWARD $9999, plus cap BUSTED!",
@@ -992,7 +992,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 44,
+   "ord": 46,
    "ft": [
     "Tekstur foto pantai tropis dengan pasir, laut, dan daun palem",
     "Display Home berupa matahari",
@@ -1068,7 +1068,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 35,
+   "ord": 36,
    "ft": [
     "Gaya komputer Windows jadul dengan jendela XBOX.EXE di plat atas",
     "Tombol minimize, maximize, close, dan ikon bendera warna-warni di display Home",
@@ -1180,7 +1180,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 36,
+   "ord": 37,
    "ft": [
     "Body merah muda dengan ranting sakura dan kelopak berguguran",
     "Stik dan D-pad berlambang bunga di tengah",
@@ -1216,7 +1216,7 @@
    "os": "controller",
    "g": "other",
    "sub": "xbox-series-x",
-   "ord": 50,
+   "ord": 53,
    "ft": [
     "Bergerak real-time mengikuti gamepad",
     "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
@@ -1288,7 +1288,7 @@
    "tage": "New",
    "oldu": 12,
    "usd": 4,
-   "ord": 54,
+   "ord": 57,
    "ft": [
     "Tombol, stik, dan trigger bereaksi dengan efek es",
     "Trigger terisi seperti kristal es",
@@ -1324,7 +1324,7 @@
    "old": 120000,
    "tage": "New",
    "oldu": 10,
-   "ord": 53,
+   "ord": 56,
    "sub": "xbox-one-s",
    "ft": [
     "Spiral galaksi berputar, makin cepat saat tekan tombol cepat (hype)",
@@ -1358,7 +1358,7 @@
    "file": "overlays/retro-arcade-one-og.html",
    "pv": "demo",
    "hide": false,
-   "ord": 56,
+   "ord": 59,
    "ft": [
     "Kode Konami (↑↑↓↓←→←→ B A): hujan koin 4 detik",
     "Level up dengan ledakan piksel tiap 100 tekanan",
@@ -1391,7 +1391,7 @@
    "file": "overlays/pastel-rocket-launch-one-og.html",
    "pv": "demo",
    "hide": false,
-   "ord": 55,
+   "ord": 58,
    "ft": [
     "Roket naik bertahap tiap 25 tekanan",
     "Peluncuran roket tiap 100 tekanan",
@@ -1459,7 +1459,7 @@
    "file": "overlays/holo-planet-rings-one-s.html",
    "pv": "demo",
    "hide": false,
-   "ord": 51,
+   "ord": 54,
    "ft": [
     "Body berdenyut seperti planet",
     "Pendamping mengorbit mengikuti stik, mode BOOST saat stik penuh",
@@ -1492,7 +1492,7 @@
    "file": "overlays/neon-phoenix-wings-one-s.html",
    "pv": "demo",
    "hide": false,
-   "ord": 52,
+   "ord": 55,
    "tag": "Baru",
    "old": 199000,
    "tage": "New",
@@ -1582,7 +1582,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-mint-pixel-sword-edition",
    "srv": 1,
-   "ord": 26,
+   "ord": 27,
    "pr": 110000,
    "ps": "2026-10-21",
    "pe": "2026-10-23"
@@ -1745,7 +1745,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-torn-paper-red-edition",
    "srv": 1,
-   "ord": 43
+   "ord": 44
   },
   {
    "n": "Overlay Controller Xbox Series X - Brushed Copper Edition",
@@ -1907,7 +1907,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-rescue-unit-safety-edition",
    "srv": 1,
-   "ord": 34
+   "ord": 35
   },
   {
    "n": "Overlay Controller Xbox Series X - Orange Black Stripe Edition",
@@ -1948,7 +1948,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-orange-black-stripe-edition",
    "srv": 1,
-   "ord": 28
+   "ord": 29
   },
   {
    "n": "Overlay Controller Xbox Series X - Neon Fox Tail Edition",
@@ -1981,7 +1981,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-neon-fox-tail-edition",
    "srv": 1,
-   "ord": 27
+   "ord": 28
   },
   {
    "n": "Overlay Controller Xbox Series X - Cyan Radial Burst Edition",
@@ -2096,7 +2096,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-sunny-perforated-mesh-edition",
    "srv": 1,
-   "ord": 42
+   "ord": 43
   },
   {
    "n": "Overlay Controller Xbox Series X - Sumi Stroke Mono Edition",
@@ -2137,7 +2137,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-sumi-stroke-mono-edition",
    "srv": 1,
-   "ord": 41
+   "ord": 42
   },
   {
    "n": "Overlay Controller Xbox Series X - Phoenix Amber Edition",
@@ -2178,7 +2178,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-phoenix-amber-edition",
    "srv": 1,
-   "ord": 29
+   "ord": 30
   },
   {
    "n": "Overlay Controller Xbox Series X - Venom Coil Carbon Edition",
@@ -2219,7 +2219,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-venom-coil-carbon-edition",
    "srv": 1,
-   "ord": 45
+   "ord": 47
   },
   {
    "n": "Overlay Controller Xbox Series X - Cyan Chevron Run Edition",
@@ -2301,7 +2301,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-raven-wing-indigo-edition",
    "srv": 1,
-   "ord": 33
+   "ord": 34
   },
   {
    "n": "Overlay Controller Xbox Series X - Lime Claw Scratch Edition",
@@ -2493,7 +2493,8 @@
     "Hold L3+R3 for a surprise glitch, edge glows when the meter is full"
    ],
    "shop": "overlay-controller-xbox-series-x-toxic-lime-weave-edition",
-   "srv": 1
+   "srv": 1,
+   "ord": 45
   },
   {
    "n": "Overlay Controller Xbox Series X - Violet Carbon Fang V5 Edition",
@@ -2533,7 +2534,8 @@
     "The violet accent color can be changed with the color setting"
    ],
    "shop": "overlay-controller-xbox-series-x-violet-carbon-fang-v5-edition",
-   "srv": 1
+   "srv": 1,
+   "ord": 49
   },
   {
    "n": "Overlay Controller Xbox Series X - Mint Carbon Frost Edition",
@@ -2571,7 +2573,8 @@
     "Mint accent color can be changed through the link"
    ],
    "shop": "overlay-controller-xbox-series-x-mint-carbon-frost-edition",
-   "srv": 1
+   "srv": 1,
+   "ord": 26
   }
  ],
  "rate": 12500,
