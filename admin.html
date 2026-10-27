@@ -42,7 +42,6 @@ label{display:grid;gap:5px;font-size:13px;font-weight:600;color:var(--mu);margin
 .row .b{flex:1}
 .ck{display:flex;align-items:center;gap:10px;font-size:15px;color:var(--ink);font-weight:500;margin-bottom:12px}
 .ck input{width:20px;height:20px}
-#msg{position:fixed;left:14px;right:14px;bottom:calc(76px + env(safe-area-inset-bottom));background:var(--ink);color:var(--bg);padding:11px 14px;border-radius:10px;z-index:30;display:none;font-size:14px}
 .note{font-size:13px;color:var(--mu);margin:0 0 12px}
 .urow{display:flex;gap:6px;margin-bottom:8px}.urow input{flex:1;min-width:0}.urow .ub{padding:0 12px}
 .fs{border:1px solid var(--ln);border-radius:14px;background:var(--sf);margin:0 0 10px;overflow:hidden}.fs>summary{list-style:none;cursor:pointer;padding:12px 14px;font-weight:700;font-size:14px;display:flex;justify-content:space-between}.fs>summary::-webkit-details-marker{display:none}.fs>summary::after{content:"▾";color:var(--mu)}.fs[open]>summary::after{content:"▴"}.fs>.fb{padding:2px 14px 4px}
@@ -68,7 +67,7 @@ select,input,textarea{min-width:0;max-width:100%}select[multiple]{display:block;
 header h1{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
 @media(max-width:430px){header h1 .lg,header .pl{display:none}header .b{padding:9px 10px}}
 #bPub{position:relative}#bPub:not(:disabled)::after{content:"";position:absolute;top:4px;right:4px;width:9px;height:9px;border-radius:50%;background:#fff;box-shadow:0 0 0 2px var(--ac)}
-body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}#msg{bottom:calc(20px + env(safe-area-inset-bottom))}
+body{padding-bottom:calc(24px + env(safe-area-inset-bottom))}
 #bdv{position:relative}.rh{position:absolute;left:0;bottom:0;width:38px;height:38px;z-index:5;touch-action:none;cursor:nesw-resize;background:rgba(0,0,0,.55);border-radius:0 14px 0 11px;clip-path:polygon(0 0,100% 100%,0 100%)}
 .rh::after{content:"";position:absolute;left:5px;bottom:5px;width:18px;height:18px;background:repeating-linear-gradient(135deg,transparent 0 4px,rgba(255,255,255,.85) 4px 6px)}
 html,body{overflow-x:clip}
@@ -378,7 +377,7 @@ label{letter-spacing:.01em}
 .sh>div{border-radius:22px 22px 0 0}
 .sh>div::before{content:"";display:block;width:40px;height:4px;border-radius:2px;background:var(--ln);margin:8px auto 2px}
 /* toast di tengah */
-#msg{left:50%;right:auto;transform:translateX(-50%);width:max-content;max-width:min(560px,calc(100% - 28px));text-align:center;border-radius:12px;box-shadow:var(--sh2);font-weight:600}
+#msg{position:fixed;top:calc(env(safe-area-inset-top,0px) + 10px);left:50%;z-index:10000;box-sizing:border-box;width:max-content;min-width:120px;max-width:min(420px,calc(100% - 28px));padding:11px 20px;background:#000;color:#fff;border-radius:22px;font-size:13.5px;font-weight:600;line-height:1.35;text-align:center;overflow-wrap:anywhere;box-shadow:0 8px 28px rgba(0,0,0,.35);pointer-events:none;visibility:hidden;opacity:0;transform:translateX(-50%) scale(.35,.5);transform-origin:50% 0;transition:transform .5s cubic-bezier(.34,1.45,.5,1),opacity .2s ease,visibility 0s linear .5s}#msg.on{visibility:visible;opacity:1;transform:translateX(-50%) scale(1);transition:transform .5s cubic-bezier(.34,1.45,.5,1),opacity .15s ease,visibility 0s}@media (prefers-reduced-motion:reduce){#msg,#msg.on{transition:opacity .15s ease,visibility 0s;transform:translateX(-50%)}}
 @media(prefers-reduced-motion:reduce){.sh.on>div{animation:none}.b,.it,.chips button{transition:none}}
 /* ===== Rapih v2: tema manual, tombol header sesuai tab, sheet akordeon ===== */
 :root[data-theme=dark]{--bg:#1f1e1d;--sf:#2a2927;--ink:#f0eee6;--mu:#a7a59b;--ac:#d97757;--ai:#1f1e1d;--ln:#3a3835;--so:#262523;--ok:#7bc08e;--sh1:0 1px 2px rgba(0,0,0,.4);--sh2:0 8px 24px rgba(0,0,0,.55);color-scheme:dark}
@@ -507,7 +506,7 @@ var S={};try{S=JSON.parse(localStorage.getItem("adm")||"{}")}catch(e){}
 var C={v:1,items:{},added:[]},pend={},dirty=false,flt="all",cur=null,hist=[],redoHist=[],baseSha=null;
 function ck(o){return o.g==="other"?"other|"+(o.os||"stream"):o.g}
 function rp(n){return n===null||n===undefined?"Ask":"Rp"+Number(n).toLocaleString("id-ID")}
-function msg(t,ms){var m=$("msg");m.textContent=t;m.style.display="block";clearTimeout(msg.t);if(ms!==0)msg.t=setTimeout(function(){m.style.display="none"},ms||3500)}
+function msg(t,ms){var m=$("msg");m.textContent=t;m.classList.add("on");clearTimeout(msg.t);if(ms!==0)msg.t=setTimeout(function(){m.classList.remove("on")},ms||3500)}
 function mark(){hist.push(JSON.stringify(C));redoHist=[];if(hist.length>30)hist.shift();dirty=true;$("bPub").disabled=false;try{localStorage.setItem("adm_draft",JSON.stringify({C:C,pend:pend}))}catch(e){}render()}
 function cat(c){var a=all().filter(function(e){return !e.o.del&&ck(e.o)===c});a.forEach(function(e,i){e.x=e.o.ord!=null?e.o.ord:i});a.sort(function(x,y){return x.x-y.x});return a}
 function move(d){var a=cat(ck(cur.o)),i=a.findIndex(function(e){return e.o===cur.o}),j=i+d,t;if(i<0||j<0||j>=a.length)return;t=a[i];a[i]=a[j];a[j]=t;a.forEach(function(e,n){e.o.ord=n});mark()}
