@@ -41,6 +41,48 @@
    ],
    "shop": "overlay-controller-xbox-series-x-lime-drip-lines-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Sunny Triangle Shards V2 Edition",
+   "ne": "Xbox Series X Controller Overlay - Sunny Triangle Shards V2 Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Sunny Triangle Shards V2 yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Sunny Triangle Shards V2 theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 139000,
+   "usd": 11,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-sunny-triangle-shards-v2.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-27",
+   "ft": [
+    "Gaya body pecahan segitiga kuning tajam, paling rapat di ujung grip",
+    "Rage Mode: tekan cepat memicu retakan merah menyebar di body",
+    "Bintang pecahan berkilau satu per satu di display Home",
+    "Animasi YOUR NAME muncul-hilang menggantikan plat atas (ganti lewat ?name=)",
+    "Meter Heat berupa segitiga pop-in di bawah nama, hanya terlihat saat tombol ditekan beruntun",
+    "Grip menyala kuning mengikuti stik, tombol, dan intensitas main",
+    "Percikan pecahan saat tombol A B X Y dan stik ditekan",
+    "Trigger isi kuning bermotif segitiga, bumper tersapu garis kuning",
+    "Easter egg: tahan LB RB View untuk Sunburst, tahan Y untuk bintang"
+   ],
+   "fte": [
+    "Sharp yellow triangle-shard body art, densest at the grip tips",
+    "Rage Mode: fast mashing spreads red cracks across the body",
+    "Twinkling shard star on the Home display, one shard at a time",
+    "YOUR NAME appear/disappear animation replaces the top plate (change via ?name=)",
+    "Heat meter is pop-in shards under the name, visible only while mashing buttons",
+    "Grips glow yellow with stick, button and play intensity",
+    "Shard sparks when A B X Y buttons and sticks are pressed",
+    "Triangle-pattern trigger fill, bumpers swept by a yellow line",
+    "Easter eggs: hold LB RB View for Sunburst, hold Y for the star"
+   ],
+   "shop": "overlay-controller-xbox-series-x-sunny-triangle-shards-v2-edition",
+   "srv": 1
   }
  ],
  "steps": {
