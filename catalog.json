@@ -150,6 +150,34 @@
    ],
    "shop": "overlay-controller-xbox-series-x-anime-kawaii-pastel-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Synthwave Outrun Edition",
+   "ne": "Xbox Series X Controller Overlay - Synthwave Outrun Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Synthwave Outrun yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Synthwave Outrun theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 110000,
+   "usd": 9,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-synthwave-outrun.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-28",
+   "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
+   "ft": [
+    "Pustaka mekanik (Combo Meter, Stick Trail, Awakening Form) lewat ?mech atau data-mech; Base v3 - stik gaya prsr (karet beralur, kubah grafit, cincin aksen), sentuh (tombol, trigger analog, stik), parameter ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(combo,trail,awaken), slot bodyArt, plat atas dan display Home diperbesar, Home hanya display",
+    "PRSR-FITUR-"
+   ],
+   "fte": [
+    "Mechanic library (Combo Meter, Stick Trail, Awakening Form) via ?mech or data-mech; Base v3 - prsr-style sticks (knurled rubber, graphite dome, accent ring), touch input (buttons, analog triggers, sticks), ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(combo,trail,awaken) params, bodyArt slot, enlarged top plate and Home display, Home is display-only"
+   ],
+   "shop": "overlay-controller-xbox-series-x-synthwave-outrun-edition",
+   "srv": 1
   }
  ],
  "steps": {
