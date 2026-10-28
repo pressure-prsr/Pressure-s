@@ -401,6 +401,17 @@ body.vm .vd .vsc{padding-bottom:calc(120px + env(safe-area-inset-bottom,0px))}
 .xbar{position:sticky;bottom:calc(8px + env(safe-area-inset-bottom,0px));display:flex;gap:8px;align-items:center;background:var(--sf);border:1px solid var(--ln);border-radius:14px;padding:8px 10px;box-shadow:var(--sh2);margin-top:12px;z-index:3}
 .xbar .xi{flex:1;min-width:0}.xbar .xi b{display:block;font-size:14px}.xbar .xi small{color:var(--mu);font-size:12px}
 .xbar .b{flex:none;min-height:42px;padding:0 14px}
+.xw{position:relative;margin-bottom:6px}.xw .xr{margin-bottom:0;min-height:60px}.xw .xr i{align-self:start;margin-top:2px}
+.xn small.xf,.xn small.xt{color:var(--mu);font-weight:500;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.xn small.xt span{color:var(--ac);font-weight:700}.xn small.xt .xl{color:var(--mu);font-weight:500}
+.xh{position:absolute;right:10px;bottom:8px;height:26px;padding:0 10px;border-radius:13px;border:1px solid var(--ln);background:transparent;color:var(--ink);font-size:11.5px;font-weight:600;cursor:pointer}
+.xh.on{background:var(--ac);color:var(--ai);border-color:var(--ac)}.xh:active{transform:scale(.96)}
+.xp{margin:4px 0 8px 14px;padding:2px 0 2px 12px;border-left:2px solid var(--ln)}.xp .note{margin:6px 0}
+.xv{display:flex;align-items:center;gap:8px;padding:8px 0;border-bottom:1px solid var(--ln)}.xv:last-child{border-bottom:0}
+.xvn{flex:1;min-width:0}.xvn b{font-size:13px}.xvn b span{color:var(--ink)}
+.xvn b em{font-style:normal;font-size:10.5px;font-weight:700;color:var(--ai);background:var(--ac);border-radius:6px;padding:1px 6px;margin-left:4px;vertical-align:1px}
+.xvn small{display:block;color:var(--mu);font-size:11.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.xv .b{flex:none;min-height:34px;padding:0 14px;font-size:12.5px}
 .sh details.fs{scroll-margin-top:64px}.xq{padding:0 0 8px}
 /* ===== Rapih v4: tombol kembali kiri atas preview (muncul sebentar, ketuk tempat yang sama untuk memunculkan lagi) ===== */
 .vbk{position:absolute;left:6px;top:6px;z-index:8;width:40px;height:40px;padding:0;border:0;background:transparent;display:grid;place-items:center;-webkit-tap-highlight-color:transparent;touch-action:manipulation}
@@ -4150,7 +4161,8 @@ document.addEventListener("toggle",function(e){var d=e.target;if(!d||d.tagName!=
 </script>
 <script>
 (function(){
-var RX={list:null,busy:0,err:"",sel:{},zip:1,draft:1,mode:"",o:0,run:0};
+var RX={list:null,gl:null,gerr:"",busy:0,err:"",sel:{},zip:1,draft:1,mode:"",o:0,run:0,t:{},fl:{},hs:{},so:"nama"};
+try{RX.t=JSON.parse(localStorage.getItem("adm_xt2")||"{}")||{};RX.so=localStorage.getItem("adm_xso")==="new"?"new":"nama"}catch(e){}
 var ORD=["admin.html","index.html","katalog.html","catalog.json","worker.js","src/index.js","manifest.json"];
 var CORE=/^(admin|index|katalog)\.html$|^catalog(-base)?\.json$|worker|^src\/index\.js$|^manifest\.json$/i;
 var MIME={html:"text/html",json:"application/json",js:"text/javascript",css:"text/css",svg:"image/svg+xml",png:"image/png",txt:"text/plain",md:"text/markdown"};
@@ -4167,6 +4179,27 @@ var cs=0;cd.forEach(function(x){cs+=x.length});var e=new DataView(new ArrayBuffe
 return new Blob(parts.concat(cd,[new Uint8Array(e.buffer)]),{type:"application/zip"})}
 window.__xzip=zip;
 function xdl(b,n){var a=document.createElement("a");a.href=URL.createObjectURL(b);a.download=n;document.body.appendChild(a);a.click();document.body.removeChild(a);setTimeout(function(){URL.revokeObjectURL(a.href)},4000)}
+function K(e){return(e.pv?"p:":"")+e.path}
+function gname(p){var C=window.C||{},A=[],k,r="";for(k in(C.items||{}))A.push(C.items[k]);(C.added||[]).forEach(function(o){A.push(o)});A.forEach(function(o){if(o&&!o.del&&o.file===p)r=String(o.n||"").replace(/^Overlay Controller /,"")});return r}
+function tOf(e){var c=RX.t[K(e)];return c&&c.s===e.sha?c.t:0}
+function rel(t){var d=Math.max(0,Date.now()-t),m=Math.floor(d/60000),h,dy,mo;if(m<1)return"baru saja";if(m<60)return m+" menit lalu";h=Math.floor(m/60);if(h<24)return h+" jam lalu";dy=Math.floor(h/24);if(dy<30)return dy+" hari lalu";mo=Math.floor(dy/30);if(mo<12)return mo+" bulan lalu";return Math.floor(dy/365)+" tahun lalu"}
+function fdt(t){try{var o={day:"numeric",month:"short",hour:"2-digit",minute:"2-digit"};if(new Date(t).getFullYear()!==new Date().getFullYear())o.year="numeric";return new Date(t).toLocaleString("id-ID",o).replace(/\./g,":").replace(",","")}catch(x){return""}}
+function tHtml(e){var t=tOf(e);return t?'<span data-ts="'+t+'">'+rel(t)+'</span> \u00B7 '+fdt(t):'<span class="xl">memuat waktu\u2026</span>'}
+function b64(c){var s=atob(String(c).replace(/\s/g,"")),u=new Uint8Array(s.length),i;for(i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u}
+function api(e,q){return e.pv?window.pGh("/"+q,"GET"):window.ghx(q,"GET")}
+function cm(e,per){return api(e,"commits?path="+encodeURIComponent(e.path)+"&per_page="+per+(e.pv?"":"&sha="+encodeURIComponent(window.S.branch||"main")))}
+function blob(e,sha){return api(e,"git/blobs/"+sha).then(function(b){return b64(b.content)})}
+function atRef(e,ref){return api(e,"contents/"+e.path.split("/").map(encodeURIComponent).join("/")+"?ref="+ref).then(function(j){if(!j)throw new Error("versi tidak ditemukan");return j.content?b64(j.content):blob(e,j.sha)})}
+function cdate(c){var d=c&&c.commit&&(c.commit.committer||c.commit.author);return d?Date.parse(d.date):0}
+function saveT(){try{localStorage.setItem("adm_xt2",JSON.stringify(RX.t))}catch(e){}}
+function upT(e){var k=K(e),n=document.querySelectorAll("#list .xt"),i;for(i=0;i<n.length;i++)if(n[i].getAttribute("data-tp")===k){n[i].innerHTML=tHtml(e);break}}
+function qTimes(){
+ var Q=entries().filter(function(e){return e.src==="repo"&&e.sha&&!tOf(e)&&!RX.fl[K(e)]&&(e.pv||isCore(e)||RX.o)}),n=Math.min(4,Q.length),live=n,i;
+ Q.forEach(function(e){RX.fl[K(e)]=1});
+ function fin(){saveT();if(RX.so==="new")redraw()}
+ function w(){var e=Q.shift();if(!e){if(!--live)fin();return}
+  cm(e,1).then(function(r){var t=cdate(r&&r[0]);if(t){RX.t[K(e)]={s:e.sha,t:t};upT(e)}},function(){}).then(w)}
+ if(!n)return;for(i=0;i<n;i++)w()}
 function load(){
  if(RX.busy)return;RX.busy=1;RX.err="";var p;
  if(window.cfg&&window.cfg()){
@@ -4177,51 +4210,83 @@ function load(){
     rs.forEach(function(r){fl=fl.concat(r)});RX.mode="repo";
     return fl.map(function(x){return{path:x.path,size:x.size,sha:x.sha,src:"repo"}})})})
  }else{RX.mode="local";p=Promise.resolve(["admin.html","index.html","katalog.html","catalog.json","manifest.json","worker.js"].map(function(n){return{path:n,size:0,src:"local"}}))}
- p.then(function(L){RX.list=L;RX.busy=0;redraw()},function(e){RX.err=(e&&e.message)||"gagal";RX.busy=0;redraw()})
-}
-function entries(){var P=window.pend||{};return(RX.list||[]).map(function(e){var o={path:e.path,size:e.size,sha:e.sha,src:e.src,tag:""};
- if(typeof P[o.path]==="string"){o.src="pend";o.size=new TextEncoder().encode(P[o.path]).length;o.tag="antrean Publish"}
- if(o.path==="catalog.json"&&window.dirty&&RX.draft){o.src="draft";o.size=JSON.stringify(window.C,null,1).length;o.tag="draft belum Publish"}
- return o}).sort(cmp)}
-function get(e){
+ p.then(function(L){RX.list=L;RX.busy=0;redraw();qTimes()},function(e){RX.err=(e&&e.message)||"gagal";RX.busy=0;redraw()});
+ loadG()}
+function loadG(){
+ RX.gl=null;RX.gerr="";
+ if(!(window.cfg&&window.cfg())||typeof window.pGh!=="function"){RX.gl=[];return}
+ window.pGh("/contents/overlays","GET").then(function(a){
+  RX.gl=(a||[]).filter(function(x){return x.type==="file"&&/\.html?$/i.test(x.name)}).map(function(x){return{path:x.path,size:x.size,sha:x.sha,src:"repo",pv:1}});redraw();qTimes()
+ },function(e){RX.gl=[];RX.gerr=(e&&e.message)||"gagal";redraw()})}
+function mk(e){var P=window.pend||{},o={path:e.path,size:e.size,sha:e.sha,src:e.src,pv:e.pv,tag:""};
+ if(o.pv)o.nm=gname(o.path);
+ if(typeof P[o.path]==="string"&&(!o.pv||/^overlays\//.test(o.path))){o.src="pend";o.size=new TextEncoder().encode(P[o.path]).length;o.tag="antrean Publish"}
+ if(!o.pv&&o.path==="catalog.json"&&window.dirty&&RX.draft){o.src="draft";o.size=JSON.stringify(window.C,null,1).length;o.tag="draft belum Publish"}
+ o.k=K(o);return o}
+function cmpG(a,b){var x=(a.nm||a.path.replace(/^overlays\//,"")).toLowerCase(),y=(b.nm||b.path.replace(/^overlays\//,"")).toLowerCase();return x<y?-1:x>y?1:0}
+function srt(a,f){return a.sort(RX.so==="new"?function(x,y){var tx=x.src==="repo"?tOf(x):9e15,ty=y.src==="repo"?tOf(y):9e15;return(ty-tx)||f(x,y)}:f)}
+function entries(){var A=srt((RX.list||[]).map(mk),cmp),G=srt((RX.gl||[]).map(mk),cmpG);return A.concat(G)}
+function fetchCur(e){
  if(e.src==="draft")return Promise.resolve(new TextEncoder().encode(JSON.stringify(window.C,null,1)));
  if(e.src==="pend")return Promise.resolve(new TextEncoder().encode(window.pend[e.path]));
  if(e.src==="local")return fetch(e.path+"?t="+Date.now()).then(function(r){if(!r.ok)throw new Error(e.path);return r.arrayBuffer()}).then(function(b){return new Uint8Array(b)});
- return window.ghx("git/blobs/"+e.sha,"GET").then(function(b){var s=atob(String(b.content).replace(/\s/g,"")),u=new Uint8Array(s.length),i;for(i=0;i<s.length;i++)u[i]=s.charCodeAt(i);return u})}
-function row(e){return'<button type="button" class="xr'+(RX.sel[e.path]?" on":"")+'" data-x="t" data-p="'+window.esc(e.path)+'"><span class="xc"></span><span class="xn"><b>'+window.esc(e.path)+'</b>'+(e.tag?'<small>'+e.tag+'</small>':'')+'</span><i>'+(e.size?window.sSz(e.size):"")+'</i></button>'}
+ return blob(e,e.sha)}
+function zn(e){return e.pv?"gamepad/"+e.path.replace(/^overlays\//,""):e.path}
+function row(e){var k=K(e),h=RX.hs[k],ttl=e.pv?(e.nm||e.path.replace(/^overlays\//,"")):e.path,sub=e.pv&&e.nm?e.path.replace(/^overlays\//,""):"",rp=e.src==="repo";
+ return'<div class="xw"><button type="button" class="xr'+(RX.sel[k]?" on":"")+'" data-x="t" data-k="'+window.esc(k)+'"><span class="xc"></span><span class="xn"><b>'+window.esc(ttl)+'</b>'+(sub?'<small class="xf">'+window.esc(sub)+'</small>':'')+(e.tag?'<small>'+e.tag+'</small>':'')+(rp?'<small class="xt" data-tp="'+window.esc(k)+'">'+tHtml(e)+'</small>':'')+'</span><i>'+(e.size?window.sSz(e.size):"")+'</i></button>'+(rp?'<button type="button" class="xh'+(h&&h.o?" on":"")+'" data-x="hi" data-k="'+window.esc(k)+'">Riwayat</button>':'')+(h&&h.o?hpanel(h):"")+'</div>'}
+function hpanel(h){
+ if(h.e)return'<div class="xp"><p class="note">Gagal memuat riwayat: '+window.esc(h.e)+'</p></div>';
+ if(!h.l)return'<div class="xp"><p class="note">Memuat riwayat\u2026</p></div>';
+ if(!h.l.length)return'<div class="xp"><p class="note">Belum ada riwayat.</p></div>';
+ return'<div class="xp">'+h.l.map(function(v,i){return'<div class="xv"><div class="xvn"><b><span data-ts="'+v.t+'">'+rel(v.t)+'</span>'+(i?'':' <em>terbaru</em>')+'</b><small>'+fdt(v.t)+' \u00B7 '+window.esc(v.m||"tanpa pesan")+' \u00B7 '+v.s.slice(0,7)+'</small></div><button type="button" class="b g" data-x="dv" data-k="'+window.esc(h.k)+'" data-s="'+v.s+'">Unduh</button></div>'}).join("")+'</div>'}
+function hist(e){var h=RX.hs[K(e)];if(h.l||h.b)return;h.b=1;
+ cm(e,10).then(function(r){h.l=(r||[]).map(function(c){return{s:c.sha,t:cdate(c),m:String((c.commit&&c.commit.message)||"").split("\n")[0].slice(0,80)}});h.b=0;redraw()},function(er){h.b=0;h.e=(er&&er.message)||"gagal";redraw()})}
 function html(){
- var E=entries(),core=E.filter(isCore),oth=E.filter(function(e){return!isCore(e)}),ks=E.filter(function(e){return RX.sel[e.path]}),tot=0,h,lb;
+ var E=entries(),pub=E.filter(function(e){return!e.pv}),core=pub.filter(isCore),oth=pub.filter(function(e){return!isCore(e)}),gp=E.filter(function(e){return e.pv}),ks=E.filter(function(e){return RX.sel[K(e)]}),tot=0,h,lb;
  ks.forEach(function(e){tot+=e.size||0});
- h='<p class="note">'+(RX.mode==="repo"?"Sumber: GitHub "+window.esc(window.S.repo)+" ("+window.esc(window.S.branch||"main")+") \u00B7 "+E.length+" file":"Sumber: alamat situs ini (isi Publish settings agar daftar lengkap dari GitHub)")+'</p>';
- h+='<div class="chips"><button type="button" data-x="pi">Inti situs</button><button type="button" data-x="pa">Semua</button><button type="button" data-x="p0">Kosongkan</button>'+(window.dirty?'<button type="button" data-x="dr" class="'+(RX.draft?"on":"")+'">catalog: draft</button>':"")+'<button type="button" data-x="re">Muat ulang</button></div>';
+ h='<p class="note">'+(RX.mode==="repo"?"Sumber: GitHub "+window.esc(window.S.repo)+" ("+window.esc(window.S.branch||"main")+") \u00B7 "+pub.length+" file \u00B7 waktu = commit terakhir":"Sumber: alamat situs ini (isi Publish settings agar daftar lengkap dari GitHub)")+'</p>';
+ h+='<div class="chips"><button type="button" data-x="pi">Inti situs</button>'+(RX.mode==="repo"?'<button type="button" data-x="pg">Gamepad</button>':"")+'<button type="button" data-x="pa">Semua</button><button type="button" data-x="p0">Kosongkan</button>'+(RX.mode==="repo"?'<button type="button" data-x="so" class="on">Urut: '+(RX.so==="new"?"Terbaru":"Nama")+'</button>':"")+(window.dirty?'<button type="button" data-x="dr" class="'+(RX.draft?"on":"")+'">catalog: draft</button>':"")+'<button type="button" data-x="re">Muat ulang</button></div>';
  h+='<div class="sh2"><b>Inti situs</b><span>'+core.length+' file</span></div>'+core.map(row).join("");
+ if(RX.mode==="repo"){
+  h+='<div class="sh2"><b>Gamepad</b><span>'+(RX.gl?gp.length+" file dipublish":"memuat\u2026")+'</span></div>';
+  if(RX.gerr)h+='<p class="note">Repo privat tidak bisa dibaca: '+window.esc(RX.gerr)+'. Token harus punya akses ke repo overlay.</p>';
+  else if(RX.gl&&!gp.length)h+='<p class="note">Belum ada file HTML gamepad di repo privat.</p>';
+  h+=gp.map(row).join("")}
  if(oth.length)h+='<details class="fs xo"'+(RX.o?" open":"")+'><summary><span>Lainnya ('+oth.length+')</span></summary><div class="fb">'+oth.map(row).join("")+'</div></details>';
  if(RX.mode==="repo"&&!E.some(function(e){return/worker|^src\/index\.js$/i.test(e.path)}))h+='<p class="note">Kode Worker tidak ada di repo ini. Worker yang ditempel langsung di dashboard Cloudflare tidak ikut terekspor; simpan salinannya di repo (mis. worker.js) agar ikut.</p>';
  lb=ks.length>1&&RX.zip?"Unduh ZIP":ks.length>1?"Unduh semua":"Unduh";
  h+='<div class="xbar"><div class="xi"><b>'+ks.length+' dipilih</b><small>'+(tot?window.sSz(tot):"")+'</small></div>'+(ks.length>1?'<button type="button" class="b g" data-x="zm">'+(RX.zip?"Format: ZIP":"Format: terpisah")+'</button>':"")+'<button type="button" class="b" data-x="go"'+(ks.length?"":" disabled")+'>'+lb+'</button></div>';
  return h}
 function redraw(){if(window.view==="ex")document.getElementById("list").innerHTML=RX.list?html():(RX.err?'<p class="note">Gagal memuat daftar: '+window.esc(RX.err)+'</p><button type="button" class="b g" data-x="re" style="width:100%">Coba lagi</button>':'<p class="note">Memuat daftar file\u2026</p>')}
-window.rex=function(){if(!RX.list&&!RX.busy)load();redraw()};
+window.rex=function(){if(!RX.list&&!RX.busy)load();else qTimes();redraw()};
 function go(){
- var E=entries().filter(function(e){return RX.sel[e.path]}),out=[],bad=[],i=0;if(!E.length||RX.run)return;RX.run=1;
+ var E=entries().filter(function(e){return RX.sel[K(e)]}),out=[],bad=[],i=0;if(!E.length||RX.run)return;RX.run=1;
  function fin(){RX.run=0;
   if(!out.length){window.msg("Tidak ada file yang berhasil diambil"+(bad.length?" ("+bad.join(", ")+")":""),7000);return}
   if(out.length===1||!RX.zip)out.forEach(function(f,k){setTimeout(function(){xdl(new Blob([f.d],{type:mime(f.n)}),f.n.split("/").pop())},k*400)});
   else xdl(zip(out),"pressures-ekspor-"+new Date().toISOString().slice(0,10)+".zip");
   window.msg(out.length+" file diunduh"+(bad.length?", gagal: "+bad.join(", "):""),bad.length?8000:4000)}
- function nx(){if(i>=E.length)return fin();var e=E[i++];window.msg("Mengambil "+i+"/"+E.length+": "+e.path,0);return get(e).then(function(d){out.push({n:e.path,d:d})},function(){bad.push(e.path)}).then(nx)}
+ function nx(){if(i>=E.length)return fin();var e=E[i++];window.msg("Mengambil "+i+"/"+E.length+": "+e.path,0);return fetchCur(e).then(function(d){out.push({n:zn(e),d:d})},function(){bad.push(e.path)}).then(nx)}
  nx()}
+function dlV(e,sha){window.msg("Mengambil versi "+sha.slice(0,7)+"\u2026",0);
+ atRef(e,sha).then(function(d){var n=e.path.split("/").pop(),x=n.lastIndexOf("."),nn=x>0?n.slice(0,x)+"-"+sha.slice(0,7)+n.slice(x):n+"-"+sha.slice(0,7);xdl(new Blob([d],{type:mime(n)}),nn);window.msg("Versi "+sha.slice(0,7)+" diunduh",3500)},function(er){window.msg("Gagal mengambil versi: "+((er&&er.message)||""),6000)})}
+function byK(k){return entries().filter(function(e){return K(e)===k})[0]}
+setInterval(function(){if(window.view!=="ex")return;var n=document.querySelectorAll("#list [data-ts]"),i;for(i=0;i<n.length;i++)n[i].textContent=rel(+n[i].getAttribute("data-ts"))},30000);
 document.getElementById("list").addEventListener("click",function(ev){
  if(window.view!=="ex")return;
- var sm=ev.target.closest(".xo>summary");if(sm){RX.o=!sm.parentNode.open;return}
- var b=ev.target.closest("[data-x]");if(!b)return;var a=b.getAttribute("data-x"),E;
- if(a==="t"){var p=b.getAttribute("data-p");if(RX.sel[p])delete RX.sel[p];else RX.sel[p]=1}
- else if(a==="pi"){RX.sel={};entries().filter(isCore).forEach(function(e){RX.sel[e.path]=1})}
- else if(a==="pa"){RX.sel={};entries().forEach(function(e){RX.sel[e.path]=1})}
+ var sm=ev.target.closest(".xo>summary");if(sm){RX.o=!sm.parentNode.open;if(RX.o)setTimeout(qTimes,0);return}
+ var b=ev.target.closest("[data-x]");if(!b)return;var a=b.getAttribute("data-x"),k=b.getAttribute("data-k"),e;
+ if(a==="t"){if(RX.sel[k])delete RX.sel[k];else RX.sel[k]=1}
+ else if(a==="pi"){RX.sel={};entries().filter(function(x){return!x.pv&&isCore(x)}).forEach(function(x){RX.sel[K(x)]=1})}
+ else if(a==="pg"){RX.sel={};entries().filter(function(x){return x.pv}).forEach(function(x){RX.sel[K(x)]=1})}
+ else if(a==="pa"){RX.sel={};entries().forEach(function(x){RX.sel[K(x)]=1})}
  else if(a==="p0"){RX.sel={}}
+ else if(a==="so"){RX.so=RX.so==="new"?"nama":"new";try{localStorage.setItem("adm_xso",RX.so)}catch(x){}}
+ else if(a==="hi"){e=byK(k);if(!e)return;var h=RX.hs[k]||(RX.hs[k]={k:k});h.o=!h.o;if(h.o)hist(e)}
+ else if(a==="dv"){e=byK(k);if(e)dlV(e,b.getAttribute("data-s"));return}
  else if(a==="dr"){RX.draft=RX.draft?0:1}
  else if(a==="zm"){RX.zip=RX.zip?0:1}
- else if(a==="re"){RX.list=null;RX.err="";load();redraw();return}
+ else if(a==="re"){RX.list=null;RX.gl=null;RX.err="";RX.fl={};RX.hs={};load();redraw();return}
  else if(a==="go"){go();return}
  redraw()});
 /* badge jumlah perubahan di Publish */
