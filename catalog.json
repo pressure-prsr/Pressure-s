@@ -2703,6 +2703,39 @@
    ],
    "shop": "overlay-controller-xbox-series-x-synthwave-outrun-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Y2k Bubble Edition",
+   "ne": "Xbox Series X Controller Overlay - Y2k Bubble Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Y2k Bubble yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Y2k Bubble theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 99000,
+   "usd": 8,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-y2k-bubble-overlay.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-28",
+   "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
+   "ft": [
+    "Bergerak real-time mengikuti gamepad",
+    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
+    "Warna aksen bisa disesuaikan",
+    "Siap dipakai di OBS dan Streamlabs"
+   ],
+   "fte": [
+    "Moves in real time with your gamepad",
+    "Buttons, sticks, and triggers react as you press them",
+    "Adjustable accent color",
+    "Ready for OBS and Streamlabs"
+   ],
+   "shop": "overlay-controller-xbox-series-x-y2k-bubble-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
