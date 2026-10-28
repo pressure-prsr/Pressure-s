@@ -1,4 +1,10 @@
 {
+ "0": {
+  "joki": []
+ },
+ "1": {
+  "joki": []
+ },
  "v": 1,
  "items": {},
  "added": [
@@ -82,6 +88,67 @@
     "Easter eggs: hold LB RB View for Sunburst, hold Y for the star"
    ],
    "shop": "overlay-controller-xbox-series-x-sunny-triangle-shards-v2-edition",
+   "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Blueprint Teknis Edition",
+   "ne": "Xbox Series X Controller Overlay - Blueprint Teknis Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Blueprint Teknis yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Blueprint Teknis theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 139000,
+   "usd": 11,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-blueprint-teknis.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-28",
+   "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
+   "ft": [
+    "Pustaka mekanik (Combo Meter, Stick Trail, Awakening Form) lewat ?mech atau data-mech; Base v3 - stik gaya prsr (karet beralur, kubah grafit, cincin aksen), sentuh (tombol, trigger analog, stik), parameter ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(combo,trail,awaken), slot bodyArt, plat atas dan display Home diperbesar, Home hanya display",
+    "PRSR-FITUR-"
+   ],
+   "fte": [
+    "Mechanic library (Combo Meter, Stick Trail, Awakening Form) via ?mech or data-mech; Base v3 - prsr-style sticks (knurled rubber, graphite dome, accent ring), touch input (buttons, analog triggers, sticks), ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(combo,trail,awaken) params, bodyArt slot, enlarged top plate and Home display, Home is display-only"
+   ],
+   "shop": "overlay-controller-xbox-series-x-blueprint-teknis-edition",
+   "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Anime Kawaii Pastel Edition",
+   "ne": "Xbox Series X Controller Overlay - Anime Kawaii Pastel Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Anime Kawaii Pastel yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Anime Kawaii Pastel theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 149000,
+   "usd": 12,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-anime-kawaii-pastel.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-28",
+   "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
+   "ft": [
+    "Bergerak real-time mengikuti gamepad",
+    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
+    "Warna aksen bisa disesuaikan",
+    "Siap dipakai di OBS dan Streamlabs"
+   ],
+   "fte": [
+    "Moves in real time with your gamepad",
+    "Buttons, sticks, and triggers react as you press them",
+    "Adjustable accent color",
+    "Ready for OBS and Streamlabs"
+   ],
+   "shop": "overlay-controller-xbox-series-x-anime-kawaii-pastel-edition",
    "srv": 1
   }
  ],
