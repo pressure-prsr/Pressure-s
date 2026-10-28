@@ -1256,18 +1256,14 @@
    "ctl": true,
    "pv": "demo",
    "ft": [
-    "Tombol, stik, dan trigger bereaksi real-time",
-    "Awan lembut melayang di atas body gamepad",
-    "Chip awan muncul di plat atas tiap tombol ditekan",
-    "Maskot Kumo: senang saat input, mata bintang saat trigger penuh, tidur saat idle",
-    "Tombol Home hanya hiasan"
+    "Maskot Kumo bereaksi: senang saat input, tidur saat idle",
+    "Chip awan di plat atas tiap tombol ditekan",
+    "Tombol, stik, dan trigger bereaksi real-time"
    ],
    "fte": [
-    "Buttons, sticks and triggers react in real time",
-    "Soft clouds drift across the gamepad body",
-    "A cloud chip rises on the top plate for every press",
-    "Kumo mascot: happy on input, star eyes at full trigger, sleeps when idle",
-    "Home button is decoration only"
+    "Kumo mascot reacts: happy on input, asleep when idle",
+    "Cloud chip on the top plate on every press",
+    "Buttons, sticks, and triggers react in real time"
    ],
    "nd": "2026-10-19",
    "shop": "overlay-controller-xbox-series-x-cloud-pastel-edition",
@@ -1296,18 +1292,16 @@
    "usd": 4,
    "ord": 54,
    "ft": [
-    "Tombol, stik, dan trigger bereaksi dengan efek es",
     "Trigger terisi seperti kristal es",
-    "Milestone tiap 100 tekanan dengan efek khusus",
+    "Efek khusus tiap 100 tekanan",
     "Urutan tombol rahasia memecahkan kristal",
-    "Tombol Home hanya hiasan"
+    "Tombol, stik, dan trigger bereaksi real-time"
    ],
    "fte": [
-    "Buttons, sticks and triggers react with ice effects",
-    "Triggers fill up like ice crystal",
-    "Milestone effect every 100 presses",
-    "A secret button sequence shatters the crystal",
-    "Home button is decoration only"
+    "Triggers fill like ice crystal",
+    "Special effect every 100 presses",
+    "Secret button sequence shatters the crystal",
+    "Buttons, sticks, and triggers react in real time"
    ],
    "nd": "2026-10-19",
    "shop": "overlay-controller-xbox-one-og-ice-crystal-edition",
@@ -1336,18 +1330,16 @@
    "ord": 53,
    "sub": "xbox-one-s",
    "ft": [
-    "Spiral galaksi berputar, makin cepat saat tekan tombol cepat (hype)",
-    "Percikan bintang saat ABXY ditekan",
-    "Hack Terminal: segmen terisi, LED merah jadi hijau",
-    "Meter langit dengan matahari dan bulan sesuai jam nyata",
-    "Kode rahasia (Konami) memicu efek spesial"
+    "Spiral galaksi makin cepat saat tombol ditekan cepat",
+    "Meter langit mengikuti jam nyata",
+    "Hack Terminal: segmen terisi tiap input",
+    "Kode Konami memicu efek spesial"
    ],
    "fte": [
-    "Galaxy spiral spins faster when you press quickly (hype)",
-    "Star sparks on ABXY presses",
-    "Hack Terminal: segments fill, LED turns red to green",
-    "Sky meter with sun and moon following real time",
-    "Secret code (Konami) triggers a special effect"
+    "Galaxy spiral speeds up as you press faster",
+    "Sky meter follows the real clock",
+    "Hack Terminal: segments fill with each input",
+    "Konami code triggers a special effect"
    ],
    "nd": "2026-10-19",
    "shop": "overlay-controller-xbox-one-s-sunset-galaxy-edition",
@@ -1372,18 +1364,16 @@
    "hide": false,
    "ord": 56,
    "ft": [
-    "Kode Konami (↑↑↓↓←→←→ B A): hujan koin 4 detik",
-    "Level up dengan ledakan piksel tiap 100 tekanan",
-    "Percikan piksel saat ABXY ditekan",
     "Meter combo naik saat menekan cepat",
-    "Mode tidur saat idle, bisa diatur lewat ?idle="
+    "Level up tiap 100 tekanan",
+    "Kode Konami: hujan koin 4 detik",
+    "Mode tidur saat idle"
    ],
    "fte": [
-    "Konami code (Up Up Down Down Left Right Left Right B A): 4-second coin rain",
-    "Level-up pixel burst every 100 presses",
-    "Pixel sparks on ABXY presses",
-    "Combo meter rises when you press fast",
-    "Sleep mode when idle, adjustable with ?idle="
+    "Combo meter rises as you press fast",
+    "Level up every 100 presses",
+    "Konami code: 4-second coin rain",
+    "Sleep mode when idle"
    ],
    "shop": "overlay-controller-xbox-one-og-retro-arcade-one-og-edition",
    "srv": 1,
@@ -1408,18 +1398,14 @@
    "hide": false,
    "ord": 55,
    "ft": [
-    "Roket naik bertahap tiap 25 tekanan",
-    "Peluncuran roket tiap 100 tekanan",
+    "Roket naik tiap 25 tekanan, meluncur tiap 100",
     "Mode hype: api menyala saat menekan cepat",
-    "Tekan X 5 kali dalam 1,5 detik: efek spesial",
     "Baterai naik saat aktif, turun saat idle"
    ],
    "fte": [
-    "Rocket climbs a step every 25 presses",
-    "Rocket launch every 100 presses",
+    "Rocket climbs every 25 presses, launches every 100",
     "Hype mode: flames ignite when you press fast",
-    "Press X 5 times within 1.5 seconds: special effect",
-    "Battery rises when active, drains when idle"
+    "Battery charges when active, drains when idle"
    ],
    "shop": "overlay-controller-xbox-one-og-pastel-rocket-launch-one-og-edition",
    "srv": 1,
@@ -1443,18 +1429,16 @@
    "ord": 9,
    "sub": "xbox-series-x",
    "ft": [
-    "Suasana laut siang, senja, atau malam (?theme=day|dusk|night)",
+    "Suasana siang, senja, atau malam lewat ?theme=",
     "Gelembung naik tiap tombol ditekan",
-    "Jam analog gelembung dengan waktu nyata",
-    "Putar stik 360 derajat: pusaran air",
-    "Meter arus laut dan jejak gelembung di stik"
+    "Meter arus laut dan jejak gelembung di stik",
+    "Putar stik 360 derajat memicu pusaran air"
    ],
    "fte": [
-    "Day, dusk, or night ocean mood (?theme=day|dusk|night)",
-    "Bubbles rise on every press",
-    "Bubble analog clock showing real time",
-    "Spin a stick 360 degrees: whirlpool",
-    "Ocean current meter and bubble trail on the sticks"
+    "Day, dusk, or night mood via ?theme=",
+    "Bubbles rise with every press",
+    "Current meter and bubble trail on the stick",
+    "Spin the stick 360 degrees for a whirlpool"
    ],
    "shop": "overlay-controller-xbox-series-x-crimson-jellyfish-drift-edition",
    "srv": 1,
@@ -1479,18 +1463,14 @@
    "hide": false,
    "ord": 51,
    "ft": [
-    "Body berdenyut seperti planet",
     "Pendamping mengorbit mengikuti stik, mode BOOST saat stik penuh",
     "Meter mood dan level cincin planet",
-    "Portal dan hujan meteor",
-    "Tombol Home hanya hiasan"
+    "Tombol, stik, dan trigger bereaksi real-time"
    ],
    "fte": [
-    "Body pulses like a planet",
-    "A companion orbits following the sticks, BOOST mode at full tilt",
+    "Companion orbits with the stick, BOOST mode at full tilt",
     "Mood meter and planet ring level",
-    "Portal and meteor shower",
-    "Home button is decoration only"
+    "Buttons, sticks, and triggers react in real time"
    ],
    "shop": "overlay-controller-xbox-one-s-holo-planet-rings-one-s-edition",
    "srv": 1,
@@ -1519,18 +1499,16 @@
    "tage": "New",
    "oldu": 16,
    "ft": [
+    "Hitung total tekan dan combo langsung",
     "Slot spinner 3 gulungan, jackpot tiap 7 putaran",
-    "Hitung total tekan dan combo secara langsung",
-    "Sayap api bereaksi saat tombol ditekan",
-    "Milestone tiap 100 tekanan",
-    "Urutan tombol rahasia memicu efek spesial"
+    "Efek khusus tiap 100 tekanan",
+    "Sayap api bereaksi saat tombol ditekan"
    ],
    "fte": [
+    "Live total press and combo counter",
     "3-reel slot spinner, jackpot every 7 spins",
-    "Live press counter and combo",
-    "Fire wings react to presses",
-    "Milestone every 100 presses",
-    "A secret button sequence triggers a special effect"
+    "Special effect every 100 presses",
+    "Flame wings react to button presses"
    ],
    "nd": "2026-10-19",
    "shop": "overlay-controller-xbox-one-s-neon-phoenix-wings-one-s-edition",
@@ -1665,24 +1643,16 @@
    "tage": "New",
    "nd": "2026-10-21",
    "ft": [
-    "Body karbon hitam dengan lambang biru kobalt besar",
-    "Garis biru di bumper berkedip dan menyala penuh saat ditekan",
-    "Riwayat 5 input terakhir tampil sebagai ikon yang bergeser",
-    "Maskot robot di layar Home yang bereaksi saat tombol ditekan",
+    "Riwayat 5 input terakhir tampil sebagai ikon",
     "Hitungan combo, rekor combo, dan total tekan",
-    "Mode tidur saat diam, mode hype saat main cepat, kode rahasia",
-    "Jejak biru di stik dan riak cincin saat stik ditekan",
-    "Trigger terisi biru penuh dengan garis ukuran yang menyala"
+    "Trigger terisi biru penuh dengan garis ukuran",
+    "Mode tidur saat diam, mode hype saat main cepat"
    ],
    "fte": [
-    "Black carbon body with a large cobalt blue emblem",
-    "Blue bumper lines blink and light up fully when pressed",
-    "History of the last 5 inputs shown as sliding icons",
-    "Robot mascot on the Home screen that reacts to button presses",
-    "Combo count, best combo, and total presses",
-    "Sleep mode when idle, hype mode when playing fast, secret codes",
-    "Blue trail on sticks and ripple ring when a stick is pressed",
-    "Triggers fill fully with blue and glowing level marks"
+    "Last 5 inputs shown as icons",
+    "Combo, best combo, and total press counters",
+    "Triggers fill solid blue with level lines",
+    "Sleep mode when idle, hype mode when playing fast"
    ],
    "shop": "overlay-controller-xbox-series-x-cobalt-carbon-strike-edition",
    "srv": 1,
@@ -1709,24 +1679,16 @@
    "tage": "New",
    "nd": "2026-10-21",
    "ft": [
-    "Body karbon dengan lambang api dan urat oranye menyala",
-    "Urat oranye menyala bergantian dan bernapas pelan saat controller diam",
-    "Mata naga di tengah yang berkedip dan mengikuti stik kiri",
     "Mode Rage: tekan cepat, retakan merah menyebar di body",
-    "Trigger terisi lava oranye, tombol dan stik punya percikan bara",
-    "Kode Konami dan L3+R3 memicu animasi kejutan",
-    "Titik bara, meter combo, dan kilat urat tiap 100 tekan",
-    "Warna efek tekan dan trigger bisa diganti sesuai selera"
+    "Meter combo, kilat urat tiap 100 tekan",
+    "Trigger terisi lava, percikan bara di tombol dan stik",
+    "Warna efek bisa diganti"
    ],
    "fte": [
-    "Carbon body with a flame emblem and glowing orange veins",
-    "Orange veins glow in turns and breathe softly when the controller is idle",
-    "A dragon eye in the center that blinks and follows the left stick",
-    "Rage Mode: mash buttons and red cracks spread across the body",
-    "Triggers fill with orange lava, buttons and sticks throw ember sparks",
-    "Konami code and L3+R3 trigger surprise animations",
-    "Ember dots, a combo meter, and a vein flash every 100 presses",
-    "Press-effect and trigger color can be changed to your taste"
+    "Rage Mode: press fast and red cracks spread across the body",
+    "Combo meter, vein flash every 100 presses",
+    "Lava-filled triggers, embers on buttons and sticks",
+    "Effect colors can be changed"
    ],
    "shop": "overlay-controller-xbox-series-x-ember-carbon-veins-edition",
    "srv": 1,
@@ -1753,21 +1715,15 @@
    "tage": "New",
    "nd": "2026-10-21",
    "ft": [
-    "Gaya kertas sobek merah krem, goresan di body bergeser pelan",
-    "Setelah 500 tekan, darah perlahan memenuhi body controller",
-    "Tombol, trigger, dan bumper merah dengan tepi sobek saat ditekan",
-    "Kepingan kertas beterbangan dari tombol ABXY",
-    "Display Home menampilkan nomor bab, naik tiap 100 tekan",
-    "Judul bab berganti di plat atas, lengkap dengan progres tekan",
+    "Setelah 500 tekan, darah perlahan memenuhi body",
+    "Nomor bab di Home naik tiap 100 tekan",
+    "Judul bab dan progres tekan di plat atas",
     "Kode Konami dan kombo LB+RB+Y memicu kejutan"
    ],
    "fte": [
-    "Torn paper red and cream style with slowly drifting body art",
-    "After 500 presses, blood slowly fills the controller body",
-    "Buttons, triggers and bumpers turn red with torn edges when pressed",
-    "Paper shards fly off the ABXY buttons",
-    "Home display shows a chapter number that rises every 100 presses",
-    "Chapter title changes on the top plate with a press progress bar",
+    "After 500 presses, blood slowly fills the body",
+    "Chapter number on Home rises every 100 presses",
+    "Chapter title and press progress on the top plate",
     "Konami code and LB+RB+Y combo trigger surprises"
    ],
    "shop": "overlay-controller-xbox-series-x-torn-paper-red-edition",
@@ -1795,24 +1751,16 @@
    "tage": "New",
    "nd": "2026-10-21",
    "ft": [
-    "Body tembaga polos dengan gradasi 3D",
-    "Trigger terisi tembaga cair yang naik saat ditarik",
     "Peta panas: tombol yang sering ditekan makin berwarna",
-    "Tungku di layar Home menyala makin terang sesuai tekanan",
-    "Meter uap 5 segmen naik mengikuti seberapa sibuk bermain",
-    "Bumper menyala oranye bara saat ditekan",
-    "Garis aksen di tengah bawah menyala saat tombol ditekan",
-    "Tiap 5 menit palu mengetuk dan koin jatuh di layar Home"
+    "Meter uap 5 segmen naik sesuai seberapa sibuk bermain",
+    "Trigger terisi tembaga cair",
+    "Tungku di layar Home makin terang sesuai tekanan"
    ],
    "fte": [
-    "Plain copper body with 3D shading",
-    "Triggers fill with molten copper as you pull them",
-    "Heat map: the more you press a button, the more it glows",
-    "The Home furnace burns brighter the harder you play",
-    "5-segment steam meter rises with how busy your play is",
-    "Bumpers glow ember orange when pressed",
-    "Accent line at the bottom center lights up when you press a button",
-    "Every 5 minutes a hammer strikes and a coin drops on the Home screen"
+    "Heat map: frequently pressed buttons get more colored",
+    "5-segment steam meter rises with how busy you play",
+    "Triggers fill with molten copper",
+    "Furnace on the Home display glows brighter as you press"
    ],
    "shop": "overlay-controller-xbox-series-x-brushed-copper-edition",
    "srv": 1,
@@ -1839,22 +1787,16 @@
    "tage": "New",
    "nd": "2026-10-21",
    "ft": [
-    "Goresan cakar merah bergaya klub olahraga di body",
-    "Pajangan kapak kayu dan besi di dalam kotak kaca di bagian atas",
     "Layar Home berganti siang, senja, malam sesuai jam",
-    "Trigger terisi merah dengan garis klub ikut bergeser",
-    "Bumper disapu warna merah, stik punya riak saat diklik",
     "Suasana Home berubah saat permainan makin ramai",
-    "Tekan L3 dan R3 bersamaan untuk menukar merah dan krem"
+    "Trigger terisi merah, riak di stik saat diklik",
+    "L3+R3 menukar warna merah dan krem"
    ],
    "fte": [
-    "Red claw-slash artwork on the body in a sports club style",
-    "Wood and iron axe on display inside a glass case on the top",
-    "Home screen changes day, dusk, night by real time",
-    "Triggers fill with red while club stripes slide along",
-    "Bumpers sweep red, sticks ripple when clicked",
-    "Home mood changes as the play gets busier",
-    "Press L3 and R3 together to swap red and cream"
+    "Home display switches day, dusk, night with the clock",
+    "Home mood changes as the action picks up",
+    "Red-filled triggers, ripple on stick click",
+    "L3+R3 swaps red and cream"
    ],
    "shop": "overlay-controller-xbox-series-x-crimson-stripe-club-edition",
    "srv": 1,
@@ -1881,24 +1823,16 @@
    "tage": "New",
    "nd": "2026-10-22",
    "ft": [
-    "Body karbon dengan lambang magenta, cahaya detak berjalan kiri ke kanan",
-    "Display Home: detak berjalan tiap tombol ditekan",
     "Penghitung tekan: total di Home, A B X Y di plat atas",
-    "Meter mood bertingkat di bawah tengah naik saat bermain",
-    "Napas pelan magenta saat controller didiamkan",
-    "Tahan LB dan RB: lambang grip berkedip",
-    "Riak ring saat stik digerakkan, bumper menyala magenta",
-    "Setiap 100 tekan, body berdenyut sebagai penanda"
+    "Meter mood bertingkat naik saat bermain",
+    "Detak berjalan di layar Home tiap tombol ditekan",
+    "Napas pelan magenta saat controller didiamkan"
    ],
    "fte": [
-    "Carbon body with a magenta emblem and a heartbeat light sweeping left to right",
-    "Home display: a heartbeat runs across on every press",
-    "Press counter: total on Home, A B X Y on the top plate",
-    "Mood meter below the center rises as you play",
-    "Soft magenta breathing when the controller is idle",
-    "Hold LB and RB: the grip emblems blink",
-    "Ripple ring on stick move, bumpers glow magenta",
-    "Every 100 presses the body pulses as a milestone"
+    "Press counters: total on Home, A B X Y on the top plate",
+    "Tiered mood meter rises as you play",
+    "Pulse runs across the Home display on each press",
+    "Slow magenta breathing when idle"
    ],
    "shop": "overlay-controller-xbox-series-x-magenta-carbon-pulse-edition",
    "srv": 1,
@@ -1925,24 +1859,16 @@
    "tage": "New",
    "nd": "2026-10-22",
    "ft": [
-    "Body putih panel mecha dengan strip bahaya dan ring pelampung oranye",
-    "Lampu darurat berputar pelan di layar tengah",
-    "Inti energi 4 segmen menyala saat tombol A B X Y ditekan",
-    "Pesan bergilir dan meter level siaga naik saat tombol sering ditekan",
-    "Mode hype: lampu tengah berputar cepat saat tombol ditekan cepat",
-    "Tahan LB, RB, dan A untuk sirene darurat selama 3 detik",
-    "Trigger terisi oranye penuh, bumper dan D-pad menyala saat ditekan",
-    "Mode standby: lampu melambat dan inti bernapas saat controller diam"
+    "Inti energi 4 segmen menyala per tombol A B X Y",
+    "Meter level siaga naik saat tombol sering ditekan",
+    "Mode hype: lampu tengah berputar cepat",
+    "Tahan LB+RB+A untuk sirene darurat 3 detik"
    ],
    "fte": [
-    "White mecha-panel body with hazard stripes and an orange life ring",
-    "Slow-spinning emergency light on the center display",
-    "4-segment energy core lights up as you press A, B, X, Y",
-    "Rotating status messages and an alert-level meter that rises as you press more",
-    "Hype mode: the center light spins faster during rapid presses",
-    "Hold LB, RB and A for a 3-second emergency siren",
-    "Triggers fill with solid orange, bumpers and D-pad light up",
-    "Standby mode: the light slows and the core breathes when idle"
+    "4-segment energy core lights up per A B X Y press",
+    "Alert level meter rises as you press often",
+    "Hype mode: center light spins fast",
+    "Hold LB+RB+A for a 3-second emergency siren"
    ],
    "shop": "overlay-controller-xbox-series-x-rescue-unit-safety-edition",
    "srv": 1,
@@ -1969,24 +1895,16 @@
    "tage": "New",
    "nd": "2026-10-22",
    "ft": [
-    "Body belang harimau oranye-hitam dengan goresan cakar",
-    "Mata harimau di display Home yang berkedip dan tidur saat diam",
-    "Mode Rage: tekan cepat membuat mata harimau memerah",
-    "Meter mood Jinak ke Buas di plat atas mengikuti kecepatan tekan",
-    "Trigger terisi cakar oranye yang naik bergantian",
-    "Riak oranye di stik dan tombol ABXY yang membesar saat ditekan",
-    "Kode rahasia Konami dan cakaran besar dari kombinasi LB RB LT RT",
-    "Hitungan milestone tiap 100 tekan dan mode Hype"
+    "Mata harimau di Home: berkedip, tidur saat diam, merah saat Rage",
+    "Meter mood Jinak ke Buas mengikuti kecepatan tekan",
+    "Milestone tiap 100 tekan dan mode Hype",
+    "Kode Konami dan kombo LB RB LT RT"
    ],
    "fte": [
-    "Orange and black tiger-stripe body with claw slashes",
-    "Tiger eye on the Home display that blinks and sleeps when idle",
-    "Rage mode: fast button mashing turns the tiger eye red",
-    "Mood meter from Calm to Wild on the top plate follows press speed",
-    "Triggers fill with orange claw blades rising one after another",
-    "Orange ripple on sticks and ABXY buttons that grow when pressed",
-    "Konami secret code and a big claw slash from the LB RB LT RT combo",
-    "Milestone every 100 presses and a Hype mode"
+    "Tiger eye on Home: blinks, sleeps when idle, turns red in Rage",
+    "Tame-to-Wild mood meter follows your press speed",
+    "Milestone every 100 presses and Hype mode",
+    "Konami code and LB RB LT RT combo"
    ],
    "shop": "overlay-controller-xbox-series-x-orange-black-stripe-edition",
    "srv": 1,
@@ -2049,24 +1967,16 @@
    "tage": "New",
    "nd": "2026-10-22",
    "ft": [
-    "Body 3D bermotif sinar cyan besar yang berdenyut mengikuti tempo main",
-    "Orb pengisi di layar Home: tahan trigger untuk mengisi, lepas jadi gelombang",
-    "Layar Home berisi matahari mini dan jam sinar sesuai waktu nyata",
-    "Plat atas dengan penghitung tekan, combo, dan meter mood",
-    "Sinar di sisi grip menyala saat tombol sisi itu ditekan",
-    "Saat didiamkan muncul bintang dan komet di layar Home",
-    "Kode Konami atau tahan LB dan RB 3 detik memicu ledakan sinar",
-    "Warna aksen bisa diganti lewat pengaturan accent di alamat web"
+    "Orb di Home: tahan trigger untuk mengisi, lepas jadi gelombang",
+    "Penghitung tekan, combo, dan meter mood di plat atas",
+    "Sinar di grip menyala saat tombol sisi itu ditekan",
+    "Warna aksen bisa diganti lewat ?accent"
    ],
    "fte": [
-    "3D body with a big cyan ray pattern that pulses with your play tempo",
-    "Charge orb on the Home screen: hold a trigger to charge, release for a shockwave",
-    "Home screen shows a mini sun and ray clock in real time",
-    "Top plate with press counter, combo, and mood meter",
-    "Rays on the grip light up when buttons on that side are pressed",
-    "Stars and a comet appear on the Home screen when left idle",
-    "Konami code or holding LB and RB for 3 seconds triggers a ray burst",
-    "Accent color can be changed with the accent setting in the web address"
+    "Orb on Home: hold a trigger to charge, release for a wave",
+    "Press counter, combo, and mood meter on the top plate",
+    "Grip rays light up when that side is pressed",
+    "Accent color via ?accent"
    ],
    "shop": "overlay-controller-xbox-series-x-cyan-radial-burst-edition",
    "srv": 1,
@@ -2129,24 +2039,16 @@
    "tage": "New",
    "nd": "2026-10-22",
    "ft": [
-    "Body charcoal dengan lambang petir matahari kuning besar",
-    "Panel berlubang di grip yang menyala bergantian",
-    "Energy Core 4 segmen di tengah menyala per tombol A B X Y",
-    "Mode hype: lubang berkedip cepat saat tombol ditekan cepat",
-    "Cincin riak kuning saat stik ditekan",
-    "Trigger terisi kuning penuh saat ditarik",
-    "Warna aksen bisa diganti lewat link",
-    "Bisa dicoba lewat sentuhan di layar HP"
+    "Energy Core 4 segmen menyala per tombol A B X Y",
+    "Mode hype: lubang berkedip cepat saat menekan cepat",
+    "Trigger terisi kuning penuh",
+    "Warna aksen bisa diganti lewat link"
    ],
    "fte": [
-    "Charcoal body with a big yellow lightning sun emblem",
-    "Perforated grip panels that light up in turns",
-    "4-segment Energy Core in the center lights per A B X Y button",
-    "Hype mode: holes blink faster when buttons are pressed fast",
-    "Yellow ripple rings when a stick is pressed",
-    "Triggers fill up yellow when pulled",
-    "Accent color can be changed through the link",
-    "Playable by touch on a phone screen"
+    "4-segment Energy Core lights up per A B X Y press",
+    "Hype mode: holes blink fast when you press fast",
+    "Triggers fill solid yellow",
+    "Accent color can be changed via link"
    ],
    "shop": "overlay-controller-xbox-series-x-sunny-perforated-mesh-edition",
    "srv": 1,
@@ -2173,24 +2075,16 @@
    "tage": "New",
    "nd": "2026-10-22",
    "ft": [
-    "Body bergambar goresan sumi hitam-putih",
-    "Rage Mode setelah 8 kali tekan: kilatan menerangi body dan jadi merah emas",
-    "Display Home zirah Spartan putih, berubah merah emas saat Rage Mode",
-    "Plate bertuliskan PEACE dan RAGE MODE",
-    "Duel Spark: dua kilatan beradu saat tekan A dan B, skor titik tinta",
-    "Percikan tinta saat tombol A B X Y ditekan",
-    "Sapuan kuas di bumper dan isi tinta naik di trigger",
-    "Tetes tinta saat didiamkan dan kode Konami memicu ledakan tinta"
+    "Rage Mode setelah 8 kali tekan: body jadi merah emas",
+    "Duel Spark: tekan A dan B, skor titik tinta",
+    "Isi tinta naik di trigger, sapuan kuas di bumper",
+    "Kode Konami memicu ledakan tinta"
    ],
    "fte": [
-    "Black-and-white sumi brush stroke body art",
-    "Rage Mode after 8 presses: a flash lights up the body and turns it red and gold",
-    "Home display with a white Spartan helmet that turns red and gold in Rage Mode",
-    "Plate that reads PEACE and RAGE MODE",
-    "Duel Spark: two flashes clash when you press A and B, ink dot score",
-    "Ink splatter when A B X Y buttons are pressed",
-    "Brush sweep on bumpers and rising ink fill on triggers",
-    "Ink drops when left idle and the Konami code triggers an ink burst"
+    "Rage Mode after 8 presses: body turns red and gold",
+    "Duel Spark: press A and B, ink-dot score",
+    "Ink fills the triggers, brush sweep on bumpers",
+    "Konami code triggers an ink burst"
    ],
    "shop": "overlay-controller-xbox-series-x-sumi-stroke-mono-edition",
    "srv": 1,
@@ -2217,24 +2111,16 @@
    "tage": "New",
    "nd": "2026-10-23",
    "ft": [
-    "Body karbon dengan lambang bulu feniks amber besar",
-    "Bulu di body menyala bergantian dan bereaksi saat tombol ditekan",
-    "Isi trigger naik seperti bara saat ditarik",
-    "Cincin bara mengembang di stik dan tombol ABXY",
-    "Kilau amber menyapu bumper saat ditekan",
-    "Display Home berupa bulu feniks yang berdenyut",
-    "Bar bulu terisi per jumlah tekan, merayakan tiap 100 tekan",
-    "Awakening Form: LB+RB+LT+RT membuka bentuk akhir feniks"
+    "Bar bulu terisi per jumlah tekan, perayaan tiap 100 tekan",
+    "Awakening Form: LB+RB+LT+RT membuka bentuk akhir feniks",
+    "Isi trigger naik seperti bara",
+    "Cincin bara di stik dan tombol ABXY"
    ],
    "fte": [
-    "Carbon body with a large amber phoenix feather emblem",
-    "Body feathers glow in turns and react to button presses",
-    "Trigger fill rises like embers when pulled",
-    "Ember rings expand on the sticks and ABXY buttons",
-    "Amber shine sweeps across the bumpers when pressed",
-    "Home display shows a pulsing phoenix feather",
-    "Feather bar fills with each press and celebrates every 100 presses",
-    "Awakening Form: LB+RB+LT+RT unlocks the final phoenix form"
+    "Feather bar fills with presses, celebration every 100",
+    "Awakening Form: LB+RB+LT+RT unlocks the final phoenix",
+    "Trigger fill rises like embers",
+    "Ember rings on sticks and ABXY"
    ],
    "shop": "overlay-controller-xbox-series-x-phoenix-amber-edition",
    "srv": 1,
@@ -2261,24 +2147,16 @@
    "tage": "New",
    "nd": "2026-10-23",
    "ft": [
-    "Body karbon dengan ular hijau neon melilit grip",
-    "Mata ular di layar Home berkedip dan tidur saat diam",
     "Combo Meter di plat atas makin terang saat tekan beruntun",
-    "Kode Konami memunculkan ular hijau melintas di seluruh body",
-    "Isi trigger hijau naik seperti racun saat ditarik",
-    "Cincin hijau melebar dari stik saat ditekan",
-    "Garis hijau menjalar di bumper saat ditekan",
-    "Kilatan hijau setiap 100 tekan dan warna aksen bisa diganti"
+    "Mata ular di Home: berkedip, tidur saat diam",
+    "Kode Konami memunculkan ular melintas di body",
+    "Warna aksen bisa diganti"
    ],
    "fte": [
-    "Carbon body with a neon green snake coiled around the grip",
-    "Snake eye on the Home display blinks and falls asleep when idle",
-    "Combo Meter on the top plate glows brighter with rapid presses",
-    "Konami code sends a green snake across the whole body",
-    "Green trigger fill rises like venom as you pull",
-    "Green ring expands from the stick when pressed",
-    "Green line slides across the bumper when pressed",
-    "Green flash every 100 presses and the accent color can be changed"
+    "Combo Meter on the top plate brightens on streaks",
+    "Snake eye on Home: blinks, sleeps when idle",
+    "Konami code sends a snake across the body",
+    "Accent color can be changed"
    ],
    "shop": "overlay-controller-xbox-series-x-venom-coil-carbon-edition",
    "srv": 1,
@@ -2305,24 +2183,16 @@
    "tage": "New",
    "nd": "2026-10-23",
    "ft": [
-    "Motif panah chevron cyan besar di bodi controller",
-    "Api nitro menyala di layar Home saat RT ditarik penuh",
-    "Speedometer di layar Home, jarumnya ikut tarikan trigger",
-    "Deretan panah di plat atas menyala sesuai tarikan RT",
-    "Kode Konami memicu sapuan panah ke seluruh bodi",
-    "Jejak panah di stik dan riak cahaya di tombol A B X Y",
-    "Trigger terisi warna cyan dengan panah kecil di dalamnya",
-    "Panah di D-pad menyala saat ditekan"
+    "Speedometer di Home, jarum ikut tarikan RT",
+    "Api nitro menyala saat RT ditarik penuh",
+    "Deretan panah di plat atas sesuai tarikan RT",
+    "Kode Konami memicu sapuan panah ke seluruh body"
    ],
    "fte": [
-    "Large cyan chevron arrow pattern on the controller body",
-    "Nitro flame ignites on the Home display when RT is fully pulled",
-    "Speedometer on the Home display, needle follows the trigger pull",
-    "Row of arrows on the top plate lights up with the RT pull",
-    "Konami code triggers an arrow sweep across the whole body",
-    "Arrow trails on the sticks and light ripples on the A B X Y buttons",
-    "Triggers fill with cyan and small arrows inside",
-    "D-pad arrows light up when pressed"
+    "Speedometer on Home, needle follows RT pull",
+    "Nitro flame ignites at full RT",
+    "Arrow row on the top plate follows RT pull",
+    "Konami code sweeps arrows across the body"
    ],
    "shop": "overlay-controller-xbox-series-x-cyan-chevron-run-edition",
    "srv": 1,
@@ -2349,24 +2219,16 @@
    "tage": "New",
    "nd": "2026-10-23",
    "ft": [
-    "Sayap gagak indigo bercahaya di body karbon",
-    "Gagak terbang di layar tengah, kepakan makin cepat saat tombol ditekan",
-    "Kepala gagak mengikuti stik, bulan menampilkan fase sesuai tanggal",
-    "Bola energi terisi tiap tekan, penuh memicu aksi ultimate gagak",
-    "Penghitung tekan dan lencana peringkat gagak",
-    "Trigger terisi motif bulu, tombol dan stik punya riak cahaya",
-    "Sayap kecil mengepak pelan, tahan View+Menu atau LB+RB untuk kejutan",
+    "Bola energi terisi tiap tekan, penuh memicu aksi ultimate",
+    "Penghitung tekan dan lencana peringkat",
+    "Bulan menampilkan fase sesuai tanggal",
     "Warna aksen bisa diganti lewat pengaturan"
    ],
    "fte": [
-    "Glowing indigo raven wings on a carbon body",
-    "Raven flies on the center screen, flapping faster as you press",
-    "Raven head follows the stick, moon shows the phase of the day",
-    "Energy orbs fill with every press, full stack triggers a raven ultimate",
-    "Press counter and raven rank badge",
-    "Feather-pattern trigger fill, ripple glow on buttons and sticks",
-    "Small wings flap gently, hold View+Menu or LB+RB for a surprise",
-    "Accent color can be changed through settings"
+    "Energy orb fills with each press, full triggers an ultimate",
+    "Press counter and rank badge",
+    "Moon shows the phase of the current date",
+    "Accent color can be changed in settings"
    ],
    "shop": "overlay-controller-xbox-series-x-raven-wing-indigo-edition",
    "srv": 1,
@@ -2393,22 +2255,16 @@
    "tage": "New",
    "nd": "2026-10-23",
    "ft": [
-    "Body bergambar goresan cakar lime neon di atas charcoal",
-    "Tombol menyala lime dan memunculkan goresan cakar saat ditekan",
-    "Trigger terisi lime penuh",
-    "Stik lime polos tanpa goresan",
-    "Display Home berikon cakar dengan penghitung waktu sesi",
-    "Plate atas berisi jumlah tekan, 10 segmen lime yang menyala tiap tekan lalu berkilat saat penuh, dan level",
-    "Kode Konami memicu sapuan cakar, level naik tiap 500 tekan"
+    "Goresan cakar muncul saat tombol ditekan",
+    "Plat atas: jumlah tekan, 10 segmen, dan level (naik tiap 500 tekan)",
+    "Penghitung waktu sesi di layar Home",
+    "Kode Konami memicu sapuan cakar"
    ],
    "fte": [
-    "Body art with neon lime claw scratches on charcoal",
-    "Buttons glow lime and flash claw marks when pressed",
-    "Triggers fill solid lime",
-    "Plain lime sticks without scratches",
-    "Home display with claw icon and session timer",
-    "Top plate shows press count, 10 lime segments that light per press and flash when full, and level",
-    "Konami code triggers a claw sweep, level up every 500 presses"
+    "Claw scratches appear when buttons are pressed",
+    "Top plate: press count, 10 segments, and level (up every 500 presses)",
+    "Session timer on the Home display",
+    "Konami code triggers a claw sweep"
    ],
    "shop": "overlay-controller-xbox-series-x-lime-claw-scratch-edition",
    "srv": 1,
@@ -2471,24 +2327,16 @@
    "tage": "New",
    "nd": "2026-10-24",
    "ft": [
-    "Body kulit tan dengan jahitan krem dan butiran kulit",
-    "Uang dolar keluar dari plat atas lalu jatuh seperti mesin ATM",
-    "Display Home: gantungan kunci mobil bergoyang kiri kanan",
-    "Meter benang di tengah bawah terisi tiap tombol ditekan",
-    "Trigger terisi penuh seperti kulit ditarik, tanpa bolong",
-    "Stik meninggalkan jejak titik benang saat digerakkan",
-    "Kulit menghangat dan gantungan kunci makin kencang saat ditekan cepat",
-    "Kode Konami menyalakan semua jahitan sekaligus"
+    "Meter benang terisi tiap tombol ditekan",
+    "Uang dolar jatuh dari plat atas seperti mesin ATM",
+    "Kulit menghangat dan gantungan kunci makin kencang saat tekan cepat",
+    "Kode Konami menyalakan semua jahitan"
    ],
    "fte": [
-    "Tan leather body with cream stitches and leather grain",
-    "Dollar bills fly out of the top plate and fall like an ATM payout",
-    "Home display: a car key fob swinging left and right",
-    "Thread meter at bottom center fills with every button press",
-    "Triggers fill fully like pulled leather, with no gaps",
-    "Sticks leave a trail of thread dots when moved",
-    "Leather warms up and the key fob swings harder when you press fast",
-    "Konami code lights up every stitch at once"
+    "Thread meter fills with each press",
+    "Dollar bills fall from the top plate like an ATM",
+    "Leather warms up and the keychain swings harder when you press fast",
+    "Konami code lights up all stitches"
    ],
    "shop": "overlay-controller-xbox-series-x-leather-stitch-tan-edition",
    "srv": 1,
@@ -2515,24 +2363,16 @@
    "tage": "New",
    "nd": "2026-10-24",
    "ft": [
-    "Body aluminium anodized ungu dengan serat logam dan kilau yang bergerak pelan",
-    "Hologram controller mini di tengah yang miring mengikuti gerakan stik",
-    "Papan hitungan tekan dan combo di bagian atas controller",
-    "Trigger terisi penuh warna ungu terang saat ditarik, label tetap terlihat",
-    "Percikan cahaya di tombol ABXY dan riak cahaya di stik",
-    "Lengan D-pad menyala bergantian saat controller dibiarkan diam",
-    "Kejutan tersembunyi: kode tombol rahasia dan tekan A berulang kali",
-    "Warna aksen bisa diganti lewat pengaturan accent"
+    "Hologram controller mini miring mengikuti stik",
+    "Papan hitungan tekan dan combo di atas controller",
+    "Trigger terisi penuh, label tetap terlihat",
+    "Warna aksen bisa diganti lewat ?accent"
    ],
    "fte": [
-    "Purple anodized aluminium body with metal grain and a slow moving shine",
-    "Mini hologram controller in the center that tilts with the stick movement",
-    "Press and combo counter board on top of the controller",
-    "Triggers fill up with bright purple when pulled, labels stay visible",
-    "Light sparks on the ABXY buttons and light ripples on the sticks",
-    "D-pad arms light up in turn when the controller is left idle",
-    "Hidden surprises: a secret button code and pressing A repeatedly",
-    "Accent color can be changed with the accent setting"
+    "Mini controller hologram tilts with the stick",
+    "Press and combo board above the controller",
+    "Triggers fill fully, labels stay visible",
+    "Accent color via ?accent"
    ],
    "shop": "overlay-controller-xbox-series-x-anodized-violet-edition",
    "srv": 1,
@@ -2559,22 +2399,16 @@
    "tage": "New",
    "nd": "2026-10-25",
    "ft": [
-    "Body anyaman karbon dengan lambang tetes lime beracun",
-    "Speedometer APM di layar Home, jarum naik saat tombol ditekan cepat",
-    "Kolam lime dengan gelembung naik pelan di layar Home",
-    "Meter 5 segmen di plat atas, jadi garis detak saat diam",
-    "Trigger terisi cairan lime, bumper menyala saat ditekan",
-    "Riak lime di tombol ABXY dan cincin D-pad berdenyut",
-    "Tahan L3+R3 untuk glitch kejutan, garis tepi menyala saat meter penuh"
+    "Speedometer APM di Home, jarum naik saat tekan cepat",
+    "Meter 5 segmen di plat atas",
+    "Tahan L3+R3 untuk glitch kejutan",
+    "Trigger terisi cairan lime"
    ],
    "fte": [
-    "Carbon weave body with a toxic lime droplet emblem",
-    "APM speedometer on the Home display, needle rises with fast presses",
-    "Lime pool with slowly rising bubbles on the Home display",
-    "5-segment meter on the top plate, turns into a heartbeat line when idle",
-    "Triggers fill with lime liquid, bumpers light up when pressed",
-    "Lime ripples on ABXY buttons and a pulsing D-pad ring",
-    "Hold L3+R3 for a surprise glitch, edge glows when the meter is full"
+    "APM speedometer on Home, needle rises as you press fast",
+    "5-segment meter on the top plate",
+    "Hold L3+R3 for a surprise glitch",
+    "Triggers fill with lime liquid"
    ],
    "shop": "overlay-controller-xbox-series-x-toxic-lime-weave-edition",
    "srv": 1,
@@ -2600,24 +2434,16 @@
    "tage": "New",
    "nd": "2026-10-25",
    "ft": [
-    "Body karbon hitam dengan taring ungu neon besar di grip",
-    "Boss Bar: bar nyawa boss turun tiap tombol ditekan, pulih saat diam",
-    "Tombol Home jadi mata boss yang melirik mengikuti stik",
-    "Mata boss berubah ekspresi sesuai sisa nyawa boss",
-    "Taring makin terang saat tombol ditekan makin cepat",
-    "Taring ungu berkilau bergantian di grip",
-    "Trigger terisi ungu bergerigi seperti taring, bumper menyala saat ditekan",
-    "Warna aksen ungu bisa diganti lewat pengaturan warna"
+    "Boss Bar: nyawa boss turun tiap tombol ditekan, pulih saat diam",
+    "Mata boss di tengah mengikuti stik dan berubah ekspresi sesuai sisa nyawa",
+    "Taring makin terang saat menekan makin cepat",
+    "Warna aksen bisa diganti"
    ],
    "fte": [
-    "Black carbon body with a big neon violet fang on the grip",
-    "Boss Bar: the boss health bar drops with every press and recovers when idle",
-    "The Home button becomes a boss eye that follows the sticks",
-    "The boss eye changes expression with the boss health left",
-    "Fangs glow brighter the faster you press the buttons",
-    "Violet fangs sparkle in turns on the grips",
-    "Triggers fill with jagged violet like fangs, bumpers light up when pressed",
-    "The violet accent color can be changed with the color setting"
+    "Boss Bar: boss health drops with each press, recovers when idle",
+    "Boss eye in the center follows the stick and changes with remaining health",
+    "Fangs glow brighter the faster you press",
+    "Accent color can be changed"
    ],
    "shop": "overlay-controller-xbox-series-x-violet-carbon-fang-v5-edition",
    "srv": 1,
@@ -2643,24 +2469,16 @@
    "tage": "New",
    "nd": "2026-10-25",
    "ft": [
-    "Body bergambar goresan hijau lime neon dengan efek tetesan",
-    "Tetesan lime kecil jatuh pelan di sisi kiri body",
-    "Trigger terisi cat lime seperti tuangan saat ditarik",
-    "Bumper dan tombol menyala lime penuh saat ditekan",
-    "Stik karet hijau lime dengan cincin charcoal",
-    "Daily Streak: hitungan hari main berturut-turut di plat atas dan layar Home",
+    "Daily Streak: hitungan hari main berturut-turut",
     "Suasana body makin terang mengikuti intensitas permainan",
-    "Warna aksen tombol dan stik bisa diganti lewat pengaturan"
+    "Trigger terisi cat lime",
+    "Warna aksen tombol dan stik bisa diganti"
    ],
    "fte": [
-    "Body artwork with neon lime brush strokes and drip effects",
-    "Small lime drips slowly fall on the left side of the body",
-    "Triggers fill with lime paint like a pour when pulled",
-    "Bumpers and buttons light up solid lime when pressed",
-    "Green lime rubber sticks with charcoal rings",
-    "Daily Streak: consecutive play day counter on the top plate and Home display",
-    "Body mood gets brighter with play intensity",
-    "Button and stick accent color can be changed in settings"
+    "Daily Streak: consecutive days played",
+    "Body mood brightens with play intensity",
+    "Triggers fill like pouring lime paint",
+    "Button and stick accent color can be changed"
    ],
    "shop": "overlay-controller-xbox-series-x-lime-drip-lines-edition",
    "srv": 1,
@@ -2686,26 +2504,16 @@
    "tage": "New",
    "nd": "2026-10-27",
    "ft": [
-    "Gaya body pecahan segitiga kuning tajam, paling rapat di ujung grip",
-    "Rage Mode: tekan cepat memicu retakan merah menyebar di body",
-    "Bintang pecahan berkilau satu per satu di display Home",
-    "Animasi YOUR NAME muncul-hilang menggantikan plat atas (ganti lewat ?name=)",
-    "Meter Heat berupa segitiga pop-in di bawah nama, hanya terlihat saat tombol ditekan beruntun",
-    "Grip menyala kuning mengikuti stik, tombol, dan intensitas main",
-    "Percikan pecahan saat tombol A B X Y dan stik ditekan",
-    "Trigger isi kuning bermotif segitiga, bumper tersapu garis kuning",
-    "Easter egg: tahan LB RB View untuk Sunburst, tahan Y untuk bintang"
+    "Rage Mode: tekan cepat memicu retakan merah menyebar",
+    "Nama sendiri tampil di plat atas (?name=)",
+    "Meter Heat muncul saat tombol ditekan beruntun",
+    "Easter egg: tahan LB RB View untuk Sunburst"
    ],
    "fte": [
-    "Sharp yellow triangle-shard body art, densest at the grip tips",
-    "Rage Mode: fast mashing spreads red cracks across the body",
-    "Twinkling shard star on the Home display, one shard at a time",
-    "YOUR NAME appear/disappear animation replaces the top plate (change via ?name=)",
-    "Heat meter is pop-in shards under the name, visible only while mashing buttons",
-    "Grips glow yellow with stick, button and play intensity",
-    "Shard sparks when A B X Y buttons and sticks are pressed",
-    "Triangle-pattern trigger fill, bumpers swept by a yellow line",
-    "Easter eggs: hold LB RB View for Sunburst, hold Y for the star"
+    "Rage Mode: press fast and red cracks spread",
+    "Your own name on the top plate (?name=)",
+    "Heat meter appears on button streaks",
+    "Easter egg: hold LB RB View for Sunburst"
    ],
    "shop": "overlay-controller-xbox-series-x-sunny-triangle-shards-v2-edition",
    "srv": 1,
@@ -2732,10 +2540,16 @@
    "nd": "2026-10-28",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Pustaka mekanik (Combo Meter, Stick Trail, Awakening Form) lewat ?mech atau data-mech; Base v3 - stik gaya prsr (karet beralur, kubah grafit, cincin aksen), sentuh (tombol, trigger analog, stik), parameter ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(combo,trail,awaken), slot bodyArt, plat atas dan display Home diperbesar, Home hanya display"
+    "Combo Meter, Stick Trail, dan Awakening Form (aktifkan lewat ?mech)",
+    "Bisa digerakkan lewat sentuhan layar HP",
+    "Warna aksen bisa diganti lewat ?accent",
+    "Siap dipakai di OBS dan Streamlabs"
    ],
    "fte": [
-    "Mechanic library (Combo Meter, Stick Trail, Awakening Form) via ?mech or data-mech; Base v3 - prsr-style sticks (knurled rubber, graphite dome, accent ring), touch input (buttons, analog triggers, sticks), ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(combo,trail,awaken) params, bodyArt slot, enlarged top plate and Home display, Home is display-only"
+    "Combo Meter, Stick Trail, and Awakening Form (enable via ?mech)",
+    "Can be moved by touch on a phone screen",
+    "Accent color via ?accent",
+    "Ready for OBS and Streamlabs"
    ],
    "shop": "overlay-controller-xbox-series-x-blueprint-teknis-edition",
    "srv": 1,
@@ -2798,10 +2612,16 @@
    "nd": "2026-10-28",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Pustaka mekanik (Combo Meter, Stick Trail, Awakening Form) lewat ?mech atau data-mech; Base v3 - stik gaya prsr (karet beralur, kubah grafit, cincin aksen), sentuh (tombol, trigger analog, stik), parameter ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(combo,trail,awaken), slot bodyArt, plat atas dan display Home diperbesar, Home hanya display"
+    "Combo Meter, Stick Trail, dan Awakening Form (aktifkan lewat ?mech)",
+    "Bisa digerakkan lewat sentuhan layar HP",
+    "Warna aksen bisa diganti lewat ?accent",
+    "Siap dipakai di OBS dan Streamlabs"
    ],
    "fte": [
-    "Mechanic library (Combo Meter, Stick Trail, Awakening Form) via ?mech or data-mech; Base v3 - prsr-style sticks (knurled rubber, graphite dome, accent ring), touch input (buttons, analog triggers, sticks), ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(combo,trail,awaken) params, bodyArt slot, enlarged top plate and Home display, Home is display-only"
+    "Combo Meter, Stick Trail, and Awakening Form (enable via ?mech)",
+    "Can be moved by touch on a phone screen",
+    "Accent color via ?accent",
+    "Ready for OBS and Streamlabs"
    ],
    "shop": "overlay-controller-xbox-series-x-synthwave-outrun-edition",
    "srv": 1,
@@ -2864,11 +2684,16 @@
    "nd": "2026-10-28",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Pustaka mekanik (Combo Meter, Stick Trail, Awakening Form) lewat ?mech atau data-mech; Base v3 - stik gaya prsr (karet beralur, kubah grafit, cincin aksen), sentuh (tombol, trigger analog, stik), parameter ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(combo,trail,awaken), slot bodyArt, plat atas dan display Home diperbesar, Home hanya display",
-    "PRSR-FITUR-"
+    "Combo Meter, Stick Trail, dan Awakening Form (aktifkan lewat ?mech)",
+    "Bisa digerakkan lewat sentuhan layar HP",
+    "Warna aksen bisa diganti lewat ?accent",
+    "Siap dipakai di OBS dan Streamlabs"
    ],
    "fte": [
-    "Mechanic library (Combo Meter, Stick Trail, Awakening Form) via ?mech or data-mech; Base v3 - prsr-style sticks (knurled rubber, graphite dome, accent ring), touch input (buttons, analog triggers, sticks), ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(combo,trail,awaken) params, bodyArt slot, enlarged top plate and Home display, Home is display-only"
+    "Combo Meter, Stick Trail, and Awakening Form (enable via ?mech)",
+    "Can be moved by touch on a phone screen",
+    "Accent color via ?accent",
+    "Ready for OBS and Streamlabs"
    ],
    "shop": "overlay-controller-xbox-series-x-glitch-error-edition",
    "srv": 1,
@@ -2895,11 +2720,16 @@
    "nd": "2026-10-28",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Pustaka mekanik (Combo Meter, Stick Trail, Awakening Form) lewat ?mech atau data-mech; Base v3 - stik gaya prsr (karet beralur, kubah grafit, cincin aksen), sentuh (tombol, trigger analog, stik), parameter ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(combo,trail,awaken), slot bodyArt, plat atas dan display Home diperbesar, Home hanya display",
-    "PRSR-FITUR-"
+    "Combo Meter, Stick Trail, dan Awakening Form (aktifkan lewat ?mech)",
+    "Bisa digerakkan lewat sentuhan layar HP",
+    "Warna aksen bisa diganti lewat ?accent",
+    "Siap dipakai di OBS dan Streamlabs"
    ],
    "fte": [
-    "Mechanic library (Combo Meter, Stick Trail, Awakening Form) via ?mech or data-mech; Base v3 - prsr-style sticks (knurled rubber, graphite dome, accent ring), touch input (buttons, analog triggers, sticks), ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(combo,trail,awaken) params, bodyArt slot, enlarged top plate and Home display, Home is display-only"
+    "Combo Meter, Stick Trail, and Awakening Form (enable via ?mech)",
+    "Can be moved by touch on a phone screen",
+    "Accent color via ?accent",
+    "Ready for OBS and Streamlabs"
    ],
    "shop": "overlay-controller-xbox-series-x-scifi-space-hud-edition",
    "srv": 1,
@@ -2926,11 +2756,16 @@
    "nd": "2026-10-29",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Esports Team Banner (Xbox Series X) - panel nama pemain + lambang tim, Banner Feed (banner input meluncur masuk), bendera trigger, tekstur karbon + piping jersey; param ?name ?tag ?team ?accent ?flag ?bg ?demo ?notouch ?mech",
-    "PRSR-FITUR-"
+    "Nama pemain dan lambang tim di panel (?name ?tag ?team)",
+    "Banner Feed: banner input meluncur masuk",
+    "Bendera di trigger",
+    "Warna aksen bisa diganti lewat ?accent"
    ],
    "fte": [
-    "Esports Team Banner overlay - player nameplate, crest, input Banner Feed, flag triggers, carbon texture + jersey piping"
+    "Player name and team emblem on the panel (?name ?tag ?team)",
+    "Banner Feed: input banners slide in",
+    "Flags on the triggers",
+    "Accent color via ?accent"
    ],
    "shop": "overlay-controller-xbox-series-x-esports-team-banner-edition",
    "srv": 1,
@@ -2957,11 +2792,16 @@
    "nd": "2026-10-29",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share+mash",
    "ft": [
-    "Esports Rank Badge - mekanik Rank Ladder (XP dari tiap input menaikkan tier Perunggu, Perak, Emas, Platinum, Berlian; idle menurunkan XP di dalam tier; Menu mengatur ulang), lencana rank di display Home dengan frame bertema, plat atas deret chevron tier, trigger terisi per tier, texture body chevron + perisai, Season Reset (Berlian penuh: lencana bergetar, ledakan, tier turun satu per satu, lahir kembali Perunggu, label SEASON +1), parameter ?demo ?notouch ?accent ?bg ?tilt",
-    "PRSR-FITUR-"
+    "Rank Ladder: XP dari input menaikkan tier Perunggu sampai Berlian",
+    "Lencana rank di Home, chevron tier di plat atas",
+    "Season Reset saat Berlian penuh: tier turun, lahir kembali di Perunggu",
+    "Tombol Menu mengatur ulang XP"
    ],
    "fte": [
-    "Esports Rank Badge - Rank Ladder mechanic (XP from every input raises Bronze, Silver, Gold, Platinum, Diamond tiers; idle drains XP within the tier; Menu resets), rank badge on the Home display with themed frame, top plate chevron row, tier-filled triggers, chevron + shield body texture, ?demo ?notouch ?accent ?bg ?tilt params, Season Reset (full Diamond bar ends the season: badge shake, burst, tiers cascade down, reborn as Bronze, SEASON +1)"
+    "Rank Ladder: input XP raises tier from Bronze to Diamond",
+    "Rank badge on Home, tier chevrons on the top plate",
+    "Season Reset at full Diamond: tiers drop, reborn at Bronze",
+    "Menu button resets XP"
    ],
    "shop": "overlay-controller-xbox-series-x-esports-rank-badge-edition",
    "srv": 1,
@@ -2988,11 +2828,16 @@
    "nd": "2026-10-29",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Edisi Lava Volcano (batu basalt hitam, retakan lava oranye berdenyut); Eruption Meter di plat atas (10 segmen magma, penuh = letusan di display Home), display Home berbingkai kawah, trigger terisi lava + percikan bara, tekstur body basalt, bayangan trigger dihapus; parameter ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(erupt,trail,combo,awaken); sentuh layar HP aktif",
-    "PRSR-FITUR-"
+    "Eruption Meter 10 segmen di plat atas, penuh = letusan di display Home",
+    "Trigger terisi lava dengan percikan bara",
+    "Bisa digerakkan lewat sentuhan layar HP",
+    "Warna aksen bisa diganti lewat ?accent"
    ],
    "fte": [
-    "Lava Volcano edition (black basalt, pulsing orange lava cracks); Eruption Meter on top plate (10 magma segments, full = eruption on Home display), crater-framed Home display, lava-filling triggers with ember sparks, basalt body texture, trigger shadow removed; params ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(erupt,trail,combo,awaken); touch input enabled"
+    "10-segment Eruption Meter on the top plate, full = eruption on the Home display",
+    "Triggers fill with lava and ember sparks",
+    "Can be moved by touch on a phone screen",
+    "Accent color via ?accent"
    ],
    "shop": "overlay-controller-xbox-series-x-lava-volcano-edition",
    "srv": 1,
