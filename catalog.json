@@ -2149,14 +2149,12 @@
    "ft": [
     "Combo Meter di plat atas makin terang saat tekan beruntun",
     "Mata ular di Home: berkedip, tidur saat diam",
-    "Kode Konami memunculkan ular melintas di body",
-    "Warna aksen bisa diganti"
+    "Kode Konami memunculkan ular melintas di body"
    ],
    "fte": [
     "Combo Meter on the top plate brightens on streaks",
     "Snake eye on Home: blinks, sleeps when idle",
-    "Konami code sends a snake across the body",
-    "Accent color can be changed"
+    "Konami code sends a snake across the body"
    ],
    "shop": "overlay-controller-xbox-series-x-venom-coil-carbon-edition",
    "srv": 1,
@@ -2293,13 +2291,11 @@
    "ft": [
     "Bergerak real-time mengikuti gamepad",
     "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
     "Siap dipakai di OBS dan Streamlabs"
    ],
    "fte": [
     "Moves in real time with your gamepad",
     "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
     "Ready for OBS and Streamlabs"
    ],
    "shop": "overlay-controller-xbox-series-x-atomic-teal-retro-edition",
@@ -2436,14 +2432,12 @@
    "ft": [
     "Boss Bar: nyawa boss turun tiap tombol ditekan, pulih saat diam",
     "Mata boss di tengah mengikuti stik dan berubah ekspresi sesuai sisa nyawa",
-    "Taring makin terang saat menekan makin cepat",
-    "Warna aksen bisa diganti"
+    "Taring makin terang saat menekan makin cepat"
    ],
    "fte": [
     "Boss Bar: boss health drops with each press, recovers when idle",
     "Boss eye in the center follows the stick and changes with remaining health",
-    "Fangs glow brighter the faster you press",
-    "Accent color can be changed"
+    "Fangs glow brighter the faster you press"
    ],
    "shop": "overlay-controller-xbox-series-x-violet-carbon-fang-v5-edition",
    "srv": 1,
@@ -2540,16 +2534,10 @@
    "nd": "2026-10-28",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Combo Meter, Stick Trail, dan Awakening Form (aktifkan lewat ?mech)",
-    "Bisa digerakkan lewat sentuhan layar HP",
-    "Warna aksen bisa diganti lewat ?accent",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Combo Meter, Stick Trail, dan Awakening Form"
    ],
    "fte": [
-    "Combo Meter, Stick Trail, and Awakening Form (enable via ?mech)",
-    "Can be moved by touch on a phone screen",
-    "Accent color via ?accent",
-    "Ready for OBS and Streamlabs"
+    "Combo Meter, Stick Trail, and Awakening Form"
    ],
    "shop": "overlay-controller-xbox-series-x-blueprint-teknis-edition",
    "srv": 1,
@@ -2612,16 +2600,10 @@
    "nd": "2026-10-28",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Combo Meter, Stick Trail, dan Awakening Form (aktifkan lewat ?mech)",
-    "Bisa digerakkan lewat sentuhan layar HP",
-    "Warna aksen bisa diganti lewat ?accent",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Combo Meter, Stick Trail, dan Awakening Form"
    ],
    "fte": [
-    "Combo Meter, Stick Trail, and Awakening Form (enable via ?mech)",
-    "Can be moved by touch on a phone screen",
-    "Accent color via ?accent",
-    "Ready for OBS and Streamlabs"
+    "Combo Meter, Stick Trail, and Awakening Form"
    ],
    "shop": "overlay-controller-xbox-series-x-synthwave-outrun-edition",
    "srv": 1,
@@ -2684,16 +2666,10 @@
    "nd": "2026-10-28",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Combo Meter, Stick Trail, dan Awakening Form (aktifkan lewat ?mech)",
-    "Bisa digerakkan lewat sentuhan layar HP",
-    "Warna aksen bisa diganti lewat ?accent",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Combo Meter, Stick Trail, dan Awakening Form"
    ],
    "fte": [
-    "Combo Meter, Stick Trail, and Awakening Form (enable via ?mech)",
-    "Can be moved by touch on a phone screen",
-    "Accent color via ?accent",
-    "Ready for OBS and Streamlabs"
+    "Combo Meter, Stick Trail, and Awakening Form"
    ],
    "shop": "overlay-controller-xbox-series-x-glitch-error-edition",
    "srv": 1,
@@ -2720,16 +2696,10 @@
    "nd": "2026-10-28",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Combo Meter, Stick Trail, dan Awakening Form (aktifkan lewat ?mech)",
-    "Bisa digerakkan lewat sentuhan layar HP",
-    "Warna aksen bisa diganti lewat ?accent",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Combo Meter, Stick Trail, dan Awakening Form"
    ],
    "fte": [
-    "Combo Meter, Stick Trail, and Awakening Form (enable via ?mech)",
-    "Can be moved by touch on a phone screen",
-    "Accent color via ?accent",
-    "Ready for OBS and Streamlabs"
+    "Combo Meter, Stick Trail, and Awakening Form"
    ],
    "shop": "overlay-controller-xbox-series-x-scifi-space-hud-edition",
    "srv": 1,
@@ -2756,16 +2726,14 @@
    "nd": "2026-10-29",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Nama pemain dan lambang tim di panel (?name ?tag ?team)",
+    "Nama pemain dan lambang tim di panel",
     "Banner Feed: banner input meluncur masuk",
-    "Bendera di trigger",
-    "Warna aksen bisa diganti lewat ?accent"
+    "Bendera di trigger"
    ],
    "fte": [
-    "Player name and team emblem on the panel (?name ?tag ?team)",
+    "Player name and team emblem on the panel",
     "Banner Feed: input banners slide in",
-    "Flags on the triggers",
-    "Accent color via ?accent"
+    "Flags on the triggers"
    ],
    "shop": "overlay-controller-xbox-series-x-esports-team-banner-edition",
    "srv": 1,
@@ -2829,15 +2797,11 @@
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
     "Eruption Meter 10 segmen di plat atas, penuh = letusan di display Home",
-    "Trigger terisi lava dengan percikan bara",
-    "Bisa digerakkan lewat sentuhan layar HP",
-    "Warna aksen bisa diganti lewat ?accent"
+    "Trigger terisi lava dengan percikan bara"
    ],
    "fte": [
     "10-segment Eruption Meter on the top plate, full = eruption on the Home display",
-    "Triggers fill with lava and ember sparks",
-    "Can be moved by touch on a phone screen",
-    "Accent color via ?accent"
+    "Triggers fill with lava and ember sparks"
    ],
    "shop": "overlay-controller-xbox-series-x-lava-volcano-edition",
    "srv": 1,
