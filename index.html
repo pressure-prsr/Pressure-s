@@ -686,6 +686,7 @@ function esc2(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){retur
 function oldp(p){return LANG==="en"?"$"+(p.oldu||Math.round(p.old/CAT_RATE)):rp(p.old||Math.round(p.oldu*CAT_RATE))}
 var NEWD=14;
 function wibDay(){return new Date(Date.now()+252e5).toISOString().slice(0,10)}
+function newDay(p){if(!p||!p.nd)return 0;var t=new Date(p.nd+"T00:00:00").getTime(),a=(Date.now()-t)/864e5;return a>=0&&a<=NEWD?Math.floor(t/864e5):0}
 function promoOn(p,td){return p.pr>0&&p.h>0&&p.pr<p.h&&(!p.ps||td>=p.ps)&&(!p.pe||td<=p.pe)}
 function tagh(p){var en=LANG==="en",tg=en?(p.tage||p.tag):p.tag,st="display:inline-block;vertical-align:middle;margin-left:6px;padding:2px 8px;border-radius:99px;font-size:12px;font-weight:600",h="",a;
  if(p.nd){a=(Date.now()-new Date(p.nd+"T00:00:00").getTime())/864e5;if(a>=0&&a<=NEWD)tg=en?"New":"Baru";else if(/^(baru|new)$/i.test(String(p.tag||""))||/^(baru|new)$/i.test(String(p.tage||"")))tg=""}
@@ -773,7 +774,7 @@ function applyCatalog(c){if(c&&c.newDays>0)NEWD=+c.newDays;
   var g=G.filter(function(x){return x.id===p.g})[0];if(!g)return;
   var ck=g.other?"other|"+(p.os||"stream"):g.id;
   (cats[ck]=cats[ck]||[]).push({p:p,g:g})});
- for(k in cats){cats[k].forEach(function(x,j){x.i=j;x.x=(x.p.feat?-1e6:0)+(x.p.ord!=null?x.p.ord:j)});
+ for(k in cats){cats[k].forEach(function(x,j){var nw=newDay(x.p);x.i=j;x.x=(x.p.feat?-1e9:0)+(x.p.ord!=null?x.p.ord:(nw?-(nw*1000+j):j))});
   cats[k].sort(function(a,b){return a.x-b.x||a.i-b.i});
   cats[k].forEach(function(x){x.g.paket.push(x.p)})}
  G.forEach(function(g){g.paket=g.paket.filter(function(p){return !p.hide})});
@@ -790,7 +791,14 @@ function applyCatalog(c){if(c&&c.newDays>0)NEWD=+c.newDays;
   if(!x.games)x.games=[];JOKI0.push(x)});
  JOKI=JOKI0.filter(function(j){return !j.hide});
  applySite(c.site)}
-function bootSite(c){try{applyCatalog(c)}catch(e){try{console.error("catalog.json gagal diterapkan",e)}catch(x){}}applyStatic();render()}
+function bootSite(c){try{applyCatalog(c)}catch(e){try{console.error("catalog.json gagal diterapkan",e)}catch(x){}}applyStatic();render();try{if(/[?&]cs=1/.test(location.search))csCheck()}catch(e){}}
+function csCheck(){var L=[];GAMES.forEach(function(g){g.paket.forEach(function(p){if(p.file&&p.pv!=="key"&&!p.img&&!p.cv)L.push(p)})});
+ var b=document.createElement("div");b.style.cssText="position:fixed;left:8px;right:8px;bottom:8px;max-height:60vh;overflow:auto;z-index:99999;background:#0b1118;color:#e6edf3;border:1px solid #2b3a4a;border-radius:12px;padding:12px;font:13px/1.5 sans-serif;white-space:pre-wrap";
+ b.textContent="Cek preview... 0/"+L.length;document.body.appendChild(b);var bad=[],n=0;
+ L.forEach(function(p){var u=p.srv?PAY_API+"/pv/"+(p.shop||String(p.n).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"").slice(0,80)):p.file;
+  fetch(u+"?v="+Date.now()).then(function(r){if(!r.ok)throw 0}).catch(function(){bad.push(p.n+"\n   "+u)}).then(function(){n++;
+   b.textContent=(n<L.length?"Cek preview... "+n+"/"+L.length:"Selesai. Coming soon: "+bad.length+" dari "+L.length+(bad.length?"\n\n"+bad.join("\n"):" (semua preview ada)"))})})}
+
 (function(){var done=0;function go(c){if(done)return;done=1;bootSite(c)}
  var to=setTimeout(function(){go(null)},4000);
  fetch("catalog.json?v="+CAT_V,{cache:"no-store"}).then(function(r){return r.ok?r.json():null}).then(function(c){clearTimeout(to);go(c)}).catch(function(){clearTimeout(to);go(null)})})();
