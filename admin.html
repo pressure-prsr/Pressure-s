@@ -3355,6 +3355,15 @@ P(16,14300,640);if(cur==="ps5")P(17,14300,640);
 for(i=0;i<MS.length;i++)P(MS[i][0],MS[i][1],MS[i][2]);
 return {id:ids[cur],index:0,connected:true,mapping:"standard",timestamp:t,axes:a,buttons:b.map(function(x){return {pressed:x>.5,touched:x>0,value:x}})}}
 var SQ=seq?String(seq).split(","):[];if(SQ.length){var GR={home:[14300,15100,[16,17],[]],ab:[250,2250,[0,1,2,3],[]],bump:[2250,3500,[4,5],[]],trig:[3450,6100,[6,7],[]],dpad:[6150,7600,[12,13,14,15],[]],menu:[7750,9700,[8,9,10,11],[]],ls:[9950,11850,[],[0,1]],rs:[11650,13200,[],[2,3]],mash:[14950,16000,[0,1,2,3],[]]},SG=[],tot=0,mk=make;SQ.forEach(function(k){var g=GR[k];if(g){SG.push({w:g,o:tot});tot+=g[1]-g[0]+120+(SF?220:0)}});if(SG.length){T=tot;make=function(t){var i,g=SG[0],r,o,j,ax=[],bt=[];for(i=0;i<SG.length;i++)if(t>=SG[i].o)g=SG[i];o=Math.min(g.w[0]+t-g.o,g.w[1]+(SF?220:0));r=mk(o);for(j=0;j<r.axes.length;j++)ax.push(g.w[3].indexOf(j)>=0?r.axes[j]:0);for(j=0;j<r.buttons.length;j++)bt.push(g.w[2].indexOf(j)>=0?r.buttons[j]:{pressed:false,touched:false,value:0});r.axes=ax;r.buttons=bt;r.timestamp=t;return r}}}
+if(typeof seq==="string"&&seq.indexOf("av~")===0){var AQ=seq.split("~"),asp=+AQ[1]||1,atf=+AQ[2]||1,asf=+AQ[3]?1:0,AG=(AQ[4]||"").split("+"),AE=[],AS=[],ac0=400,AB={ab:[0,1,2,3],bump:[4,5],trig:[6,7],menu:[10,11,8,9],dpad:[12,13,14,15],share:[17],home:[16]},
+ap=function(t,s0,d,f){var u=t-s0,r=d*f;return u<0||u>=d?0:u<r?sm(u/r):u>d-r?sm((d-u)/r):1},
+aadd=function(i,slot,dur,f){AE.push({i:i,s:ac0,d:dur*asp,f:f});ac0+=slot*asp};
+AG.forEach(function(k){var l=AB[k],j;if(l){l.forEach(function(i){if(k==="trig")aadd(i,1100*atf,1100*atf,asf?.5:.4);else aadd(i,450,380,asf?.4:.14)})}else if(k==="ls"||k==="rs"){AS.push({s:ac0,d:1500*asp,a:k==="ls"?0:2});ac0+=1500*asp}else if(k==="mash"){for(j=0;j<8;j++){AE.push({i:j%4,s:ac0,d:110,f:.3});ac0+=130}}});
+if(AE.length||AS.length){T=Math.round(ac0+900);
+make=function(t){var b=[],a=[0,0,0,0],i,u,e,g,v;for(i=0;i<18;i++)b.push(0);
+AE.forEach(function(x){v=ap(t,x.s,x.d,x.f);if(v>b[x.i])b[x.i]=v});
+AS.forEach(function(x){u=(t-x.s)/x.d;if(u>0&&u<1){e=sm(u/.12)*(1-sm((u-.88)/.12));g=-Math.PI/2+11.25*u;a[x.a]=Math.cos(g)*e;a[x.a+1]=Math.sin(g)*e}});
+return {id:ids[cur],index:0,connected:true,mapping:"standard",timestamp:t,axes:a,buttons:b.map(function(x){return {pressed:x>.5,touched:x>0,value:x}})}}}}
 if(seq==="tour"){var EV=[],ST=[],c0=300,sc=1,hs,tp=function(t,s0,d,f){var u=t-s0,r=d*f;return u<0||u>=d?0:u<r?sm(u/r):u>d-r?sm((d-u)/r):1},ADD=function(i,slot,dur,f){EV.push({i:i,s:c0,d:dur*sc,f:f||.35});c0+=slot*sc};
 [0,1,2,3,4,5].forEach(function(i){ADD(i,450,380,.12)});
 [6,7].forEach(function(i){ADD(i,850,850,.4)});
@@ -3442,29 +3451,40 @@ function ghx(path,method,body){return fetch("https://api.github.com/repos/"+S.re
 function pRepo(){return S.prepo||((S.repo||"").split("/")[0]+"/pressure-overlays")}
 function pGh(path,method,body){return fetch("https://api.github.com/repos/"+pRepo()+path,{method:method,headers:{Authorization:"Bearer "+S.token,Accept:"application/vnd.github+json"},body:body?JSON.stringify(body):undefined}).then(function(r){return r.json().catch(function(){return {}}).then(function(j){if(r.status===404&&method==="GET"&&path)return null;if(!r.ok)throw new Error("Repo privat "+pRepo()+": "+r.status+(j&&j.message?" "+j.message:""));return j})})}
 /* ---- Upload cepat (sub tab Katalog > Upload) ---- */
-var UPS={fx:"",lk:"",t:"",f:"",nm:"",sub:"xbox-series-x",h:"",u:"",fi:"",fe:"",fsr:"",sq:["ab","bump","trig","dpad","menu","ls","rs"]},
-UPG=[["ab","ABXY"],["bump","Bumper"],["trig","Trigger"],["dpad","D-pad"],["menu","Menu & tekan stik"],["ls","Analog kiri"],["rs","Analog kanan"],["mash","ABXY cepat"]],
-UPT=[["xbox-series-x","Xbox Series X"],["xbox-one-s","Xbox One S"],["xbox-one-og","Xbox One OG"],["ps5-dualsense","PS5 DualSense"]],UPD="ab,bump,trig,dpad,menu,ls,rs";
+var UPS={fx:"",lk:"",t:"",f:"",nm:"",sub:"xbox-series-x",h:"",u:"",fi:"",fe:"",fsr:"",sq:["ab","bump","trig","ls","rs","menu","dpad","share"],sp:1,tf:0,sf:1},
+UPG=[["ab","ABXY"],["bump","Bumper"],["trig","Trigger"],["ls","Analog kiri"],["rs","Analog kanan"],["menu","L3, R3, View, Menu"],["dpad","D-pad"],["share","Share"],["mash","ABXY cepat"]],
+UPSP=[["Cepat",.7],["Normal",1],["Pelan",1.3],["Sangat pelan",1.7]],UPTF=[["Normal",1],["Lebih lama",1.5],["Panjang",2]],
+UPPR=[["Lengkap (urutan tab Video)","ab,bump,trig,ls,rs,menu,dpad,share"],["Singkat","ab,trig,ls,rs"],["Hanya tombol","ab,bump,menu,dpad,share"],["Hanya analog dan trigger","trig,ls,rs"]],
+UPT=[["xbox-series-x","Xbox Series X"],["xbox-one-s","Xbox One S"],["xbox-one-og","Xbox One OG"],["ps5-dualsense","PS5 DualSense"]],UPD="ab,bump,trig,ls,rs,menu,dpad,share";
 function upSlug(s){return String(s).toLowerCase().replace(/\.html?$/,"").replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
 function upTheme(f){return f.replace(/\.html?$/i,"").replace(/[-_]+/g," ").replace(/\b(controller|overlay|edition|edisi|xbox series x|xbox one s|xbox one og|ps5 dualsense|dualsense|ps5|3d)\b/ig,"").replace(/\s+/g," ").trim().replace(/\s+one (s|og)$/i,"").replace(/\b[a-z]/g,function(c){return c.toUpperCase()}).replace(/\b(Og|Ps5|Rpg|Rgb|Hd|Ui)\b/g,function(c){return c.toUpperCase()})}
 function upDet(f){f=f.toLowerCase();return /dualsense|ps5/.test(f)?"ps5-dualsense":/one[-_ ]?s([-_ .]|$)/.test(f)?"xbox-one-s":/one[-_ ]?og|(^|[-_ ])og([-_ .]|$)/.test(f)?"xbox-one-og":"xbox-series-x"}
 function upFind(f){var r=null;all().forEach(function(e){if(!e.o.del&&e.o.file===f)r=e});return r}
 function upSync(){var g=function(i){return $(i)?$(i).value:null};if($("upN")){UPS.nm=g("upN");UPS.sub=g("upT")}if($("upH")){UPS.h=g("upH");UPS.u=g("upU")}if($("upFi")){UPS.fi=g("upFi");UPS.fe=g("upFe")}}
-function upSeq(){return UPS.sq.join(",")===UPD?"":UPS.sq.join(",")}
+try{var _ud=JSON.parse(localStorage.getItem("up_demo")||"null");if(_ud){if(_ud.sp>=0&&_ud.sp<4)UPS.sp=_ud.sp;if(_ud.tf>=0&&_ud.tf<3)UPS.tf=_ud.tf;UPS.sf=_ud.sf?1:0;if(_ud.sq&&_ud.sq.length)UPS.sq=_ud.sq}}catch(x){}
+function upPers(){try{localStorage.setItem("up_demo",JSON.stringify({sp:UPS.sp,tf:UPS.tf,sf:UPS.sf,sq:UPS.sq}))}catch(x){}}
+function upSeq(){return "av~"+UPSP[UPS.sp][1]+"~"+UPTF[UPS.tf][1]+"~"+(UPS.sf?1:0)+"~"+UPS.sq.join("+")}
+function upDur(){var m=UPSP[UPS.sp][1],f=UPTF[UPS.tf][1],t=.4+.9,W={ab:4*.45*m,bump:2*.45*m,trig:2*1.1*f*m,ls:1.5*m,rs:1.5*m,menu:4*.45*m,dpad:4*.45*m,share:.45*m,mash:1.04};UPS.sq.forEach(function(k){t+=W[k]||0});return t}
+function upCtl(){var o=function(a,i){return a.map(function(x,j){return '<option value="'+j+'"'+(j===i?" selected":"")+'>'+x[0]+'</option>'}).join("")};
+ return '<label>Kecepatan demo tombol<select id="upSp">'+o(UPSP,UPS.sp)+'</select></label><label>Tahan trigger LT/RT<select id="upTf">'+o(UPTF,UPS.tf)+'</select></label><label>Gaya tekan<select id="upSf"><option value="1"'+(UPS.sf?" selected":"")+'>Halus (naik turun bertahap)</option><option value="0"'+(UPS.sf?"":" selected")+'>Standar (cepat)</option></select></label>'}
 function rup(){if(UPQ.length){rupQ();return}var S0=UPS,L=$("list"),cu=upCur(),ex=cu.ex,h,bk=upBroken();
  if(ex&&S0.h===""){S0.h=ex.o.h||"";S0.u=ex.o.usd||""}
  h=upFx()+upNote(bk)+'<p class="note" style="margin-bottom:10px">Pilih file HTML, isi harga, lalu Simpan. File masuk ke repo privat dan produk langsung siap dijual.</p><label class="b g" style="display:block;text-align:center;margin-bottom:12px">'+(S0.t?"Ganti file":"Pilih file HTML")+'<input id="upF" type="file" accept=".html,text/html" style="display:none"></label>'+(S0.t||UPS.fx?"":'<label class="b g" style="display:block;text-align:center;margin-bottom:12px">Pilih banyak file sekaligus<input id="upM" type="file" accept=".html,text/html" multiple style="display:none"></label>');
  if(S0.t){
   h+=upLink(bk,ex);h+=ex?'<p class="note" style="margin-bottom:8px">Produk lama ditemukan: <b>'+esc(ex.o.n)+'</b>. Judul dan deskripsi dipertahankan, file & preview diperbarui.</p>':'<label>Nama tema<input id="upN" value="'+esc(S0.nm)+'"></label><label>Jenis controller<select id="upT">'+UPT.map(function(t){return '<option value="'+t[0]+'"'+(t[0]===S0.sub?" selected":"")+'>'+t[1]+'</option>'}).join("")+'</select></label>';
   h+='<label>Harga (Rp)<input id="upH" inputmode="numeric" value="'+esc(S0.h)+'" placeholder="mis. 129000"></label><label>Harga USD (kosongkan = otomatis)<input id="upU" inputmode="numeric" value="'+esc(S0.u)+'"></label><label>Fitur (ID), satu per baris<textarea id="upFi" rows="5">'+esc(S0.fi)+'</textarea></label><label>Features (EN), one per line<textarea id="upFe" rows="5">'+esc(S0.fe)+'</textarea></label><p class="note" style="margin-bottom:8px">'+(S0.fsr==="file"?"Fitur dibaca dari file (PRSR-FITUR).":S0.fsr==="user"?"Fitur diubah manual.":"Fitur otomatis dari isi file, tanpa PRSR-FITUR."+(ex&&ex.o.ft?" Produk lama sudah punya fitur, daftar ini tidak menimpa kecuali kamu mengubahnya.":""))+'</p>';
-  h+='<p class="note" style="margin:10px 0 6px">Preview demo (ketuk sesuai urutan):</p><div>'+UPG.map(function(g){var i=S0.sq.indexOf(g[0]);return '<button type="button" data-g="'+g[0]+'" class="b'+(i<0?" g":"")+'" style="width:auto;display:inline-block;padding:6px 11px;margin:0 6px 6px 0">'+(i<0?"":(i+1)+" · ")+g[1]+'</button>'}).join("")+'</div><iframe id="upV" sandbox="allow-scripts" style="width:100%;height:210px;border:1px solid var(--ln);border-radius:12px;margin:8px 0 12px;background:#000"></iframe><button type="button" class="b" id="upS" style="width:100%">Simpan & siap dijual</button>'}
+  h+='<p class="note" style="margin:10px 0 6px"><b>Preview demo</b> (sama seperti demo tombol di tab Video: satu tombol per giliran)</p><div style="margin-bottom:8px">'+UPPR.map(function(q){return '<button type="button" data-pr="'+q[1]+'" class="b'+(UPS.sq.join(",")===q[1]?"":" g")+'" style="width:auto;display:inline-block;padding:6px 11px;margin:0 6px 6px 0">'+q[0]+'</button>'}).join("")+'</div>'+upCtl()+'<p class="note" style="margin:10px 0 6px">Isi demo (ketuk sesuai urutan, ketuk lagi untuk melepas):</p><div>'+UPG.map(function(g){var i=S0.sq.indexOf(g[0]);return '<button type="button" data-g="'+g[0]+'" class="b'+(i<0?" g":"")+'" style="width:auto;display:inline-block;padding:6px 11px;margin:0 6px 6px 0">'+(i<0?"":(i+1)+" · ")+g[1]+'</button>'}).join("")+'</div><iframe id="upV" sandbox="allow-scripts" style="width:100%;height:210px;border:1px solid var(--ln);border-radius:12px;margin:8px 0 6px;background:#000"></iframe><p class="note" style="margin:0 0 8px;'+(upDur()>30?"color:#d33":"")+'">Perkiraan durasi demo: '+Math.round(upDur())+' detik'+(upDur()>30?". Cukup panjang, pilih Cepat atau kurangi isi demo.":".")+'</p><div class="row" style="margin-bottom:12px"><button type="button" class="b g" id="upRp">Putar ulang</button><button type="button" class="b g" id="upPz">Jeda</button></div>'+'<button type="button" class="b" id="upS" style="width:100%">Simpan & siap dijual</button>'}
  L.innerHTML=h;
  $("upF").onchange=function(){var fl=this.files[0];if(!fl)return;var r=new FileReader();r.onload=function(){var t=String(r.result);if(t.indexOf("getGamepads")<0)msg("File ini tidak memakai Gamepad API, preview demo mungkin diam.",6000);UPS.t=t;UPS.f=upSlug(fl.name);UPS.nm=upTheme(fl.name);UPS.sub=upDet(fl.name);UPS.h="";UPS.u="";var ff=upFt(t);UPS.fi=ff.id.join("\n");UPS.fe=ff.en.join("\n");UPS.fsr=ff.src;var m=upFind("overlays/"+UPS.f+".html");UPS.lk=UPS.fx||(m?m.k:"");UPS.fx="";rup()};r.readAsText(fl)};
  if($("upM"))$("upM").onchange=upQLoad;
  if(!S0.t)return;
  if($("upL"))$("upL").onchange=function(){UPS.lk=this.value;UPS.h="";UPS.u="";rup()};
- var v=$("upV");if(v)v.srcdoc=injMock(S0.t,S0.sub==="ps5-dualsense"?"ps5":(ex&&ex.o.pk)||"xbox",upSeq());
- [].forEach.call(L.querySelectorAll("[data-g]"),function(b){b.onclick=function(){upSync();var k=b.getAttribute("data-g"),i=UPS.sq.indexOf(k);if(i<0)UPS.sq.push(k);else UPS.sq.splice(i,1);rup()}});
+ var v=$("upV"),upK=S0.sub==="ps5-dualsense"?"ps5":(ex&&ex.o.pk)||"xbox";if(v)v.srcdoc=injMock(S0.t,upK,upSeq());
+ [].forEach.call(L.querySelectorAll("[data-g]"),function(b){b.onclick=function(){upSync();var k=b.getAttribute("data-g"),i=UPS.sq.indexOf(k);if(i<0)UPS.sq.push(k);else UPS.sq.splice(i,1);upPers();rup()}});
+ [].forEach.call(L.querySelectorAll("[data-pr]"),function(b){b.onclick=function(){upSync();UPS.sq=b.getAttribute("data-pr").split(",");upPers();rup()}});
+ [["upSp","sp"],["upTf","tf"],["upSf","sf"]].forEach(function(q){var e=$(q[0]);if(e)e.onchange=function(){upSync();UPS[q[1]]=+this.value;upPers();rup()}});
+ if($("upRp"))$("upRp").onclick=function(){var w=$("upV");if(w)w.srcdoc=injMock(S0.t,upK,upSeq())+"<!--"+Date.now()+"-->";if($("upPz"))$("upPz").textContent="Jeda"};
+ if($("upPz"))$("upPz").onclick=function(){var w=$("upV"),on=this.textContent==="Jeda";try{w.contentWindow.postMessage(on?"pv:pause":"pv:play","*")}catch(x){}this.textContent=on?"Lanjut":"Jeda"};
  $("upS").onclick=upSave}
 function upApply(t,f,nm,sub,hv,uv,ex,pk,ft){var h=parseInt(String(hv).replace(/\D/g,""),10)||0,u=parseInt(uv,10)||Math.max(1,Math.round(h/(C.rate||12500))),o,ty,th;
  if(ex){o=ex.o;o.h=h;o.usd=u;o.file=f;o.hide=false;if(!(o.pv==="key"&&o.cvk))o.pv="demo"}
@@ -3480,7 +3500,7 @@ function upSave(){upSync();var S0=UPS,cu=upCur(),f=cu.f,h=parseInt(String(S0.h).
  if(!S0.sq.length){msg("Pilih minimal satu gerakan demo.");return}
  mark();
  upApply(S0.t,f,S0.nm,S0.sub,h,S0.u,ex,upSeq(),{id:ftLines(S0.fi),en:ftLines(S0.fe),src:S0.fsr||"auto"});
- UPS.t="";UPS.f="";UPS.lk="";UPS.h="";UPS.u="";UPS.fi="";UPS.fe="";UPS.fsr="";UPS.sq=UPD.split(",");
+ UPS.t="";UPS.f="";UPS.lk="";UPS.h="";UPS.u="";UPS.fi="";UPS.fe="";UPS.fsr="";
  rup();publish()}
 
 
@@ -3560,7 +3580,7 @@ function upQEx(q){var e,ty,nm,r=null;
  e=upFind("overlays/"+q.f+".html");if(e)return e;
  ty=UPT.filter(function(t){return t[0]===q.sub})[0][1];nm="Overlay Controller "+ty+" - "+((q.nm||"").trim()||"Custom")+" Edition";
  all().forEach(function(x){if(!r&&!x.o.del&&x.o.n===nm)r=x});return r}
-function rupQ(){var L=$("list"),bk=upBroken(),h='<p class="note" style="margin-bottom:10px">'+UPQ.length+' file dipilih. Isi harga tiap baris (atau pakai Harga semua), lalu Simpan semua. Urutan demo memakai standar.</p><div class="two" style="margin-bottom:10px"><label>Harga semua (Rp)<input id="uqA" inputmode="numeric" placeholder="mis. 129000"></label><button class="b g" id="uqAp" type="button" style="align-self:end">Terapkan</button></div>';
+function rupQ(){var L=$("list"),bk=upBroken(),h='<p class="note" style="margin-bottom:10px">'+UPQ.length+' file dipilih. Isi harga tiap baris (atau pakai Harga semua), lalu Simpan semua. Demo memakai pengaturan di bawah (sama seperti demo tombol di tab Video).</p>'+upCtl()+'<div style="margin:6px 0 10px">'+UPPR.map(function(q){return '<button type="button" data-pr="'+q[1]+'" class="b'+(UPS.sq.join(",")===q[1]?"":" g")+'" style="width:auto;display:inline-block;padding:6px 11px;margin:0 6px 6px 0">'+q[0]+'</button>'}).join("")+'</div><p class="note" style="margin-bottom:10px">Isi demo: '+UPS.sq.map(function(k){var g=UPG.filter(function(x){return x[0]===k})[0];return g?g[1]:k}).join(", ")+'. Perkiraan '+Math.round(upDur())+' detik.</p><div class="two" style="margin-bottom:10px"><label>Harga semua (Rp)<input id="uqA" inputmode="numeric" placeholder="mis. 129000"></label><button class="b g" id="uqAp" type="button" style="align-self:end">Terapkan</button></div>';
  UPQ.forEach(function(q,i){var ex=upQEx(q),op='<option value="">'+(q.lk?"Produk baru":"Otomatis")+'</option>'+bk.map(function(e){return '<option value="'+esc(e.k)+'"'+(q.lk===e.k?" selected":"")+'>'+esc(e.o.n.replace(/^Overlay Controller /,"").replace(/ Edition$/,""))+'</option>'}).join("");
   h+='<div style="border:1px solid var(--ln);border-radius:12px;padding:10px;margin-bottom:10px"><div style="display:flex;justify-content:space-between;gap:8px;align-items:center"><b style="word-break:break-all">'+esc(q.fn)+'</b><button type="button" class="b g" data-uq="rm" data-i="'+i+'" style="width:auto;padding:4px 12px;flex:none">✕</button></div>';
   if(ex)h+='<p class="note" style="margin:6px 0">Perbarui produk lama: <b>'+esc(ex.o.n)+'</b></p>';
@@ -3572,6 +3592,8 @@ function rupQ(){var L=$("list"),bk=upBroken(),h='<p class="note" style="margin-b
  L.innerHTML=h;
  $("uqAp").onclick=function(){var v=$("uqA").value;if(!/\d/.test(v)){msg("Isi harga dulu.");return}UPQ.forEach(function(q){q.h=v});rupQ()};
  $("uqX").onclick=function(){UPQ=[];rup()};
+ [["upSp","sp"],["upTf","tf"],["upSf","sf"]].forEach(function(q){var e=$(q[0]);if(e)e.onchange=function(){UPS[q[1]]=+this.value;upPers();rupQ()}});
+ [].forEach.call(L.querySelectorAll("[data-pr]"),function(b){b.onclick=function(){UPS.sq=b.getAttribute("data-pr").split(",");upPers();rupQ()}});
  $("uqS").onclick=upQSave;
  [].forEach.call(L.querySelectorAll('[data-uq="rm"]'),function(b){b.onclick=function(){UPQ.splice(+b.getAttribute("data-i"),1);rup()}})}
 document.addEventListener("input",function(e){var t=e.target,i=t&&t.getAttribute&&t.getAttribute("data-i"),q;if(i===null||i===undefined||!UPQ[+i])return;q=UPQ[+i];
@@ -3585,7 +3607,7 @@ function upQSave(){var bad=[],nk={},n=0,w=0,i,q,ex,h,ty;
  if(bad.length){msg("Perbaiki dulu: "+bad.join(", "),8000);return}
  mark();
  UPQ.forEach(function(q){var ex=upQEx(q),f=ex&&ex.o.file?ex.o.file:"overlays/"+q.f+".html",h=parseInt(String(q.h).replace(/\D/g,""),10)||(ex?ex.o.h:0);
-  upApply(q.t,f,q.nm,q.sub,h,ex&&!q.h?ex.o.usd:"",ex,ex&&ex.o.pks?ex.o.pks:"",q.ft);if(ex)w++;else n++});
+  upApply(q.t,f,q.nm,q.sub,h,ex&&!q.h?ex.o.usd:"",ex,upSeq(),q.ft);if(ex)w++;else n++});
  UPQ=[];rup();msg(n+" produk baru, "+w+" diperbarui. Menerbitkan…",5000);publish()}
 
 /* ---- Sortir Penjualan + perbaikan preview ---- */
