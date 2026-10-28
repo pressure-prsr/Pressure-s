@@ -2848,6 +2848,34 @@
    ],
    "shop": "overlay-controller-xbox-series-x-esports-rank-badge-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Lava Volcano Edition",
+   "ne": "Xbox Series X Controller Overlay - Lava Volcano Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Lava Volcano yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Lava Volcano theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 85000,
+   "usd": 7,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-overlay-lava-volcano.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-29",
+   "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
+   "ft": [
+    "Edisi Lava Volcano (batu basalt hitam, retakan lava oranye berdenyut); Eruption Meter di plat atas (10 segmen magma, penuh = letusan di display Home), display Home berbingkai kawah, trigger terisi lava + percikan bara, tekstur body basalt, bayangan trigger dihapus; parameter ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(erupt,trail,combo,awaken); sentuh layar HP aktif",
+    "PRSR-FITUR-"
+   ],
+   "fte": [
+    "Lava Volcano edition (black basalt, pulsing orange lava cracks); Eruption Meter on top plate (10 magma segments, full = eruption on Home display), crater-framed Home display, lava-filling triggers with ember sparks, basalt body texture, trigger shadow removed; params ?theme ?tilt ?accent ?bg ?demo ?notouch ?mech(erupt,trail,combo,awaken); touch input enabled"
+   ],
+   "shop": "overlay-controller-xbox-series-x-lava-volcano-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
