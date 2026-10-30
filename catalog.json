@@ -2940,6 +2940,39 @@
    ],
    "shop": "overlay-controller-xbox-series-x-snowy-mountain-cabin-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Quantum Circuit Edition",
+   "ne": "Xbox Series X Controller Overlay - Quantum Circuit Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Quantum Circuit yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Quantum Circuit theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 110000,
+   "usd": 9,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-quantum-circuit.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-30",
+   "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
+   "ft": [
+    "Bergerak real-time mengikuti gamepad",
+    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
+    "Warna aksen bisa disesuaikan",
+    "Siap dipakai di OBS dan Streamlabs"
+   ],
+   "fte": [
+    "Moves in real time with your gamepad",
+    "Buttons, sticks, and triggers react as you press them",
+    "Adjustable accent color",
+    "Ready for OBS and Streamlabs"
+   ],
+   "shop": "overlay-controller-xbox-series-x-quantum-circuit-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
