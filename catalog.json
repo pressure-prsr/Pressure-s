@@ -2973,6 +2973,105 @@
    ],
    "shop": "overlay-controller-xbox-series-x-quantum-circuit-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Esports Arena Stage Edition",
+   "ne": "Xbox Series X Controller Overlay - Esports Arena Stage Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Esports Arena Stage yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Esports Arena Stage theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 99000,
+   "usd": 8,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-esports-arena-stage.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-31",
+   "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
+   "ft": [
+    "Bergerak real-time mengikuti gamepad",
+    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
+    "Warna aksen bisa disesuaikan",
+    "Siap dipakai di OBS dan Streamlabs"
+   ],
+   "fte": [
+    "Moves in real time with your gamepad",
+    "Buttons, sticks, and triggers react as you press them",
+    "Adjustable accent color",
+    "Ready for OBS and Streamlabs"
+   ],
+   "shop": "overlay-controller-xbox-series-x-esports-arena-stage-edition",
+   "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Egyptian Pharaoh Gold Edition",
+   "ne": "Xbox Series X Controller Overlay - Egyptian Pharaoh Gold Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Egyptian Pharaoh Gold yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Egyptian Pharaoh Gold theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 110000,
+   "usd": 9,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-egyptian-pharaoh-gold.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-31",
+   "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
+   "ft": [
+    "Bergerak real-time mengikuti gamepad",
+    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
+    "Warna aksen bisa disesuaikan",
+    "Siap dipakai di OBS dan Streamlabs"
+   ],
+   "fte": [
+    "Moves in real time with your gamepad",
+    "Buttons, sticks, and triggers react as you press them",
+    "Adjustable accent color",
+    "Ready for OBS and Streamlabs"
+   ],
+   "shop": "overlay-controller-xbox-series-x-egyptian-pharaoh-gold-edition",
+   "srv": 1
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Astronaut Floating Edition",
+   "ne": "Xbox Series X Controller Overlay - Astronaut Floating Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Astronaut Floating yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Astronaut Floating theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 120000,
+   "usd": 10,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-astronaut-floating.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-10-31",
+   "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
+   "ft": [
+    "Bergerak real-time mengikuti gamepad",
+    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
+    "Warna aksen bisa disesuaikan",
+    "Siap dipakai di OBS dan Streamlabs"
+   ],
+   "fte": [
+    "Moves in real time with your gamepad",
+    "Buttons, sticks, and triggers react as you press them",
+    "Adjustable accent color",
+    "Ready for OBS and Streamlabs"
+   ],
+   "shop": "overlay-controller-xbox-series-x-astronaut-floating-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
