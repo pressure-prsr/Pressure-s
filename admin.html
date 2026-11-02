@@ -2492,7 +2492,7 @@ act().forEach(function(o){var v=o.k==='v';if(v&&O[oi]!==o)return;var m=v?ov:o.im
 var p=Math.min(1,(t-o.s)/Math.max(o.l,.01)),A=o.k1,B=o.k2,q=function(k){return A[k]+(B[k]-A[k])*p},sc=W*q('z')/w;cx.save();cx.globalAlpha=q('o');cx.translate(W*q('x'),H*q('y'));cx.rotate(q('r')*Math.PI/180);cx.globalCompositeOperation=o.bm||'source-over';var dw=w*sc,dh=h*sc;
 if(o.mk){cx.beginPath();if(o.mk==='c')cx.arc(0,0,Math.min(dw,dh)/2,0,6.2832);else rr(-dw/2,-dh/2,dw,dh,Math.min(dw,dh)*.18);cx.clip()}
 cx.drawImage(o.ck?key(m,w,h,o):m,-dw/2,-dh/2,dw,dh);cx.restore()});
-X.forEach(function(x){if(t>=x.s&&t<x.s+x.d){if(x.rf)return;if(x.ff){if(x.cb&&RB){var VB=rkVB,q2=rkAp(VB?rkMap(x,RB,VB):x);cx.save();cx.beginPath();cx.rect(0,RB.y0,W,RB.h);cx.clip();if(q2)avTxt(q2);cx.restore()}else avTxt(x);return}var an=x.an,ad=x.ad||.5,pu=Math.min(1,(t-x.s)/ad),po=Math.min(1,(x.s+x.d-t)/.3),ga=1,go=0,gs=1,lf=1e9;if(an==='fade')ga=pu;else if(an==='naik'){ga=pu;go=(1-pu)*60}else if(an==='zoom'){ga=pu;gs=.5+.5*pu}else if(an==='pop'){gs=pu<1?1+.25*Math.sin(pu*Math.PI):1;ga=Math.min(1,pu*3)}else if(an==='ketik')lf=Math.ceil(x.t.length*pu);if(an)ga*=Math.max(0,po);cx.save();cx.globalAlpha=ga;cx.translate(W/2,H*x.y+go);cx.scale(gs,gs);cx.translate(-W/2,-H*x.y);cx.font='800 '+x.z+'px system-ui,sans-serif';cx.textAlign='center';cx.textBaseline='middle';cx.lineJoin='round';cx.lineWidth=x.z/6;cx.strokeStyle='rgba(0,0,0,.7)';cx.fillStyle=x.c;var ls=x.t.split('\n'),lh=x.z*1.15;ls.forEach(function(l,i){var y=H*x.y+(i-(ls.length-1)/2)*lh;var l2=l.slice(0,Math.max(0,lf));lf-=l.length+1;cx.strokeText(l2,W/2,y);cx.fillText(l2,W/2,y)});cx.restore()}})}
+X.forEach(function(x){if(t>=x.s&&t<x.s+x.d){if(x.rf)return;if(x.ff){if(x.cb&&RB){var VB=rkVB,q2=rkAp(VB?rkMap(x,RB,VB):x);cx.save();cx.beginPath();cx.rect(0,RB.y0,W,RB.h);cx.clip();if(q2)avTxt(q2);cx.restore()}else avTxt(x);return}if(x.rn){x=rkAp(x);if(!x)return}var px=W*(x.x==null?.5:x.x),an=x.an,ad=x.ad||.5,pu=Math.min(1,(t-x.s)/ad),po=Math.min(1,(x.s+x.d-t)/.3),ga=1,go=0,gs=1,lf=1e9;if(an==='fade')ga=pu;else if(an==='naik'){ga=pu;go=(1-pu)*60}else if(an==='zoom'){ga=pu;gs=.5+.5*pu}else if(an==='pop'){gs=pu<1?1+.25*Math.sin(pu*Math.PI):1;ga=Math.min(1,pu*3)}else if(an==='ketik')lf=Math.ceil(x.t.length*pu);if(an)ga*=Math.max(0,po);cx.save();cx.globalAlpha=ga;cx.translate(px,H*x.y+go);cx.scale(gs,gs);cx.translate(-px,-H*x.y);cx.font='800 '+x.z+'px system-ui,sans-serif';cx.textAlign='center';cx.textBaseline='middle';cx.lineJoin='round';cx.lineWidth=x.z/6;cx.strokeStyle='rgba(0,0,0,.7)';cx.fillStyle=x.c;var ls=x.t.split('\n'),lh=x.z*1.15;ls.forEach(function(l,i){var y=H*x.y+(i-(ls.length-1)/2)*lh;var l2=l.slice(0,Math.max(0,lf));lf-=l.length+1;cx.strokeText(l2,px,y);cx.fillText(l2,px,y)});cx.restore()}})}
 window.__avGo=function(a,b){pa();t=a;window.__avSA=b;dr=1;go()};
 function tick(){if(!cv||!document.body.contains(cv)){pa();return}raf=requestAnimationFrame(tick);
 if(pl){t=Math.max(tb,tb+(performance.now()-t0)/1000);if(t>=TT())fin();else if(window.__avSA>0&&t>=window.__avSA){window.__avSA=0;pa();dr=1}else{sync(0);abTick();if(M){setM();msync();if(bsrc&&performance.now()>t0+400&&Math.abs(boff+ac.currentTime-bst-blat-t)>.15)bGo(t)}rlc()}dr=1}
@@ -2596,7 +2596,8 @@ for(a in q)o[a]=q[a];o.z=q.z*sc;o.y=q.y+dy;o.x=(q.x==null?.5:q.x)+dx;
 if(q.rt==='c'){var ns=(RKO.g.n.z||100)/100*(((nn.n||{}).z||100)/100),cp=(q.nw||0)*(ns-1);o.x+=cp;if(q.mw)o.mw=Math.max(.15,q.mw-dx-cp)}
 if(cl)o.c=cl;return o}
 function rkTgt(){var a=rkSel.split('|');if(a[0]==='g')return RKO.g[a[1]]||(RKO.g[a[1]]={});var r=RKO.n[a[1]]||(RKO.n[a[1]]={});return r[a[2]]||(r[a[2]]={})}
-function rkSetUi(){var e=$('vdRkA');if(!e)return;var n=C.length,r,o='<option value="g|n">Grup: semua angka</option><option value="g|c">Grup: semua caption</option>';
+function rkMig(){var nu={};X.forEach(function(x){if(x.rk&&!x.rn&&!x.ff&&!x.rf){var m=/^#(\d+)$/.exec(x.t);if(m){x.rn=+m[1];x.rt='n';nu[Math.round(x.s*100)]=x.rn}}});X.forEach(function(x){if(x.rk&&!x.rn&&!x.ff&&!x.rf&&x.an==='naik'){var k=Math.round((x.s-.15)*100),r=nu[k]||nu[k-1]||nu[k+1];if(r){x.rn=r;x.rt='c'}}})}
+function rkSetUi(){var e=$('vdRkA');if(!e)return;rkMig();var n=C.length,r,o='<option value="g|n">Grup: semua angka</option><option value="g|c">Grup: semua caption</option>';
 for(r=1;r<=n;r++)o+='<option value="n|'+r+'|n">Angka #'+r+'</option><option value="n|'+r+'|c">Caption #'+r+'</option>';
 var a=rkSel.split('|');if(a[0]==='n'&&+a[1]>n)rkSel='g|n';var t=rkTgt(),isG=rkSel.charAt(0)==='g';
 var rw=function(k,l,mn,mx,df,u){var v=t[k]==null?df:t[k];return '<label class="vs"><span>'+l+': <b id="rka_'+k+'v">'+v+'</b>'+u+'</span><input type="range" data-rk="'+k+'" min="'+mn+'" max="'+mx+'" value="'+v+'" style="width:100%"></label>'};
@@ -2605,7 +2606,7 @@ rw('z','Ukuran',30,300,100,'%')+rw('x','Geser kanan/kiri',-50,50,0,'%')+rw('y','
 '<div class="vr"><label class="vs"><span><input type="checkbox" data-rk="cu"'+(t.c?' checked':'')+'> Warna sendiri</span></label><input type="color" data-rk="c" value="'+(t.c||'#ffffff')+'"></div>'+
 '<label class="vs"><span><input type="checkbox" data-rk="h"'+(t.h?' checked':'')+'> Sembunyikan</span></label>'+
 '<div class="vr"><button class="b g" type="button" data-rk="rt">Reset pilihan ini</button><button class="b g" type="button" data-rk="ra">Reset semua</button></div>'+
-'<p class="note">Grup berlaku untuk semua nomor; pengaturan per nomor ditambahkan di atasnya (ukuran dikali, geseran dijumlah). Tulisan boleh menutupi video. Tersimpan di proyek dan tetap ada saat ranking dibuat ulang atau klip diacak. Ranking lama: tekan Buat ranking dari klip sekali lagi agar bisa diatur.</p>';
+'<p class="note">Grup berlaku untuk semua nomor; pengaturan per nomor ditambahkan di atasnya (ukuran dikali, geseran dijumlah). Tulisan boleh menutupi video. Tersimpan di proyek dan tetap ada saat ranking dibuat ulang atau klip diacak. Berlaku untuk angka dan caption di gaya TikTok maupun Klasik; judul tidak ikut.</p>';
 var kk=n+'|'+rkSel+'|'+JSON.stringify(t);if(e.__k===kk&&e.firstChild)return;e.__k=kk;e.__h=h;e.innerHTML=h;var se=$('rkaT');se.value=rkSel;
 se.onchange=function(){rkSel=this.value;rkSetUi()};
 var up=function(){dr=1;e.__k=C.length+'|'+rkSel+'|'+JSON.stringify(rkTgt());if(typeof asvQ==='function')asvQ()};
@@ -2636,8 +2637,8 @@ var n=C.length,dn=$('vdRkO').value!=='u',col=$('vdRkC').value||'#ffd23f',nm=$('v
 yh=por?.05:.09,yn=por?.17:.3,yt=por?.29:.52,zh=por?64:52,zn=por?200:150,zt=por?56:46;
 if(hd)X.push({t:hd,s:0,d:Math.max(.5,TT()),z:rkFz(hd,zh),y:yh,c:'#ffffff',rk:1});
 C.forEach(function(c,i){var st=off(i),d=Math.max(.5,L(c)),r=dn?n-i:i+1;
-X.push({t:'#'+r,s:+st.toFixed(2),d:+d.toFixed(2),z:zn,y:yn,c:col,an:'pop',ad:.45,rk:1});
-var q=nm?rkNm(c.n):'';if(q)X.push({t:q,s:+(st+.15).toFixed(2),d:+Math.max(.5,d-.15).toFixed(2),z:rkFz(q,zt),y:yt,c:'#ffffff',an:'naik',ad:.4,rk:1})});
+X.push({t:'#'+r,s:+st.toFixed(2),d:+d.toFixed(2),z:zn,y:yn,c:col,an:'pop',ad:.45,rk:1,rn:r,rt:'n'});
+var q=nm?rkNm(c.n):'';if(q)X.push({t:q,s:+(st+.15).toFixed(2),d:+Math.max(.5,d-.15).toFixed(2),z:rkFz(q,zt),y:yt,c:'#ffffff',an:'naik',ad:.4,rk:1,rn:r,rt:'c'})});
 xs=-1;s=-1;os=-1;t=0;msg(n+' peringkat dibuat',2500);all()}
 
 var lbDB=null,lbS={},lbP=/(tiktok\.com|instagram\.com|youtube\.com|youtu\.be|facebook\.com|fb\.watch|fb\.com|twitter\.com|(^|\/\/|\.)x\.com|threads\.net|snapchat\.com)/i;
