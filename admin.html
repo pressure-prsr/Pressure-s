@@ -2573,9 +2573,9 @@ xs=-1;s=-1;os=-1;t=0;msg(n+' peringkat dibuat',2500);all()}
 var lbDB=null,lbS={},lbP=/(tiktok\.com|instagram\.com|youtube\.com|youtu\.be|facebook\.com|fb\.watch|fb\.com|twitter\.com|(^|\/\/|\.)x\.com|threads\.net|snapchat\.com)/i;
 function lbUi(){return '<p class="vlb">Tempel dari sosmed</p><textarea id="vdPz" rows="2" style="width:100%" placeholder="Tempel video di sini: ketuk lama lalu pilih Tempel, atau seret file ke sini"></textarea>'
 +'<div class="vr"><button class="b" type="button" data-a="lb_paste">Tempel dari clipboard</button></div>'
-+'<div class="vr"><input id="vdLk" type="url" placeholder="Link langsung file video (.mp4)" style="flex:1;min-width:0"><button class="b g" type="button" data-a="lb_link">Ambil</button></div>'
++'<div class="vr"><input id="vdLk" type="url" placeholder="Link TikTok atau link langsung file video (.mp4)" style="flex:1;min-width:0"><button class="b g" type="button" data-a="lb_link">Ambil</button></div>'
 +'<label class="vs"><span><input type="checkbox" id="vdLbA" checked> Simpan otomatis ke Pustaka</span></label>'
-+'<p class="note">Link halaman TikTok, Instagram, YouTube, dan sejenisnya tidak bisa diunduh dari browser. Simpan videonya ke galeri (Bagikan, Simpan video), lalu ketuk Tambah video/foto atau tempel filenya. Pastikan Anda berhak memakai videonya.</p>'
++'<p class="note">Link TikTok diambil lewat server admin (perlu password admin penjualan, bisa gagal jika TikTok membatasi). Link halaman Instagram, YouTube, dan sejenisnya tidak bisa diunduh dari browser. Simpan videonya ke galeri (Bagikan, Simpan video), lalu ketuk Tambah video/foto atau tempel filenya. Pastikan Anda berhak memakai videonya.</p>'
 +'<details id="vdLb"><summary class="vlb">Pustaka klip</summary><div id="vdLbU"></div>'
 +'<div class="vr"><input id="vdLbQ" type="search" placeholder="Cari nama atau label" style="flex:1;min-width:0"><select id="vdLbS"><option value="n">Terbaru</option><option value="a">Nama A-Z</option><option value="z">Terbesar</option></select></div>'
 +'<div class="vr"><button class="b g" type="button" data-a="lb_usesel">Pakai terpilih</button><button class="b g" type="button" data-a="lb_delsel">Hapus terpilih</button><button class="b d" type="button" data-a="lb_clr">Hapus semua</button></div>'
@@ -2606,8 +2606,18 @@ function lbClip(){if(!navigator.clipboard||!navigator.clipboard.read){msg('Brows
 navigator.clipboard.read().then(async function(items){var fs=[],tx='',it,ty,b;for(it of items){for(ty of it.types){if(/^(video|image)\//.test(ty)){b=await it.getType(ty);fs.push(new File([b],'',{type:ty}))}else if(ty==='text/plain'&&!tx){tx=await(await it.getType(ty)).text()}}}
 if(fs.length){lbIn(fs,'Tempel');return}tx=tx.trim();if(/^https?:\/\/\S+$/i.test(tx)){var k=$('vdLk');if(k)k.value=tx;lbUrl(tx);return}
 msg('Clipboard tidak berisi video. Di sosmed, simpan videonya ke galeri dulu, lalu ketuk Tambah video/foto.',6000)}).catch(function(){msg('Clipboard tidak bisa dibaca. Ketuk lama kotak Tempel lalu pilih Tempel, atau pakai Tambah video/foto.',6000)})}
+function lbIsTT(u){try{return /(^|\.)tiktok\.com$/i.test(new URL(u).hostname)}catch(e){return false}}
+function lbTT(u){
+if(!SPW){var w=prompt('Password admin untuk mengambil video TikTok');if(!w)return;SPW=w;try{localStorage.setItem('spw',w)}catch(x){}}
+msg('Mengambil video dari TikTok…',0);
+sApi('/admin/api/tt',{url:u}).then(function(r){
+if(!r.ok)return r.json().catch(function(){return{}}).then(function(j){var e=new Error(j.error||('HTTP '+r.status));e.detail=j.detail;throw e});
+return r.blob().then(function(b){if(!b.size)throw new Error('file kosong');var id=(u.match(/\/video\/(\d+)/)||[])[1]||Date.now().toString(36);lbIn([new File([b],'tiktok-'+id+'.mp4',{type:'video/mp4'})],'TikTok')})
+}).catch(function(e){
+if(e&&e.auth){msg('Password salah. Coba lagi.',5000);return}
+msg('Gagal: '+((e&&e.message)||'koneksi putus')+(e&&e.detail?' ('+e.detail.join('; ')+')':'')+'. Simpan videonya ke galeri lalu pilih filenya.',10000)})}
 function lbUrl(u){u=(u||'').trim();if(!/^https?:\/\//i.test(u)){msg('Tempel link yang diawali https://',3000);return}
-if(lbP.test(u)){msg('Link halaman platform tidak bisa diunduh dari browser. Simpan videonya ke galeri (Bagikan, Simpan video), lalu ketuk Tambah video/foto atau tempel filenya di kotak.',8000);return}
+if(lbP.test(u)){if(lbIsTT(u)){lbTT(u);return}msg('Link halaman platform tidak bisa diunduh dari browser. Simpan videonya ke galeri (Bagikan, Simpan video), lalu ketuk Tambah video/foto atau tempel filenya di kotak.',8000);return}
 msg('Mengambil video…',0);var ac=new AbortController(),to=setTimeout(function(){ac.abort()},90000);
 fetch(u,{signal:ac.signal}).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.blob()}).then(function(b){clearTimeout(to);var ex=/\.(mp4|webm|mov|m4v|jpg|jpeg|png|webp|gif)(\?|#|$)/i.test(u);if(!/^(video|image)\//.test(b.type)&&!ex)throw new Error('bukan file video');var nm='';try{nm=decodeURIComponent(u.split(/[?#]/)[0].split('/').pop()||'')}catch(e){}var ty=/^(video|image)\//.test(b.type)?b.type:'video/mp4';lbIn([new File([b],nm,{type:ty})],'Link')}).catch(function(e){clearTimeout(to);msg('Gagal mengambil: '+(e&&e.name==='AbortError'?'waktu habis':'server tidak mengizinkan (CORS) atau link bukan file langsung')+'. Simpan ke galeri lalu pilih filenya.',8000)})}
 function lbRow(o){var du=o.du?' · '+fm(o.du):'',dt=new Date(o.add).toLocaleDateString('id-ID',{day:'numeric',month:'short'}),ic=o.ty.indexOf('image')===0?'Foto':'Video';
