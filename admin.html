@@ -1488,6 +1488,84 @@ var BT={
  v_wide:{n:'Video demo 16:9',c:'Video demo',w:1920,h:1080,a:'#46e628',b:'#000000',bgn:'HUD · Sorot',mk:function(w,h){return vidL(w,h,{name:'STREAMER',sub:'LIVE INPUT DEMO'})}},
  v_tall:{n:'Video demo 9:16',c:'Video demo',w:1080,h:1920,a:'#46e628',b:'#000000',bgn:'HUD · Sorot',mk:function(w,h){return vidL(w,h,{name:'STREAMER',sub:'LIVE INPUT DEMO'})}}
 };
+/* ===== Template Promo (tema neon: label, harga besar, stiker diskon, controller) ===== */
+function promoL(k,w,h){
+ var u=Math.min(w/1080,h/1000),m=Math.min(w,h),F=function(q){return q*m/u},asp=w/h,tall=h/w>1.6,sy=tall?.8:1,
+ A='@a',W='#ffffff',Y='#ffd60a',K='#111111',L=[],
+ Yq=function(q){return q*sy},Hq=function(q){return q*sy},
+ T=function(ro,tx,fs,x,y,bw,ex){var o={ro:ro,tx:tx,wt:700,fs:fs,c:W,bw:bw,al:'center',x:x,y:y};if(ex)for(var q in ex)o[q]=ex[q];return Tx(o)},
+ S=function(ro,sk,x,y,bw,bh,ex){var o={ro:ro,sk:sk,bw:bw,bh:bh,x:x,y:y};if(ex)for(var q in ex)o[q]=ex[q];return mkS(o)},
+ I=function(x,y,bw,bh,ex){var o={ro:'ctl',bw:bw,bh:bh,x:x,y:y,sh:2};if(ex)for(var q in ex)o[q]=ex[q];return mkI(o)},
+ lab={wt:500,up:1,ls:F(.012),c:'#ebebeb'},
+ neon={up:1,wt:800,c:W,st:F(.007),sc:A,fx:2},
+ stick=function(tx,fs,x,y,bw,r,bc){return T('pr_off',tx,fs,x,y,bw,{wt:900,up:1,c:K,bs:'pill',bc:bc||Y,pd:.8,r:r})},
+ cta=function(tx,x,y,bw,bc){return T('pr_cta',tx,F(.036),x,y,bw,{wt:800,up:1,c:'@i',bs:'pill',bc:bc||A,pd:.9})},
+ old=function(x,y,bw,c){return T('pr_old','NORMAL 129K / $10',F(.026),x,y,bw,{wt:500,up:1,ls:F(.004),c:c||'#cfcfcf'})};
+ if(k==='neon'){
+  L.push(S('fr','frame',.5,Yq(.5),.9,Hq(.93),{fc:A,sw:4,o:.85}),S('br','brackets',.5,Yq(.5),.9,Hq(.93),{fc:A,sw:9}),
+   T('lab','LIMITED OFFER',F(.03),.5,Yq(.07),.8,lab),
+   T('price','55K / $4',F(.17),.5,Yq(.2),.84,neon),old(.5,Yq(.31),.8),
+   I(.5,Yq(.6),.8,Hq(.36)),
+   stick('50% OFF',F(.05),.27,Yq(.4),.38,-16),
+   cta('GET IT NOW',.5,Yq(.88),.56))}
+ else if(k==='flash'){
+  var by=Yq(.035),by2=Yq(.965);
+  L.push(S('st1','rect',.5,by,1.04,Hq(.065),{fc:Y}),T('tk1','FLASH SALE  •  FLASH SALE  •  FLASH SALE',F(.024),.5,by,1.02,{c:K,wt:900,up:1,ls:F(.006)}),
+   S('st2','rect',.5,by2,1.04,Hq(.065),{fc:Y}),T('tk2','FLASH SALE  •  FLASH SALE  •  FLASH SALE',F(.024),.5,by2,1.02,{c:K,wt:900,up:1,ls:F(.006)}),
+   T('lab','TODAY ONLY',F(.03),.5,Yq(.12),.8,lab),
+   T('pr_big','50% OFF',F(.2),.5,Yq(.22),.9,{up:1,wt:900,c:Y,st:F(.006),sc:A,fx:2}),
+   T('price','55K / $4',F(.1),.5,Yq(.36),.8,neon),old(.5,Yq(.44),.8),
+   I(.5,Yq(.65),.82,Hq(.3)),
+   cta('GRAB IT NOW',.5,Yq(.85),.58,Y))}
+ else if(k==='big'){
+  L.push(T('lab','LIMITED OFFER',F(.03),.5,Yq(.07),.8,lab),
+   T('pr_big','50%',F(.36),.5,Yq(.24),.92,{up:1,wt:900,c:W,st:F(.01),sc:A,fx:2}),
+   T('lab2','OFF',F(.12),.5,Yq(.4),.5,{up:1,wt:900,c:A,ls:F(.03)}),
+   I(.5,Yq(.62),.82,Hq(.3)),
+   T('price','55K / $4',F(.09),.5,Yq(.82),.8,neon),old(.5,Yq(.9),.8))}
+ else if(k==='end'){
+  L.push(T('lab','LAST CHANCE',F(.034),.5,Yq(.07),.8,Object.assign({},lab,{c:A})),
+   T('pr_end','ENDS 12/11',F(.07),.5,Yq(.15),.8,{up:1,wt:900,c:K,bs:'pill',bc:Y,pd:.9}),
+   T('price','55K / $4',F(.17),.5,Yq(.3),.86,neon),old(.5,Yq(.41),.8),
+   I(.5,Yq(.62),.8,Hq(.3)),
+   stick('50% OFF',F(.045),.74,Yq(.47),.36,14,A),
+   cta('DON\u2019T MISS OUT',.5,Yq(.88),.62))}
+ else if(k==='coupon'){
+  L.push(S('cd','round',.5,Yq(.5),.86,Hq(.88),{fc:'#ffffff',o:.07,sc:A,sw:4,rad:.05}),
+   S('pl','circle',.07,Yq(.62),.07,.07*w/h,{fc:'#000000',sc:A,sw:3}),S('pr','circle',.93,Yq(.62),.07,.07*w/h,{fc:'#000000',sc:A,sw:3}),
+   T('lab','DISCOUNT COUPON',F(.028),.5,Yq(.1),.7,Object.assign({},lab,{c:A})),
+   I(.5,Yq(.3),.72,Hq(.26)),
+   T('price','55K / $4',F(.13),.5,Yq(.55),.74,neon),old(.5,Yq(.66),.7),
+   S('ln','rect',.5,Yq(.73),.7,.004,{fc:W,o:.35}),
+   T('code','CODE: PRSR20',F(.034),.5,Yq(.79),.7,{wt:700,up:1,ls:F(.008),c:Y}),
+   stick('50% OFF',F(.04),.72,Yq(.18),.3,12),
+   cta('CLAIM NOW',.5,Yq(.9),.5))}
+ else if(k==='burst'){
+  var bs=.36;
+  L.push(T('lab','LIMITED OFFER',F(.03),.35,.08,.5,lab),
+   S('bu','burst',.8,.22,bs,bs*w/h,{fc:Y,sw:0,sh:1}),
+   T('pr_off','50%\nOFF',F(.07),.8,.22,.28,{wt:900,up:1,c:K,r:-12,lh:1}),
+   I(.5,.52,.8,.4),
+   T('price','55K / $4',F(.13),.5,.82,.86,neon),old(.5,.92,.8))}
+ else{ /* wide / banner (landscape) */
+  var cx=.27,rx=.74;
+  L.push(S('fr','frame',.5,.5,.94,.9,{fc:A,sw:4,o:.7}),
+   T('lab','LIMITED OFFER',F(.036),cx,.16,.46,lab),
+   T('price','55K / $4',F(.17),cx,.38,.48,neon),old(cx,.54,.46),
+   stick('50% OFF',F(.05),cx-.06,.68,.24,-12),
+   cta('GET IT NOW',cx+.04,.84,.26),
+   I(rx,.5,.46,.8))}
+ return L}
+var PRB=[['p_neon','Promo · Neon Harga 9:16','neon',1080,1920,'#ff2d6f','#14040c','Sinema · Garis'],
+ ['p_neon45','Promo · Neon Harga 4:5','neon',1080,1350,'#ff2d6f','#14040c','Sinema · Garis'],
+ ['p_flash','Promo · Flash Sale 9:16','flash',1080,1920,'#ff9f0a','#120b00','HUD · Sorot'],
+ ['p_big','Promo · Persen Besar 9:16','big',1080,1920,'#00e5ff','#04101a','Sinema · Pusat'],
+ ['p_end','Promo · Terakhir 9:16','end',1080,1920,'#ff3b30','#140505','Sinema · Sudut'],
+ ['p_coupon','Promo · Kupon 4:5','coupon',1080,1350,'#46e628','#061204','HUD · Fokus'],
+ ['p_burst','Promo · Ledakan 1:1','burst',1080,1080,'#b46cff','#0c0618','Sinema · Tirai'],
+ ['p_wide','Promo · Thumbnail 16:9','wide',1280,720,'#ff2d6f','#14040c','Sinema · Garis'],
+ ['p_banner','Promo · Banner 1200×628','wide',1200,628,'#ffd60a','#120f00','HUD · Scan']];
+PRB.forEach(function(r){BT[r[0]]={n:r[1],c:'Promo',w:r[3],h:r[4],a:r[5],b:r[6],bgn:r[7],mk:function(w,h){return promoL(r[2],w,h)}}});
 function szIdx(w,h){for(var i=0;i<SZ.length;i++)if(SZ[i][1]===w&&SZ[i][2]===h)return i;return 'c'}
 function docOf(id,w,h,o){var d=docOf0(id,w,h,o);if(BT[id]&&BT[id].c==='Platform')d.pf={p:PFC.p,f:PFC.f};return d}
 function docOf0(id,w,h,o){var t=BT[id];o=o||{};var a=o.a||t.a,b=o.b||t.b;return {w:w,h:h,sz:szIdx(w,h),lay:'free',tp:id,a:a,b:b,bg:{m:'tpl',t:bgIdx(t.bgn),sd:1,ang:135,c1:a,c2:b,dim:0,vig:0,ik:'',iz:1,ix:0,iy:0},L:t.mk(w,h)}}
@@ -1499,7 +1577,7 @@ function applyBT(id,rs){var t=BT[id];if(!t)return;faces();var w=rs?D.w:t.w,h=rs?
  pvApp();chp();if(!rs)msg('Template “'+t.n+'” dipakai.',2200)}
 function btThumb(id){var t=BT[id],key=id+'|'+(XS.auto&&IM.ctl?'a':'')+IMV+(fontOK?1:0)+(t.c==='Platform'?PFC.p+PFC.f:''),u=btc[key];if(u)return u;if(Object.keys(btc).length>60)btc={};
  var c=document.createElement('canvas');try{var aa=XS.auto?autoAcc():null;renderDoc(c,150/Math.max(t.w,t.h),t.w,t.h,docOf(id,t.w,t.h,{a:aa||t.a,b:t.b}),{});u=c.toDataURL('image/jpeg',.7)}catch(e){u=''}return btc[key]=u}
-function pBT(){var cats=['Semua','Cover','Banner','Galeri','Video demo'],h=''+Sx('Template Lynk','cover, banner, galeri, video demo')+'<div class="pmn">Pasang controller dulu di <b>1 · Mulai › Produk</b> supaya yang tampil controller-mu.</div><div class="chq">'+cats.map(function(c){return '<button type="button" data-c="btcat" data-v="'+c+'"'+(btCat===c?' class="on"':'')+'>'+c+'</button>'}).join('')+'</div><div class="tg">';
+function pBT(){var cats=['Semua','Promo','Cover','Banner','Galeri','Video demo'],h=''+Sx('Template Lynk','cover, banner, galeri, video demo')+'<div class="pmn">Pasang controller dulu di <b>1 · Mulai › Produk</b> supaya yang tampil controller-mu.</div><div class="chq">'+cats.map(function(c){return '<button type="button" data-c="btcat" data-v="'+c+'"'+(btCat===c?' class="on"':'')+'>'+c+'</button>'}).join('')+'</div><div class="tg">';
  Object.keys(BT).forEach(function(id){var t=BT[id];if(t.c==='Platform'||(btCat!=='Semua'&&t.c!==btCat))return;var th=btThumb(id);h+='<div class="tc"><button type="button" data-c="btpl" data-v="'+id+'">'+(th?'<img src="'+th+'" alt="">':'')+'<span>'+esc(t.n)+'<br><small>'+t.w+'×'+t.h+'</small></span></button></div>'});
  h+='</div><div class="pmg2" style="margin-top:8px">'+Hb('Paket Lynk (ZIP)','lpack','')+Hb('Aksen dari controller','accauto','')+'</div>'+Hs('Warna aksen template','x','auto',[[1,'Auto dari controller'],[0,'Bawaan template']],XS.auto)+'<div class="pmn">Paket Lynk = cover, banner, dan 4 gambar galeri dengan controller &amp; warna aksen saat ini, dikemas dalam satu ZIP.</div>';return h}
 function pTpl(){return pPF()+pBT()+Sx('Template saya','tersimpan di perangkat ini')+pTpl0()}
@@ -1562,7 +1640,7 @@ var PFC={p:'tiktok',f:'vid',lg:'id'};
 function pfGet(p,f){var P=PF.filter(function(x){return x.id===p})[0]||PF[0];return {P:P,F:P.fm.filter(function(x){return x.id===f})[0]||P.fm[0]}}
 function pfFmt(w,h){var c=pfGet(PFC.p,PFC.f).F;if(c.w===w&&c.h===h)return c;for(var i=0;i<PF.length;i++)for(var j=0;j<PF[i].fm.length;j++){var f=PF[i].fm[j];if(f.w===w&&f.h===h)return f}return null}
 function pfZone(d){if(!d.pf)return null;var g=pfGet(d.pf.p,d.pf.f).F;return g.w===d.w&&g.h===d.h?g.z:null}
-function mCtx(w,h){var f=pfFmt(w,h),z=f?f.z:[.05,.05,.05,.05],l0=z[0],t0=z[1],cw0=1-l0-z[2],ch0=1-t0-z[3],u=Math.min(w/1080,h/1000),m0=Math.min(cw0*w,ch0*h),pd=.035*m0,
+function mCtx(w,h){var f=pfFmt(w,h),z=f?f.z:[.05,.05,.05,.05],hm=Math.max(z[0],z[2]),l0=hm,t0=z[1],cw0=1-2*hm,ch0=1-t0-z[3],u=Math.min(w/1080,h/1000),m0=Math.min(cw0*w,ch0*h),pd=.035*m0,
  l=l0+pd/w,t=t0+pd/h,cw=cw0-2*pd/w,ch=ch0-2*pd/h,pw=cw*w,ph=ch*h,a=pw/ph,m=Math.min(pw,ph),c={};
  c.o=a<.75?'T':a<1.4?'S':a<2.6?'W':'X';c.pw=pw;c.ph=ph;c.cw=cw;c.ch=ch;
  c.X=function(q){return l+q*cw};c.Y=function(q){return t+q*ch};
@@ -1593,7 +1671,7 @@ function mLay0(k,w,h){var c=mCtx(w,h),o=c.o,L=c.hud(),A='@a',W='#ffffff',G='#c8c
   if(!sp){L.push(c.T('lab','LIMITED OFFER',c.f(.034),E,.5,.03,1,lab),c.T('ti','20% OFF',c.fit(1,7,.2),F,.5,tl?.16:.19,1,tt),c.T('sub','ALL CONTROLLER OVERLAYS',sm,E,.5,tl?.27:.32,1,lab),c.I('ctl',.5,tl?.57:.62,tl?1:.7,tl?.34:.3,{sh:2}),c.T('cta','GET IT NOW',c.f(.045),'@i',.5,.84,.6,{up:1,bs:'pill',bc:A,pd:.9}),c.T('code','CODE: PRSR20',sm,G,.5,.95,1,lab))}
   else{L.push(c.T('lab','LIMITED OFFER',c.f(.04),E,0,.1,tw,LL),c.T('ti','20% OFF',c.fit(tw,7,.22),F,0,.32,tw,TL),c.T('sub','ALL CONTROLLER OVERLAYS',c.f(.035),E,0,.52,tw,LL),c.T('cta','GET IT NOW',c.f(.05),'@i',tw/2,.72,tw*.7,{up:1,bs:'pill',bc:A,pd:.9}),c.T('code','CODE: PRSR20',c.f(.035),G,0,.9,tw,LL),c.I('ctl',cx,.5,1-tw,1,{sh:2}))}}
  else{var st=[['01','ADD A BROWSER SOURCE','Paste your overlay link in OBS'],['02','RESIZE & PLACE','Drag it anywhere on your layout'],['03','GO LIVE','Your inputs show in real time']];
-  if(!sp){L.push(c.T('lab','SETUP IN MINUTES',c.f(.034),E,.5,.03,1,lab),c.T('ti','HOW IT WORKS',c.fit(.9,12,.1),F,0,.14,.9,{up:1,al:'left'}));st.forEach(function(r,i){var y=.42+i*.21;L.push(c.S('ln'+i,'rect',.5,y-.1,1,.003,{fc:W,o:.18}),c.T('sn'+i,r[0],c.f(.11),A,0,y,.2,{al:'left'}),c.T('sh'+i,r[1],c.f(.042),W,.24,y-.03,.76,{al:'left',lh:1.1}),c.T('ss'+i,r[2],c.f(.032),G,.24,y+.05,.76,{al:'left',wt:500}))})}
+  if(!sp){L.push(c.T('lab','SETUP IN MINUTES',c.f(.034),E,.5,.03,1,lab),c.T('ti','HOW IT WORKS',c.fit(.9,12,.1),F,.5,.14,.9,{up:1,al:'center'}));st.forEach(function(r,i){var y=.42+i*.21;L.push(c.S('ln'+i,'rect',.5,y-.1,1,.003,{fc:W,o:.18}),c.T('sn'+i,r[0],c.f(.11),A,0,y,.2,{al:'left'}),c.T('sh'+i,r[1],c.f(.042),W,.24,y-.03,.76,{al:'left',lh:1.1}),c.T('ss'+i,r[2],c.f(.032),G,.24,y+.05,.76,{al:'left',wt:500}))})}
   else{var x0=o==='X'?.3:0,sw=(1-x0)/3;if(o==='X')L.push(c.T('ti','HOW IT\nWORKS',c.fit(.26,8),F,0,.5,.26,{up:1,lh:1.1,al:'left'}));else L.push(c.T('ti','HOW IT WORKS',c.fit(.6,12,.1),F,0,.1,.6,{up:1,al:'left'}));
    st.forEach(function(r,i){var x=x0+i*sw,y0=o==='X'?.1:.3;L.push(c.S('ln'+i,'rect',x+sw/2-.01,y0,sw-.03,.004,{fc:A,o:.7}),c.T('sn'+i,r[0],c.f(.09),A,x,y0+.16,sw-.03,{al:'left'}),c.T('sh'+i,r[1],c.f(.04),W,x,y0+.34,sw-.03,{al:'left',lh:1.1}),c.T('ss'+i,r[2],c.f(.03),G,x,y0+.54,sw-.03,{al:'left',wt:500}))})}}
  return L}
@@ -1618,7 +1696,7 @@ function mLay(k,w,h){var N=MN[k];if(!N)return mLay0(k,w,h);var c=mCtx(w,h),o=c.o
   else L.push(c.T('lab',N.lab,c.f(.04),E,0,.1,tw,LL),c.T('ti',N.ti,c.fit(tw*.92,N.n),F,0,.45,tw,TL),c.I('ctl',cx,.5,1-tw,1,{sh:2}),c.T('tg',N.tg,c.f(.035),E,0,.9,tw,LL));
   return L}
  var n=N.r.length;
- if(!sp){L.push(c.T('lab',N.lab,c.f(.034),E,.5,.03,1,lab),c.T('ti',N.ti,c.fit(.9,16,.1),F,0,.14,.9,{up:1,al:'left'}));
+ if(!sp){L.push(c.T('lab',N.lab,c.f(.034),E,.5,.03,1,lab),c.T('ti',N.ti,c.fit(.9,16,.1),F,.5,.14,.9,{up:1,al:'center'}));
   var st=.65/n;N.r.forEach(function(r,i){var y=.30+(i+.5)*st;L.push(c.S('ln'+i,'rect',.5,y-st/2,1,.003,{fc:W,o:.18}),c.T('sn'+i,r[0],c.f(.11),A,0,y,.2,{al:'left'}),c.T('sh'+i,r[1],c.f(.042),W,.24,y-st*.14,.76,{al:'left',lh:1.1}),c.T('ss'+i,r[2],c.f(.032),G,.24,y+st*.24,.76,{al:'left',wt:500}))})}
  else{var x0=o==='X'?.3:0,sw=(1-x0)/n;
   if(o==='X')L.push(c.T('ti',N.ti2,c.fit(.26,9),F,0,.5,.26,{up:1,lh:1.1,al:'left'}));else L.push(c.T('ti',N.ti,c.fit(.6,16,.1),F,0,.1,.6,{up:1,al:'left'}));
@@ -2210,17 +2288,21 @@ var B5POS=[['tr','kanan atas'],['tl','kiri atas'],['br','kanan bawah'],['bl','ki
 function pdat(e){var o=e.o,r={n:o.n||'',ne:o.ne||o.n||'',h:o.h||o.price||o.pr||o.p||0,usd:o.usd||0,st:'',src:'katalog'};
  try{if(SD&&SD.products){var k=sNm(o.n);SD.products.forEach(function(p){if(sNm(p.name)===k){if(p.price>0)r.h=p.price;r.st=p.active?'dijual':'nonaktif';r.src='Penjualan'}})}}catch(x){}
  return r}
-function pnow(e){var o=e.o,d=pdat(e),h=d.h,rt=(window.C&&window.C.rate)||12500,u=d.usd||(h?Math.max(1,Math.round(h/rt)):0),r={h:h,u:u,on:0,pct:0};
- try{if(o.pr>0&&h>0&&o.pr<h&&!(o.pe&&prToday()>o.pe)){r.on=1;r.h=+o.pr;r.u=o.pru>0?+o.pru:(d.usd?Math.max(1,Math.round(d.usd*o.pr/h)):Math.max(1,Math.round(o.pr/rt)));r.pct=Math.round((1-o.pr/h)*100)}}catch(x){}
+function pnow(e){var o=e.o,d=pdat(e),h=d.h,rt=(window.C&&window.C.rate)||12500,u=d.usd||(h?Math.max(1,Math.round(h/rt)):0),r={h:h,u:u,on:0,pct:0,pe:'',old:''};
+ try{if(o.pr>0&&h>0&&o.pr<h&&!(o.pe&&prToday()>o.pe)){r.on=1;r.h=+o.pr;r.u=o.pru>0?+o.pru:(d.usd?Math.max(1,Math.round(d.usd*o.pr/h)):Math.max(1,Math.round(o.pr/rt)));r.pct=Math.round((1-o.pr/h)*100);r.pe=o.pe||''}}catch(x){}
+ r.old=h>0?((h%1000===0?(h/1000)+'K':'Rp '+h.toLocaleString('id-ID'))+(u?' / $'+u:'')):'';
  r.tx=r.h>0?((r.h%1000===0?(r.h/1000)+'K':'Rp '+r.h.toLocaleString('id-ID'))+(r.u?' / $'+r.u:'')):'';return r}
 function b5pr(e,lg){var n=pnow(e);if(lg==='en'&&n.u)return '$'+n.u;return n.h?'Rp '+n.h.toLocaleString('id-ID'):''}
 function b5short(n){return String(n||'').replace(/^\s*overlay\s+controller\s*/i,'').replace(/^\s*[-:]\s*/,'')||String(n||'')}
 function b5slug(s){var t=b5short(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');if(t.length>40){t=t.slice(0,40);var k=t.lastIndexOf('-');if(k>15)t=t.slice(0,k)}return t||'produk'}
 var capVals0=capVals;
 capVals=function(lg){var v=capVals0(lg),e=prod();if(e&&lg==='en'){var d=pdat(e);if(d.usd&&v.price)v.price+=' / $'+d.usd}return v};
-function pfill(){var e=prod(),pn=e&&pnow(e);if(!pn||!pn.tx||!D||!D.L)return;if(D.tp&&String(D.tp).indexOf('m_')===0)return;
+function pfill(){var e=prod(),pn=e&&pnow(e);if(!pn||!pn.tx||!D||!D.L)return;if(D.tp&&String(D.tp).indexOf('m_')===0)return;var en=lang==='en';
  D.L.forEach(function(L){if(L.ty!=='text'||L.ro==='title'||L.ro==='sub'||L.ro==='cta'||L.ro==='brand')return;var t=String(L.tx||'');
-  if(/\d\s*%/.test(t)&&/off|diskon|disc|hemat/i.test(t)){if(pn.on){setTxt(L,pn.pct+'% OFF');L.vis=1}else L.vis=0}
+  if(L.ro==='pr_old'){if(pn.on){setTxt(L,(en?'WAS ':'NORMAL ')+pn.old);L.vis=1}else L.vis=0}
+  else if(L.ro==='pr_end'){if(pn.on&&pn.pe){setTxt(L,(en?'ENDS ':'SAMPAI ')+fmtD(pn.pe));L.vis=1}else L.vis=0}
+  else if(L.ro==='pr_big'){setTxt(L,pn.on?pn.pct+'% OFF':(en?'SALE':'PROMO'));L.vis=1}
+  else if(/\d\s*%/.test(t)&&/off|diskon|disc|hemat/i.test(t)){if(pn.on){setTxt(L,pn.pct+'% OFF');L.vis=1}else L.vis=0}
   else if(!/%/.test(t)&&/\bRp\b|\$\s*\d|\d\s*K\b/i.test(t)){setTxt(L,pn.tx);L.vis=1}})}
 var applyBT0=applyBT;applyBT=function(id,rs){var r=applyBT0(id,rs);try{if(!rs&&prod()){pfill();chp()}}catch(x){}return r};
 var tplLoad0=tplLoad;tplLoad=function(n){var r=tplLoad0(n);try{if(prod()){pfill();chp()}}catch(x){}return r};
