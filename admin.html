@@ -741,6 +741,7 @@ function bdAdd(){
   while(C.added.some(function(x){return x.file===path})){path='overlays/'+slug(a.th)+'-'+(n++)+'.html'}
   pend[path]=html;
   C.added.push({n:a.n,ne:a.ne,d:a.d,de:a.de,h:bp,usd:bp===199000?17:bp===175000?15:usd(bp),g:'other',os:'controller',ctl:true,base:b.n,sub:ensureSub('other|controller',b.n),file:path,pv:'demo',hide:false});
+  dkAuto(C.added[C.added.length-1]);
   var last=C.added.length-1;curBase=old;hist.push(JSON.stringify(C));dirty=true;$('bPub').disabled=false;render();openE('+'+last);msg('Ditambahkan ke Packages. Atur harga lalu Publish.',5000)}
 function rbd(){
   var f=function(l,i,t,x){return '<label>'+l+'<input id="'+i+'" type="'+t+'"'+(x||'')+'></label>'},cs=' style="height:44px;padding:2px"';
@@ -1930,7 +1931,7 @@ ifr.onload=function(){setTimeout(function(){snap().then(function(){sd();if(tab==
 function prod(){return items.filter(function(z){return z.k===prodK})[0]}
 function loadProd(){var e=prod();if(!e)return;var p=e.o.file;if(!p){msg('Produk ini belum punya file controller. Lampirkan HTML manual.',5000);return}msg('Memuat controller produk...');if(typeof pend[p]==='string')return loadTxt(pend[p]);fetch(p).then(function(r){if(!r.ok)throw 0;return r.text()}).then(loadTxt).catch(function(){msg('File controller tidak ditemukan: '+p,5000)})}
 function setRole(r,t,show){D.L.forEach(function(L){if(L.ro===r&&L.ty==='text'){setTxt(L,t);if(show)L.vis=1}})}
-function preset(){var d=defs[lang],e=prod(),pr=e&&pdat(e).h;setRole('title',e?(lang==='id'?(e.o.n||'Overlay controller'):(e.o.ne||e.o.n||'Controller overlay')):d[0]);setRole('sub',d[1]);setRole('cta',d[2]);if(typeof pr==='number')setRole('price','Rp '+pr.toLocaleString('id-ID'),1);capEd=false;chp()}
+function preset(){var d=defs[lang],e=prod(),pr=e&&pdat(e).h;setRole('title',e?(lang==='id'?(e.o.n||'Overlay controller'):(e.o.ne||e.o.n||'Controller overlay')):d[0]);setRole('sub',d[1]);setRole('cta',d[2]);var pn=e&&pnow(e);if(pn&&pn.tx){setRole('price',pn.tx,1);if(pn.on)['badge','disc','off','sale'].forEach(function(r){setRole(r,pn.pct+'% OFF',1)})}capEd=false;chp()}
 /* ---------- ekspor ---------- */
 function ext(){return XS.fmt==='jpeg'?'jpg':XS.fmt}
 function blobOf(w,h){var c=document.createElement('canvas');return new Promise(function(ok,no){try{renderDoc(c,XS.resk,w,h,docFor(w,h),{opq:XS.fmt==='jpeg'});c.toBlob(function(b){b?ok(b):no(new Error('gagal'))},'image/'+XS.fmt,XS.qlt)}catch(e){no(e)}})}
@@ -2209,11 +2210,15 @@ var B5POS=[['tr','kanan atas'],['tl','kiri atas'],['br','kanan bawah'],['bl','ki
 function pdat(e){var o=e.o,r={n:o.n||'',ne:o.ne||o.n||'',h:o.h||o.price||o.pr||o.p||0,usd:o.usd||0,st:'',src:'katalog'};
  try{if(SD&&SD.products){var k=sNm(o.n);SD.products.forEach(function(p){if(sNm(p.name)===k){if(p.price>0)r.h=p.price;r.st=p.active?'dijual':'nonaktif';r.src='Penjualan'}})}}catch(x){}
  return r}
-function b5pr(e,lg){var d=pdat(e);if(lg==='en'&&d.usd)return '$'+d.usd;return d.h?'Rp '+d.h.toLocaleString('id-ID'):''}
+function pnow(e){var o=e.o,d=pdat(e),h=d.h,rt=(window.C&&window.C.rate)||12500,u=d.usd||(h?Math.max(1,Math.round(h/rt)):0),r={h:h,u:u,on:0,pct:0};
+ try{if(o.pr>0&&h>0&&o.pr<h&&!(o.pe&&prToday()>o.pe)){r.on=1;r.h=+o.pr;r.u=o.pru>0?+o.pru:(d.usd?Math.max(1,Math.round(d.usd*o.pr/h)):Math.max(1,Math.round(o.pr/rt)));r.pct=Math.round((1-o.pr/h)*100)}}catch(x){}
+ r.tx=r.h>0?((r.h%1000===0?(r.h/1000)+'K':'Rp '+r.h.toLocaleString('id-ID'))+(r.u?' / $'+r.u:'')):'';return r}
+function b5pr(e,lg){var n=pnow(e);if(lg==='en'&&n.u)return '$'+n.u;return n.h?'Rp '+n.h.toLocaleString('id-ID'):''}
 function b5short(n){return String(n||'').replace(/^\s*overlay\s+controller\s*/i,'').replace(/^\s*[-:]\s*/,'')||String(n||'')}
 function b5slug(s){var t=b5short(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');if(t.length>40){t=t.slice(0,40);var k=t.lastIndexOf('-');if(k>15)t=t.slice(0,k)}return t||'produk'}
 var capVals0=capVals;
 capVals=function(lg){var v=capVals0(lg),e=prod();if(e&&lg==='en'){var d=pdat(e);if(d.usd&&v.price)v.price+=' / $'+d.usd}return v};
+var capVals1=capVals;capVals=function(lg){var v=capVals1(lg),e=prod(),n=e&&pnow(e);if(n&&n.tx)v.price=n.tx;return v};
 /* teks desain induk diisi dari data produk (hanya desain platform) */
 var docOf1=docOf;
 docOf=function(id,w,h,o){return b5fill(docOf1(id,w,h,o),PFC.lg||'id')};
@@ -3333,7 +3338,7 @@ function tplOpen(){TL=TPL.concat(baseTpl()).concat((C.templates||[]).map(functio
 function mkFrom(t){var th="",g,o,f;if(JSON.stringify(t).indexOf("{T}")>-1){th=prompt("Theme or name? (e.g. Cyber Tokyo Night)");if(!th)return;th=th.trim()}
  f=function(s){return (s||"").split("{T}").join(th)};g=t.g==="first"?((flt!=="all"&&flt.indexOf("other")!==0)?flt:Object.keys(GN)[0]):t.g;
  o={n:f(t.n),ne:f(t.ne),d:f(t.d),de:f(t.de),h:t.h===undefined?0:t.h,usd:t.usd||(t.h?usd(t.h):0),g:g,os:t.os||"stream",hide:false};if(g!=="other")o.bebas=true;
- C.added.push(o);$("shP").classList.remove("on");autoNew=1;openE("+"+(C.added.length-1));cur.isNew=1}
+ dkAuto(o);C.added.push(o);$("shP").classList.remove("on");autoNew=1;openE("+"+(C.added.length-1));cur.isNew=1}
 var PVK=[["o","Pixel Arcade (Xbox)"],["w","Water Ring (Xbox)"],["s","Silk Classic (Xbox)"],["g","Fantasy RPG Gold (Xbox)"],["k1","Dark Glass (Xbox)"],["k2","Esports Angular (Xbox)"],["k3","Comic Pop Art (Xbox)"],["k4","Manga Ink (Xbox)"],["k5","Pirate Ship (Xbox)"],["k6","Street Graffiti 3D (Xbox)"],["d","Shadow Fight 2 (PS5)"],["d2","Art Deco (PS5)"]];
 function pvName(k){var r=PVK.filter(function(x){return x[0]===k})[0];return r?r[1]:k}
 function mockPad(kind,seq,soft){var on=1,man=null,SF=soft?1:0,t0=performance.now(),pn=performance.now.bind(performance),dn=Date.now,ra=window.requestAnimationFrame.bind(window),vb=0,dvb=0,T=16000,K=kind||"xbox",cyc=K==="cycle",ord=["xbox","ps5","switch"],lap=-1,cur=cyc?"xbox":K,
@@ -3446,6 +3451,7 @@ function importFiles(fs){
    while(C.added.some(function(x){return x.file===path})){path="overlays/"+slug(a.th)+"-"+(n++)+".html"}
    pend[path]=r.result;
    C.added.push({n:a.n,ne:a.ne,d:a.d,de:a.de,h:dp,usd:dp===199000?17:dp===175000?15:usd(dp),g:"other",os:"controller",ctl:true,base:curBase?curBase.n:undefined,sub:curBase?ensureSub("other|controller",curBase.n):undefined,file:path,pv:"demo",hide:false});
+   dkAuto(C.added[C.added.length-1]);
    last=C.added.length-1;hist.push(JSON.stringify(C));dirty=true;$("bPub").disabled=false;render();next()};
   r.readAsText(f)})()}
 /* ---- GitHub ---- */
@@ -3504,6 +3510,8 @@ function upApply(t,f,nm,sub,hv,uv,ex,pk,ft){var h=parseInt(String(hv).replace(/\
   o={n:"Overlay Controller "+ty+" - "+th+" Edition",ne:ty+" Controller Overlay - "+th+" Edition",d:"Edisi overlay controller "+ty+" bertema "+th+" yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",de:ty+" controller overlay, "+th+" theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",h:h,usd:u,g:"other",os:"controller",hide:false,file:f,ctl:true,pv:"demo",sub:sub,tag:"Baru",tage:"New",nd:prToday()};
   if(sub==="ps5-dualsense")o.pk="ps5";C.added.push(o)}
  if(pk)o.pks=pk;else delete o.pks;
+ if(ex&&o.pr>0&&o.pr>=o.h){delete o.pr;delete o.pru}
+ dkAuto(o);
  if(ft&&ft.id&&ft.id.length&&(!ex||ft.src!=="auto"||!(o.ft&&o.ft.length))){o.ft=ft.id;o.fte=ft.en&&ft.en.length?ft.en:ft.id}
  pend[f]=t}
 function upSave(){upSync();var S0=UPS,cu=upCur(),f=cu.f,h=parseInt(String(S0.h).replace(/\D/g,""),10)||0,ex=cu.ex;
@@ -3559,6 +3567,7 @@ function rdk(){var L=$("list"),rows=all().filter(function(e){return !e.o.del&&e.
  h='<p class="note" style="margin-bottom:10px">Harga promo tampil di web dengan harga coret, lalu kembali normal sendiri setelah tanggal selesai. Tekan Publish agar tampil di web dan masuk ke kasir. Kasir baru ikut kalau worker.js sudah diperbarui.</p>'
  +'<label>Diskon (%)<input id="dkP" inputmode="numeric" placeholder="mis. 20"></label><div class="two"><label>Mulai<input id="dkS" type="date"></label><label>Selesai<input id="dkE" type="date"></label></div><label>Berlaku untuk<select id="dkT"><option value="all">Semua controller</option>'+UPT.map(function(t){return '<option value="'+t[0]+'">'+t[1]+'</option>'}).join("")+'</select></label>'
  +'<div class="two" style="margin-bottom:14px"><button class="b" data-sa="dkgo" type="button">Terapkan</button><button class="b d" data-sa="dkclr" type="button">Hapus semua diskon</button></div>';
+ if(C.dkA)h+='<p class="note" style="margin-bottom:8px">Diskon otomatis '+(prToday()>C.dkA.e?'sudah berakhir':'aktif')+': '+C.dkA.p+'% sampai '+fmtD(C.dkA.e)+'. Produk baru yang diupload langsung ikut diskon ini.</p><button class="b g" data-sa="dkautooff" type="button" style="margin-bottom:14px">Hentikan diskon otomatis produk baru</button>';
  h+=rows.length?'<p class="note" style="margin-bottom:8px">'+rows.length+' produk punya diskon:</p>':'<p class="note">Belum ada produk berdiskon.</p>';
  rows.forEach(function(e){var o=e.o;h+='<div class="it" style="cursor:default"><div><b>'+esc(o.n.replace(/^Overlay Controller /,""))+'</b><small>Rp '+o.pr.toLocaleString("id-ID")+' (normal Rp '+(o.h||0).toLocaleString("id-ID")+') · '+(fmtD(o.ps)||"langsung")+' sampai '+fmtD(o.pe)+' · '+esc(promoStatus(o))+'</small></div><button type="button" class="b g" data-sa="ckedit" data-k="'+esc(e.k)+'" style="width:auto;padding:6px 12px">Edit</button></div>'});
  L.innerHTML=h}
@@ -3569,10 +3578,14 @@ function dkApply(){var p=parseInt($("dkP").value,10),s=$("dkS").value,e=$("dkE")
  var L=all().filter(function(x){var o=x.o;return !o.del&&!o.hide&&!o.custom&&ck(o)==="other|controller"&&o.h>0&&(t==="all"||o.sub===t)});
  if(!L.length){msg("Tidak ada produk yang cocok.");return}
  mark();
- L.forEach(function(x){var o=x.o,v=Math.max(1000,Math.round(o.h*(100-p)/100/1000)*1000);if(v>=o.h)return;o.pr=v;delete o.pru;if(s)o.ps=s;else delete o.ps;o.pe=e;n++});
+ L.forEach(function(x){var o=x.o,v=Math.max(1000,Math.round(o.h*(100-p)/100/1000)*1000);if(v>=o.h)return;o.pr=v;o.pru=dkU(o,p);if(s)o.ps=s;else delete o.ps;o.pe=e;n++});
+ C.dkA={p:p,s:s||"",e:e,t:t};
  render();msg(n+" produk diberi diskon "+p+"%. Tekan Publish.",6000)}
-function dkClear(){var L=all().filter(function(x){return !x.o.del&&x.o.pr>0});if(!L.length){msg("Tidak ada diskon.");return}if(!confirm("Hapus diskon dari "+L.length+" produk?"))return;mark();L.forEach(function(x){delete x.o.pr;delete x.o.pru;delete x.o.ps;delete x.o.pe});render();msg("Semua diskon dihapus. Tekan Publish.",5000)}
-document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-sa]");if(!b)return;var a=b.getAttribute("data-sa");if(a==="dkgo"){e.preventDefault();dkApply()}else if(a==="dkclr"){e.preventDefault();dkClear()}});
+function dkU(o,p){var u=o.usd||Math.max(1,Math.round(o.h/(C.rate||12500)));return Math.max(1,Math.round(u*(100-p)/100))}
+function dkAuto(o){var a=C.dkA;if(!a||!a.e||!(a.p>0)||!o||o.del||o.custom||!(o.h>0))return 0;if(ck(o)!=="other|controller")return 0;if(prToday()>a.e)return 0;if(a.t&&a.t!=="all"&&o.sub!==a.t)return 0;if(o.pr>0&&o.pr<o.h)return 0;
+ var v=Math.max(1000,Math.round(o.h*(100-a.p)/100/1000)*1000);if(v>=o.h)return 0;o.pr=v;o.pru=dkU(o,a.p);if(a.s)o.ps=a.s;else delete o.ps;o.pe=a.e;return 1}
+function dkClear(){var L=all().filter(function(x){return !x.o.del&&x.o.pr>0});if(!L.length){msg("Tidak ada diskon.");return}if(!confirm("Hapus diskon dari "+L.length+" produk?"))return;mark();L.forEach(function(x){delete x.o.pr;delete x.o.pru;delete x.o.ps;delete x.o.pe});delete C.dkA;render();msg("Semua diskon dihapus. Tekan Publish.",5000)}
+document.addEventListener("click",function(e){var b=e.target.closest&&e.target.closest("[data-sa]");if(!b)return;var a=b.getAttribute("data-sa");if(a==="dkgo"){e.preventDefault();dkApply()}else if(a==="dkclr"){e.preventDefault();dkClear()}else if(a==="dkautooff"){e.preventDefault();mark();delete C.dkA;render();msg("Diskon otomatis produk baru dihentikan. Diskon produk lama tetap. Tekan Publish.",5000)}});
 function syncPromos(){var m={},has=0;
  all().forEach(function(e){var o=e.o;if(o.del||ck(o)!=="other|controller"||o.custom||!(o.pr>0)||!o.pe)return;m[pSlug(o.n)]={p:o.pr,s:o.ps||"",e:o.pe};has++});
  if(!has&&!C.pSync)return Promise.resolve();
