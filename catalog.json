@@ -3440,7 +3440,10 @@
     "Ready for OBS and Streamlabs"
    ],
    "shop": "overlay-controller-xbox-series-x-neo-brutalism-edition",
-   "srv": 1
+   "srv": 1,
+   "pr": 50000,
+   "ps": "2026-11-02",
+   "pe": "2026-11-04"
   }
  ],
  "rate": 12500,
