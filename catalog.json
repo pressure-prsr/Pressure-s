@@ -3410,6 +3410,37 @@
    "pr": 65000,
    "ps": "2026-11-02",
    "pe": "2026-11-04"
+  },
+  {
+   "n": "Overlay Controller Xbox Series X - Neo Brutalism Edition",
+   "ne": "Xbox Series X Controller Overlay - Neo Brutalism Edition",
+   "d": "Edisi overlay controller Xbox Series X bertema Neo Brutalism yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay, Neo Brutalism theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "h": 99000,
+   "usd": 8,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/xbox-series-x-neo-brutalism.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "xbox-series-x",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-11-02",
+   "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
+   "ft": [
+    "Bergerak real-time mengikuti gamepad",
+    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
+    "Siap dipakai di OBS dan Streamlabs"
+   ],
+   "fte": [
+    "Moves in real time with your gamepad",
+    "Buttons, sticks, and triggers react as you press them",
+    "Ready for OBS and Streamlabs"
+   ],
+   "shop": "overlay-controller-xbox-series-x-neo-brutalism-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
