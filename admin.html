@@ -1931,7 +1931,7 @@ ifr.onload=function(){setTimeout(function(){snap().then(function(){sd();if(tab==
 function prod(){return items.filter(function(z){return z.k===prodK})[0]}
 function loadProd(){var e=prod();if(!e)return;var p=e.o.file;if(!p){msg('Produk ini belum punya file controller. Lampirkan HTML manual.',5000);return}msg('Memuat controller produk...');if(typeof pend[p]==='string')return loadTxt(pend[p]);fetch(p).then(function(r){if(!r.ok)throw 0;return r.text()}).then(loadTxt).catch(function(){msg('File controller tidak ditemukan: '+p,5000)})}
 function setRole(r,t,show){D.L.forEach(function(L){if(L.ro===r&&L.ty==='text'){setTxt(L,t);if(show)L.vis=1}})}
-function preset(){var d=defs[lang],e=prod(),pr=e&&pdat(e).h;setRole('title',e?(lang==='id'?(e.o.n||'Overlay controller'):(e.o.ne||e.o.n||'Controller overlay')):d[0]);setRole('sub',d[1]);setRole('cta',d[2]);var pn=e&&pnow(e);if(pn&&pn.tx){setRole('price',pn.tx,1);if(pn.on)['badge','disc','off','sale'].forEach(function(r){setRole(r,pn.pct+'% OFF',1)})}capEd=false;chp()}
+function preset(){var d=defs[lang],e=prod(),pr=e&&pdat(e).h;setRole('title',e?(lang==='id'?(e.o.n||'Overlay controller'):(e.o.ne||e.o.n||'Controller overlay')):d[0]);setRole('sub',d[1]);setRole('cta',d[2]);var pn=e&&pnow(e);if(pn&&pn.tx){setRole('price',pn.tx,1);if(pn.on)['badge','disc','off','sale'].forEach(function(r){setRole(r,pn.pct+'% OFF',1)})}pfill();capEd=false;chp()}
 /* ---------- ekspor ---------- */
 function ext(){return XS.fmt==='jpeg'?'jpg':XS.fmt}
 function blobOf(w,h){var c=document.createElement('canvas');return new Promise(function(ok,no){try{renderDoc(c,XS.resk,w,h,docFor(w,h),{opq:XS.fmt==='jpeg'});c.toBlob(function(b){b?ok(b):no(new Error('gagal'))},'image/'+XS.fmt,XS.qlt)}catch(e){no(e)}})}
@@ -2218,6 +2218,12 @@ function b5short(n){return String(n||'').replace(/^\s*overlay\s+controller\s*/i,
 function b5slug(s){var t=b5short(s).toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'');if(t.length>40){t=t.slice(0,40);var k=t.lastIndexOf('-');if(k>15)t=t.slice(0,k)}return t||'produk'}
 var capVals0=capVals;
 capVals=function(lg){var v=capVals0(lg),e=prod();if(e&&lg==='en'){var d=pdat(e);if(d.usd&&v.price)v.price+=' / $'+d.usd}return v};
+function pfill(){var e=prod(),pn=e&&pnow(e);if(!pn||!pn.tx||!D||!D.L)return;if(D.tp&&String(D.tp).indexOf('m_')===0)return;
+ D.L.forEach(function(L){if(L.ty!=='text'||L.ro==='title'||L.ro==='sub'||L.ro==='cta'||L.ro==='brand')return;var t=String(L.tx||'');
+  if(/\d\s*%/.test(t)&&/off|diskon|disc|hemat/i.test(t)){if(pn.on){setTxt(L,pn.pct+'% OFF');L.vis=1}else L.vis=0}
+  else if(!/%/.test(t)&&/\bRp\b|\$\s*\d|\d\s*K\b/i.test(t)){setTxt(L,pn.tx);L.vis=1}})}
+var applyBT0=applyBT;applyBT=function(id,rs){var r=applyBT0(id,rs);try{if(!rs&&prod()){pfill();chp()}}catch(x){}return r};
+var tplLoad0=tplLoad;tplLoad=function(n){var r=tplLoad0(n);try{if(prod()){pfill();chp()}}catch(x){}return r};
 var capVals1=capVals;capVals=function(lg){var v=capVals1(lg),e=prod(),n=e&&pnow(e);if(n&&n.tx)v.price=n.tx;return v};
 /* teks desain induk diisi dari data produk (hanya desain platform) */
 var docOf1=docOf;
