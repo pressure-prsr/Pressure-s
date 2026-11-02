@@ -2556,6 +2556,93 @@ bl.forEach(function(b){var ls=b.split('\n'),k=-1,m,i;for(i=0;i<ls.length;i++){m=
 var s0=+m[1]*3600+ +m[2]*60+ +m[3]+ +('0.'+m[4]),e0=+m[5]*3600+ +m[6]*60+ +m[7]+ +('0.'+m[8]),tx=ls.slice(k+1).join('\n').replace(/<[^>]+>/g,'').trim();if(!tx)return;
 X.push({t:tx,s:s0,d:Math.max(.5,e0-s0),z:60,y:.8,c:'#ffffff'});n++});
 if(n){xs=X.length-1;s=os=-1}msg(n?n+' teks diimpor':'Tidak ada teks terbaca di file SRT',3000);all()}
+
+function rkNm(n){n=String(n||'').replace(/\.[a-z0-9]{2,4}$/i,'').replace(/[_\-.]+/g,' ').trim().toUpperCase();return n.length>28?n.slice(0,27)+'\u2026':n}
+function rkFz(tx,z){var m=Math.max.apply(null,String(tx).split('\n').map(function(l){return l.length}));return Math.max(24,Math.min(z,Math.floor(W*.9/(Math.max(1,m)*.64))))}
+function rkDel(){var n=X.length;sv();X=X.filter(function(x){return!x.rk});xs=-1;msg(n!==X.length?'Ranking dihapus':'Belum ada ranking',2200);all()}
+function rkGo(){if(!C.length){msg('Tambah video/foto dulu',2500);return}
+sv();X=X.filter(function(x){return!x.rk});
+var n=C.length,dn=$('vdRkO').value!=='u',col=$('vdRkC').value||'#ffd23f',nm=$('vdRkN').checked,hd=($('vdRkT').value||'').trim().toUpperCase(),por=H>=W*1.1,
+yh=por?.05:.09,yn=por?.17:.3,yt=por?.29:.52,zh=por?64:52,zn=por?200:150,zt=por?56:46;
+if(hd)X.push({t:hd,s:0,d:Math.max(.5,TT()),z:rkFz(hd,zh),y:yh,c:'#ffffff',rk:1});
+C.forEach(function(c,i){var st=off(i),d=Math.max(.5,L(c)),r=dn?n-i:i+1;
+X.push({t:'#'+r,s:+st.toFixed(2),d:+d.toFixed(2),z:zn,y:yn,c:col,an:'pop',ad:.45,rk:1});
+var q=nm?rkNm(c.n):'';if(q)X.push({t:q,s:+(st+.15).toFixed(2),d:+Math.max(.5,d-.15).toFixed(2),z:rkFz(q,zt),y:yt,c:'#ffffff',an:'naik',ad:.4,rk:1})});
+xs=-1;s=-1;os=-1;t=0;msg(n+' peringkat dibuat',2500);all()}
+
+var lbDB=null,lbS={},lbP=/(tiktok\.com|instagram\.com|youtube\.com|youtu\.be|facebook\.com|fb\.watch|fb\.com|twitter\.com|(^|\/\/|\.)x\.com|threads\.net|snapchat\.com)/i;
+function lbUi(){return '<p class="vlb">Tempel dari sosmed</p><textarea id="vdPz" rows="2" style="width:100%" placeholder="Tempel video di sini: ketuk lama lalu pilih Tempel, atau seret file ke sini"></textarea>'
++'<div class="vr"><button class="b" type="button" data-a="lb_paste">Tempel dari clipboard</button></div>'
++'<div class="vr"><input id="vdLk" type="url" placeholder="Link langsung file video (.mp4)" style="flex:1;min-width:0"><button class="b g" type="button" data-a="lb_link">Ambil</button></div>'
++'<label class="vs"><span><input type="checkbox" id="vdLbA" checked> Simpan otomatis ke Pustaka</span></label>'
++'<p class="note">Link halaman TikTok, Instagram, YouTube, dan sejenisnya tidak bisa diunduh dari browser. Simpan videonya ke galeri (Bagikan, Simpan video), lalu ketuk Tambah video/foto atau tempel filenya. Pastikan Anda berhak memakai videonya.</p>'
++'<details id="vdLb"><summary class="vlb">Pustaka klip</summary><div id="vdLbU"></div>'
++'<div class="vr"><input id="vdLbQ" type="search" placeholder="Cari nama atau label" style="flex:1;min-width:0"><select id="vdLbS"><option value="n">Terbaru</option><option value="a">Nama A-Z</option><option value="z">Terbesar</option></select></div>'
++'<div class="vr"><button class="b g" type="button" data-a="lb_usesel">Pakai terpilih</button><button class="b g" type="button" data-a="lb_delsel">Hapus terpilih</button><button class="b d" type="button" data-a="lb_clr">Hapus semua</button></div>'
++'<div id="vdLbL"></div></details>'}
+function lbDb(){return lbDB?Promise.resolve(lbDB):new Promise(function(ok,no){var q=indexedDB.open('prsrlib',1);q.onupgradeneeded=function(){q.result.createObjectStore('c',{keyPath:'id'})};q.onsuccess=function(){lbDB=q.result;ok(lbDB)};q.onerror=function(){no(q.error)}})}
+function lbTx(m,f){return lbDb().then(function(d){return new Promise(function(ok,no){var tx=d.transaction('c',m),st=tx.objectStore('c'),r=f(st);tx.oncomplete=function(){ok(r&&r.result)};tx.onerror=tx.onabort=function(){no(tx.error)}})})}
+function lbAll(){return lbTx('readonly',function(st){return st.getAll()}).then(function(a){return a||[]})}
+function lbGet(id){return lbTx('readonly',function(st){return st.get(id)})}
+function lbPut(o){return lbTx('readwrite',function(st){return st.put(o)})}
+function lbDel(id){return lbTx('readwrite',function(st){return st.delete(id)})}
+function lbClear(){return lbTx('readwrite',function(st){return st.clear()})}
+function lbSz(n){n=n||0;return n>=1e9?(n/1e9).toFixed(1)+' GB':n>=1e6?(n/1e6).toFixed(1)+' MB':Math.max(1,Math.round(n/1e3))+' KB'}
+function lbOk(f){return /^(video|image)\//.test(f.type||'')}
+function lbFix(f){var n=f.name||'';if(!n||/^(image|blob|untitled|unnamed)(\.[a-z0-9]+)?$/i.test(n)){var e=((f.type||'').split('/')[1]||'mp4').replace('quicktime','mov').replace('jpeg','jpg');n='tempel-'+Date.now().toString(36)+Math.random().toString(36).slice(2,4)+'.'+e;return new File([f],n,{type:f.type})}return f}
+function lbFile(o){return new File([o.b],o.n,{type:o.ty})}
+function lbMeta(f){return new Promise(function(ok){var u=URL.createObjectURL(f),dn=0,fin=function(m){if(dn)return;dn=1;URL.revokeObjectURL(u);ok(m||{})};setTimeout(function(){fin({})},5000);
+function tn(x,w,h){try{var c=document.createElement('canvas'),k=96/Math.max(w,h,1);c.width=Math.max(1,Math.round(w*k));c.height=Math.max(1,Math.round(h*k));c.getContext('2d').drawImage(x,0,0,c.width,c.height);return c.toDataURL('image/jpeg',.6)}catch(e){return''}}
+if((f.type||'').indexOf('image')===0){var im=new Image();im.onload=function(){fin({th:tn(im,im.naturalWidth,im.naturalHeight)})};im.onerror=function(){fin({})};im.src=u;return}
+var v=document.createElement('video');v.muted=true;v.preload='metadata';v.playsInline=true;v.onloadedmetadata=function(){v._d=v.duration||0;try{v.currentTime=Math.min(.3,v._d/2)}catch(e){fin({du:v._d})}};v.onseeked=function(){fin({du:v._d||0,th:tn(v,v.videoWidth,v.videoHeight)})};v.onerror=function(){fin({})};v.src=u})}
+function lbSave(f,src){return lbAll().then(function(a){var d=a.filter(function(o){return o.n===f.name&&o.sz===f.size})[0];if(d)return d;return lbMeta(f).then(function(m){var o={id:'c'+Date.now().toString(36)+Math.random().toString(36).slice(2,6),n:f.name,ty:f.type||'video/mp4',sz:f.size,add:Date.now(),lb:src||'',b:f,th:m.th||'',du:m.du||0};return lbPut(o).then(function(){return o})})}).catch(function(e){msg('Pustaka tidak bisa menyimpan ('+(e&&e.name||'error')+'). Ruang penuh? Hapus klip lama.',5000)})}
+function lbAuto(fs,src){var ck=$('vdLbA');if(ck&&!ck.checked)return;fs=fs.filter(lbOk);if(!fs.length)return;fs.reduce(function(p,f){return p.then(function(){return lbSave(f,src)})},Promise.resolve()).then(function(){lbRender()})}
+function lbIn(fs,src){fs=fs.filter(lbOk).map(lbFix);if(!fs.length){msg('Tidak ada video atau gambar yang terbaca',3000);return}addF(fs,'v');lbAuto(fs,src);msg(fs.length+' klip ditambahkan',2500)}
+function lbUse(os){os.forEach(function(o,i){setTimeout(function(){addF([lbFile(o)],'v')},i*350)});msg(os.length+' klip dipakai',2500)}
+function lbPaste(e){var z=$('vdSc');if(!z||z.offsetParent===null)return;var d=e.clipboardData;if(!d)return;var tg=e.target,own=tg&&tg.id==='vdPz';if(!own&&tg&&(/^(INPUT|TEXTAREA|SELECT)$/.test(tg.tagName)||tg.isContentEditable))return;
+var fs=[].filter.call(d.files||[],lbOk);if(fs.length){e.preventDefault();lbIn(fs,'Tempel');return}
+var tx=(d.getData('text')||'').trim();if(/^https?:\/\/\S+$/i.test(tx)){e.preventDefault();var k=$('vdLk');if(k)k.value=tx;lbUrl(tx)}}
+function lbClip(){if(!navigator.clipboard||!navigator.clipboard.read){msg('Browser ini tidak bisa membaca clipboard. Ketuk lama kotak Tempel lalu pilih Tempel.',5000);return}
+navigator.clipboard.read().then(async function(items){var fs=[],tx='',it,ty,b;for(it of items){for(ty of it.types){if(/^(video|image)\//.test(ty)){b=await it.getType(ty);fs.push(new File([b],'',{type:ty}))}else if(ty==='text/plain'&&!tx){tx=await(await it.getType(ty)).text()}}}
+if(fs.length){lbIn(fs,'Tempel');return}tx=tx.trim();if(/^https?:\/\/\S+$/i.test(tx)){var k=$('vdLk');if(k)k.value=tx;lbUrl(tx);return}
+msg('Clipboard tidak berisi video. Di sosmed, simpan videonya ke galeri dulu, lalu ketuk Tambah video/foto.',6000)}).catch(function(){msg('Clipboard tidak bisa dibaca. Ketuk lama kotak Tempel lalu pilih Tempel, atau pakai Tambah video/foto.',6000)})}
+function lbUrl(u){u=(u||'').trim();if(!/^https?:\/\//i.test(u)){msg('Tempel link yang diawali https://',3000);return}
+if(lbP.test(u)){msg('Link halaman platform tidak bisa diunduh dari browser. Simpan videonya ke galeri (Bagikan, Simpan video), lalu ketuk Tambah video/foto atau tempel filenya di kotak.',8000);return}
+msg('Mengambil video…',0);var ac=new AbortController(),to=setTimeout(function(){ac.abort()},90000);
+fetch(u,{signal:ac.signal}).then(function(r){if(!r.ok)throw new Error('HTTP '+r.status);return r.blob()}).then(function(b){clearTimeout(to);var ex=/\.(mp4|webm|mov|m4v|jpg|jpeg|png|webp|gif)(\?|#|$)/i.test(u);if(!/^(video|image)\//.test(b.type)&&!ex)throw new Error('bukan file video');var nm='';try{nm=decodeURIComponent(u.split(/[?#]/)[0].split('/').pop()||'')}catch(e){}var ty=/^(video|image)\//.test(b.type)?b.type:'video/mp4';lbIn([new File([b],nm,{type:ty})],'Link')}).catch(function(e){clearTimeout(to);msg('Gagal mengambil: '+(e&&e.name==='AbortError'?'waktu habis':'server tidak mengizinkan (CORS) atau link bukan file langsung')+'. Simpan ke galeri lalu pilih filenya.',8000)})}
+function lbRow(o){var du=o.du?' · '+fm(o.du):'',dt=new Date(o.add).toLocaleDateString('id-ID',{day:'numeric',month:'short'}),ic=o.ty.indexOf('image')===0?'Foto':'Video';
+return '<div style="display:flex;gap:8px;align-items:flex-start;border:1px solid var(--ln);border-radius:10px;padding:8px;margin-bottom:6px"><input type="checkbox" data-lbs="'+o.id+'"'+(lbS[o.id]?' checked':'')+' aria-label="Pilih" style="flex:none;width:22px;min-width:22px;height:22px;margin:4px 0 0;padding:0">'
++(o.th?'<img src="'+o.th+'" alt="" style="width:52px;height:52px;object-fit:cover;border-radius:8px;flex:none;background:var(--so)">':'<div style="width:52px;height:52px;border-radius:8px;flex:none;background:var(--so)"></div>')
++'<div style="flex:1;min-width:0"><b style="display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+E(o.n)+'</b><span class="note">'+ic+' · '+lbSz(o.sz)+du+' · '+dt+(o.lb?' · '+E(o.lb):'')+'</span>'
++'<div class="vr" style="margin-top:6px;flex-wrap:wrap"><button class="b" type="button" data-a="lb_use" data-id="'+o.id+'">Pakai</button><button class="b g" type="button" data-a="lb_ren" data-id="'+o.id+'">Nama</button><button class="b g" type="button" data-a="lb_lab" data-id="'+o.id+'">Label</button><button class="b g" type="button" data-a="lb_dl" data-id="'+o.id+'">Unduh</button><button class="b d" type="button" data-a="lb_del" data-id="'+o.id+'">Hapus</button></div></div></div>'}
+function lbRender(){var L=$('vdLbL');if(!L)return;lbAll().then(function(a){var q=(($('vdLbQ')||{}).value||'').toLowerCase(),so=($('vdLbS')||{}).value||'n',l=a.filter(function(o){return!q||(o.n+' '+(o.lb||'')).toLowerCase().indexOf(q)>=0});
+l.sort(so==='a'?function(x,y){return x.n.localeCompare(y.n)}:so==='z'?function(x,y){return y.sz-x.sz}:function(x,y){return y.add-x.add});
+Object.keys(lbS).forEach(function(k){if(!a.some(function(o){return o.id===k}))delete lbS[k]});
+var tot=a.reduce(function(n,o){return n+o.sz},0),U=$('vdLbU'),sm=document.querySelector('#vdLb summary');if(sm)sm.textContent='Pustaka klip ('+a.length+')';
+var bs='<p class="note">'+a.length+' klip · '+lbSz(tot)+'</p>';if(U)U.innerHTML=bs;
+L.innerHTML=l.length?l.map(lbRow).join(''):'<p class="note">'+(a.length?'Tidak ada yang cocok.':'Pustaka masih kosong. Klip yang ditempel atau dipilih dari galeri tersimpan di sini.')+'</p>';
+if(U&&navigator.storage&&navigator.storage.estimate)navigator.storage.estimate().then(function(e){if(e&&e.quota&&$('vdLbU'))$('vdLbU').innerHTML=bs+'<p class="note">Penyimpanan browser: '+lbSz(e.usage)+' dari '+lbSz(e.quota)+'</p>'})}).catch(function(){L.innerHTML='<p class="note">Pustaka tidak bisa dibuka di browser ini.</p>'})}
+function lbAct(a,b){var id=b.dataset.id;
+if(a==='lb_paste'){lbClip();return}
+if(a==='lb_link'){lbUrl(($('vdLk')||{}).value);return}
+if(a==='lb_usesel'||a==='lb_delsel'){var ids=Object.keys(lbS);if(!ids.length){msg('Centang klip dulu',2500);return}
+if(a==='lb_delsel'){if(!confirm('Hapus '+ids.length+' klip dari Pustaka?'))return;Promise.all(ids.map(lbDel)).then(function(){lbS={};lbRender();msg('Klip terpilih dihapus',2500)});return}
+Promise.all(ids.map(lbGet)).then(function(os){lbUse(os.filter(Boolean))});return}
+if(a==='lb_clr'){lbAll().then(function(l){if(!l.length){msg('Pustaka sudah kosong',2000);return}if(!confirm('Hapus semua '+l.length+' klip dari Pustaka? Klip yang sudah di timeline tidak ikut terhapus.'))return;lbClear().then(function(){lbS={};lbRender();msg('Pustaka dikosongkan',2500)})});return}
+lbGet(id).then(function(o){if(!o){lbRender();return}
+if(a==='lb_use')lbUse([o]);
+else if(a==='lb_ren'){var n=prompt('Nama klip',o.n);if(n&&n.trim()){o.n=n.trim();lbPut(o).then(lbRender)}}
+else if(a==='lb_lab'){var q=prompt('Label (mis. sumber atau kategori)',o.lb||'');if(q!==null){o.lb=q.trim();lbPut(o).then(lbRender)}}
+else if(a==='lb_dl'){var u=URL.createObjectURL(o.b),k=document.createElement('a');k.href=u;k.download=o.n;document.body.appendChild(k);k.click();k.remove();setTimeout(function(){URL.revokeObjectURL(u)},4000)}
+else if(a==='lb_del'){if(confirm('Hapus "'+o.n+'" dari Pustaka?'))lbDel(o.id).then(function(){delete lbS[o.id];lbRender()})}})}
+function lbInit(){var z=$('vdPz');if(!z)return;
+z.addEventListener('dragover',function(e){e.preventDefault()});
+z.addEventListener('drop',function(e){e.preventDefault();var fs=[].filter.call(e.dataTransfer.files||[],lbOk);if(fs.length)lbIn(fs,'Seret');else msg('Seret file video atau gambar, bukan teks',3000)});
+$('vdLbQ').addEventListener('input',lbRender);$('vdLbS').addEventListener('change',lbRender);
+$('vdLbL').addEventListener('change',function(e){var i=e.target.getAttribute('data-lbs');if(!i)return;if(e.target.checked)lbS[i]=1;else delete lbS[i]});
+$('vdLb').addEventListener('toggle',function(){if($('vdLb').open)lbRender()});
+if(!window.__lbp){window.__lbp=1;document.addEventListener('paste',lbPaste)}
+lbRender()}
 /*sesiC1-akhir*/
 /*sesiB-awal*/
 var xb=0,xc=0;
@@ -2891,10 +2978,10 @@ if(xb&&a!=='xcancel')return;if(a==='xcancel'){xc=1;return}if(a==='play'){pl?pa()
 if(a==='spd'){var cs=C[s];if(cs&&cs.k==='v'){sv();cs.v1=+b.dataset.x/100;cs.v2=+b.dataset.y/100;t=off(s);pa();ci=-1;all()}return}
 if(a==='flh'||a==='flv'||a==='frst'){var cf=C[s];if(cf){sv();if(a==='frst'){cf.fh=cf.fv=0;cf.zm=1;cf.tx=cf.ty=cf.rt=0}else{var fk=a==='flh'?'fh':'fv';cf[fk]=!cf[fk]}dr=1;upE()}return}if(a==='gpr'||a==='grst'){var cg=C[s];if(cg){sv();var gv=a==='grst'?'':b.dataset.v;cg.gn=gv;cg.g=GP[gv]?Object.assign({},GP[gv]):null;dr=1;upE()}return}
 if(a==='exp'){ex();return}if(a==='expr'){exR();return}
-if(a==='addv'){$('vdF1').click();return}
+if(a==='addv'){$('vdF1').click();return}if(a.indexOf('lb_')===0){lbAct(a,b);return}
 if(a==='adda'){$('vdF2').click();return}
 if(a==='addo'){$('vdF3').click();return}
-if(a==='dbt'){dbt();return}if(a==='rec'){rec1();return}if(a==='addvo'){$('vdF4').click();return}if(a==='srtx'){srtX();return}if(a==='srti'){$('vdF5').click();return}
+if(a==='dbt'){dbt();return}if(a==='rec'){rec1();return}if(a==='addvo'){$('vdF4').click();return}if(a==='srtx'){srtX();return}if(a==='srti'){$('vdF5').click();return}if(a==='rkgo'){rkGo();return}if(a==='rkdel'){rkDel();return}
 if(a==='tab'){vt=b.dataset.i;if(vt==='k')xs=os=-1;else if(vt==='o')s=xs=-1;else if(vt==='t')s=os=-1;else if(vt==='a')xs=os=-1;else s=xs=os=-1;var vd=document.querySelector('.vd');vd.dataset.t=vt;var vsc=$('vdSc');if(vsc)vsc.scrollTop=0;Array.prototype.forEach.call(vd.querySelectorAll('.vn button'),function(q){q.className=q.dataset.i===vt?'on':''});all();return}
 if(a==='tsel'){var ty=b.dataset.ty,ii=+b.dataset.n;pa();if(ty==='c'){vsi=-1;s=ii;xs=os=-1}else if(ty==='x'){xs=ii;s=os=vsi=-1}else if(ty==='o'){os=ii;s=xs=vsi=-1;kf=0}else if(ty==='v'){vsi=ii;s=xs=os=-1}all();return}
 pa();if(['spl','dup','ml','mr','fit','del','delx','rma','addt','delo','delvo'].indexOf(a)>=0)sv();
@@ -2951,9 +3038,9 @@ function shell(){return '<div class="vd" data-t="'+vt+'"><div class="vfl"><div c
 '<div class="vr"><span id="vdT" class="note">0:00.0 / 0:00.0</span><button class="b g ic" type="button" data-a="un" aria-label="Urung"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"/></svg></button><button class="b g ic" type="button" data-a="re" aria-label="Ulang"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z"/></svg></button><button class="b g" type="button" data-a="pvz" aria-label="Ukuran preview">&#8661;</button><button class="b g" type="button" data-a="lay" aria-label="Posisi timeline">&#9707;</button></div><div class="tlw" id="vdTl"><div class="tls" id="vdTs"><div class="tli" id="vdTi"></div></div><div class="tlp"></div></div></div>'+
 '<div class="vn">'+[['k','Klip','\u25AD'],['o','Overlay','\u25E7'],['t','Teks','T'],['a','Audio','\u266A'],['e','Ekspor','\u21E9']].map(function(a,i){return '<button type="button" data-a="tab" data-i="'+a[0]+'" class="'+(a[0]===vt?'on':'')+'"><em>'+a[2]+'</em>'+a[1]+'</button>'}).join('')+'</div>'+
 '<div class="vsc" id="vdSc">'+
-'<section data-q="k"><div id="vdPj"></div><div class="vr"><button class="b g" type="button" data-a="addv">Tambah video/foto</button></div>'+avUi()+sl('tz','Zoom timeline (px per dtk)',4,60,TZ)+'<p class="vlb">Track video</p><div id="vdL" class="vl"></div></section>'+
+'<section data-q="k"><div id="vdPj"></div><div class="vr"><button class="b g" type="button" data-a="addv">Tambah video/foto</button></div>'+lbUi()+avUi()+sl('tz','Zoom timeline (px per dtk)',4,60,TZ)+'<p class="vlb">Track video</p><div id="vdL" class="vl"></div></section>'+
 '<section data-q="o"><div class="vr"><button class="b g" type="button" data-a="addo">Tambah overlay</button></div><p class="vlb">Track overlay</p><div id="vdO" class="vl"></div></section>'+
-'<section data-q="t"><div class="vr"><button class="b g" type="button" data-a="addt">Tambah teks</button><button class="b g" type="button" data-a="srtx">Ekspor SRT</button><button class="b g" type="button" data-a="srti">Impor SRT</button></div><p class="vlb">Track teks</p><div id="vdX" class="vl"></div></section>'+
+'<section data-q="t"><div class="vr"><button class="b g" type="button" data-a="addt">Tambah teks</button><button class="b g" type="button" data-a="srtx">Ekspor SRT</button><button class="b g" type="button" data-a="srti">Impor SRT</button></div><p class="vlb">Video Ranking (top-list)</p><div class="vr"><input id="vdRkT" type="text" placeholder="Judul, mis. TOP 5 CLUTCH" style="flex:1;min-width:0"></div><div class="vr"><select id="vdRkO"><option value="d">Hitung mundur (#N ke #1)</option><option value="u">Naik (#1 ke #N)</option></select><input id="vdRkC" type="color" value="#ffd23f"></div><label class="vs"><span><input type="checkbox" id="vdRkN" checked> Tulis nama klip di bawah nomor</span></label><div class="vr"><button class="b" type="button" data-a="rkgo">Buat ranking dari klip</button><button class="b g" type="button" data-a="rkdel">Hapus ranking</button></div><p class="note">Satu klip = satu peringkat, urutan mengikuti track video. Pilih rasio kanvas dulu di tab Ekspor, baru buat ranking. Hasilnya teks biasa yang bisa disunting di track teks.</p><p class="vlb">Track teks</p><div id="vdX" class="vl"></div></section>'+
 '<section data-q="a"><div class="vr"><button class="b g" type="button" data-a="adda">Tambah musik</button><button class="b g" type="button" data-a="addvo">Voice-over (file)</button><button class="b" type="button" data-a="rec" id="vdRc">Rekam voice-over</button></div><p class="note">Rekam voice-over memakai mikrofon sambil timeline berputar. Pakai earphone agar suara video tidak ikut terekam.</p><p class="vlb">Track audio</p><div id="vdA" class="vl"></div><div id="vdM"></div></section>'+
 '<div id="vdE"></div>'+
 '<section data-q="e"><p class="vlb">Rasio kanvas</p><div class="vr"><select id="vdR"><option value="720x1280">9:16</option><option value="1280x720">16:9</option><option value="720x720">1:1</option><option value="864x1080">4:5</option></select></div>'+
@@ -3350,7 +3437,7 @@ s=-1;xs=-1;os=-1;t=0;ci=-1;dr=1;all();pa();
 msg('Auto-Edit selesai: '+C.length+' klip, '+X.filter(function(x){return x.au}).length+' teks. Tambah musik di tab Audio.',5000)}
 return function(){mk();cancelAnimationFrame(raf);try{snp()}catch(e){}cmpOn=0;var l=$('list');l.innerHTML=shell();cv=$('vdc');cx=cv.getContext('2d',{alpha:false});pnt=0;lbC='';svC=-9;phd();
 l.onclick=clk;l.oninput=inp;gest();pjStart();pbK='';pjBar(1);cmpW(l);layApply();tlW();jogW();if(window.__enhS)__enhS(l);
-$('vdF1').onchange=function(e){addF(e.target.files,'v');e.target.value=''};
+$('vdF1').onchange=function(e){var fl=Array.prototype.slice.call(e.target.files);addF(fl,'v');lbAuto(fl,'Galeri');e.target.value=''};lbInit();
 $('vdF2').onchange=function(e){addF(e.target.files,'a');e.target.value='';if(avMusP){avMusP=0;setTimeout(avSync,60)}};
 $('vdF3').onchange=function(e){addF(e.target.files,'o');e.target.value=''};
 $('vdF4').onchange=function(e){addF(e.target.files,'w');e.target.value=''};
