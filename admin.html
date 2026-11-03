@@ -3066,9 +3066,9 @@ function spAt(x){var p=at(x);if(!p)return;var c=C[p.i];if(p.l>.15&&L(c)-p.l>.15)
 function rgDraw(){var el=$('vdRg'),ex2=$('vdRx');
 if(el){var h='<div class="vr"><button class="b g" type="button" data-a="rgin">Tandai In</button><button class="b g" type="button" data-a="rgout">Tandai Out</button></div><p class="note">'+(rgIn===null?'Geser playhead, ketuk Tandai In, lalu Tandai Out.':'In di '+fm(rgIn)+'. Geser playhead lalu ketuk Tandai Out.')+'</p>';
 RG.forEach(function(g,i){h+='<div class="vr"><button class="b g" type="button" data-a="rgj" data-n="'+i+'" style="flex:1;min-width:0;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+E(g.n)+' · '+fm(g.a)+'-'+fm(g.b)+'</button><button class="b g" type="button" data-a="rgnm" data-n="'+i+'">Nama</button><button class="b d" type="button" data-a="rgdl" data-n="'+i+'">Hapus</button></div>'});
-h+='<div class="vr"><button class="b g" type="button" data-a="rgbf">Pilih sebelum</button><button class="b g" type="button" data-a="rgaf">Pilih sesudah</button><button class="b g" type="button" data-a="rgsc">Track: '+(SC==='a'?'semua':'klip utama')+'</button></div><div class="vr"><button class="b g" type="button" data-a="rgga">Pisahkan: sisipkan celah</button><button class="b g" type="button" data-a="rgrap">Rapatkan klip</button></div>';
+h+='<div class="vr"><button class="b g" type="button" data-a="rgbf">Pilih sebelum</button><button class="b g" type="button" data-a="rgaf">Pilih sesudah</button><button class="b g" type="button" data-a="rgsc">Track: '+(SC==='a'?'semua':'klip utama')+'</button></div><div class="vr"><button class="b g" type="button" data-a="rgfc">Pilih dari klip terpilih ke depan</button><button class="b g" type="button" data-a="rgga">Pisahkan: sisipkan celah</button><button class="b g" type="button" data-a="rgrap">Rapatkan klip</button></div>';
 h+='<label class="vs"><span><input type="checkbox" data-a="rgrp"'+(RP?' checked':'')+'> Ripple: nyala = hapus/trim menutup celah dan track lain ikut maju; mati = sisakan celah</span></label>';
-if(SEL)h+='<p class="note">Terpilih '+fm(SEL.a)+' sampai '+fm(SEL.b)+'</p><div class="vr"><button class="b" type="button" data-a="rgdel">Hapus dan tutup celah</button><button class="b g" type="button" data-a="rggd">Hapus, sisakan celah</button></div><div class="vr"><button class="b g" type="button" data-a="rgmL">Geser -0,5 dtk</button><button class="b g" type="button" data-a="rgmR">Geser +0,5 dtk</button></div><div class="vr"><button class="b g" type="button" data-a="rgsx">Ekspor bagian ini saja</button><button class="b g" type="button" data-a="rgsn">Batal pilih</button></div><p class="note">Geser memindahkan teks, overlay, dan voice-over di dalam seleksi (butuh Track: semua).</p>';
+if(SEL)h+='<p class="note">Terpilih '+fm(SEL.a)+' sampai '+fm(SEL.b)+'</p><div class="vr"><button class="b" type="button" data-a="rgdel">Hapus dan tutup celah</button><button class="b g" type="button" data-a="rggd">Hapus, sisakan celah</button></div><p class="vlb">Jauhkan jarak (sisipkan celah di batas seleksi)</p><div class="vr"><button class="b g" type="button" data-a="rgmv" data-sg="1" data-v=".5">+0,5 dtk</button><button class="b g" type="button" data-a="rgmv" data-sg="1" data-v="1">+1 dtk</button><button class="b g" type="button" data-a="rgmv" data-sg="1" data-v="p">Isi angka</button></div><p class="vlb">Dekatkan jarak (kecilkan celah)</p><div class="vr"><button class="b g" type="button" data-a="rgmv" data-sg="-1" data-v=".5">-0,5 dtk</button><button class="b g" type="button" data-a="rgmv" data-sg="-1" data-v="1">-1 dtk</button><button class="b g" type="button" data-a="rgmv" data-sg="-1" data-v="p">Isi angka</button></div><div class="vr"><button class="b g" type="button" data-a="rgsx">Ekspor bagian ini saja</button><button class="b g" type="button" data-a="rgsn">Batal pilih</button></div><p class="note">Seleksi sesudah: bagian ke depan ikut bergeser. Seleksi sebelum: bagian sesudahnya yang menjauh. Mendekatkan hanya bisa sampai celah habis.</p>';
 el.innerHTML=h}
 if(ex2){var q='<p class="vlb">Ekspor per rentang</p>';if(!RG.length)q+='<p class="note">Belum ada rentang. Buat dengan Tandai In dan Out di tab Klip.</p>';
 RG.forEach(function(g,i){q+='<div class="vr"><label class="vs" style="flex:1;min-width:0"><span><input type="checkbox" data-a="rgck" data-n="'+i+'"'+(g.ck?' checked':'')+'> '+E(g.n)+' ('+fm(g.b-g.a)+')</span></label><button class="b g" type="button" data-a="rgx1" data-n="'+i+'">Ekspor</button></div>'});
@@ -3089,6 +3089,15 @@ var f=function(x){return x<=a1?x:x>=a1+D?x-D:a1};RG=RG.map(function(g){return{n:
 else if(RP)rpl(a1+D,-D);
 if(g)C.splice(ix[0],ix.length,gc(D));else for(var j=ix.length-1;j>=0;j--)C.splice(ix[j],1);
 s=xs=os=vsi=-1;ci=-1;oi=-1;SEL=null;t=Math.min(a1,TT());all()}
+function rgMv(d){if(!SEL||!C.length)return;pa();var bk=SEL.k==='b',ed=bk?SEL.b:SEL.a,o=0,ix=C.length,k;
+for(k=0;k<C.length;k++){if(o>=ed-.16){ix=k;break}o+=L(C[k])}
+if(ix>=C.length||(bk&&ix<=0)){msg('Tidak ada klip di seberang batas seleksi',2500);return}
+var gi=bk?(C[ix].k==='g'?ix:-1):(ix>0&&C[ix-1].k==='g'?ix-1:-1),gend=gi>=0?off(gi)+L(C[gi]):off(ix),ap=d;
+if(d>0){sv();if(gi>=0)C[gi].b=+(C[gi].b+d).toFixed(2);else C.splice(ix,0,gc(d))}
+else{if(gi<0){msg('Tidak ada celah di batas seleksi, tidak bisa didekatkan',3500);return}sv();var gl=L(C[gi]);ap=-Math.min(-d,gl);if(gl+ap<.2){ap=-gl;C.splice(gi,1)}else C[gi].b=+(C[gi].b+ap).toFixed(2)}
+if(SC==='a'||RP)rpl(gend,ap);
+var Tn=TT();if(bk){SEL.b=Math.min(SEL.b,Tn);t=SEL.b}else{SEL.a=Math.max(0,Math.min(Tn,SEL.a+ap));SEL.b=Tn;t=Math.min(SEL.a,Tn)}
+s=-1;ci=-1;all()}
 function rgAct(a,b){var i=+b.dataset.n,T=TT();
 if(a==='rgck'){if(RG[i])RG[i].ck=b.checked?1:0;asvQ();return}
 if(a==='rgrp'){RP=b.checked?1:0;return}
@@ -3098,13 +3107,14 @@ if(a==='rgout'){var a0=rgIn===null?0:rgIn,b0=Math.min(t,T);if(b0-a0<.2){msg('Out
 if(a==='rgj'&&RG[i]){pa();t=Math.min(RG[i].a,T);all();return}
 if(a==='rgnm'&&RG[i]){var nm=prompt('Nama rentang',RG[i].n);if(nm&&nm.trim()){sv();RG[i].n=nm.trim().slice(0,40);all()}return}
 if(a==='rgdl'&&RG[i]){sv();RG.splice(i,1);all();return}
-if(a==='rgbf'||a==='rgaf'){if(!C.length){msg('Tambah video/foto dulu',2500);return}pa();var bf=a==='rgbf';if((bf&&t<=.05)||(!bf&&t>=T-.05)){msg('Geser playhead ke dalam video dulu',2500);return}sv();spAt(t);SEL=bf?{a:0,b:t}:{a:t,b:T};all();return}
+if(a==='rgbf'||a==='rgaf'){if(!C.length){msg('Tambah video/foto dulu',2500);return}pa();var bf=a==='rgbf';if((bf&&t<=.05)||(!bf&&t>=T-.05)){msg('Geser playhead ke dalam video dulu',2500);return}sv();spAt(t);SEL=bf?{a:0,b:t,k:'b'}:{a:t,b:T,k:'a'};all();return}
 if(a==='rgsn'){SEL=null;all();return}
 if(a==='rgdel'){rgCut();return}
 if(a==='rggd'){rgCut(1);return}
 if(a==='rgga'){if(!C.length){msg('Tambah video/foto dulu',2500);return}var dg=parseFloat(String(prompt('Lama celah (detik)','1')).replace(',','.'));if(!(dg>=.2&&dg<=30)){msg('Isi angka 0,2 sampai 30 detik',2500);return}pa();sv();var pg=at(t),ig;if(pg.l<=.15)ig=pg.i;else if(L(C[pg.i])-pg.l<=.15)ig=pg.i+1;else{spAt(t);ig=pg.i+1}var og=off(ig);if(RP)rpl(og,dg);C.splice(ig,0,gc(dg));s=ig;xs=os=vsi=-1;ci=-1;t=og;all();return}
 if(a==='rgrap'){var gs=[];if(C[s]&&C[s].k==='g')gs=[s];else C.forEach(function(c,k){if(c.k==='g')gs.push(k)});if(!gs.length){msg('Tidak ada celah di track video',2500);return}sv();for(var q=gs.length-1;q>=0;q--){var kk=gs[q];if(RP)rpl(off(kk)+L(C[kk]),-L(C[kk]));C.splice(kk,1)}s=-1;ci=-1;t=Math.min(t,TT());all();msg(gs.length+' celah dirapatkan',2000);return}
-if(a==='rgmL'||a==='rgmR'){if(!SEL)return;if(SC!=='a'){msg('Pilih Track: semua dulu',2500);return}sv();var d=a==='rgmL'?-.5:.5;[[X],[O],[VO]].forEach(function(p){p[0].forEach(function(q){if(q.s>=SEL.a-.001&&q.s<SEL.b)q.s=Math.max(0,q.s+d)})});SEL.a=Math.max(0,SEL.a+d);SEL.b=Math.max(SEL.a+.1,SEL.b+d);all();return}
+if(a==='rgmv'){var dv=b.dataset.v;if(dv==='p'){dv=parseFloat(String(prompt('Jarak (detik)','1')).replace(',','.'));if(!(dv>=.1&&dv<=60)){msg('Isi angka 0,1 sampai 60 detik',2500);return}}else dv=+dv;rgMv(dv*(+b.dataset.sg));return}
+if(a==='rgfc'){if(!C[s]){msg('Pilih satu klip dulu di daftar Track video',2500);return}pa();SEL={a:off(s),b:T,k:'a'};all();return}
 if(a==='rgsx'){if(SEL)exQ([{a:SEL.a,b:SEL.b,n:'bagian'}]);return}
 if(a==='rgx1'){if(RG[i])exQ([RG[i]]);return}
 if(a==='rgxk'){exQ(RG.filter(function(g){return g.ck}));return}}
