@@ -306,6 +306,7 @@ body.vm #tabs{display:none!important}body.vm header{padding:6px 10px;gap:6px}bod
 .tb{position:absolute;display:flex;align-items:center;box-sizing:border-box;min-width:6px;padding:0 5px;border:1px solid var(--ln);border-left:3px solid var(--ac);border-radius:6px;background:var(--sf);color:var(--ink);font-size:10px;white-space:nowrap;overflow:hidden}
 .tb span{min-width:0;overflow:hidden;text-overflow:ellipsis}.tb.c{top:16px;height:34px}.tb.o{top:54px;height:14px;border-left-color:#e0a030;font-size:9px}.tb.x{top:70px;height:14px;border-left-color:#3bb273;font-size:9px}.tb.v{top:86px;height:14px;border-left-color:#d6506a;font-size:9px}.tb.m{top:86px;height:14px;border-left-color:var(--mu);font-size:9px;opacity:.7}
 .tb.g{top:2px;height:11px;border-left-color:#7a5cff;font-size:9px;opacity:.65}
+.vgs{height:56px;margin:8px 0;border:1px dashed var(--ac);border-radius:10px;display:flex;align-items:center;justify-content:center;touch-action:none;user-select:none;-webkit-user-select:none;font-weight:600;color:var(--mu);background:var(--so)}
 .tb.on{z-index:2;padding:0 20px;border-color:var(--ac);box-shadow:inset 0 0 0 1px var(--ac)}.tb.on.o,.tb.on.x,.tb.on.v{padding:0 16px}
 .th{position:absolute;top:0;bottom:0;width:18px;display:flex;align-items:center;justify-content:center;background:var(--ac);touch-action:none;cursor:ew-resize}.th::after{content:'';width:2px;height:45%;border-radius:2px;background:rgba(255,255,255,.9)}.th.l{left:0}.th.r{right:0}.tb.sm .th{width:11px}
 .tlp{position:absolute;left:50%;top:0;bottom:0;width:2px;margin-left:-1px;background:#ff3b5c;z-index:5;pointer-events:none}.tlp::before{content:'';position:absolute;top:0;left:-4px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid #ff3b5c}
@@ -2409,10 +2410,11 @@ function V1(c){return c.v1||1}function V2(c){return c.v2||1}
 function L(c){return c.k==='v'?(c.b-c.a)*2/(V1(c)+V2(c)):c.b-c.a}
 function vsp(c,l){return V1(c)+(V2(c)-V1(c))*Math.min(1,l/L(c))}
 function sw(c,l){var d=L(c);l=Math.min(l,d);return c.a+V1(c)*l+(V2(c)-V1(c))*l*l/(2*d)}
-function TT(){return C.reduce(function(a,c){return a+L(c)},0)}
+function TT(){return C.reduce(function(a,c){return a+Gp(c)+L(c)},0)}
 function fm(x){x=Math.max(0,x);var m=Math.floor(x/60),q=(x%60).toFixed(1);return m+':'+(q<10?'0':'')+q}
-function off(i){var o=0;for(var k=0;k<i;k++)o+=L(C[k]);return o}
-function at(x){var o=0;for(var i=0;i<C.length;i++){var l=L(C[i]);if(x<o+l||i===C.length-1)return{i:i,l:Math.max(0,Math.min(x-o,l))};o+=l}return null}
+function Gp(c){return c.gp||0}
+function off(i){var o=0;for(var k=0;k<i;k++)o+=Gp(C[k])+L(C[k]);return o+(C[i]?Gp(C[i]):0)}
+function at(x){var o=0;for(var i=0;i<C.length;i++){var g=Gp(C[i]),l=L(C[i]);if(x<o+g)return null;o+=g;if(x<o+l||i===C.length-1)return{i:i,l:Math.max(0,Math.min(x-o,l))};o+=l}return null}
 function E(h){return String(h).replace(/[&<>"]/g,function(c){return{'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]})}
 function mk(){if(vv)return;vv=mkVE();vn=mkVE();ov=document.createElement('video');ov.playsInline=true;ov.muted=false;ov.volume=0;ov.preload='auto';ov.onseeked=function(){if(xb){dr=1;return}dr=0;draw();oSk.done()};au=new Audio();au.preload='auto';va=new Audio();va.preload='auto';cmv=document.createElement('video');cmv.playsInline=true;cmv.muted=true;cmv.preload='auto';cmv.onseeked=function(){drawCmp()};oSk=mkSk(ov)}
 function gr(){if(ac)return;var A=window.AudioContext||window.webkitAudioContext;if(!A)return;try{ac=new A({latencyHint:'interactive'})}catch(x){ac=new A()}dst=ac.createMediaStreamDestination();[vv,au,ov,va,vn].forEach(function(e,i){try{var n=ac.createMediaElementSource(e),g=ac.createGain();n.connect(g);g.connect(ac.destination);g.connect(dst);if(i===0){vg=g;e._g=g}else if(i===1)ag=g;else if(i===2)og=g;else if(i===3)vag=g;else e._g=g}catch(x){}})}
@@ -2465,7 +2467,7 @@ function act(){return O.filter(function(o){return t>=o.s&&t<o.s+o.l})}
 function osync(f){var a=act().filter(function(o){return o.k==='v'})[0];if(!a){if(oi!==-1){oi=-1;ov.pause()}return}var i=O.indexOf(a),w=t-a.s;setO(a);
 if(oi!==i){oi=i;oSk.reset();ov.src=a.u;ov.onloadeddata=function(){ov.currentTime=w;if(pl)ov.play().catch(function(){});dr=1};ov.load();return}
 if((f&&Math.abs(ov.currentTime-w)>.03)||Math.abs(ov.currentTime-w)>.4)oSk.to(w);if(pl&&ov.paused)ov.play().catch(function(){})}
-function sync(f){osync(f);vsync(f>=2?0:f);var p=at(t);if(!p)return;var c=C[p.i];bkw=f>=2&&t<lt;lt=t;if(f===3){dr=1;return}vprepN(p.i);
+function sync(f){osync(f);vsync(f>=2?0:f);var p=at(t);if(!p){if(vv&&!vv.paused)vv.pause();ci=-1;dr=1;return}var c=C[p.i];bkw=f>=2&&t<lt;lt=t;if(f===3){dr=1;return}vprepN(p.i);
 if(c.k!=='v'){if(ci!==p.i){ci=p.i;vv.pause()}dr=1;return}
 var w=sw(c,p.l);
 if(ci!==p.i){ci=p.i;if(vv.getAttribute('src')!==c.u||vv.readyState<2){
@@ -2483,7 +2485,7 @@ if(ms.length){msg('Menyiapkan audio…',2500);pr.push(Promise.all(ms.map(abDec))
 if(!pr.length){go1(cb);return}var k=++gtk;Promise.all(pr).catch(function(){}).then(function(){if(k===gtk)go1(cb)})}
 function fin(){var r=rec;if(rcm&&rcm.state==='recording')rcm.stop();t=TT();pa();dr=1;if(r&&r.state!=='inactive')setTimeout(function(){r.stop()},250)}
 function draw0(){rkVB=null;var RB=rkFr(),HC=RB?RB.cy:H/2,p=at(t);if(p){var c0=C[p.i];if(c0.k==='v'&&!PXB&&(vv.readyState<2||ci!==p.i)&&sk++<45){dr=1;return}sk=0}cx.setTransform(PSC,0,0,PSC,0,0);cx.fillStyle='#000';cx.fillRect(0,0,W,H);
-if(p&&C[p.i].k!=='g'){var c=C[p.i];if(c.gen)avPaint(c,p.l);var v=c.k==='v',px=v&&PXB&&!xb,o=px?PXB:v?vv:c.im,w=px?PXB.width:v?vv.videoWidth:c.im.naturalWidth,h=px?PXB.height:v?vv.videoHeight:c.im.naturalHeight;
+if(p){var c=C[p.i];if(c.gen)avPaint(c,p.l);var v=c.k==='v',px=v&&PXB&&!xb,o=px?PXB:v?vv:c.im,w=px?PXB.width:v?vv.videoWidth:c.im.naturalWidth,h=px?PXB.height:v?vv.videoHeight:c.im.naturalHeight;
 if(w&&h&&(!v||px||vv.readyState>1)){var r=RB?(c.fi?Math.max(W/w,RB.h/h):Math.min(W/w,RB.h/h)):c.f?Math.min(W/w,H/h):Math.max(W/w,H/h);if(RB){rkVB={x0:Math.max(0,(W-w*r)/2),x1:Math.min(W,(W+w*r)/2),y0:Math.max(RB.y0,HC-h*r/2),y1:Math.min(RB.y0+RB.h,HC+h*r/2)};if(rkVB.y1-rkVB.y0>=RB.h*.995)rkVB=null}var tn=c.tr,td=c.td||.5,e1=function(x){x=Math.max(0,Math.min(1,x));return x*x*(3-2*x)},al=1,ox=0,sz=1,wp=1,nx=C[p.i+1];
 if(tn){var ta=e1(p.l/td);if(tn==='fade')al=ta;else if(tn==='slide')ox=(1-ta)*W;else if(tn==='zoom'){al=ta;sz=1+(1-ta)*.4}else if(tn==='wipe')wp=ta}
 if(nx&&nx.tr==='fade')al=Math.min(al,e1((L(c)-p.l)/(nx.td||.5)));
@@ -2504,7 +2506,7 @@ if(a){var lb=fm(t)+' / '+fm(e)+(snF&&!pl?' \u25C6':'');if(lb!==lbC){lbC=lb;a.tex
 if(b&&document.activeElement!==b){var sv2=e?t/e*1000:0;if(Math.abs(sv2-svC)>.3){svC=sv2;b.value=sv2;if(b._pt)b._pt()}}
 tlSync()}
 function sl(k,n,mn,mx,v){var st=(mx-mn>=40&&['a','b','l','os','ol','s','d','vst'].indexOf(k)<0)?1:.1;return '<div class="pr pr-s"><span>'+n+'</span><b id="vl'+k+'">'+(+v).toFixed(st<1?1:0)+'</b><input type="range" data-k="'+k+'" min="'+mn+'" max="'+mx+'" step="'+st+'" value="'+v+'"></div>'}
-function upTl(){tlBuild();pxAll();var h='';C.forEach(function(c,i){h+='<button type="button" class="vc'+(i===s?' on':'')+'" data-a="pk" data-i="'+i+'"><b>'+(c.lk?'\uD83D\uDD12 ':'')+(c.k==='g'?'Celah ':c.k==='v'?'Video ':'Foto ')+(i+1)+'</b> '+E(c.n)+'<small>'+L(c).toFixed(1)+' dtk</small></button>'});
+function upTl(){tlBuild();pxAll();var h='';C.forEach(function(c,i){h+='<button type="button" class="vc'+(i===s?' on':'')+'" data-a="pk" data-i="'+i+'"><b>'+(c.lk?'\uD83D\uDD12 ':'')+(c.k==='v'?'Video ':'Foto ')+(i+1)+'</b> '+E(c.n)+'<small>'+L(c).toFixed(1)+' dtk'+(c.gp>.04?' · jarak '+c.gp.toFixed(1):'')+'</small></button>'});
 rkLk();$('vdL').innerHTML=h||'<p class="note">Belum ada klip. Ketuk "Tambah video/foto".</p>';
 h='';X.forEach(function(x,i){h+='<button type="button" class="vc'+(i===xs?' on':'')+'" data-a="px" data-i="'+i+'">Teks: '+E(x.t.split('\n')[0])+'<small>'+x.s.toFixed(1)+' → '+(x.s+x.d).toFixed(1)+' dtk</small></button>'});$('vdX').innerHTML=h;h='';O.forEach(function(o,i){h+='<button type="button" class="vc'+(i===os?' on':'')+'" data-a="po" data-i="'+i+'">Overlay '+(i+1)+': '+E(o.n)+'<small>'+o.s.toFixed(1)+' → '+(o.s+o.l).toFixed(1)+' dtk</small></button>'});$('vdO').innerHTML=h;h='';C.forEach(function(c,i){if(c.k==='v')h+='<button type="button" class="vc'+(i===s?' on':'')+'" data-a="pk" data-i="'+i+'" style="flex:0 0 '+Math.min(4000,Math.max(40,L(c)*TZ))+'px">Audio '+(i+1)+'<small>'+Math.round((c.vol===undefined?1:c.vol)*100)+'%</small></button>'});
 if(M)h+='<div class="vc" style="flex:1 0 220px">Musik: '+E(M.n)+'<div class="wf">'+(M.pk||[]).map(function(q){return '<i style="height:'+Math.max(8,q*100)+'%"></i>'}).join('')+'</div></div>';
@@ -2632,7 +2634,7 @@ var mvT=function(s0){if(s0>=tot-1e-6)return s0;var k=0,a;for(a=0;a<oc.length;a++
 X.forEach(function(x){if(!x.rk)x.s=mvT(x.s)});O.forEach(function(x){x.s=mvT(x.s)});VO.forEach(function(x){x.s=mvT(x.s)});
 var sc=C[s];C=nc;s=sc?C.indexOf(sc):-1;xs=os=vsi=-1;vai=-1;try{if(va)va.pause()}catch(e){}ci=-1;t=0;
 if(X.some(function(x){return x.rk})){rkGo(1);msg('Klip diacak, ranking dibuat ulang',2800)}else{msg('Urutan klip diacak',2500);all()}}
-function rkGo(q){if(!C.length){msg('Tambah video/foto dulu',2500);return}if(C.some(function(c){return c.k==='g'})){msg('Rapatkan klip dulu: ada celah di track video',3500);return}
+function rkGo(q){if(!C.length){msg('Tambah video/foto dulu',2500);return}if(C.some(function(c){return Gp(c)>0})){msg('Rapatkan klip dulu: ada jarak kosong antar klip',3500);return}
 if(!q)sv();X=X.filter(function(x){return!x.rk});
 if($('vdRkS')&&$('vdRkS').value==='t'){rkTk();xs=-1;s=-1;os=-1;t=0;msg(C.length+' peringkat dibuat',2500);all();return}
 var n=C.length,dn=$('vdRkO').value!=='u',col=$('vdRkC').value||'#ffd23f',nm=$('vdRkN').checked,hd=($('vdRkT').value||'').trim().toUpperCase(),por=H>=W*1.1,
@@ -2831,7 +2833,7 @@ xW().catch(function(e){var m=e&&e.message;if(m==='batal'){msg('Ekspor dibatalkan
 /*sesiB-akhir*/
 /*sesiD-awal*/
 var pnt=0,lfc=null,lfx=null,lfW=0,lfH=0,snc=0,cmv=null,cmpOn=0,cmpV=0,cmpC=null,cmpT=0,cmpU='',gOpen=0,GL={hangat:'Hangat',dingin:'Dingin',sinema:'Sinema',hitam:'Hitam-putih',vintage:'Vintage'};
-function rdy(p){if(!p)return 1;var c=C[p.i];if(c.k==='v')return !!PXB||(vv.readyState>=2&&ci===p.i&&vv.videoWidth>0);return c.k==='g'||!!(c.im&&c.im.naturalWidth)}
+function rdy(p){if(!p)return 1;var c=C[p.i];if(c.k==='v')return !!PXB||(vv.readyState>=2&&ci===p.i&&vv.videoWidth>0);return !!(c.im&&c.im.naturalWidth)}
 function snp(){if(!cv||!cx||!pnt||cv.width!==CW()||cv.height!==CH())return;if(!lfc){lfc=document.createElement('canvas');lfx=lfc.getContext('2d')}var w=cv.width>>1,h=cv.height>>1;if(lfc.width!==w||lfc.height!==h){lfc.width=w;lfc.height=h}lfx.drawImage(cv,0,0,w,h);lfW=W;lfH=H;lfP=PSC}
 function phd(){if(!pnt&&lfc&&lfW===W&&lfH===H&&lfP===PSC&&cv&&cv.width===CW()&&cv.height===CH()){cx.setTransform(1,0,0,1,0,0);cx.drawImage(lfc,0,0,cv.width,cv.height);pnt=1}}
 function rsz(){var w=CW(),h=CH();if(cv.width!==w){cv.width=w;pnt=0}if(cv.height!==h){cv.height=h;pnt=0}}
@@ -2852,7 +2854,7 @@ return {to:function(w){P=w;if(!B)go()},done:function(){B=0;clearTimeout(T);if(P!
 function upTlS(){if(tlq)return;tlq=requestAnimationFrame(function(){tlq=0;upTl()})}
 function scrubSync(){var u=pxFrame();sync(u?3:2);clearTimeout(scT);scT=setTimeout(function(){PXB=null;pxGen++;pxQ2=null;sync(1)},220)}
 function vib(n){try{navigator.vibrate&&navigator.vibrate(n)}catch(e){}}
-function snapT(x,T){var a=[0,T],o=0,i,th=Math.max(.04,T*.012),bd=th,best=null;C.forEach(function(c){o+=L(c);a.push(o)});X.forEach(function(q){a.push(q.s,q.s+q.d)});O.forEach(function(q){a.push(q.s,q.s+q.l)});VO.forEach(function(q){a.push(q.s,q.s+q.l)});if(M&&M.bt)M.bt.forEach(function(q){a.push(q)});
+function snapT(x,T){var a=[0,T],o=0,i,th=Math.max(.04,T*.012),bd=th,best=null;C.forEach(function(c){o+=Gp(c);a.push(o);o+=L(c);a.push(o)});X.forEach(function(q){a.push(q.s,q.s+q.d)});O.forEach(function(q){a.push(q.s,q.s+q.l)});VO.forEach(function(q){a.push(q.s,q.s+q.l)});if(M&&M.bt)M.bt.forEach(function(q){a.push(q)});
 for(i=0;i<a.length;i++){var d=Math.abs(a[i]-x);if(d<bd){bd=d;best=a[i]}}
 if(best===null){snN=-1;snF=0;return x}if(snN!==best)vib(8);snN=best;snF=1;return Math.min(best,T)}
 function acc(k,t,st,body){return '<button type="button" class="gh" data-a="atog" data-i="'+k+'" aria-expanded="'+(AC[k]?'true':'false')+'"><span>'+t+'</span><i>'+st+'</i><em>'+(AC[k]?'\u25B4':'\u25BE')+'</em></button>'+(AC[k]?body:'')}
@@ -2863,7 +2865,7 @@ return acc('f','Transformasi',st,'<div class="vr"><button class="b'+(c.fh?'':' g
 /*sesiE-akhir*/
 /*sesiF-awal*/
 var HF=0,tlD=0,tlU=0,tlSet=-9;
-function tlLay(){var w=$('vdTi'),sc=$('vdTs');if(!w||!sc)return;HF=Math.round((VT?sc.clientHeight:sc.clientWidth)/2);var T=TT(),o=0,of=C.map(function(c){var r=o;o+=L(c);return r}),P=VT?'bottom':'left',Z=VT?'height':'width',Z2=VT?'width':'height';
+function tlLay(){var w=$('vdTi'),sc=$('vdTs');if(!w||!sc)return;HF=Math.round((VT?sc.clientHeight:sc.clientWidth)/2);var T=TT(),o=0,of=C.map(function(c){o+=Gp(c);var r=o;o+=L(c);return r}),P=VT?'bottom':'left',Z=VT?'height':'width',Z2=VT?'width':'height';
 w.style[Z]=(HF*2+T*TZ)+'px';w.style[Z2]='100%';
 Array.prototype.forEach.call(w.querySelectorAll('[data-ty]'),function(e){var ty=e.dataset.ty,i=+e.dataset.n,s0=0,d0=0;
 if(ty==='c'){if(!C[i])return;s0=of[i];d0=L(C[i])}else if(ty==='x'){if(!X[i])return;s0=X[i].s;d0=X[i].d}else if(ty==='o'){if(!O[i])return;s0=O[i].s;d0=O[i].l}else if(ty==='v'){if(!VO[i])return;s0=VO[i].s;d0=VO[i].l}else if(ty==='g'){if(!RG[i])return;s0=RG[i].a;d0=RG[i].b-RG[i].a}else if(ty==='m'){d0=T}else if(ty==='r'){s0=+e.dataset.t}
@@ -2902,7 +2904,7 @@ else if(ty==='x'){if(side==='l'){var ns=cl(S.s+dt,0,S.s+S.d-.5);ob.s=ns;ob.d=S.d
 else ob.l=cl(S.l+dt,.5,ob.k==='v'?ob.d:15);
 var T=TT(),tt;if(ty==='c')tt=side==='l'?off(i)+.05:off(i)+L(ob)-.05;else if(ty==='x')tt=side==='l'?ob.s+.05:ob.s+ob.d-.05;else tt=ob.s+ob.l-.05;t=cl(tt,0,T);
 tlLay();scrubSync();dr=1}
-function up(){document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);document.removeEventListener('pointercancel',up);if(mvd&&ty==='c'){var dL=L(ob)-L(S);if(RP){if(Math.abs(dL)>.001)rpl(off(i)+L(S),dL)}else if(dL<-.05&&ob.k!=='g')C.splice(i+1,0,gc(-dL))}tlD=0;t=Math.min(t0,TT());cmpE();all()}
+function up(){document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);document.removeEventListener('pointercancel',up);if(mvd&&ty==='c'){var dL=L(ob)-L(S);if(RP){if(Math.abs(dL)>.001)rpl(off(i)+L(S),dL)}else if(C[i+1])C[i+1].gp=Math.max(0,Gp(C[i+1])-dL)}tlD=0;t=Math.min(t0,TT());cmpE();all()}
 document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up);document.addEventListener('pointercancel',up)}
 function tlW(){var sc=$('vdTs');if(!sc)return;
 sc.addEventListener('scroll',function(){var k=VT?'scrollTop':'scrollLeft';if(tlD||Math.abs(sc[k]-tlSet)<1.5)return;tlU=Date.now();var v0=sc[k]/TZ;t=Math.max(0,Math.min(TT(),VT?TT()-v0:v0));if(pl)pa();snF=0;scrubSync();dr=1});
@@ -3062,42 +3064,47 @@ var h='<p class="vlb">Proyek terbaru</p><div class="pjg">';a.slice(0,3).forEach(
 h+='</div><div class="vr"><button class="b g" type="button" data-a="pjl">Semua proyek ('+a.length+')</button></div>';e.innerHTML=h}).catch(function(){})}
 /*autosave-akhir*/
 function rpl(at,d){[[X],[O],[VO]].forEach(function(p){p[0].forEach(function(q){if(q.s>=at-.001)q.s=Math.max(0,q.s+d)})})}
-function spAt(x){var p=at(x);if(!p)return;var c=C[p.i];if(p.l>.15&&L(c)-p.l>.15){var sr=c.k==='v'?sw(c,p.l):c.a+p.l,vm=vsp(c,p.l),c2=Object.assign({},c);c2.a=sr;c2.v1=vm;c.b=sr;c.v2=vm;C.splice(p.i+1,0,c2);ci=-1}}
-function rgDraw(){var el=$('vdRg'),ex2=$('vdRx');
+function spAt(x){var p=at(x);if(!p)return;var c=C[p.i];if(p.l>.15&&L(c)-p.l>.15){var sr=c.k==='v'?sw(c,p.l):c.a+p.l,vm=vsp(c,p.l),c2=Object.assign({},c);c2.a=sr;c2.v1=vm;c2.gp=0;c.b=sr;c.v2=vm;C.splice(p.i+1,0,c2);ci=-1}}
+function rgDraw(){var el=$('vdRg'),rs=$('vdRs'),ex2=$('vdRx');
+if(!window.__vgs){window.__vgs=1;document.addEventListener('pointerdown',function(e){if(e.target.closest&&e.target.closest('#vdGs'))gsStart(e)})}
 if(el){var h='<div class="vr"><button class="b g" type="button" data-a="rgin">Tandai In</button><button class="b g" type="button" data-a="rgout">Tandai Out</button></div><p class="note">'+(rgIn===null?'Geser playhead, ketuk Tandai In, lalu Tandai Out.':'In di '+fm(rgIn)+'. Geser playhead lalu ketuk Tandai Out.')+'</p>';
-RG.forEach(function(g,i){h+='<div class="vr"><button class="b g" type="button" data-a="rgj" data-n="'+i+'" style="flex:1;min-width:0;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+E(g.n)+' · '+fm(g.a)+'-'+fm(g.b)+'</button><button class="b g" type="button" data-a="rgnm" data-n="'+i+'">Nama</button><button class="b d" type="button" data-a="rgdl" data-n="'+i+'">Hapus</button></div>'});
-h+='<div class="vr"><button class="b g" type="button" data-a="rgbf">Pilih sebelum</button><button class="b g" type="button" data-a="rgaf">Pilih sesudah</button><button class="b g" type="button" data-a="rgsc">Track: '+(SC==='a'?'semua':'klip utama')+'</button></div><div class="vr"><button class="b g" type="button" data-a="rgfc">Pilih dari klip terpilih ke depan</button><button class="b g" type="button" data-a="rgga">Pisahkan: sisipkan celah</button><button class="b g" type="button" data-a="rgrap">Rapatkan klip</button></div>';
-h+='<label class="vs"><span><input type="checkbox" data-a="rgrp"'+(RP?' checked':'')+'> Ripple: nyala = hapus/trim menutup celah dan track lain ikut maju; mati = sisakan celah</span></label>';
-if(SEL)h+='<p class="note">Terpilih '+fm(SEL.a)+' sampai '+fm(SEL.b)+'</p><div class="vr"><button class="b" type="button" data-a="rgdel">Hapus dan tutup celah</button><button class="b g" type="button" data-a="rggd">Hapus, sisakan celah</button></div><p class="vlb">Jauhkan jarak (sisipkan celah di batas seleksi)</p><div class="vr"><button class="b g" type="button" data-a="rgmv" data-sg="1" data-v=".5">+0,5 dtk</button><button class="b g" type="button" data-a="rgmv" data-sg="1" data-v="1">+1 dtk</button><button class="b g" type="button" data-a="rgmv" data-sg="1" data-v="p">Isi angka</button></div><p class="vlb">Dekatkan jarak (kecilkan celah)</p><div class="vr"><button class="b g" type="button" data-a="rgmv" data-sg="-1" data-v=".5">-0,5 dtk</button><button class="b g" type="button" data-a="rgmv" data-sg="-1" data-v="1">-1 dtk</button><button class="b g" type="button" data-a="rgmv" data-sg="-1" data-v="p">Isi angka</button></div><div class="vr"><button class="b g" type="button" data-a="rgsx">Ekspor bagian ini saja</button><button class="b g" type="button" data-a="rgsn">Batal pilih</button></div><p class="note">Seleksi sesudah: bagian ke depan ikut bergeser. Seleksi sebelum: bagian sesudahnya yang menjauh. Mendekatkan hanya bisa sampai celah habis.</p>';
-el.innerHTML=h}
-if(ex2){var q='<p class="vlb">Ekspor per rentang</p>';if(!RG.length)q+='<p class="note">Belum ada rentang. Buat dengan Tandai In dan Out di tab Klip.</p>';
-RG.forEach(function(g,i){q+='<div class="vr"><label class="vs" style="flex:1;min-width:0"><span><input type="checkbox" data-a="rgck" data-n="'+i+'"'+(g.ck?' checked':'')+'> '+E(g.n)+' ('+fm(g.b-g.a)+')</span></label><button class="b g" type="button" data-a="rgx1" data-n="'+i+'">Ekspor</button></div>'});
-if(RG.length)q+='<div class="vr"><button class="b" type="button" data-a="rgxk">Ekspor yang dicentang (file terpisah)</button></div>';ex2.innerHTML=q}}
+RG.forEach(function(g,i){h+='<div class="vr"><button class="b g" type="button" data-a="rgj" data-n="'+i+'" style="flex:1;min-width:0;text-align:left;overflow:hidden;text-overflow:ellipsis;white-space:nowrap">'+E(g.n)+' · '+fm(g.a)+'-'+fm(g.b)+'</button><button class="b g" type="button" data-a="rgnm" data-n="'+i+'">Nama</button><button class="b d" type="button" data-a="rgdl" data-n="'+i+'">Hapus</button></div>'});el.innerHTML=h}
+if(rs){var q='<div class="vr"><button class="b" type="button" data-a="rgfw">Pilih ke depan</button><button class="b" type="button" data-a="rgbw">Pilih ke belakang</button></div>';
+if(SEL)q+='<p class="note">Terpilih '+(SEL.k==='b'?'ke belakang':'ke depan')+': '+fm(SEL.a)+' sampai '+fm(SEL.b)+'</p><div id="vdGs" class="vgs">‹ seret kiri atau kanan untuk menggeser ›</div><p class="note" id="vdGt">Kiri = dekatkan, kanan = jauhkan.</p><div class="vr"><button class="b" type="button" data-a="rgdel">Hapus dan tutup celah</button><button class="b g" type="button" data-a="rggd">Hapus, sisakan jarak</button></div><div class="vr"><button class="b g" type="button" data-a="rgsx">Ekspor bagian ini saja</button><button class="b g" type="button" data-a="rgsn">Batal pilih</button></div>';
+else q+='<p class="note">Ketuk satu klip di daftar Track video (atau geser playhead), lalu Pilih ke depan atau Pilih ke belakang. Semua klip di sisi itu bisa digeser sekaligus.</p>';
+q+='<div class="vr"><button class="b g" type="button" data-a="rgsc">Track: '+(SC==='a'?'semua':'klip utama')+'</button><button class="b g" type="button" data-a="rgga">Pisahkan klip di playhead</button><button class="b g" type="button" data-a="rgrap">Rapatkan klip</button></div><label class="vs"><span><input type="checkbox" data-a="rgrp"'+(RP?' checked':'')+'> Ripple: nyala = hapus/trim menutup celah; mati = sisakan jarak kosong</span></label>';rs.innerHTML=q}
+if(ex2){var q2='<p class="vlb">Ekspor per rentang</p>';if(!RG.length)q2+='<p class="note">Belum ada rentang. Buat dengan Tandai In dan Out di tab Klip.</p>';
+RG.forEach(function(g,i){q2+='<div class="vr"><label class="vs" style="flex:1;min-width:0"><span><input type="checkbox" data-a="rgck" data-n="'+i+'"'+(g.ck?' checked':'')+'> '+E(g.n)+' ('+fm(g.b-g.a)+')</span></label><button class="b g" type="button" data-a="rgx1" data-n="'+i+'">Ekspor</button></div>'});
+if(RG.length)q2+='<div class="vr"><button class="b" type="button" data-a="rgxk">Ekspor yang dicentang (file terpisah)</button></div>';ex2.innerHTML=q2}}
+function gsStart(e){if(!SEL||!C.length||xb)return;e.preventDefault();pa();
+var bk=SEL.k==='b',ed=bk?SEL.b:SEL.a,o=0,ix=-1,k,st0=0,en0=0;
+for(k=0;k<C.length;k++){var st=o+Gp(C[k]),en=st+L(C[k]);if(!bk&&ix<0&&st>=ed-.16){ix=k;st0=st}if(bk&&en<=ed+.16){ix=k;en0=en}o=en}
+if(ix<0){msg('Tidak ada klip di seleksi',2500);return}
+var hc=bk?C[0]:C[ix],nx=bk?C[ix+1]:null,g0=Gp(hc),g1=nx?Gp(nx):1e9,lo=-g0,hi=bk?g1:1e9,its=[];
+if(SC==='a'||RP)[X,O,VO].forEach(function(arr){arr.forEach(function(q){if(bk?q.s<en0-.001:q.s>=st0-.001)its.push([q,q.s])})});
+var x0=e.clientX,mvd=0,dtl=0;tlD=1;
+function mv(ev){var dt=Math.round(Math.max(lo,Math.min(hi,(ev.clientX-x0)/TZ))*20)/20;if(!mvd){if(Math.abs(dt)<.05)return;mvd=1;sv()}
+dtl=dt;hc.gp=g0+dt;if(nx)nx.gp=g1-dt;its.forEach(function(p){p[0].s=Math.max(0,p[1]+dt)});
+t=Math.max(0,Math.min(TT(),bk?en0+dt-.05:st0+dt+.05));var e2=$('vdGt');if(e2)e2.textContent=(dt>=0?'+':'')+dt.toFixed(2)+' dtk';tlLay();scrubSync();dr=1}
+function up(){document.removeEventListener('pointermove',mv);document.removeEventListener('pointerup',up);document.removeEventListener('pointercancel',up);tlD=0;if(mvd){if(bk)SEL.b=en0+dtl;else{SEL.a=st0+dtl;SEL.b=TT()}}all()}
+document.addEventListener('pointermove',mv);document.addEventListener('pointerup',up);document.addEventListener('pointercancel',up)}
 function exQ(Ls){if(!C.length){msg('Tambah video/foto dulu',2500);return}if(xb)return;
 if(!(typeof VideoEncoder!=='undefined'&&typeof AudioEncoder!=='undefined'&&typeof VideoFrame!=='undefined'&&typeof AudioData!=='undefined'&&(window.OfflineAudioContext||window.webkitOfflineAudioContext))){msg('Ekspor rentang butuh ekspor cepat; browser ini belum mendukung.',4500);return}
 if(!Ls.length){msg('Belum ada rentang yang dicentang',2500);return}
 (async function(){var k;for(k=0;k<Ls.length;k++){XR={a:Ls[k].a,b:Ls[k].b,n:Ls[k].n};msg('Ekspor '+(k+1)+' dari '+Ls.length+': '+Ls[k].n,2500);
 try{await xW()}catch(e){var m=e&&e.message;msg(m==='batal'?'Ekspor dibatalkan':'Ekspor gagal ('+m+')',4000);break}}XR=null})()}
-function gc(d){return{k:'g',n:'Celah',a:0,b:+d.toFixed(2),lk:1}}
-function rgCut(g){if(!SEL)return;sv();var a0=SEL.a,b0=SEL.b,o=0,ix=[],D=0;
-C.forEach(function(c,k){var l=L(c);if(o>=a0-.16&&o+l<=b0+.16){ix.push(k);D+=l}o+=l});
+function rgCut(g){if(!SEL)return;var a0=SEL.a,b0=SEL.b,o=0,ix=[],G0=0,a1=0,en=0;
+C.forEach(function(c,k){var gg=Gp(c),st=o+gg,e1=st+L(c);if(st>=a0-.16&&e1<=b0+.16){if(!ix.length){G0=gg;a1=st}ix.push(k);en=e1}o=e1});
 if(!ix.length){msg('Tidak ada klip di dalam seleksi',2500);return}
-var a1=off(ix[0]);
-if(g){}else if(SC==='a'){var cut=function(arr,k){for(var j=arr.length-1;j>=0;j--){var q=arr[j],e=q.s+q[k];if(e<=a1+.001)continue;if(q.s>=a1+D-.001){q.s=Math.max(0,q.s-D);continue}if(q.s>=a1-.001&&e<=a1+D+.001){arr.splice(j,1);continue}if(q.s<a1){q[k]=Math.max(.3,a1-q.s)}else{q[k]=Math.max(.3,e-(a1+D));q.s=a1}}};
+sv();var D=en-a1,nx=C[ix[ix.length-1]+1];
+if(g){if(nx)nx.gp=Gp(nx)+G0+D}
+else{if(SC==='a'){var cut=function(arr,k){for(var j=arr.length-1;j>=0;j--){var q=arr[j],e=q.s+q[k];if(e<=a1+.001)continue;if(q.s>=a1+D-.001){q.s=Math.max(0,q.s-D);continue}if(q.s>=a1-.001&&e<=a1+D+.001){arr.splice(j,1);continue}if(q.s<a1){q[k]=Math.max(.3,a1-q.s)}else{q[k]=Math.max(.3,e-(a1+D));q.s=a1}}};
 cut(X,'d');cut(O,'l');cut(VO,'l');
-var f=function(x){return x<=a1?x:x>=a1+D?x-D:a1};RG=RG.map(function(g){return{n:g.n,ck:g.ck,a:f(g.a),b:f(g.b)}}).filter(function(g){return g.b-g.a>=.2})}
+var f=function(x){return x<=a1?x:x>=a1+D?x-D:a1};RG=RG.map(function(g2){return{n:g2.n,ck:g2.ck,a:f(g2.a),b:f(g2.b)}}).filter(function(g2){return g2.b-g2.a>=.2})}
 else if(RP)rpl(a1+D,-D);
-if(g)C.splice(ix[0],ix.length,gc(D));else for(var j=ix.length-1;j>=0;j--)C.splice(ix[j],1);
+if(nx)nx.gp=Gp(nx)+G0}
+for(var j=ix.length-1;j>=0;j--)C.splice(ix[j],1);
 s=xs=os=vsi=-1;ci=-1;oi=-1;SEL=null;t=Math.min(a1,TT());all()}
-function rgMv(d){if(!SEL||!C.length)return;pa();var bk=SEL.k==='b',ed=bk?SEL.b:SEL.a,o=0,ix=C.length,k;
-for(k=0;k<C.length;k++){if(o>=ed-.16){ix=k;break}o+=L(C[k])}
-if(ix>=C.length||(bk&&ix<=0)){msg('Tidak ada klip di seberang batas seleksi',2500);return}
-var gi=bk?(C[ix].k==='g'?ix:-1):(ix>0&&C[ix-1].k==='g'?ix-1:-1),gend=gi>=0?off(gi)+L(C[gi]):off(ix),ap=d;
-if(d>0){sv();if(gi>=0)C[gi].b=+(C[gi].b+d).toFixed(2);else C.splice(ix,0,gc(d))}
-else{if(gi<0){msg('Tidak ada celah di batas seleksi, tidak bisa didekatkan',3500);return}sv();var gl=L(C[gi]);ap=-Math.min(-d,gl);if(gl+ap<.2){ap=-gl;C.splice(gi,1)}else C[gi].b=+(C[gi].b+ap).toFixed(2)}
-if(SC==='a'||RP)rpl(gend,ap);
-var Tn=TT();if(bk){SEL.b=Math.min(SEL.b,Tn);t=SEL.b}else{SEL.a=Math.max(0,Math.min(Tn,SEL.a+ap));SEL.b=Tn;t=Math.min(SEL.a,Tn)}
-s=-1;ci=-1;all()}
 function rgAct(a,b){var i=+b.dataset.n,T=TT();
 if(a==='rgck'){if(RG[i])RG[i].ck=b.checked?1:0;asvQ();return}
 if(a==='rgrp'){RP=b.checked?1:0;return}
@@ -3107,14 +3114,18 @@ if(a==='rgout'){var a0=rgIn===null?0:rgIn,b0=Math.min(t,T);if(b0-a0<.2){msg('Out
 if(a==='rgj'&&RG[i]){pa();t=Math.min(RG[i].a,T);all();return}
 if(a==='rgnm'&&RG[i]){var nm=prompt('Nama rentang',RG[i].n);if(nm&&nm.trim()){sv();RG[i].n=nm.trim().slice(0,40);all()}return}
 if(a==='rgdl'&&RG[i]){sv();RG.splice(i,1);all();return}
-if(a==='rgbf'||a==='rgaf'){if(!C.length){msg('Tambah video/foto dulu',2500);return}pa();var bf=a==='rgbf';if((bf&&t<=.05)||(!bf&&t>=T-.05)){msg('Geser playhead ke dalam video dulu',2500);return}sv();spAt(t);SEL=bf?{a:0,b:t,k:'b'}:{a:t,b:T,k:'a'};all();return}
+if(a==='rgfw'||a==='rgbw'){if(!C.length){msg('Tambah video/foto dulu',2500);return}pa();var fw=a==='rgfw';
+if(C[s]){SEL=fw?{a:off(s),b:T,k:'a'}:{a:0,b:off(s)+L(C[s]),k:'b'}}
+else{if((fw&&t>=T-.05)||(!fw&&t<=.05)){msg('Pilih klip atau geser playhead ke dalam video dulu',2500);return}sv();spAt(t);SEL=fw?{a:t,b:T,k:'a'}:{a:0,b:t,k:'b'}}
+all();return}
 if(a==='rgsn'){SEL=null;all();return}
 if(a==='rgdel'){rgCut();return}
 if(a==='rggd'){rgCut(1);return}
-if(a==='rgga'){if(!C.length){msg('Tambah video/foto dulu',2500);return}var dg=parseFloat(String(prompt('Lama celah (detik)','1')).replace(',','.'));if(!(dg>=.2&&dg<=30)){msg('Isi angka 0,2 sampai 30 detik',2500);return}pa();sv();var pg=at(t),ig;if(pg.l<=.15)ig=pg.i;else if(L(C[pg.i])-pg.l<=.15)ig=pg.i+1;else{spAt(t);ig=pg.i+1}var og=off(ig);if(RP)rpl(og,dg);C.splice(ig,0,gc(dg));s=ig;xs=os=vsi=-1;ci=-1;t=og;all();return}
-if(a==='rgrap'){var gs=[];if(C[s]&&C[s].k==='g')gs=[s];else C.forEach(function(c,k){if(c.k==='g')gs.push(k)});if(!gs.length){msg('Tidak ada celah di track video',2500);return}sv();for(var q=gs.length-1;q>=0;q--){var kk=gs[q];if(RP)rpl(off(kk)+L(C[kk]),-L(C[kk]));C.splice(kk,1)}s=-1;ci=-1;t=Math.min(t,TT());all();msg(gs.length+' celah dirapatkan',2000);return}
-if(a==='rgmv'){var dv=b.dataset.v;if(dv==='p'){dv=parseFloat(String(prompt('Jarak (detik)','1')).replace(',','.'));if(!(dv>=.1&&dv<=60)){msg('Isi angka 0,1 sampai 60 detik',2500);return}}else dv=+dv;rgMv(dv*(+b.dataset.sg));return}
-if(a==='rgfc'){if(!C[s]){msg('Pilih satu klip dulu di daftar Track video',2500);return}pa();SEL={a:off(s),b:T,k:'a'};all();return}
+if(a==='rgga'){if(!C.length){msg('Tambah video/foto dulu',2500);return}pa();var pg=at(t);if(!pg){msg('Playhead sudah berada di jarak kosong',2500);return}var ig;
+if(pg.l<=.15)ig=pg.i;else if(L(C[pg.i])-pg.l<=.15){if(pg.i===C.length-1){msg('Tidak ada klip sesudah playhead',2500);return}ig=pg.i+1}else ig=-1;
+sv();if(ig<0){spAt(t);ig=pg.i+1}var og=off(ig);if(SC==='a'||RP)rpl(og,1);C[ig].gp=Gp(C[ig])+1;s=-1;ci=-1;t=og+1;all();return}
+if(a==='rgrap'){var gs=[];if(C[s]&&Gp(C[s])>0)gs=[s];else C.forEach(function(c,k){if(Gp(c)>0)gs.push(k)});if(!gs.length){msg('Tidak ada jarak kosong antar klip',2500);return}
+sv();for(var q=gs.length-1;q>=0;q--){var kk=gs[q];if(SC==='a'||RP)rpl(off(kk),-Gp(C[kk]));C[kk].gp=0}ci=-1;t=Math.min(t,TT());all();msg(gs.length+' jarak dirapatkan',2000);return}
 if(a==='rgsx'){if(SEL)exQ([{a:SEL.a,b:SEL.b,n:'bagian'}]);return}
 if(a==='rgx1'){if(RG[i])exQ([RG[i]]);return}
 if(a==='rgxk'){exQ(RG.filter(function(g){return g.ck}));return}}
@@ -3134,12 +3145,12 @@ pa();if(['spl','dup','ml','mr','fit','del','delx','rma','addt','delo','delvo'].i
 if(a==='pk'){vsi=-1;s=i;xs=os=-1;t=off(i)}
 else if(a==='px'){xs=i;s=os=-1;t=Math.min(TT(),X[i].s+.05)}
 else if(a==='addt'){X.push({t:'Teks baru',s:Math.min(t,Math.max(TT()-.5,0)),d:3,z:80,y:.5,c:'#ffffff'});xs=X.length-1;s=os=-1;t=X[xs].s+.05}
-else if(a==='spl'&&c){var p=at(t);if(p&&p.i===s&&p.l>.15&&L(c)-p.l>.15){var sr=c.k==='v'?sw(c,p.l):c.a+p.l,vm=vsp(c,p.l),c2=Object.assign({},c);c2.a=sr;c2.v1=vm;c.b=sr;c.v2=vm;C.splice(s+1,0,c2);ci=-1}else msg('Geser playhead ke dalam klip terpilih dulu',2500)}
-else if(a==='dup'&&c){C.splice(s+1,0,Object.assign({},c));s++;ci=-1}
+else if(a==='spl'&&c){var p=at(t);if(p&&p.i===s&&p.l>.15&&L(c)-p.l>.15){var sr=c.k==='v'?sw(c,p.l):c.a+p.l,vm=vsp(c,p.l),c2=Object.assign({},c);c2.a=sr;c2.v1=vm;c2.gp=0;c.b=sr;c.v2=vm;C.splice(s+1,0,c2);ci=-1}else msg('Geser playhead ke dalam klip terpilih dulu',2500)}
+else if(a==='dup'&&c){var dpc=Object.assign({},c);dpc.gp=0;C.splice(s+1,0,dpc);s++;ci=-1}
 else if(a==='ml'&&c&&s>0){C.splice(s-1,0,C.splice(s,1)[0]);s--;ci=-1}
 else if(a==='mr'&&c&&s<C.length-1){C.splice(s+1,0,C.splice(s,1)[0]);s++;ci=-1}
 else if(a==='fit'&&c){c.f=!c.f}
-else if(a==='del'&&c){if(RP||c.k==='g'){rpl(off(s)+L(c),-L(c));C.splice(s,1)}else C.splice(s,1,gc(L(c)));s=-1;ci=-1;t=Math.min(t,TT())}
+else if(a==='del'&&c){var nxd=C[s+1];if(RP)rpl(off(s)+L(c),-L(c));if(nxd)nxd.gp=Gp(nxd)+Gp(c)+(RP?0:L(c));C.splice(s,1);s=-1;ci=-1;t=Math.min(t,TT())}
 else if(a==='delx'&&X[xs]){X.splice(xs,1);xs=-1}
 else if(a==='rma'){M=null;au.pause();au.removeAttribute('src')}
 else if(a==='po'){os=i;s=xs=-1;kf=0;t=Math.min(TT(),O[i].s+.05)}
@@ -3184,7 +3195,7 @@ function shell(){return '<div class="vd" data-t="'+vt+'"><div class="vfl"><div c
 '<div class="vr"><span id="vdT" class="note">0:00.0 / 0:00.0</span><button class="b g ic" type="button" data-a="un" aria-label="Urung"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"/></svg></button><button class="b g ic" type="button" data-a="re" aria-label="Ulang"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z"/></svg></button><button class="b g" type="button" data-a="pvz" aria-label="Ukuran preview">&#8661;</button><button class="b g" type="button" data-a="lay" aria-label="Posisi timeline">&#9707;</button></div><div class="tlw" id="vdTl"><div class="tls" id="vdTs"><div class="tli" id="vdTi"></div></div><div class="tlp"></div></div></div>'+
 '<div class="vn">'+[['k','Klip','\u25AD'],['o','Overlay','\u25E7'],['t','Teks','T'],['a','Audio','\u266A'],['e','Ekspor','\u21E9']].map(function(a,i){return '<button type="button" data-a="tab" data-i="'+a[0]+'" class="'+(a[0]===vt?'on':'')+'"><em>'+a[2]+'</em>'+a[1]+'</button>'}).join('')+'</div>'+
 '<div class="vsc" id="vdSc">'+
-'<section data-q="k"><div id="vdPj"></div><div class="vr"><button class="b g" type="button" data-a="addv">Tambah video/foto</button></div>'+lbUi()+avUi()+sl('tz','Zoom timeline (px per dtk)',4,60,TZ)+'<p class="vlb">Rentang In/Out dan seleksi</p><div id="vdRg"></div><p class="vlb">Track video</p><div id="vdL" class="vl"></div></section>'+
+'<section data-q="k"><div id="vdPj"></div><div class="vr"><button class="b g" type="button" data-a="addv">Tambah video/foto</button></div><p class="vlb">Ripple select: geser klip ke depan atau belakang</p><div id="vdRs"></div>'+lbUi()+avUi()+sl('tz','Zoom timeline (px per dtk)',4,60,TZ)+'<p class="vlb">Rentang In/Out</p><div id="vdRg"></div><p class="vlb">Track video</p><div id="vdL" class="vl"></div></section>'+
 '<section data-q="o"><div class="vr"><button class="b g" type="button" data-a="addo">Tambah overlay</button></div><p class="vlb">Track overlay</p><div id="vdO" class="vl"></div></section>'+
 '<section data-q="t"><div class="vr"><button class="b g" type="button" data-a="addt">Tambah teks</button><button class="b g" type="button" data-a="srtx">Ekspor SRT</button><button class="b g" type="button" data-a="srti">Impor SRT</button></div><p class="vlb">Video Ranking (top-list)</p><div class="vr"><select id="vdRkS"><option value="t">Gaya TikTok (angka di kiri, video di bingkai)</option><option value="n">Klasik (angka besar di tengah)</option></select></div><div class="vr"><input id="vdRkT" type="text" placeholder="Judul, mis. RANKING FUNNIEST|*FAIL MOMENTS* EVER" style="flex:1;min-width:0"><input id="vdRkJ" type="color" value="#ff2d9a" title="Warna baris 2 judul"></div><div class="vr"><select id="vdRkO"><option value="d">Hitung mundur (#N ke #1)</option><option value="u">Naik (#1 ke #N)</option></select><input id="vdRkC" type="color" value="#ffd23f"></div><label class="vs"><span><input type="checkbox" id="vdRkN" checked> Tulis nama klip (caption)</span></label><div class="vr"><button class="b" type="button" data-a="rkgo">Buat ranking dari klip</button><button class="b g" type="button" data-a="rkdel">Hapus ranking</button></div><div class="vr"><button class="b" type="button" data-a="rkshuf">Acak urutan klip</button></div><p class="note">Ketuk klip di bawah untuk mengunci posisinya. Klip terkunci tidak ikut teracak. Overlay, voice-over, dan teks biasa ikut pindah bersama klipnya; musik latar tetap. Ranking dibuat ulang otomatis.</p><div id="vdRkL" class="vl"></div><p class="vlb">Atur tulisan ranking</p><div id="vdRkA"></div><p class="note">Gaya TikTok: judul 2 baris di pita atas. Pakai | untuk memisah baris. Bungkus kata dengan *bintang* untuk mewarnainya dengan kotak warna di samping judul (mis. *FAIL MOMENTS*); tanpa bintang, seluruh baris 2 yang berwarna. Video di tengah bingkai dengan latar buram, angka berwarna di kiri, caption muncul saat klipnya diputar. Di panel klip ada tombol Isi/Pas bingkai. Warna angka di atas hanya untuk gaya Klasik. Satu klip = satu peringkat, urutan mengikuti track video. Pilih rasio kanvas dulu di tab Ekspor, baru buat ranking. Hasilnya teks biasa yang bisa disunting di track teks.</p><p class="vlb">Track teks</p><div id="vdX" class="vl"></div></section>'+
 '<section data-q="a"><div class="vr"><button class="b g" type="button" data-a="adda">Tambah musik</button><button class="b g" type="button" data-a="addvo">Voice-over (file)</button><button class="b" type="button" data-a="rec" id="vdRc">Rekam voice-over</button></div><p class="note">Rekam voice-over memakai mikrofon sambil timeline berputar. Pakai earphone agar suara video tidak ikut terekam.</p><p class="vlb">Track audio</p><div id="vdA" class="vl"></div><div id="vdM"></div></section>'+
@@ -3564,7 +3575,7 @@ else{if(!C.length){msg('Tambah video dulu, atau pakai "Buat dari template".',400
 if(AV.cs>=.5){var out=[],o=0,B=AV.sy&&M&&M.bt&&M.bt.length>2?M.bt:null;
 C.forEach(function(c){var l=L(c);if(c.k!=='v'||c.v1||c.v2||l<AV.cs*1.5){out.push(c);o+=l;return}
 var pts=[o],q;if(B){B.forEach(function(z){if(z>o+.3&&z<o+l-.3&&z-pts[pts.length-1]>=AV.cs)pts.push(z)})}else{for(q=o+AV.cs;q<o+l-AV.cs*.5;q+=AV.cs)pts.push(q)}
-pts.push(o+l);for(var j=0;j<pts.length-1;j++){var d=Object.assign({},c,{a:c.a+pts[j]-o,b:c.a+pts[j+1]-o});if(j)delete d.tr;out.push(d)}o+=l});
+pts.push(o+l);for(var j=0;j<pts.length-1;j++){var d=Object.assign({},c,{a:c.a+pts[j]-o,b:c.a+pts[j+1]-o});if(j){delete d.tr;d.gp=0}out.push(d)}o+=l});
 var tr=['zoom','fade','slide'];out.forEach(function(c,i){if(i&&c.k==='v'){c.tr=tr[i%3];c.td=.25}});C=out}
 var T=TT();if(T<5){msg('Durasi video minimal 5 detik.',3500);return}C.forEach(function(c){if(c.gen)return;if(AV.bz===true&&AV.sy&&M&&M.bt&&M.bt.length>2)c.bz=1;else delete c.bz});
 X=X.filter(function(x){return!x.au});
