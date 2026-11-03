@@ -2488,8 +2488,8 @@ if(ac&&ac.state!=='running'){try{pr.push(Promise.race([ac.resume(),new Promise(f
 if(ms.length){msg('Menyiapkan audio…',2500);pr.push(Promise.all(ms.map(abDec)))}
 if(!pr.length){go1(cb);return}var k=++gtk;Promise.all(pr).catch(function(){}).then(function(){if(k===gtk)go1(cb)})}
 function fin(){var r=rec;if(rcm&&rcm.state==='recording')rcm.stop();t=TT();pa();dr=1;if(r&&r.state!=='inactive')setTimeout(function(){r.stop()},250)}
-function draw0(){rkVB=null;var RB=rkFr(),HC=RB?RB.cy:H/2,p=at(t);if(p){var c0=C[p.i];if(c0.k==='v'&&!PXB&&(vv.readyState<2||ci!==p.i)&&sk++<45){dr=1;return}sk=0}cx.setTransform(PSC,0,0,PSC,0,0);cx.fillStyle='#000';cx.fillRect(0,0,W,H);
-if(p){var c=C[p.i];if(c.gen)avPaint(c,p.l);var v=c.k==='v',px=v&&PXB&&!xb,o=px?PXB:v?vv:c.im,w=px?PXB.width:v?vv.videoWidth:c.im.naturalWidth,h=px?PXB.height:v?vv.videoHeight:c.im.naturalHeight;
+function draw0(){rkVB=null;var RB=rkFr(),HC=RB?RB.cy:H/2,p=at(t);if(p){var c0=C[p.i];if(c0.k==='v'&&!PXB&&!(xb&&XFB)&&(vv.readyState<2||ci!==p.i)&&sk++<45){dr=1;return}sk=0}cx.setTransform(PSC,0,0,PSC,0,0);cx.fillStyle='#000';cx.fillRect(0,0,W,H);
+if(p){var c=C[p.i];if(c.gen)avPaint(c,p.l);var v=c.k==='v',PB=xb?XFB:PXB,px=v&&PB,o=px?PB:v?vv:c.im,w=px?PB.width:v?vv.videoWidth:c.im.naturalWidth,h=px?PB.height:v?vv.videoHeight:c.im.naturalHeight;
 if(w&&h&&(!v||px||vv.readyState>1)){var r=RB?(c.fi?Math.max(W/w,RB.h/h):Math.min(W/w,RB.h/h)):c.f?Math.min(W/w,H/h):Math.max(W/w,H/h);if(RB){rkVB={x0:Math.max(0,(W-w*r)/2),x1:Math.min(W,(W+w*r)/2),y0:Math.max(RB.y0,HC-h*r/2),y1:Math.min(RB.y0+RB.h,HC+h*r/2)};if(rkVB.y1-rkVB.y0>=RB.h*.995)rkVB=null}var tn=c.tr,td=c.td||.5,e1=function(x){x=Math.max(0,Math.min(1,x));return x*x*(3-2*x)},al=1,ox=0,sz=1,wp=1,nx=C[p.i+1];
 if(tn){var ta=e1(p.l/td);if(tn==='fade')al=ta;else if(tn==='slide')ox=(1-ta)*W;else if(tn==='zoom'){al=ta;sz=1+(1-ta)*.4}else if(tn==='wipe')wp=ta}
 if(nx&&nx.tr==='fade')al=Math.min(al,e1((L(c)-p.l)/(nx.td||.5)));
@@ -2823,8 +2823,67 @@ function xPg(p,tx){var b=$('vdPb'),e=$('vdPt');if(b)b.style.width=Math.max(0,Mat
 function xPgE(){var e=$('vdPg');if(e)e.innerHTML=''}
 function xLd(el,u){return new Promise(function(res,rej){var f=function(){el.removeEventListener('loadeddata',f);el.removeEventListener('error',g);res()},g=function(){el.removeEventListener('loadeddata',f);el.removeEventListener('error',g);rej(new Error('video'))};el.addEventListener('loadeddata',f);el.addEventListener('error',g);el.src=u;el.load()})}
 function xSk(el,x){return new Promise(function(res){if(el.readyState>=2&&Math.abs(el.currentTime-x)<.0005){res();return}var d=0,to,f=function(){if(d)return;d=1;el.removeEventListener('seeked',f);clearTimeout(to);res()};to=setTimeout(f,1500);el.addEventListener('seeked',f);try{el.currentTime=Math.max(0,(el.duration>0)?Math.min(x,el.duration-.001):x)}catch(e){f()}})}
-async function xPf(){var p=at(t),a;
-if(p){var c=C[p.i];if(c.k==='v'){if(ci!==p.i||vv.readyState<2){ci=p.i;if(vv.src!==c.u||vv.readyState<2)await xLd(vv,c.u)}await xSk(vv,sw(c,p.l))}else ci=p.i}
+/*xdec-awal*/
+var XDM={},XD=null,XFB=null,XCV=null,XCX=null,XDBAD={};
+function xdBx(dv,s,e){var r=[];while(s+8<=e){var z=dv.getUint32(s),t=String.fromCharCode(dv.getUint8(s+4),dv.getUint8(s+5),dv.getUint8(s+6),dv.getUint8(s+7)),h=8;if(z===1){if(s+16>e)break;z=dv.getUint32(s+8)*4294967296+dv.getUint32(s+12);h=16}else if(z===0)z=e-s;if(z<h||s+z>e)break;r.push({t:t,s:s+h,e:s+z});s+=z}return r}
+function xdF(dv,b,t){return xdBx(dv,b.s,b.e).filter(function(x){return x.t===t})[0]}
+async function xdMoov(f){var pos=0,n=f.size;while(pos+8<=n){var h=new DataView(await f.slice(pos,pos+16).arrayBuffer()),z=h.getUint32(0),t=String.fromCharCode(h.getUint8(4),h.getUint8(5),h.getUint8(6),h.getUint8(7)),hd=8;if(z===1&&h.byteLength>=16){z=h.getUint32(8)*4294967296+h.getUint32(12);hd=16}else if(z===0)z=n-pos;if(z<hd)return null;if(t==='moov'){if(z>3e8)return null;return new DataView(await f.slice(pos+hd,pos+z).arrayBuffer())}pos+=z}return null}
+function xdParse(dv){var tr=xdBx(dv,0,dv.byteLength).filter(function(b){return b.t==='trak'}),i;for(i=0;i<tr.length;i++){var r=xdTrak(dv,tr[i]);if(r)return r}return null}
+function xdTrak(dv,tk){var md=xdF(dv,tk,'mdia'),th=xdF(dv,tk,'tkhd');if(!md||!th)return null;var hd=xdF(dv,md,'hdlr');if(!hd||dv.getUint32(hd.s+8)!==0x76696465)return null;
+var mh=xdF(dv,md,'mdhd'),mi=xdF(dv,md,'minf'),sb=mi&&xdF(dv,mi,'stbl');if(!mh||!sb)return null;var ts=dv.getUint32(mh.s+(dv.getUint8(mh.s)===1?20:12));if(!ts)return null;
+var mo=th.s+(dv.getUint8(th.s)===1?52:40),ma=dv.getInt32(mo),mb=dv.getInt32(mo+4),rot=((Math.round(Math.atan2(mb,ma)*180/Math.PI)%360)+360)%360;if(rot%90)rot=0;
+var sd=xdF(dv,sb,'stsd');if(!sd)return null;var en=xdBx(dv,sd.s+8,sd.e)[0];if(!en||['avc1','avc3','hvc1','hev1'].indexOf(en.t)<0)return null;
+var codec='',desc=null;xdBx(dv,en.s+78,en.e).forEach(function(k){var u=new Uint8Array(dv.buffer,dv.byteOffset+k.s,k.e-k.s);
+if(k.t==='avcC'&&u.length>4){codec='avc1.'+[u[1],u[2],u[3]].map(function(x){return ('0'+x.toString(16)).slice(-2)}).join('');desc=new Uint8Array(u)}
+else if(k.t==='hvcC'&&u.length>=13){var sp=u[1]>>6,tier=(u[1]>>5)&1,pi=u[1]&31,cf=((u[2]<<24)|(u[3]<<16)|(u[4]<<8)|u[5])>>>0,rv=0,q,cb=[];for(q=0;q<32;q++)if((cf>>>q)&1)rv=(rv|(1<<(31-q)))>>>0;
+for(q=6;q<12;q++)cb.push(u[q]);while(cb.length>1&&cb[cb.length-1]===0)cb.pop();
+codec=(en.t==='hev1'?'hev1.':'hvc1.')+['','A','B','C'][sp]+pi+'.'+rv.toString(16)+'.'+(tier?'H':'L')+u[12]+cb.map(function(x){return '.'+x.toString(16).toUpperCase()}).join('');desc=new Uint8Array(u)}});
+if(!codec||!desc)return null;
+var st=xdF(dv,sb,'stts'),cs=xdF(dv,sb,'ctts'),sz=xdF(dv,sb,'stsz'),sc=xdF(dv,sb,'stsc'),co=xdF(dv,sb,'stco'),c64=xdF(dv,sb,'co64'),ss=xdF(dv,sb,'stss');
+if(!st||!sz||!sc||!(co||c64))return null;
+var N=dv.getUint32(sz.s+8),fs=dv.getUint32(sz.s+4),szs=new Uint32Array(N),q,m,k=0,a=0;for(q=0;q<N;q++)szs[q]=fs||dv.getUint32(sz.s+12+q*4);
+var dts=new Float64Array(N),ne=dv.getUint32(st.s+4);for(q=0;q<ne&&k<N;q++){var cn=dv.getUint32(st.s+8+q*8),dl=dv.getUint32(st.s+12+q*8);for(m=0;m<cn&&k<N;m++){dts[k++]=a;a+=dl}}
+var cto=new Float64Array(N);if(cs){var nc=dv.getUint32(cs.s+4);k=0;for(q=0;q<nc&&k<N;q++){var c2=dv.getUint32(cs.s+8+q*8),of=dv.getInt32(cs.s+12+q*8);for(m=0;m<c2&&k<N;m++)cto[k++]=of}}
+var mt=0,ed=xdF(dv,tk,'edts'),el=ed&&xdF(dv,ed,'elst');
+if(el){var v1=dv.getUint8(el.s)===1,n2=dv.getUint32(el.s+4),p2=el.s+8;for(q=0;q<n2;q++){var tm=v1?dv.getInt32(p2+8)*4294967296+dv.getUint32(p2+12):dv.getInt32(p2+4);if(tm>=0){mt=tm;break}p2+=v1?20:12}}
+var nco=dv.getUint32((co||c64).s+4),nsc=dv.getUint32(sc.s+4),smp=[],idx=0,ci,j,keys=null;
+if(ss){keys={};var nk=dv.getUint32(ss.s+4);for(q=0;q<nk;q++)keys[dv.getUint32(ss.s+8+q*4)-1]=1}
+for(ci=0;ci<nco&&idx<N;ci++){var off=co?dv.getUint32(co.s+8+ci*4):dv.getUint32(c64.s+8+ci*8)*4294967296+dv.getUint32(c64.s+12+ci*8),spc=0;
+for(j=0;j<nsc;j++){if(dv.getUint32(sc.s+8+j*12)<=ci+1)spc=dv.getUint32(sc.s+12+j*12);else break}
+for(j=0;j<spc&&idx<N;j++){smp.push({o:off,z:szs[idx],k:keys?!!keys[idx]:true,p:Math.round((dts[idx]+cto[idx]-mt)*1e6/ts)});off+=szs[idx];idx++}}
+if(smp.length!==N)return null;return {codec:codec,desc:desc,rot:rot,smp:smp}}
+function xdClose(){if(XD){XD.buf.forEach(function(f){try{f.close()}catch(e){}});XD.buf=[];try{XD.dec.close()}catch(e){}XD=null}}
+function xdOn(){var e=$('vdXD');return!e||e.checked}
+function xdWake(d,ms){return new Promise(function(r){var dn=0,f=function(){if(!dn){dn=1;d.w=null;r()}};d.w=f;setTimeout(f,ms)})}
+async function xdOpen(u){var f=FB[u];if(!f||XDBAD[u]||typeof VideoDecoder==='undefined'||typeof EncodedVideoChunk==='undefined')return null;
+var m=XDM[u];if(m===undefined){m=XDM[u]=(async function(){try{var mv=await xdMoov(f);if(!mv)return null;var r=xdParse(mv);if(!r||!r.smp.length||!r.smp[0].k)return null;
+var cfg={codec:r.codec,description:r.desc,optimizeForLatency:true},sp=await VideoDecoder.isConfigSupported(cfg);if(!sp||!sp.supported)return null;
+var ps=r.smp.map(function(x,i){return i}).sort(function(a,b){return r.smp[a].p-r.smp[b].p}),kf=[];r.smp.forEach(function(x,i){if(x.k)kf.push(i)});
+return {cfg:cfg,smp:r.smp,ps:ps,kf:kf,rot:r.rot}}catch(e){return null}})()}
+var info=await m;if(!info)return null;xdClose();
+var d={u:u,f:f,i:info,buf:[],fed:-1,pk:-1/0,eof:0,err:null,w:null,wb:null,wo:0,wl:0};
+d.dec=new VideoDecoder({output:function(fr){d.buf.push(fr);if(d.w)d.w()},error:function(e){d.err=e;if(d.w)d.w()}});d.dec.configure(info.cfg);XD=d;return d}
+function xdSeek(d,kf){d.buf.forEach(function(f){try{f.close()}catch(e){}});d.buf=[];d.dec.reset();d.dec.configure(d.i.cfg);d.fed=kf;d.pk=-1/0;d.eof=0}
+async function xdRd(d,o,n){if(!(d.wb&&d.wo<=o&&o+n<=d.wo+d.wl)){var b=new Uint8Array(await d.f.slice(o,o+Math.max(n,4194304)).arrayBuffer());d.wb=b;d.wo=o;d.wl=b.length;if(b.length<n)throw new Error('data')}return d.wb.subarray(o-d.wo,o-d.wo+n)}
+function xdPrune(d,us){var k=-1,i;for(i=0;i<d.buf.length;i++)if(d.buf[i].timestamp<=us)k=i;for(i=0;i<k;i++){try{d.buf[i].close()}catch(e){}}if(k>0)d.buf.splice(0,k)}
+function xdCv(fr,rot){var w=fr.displayWidth,h=fr.displayHeight,a=rot%180?h:w,b=rot%180?w:h;if(!XCV){XCV=document.createElement('canvas');XCX=XCV.getContext('2d')}if(XCV.width!==a||XCV.height!==b){XCV.width=a;XCV.height=b}
+XCX.setTransform(1,0,0,1,0,0);XCX.clearRect(0,0,a,b);XCX.translate(a/2,b/2);XCX.rotate(rot*Math.PI/180);XCX.drawImage(fr,-w/2,-h/2,w,h);return XCV}
+async function xDec(c,w){var d=XD&&XD.u===c.u?XD:await xdOpen(c.u);if(!d)return false;var I=d.i,smp=I.smp,ps=I.ps,us=Math.round(w*1e6),lo=0,hi=ps.length-1,ti=0,mid;
+while(lo<=hi){mid=(lo+hi)>>1;if(smp[ps[mid]].p<=us){ti=mid;lo=mid+1}else hi=mid-1}
+var tp=smp[ps[ti]].p,tj=ps[ti],kf=0;lo=0;hi=I.kf.length-1;while(lo<=hi){mid=(lo+hi)>>1;if(I.kf[mid]<=tj){kf=I.kf[mid];lo=mid+1}else hi=mid-1}
+if(d.fed<0||kf>d.fed||tp<d.pk)xdSeek(d,kf);
+var g=0,i;
+while(true){if(d.err)throw d.err;xdPrune(d,us);var has=false;for(i=0;i<d.buf.length;i++)if(d.buf[i].timestamp>us){has=true;break}
+if(has||d.eof)break;
+if(d.fed<smp.length){var n=0;while(n<4&&d.fed<smp.length){var s0=smp[d.fed],by=await xdRd(d,s0.o,s0.z);d.dec.decode(new EncodedVideoChunk({type:s0.k?'key':'delta',timestamp:s0.p,data:by}));d.fed++;n++}
+while(d.dec.decodeQueueSize>12){await xdWake(d,20);if(d.err)throw d.err}await xdWake(d,12)}
+else{await d.dec.flush();d.eof=1}
+if(++g>6000)throw new Error('dekoder macet')}
+if(d.err)throw d.err;xdPrune(d,us);var fr=d.buf[0];if(!fr)return false;d.pk=fr.timestamp;XFB=xdCv(fr,I.rot);return true}
+/*xdec-akhir*/
+async function xPf(){var p=at(t),a;XFB=null;
+if(p){var c=C[p.i];if(c.k==='v'){var fx=false;if(!c.rv&&xdOn()){try{fx=await xDec(c,sw(c,p.l))}catch(e){XDBAD[c.u]=1;xdClose();XFB=null;fx=false}}
+if(fx)ci=-1;else{if(ci!==p.i||vv.readyState<2){ci=p.i;if(vv.src!==c.u||vv.readyState<2)await xLd(vv,c.u)}await xSk(vv,sw(c,p.l))}}else ci=p.i}
 a=act().filter(function(o){return o.k==='v'})[0];
 if(a){var i=O.indexOf(a);if(oi!==i||ov.readyState<2){oi=i;if(ov.src!==a.u||ov.readyState<2)await xLd(ov,a.u)}await xSk(ov,Math.min(Math.max(0,t-a.s),a.d||1e9))}else oi=-1}
 function xFade(g,st,l,v,fi,fo){fi=Math.min(fi||0,l);fo=Math.min(fo||0,l);if(fi>0){g.setValueAtTime(0,st);g.linearRampToValueAtTime(v,st+fi)}else g.setValueAtTime(v,st);if(fo>0){g.setValueAtTime(v,Math.max(st+fi,st+l-fo));g.linearRampToValueAtTime(0,st+l)}}
@@ -2840,7 +2899,7 @@ if(M&&FB[M.u]){b=await dc(M.u);if(b)src(b,0,0,T,mv,M.fi,M.fo,1,1,M.dk)}
 var buf=await oc.startRendering();return {buf:buf,fail:fail}}
 async function xW(){
 var TF=TT(),rg0=XR?Math.max(0,Math.min(XR.a,TF-.1)):0,rg1=XR?Math.min(TF,Math.max(XR.b,rg0+.1)):TF,T=rg1-rg0,cv0=cv,fps=+($('vdFp')||{}).value||30,n=Math.max(1,Math.ceil(T*fps)),t00=t,ferr=null,wl=null,vs=[],as=[],vd=null,ad=null,ve=null,ae=null,t1,i,k;
-mk();pa();xb=1;xc=0;fullRes();vv.onloadeddata=null;ov.onloadeddata=null;ci=-1;oi=-1;xPgI();
+mk();pa();xb=1;xc=0;XFB=null;xdClose();fullRes();vv.onloadeddata=null;ov.onloadeddata=null;ci=-1;oi=-1;xPgI();
 try{
 try{wl=await navigator.wakeLock.request('screen')}catch(e){}
 xPg(0,'Memeriksa dukungan codec…');
@@ -2875,7 +2934,7 @@ xPg(.97,'Menyusun file MP4…');
 var bl=xMux(W,H,vs,as,vd,ad),a=document.createElement('a');a.href=URL.createObjectURL(bl);a.download='video-pressures'+(XR?'-'+String(XR.n).replace(/[^\w\-]+/g,'_'):'')+'.mp4';document.body.appendChild(a);a.click();a.remove();
 msg('Ekspor selesai ('+(bl.size/1048576).toFixed(1)+' MB)'+(mx.fail?' · audio '+mx.fail+' file tidak terbaca':''),4500)
 }finally{
-xb=0;xc=0;FR=0;try{pvA()}catch(e){}try{if(ve&&ve.state!=='closed')ve.close()}catch(e){}try{if(ae&&ae.state!=='closed')ae.close()}catch(e){}
+xb=0;xc=0;FR=0;try{xdClose()}catch(e){}XFB=null;try{pvA()}catch(e){}try{if(ve&&ve.state!=='closed')ve.close()}catch(e){}try{if(ae&&ae.state!=='closed')ae.close()}catch(e){}
 try{if(wl)wl.release()}catch(e){}
 t=t00;ci=-1;oi=-1;xPgE();dr=1;try{sync(1)}catch(e){}}}
 function ex(){XR=null;if(!C.length){msg('Tambah video/foto dulu',2500);return}if(xb)return;
@@ -2906,7 +2965,7 @@ return {to:function(w){P=w;if(!B)go()},done:function(){B=0;clearTimeout(T);if(P!
 function upTlS(){if(tlq)return;tlq=requestAnimationFrame(function(){tlq=0;upTl()})}
 function scrubSync(){var u=pxFrame();sync(u?3:2);clearTimeout(scT);scT=setTimeout(function(){PXB=null;pxGen++;pxQ2=null;sync(1)},220)}
 function vib(n){try{navigator.vibrate&&navigator.vibrate(n)}catch(e){}}
-function snapT(x,T){var a=[0,T],o=0,i,th=Math.max(.04,T*.012),bd=th,best=null;C.forEach(function(c){o+=Gp(c);a.push(o);o+=L(c);a.push(o)});X.forEach(function(q){a.push(q.s,q.s+q.d)});O.forEach(function(q){a.push(q.s,q.s+q.l)});VO.forEach(function(q){a.push(q.s,q.s+q.l)});if(M&&M.bt)M.bt.forEach(function(q){a.push(q)});
+function snapT(x,T){if(!SNP){snN=-1;snF=0;return x}var a=[0,T],o=0,i,th=Math.max(.04,T*.012),bd=th,best=null;MKR.forEach(function(q){a.push(q)});C.forEach(function(c){o+=Gp(c);a.push(o);o+=L(c);a.push(o)});X.forEach(function(q){a.push(q.s,q.s+q.d)});O.forEach(function(q){a.push(q.s,q.s+q.l)});VO.forEach(function(q){a.push(q.s,q.s+q.l)});if(M&&M.bt)M.bt.forEach(function(q){a.push(q)});
 for(i=0;i<a.length;i++){var d=Math.abs(a[i]-x);if(d<bd){bd=d;best=a[i]}}
 if(best===null){snN=-1;snF=0;return x}if(snN!==best)vib(8);snN=best;snF=1;return Math.min(best,T)}
 function acc(k,t,st,body){return '<button type="button" class="gh" data-a="atog" data-i="'+k+'" aria-expanded="'+(AC[k]?'true':'false')+'"><span>'+t+'</span><i>'+st+'</i><em>'+(AC[k]?'\u25B4':'\u25BE')+'</em></button>'+(AC[k]?body:'')}
@@ -3301,7 +3360,7 @@ function shell(){return '<div class="vd" data-t="'+vt+'"><div class="vfl"><div c
 '<div id="vdE"></div>'+
 '<section data-q="e"><p class="vlb">Rasio kanvas</p><div class="vr"><select id="vdR"><option value="720x1280">9:16</option><option value="1280x720">16:9</option><option value="720x720">1:1</option><option value="864x1080">4:5</option></select></div>'+
 '<div class="vr"><button class="b g" type="button" data-a="svp">Simpan sekarang</button><button class="b g" type="button" data-a="opn">Daftar proyek</button></div>'+
-'<div id="vdRx"></div><p class="vlb">Kualitas dan fps ekspor</p><div class="vr"><select id="vdQ"><option value="3">Hemat (3 Mbps)</option><option value="6" selected>Normal (6 Mbps)</option><option value="10">Tinggi (10 Mbps)</option><option value="16">Maksimal (16 Mbps)</option></select><select id="vdFp"><option value="24">24 fps</option><option value="30" selected>30 fps</option><option value="60">60 fps</option></select></div><div class="vr"><button class="b" type="button" data-a="exp">Ekspor video (cepat)</button><button class="b g" type="button" data-a="expr">Rekam real-time</button></div><div id="vdPg"></div><p class="note">Ekspor cepat dirender per frame menjadi MP4, tidak perlu menunggu sepanjang durasi. Biarkan layar menyala dan jangan pindah halaman. Jika browser belum mendukung, otomatis memakai rekam real-time.</p></section></div>'+
+'<div id="vdRx"></div><p class="vlb">Kualitas dan fps ekspor</p><div class="vr"><select id="vdQ"><option value="3">Hemat (3 Mbps)</option><option value="6" selected>Normal (6 Mbps)</option><option value="10">Tinggi (10 Mbps)</option><option value="16">Maksimal (16 Mbps)</option></select><select id="vdFp"><option value="24">24 fps</option><option value="30" selected>30 fps</option><option value="60">60 fps</option></select></div><label class="vs"><span><input type="checkbox" id="vdXD" checked> Percepat ekspor dengan dekoder langsung (H.264/HEVC)</span></label><div class="vr"><button class="b" type="button" data-a="exp">Ekspor video (cepat)</button><button class="b g" type="button" data-a="expr">Rekam real-time</button></div><div id="vdPg"></div><p class="note">Ekspor cepat dirender per frame menjadi MP4, tidak perlu menunggu sepanjang durasi. Biarkan layar menyala dan jangan pindah halaman. Jika browser belum mendukung, otomatis memakai rekam real-time.</p></section></div>'+
 '<input id="vdF1" type="file" accept="video/*,image/*" multiple hidden><input id="vdF2" type="file" accept="audio/*" hidden><input id="vdF3" type="file" accept="video/*,image/*" hidden><input id="vdF4" type="file" accept="audio/*" hidden><input id="vdF5" type="file" accept=".srt,text/plain,application/x-subrip" hidden></div>'}
 var AV=(function(){try{return JSON.parse(localStorage.getItem('vid_auto')||'{}')}catch(e){return{}}})();
 var AVEV=[],AVEVEND=12.15;
