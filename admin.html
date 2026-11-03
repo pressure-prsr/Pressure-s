@@ -307,7 +307,7 @@ body.vm #tabs{display:none!important}body.vm header{padding:6px 10px;gap:6px}bod
 .tb span{min-width:0;overflow:hidden;text-overflow:ellipsis}.tb.c{top:16px;height:34px}.tb.o{top:54px;height:14px;border-left-color:#e0a030;font-size:9px}.tb.x{top:70px;height:14px;border-left-color:#3bb273;font-size:9px}.tb.v{top:86px;height:14px;border-left-color:#d6506a;font-size:9px}.tb.m{top:86px;height:14px;border-left-color:var(--mu);font-size:9px;opacity:.7}
 .tb.g{top:2px;height:11px;border-left-color:#7a5cff;font-size:9px;opacity:.65}
 .vgs{height:56px;margin:8px 0;border:1px dashed var(--ac);border-radius:10px;display:flex;align-items:center;justify-content:center;touch-action:none;user-select:none;-webkit-user-select:none;font-weight:600;color:var(--mu);background:var(--so)}
-.rsb{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}.rsb .b{flex:1 1 0;min-width:0;padding:10px 6px;font-size:13px}.rsb .rsh{flex:1 0 100%;display:flex;align-items:center;gap:8px;justify-content:space-between;font-size:12px;font-weight:600;color:var(--mu)}.rsb .rsh .b{flex:0 0 auto;padding:6px 14px}.rsb .vgs{flex:1 0 100%;height:48px;margin:0;border-style:solid;color:var(--tx,inherit)}.tb.c.rsel{outline:2px solid var(--ac);outline-offset:-2px;box-shadow:inset 0 0 0 999px rgba(255,170,0,.20)}
+.rsb{display:flex;flex-wrap:wrap;gap:8px;margin-top:6px}.rsb .b{flex:1 1 0;min-width:0;padding:10px 6px;font-size:13px}.rsb .rsh{flex:1 0 100%;display:flex;align-items:center;gap:8px;justify-content:space-between;font-size:12px;font-weight:600;color:var(--mu)}.rsb .rsh .b{flex:0 0 auto;padding:6px 14px}.rsb .vgs{flex:1 0 100%;height:48px;margin:0;border-style:solid;color:var(--tx,inherit)}.tb.c.rsel{outline:2px solid var(--ac);outline-offset:-2px;box-shadow:inset 0 0 0 999px rgba(255,170,0,.20)}#vdRkL .rkr{display:flex;gap:6px;align-items:center;margin:4px 0}#vdRkL .rkr label,#vdRkL .rkr .rkn{flex:1;min-width:0;display:flex;gap:8px;align-items:center;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-size:13px}#vdRkL .rkr input{width:20px;height:20px;flex:none;margin:0}#vdRkL .rkr .b{flex:none;width:auto;min-width:0;padding:8px 10px;font-size:12px}#vdRkL .rkr.off .rkn{opacity:.5}#vdRkL .vr .b{flex:1;width:auto}
 .tb.on{z-index:2;padding:0 20px;border-color:var(--ac);box-shadow:inset 0 0 0 1px var(--ac)}.tb.on.o,.tb.on.x,.tb.on.v{padding:0 16px}
 .th{position:absolute;top:0;bottom:0;width:18px;display:flex;align-items:center;justify-content:center;background:var(--ac);touch-action:none;cursor:ew-resize}.th::after{content:'';width:2px;height:45%;border-radius:2px;background:rgba(255,255,255,.9)}.th.l{left:0}.th.r{right:0}.tb.sm .th{width:11px}
 .tlp{position:absolute;left:50%;top:0;bottom:0;width:2px;margin-left:-1px;background:#ff3b5c;z-index:5;pointer-events:none}.tlp::before{content:'';position:absolute;top:0;left:-4px;border-left:5px solid transparent;border-right:5px solid transparent;border-top:7px solid #ff3b5c}
@@ -2580,20 +2580,20 @@ ls.forEach(function(l,k){var r0=rkSeg(l,!mk&&k===1);if(!r0.seg.length)return;var
 r0.seg.forEach(function(g){var off=rmc.measureText(r0.full.slice(0,g.st)).width;X.push({t:g.t,s:0,d:T,z:+zz.toFixed(1),x:+((x0+off)/W).toFixed(4),y:ty[k],c:g.c?ac:'#ffffff',ff:fam,al:'l',sw:.16,sk:'#000000',mw:.98,rk:1})})})}
 function rkMap(x,RB,VB){var vh=VB.y1-VB.y0,vw=VB.x1-VB.x0;if(vh<=0||vw<=0)return x;var k=vh/RB.h;if(k>.995&&VB.x0<1)return x;var u=Math.min(W,H)/720,kz=Math.max(k,Math.min(1,22*u/x.z)),por=H>=W*1.1,nx=por?.06:.04,f=(x.y*H-RB.y0)/RB.h,q={},a;for(a in x)q[a]=x[a];q.y=(VB.y0+f*vh)/H;q.z=x.z*kz;q.x=(VB.x0+(nx+((x.x==null?nx:x.x)-nx)*kz)*W)/W;if(x.mw)q.mw=Math.max(.15,VB.x1/W-q.x-.03);return q}
 function rkFr(){for(var i=0;i<X.length;i++)if(X[i].rf)return{y0:X[i].rf[0]*H,h:(X[i].rf[1]-X[i].rf[0])*H,cy:(X[i].rf[0]+X[i].rf[1])/2*H};return null}
-function rkTk(){var n=C.length,dn=$('vdRkO').value!=='u',nm=$('vdRkN').checked,por=H>=W*1.1,u=Math.min(W,H)/720,hd=($('vdRkT').value||'').trim().toUpperCase(),ac=$('vdRkJ').value||'#ff2d9a',y0=por?.16:.2,y1=por?.71:.97,T=+Math.max(.5,TT()).toFixed(2),fam='Bebas Neue',i;
+function rkTk(){var RL=rkRanked(),n=RL.length,dn=$('vdRkO').value!=='u',nm=$('vdRkN').checked,por=H>=W*1.1,u=Math.min(W,H)/720,hd=($('vdRkT').value||'').trim().toUpperCase(),ac=$('vdRkJ').value||'#ff2d9a',y0=por?.16:.2,y1=por?.71:.97,T=+Math.max(.5,TT()).toFixed(2),fam='Bebas Neue',i;
 X.push({t:'Bingkai video (ranking)',s:0,d:T,z:24,y:-1,c:'#000000',rk:1,rf:[y0,y1]});
 if(hd){var ls=hd.split(/\s*\|\s*|\n/).filter(Boolean);
 if(ls.length===1&&hd.indexOf('*')<0&&hd.length>14){var ws=hd.split(/\s+/),bk=-1,bd=1e9;for(i=1;i<ws.length;i++){var dd=Math.abs(ws.slice(0,i).join(' ').length-ws.slice(i).join(' ').length);if(dd<bd){bd=dd;bk=i}}if(bk>0)ls=[ws.slice(0,bk).join(' '),ws.slice(bk).join(' ')]}
 if(ls.length>2)ls=[ls[0],ls.slice(1).join(' ')];
 rkTl(ls,ac,hd.indexOf('*')>=0,T,por,u,fam)}
 var bh=(y1-y0)*H,rh=bh/n,zb=Math.min(120*u,rh*.7),za=Math.min(zb*1.35,rh*.95),zc=Math.min(46*u,Math.max(24,rh*.45)),nx=por?.06:.04,E2=[];
-C.forEach(function(c,k){var r=dn?n-k:k+1;E2.push({r:r,st:off(k),d:Math.max(.5,L(c)),c:c,yr:y0+(r-.5)/n*(y1-y0)})});
+C.forEach(function(c,k){var r=RL.indexOf(c)+1;if(r<1)return;E2.push({r:r,st:off(k),d:Math.max(.5,L(c)),c:c,yr:y0+(r-.5)/n*(y1-y0)})});
 var cl=function(r){return RKP[(r-1)%RKP.length]};
 E2.slice().sort(function(a,b){return a.r-b.r}).forEach(function(e){X.push({t:''+e.r,s:0,d:T,z:+zb.toFixed(1),x:nx,y:+e.yr.toFixed(4),c:cl(e.r),ff:fam,al:'l',sw:.2,sk:'#1a1030',cb:1,rk:1,rn:e.r,rt:'n'})});
 E2.forEach(function(e){X.push({t:''+e.r,s:+e.st.toFixed(2),d:+e.d.toFixed(2),z:+za.toFixed(1),x:nx,y:+e.yr.toFixed(4),c:cl(e.r),ff:fam,al:'l',sw:.2,sk:'#1a1030',an:'pop',ad:.45,cb:1,rk:1,rn:e.r,rt:'n'})});
 if(nm)E2.forEach(function(e){var q=rkNm(e.c.n);if(!q)return;var xc=nx+(String(e.r).length*za*.5+za*.18)/W;X.push({t:q,s:+e.st.toFixed(2),d:+e.d.toFixed(2),z:+zc.toFixed(1),x:+xc.toFixed(3),y:+e.yr.toFixed(4),c:'#ffffff',ff:fam,al:'l',up:1,sw:.2,sk:'#000000',mw:+Math.max(.2,.82-xc).toFixed(3),an:'slide',ad:.35,cb:1,rk:1,rn:e.r,rt:'c',nw:+((String(e.r).length*za*.5+za*.18)/W).toFixed(4)})})}
 
-var RKO={g:{n:{},c:{}},n:{}},rkSel='g|n',rkLu=0;
+var RKO={g:{n:{},c:{}},n:{}},rkSel='g|n',rkLu=0,RQ=[],RN=0,RKS={};
 function rkNorm(o){var r={g:{n:{},c:{}},n:{}};if(o&&o.g){r.g.n=o.g.n||{};r.g.c=o.g.c||{}}if(o&&o.n)r.n=o.n;return r}
 function rkAp(q){if(!q||!q.rn)return q;var g=RKO.g[q.rt]||{},nn=RKO.n[q.rn]||{},i=nn[q.rt]||{};if(g.h||i.h)return null;
 var sc=(g.z||100)/100*((i.z||100)/100),dx=((g.x||0)+(i.x||0))/100,dy=((g.y||0)+(i.y||0))/100,o={},a,cl=i.c||g.c;
@@ -2602,7 +2602,7 @@ if(q.rt==='c'){var ns=(RKO.g.n.z||100)/100*(((nn.n||{}).z||100)/100),cp=(q.nw||0
 if(cl)o.c=cl;return o}
 function rkTgt(){var a=rkSel.split('|');if(a[0]==='g')return RKO.g[a[1]]||(RKO.g[a[1]]={});var r=RKO.n[a[1]]||(RKO.n[a[1]]={});return r[a[2]]||(r[a[2]]={})}
 function rkMig(){var nu={};X.forEach(function(x){if(x.rk&&!x.rn&&!x.ff&&!x.rf){var m=/^#(\d+)$/.exec(x.t);if(m){x.rn=+m[1];x.rt='n';nu[Math.round(x.s*100)]=x.rn}}});X.forEach(function(x){if(x.rk&&!x.rn&&!x.ff&&!x.rf&&x.an==='naik'){var k=Math.round((x.s-.15)*100),r=nu[k]||nu[k-1]||nu[k+1];if(r){x.rn=r;x.rt='c'}}})}
-function rkSetUi(){var e=$('vdRkA');if(!e)return;rkMig();var n=C.length,r,o='<option value="g|n">Grup: semua angka</option><option value="g|c">Grup: semua caption</option>';
+function rkSetUi(){var e=$('vdRkA');if(!e)return;rkMig();var n=Math.max(1,rkRanked().length),r,o='<option value="g|n">Grup: semua angka</option><option value="g|c">Grup: semua caption</option>';
 for(r=1;r<=n;r++)o+='<option value="n|'+r+'|n">Angka #'+r+'</option><option value="n|'+r+'|c">Caption #'+r+'</option>';
 var a=rkSel.split('|');if(a[0]==='n'&&+a[1]>n)rkSel='g|n';var t=rkTgt(),isG=rkSel.charAt(0)==='g';
 var rw=function(k,l,mn,mx,df,u){var v=t[k]==null?df:t[k];return '<label class="vs"><span>'+l+': <b id="rka_'+k+'v">'+v+'</b>'+u+'</span><input type="range" data-rk="'+k+'" min="'+mn+'" max="'+mx+'" value="'+v+'" style="width:100%"></label>'};
@@ -2614,7 +2614,7 @@ rw('z','Ukuran',30,300,100,'%')+rw('x','Geser kanan/kiri',-50,50,0,'%')+rw('y','
 '<p class="note">Grup berlaku untuk semua nomor; pengaturan per nomor ditambahkan di atasnya (ukuran dikali, geseran dijumlah). Tulisan boleh menutupi video. Tersimpan di proyek dan tetap ada saat ranking dibuat ulang atau klip diacak. Berlaku untuk angka dan caption di gaya TikTok maupun Klasik; judul tidak ikut.</p>';
 var kk=n+'|'+rkSel+'|'+JSON.stringify(t);if(e.__k===kk&&e.firstChild)return;e.__k=kk;e.__h=h;e.innerHTML=h;var se=$('rkaT');se.value=rkSel;
 se.onchange=function(){rkSel=this.value;rkSetUi()};
-var up=function(){dr=1;e.__k=C.length+'|'+rkSel+'|'+JSON.stringify(rkTgt());if(typeof asvQ==='function')asvQ()};
+var up=function(){dr=1;e.__k=n+'|'+rkSel+'|'+JSON.stringify(rkTgt());if(typeof asvQ==='function')asvQ()};
 var push=function(){if(Date.now()-rkLu>800)sv();rkLu=Date.now()};
 e.oninput=function(ev){var el=ev.target,k=el.getAttribute('data-rk');if(!k)return;var t2=rkTgt();
  if(k==='z'||k==='x'||k==='y'){push();t2[k]=+el.value;var l=$('rka_'+k+'v');if(l)l.textContent=el.value;up()}
@@ -2625,7 +2625,54 @@ e.onchange=function(ev){var el=ev.target,k=el.getAttribute('data-rk');if(!k)retu
 e.onclick=function(ev){var el=ev.target.closest('button[data-rk]');if(!el)return;var k=el.getAttribute('data-rk');
  if(k==='rt'){sv();var a2=rkSel.split('|');if(a2[0]==='g')RKO.g[a2[1]]={};else if(RKO.n[a2[1]])delete RKO.n[a2[1]][a2[2]];e.__k='';up();e.__k='';rkSetUi();msg('Pengaturan dikembalikan',1500)}
  else if(k==='ra'){sv();RKO=rkNorm(null);e.__k='';up();e.__k='';rkSetUi();msg('Semua pengaturan ranking direset',1800)}}}
-function rkLk(){rkSetUi();var e=$('vdRkL');if(!e)return;e.innerHTML=C.map(function(c,i){return '<button type="button" class="vc'+(c.lk?' on':'')+'" data-a="lktog" data-i="'+i+'"><b>'+(c.lk?'\uD83D\uDD12 ':'')+(i+1)+'</b> '+E(rkNm(c.n)||c.n)+'<small>'+(c.lk?'terkunci':'bebas')+'</small></button>'}).join('')||'<p class="note">Belum ada klip.</p>'}
+function rkDn(){var e=$('vdRkO');return!e||e.value!=='u'}
+function rkList(){var seen={},ids={};C.forEach(function(c){if(!c.rq||seen[c.rq])c.rq='q'+Math.random().toString(36).slice(2,9);seen[c.rq]=1;ids[c.rq]=c});
+RQ=RQ.filter(function(id,i){return ids[id]&&RQ.indexOf(id)===i});var bs=C.slice();if(rkDn())bs.reverse();bs.forEach(function(c){if(RQ.indexOf(c.rq)<0)RQ.push(c.rq)});
+return RQ.map(function(id){return ids[id]})}
+function rkIncl(){return rkList().filter(function(c){return c.ri!==0})}
+function rkRanked(){var a=rkIncl();return RN>0?a.slice(0,RN):a}
+function rkRebuild(){if(X.some(function(x){return x.rk})){if(!rkRanked().length){X=X.filter(function(x){return!x.rk});xs=-1;all();return}
+if(C.some(function(c){return Gp(c)>0})){all();msg('Rapatkan klip dulu supaya ranking dibuat ulang',3500);return}rkGo(1)}else all()}
+function cReord(nc){sv();pa();var oc=C.slice(),oo=[],o1=0;oc.forEach(function(c){oo.push(o1);o1+=L(c)});var tot=o1,no=[],o2=0;nc.forEach(function(c){no.push(o2);o2+=L(c)});
+var mvT=function(s0){if(s0>=tot-1e-6)return s0;var k=0,a;for(a=0;a<oc.length;a++)if(s0>=oo[a]-1e-6)k=a;return Math.max(0,+(s0-oo[k]+no[nc.indexOf(oc[k])]).toFixed(2))};
+X.forEach(function(x){if(!x.rk)x.s=mvT(x.s)});O.forEach(function(x){x.s=mvT(x.s)});VO.forEach(function(x){x.s=mvT(x.s)});
+var sc=C[s];C=nc;s=sc?C.indexOf(sc):-1;xs=os=vsi=-1;vai=-1;try{if(va)va.pause()}catch(e){}ci=-1;t=0;rkRebuild()}
+function rkqSelIx(){var r=[];C.forEach(function(c,i){if(c.rq&&RKS[c.rq])r.push(i)});return r}
+function rkqAct(a,b){var i=+b.dataset.i,c=C[i],k,ix;
+if(a==='rkq_n'){var v=+b.dataset.n;if(v<0){var r=prompt('Jumlah peringkat (angka 1 sampai 99)',RN||5);if(r===null)return;v=Math.round(+r);if(!(v>=1&&v<=99)){msg('Isi angka 1 sampai 99',2500);return}}sv();RN=v;rkRebuild();return}
+if(a==='rkq_in'){if(!c)return;sv();c.ri=c.ri===0?1:0;rkRebuild();return}
+if(a==='rkq_sel'){if(!c)return;rqKey(c);if(b.checked)RKS[c.rq]=1;else delete RKS[c.rq];rkLk();return}
+if(a==='rkq_sa'){C.forEach(function(c2){RKS[rqKey(c2)]=1});rkLk();return}
+if(a==='rkq_sn'){RKS={};rkLk();return}
+if(a==='rkq_bi'||a==='rkq_bo'){ix=rkqSelIx();if(!ix.length)return;sv();ix.forEach(function(j){C[j].ri=a==='rkq_bi'?1:0});rkRebuild();return}
+if(a==='rkq_mu'||a==='rkq_md'){ix=rkqSelIx();if(!ix.length)return;if(C.some(function(c2){return Gp(c2)>0})){msg('Rapatkan klip dulu: ada jarak kosong antar klip',3500);return}
+var nc=C.slice(),sl2=function(j){return!!RKS[nc[j].rq]},ch=0,j2;
+if(a==='rkq_mu'){for(j2=1;j2<nc.length;j2++)if(sl2(j2)&&!sl2(j2-1)){var q=nc[j2];nc[j2]=nc[j2-1];nc[j2-1]=q;ch=1}}
+else{for(j2=nc.length-2;j2>=0;j2--)if(sl2(j2)&&!sl2(j2+1)){var q2=nc[j2];nc[j2]=nc[j2+1];nc[j2+1]=q2;ch=1}}
+if(!ch){msg(a==='rkq_mu'?'Sudah paling atas':'Sudah paling bawah',2000);return}cReord(nc);return}
+if(a==='rkq_bd'){ix=rkqSelIx();if(!ix.length)return;if(!confirm('Hapus '+ix.length+' klip terpilih?'))return;sv();pa();
+for(k=ix.length-1;k>=0;k--){var d=ix[k],cd=C[d],nx=C[d+1];if(RP)rpl(off(d)+L(cd),-L(cd));if(nx)nx.gp=Gp(nx)+Gp(cd)+(RP?0:L(cd));C.splice(d,1)}
+RKS={};s=-1;ci=-1;xs=os=vsi=-1;t=Math.min(t,TT());rkRebuild();return}
+if(a==='rkq_up'||a==='rkq_dn'){rkList();var id=b.dataset.q,inc=rkIncl().map(function(c2){return c2.rq}),jj=inc.indexOf(id),tg=inc[jj+(a==='rkq_up'?-1:1)];if(jj<0||!tg)return;sv();var p1=RQ.indexOf(id),p2=RQ.indexOf(tg);RQ[p1]=tg;RQ[p2]=id;rkRebuild();return}
+if(a==='rkq_rt'){sv();RQ=[];rkList();rkRebuild();msg('Urutan peringkat diatur ulang mengikuti track',2500);return}
+if(a==='rkq_rs'){var inc2=rkIncl();if(inc2.length<2){msg('Perlu minimal 2 klip yang dicentang',2500);return}var fr=[];inc2.forEach(function(c2,j){if(!c2.lk)fr.push(j)});if(fr.length<2){msg('Minimal 2 klip yang tidak terkunci',3000);return}
+sv();var pool=fr.map(function(j){return inc2[j]}),sh,tr=0,m;do{sh=pool.slice();for(m=sh.length-1;m>0;m--){var jr=Math.floor(Math.random()*(m+1)),tq=sh[m];sh[m]=sh[jr];sh[jr]=tq}tr++}while(tr<12&&sh.every(function(c2,q3){return c2===pool[q3]}));
+var ni=inc2.slice();fr.forEach(function(j,q3){ni[j]=sh[q3]});var inS={};inc2.forEach(function(c2){inS[c2.rq]=1});var u=0;RQ=RQ.map(function(id2){return inS[id2]?ni[u++].rq:id2});rkRebuild();msg('Urutan peringkat diacak',2200)}}
+function rqKey(c){if(!c.rq)rkList();return c.rq}
+function rkLk(){rkSetUi();var e=$('vdRkL');if(!e)return;var inc=rkIncl(),rl=rkRanked(),ns=0,h='',ids={};C.forEach(function(c){ids[c.rq]=1});for(var z in RKS)if(!ids[z])delete RKS[z];for(z in RKS)ns++;
+var ky=C.map(function(c){return c.rq+(c.ri===0?'0':'1')+(c.lk?'k':'f')+(RKS[c.rq]?'s':'')+(c.n||'')}).join(',')+'|'+RQ.join(',')+'|'+RN;if(e.__q===ky&&e.firstChild)return;e.__q=ky;
+if(!C.length){e.innerHTML='<p class="note">Belum ada klip.</p>';return}
+var pr=[[0,'Semua'],[3,'3'],[5,'5'],[10,'10']],cu=[0,3,5,10].indexOf(RN)<0;h+='<p class="vlb">Jumlah peringkat</p><div class="vr">';
+pr.forEach(function(p){h+='<button type="button" class="b'+(RN===p[0]?'':' g')+'" data-a="rkq_n" data-n="'+p[0]+'">'+p[1]+'</button>'});
+h+='<button type="button" class="b'+(cu?'':' g')+'" data-a="rkq_n" data-n="-1">'+(cu?'Sendiri ('+RN+')':'Sendiri')+'</button></div>';
+if(RN>0&&inc.length>RN)h+='<p class="note" style="color:#e0a800">Dicentang '+inc.length+' klip, melebihi jumlah peringkat '+RN+'. Hanya '+RN+' teratas dari Urutan peringkat yang diberi angka; sisanya tanpa angka.</p>';
+h+='<p class="vlb">Klip: masuk ranking dan pilih banyak</p><div class="vr"><button type="button" class="b g" data-a="rkq_sa">Pilih semua</button><button type="button" class="b g" data-a="rkq_sn">Kosongkan pilihan</button></div>';
+C.forEach(function(c,i){var inn=c.ri!==0;h+='<div class="rkr'+(inn?'':' off')+'"><label><input type="checkbox" data-a="rkq_sel" data-i="'+i+'"'+(RKS[c.rq]?' checked':'')+'><b>'+(i+1)+'</b> <span class="rkn">'+E(rkNm(c.n)||c.n||'')+'</span></label><button type="button" class="b'+(inn?'':' g')+'" data-a="rkq_in" data-i="'+i+'">'+(inn?'Masuk':'Lewati')+'</button><button type="button" class="b'+(c.lk?'':' g')+'" data-a="lktog" data-i="'+i+'">'+(c.lk?'Terkunci':'Kunci')+'</button></div>'});
+if(ns)h+='<p class="note">'+ns+' klip dipilih</p><div class="vr"><button type="button" class="b" data-a="rkq_bi">Masukkan ke ranking</button><button type="button" class="b g" data-a="rkq_bo">Keluarkan</button></div><div class="vr"><button type="button" class="b g" data-a="rkq_mu">Pindah naik</button><button type="button" class="b g" data-a="rkq_md">Pindah turun</button><button type="button" class="b d" data-a="rkq_bd">Hapus</button></div>';
+h+='<p class="vlb">Urutan peringkat</p><div class="vr"><button type="button" class="b g" data-a="rkq_rt">Ikuti urutan track</button><button type="button" class="b g" data-a="rkq_rs">Acak peringkat</button></div>';
+if(!inc.length)h+='<p class="note">Belum ada klip yang masuk ranking.</p>';
+inc.forEach(function(c,j){var out=RN>0&&j>=RN;h+='<div class="rkr'+(out?' off':'')+'"><b>'+(out?'-':'#'+(j+1))+'</b><span class="rkn">'+E(rkNm(c.n)||c.n||'')+'</span><button type="button" class="b g" data-a="rkq_up" data-q="'+c.rq+'">\u25B2</button><button type="button" class="b g" data-a="rkq_dn" data-q="'+c.rq+'">\u25BC</button></div>'});
+e.innerHTML=h}
 function rkShuf(){if(C.length<2){msg('Perlu minimal 2 klip',2500);return}
 var mi=[];C.forEach(function(c,i){if(!c.lk)mi.push(i)});if(mi.length<2){msg('Minimal 2 klip yang tidak terkunci',3000);return}
 sv();pa();var oc=C.slice(),oo=[],o1=0,i;oc.forEach(function(c){oo.push(o1);o1+=L(c)});var tot=o1,pool=mi.map(function(k){return C[k]}),sh,tr=0;
@@ -2636,12 +2683,12 @@ X.forEach(function(x){if(!x.rk)x.s=mvT(x.s)});O.forEach(function(x){x.s=mvT(x.s)
 var sc=C[s];C=nc;s=sc?C.indexOf(sc):-1;xs=os=vsi=-1;vai=-1;try{if(va)va.pause()}catch(e){}ci=-1;t=0;
 if(X.some(function(x){return x.rk})){rkGo(1);msg('Klip diacak, ranking dibuat ulang',2800)}else{msg('Urutan klip diacak',2500);all()}}
 function rkGo(q){if(!C.length){msg('Tambah video/foto dulu',2500);return}if(C.some(function(c){return Gp(c)>0})){msg('Rapatkan klip dulu: ada jarak kosong antar klip',3500);return}
-if(!q)sv();X=X.filter(function(x){return!x.rk});
+if(!rkRanked().length){msg('Centang minimal 1 klip untuk ranking',3000);return}if(!q)sv();X=X.filter(function(x){return!x.rk});
 if($('vdRkS')&&$('vdRkS').value==='t'){rkTk();xs=-1;s=-1;os=-1;t=0;msg(C.length+' peringkat dibuat',2500);all();return}
-var n=C.length,dn=$('vdRkO').value!=='u',col=$('vdRkC').value||'#ffd23f',nm=$('vdRkN').checked,hd=($('vdRkT').value||'').trim().toUpperCase(),por=H>=W*1.1,
+var RL=rkRanked(),n=RL.length,dn=$('vdRkO').value!=='u',col=$('vdRkC').value||'#ffd23f',nm=$('vdRkN').checked,hd=($('vdRkT').value||'').trim().toUpperCase(),por=H>=W*1.1,
 yh=por?.05:.09,yn=por?.17:.3,yt=por?.29:.52,zh=por?64:52,zn=por?200:150,zt=por?56:46;
 if(hd)X.push({t:hd,s:0,d:Math.max(.5,TT()),z:rkFz(hd,zh),y:yh,c:'#ffffff',rk:1});
-C.forEach(function(c,i){var st=off(i),d=Math.max(.5,L(c)),r=dn?n-i:i+1;
+C.forEach(function(c,i){var r=RL.indexOf(c)+1;if(r<1)return;var st=off(i),d=Math.max(.5,L(c));
 X.push({t:'#'+r,s:+st.toFixed(2),d:+d.toFixed(2),z:zn,y:yn,c:col,an:'pop',ad:.45,rk:1,rn:r,rt:'n'});
 var q=nm?rkNm(c.n):'';if(q)X.push({t:q,s:+(st+.15).toFixed(2),d:+Math.max(.5,d-.15).toFixed(2),z:rkFz(q,zt),y:yt,c:'#ffffff',an:'naik',ad:.4,rk:1,rn:r,rt:'c'})});
 xs=-1;s=-1;os=-1;t=0;msg(n+' peringkat dibuat',2500);all()}
@@ -2960,10 +3007,10 @@ if(g&&jg.mv)g.textContent=jg.sp?(jg.dir>0?'\u25B6\u25B6 ':'\u25C0\u25C0 ')+jg.sp
 function end(){if(!jg)return;var j=jg;jg=null;cancelAnimationFrame(j.raf);var g=$('vdJg');if(g)g.hidden=true;if(!j.mv&&performance.now()-j.t0<450){if(j.was)pa();else go()}}
 b.addEventListener('pointerup',end);b.addEventListener('pointercancel',end)}
 /*sesiI-akhir*/
-function snap(){return JSON.stringify({C:C,X:X,O:O,V:VO,RG:RG,M:M,mv:mv,W:W,H:H,RK:RKO},function(k,v){return k==='im'?undefined:v})}
+function snap(){return JSON.stringify({C:C,X:X,O:O,V:VO,RG:RG,M:M,mv:mv,W:W,H:H,RK:RKO,RQ:RQ,RN:RN},function(k,v){return k==='im'?undefined:v})}
 function sv(){U.push(snap());if(U.length>40)U.shift();R=[];asvQ()}
 function rl(a){a.forEach(function(c){if(c.k==='i'){var im=c.gen?avCv(c):IM[c.u];if(!im){im=new Image();im.onload=function(){dr=1};im.src=c.u;IM[c.u]=im}c.im=im}})}
-function ld(j){var o=JSON.parse(j);C=o.C;X=o.X;O=o.O||[];RG=o.RG||[];rgIn=null;SEL=null;VO=o.V||[];vai=-1;vsi=-1;M=o.M;mv=o.mv;W=o.W;H=o.H;RKO=rkNorm(o.RK);rl(C);rl(O);if(M){au.src=M.u;au.load()}else au.removeAttribute('src');rsz();pvA();$('vdR').value=W+'x'+H;s=xs=os=-1;ci=oi=-1;t=Math.min(t,TT());pa();all()}
+function ld(j){var o=JSON.parse(j);C=o.C;X=o.X;O=o.O||[];RG=o.RG||[];rgIn=null;SEL=null;VO=o.V||[];vai=-1;vsi=-1;M=o.M;mv=o.mv;W=o.W;H=o.H;RKO=rkNorm(o.RK);RQ=o.RQ||[];RN=o.RN||0;RKS={};rl(C);rl(O);if(M){au.src=M.u;au.load()}else au.removeAttribute('src');rsz();pvA();$('vdR').value=W+'x'+H;s=xs=os=-1;ci=oi=-1;t=Math.min(t,TT());pa();all()}
 function un(){if(!U.length)return;R.push(snap());ld(U.pop());asvQ()}
 function re(){if(!R.length)return;U.push(snap());ld(R.pop());asvQ()}
 /*autosave-awal*/
@@ -3135,7 +3182,7 @@ if(a==='rgx1'){if(RG[i])exQ([RG[i]]);return}
 if(a==='rgxk'){exQ(RG.filter(function(g){return g.ck}));return}}
 
 function clk(e){var b=e.target.closest('[data-a]');if(!b)return;var a=b.dataset.a,i=+b.dataset.i,c=C[s];
-if(xb&&a!=='xcancel')return;if(a==='xcancel'){xc=1;return}if(a==='play'){pl?pa():go();return}if(a==='auto'){avRun();return}if(a==='autot'){avRun(1);return}if(a==='automus'){avMus();return}if(a==='avapply'){avApply();return}if(a==='avdemo'){avDemo();return}if(a==='avfavs'){avFavS();return}if(a==='avfavl'){avFavL();return}if(a==='autoctl'){var cf=$('avctf');if(cf)cf.click();return}if(a==='autoctl0'){avCtl0();return}if(a==='autheme'){var tf=$('avthf');if(tf)tf.click();return}if(a==='pvz'){pvZ();return}if(a==='vexit'){var be=$('bExit');if(be)be.click();return}if(a==='lay'){LY=LY==='a'?'r':LY==='r'?'l':'a';try{localStorage.setItem('vid_lay',LY)}catch(e){}layApply();msg(['Timeline di bawah preview','Preview kiri, timeline kanan','Preview kanan, timeline kiri'][['a','r','l'].indexOf(LY)],2000);return}if(a==='gtog'){gOpen=!gOpen;upE();return}if(a==='atog'){AC[b.dataset.i]=!AC[b.dataset.i];upE();return}
+if(xb&&a!=='xcancel')return;if(a==='xcancel'){xc=1;return}if(a.indexOf('rkq_')===0){rkqAct(a,b);return}if(a==='play'){pl?pa():go();return}if(a==='auto'){avRun();return}if(a==='autot'){avRun(1);return}if(a==='automus'){avMus();return}if(a==='avapply'){avApply();return}if(a==='avdemo'){avDemo();return}if(a==='avfavs'){avFavS();return}if(a==='avfavl'){avFavL();return}if(a==='autoctl'){var cf=$('avctf');if(cf)cf.click();return}if(a==='autoctl0'){avCtl0();return}if(a==='autheme'){var tf=$('avthf');if(tf)tf.click();return}if(a==='pvz'){pvZ();return}if(a==='vexit'){var be=$('bExit');if(be)be.click();return}if(a==='lay'){LY=LY==='a'?'r':LY==='r'?'l':'a';try{localStorage.setItem('vid_lay',LY)}catch(e){}layApply();msg(['Timeline di bawah preview','Preview kiri, timeline kanan','Preview kanan, timeline kiri'][['a','r','l'].indexOf(LY)],2000);return}if(a==='gtog'){gOpen=!gOpen;upE();return}if(a==='atog'){AC[b.dataset.i]=!AC[b.dataset.i];upE();return}
 if(a==='spd'){var cs=C[s];if(cs&&cs.k==='v'){sv();cs.v1=+b.dataset.x/100;cs.v2=+b.dataset.y/100;t=off(s);pa();ci=-1;all()}return}
 if(a==='flh'||a==='flv'||a==='frst'){var cf=C[s];if(cf){sv();if(a==='frst'){cf.fh=cf.fv=0;cf.zm=1;cf.tx=cf.ty=cf.rt=0}else{var fk=a==='flh'?'fh':'fv';cf[fk]=!cf[fk]}dr=1;upE()}return}if(a==='gpr'||a==='grst'){var cg=C[s];if(cg){sv();var gv=a==='grst'?'':b.dataset.v;cg.gn=gv;cg.g=GP[gv]?Object.assign({},GP[gv]):null;dr=1;upE()}return}
 if(a.indexOf('rg')===0){rgAct(a,b);return}if(a==='exp'){ex();return}if(a==='expr'){exR();return}
@@ -3201,7 +3248,7 @@ function shell(){return '<div class="vd" data-t="'+vt+'"><div class="vfl"><div c
 '<div class="vsc" id="vdSc">'+
 '<section data-q="k"><div id="vdPj"></div><div class="vr"><button class="b g" type="button" data-a="addv">Tambah video/foto</button></div><p class="vlb">Ripple select: geser klip ke depan atau belakang</p><div id="vdRs"></div>'+lbUi()+avUi()+sl('tz','Zoom timeline (px per dtk)',4,60,TZ)+'<p class="vlb">Rentang In/Out</p><div id="vdRg"></div><p class="vlb">Track video</p><div id="vdL" class="vl"></div></section>'+
 '<section data-q="o"><div class="vr"><button class="b g" type="button" data-a="addo">Tambah overlay</button></div><p class="vlb">Track overlay</p><div id="vdO" class="vl"></div></section>'+
-'<section data-q="t"><div class="vr"><button class="b g" type="button" data-a="addt">Tambah teks</button><button class="b g" type="button" data-a="srtx">Ekspor SRT</button><button class="b g" type="button" data-a="srti">Impor SRT</button></div><p class="vlb">Video Ranking (top-list)</p><div class="vr"><select id="vdRkS"><option value="t">Gaya TikTok (angka di kiri, video di bingkai)</option><option value="n">Klasik (angka besar di tengah)</option></select></div><div class="vr"><input id="vdRkT" type="text" placeholder="Judul, mis. RANKING FUNNIEST|*FAIL MOMENTS* EVER" style="flex:1;min-width:0"><input id="vdRkJ" type="color" value="#ff2d9a" title="Warna baris 2 judul"></div><div class="vr"><select id="vdRkO"><option value="d">Hitung mundur (#N ke #1)</option><option value="u">Naik (#1 ke #N)</option></select><input id="vdRkC" type="color" value="#ffd23f"></div><label class="vs"><span><input type="checkbox" id="vdRkN" checked> Tulis nama klip (caption)</span></label><div class="vr"><button class="b" type="button" data-a="rkgo">Buat ranking dari klip</button><button class="b g" type="button" data-a="rkdel">Hapus ranking</button></div><div class="vr"><button class="b" type="button" data-a="rkshuf">Acak urutan klip</button></div><p class="note">Ketuk klip di bawah untuk mengunci posisinya. Klip terkunci tidak ikut teracak. Overlay, voice-over, dan teks biasa ikut pindah bersama klipnya; musik latar tetap. Ranking dibuat ulang otomatis.</p><div id="vdRkL" class="vl"></div><p class="vlb">Atur tulisan ranking</p><div id="vdRkA"></div><p class="note">Gaya TikTok: judul 2 baris di pita atas. Pakai | untuk memisah baris. Bungkus kata dengan *bintang* untuk mewarnainya dengan kotak warna di samping judul (mis. *FAIL MOMENTS*); tanpa bintang, seluruh baris 2 yang berwarna. Video di tengah bingkai dengan latar buram, angka berwarna di kiri, caption muncul saat klipnya diputar. Di panel klip ada tombol Isi/Pas bingkai. Warna angka di atas hanya untuk gaya Klasik. Satu klip = satu peringkat, urutan mengikuti track video. Pilih rasio kanvas dulu di tab Ekspor, baru buat ranking. Hasilnya teks biasa yang bisa disunting di track teks.</p><p class="vlb">Track teks</p><div id="vdX" class="vl"></div></section>'+
+'<section data-q="t"><div class="vr"><button class="b g" type="button" data-a="addt">Tambah teks</button><button class="b g" type="button" data-a="srtx">Ekspor SRT</button><button class="b g" type="button" data-a="srti">Impor SRT</button></div><p class="vlb">Video Ranking (top-list)</p><div class="vr"><select id="vdRkS"><option value="t">Gaya TikTok (angka di kiri, video di bingkai)</option><option value="n">Klasik (angka besar di tengah)</option></select></div><div class="vr"><input id="vdRkT" type="text" placeholder="Judul, mis. RANKING FUNNIEST|*FAIL MOMENTS* EVER" style="flex:1;min-width:0"><input id="vdRkJ" type="color" value="#ff2d9a" title="Warna baris 2 judul"></div><div class="vr"><select id="vdRkO"><option value="d">Hitung mundur (#N ke #1)</option><option value="u">Naik (#1 ke #N)</option></select><input id="vdRkC" type="color" value="#ffd23f"></div><label class="vs"><span><input type="checkbox" id="vdRkN" checked> Tulis nama klip (caption)</span></label><div class="vr"><button class="b" type="button" data-a="rkgo">Buat ranking dari klip</button><button class="b g" type="button" data-a="rkdel">Hapus ranking</button></div><div class="vr"><button class="b" type="button" data-a="rkshuf">Acak urutan klip</button></div><p class="note">Atur jumlah peringkat, centang klip yang masuk ranking, dan atur urutan peringkatnya di bawah. Klip terkunci tidak ikut teracak. Overlay, voice-over, dan teks biasa ikut pindah bersama klipnya; musik latar tetap. Ranking dibuat ulang otomatis.</p><div id="vdRkL" class="vl"></div><p class="vlb">Atur tulisan ranking</p><div id="vdRkA"></div><p class="note">Gaya TikTok: judul 2 baris di pita atas. Pakai | untuk memisah baris. Bungkus kata dengan *bintang* untuk mewarnainya dengan kotak warna di samping judul (mis. *FAIL MOMENTS*); tanpa bintang, seluruh baris 2 yang berwarna. Video di tengah bingkai dengan latar buram, angka berwarna di kiri, caption muncul saat klipnya diputar. Di panel klip ada tombol Isi/Pas bingkai. Warna angka di atas hanya untuk gaya Klasik. Satu klip = satu peringkat, urutan mengikuti Urutan peringkat di bawah (terpisah dari urutan track video); klip yang tidak dicentang tetap di timeline tanpa angka. Pilih rasio kanvas dulu di tab Ekspor, baru buat ranking. Hasilnya teks biasa yang bisa disunting di track teks.</p><p class="vlb">Track teks</p><div id="vdX" class="vl"></div></section>'+
 '<section data-q="a"><div class="vr"><button class="b g" type="button" data-a="adda">Tambah musik</button><button class="b g" type="button" data-a="addvo">Voice-over (file)</button><button class="b" type="button" data-a="rec" id="vdRc">Rekam voice-over</button></div><p class="note">Rekam voice-over memakai mikrofon sambil timeline berputar. Pakai earphone agar suara video tidak ikut terekam.</p><p class="vlb">Track audio</p><div id="vdA" class="vl"></div><div id="vdM"></div></section>'+
 '<div id="vdE"></div>'+
 '<section data-q="e"><p class="vlb">Rasio kanvas</p><div class="vr"><select id="vdR"><option value="720x1280">9:16</option><option value="1280x720">16:9</option><option value="720x720">1:1</option><option value="864x1080">4:5</option></select></div>'+
@@ -4195,6 +4242,13 @@ $("eL").addEventListener("click",function(){var u=new URL(cur.o.file,location.hr
 $("bIm").addEventListener("click",function(){$("jsonin").click()});
 $("jsonin").addEventListener("change",function(){var f=this.files[0],r=new FileReader();this.value="";if(!f)return;r.onload=function(){var j;try{j=JSON.parse(r.result)}catch(e){msg("File JSON tidak valid.");return}if(!j||typeof j!=="object"||!j.items){msg("Ini bukan catalog.json.");return}if(!confirm("Ganti katalog yang sedang dibuka dengan isi file ini? (Bisa dibatalkan dengan tombol undo)"))return;C=j;C.items=C.items||{};C.added=C.added||[];mark();msg("Katalog diimpor. Tekan Publish untuk menayangkan.",6000)};r.readAsText(f)});
 /* ---- Upload file situs (index.html, admin.html, catalog.json) -> antrean Publish ---- */
+function siteName(n,t){var b=String(n||"").toLowerCase();
+ if(b==="index.html"||b==="admin.html"||b==="catalog.json")return b;
+ if(/\.json$/.test(b))return "catalog.json";
+ if(/^index/.test(b))return "index.html";
+ if(/^admin/.test(b))return "admin.html";
+ if(t&&t.indexOf('id="bPub"')>-1&&t.indexOf("api.github.com")>-1)return "admin.html";
+ return ""}
 function siteCheck(n,t){
  if(t===null)return "gagal dibaca";
  if(n==="catalog.json"){var j;try{j=JSON.parse(t)}catch(e){return "JSON tidak valid"}if(!j||typeof j!=="object"||!j.items)return "bukan catalog.json";return ""}
@@ -4211,15 +4265,16 @@ function siteCheck(n,t){
  return ""}
 $("bSite").addEventListener("click",function(){$("sitein").click()});
 $("sitein").addEventListener("change",function(){
- var fs=Array.prototype.slice.call(this.files||[]),ok=["index.html","admin.html","catalog.json"],bad;this.value="";
+ var fs=Array.prototype.slice.call(this.files||[]),bad;this.value="";
  if(!fs.length)return;
- bad=fs.filter(function(f){return ok.indexOf(f.name)<0});
- if(bad.length){msg("Nama file tidak dikenali: "+bad.map(function(f){return f.name}).join(", ")+". Yang boleh: index.html, admin.html, catalog.json.",8000);return}
- Promise.all(fs.map(function(f){return new Promise(function(res){var r=new FileReader();r.onload=function(){res({n:f.name,t:String(r.result)})};r.onerror=function(){res({n:f.name,t:null})};r.readAsText(f)})})).then(function(L){
-  var er=[],hasA=false,names;
+ bad=fs.filter(function(f){return!/\.(html?|json)$/i.test(f.name)});
+ if(bad.length){msg("Nama file tidak dikenali: "+bad.map(function(f){return f.name}).join(", ")+". Yang boleh: file .html atau .json (nama dengan nomor versi seperti admin-v22.html otomatis diganti jadi admin.html).",8000);return}
+ Promise.all(fs.map(function(f){return new Promise(function(res){var r=new FileReader();r.onload=function(){res({n:f.name,o:f.name,t:String(r.result)})};r.onerror=function(){res({n:f.name,o:f.name,t:null})};r.readAsText(f)})})).then(function(L){
+  var er=[],hasA=false,names,seen={};
+  L.forEach(function(x){x.n=siteName(x.o,x.t);if(!x.n){er.push(x.o+": nama tidak dikenali");x.n=x.o;return}if(seen[x.n])er.push(x.o+": bentrok, dua file sama-sama jadi "+x.n);seen[x.n]=1});
   L.forEach(function(x){var e=siteCheck(x.n,x.t);if(e)er.push(x.n+": "+e);if(x.n==="admin.html")hasA=true});
   if(er.length){msg("Dibatalkan, tidak ada yang diantrekan. "+er.join(" | "),10000);return}
-  names=L.map(function(x){return x.n}).join(", ");
+  names=L.map(function(x){return x.o!==x.n?x.o+" \u2192 "+x.n:x.n}).join(", ");
   if(!confirm("Antrekan file ini untuk Publish?\n\n"+names+(hasA?"\n\nPERINGATAN: admin.html akan menggantikan halaman admin ini. Kalau file-nya salah, kamu bisa terkunci dari admin dan harus memperbaikinya lewat GitHub. Pastikan ini versi yang benar.":"")))return;
   L.forEach(function(x){if(x.n==="catalog.json"){C=JSON.parse(x.t);C.items=C.items||{};C.added=C.added||[]}else pend[x.n]=x.t});
   mark();
