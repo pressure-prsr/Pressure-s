@@ -3473,7 +3473,7 @@
    "usd": 10,
    "g": "other",
    "os": "controller",
-   "hide": false,
+   "hide": true,
    "file": "overlays/xbox-series-x-viking-rune-nordic.html",
    "ctl": true,
    "pv": "demo",
