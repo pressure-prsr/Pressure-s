@@ -447,6 +447,20 @@ body.vm .vd .vsc{padding-bottom:calc(120px + env(safe-area-inset-bottom,0px))}
 .vbk i{width:30px;height:30px;border-radius:50%;background:rgba(0,0,0,.58);color:#fff;display:grid;place-items:center;opacity:0;transform:scale(.85);transition:opacity .25s,transform .25s;pointer-events:none}
 .vbk.on i{opacity:1;transform:none}
 .vbk svg{width:18px;height:18px;fill:currentColor}
+
+/* ===== Rapih video v5: preview ringkas, kontrol rata, alat bisa digeser, ruang bawah lega ===== */
+.vd canvas{max-height:26vh}
+.vd .vpv .vr{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:6px;align-items:center}
+.vd .vpv .vr #vdT{grid-column:1/-1;order:-1;text-align:center;font-size:12px;margin:0}
+.vd .vpv .vr .b{min-width:0;padding:0;height:38px;min-height:38px;font-size:12px;overflow:hidden;text-overflow:ellipsis}
+.vd .vqt{flex-wrap:nowrap;overflow-x:auto;touch-action:pan-x;scrollbar-width:none;-webkit-overflow-scrolling:touch;gap:6px;margin:6px 0 0}
+.vd .vqt::-webkit-scrollbar{display:none}
+.vd .vqt .vqx{display:inline-flex;align-items:center;justify-content:center}
+#vdQm,.vd .vqt label.b{display:none}
+.vd .vqt .b{flex:0 0 auto;width:auto;height:34px;min-height:34px;padding:0 12px;font-size:12.5px;border-radius:10px}
+.vd .vnv{border-top:1px dashed var(--ln);padding-top:6px}
+.vd .rsb{margin-top:6px}
+body.vm .vd .vsc{padding-bottom:calc(150px + env(safe-area-inset-bottom,0px))}
 </style></head><body>
 <header><button class="b g" id="bExit" type="button" aria-label="Kembali">←</button><h1><span class="lg">Pressure's </span>Admin</h1><button class="b g" id="bBulk" type="button" aria-label="Bulk price change">%</button><button class="b g" id="bUn" type="button" aria-label="Undo">↶</button><button class="b g" id="bRe" type="button" aria-label="Redo">↷</button><button class="b g" id="bHelp" type="button" aria-label="Peta fitur" title="Peta fitur">?</button><button class="b g" id="bFull" type="button" aria-label="Layar penuh editor" title="Layar penuh editor">⛶</button><button class="b" id="bAdd" type="button">+ Overlay</button><button class="b" id="bPub" type="button" aria-label="Publish" disabled><span class="pl">Publish </span>⬆</button><button class="b g" id="bSet" type="button" aria-label="Settings">⚙</button></header>
 <div id="pmHelp" role="dialog" aria-label="Peta fitur promosi"><div class="hp"><div class="hh"><b>Peta fitur promosi</b><button type="button" id="hpX" aria-label="Tutup">✕</button></div>
@@ -3131,7 +3145,7 @@ RG.forEach(function(g){a.push([g.a,'g'],[g.b,'g'])});MKR.forEach(function(m){a.p
 return a.filter(function(q){return q[1]!==ex})}
 function snT(v,ex,xt,px){if(!SNP)return v;var th=(px||8)/TZ,b=v,bd=th;snPts(ex,xt).forEach(function(q){var d=Math.abs(q[0]-v);if(d<bd){bd=d;b=q[0]}});
 if(b!==v){if(snL!==b){snL=b;try{if(navigator.vibrate)navigator.vibrate(6)}catch(e){}}}else snL=null;return b}
-function pqL(){return 'Prev: '+PQN[PQ]}function pqUi(){var b=$('vdPq');if(b)b.textContent=pqL()}
+function pqL(){return PQN[PQ]}function pqUi(){var b=$('vdPq');if(b)b.textContent=pqL()}
 function snUi(){var b=$('vdSn');if(b)b.textContent=SNP?'Snap \u2713':'Snap'}
 function mkAdd(){if(!C.length){msg('Tambah video/foto dulu',2500);return}var T=TT(),v=+Math.max(0,Math.min(T,t)).toFixed(2),k=-1;
 MKR.forEach(function(m,i){if(k<0&&Math.abs(m-v)<.12)k=i});sv();
@@ -3160,6 +3174,14 @@ s=ii;xs=os=vsi=-1;ci=-1;t=Math.min(TT(),off(ii)+.05);all();msg('Freeze frame 2 d
 v.src=u0;v.load()}
 function rvs(){var c=C[s];if(!c||c.k!=='v'){msg('Pilih klip video dulu',2500);return}sv();c.rv=!c.rv;pa();ci=-1;PXB=null;pxGen++;all();msg(c.rv?'Reverse aktif (suara klip ikut terbalik saat ekspor)':'Reverse mati',2800)}
 /*sesi3c-akhir*/
+function nvx(a){var T=TT(),f=1/30,j,q,c;
+if(a==='nvs'){pa();t=0;all();return 1}
+if(a==='nve'){pa();t=T;all();return 1}
+if(a==='nfb'||a==='nff'){pa();t=Math.max(0,Math.min(T,t+(a==='nff'?f:-f)));all();return 1}
+if(a==='ncp'||a==='ncn'){if(!C.length){msg('Tambah video/foto dulu',2000);return 1}q=at(t);j=Math.max(0,Math.min(C.length-1,(q?q.i:0)+(a==='ncn'?1:-1)));pa();t=off(j);s=j;xs=os=vsi=-1;all();return 1}
+if(a==='mvl'||a==='mvr'){if(s<0||!C[s]){msg('Pilih klip dulu',2000);return 1}j=s+(a==='mvr'?1:-1);if(j<0||j>=C.length){msg('Sudah di ujung',1500);return 1}sv();q=C[s];C[s]=C[j];C[j]=q;s=j;pa();t=off(j);all();asvQ();return 1}
+if(a==='mut'){c=C[s];if(!c||c.k!=='v'){msg('Pilih klip video dulu',2000);return 1}sv();if(c.vol===0){c.vol=c.vp||1;msg('Suara klip menyala',1400)}else{c.vp=c.vol===undefined?1:c.vol;c.vol=0;msg('Klip dibisukan',1400)}dr=1;upM();asvQ();return 1}
+return 0}
 function snap(){return JSON.stringify({C:C,X:X,O:O,V:VO,RG:RG,MKR:MKR,M:M,mv:mv,W:W,H:H,RK:RKO,RQ:RQ,RN:RN},function(k,v){return k==='im'?undefined:v})}
 function sv(){U.push(snap());if(U.length>40)U.shift();R=[];asvQ()}
 function rl(a){a.forEach(function(c){if(c.k==='i'){var im=c.gen?avCv(c):IM[c.u];if(!im){im=new Image();im.onload=function(){dr=1};im.src=c.u;IM[c.u]=im}c.im=im}})}
@@ -3344,7 +3366,7 @@ if(a==='adda'){$('vdF2').click();return}
 if(a==='addo'){$('vdF3').click();return}
 if(a==='dbt'){dbt();return}if(a==='rec'){rec1();return}if(a==='addvo'){$('vdF4').click();return}if(a==='srtx'){srtX();return}if(a==='srti'){$('vdF5').click();return}if(a==='fil'){var fq=C[+b.dataset.i];if(fq){sv();fq.fi=!fq.fi;all()}return}if(a==='lktog'){var lq=C[+b.dataset.i];if(lq){sv();lq.lk=!lq.lk;all();msg(lq.lk?'Klip dikunci':'Kunci dibuka',1200)}return}if(a==='rkshuf'){rkShuf();return}if(a==='rkgo'){rkGo();return}if(a==='rkdel'){rkDel();return}
 if(a==='tab'){vt=b.dataset.i;if(vt==='k')xs=os=-1;else if(vt==='o')s=xs=-1;else if(vt==='t')s=os=-1;else if(vt==='a')xs=os=-1;else s=xs=os=-1;var vd=document.querySelector('.vd');vd.dataset.t=vt;var vsc=$('vdSc');if(vsc)vsc.scrollTop=0;Array.prototype.forEach.call(vd.querySelectorAll('.vn button'),function(q){q.className=q.dataset.i===vt?'on':''});all();return}
-if(a==='frz'){frz();return}if(a==='rvs'){rvs();return}
+if(nvx(a))return;if(a==='frz'){frz();return}if(a==='rvs'){rvs();return}
 if(a==='pvq'){PQ=(PQ+1)%PQV.length;try{localStorage.setItem('vid_pvq',PQ)}catch(e){}pqUi();pvA();dr=1;msg(PQ?'Preview '+PQN[PQ]+' ('+Math.round(PQV[PQ]*100)+'%): lebih ringan, hasil ekspor tetap penuh':'Preview otomatis',2600);return}
 if(a==='snp'){SNP=!SNP;try{localStorage.setItem('vsnp',SNP?'1':'0')}catch(e){}snUi();msg(SNP?'Snapping aktif':'Snapping mati',1400);return}
 if(a==='mka'){mkAdd();return}if(a==='mkp'){mkGo(-1);return}if(a==='mkn'){mkGo(1);return}if(a==='mkc'){mkClr();return}
@@ -3401,7 +3423,7 @@ dr=1};
 cv.onpointerup=cv.onpointercancel=function(e){delete P[e.pointerId];g=Object.keys(P).length===2?two():null;if(!Object.keys(P).length)upE()}}
 function shell(){return '<div class="vd" data-t="'+vt+'"><div class="vfl"><div class="vjg" id="vdJg" hidden></div><button class="vfb pl" type="button" id="vdP" aria-label="Putar"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg></button></div><div class="vpv" id="vdPv"><button class="vbk" type="button" aria-label="Kembali ke daftar tab"><i><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.5 5.5 9 12l6.5 6.5L14 20l-8-8 8-8z"/></svg></i></button><div class="vtop" id="vdTop"><div class="vcw" id="vdCw"><figure class="vfg"><canvas id="vdc" width="'+CW()+'" height="'+CH()+'"></canvas><figcaption id="vdCp1">Sekarang \u00B7 live</figcaption></figure><figure class="vfg" id="vdFg2" hidden><canvas id="vdc2" width="'+(W>>1)+'" height="'+(H>>1)+'"></canvas><figcaption>Sebelum</figcaption></figure></div></div>'+
 '<div class="pr pr-s" id="vdSw"><span>Posisi</span><b>0</b><input id="vdS" type="range" min="0" max="1000" step="1" value="0"></div>'+
-'<div class="vr"><span id="vdT" class="note">0:00.0 / 0:00.0</span><button class="b g ic" type="button" data-a="un" aria-label="Urung"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"/></svg></button><button class="b g ic" type="button" data-a="re" aria-label="Ulang"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z"/></svg></button><button class="b g" type="button" data-a="pvz" aria-label="Ukuran preview">&#8661;</button><button class="b g" type="button" data-a="lay" aria-label="Posisi timeline">&#9707;</button><button class="b g" type="button" data-a="snp" id="vdSn" aria-label="Snapping">'+(SNP?'Snap \u2713':'Snap')+'</button><button class="b g" type="button" data-a="pvq" id="vdPq" aria-label="Kualitas preview">'+pqL()+'</button><button class="b g" type="button" data-a="mka" aria-label="Tambah atau hapus marker">\u25C6</button></div><div class="vqt" id="vdQt"><button class="b g" type="button" data-a="spl">\u2702 Pisah</button><button class="b d" type="button" data-a="del">Hapus</button><input type="checkbox" id="vdQm"><label for="vdQm" class="b g">Alat lain</label><button class="b g vqx" type="button" data-a="dup">Gandakan</button><button class="b g vqx" type="button" data-a="frz">Freeze</button><button class="b g vqx" type="button" data-a="rvs">Reverse</button><button class="b g vqx" type="button" data-a="rgin">In</button><button class="b g vqx" type="button" data-a="rgout">Out</button></div><div class="tlw" id="vdTl"><div class="tls" id="vdTs"><div class="tli" id="vdTi"></div></div><div class="tlp"></div></div><div class="rsb" id="vdRb"></div></div>'+
+'<div class="vr"><span id="vdT" class="note">0:00.0 / 0:00.0</span><button class="b g ic" type="button" data-a="un" aria-label="Urung"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.5 8c-2.65 0-5.05.99-6.9 2.6L2 7v9h9l-3.62-3.62c1.39-1.16 3.16-1.88 5.12-1.88 3.54 0 6.55 2.31 7.6 5.5l2.37-.78C21.08 11.03 17.15 8 12.5 8z"/></svg></button><button class="b g ic" type="button" data-a="re" aria-label="Ulang"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.4 10.6C16.55 8.99 14.15 8 11.5 8c-4.65 0-8.58 3.03-9.96 7.22L3.9 16c1.05-3.19 4.05-5.5 7.6-5.5 1.95 0 3.73.72 5.12 1.88L13 16h9V7l-3.6 3.6z"/></svg></button><button class="b g" type="button" data-a="pvz" aria-label="Ukuran preview">&#8661;</button><button class="b g" type="button" data-a="lay" aria-label="Posisi timeline">&#9707;</button><button class="b g" type="button" data-a="snp" id="vdSn" aria-label="Snapping">'+(SNP?'Snap \u2713':'Snap')+'</button><button class="b g" type="button" data-a="pvq" id="vdPq" aria-label="Kualitas preview">'+pqL()+'</button><button class="b g" type="button" data-a="mka" aria-label="Tambah atau hapus marker">\u25C6</button></div><div class="vqt" id="vdQt"><button class="b g" type="button" data-a="spl">\u2702 Pisah</button><button class="b d" type="button" data-a="del">Hapus</button><input type="checkbox" id="vdQm"><label for="vdQm" class="b g">Alat lain</label><button class="b g vqx" type="button" data-a="dup">Gandakan</button><button class="b g vqx" type="button" data-a="frz">Freeze</button><button class="b g vqx" type="button" data-a="rvs">Reverse</button><button class="b g vqx" type="button" data-a="rgin">In</button><button class="b g vqx" type="button" data-a="rgout">Out</button></div><div class="tlw" id="vdTl"><div class="tls" id="vdTs"><div class="tli" id="vdTi"></div></div><div class="tlp"></div></div><div class="vqt vnv" id="vdNv"><button class="b g" type="button" data-a="nvs">|‹ Awal</button><button class="b g" type="button" data-a="nfb">‹ 1f</button><button class="b g" type="button" data-a="nff">1f ›</button><button class="b g" type="button" data-a="nve">Akhir ›|</button><button class="b g" type="button" data-a="ncp">‹ Klip</button><button class="b g" type="button" data-a="ncn">Klip ›</button><button class="b g" type="button" data-a="mvl">◀ Geser klip</button><button class="b g" type="button" data-a="mvr">Geser klip ▶</button><button class="b g" type="button" data-a="mut">Bisukan</button></div><div class="rsb" id="vdRb"></div></div>'+
 '<div class="vn">'+[['k','Klip','\u25AD'],['o','Overlay','\u25E7'],['t','Teks','T'],['a','Audio','\u266A'],['e','Ekspor','\u21E9']].map(function(a,i){return '<button type="button" data-a="tab" data-i="'+a[0]+'" class="'+(a[0]===vt?'on':'')+'"><em>'+a[2]+'</em>'+a[1]+'</button>'}).join('')+'</div>'+
 '<div class="vsc" id="vdSc">'+
 '<section data-q="k"><div id="vdPj"></div><div class="vr"><button class="b g" type="button" data-a="addv">Tambah video/foto</button></div><p class="vlb">Track video</p><div id="vdL" class="vl"></div>'
