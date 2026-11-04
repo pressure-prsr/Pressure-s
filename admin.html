@@ -533,6 +533,12 @@ body.vm .vd .vpv{max-height:76dvh;overflow-y:auto;overscroll-behavior:contain}
 .vd .vdt button{position:relative;width:14px;height:22px;padding:0;border:0;background:transparent}
 .vd .vdt button::after{content:'';position:absolute;left:4px;top:8px;width:6px;height:6px;border-radius:50%;background:var(--mu);opacity:.45}
 .vd .vdt button.on::after{background:var(--ac);opacity:1}
+
+/* v11: tanpa scrollbar terlihat, halaman tools tidak bergulir vertikal sehingga tombol diam di tempat */
+.vd,.vd *{scrollbar-width:none}
+.vd *::-webkit-scrollbar{display:none;width:0;height:0}
+.vd .vpg{height:auto}
+.vd .vpg>.pg{overflow:visible}
 </style></head><body>
 <header><button class="b g" id="bExit" type="button" aria-label="Kembali">←</button><h1><span class="lg">Pressure's </span>Admin</h1><button class="b g" id="bBulk" type="button" aria-label="Bulk price change">%</button><button class="b g" id="bUn" type="button" aria-label="Undo">↶</button><button class="b g" id="bRe" type="button" aria-label="Redo">↷</button><button class="b g" id="bHelp" type="button" aria-label="Peta fitur" title="Peta fitur">?</button><button class="b g" id="bFull" type="button" aria-label="Layar penuh editor" title="Layar penuh editor">⛶</button><button class="b" id="bAdd" type="button">+ Overlay</button><button class="b" id="bPub" type="button" aria-label="Publish" disabled><span class="pl">Publish </span>⬆</button><button class="b g" id="bSet" type="button" aria-label="Settings">⚙</button></header>
 <div id="pmHelp" role="dialog" aria-label="Peta fitur promosi"><div class="hp"><div class="hh"><b>Peta fitur promosi</b><button type="button" id="hpX" aria-label="Tutup">✕</button></div>
