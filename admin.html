@@ -424,6 +424,7 @@ body[data-v=sl] #bUn,body[data-v=sl] #bRe,body[data-v=sp] #bUn,body[data-v=sp] #
 .xsrc .xsrc-g2{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-top:8px}
 .xsrc .b{min-height:40px;padding:0 6px;font-size:12.5px;font-weight:700;width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 .xsrc .b.g{background:var(--sf);color:var(--ink);border:1px solid var(--ln)}
+.xsrc .b.g.on{background:var(--ac);color:var(--ai);border-color:var(--ac)}
 .xsrc .xsrc-n{font-size:12px;color:var(--mu);margin:4px 0 0}
 .vqt{display:flex;gap:6px;overflow-x:auto;-webkit-overflow-scrolling:touch;touch-action:pan-x;margin:6px 0 0;padding-bottom:2px;scrollbar-width:none}.vqt::-webkit-scrollbar{display:none}.vqt .b{flex:0 0 auto;padding:7px 12px;font-size:12px;min-width:0;white-space:nowrap}
 /* v28: tombol alat & ripple dikecilkan */
@@ -3564,28 +3565,49 @@ msg(fw?'Bagian depan dihapus, timeline dirapatkan':'Bagian belakang dihapus, tim
 var SRC=null,SRM=null;
 function srcOpenSel(){var p,i=-1;if(C[s]&&C[s].k==='v')i=s;else{p=at(Math.min(t,TT()));if(p&&C[p.i].k==='v')i=p.i}if(i<0){msg('Pilih klip video (atau letakkan playhead di klipnya) dulu',3000);return}srcOpen(i)}
 function srcSeek(x){var v=SRC&&SRC.v;if(!v)return;try{v.currentTime=Math.max(0,Math.min(SRC.d,x))}catch(e){}}
-function srcUp(){if(!SRC)return;var d=SRC.d||1,v=SRC.v,p=function(x){return (x/d*100)+'%'},sl=$('xsS');$('xsHa').style.left=p(SRC.a);$('xsHb').style.left=p(SRC.b);sl.style.left=p(SRC.a);sl.style.width=((SRC.b-SRC.a)/d*100)+'%';$('xsP').style.left=p(Math.min(d,v.currentTime||0));
-$('xsN').textContent='In '+fm(SRC.a)+' \u00B7 Out '+fm(SRC.b)+' \u00B7 Panjang '+fm(SRC.b-SRC.a)+' \u00B7 Posisi '+fm(v.currentTime||0)+' / '+fm(d);$('xsPl').textContent=v.paused?'Putar':'Jeda'}
-function srcTick(){if(!SRC)return;var v=SRC.v;if(SRC.rg&&!v.paused&&v.currentTime>=SRC.b){v.pause();srcSeek(SRC.b);SRC.rg=0}srcUp();if(!v.paused)SRC.raf=requestAnimationFrame(srcTick)}
+function srcFm(x){x=Math.max(0,x);var m=Math.floor(x/60),q=(x%60).toFixed(2);return m+':'+(q<10?'0':'')+q}
+function srcSpan(){return SRC.d/SRC.z}
+function srcWin(x){var sp=srcSpan();SRC.w0=Math.max(0,Math.min(SRC.d-sp,x-sp/2))}
+function srcVis(x){return x>=SRC.w0-1e-6&&x<=SRC.w0+srcSpan()+1e-6}
+function srcUp(){if(!SRC)return;var d=SRC.d||1,v=SRC.v,sp=srcSpan(),cu=v.currentTime||0,p=function(x){return Math.max(0,Math.min(100,(x-SRC.w0)/sp*100))+'%'},sl=$('xsS'),ha=$('xsHa'),hb=$('xsHb'),pp=$('xsP');
+ha.style.left=p(SRC.a);hb.style.left=p(SRC.b);ha.style.display=srcVis(SRC.a)?'':'none';hb.style.display=srcVis(SRC.b)?'':'none';pp.style.display=srcVis(cu)?'':'none';pp.style.left=p(cu);
+var l0=Math.max(0,(SRC.a-SRC.w0)/sp*100),l1=Math.min(100,(SRC.b-SRC.w0)/sp*100);sl.style.left=l0+'%';sl.style.width=Math.max(0,l1-l0)+'%';
+$('xsN').textContent='IN '+srcFm(SRC.a)+' \u00B7 OUT '+srcFm(SRC.b)+' \u00B7 Panjang '+srcFm(SRC.b-SRC.a)+' \u00B7 Posisi '+srcFm(cu)+' / '+srcFm(d);$('xsPl').textContent=v.paused?'Putar':'Jeda';$('xsZ').textContent='Zoom \u00D7'+SRC.z;
+[].forEach.call(SRM.querySelectorAll('[data-g]'),function(b){b.classList.toggle('on',b.dataset.g===SRC.tg)})}
+function srcTick(){if(!SRC)return;var v=SRC.v,cu=v.currentTime;if(SRC.rg&&!v.paused&&cu>=SRC.b){v.pause();srcSeek(SRC.b);SRC.rg=0}if(SRC.z>1&&!v.paused&&!srcVis(cu))srcWin(cu);srcUp();if(!v.paused)SRC.raf=requestAnimationFrame(srcTick)}
+function srcNudge(dt){var k=SRC.tg,v=SRC.v,x;v.pause();SRC.rg=0;
+if(k==='a'){SRC.a=Math.max(0,Math.min(SRC.b-.1,SRC.a+dt));x=SRC.a}else if(k==='b'){SRC.b=Math.min(SRC.d,Math.max(SRC.a+.1,SRC.b+dt));x=SRC.b}else x=Math.max(0,Math.min(SRC.d,(v.currentTime||0)+dt));
+srcSeek(x);if(!srcVis(x))srcWin(x);srcUp()}
+function srcPlay(from){var q;SRC.rg=1;srcSeek(from);q=SRC.v.play();if(q&&q.catch)q.catch(function(){})}
 function srcBuild(){if(SRM)return;SRM=document.createElement('div');SRM.className='xsrc';SRM.id='vdSrc';
-SRM.innerHTML='<div class="xsrc-x"><div class="xsrc-d"><b id="xsT">Source</b><button class="b g" type="button" data-s="x">Tutup</button></div><video id="xsV" playsinline preload="auto"></video><div class="xsrc-b" id="xsB"><div class="xsrc-l"></div><div class="xsrc-s" id="xsS"></div><i class="xsrc-h" id="xsHa" data-h="a" data-l="IN"></i><i class="xsrc-h" id="xsHb" data-h="b" data-l="OUT"></i><i class="xsrc-p" id="xsP"></i></div><p class="xsrc-n" id="xsN"></p><div class="xsrc-g"><button class="b g" type="button" data-s="pl" id="xsPl">Putar</button><button class="b g" type="button" data-s="pr">Putar In\u2013Out</button><button class="b g" type="button" data-s="ri">Tandai In</button><button class="b g" type="button" data-s="ro">Tandai Out</button><button class="b g" type="button" data-s="fb">\u2039 1f</button><button class="b g" type="button" data-s="ff">1f \u203A</button></div><div class="xsrc-g2"><button class="b" type="button" data-s="use">Pakai di klip ini</button><button class="b" type="button" data-s="ins">Sisipkan di playhead</button></div><p class="xsrc-n">Geser IN/OUT untuk memilih bagian footage. Pakai di klip ini = klip hanya memakai bagian itu. Sisipkan = bagian itu jadi klip baru di playhead.</p></div>';
+var nb=function(k,l){return '<button class="b g" type="button" data-s="'+k+'">'+l+'</button>'};
+SRM.innerHTML='<div class="xsrc-x"><div class="xsrc-d"><b id="xsT">Source</b><button class="b g" type="button" data-s="x">Tutup</button></div><video id="xsV" playsinline preload="auto"></video><div class="xsrc-b" id="xsB"><div class="xsrc-l"></div><div class="xsrc-s" id="xsS"></div><i class="xsrc-h" id="xsHa" data-h="a" data-l="IN"></i><i class="xsrc-h" id="xsHb" data-h="b" data-l="OUT"></i><i class="xsrc-p" id="xsP"></i></div><p class="xsrc-n" id="xsN"></p>'
++'<div class="xsrc-g"><button class="b g" type="button" data-s="pl" id="xsPl">Putar</button>'+nb('pr','Putar In\u2013Out')+nb('pe','Ujung Out')+nb('gi','Ke IN')+nb('go','Ke OUT')+'<button class="b g" type="button" data-s="zm" id="xsZ">Zoom \u00D71</button>'+nb('ri','Tandai In')+nb('ro','Tandai Out')+nb('zc','Zoom ke posisi')+'</div>'
++'<p class="xsrc-n">Geser halus untuk:</p><div class="xsrc-g"><button class="b g" type="button" data-g="a">IN</button><button class="b g" type="button" data-g="b">OUT</button><button class="b g" type="button" data-g="p">Posisi</button></div>'
++'<div class="xsrc-g">'+nb('n-1','\u2039 1 dtk')+nb('n-.1','\u2039 0,1 dtk')+nb('n-f','\u2039 1f')+nb('n+f','1f \u203A')+nb('n+.1','0,1 dtk \u203A')+nb('n+1','1 dtk \u203A')+'</div>'
++'<div class="xsrc-g2"><button class="b" type="button" data-s="use">Pakai di klip ini</button><button class="b" type="button" data-s="ins">Sisipkan di playhead</button></div><p class="xsrc-n">Untuk presisi: ketuk Zoom, pilih IN atau OUT, lalu geser halus. Ujung Out memutar 2 dtk terakhir sebelum Out. Pakai = klip hanya memakai bagian itu. Sisipkan = bagian itu jadi klip baru di playhead.</p></div>';
 document.body.appendChild(SRM);var B=SRM.querySelector('#xsB'),dg=null,v=SRM.querySelector('#xsV');
-function xx(e){var r=B.getBoundingClientRect();return Math.max(0,Math.min(1,(e.clientX-r.left)/Math.max(1,r.width)))*SRC.d}
-function mv3(e){if(!SRC||!dg)return;var x=xx(e);if(dg==='a'){SRC.a=Math.min(x,SRC.b-.2);srcSeek(SRC.a)}else if(dg==='b'){SRC.b=Math.max(x,SRC.a+.2);srcSeek(SRC.b)}else srcSeek(x);srcUp()}
+function xx(e){var r=B.getBoundingClientRect();return SRC.w0+Math.max(0,Math.min(1,(e.clientX-r.left)/Math.max(1,r.width)))*srcSpan()}
+function mv3(e){if(!SRC||!dg)return;var x=xx(e);if(dg==='a'){SRC.a=Math.max(0,Math.min(x,SRC.b-.1));SRC.tg='a';srcSeek(SRC.a)}else if(dg==='b'){SRC.b=Math.min(SRC.d,Math.max(x,SRC.a+.1));SRC.tg='b';srcSeek(SRC.b)}else{SRC.tg='p';srcSeek(x)}srcUp()}
 B.addEventListener('pointerdown',function(e){if(!SRC)return;var h=e.target.getAttribute&&e.target.getAttribute('data-h');dg=h||'p';SRC.v.pause();SRC.rg=0;try{B.setPointerCapture(e.pointerId)}catch(x){}e.preventDefault();mv3(e)});
 B.addEventListener('pointermove',mv3);['pointerup','pointercancel'].forEach(function(n){B.addEventListener(n,function(){dg=null})});
 v.addEventListener('play',function(){if(SRC){cancelAnimationFrame(SRC.raf);srcTick()}});v.addEventListener('pause',srcUp);v.addEventListener('seeked',srcUp);
-v.addEventListener('loadedmetadata',function(){if(!SRC||!isFinite(v.duration))return;SRC.d=Math.max(v.duration,SRC.b);SRC.a=Math.max(0,Math.min(SRC.a,SRC.d));SRC.b=Math.min(SRC.d,SRC.b);srcSeek(SRC.a);srcUp()});
+v.addEventListener('loadedmetadata',function(){if(!SRC||!isFinite(v.duration))return;SRC.d=Math.max(v.duration,SRC.b);SRC.a=Math.max(0,Math.min(SRC.a,SRC.d));SRC.b=Math.min(SRC.d,SRC.b);srcWin(SRC.w0);srcSeek(SRC.a);srcUp()});
 v.addEventListener('error',function(){msg('Footage sumber tidak bisa dibuka. Muat ulang file lalu coba lagi.',4000)});
-SRM.addEventListener('click',function(e){if(e.target===SRM){srcClose();return}var b=e.target.closest('[data-s]');if(!b||!SRC)return;var k=b.dataset.s,cu=v.currentTime||0;
-if(k==='x')srcClose();else if(k==='pl'){if(v.paused){SRC.rg=0;if(cu>=SRC.d-.05)srcSeek(SRC.a);var q=v.play();if(q&&q.catch)q.catch(function(){})}else v.pause()}
-else if(k==='pr'){SRC.rg=1;srcSeek(SRC.a);var q2=v.play();if(q2&&q2.catch)q2.catch(function(){})}
-else if(k==='ri'){SRC.a=Math.max(0,Math.min(cu,SRC.b-.2));srcUp()}
-else if(k==='ro'){SRC.b=Math.min(SRC.d,Math.max(cu,SRC.a+.2));srcUp()}
-else if(k==='fb'||k==='ff'){v.pause();srcSeek(cu+(k==='ff'?1:-1)/30);srcUp()}
+SRM.addEventListener('click',function(e){if(e.target===SRM){srcClose();return}var g=e.target.closest('[data-g]');if(g&&SRC){SRC.tg=g.dataset.g;var tx=SRC.tg==='a'?SRC.a:SRC.tg==='b'?SRC.b:(v.currentTime||0);if(SRC.tg!=='p')srcSeek(tx);if(!srcVis(tx))srcWin(tx);srcUp();return}
+var b=e.target.closest('[data-s]');if(!b||!SRC)return;var k=b.dataset.s,cu=v.currentTime||0,q;
+if(k==='x')srcClose();else if(k==='pl'){if(v.paused){SRC.rg=0;if(cu>=SRC.d-.05)srcSeek(SRC.a);q=v.play();if(q&&q.catch)q.catch(function(){})}else v.pause()}
+else if(k==='pr')srcPlay(SRC.a);else if(k==='pe')srcPlay(Math.max(SRC.a,SRC.b-2));
+else if(k==='gi'){v.pause();SRC.tg='a';srcSeek(SRC.a);if(!srcVis(SRC.a))srcWin(SRC.a);srcUp()}
+else if(k==='go'){v.pause();SRC.tg='b';srcSeek(SRC.b);if(!srcVis(SRC.b))srcWin(SRC.b);srcUp()}
+else if(k==='zm'){SRC.z=SRC.z>=64?1:SRC.z*4;var c0=SRC.tg==='a'?SRC.a:SRC.tg==='b'?SRC.b:cu;srcWin(c0);srcUp()}
+else if(k==='zc'){srcWin(cu);srcUp()}
+else if(k==='ri'){SRC.a=Math.max(0,Math.min(cu,SRC.b-.1));SRC.tg='a';srcUp()}
+else if(k==='ro'){SRC.b=Math.min(SRC.d,Math.max(cu,SRC.a+.1));SRC.tg='b';srcUp()}
+else if(k.charAt(0)==='n'){var dt=k==='n-f'?-1/30:k==='n+f'?1/30:parseFloat(k.slice(1));srcNudge(dt)}
 else if(k==='use')srcUse();else if(k==='ins')srcIns()})}
 function srcOpen(i){var c=C[i];if(!c||c.k!=='v'||!c.u){msg('Source hanya untuk klip video',2500);return}pa();srcBuild();
-SRC={c:c,v:SRM.querySelector('#xsV'),a:c.a,b:c.b,d:Math.max(c.d||0,c.b),rg:0,raf:0};$('xsT').textContent='Source: '+(c.n||'klip '+(i+1));SRM.classList.add('on');SRC.v.src=c.u;SRC.v.load();srcUp()}
+SRC={c:c,v:SRM.querySelector('#xsV'),a:c.a,b:c.b,d:Math.max(c.d||0,c.b),rg:0,raf:0,z:1,w0:0,tg:'a'};$('xsT').textContent='Source: '+(c.n||'klip '+(i+1));SRM.classList.add('on');SRC.v.src=c.u;SRC.v.load();srcUp()}
 function srcClose(){if(!SRC)return;cancelAnimationFrame(SRC.raf);try{SRC.v.pause();SRC.v.removeAttribute('src');SRC.v.load()}catch(e){}SRC=null;SRM.classList.remove('on')}
 function srcUse(){var c=SRC.c,i=C.indexOf(c),o,old,d,a=SRC.a,b=SRC.b;if(i<0){msg('Klip sudah tidak ada di timeline',3000);srcClose();return}
 try{HLA.a='Pilih bagian (Source)';HLA.t=Date.now()}catch(e){}
