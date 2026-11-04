@@ -4138,7 +4138,7 @@ if(AV.ct)P({t:avWrap(AV.ct,24),s:T-ce+.9,d:Math.max(.6,ce-.9),z:zz(40),y:(AV.hg&
 if(AV.sy&&M&&M.bt&&M.bt.length>2)avSnap(M.bt);avFade();
 s=-1;xs=-1;os=-1;t=0;ci=-1;dr=1;all();pa();
 msg('Auto-Edit selesai: '+C.length+' klip, '+X.filter(function(x){return x.au}).length+' teks. Tambah musik di tab Audio.',5000)}
-return function(){mk();cancelAnimationFrame(raf);try{snp()}catch(e){}cmpOn=0;var l=$('list');l.innerHTML=shell();cv=$('vdc');cx=cv.getContext('2d',{alpha:false});cv.addEventListener('pointerdown',kpPick,true);pnt=0;lbC='';svC=-9;phd();
+return function(){msg('Editor video versi S1 aktif',2200);mk();cancelAnimationFrame(raf);try{snp()}catch(e){}cmpOn=0;var l=$('list');l.innerHTML=shell();cv=$('vdc');cx=cv.getContext('2d',{alpha:false});cv.addEventListener('pointerdown',kpPick,true);pnt=0;lbC='';svC=-9;phd();
 l.onclick=clk;l.oninput=inp;gest();pjStart();pbK='';pjBar(1);cmpW(l);layApply();tlW();jogW();if(window.__enhS)__enhS(l);
 $('vdF1').onchange=function(e){var fl=Array.prototype.slice.call(e.target.files);addF(fl,'v');lbAuto(fl,'Galeri');e.target.value=''};lbInit();
 $('vdF2').onchange=function(e){addF(e.target.files,'a');e.target.value='';if(avMusP){avMusP=0;setTimeout(avSync,60)}};
@@ -5289,4 +5289,5 @@ var t0=window.tabsR;window.tabsR=function(){var r=t0.apply(this,arguments),row2=
 $('tabs').addEventListener('click',function(e){if(e.target.getAttribute&&e.target.getAttribute('data-atur')){draw();sh.classList.add('on')}});
 apply(load());window.tabsR()})();
 </script>
+<script>/*s1-cache*/(function(){try{if(localStorage.getItem('adm_s1c'))return;localStorage.setItem('adm_s1c','1');if(navigator.serviceWorker&&navigator.serviceWorker.getRegistrations)navigator.serviceWorker.getRegistrations().then(function(r){r.forEach(function(x){x.unregister()})}).catch(function(){});if(window.caches&&caches.keys)caches.keys().then(function(k){k.forEach(function(n){caches.delete(n)})}).catch(function(){})}catch(e){}})()</script>
 </body></html>
