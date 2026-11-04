@@ -258,8 +258,8 @@
    "shop": "overlay-controller-xbox-series-x-pixel-arcade-edition",
    "srv": 1,
    "pr": 130000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 12
   },
   "other|Overlay Controller Xbox Series X - Water Ring Edition": {
@@ -293,8 +293,8 @@
    "shop": "overlay-controller-xbox-series-x-water-ring-edition",
    "srv": 1,
    "pr": 113000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 10
   },
   "other|Overlay Controller Xbox Series X - Silk Classic": {
@@ -332,8 +332,8 @@
    "shop": "overlay-controller-xbox-series-x-silk-classic",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   "other|Overlay Controller Xbox Series X - Fantasy RPG Gold Edition": {
@@ -373,8 +373,8 @@
    "shop": "overlay-controller-xbox-series-x-fantasy-rpg-gold-edition",
    "srv": 1,
    "pr": 150000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 12
   },
   "other|Overlay Controller PS5 DualSense - Shadow Fight 2 Classic": {
@@ -410,8 +410,8 @@
    "shop": "overlay-controller-ps5-dualsense-shadow-fight-2-classic",
    "srv": 1,
    "pr": 75000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   "other|Overlay Controller Xbox Series X - Dark Glass Classic": {
@@ -449,8 +449,8 @@
    "shop": "overlay-controller-xbox-series-x-dark-glass-classic",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   "other|Overlay Controller Xbox Series X - Esports Angular Classic": {
@@ -488,8 +488,8 @@
    "shop": "overlay-controller-xbox-series-x-esports-angular-classic",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   "other|Overlay Controller Xbox Series X - Comic Pop Art Classic": {
@@ -525,8 +525,8 @@
    "shop": "overlay-controller-xbox-series-x-comic-pop-art-classic",
    "srv": 1,
    "pr": 43000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   "other|Overlay Controller Xbox Series X - Manga Ink Edition": {
@@ -564,8 +564,8 @@
    "shop": "overlay-controller-xbox-series-x-manga-ink-edition",
    "srv": 1,
    "pr": 98000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 8
   },
   "other|Overlay Controller Xbox Series X - Pirate Ship Edition": {
@@ -603,8 +603,8 @@
    "shop": "overlay-controller-xbox-series-x-pirate-ship-edition",
    "srv": 1,
    "pr": 100000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 8
   },
   "other|Overlay Controller Xbox Series X - Street Graffiti 3D Classic": {
@@ -640,8 +640,8 @@
    "shop": "overlay-controller-xbox-series-x-street-graffiti-3d-classic",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   "other|Overlay Controller PS5 DualSense - Art Deco Classic": {
@@ -677,8 +677,8 @@
    "shop": "overlay-controller-ps5-dualsense-art-deco-classic",
    "srv": 1,
    "pr": 53000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   "other|Overlay Controller Xbox Series X - Watercolor Classic": {
@@ -718,8 +718,8 @@
    "shop": "overlay-controller-xbox-series-x-watercolor-classic",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   "other|Overlay Controller Xbox Series X - Military Tactical Classic": {
@@ -759,8 +759,8 @@
    "shop": "overlay-controller-xbox-series-x-military-tactical-classic",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   "other|Overlay Controller Xbox Series X - Arcade Cabinet Edition": {
@@ -798,8 +798,8 @@
    "shop": "overlay-controller-xbox-series-x-arcade-cabinet-edition",
    "srv": 1,
    "pr": 110000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 9
   },
   "other|Overlay Controller Xbox Series X - VHS Analog Edition": {
@@ -839,8 +839,8 @@
    "shop": "overlay-controller-xbox-series-x-vhs-analog-edition",
    "srv": 1,
    "pr": 123000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 10
   },
   "other|Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition": {
@@ -880,8 +880,8 @@
    "shop": "overlay-controller-xbox-series-x-samurai-ukiyo-e-edition",
    "srv": 1,
    "pr": 100000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 9
   },
   "other|Overlay Controller Xbox Series X - Pixel 8-bit Classic": {
@@ -917,8 +917,8 @@
    "shop": "overlay-controller-xbox-series-x-pixel-8-bit-classic",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   "other|Overlay Controller Xbox Series X - Steampunk Brass Edition": {
@@ -958,8 +958,8 @@
    "shop": "overlay-controller-xbox-series-x-steampunk-brass-edition",
    "srv": 1,
    "pr": 110000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 10
   },
   "other|Overlay Controller Xbox Series X - Western Saloon Edition": {
@@ -999,8 +999,8 @@
    "shop": "overlay-controller-xbox-series-x-western-saloon-edition",
    "srv": 1,
    "pr": 93000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 9
   },
   "other|Overlay Controller Xbox Series X - Tropical Summer Beach Classic": {
@@ -1038,8 +1038,8 @@
    "shop": "overlay-controller-xbox-series-x-tropical-summer-beach-classic",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   "other|Overlay Controller Xbox Series X - Mecha Edition": {
@@ -1077,8 +1077,8 @@
    "shop": "overlay-controller-xbox-series-x-mecha-edition",
    "srv": 1,
    "pr": 100000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 9
   },
   "other|Overlay Controller Xbox Series X - Retro 90s CRT Edition": {
@@ -1114,8 +1114,8 @@
    "shop": "overlay-controller-xbox-series-x-retro-90s-crt-edition",
    "srv": 1,
    "pr": 123000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 10
   },
   "other|Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition": {
@@ -1153,8 +1153,8 @@
    "shop": "overlay-controller-xbox-series-x-cozy-lo-fi-laundromat-edition",
    "srv": 1,
    "pr": 80000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   "other|Overlay Controller Xbox Series X - Cyber Tokyo Night Classic": {
@@ -1192,8 +1192,8 @@
    "shop": "overlay-controller-xbox-series-x-cyber-tokyo-night-classic",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   "other|Overlay Controller Xbox Series X - Sakura Edition": {
@@ -1231,8 +1231,8 @@
    "shop": "overlay-controller-xbox-series-x-sakura-edition",
    "srv": 1,
    "pr": 73000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   "other|Overlay Controller Xbox Series X (Custom)": {
@@ -1295,8 +1295,8 @@
    "shop": "overlay-controller-xbox-series-x-cloud-pastel-edition",
    "srv": 1,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -1334,8 +1334,8 @@
    "shop": "overlay-controller-xbox-one-og-ice-crystal-edition",
    "srv": 1,
    "pr": 25000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 2
   },
   {
@@ -1373,8 +1373,8 @@
    "shop": "overlay-controller-xbox-one-s-sunset-galaxy-edition",
    "srv": 1,
    "pr": 25000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 2
   },
   {
@@ -1407,8 +1407,8 @@
    "shop": "overlay-controller-xbox-one-og-retro-arcade-one-og-edition",
    "srv": 1,
    "pr": 100000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 8
   },
   {
@@ -1440,8 +1440,8 @@
    "shop": "overlay-controller-xbox-one-og-pastel-rocket-launch-one-og-edition",
    "srv": 1,
    "pr": 100000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 8
   },
   {
@@ -1474,8 +1474,8 @@
    "shop": "overlay-controller-xbox-series-x-crimson-jellyfish-drift-edition",
    "srv": 1,
    "pr": 100000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 8
   },
   {
@@ -1507,8 +1507,8 @@
    "shop": "overlay-controller-xbox-one-s-holo-planet-rings-one-s-edition",
    "srv": 1,
    "pr": 100000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 8
   },
   {
@@ -1547,8 +1547,8 @@
    "shop": "overlay-controller-xbox-one-s-neon-phoenix-wings-one-s-edition",
    "srv": 1,
    "pr": 70000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -1584,8 +1584,8 @@
    "srv": 1,
    "ord": 4,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -1621,8 +1621,8 @@
    "srv": 1,
    "ord": 26,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -1658,8 +1658,8 @@
    "srv": 1,
    "ord": 18,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -1695,8 +1695,8 @@
    "srv": 1,
    "ord": 6,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -1732,8 +1732,8 @@
    "srv": 1,
    "ord": 15,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -1769,8 +1769,8 @@
    "srv": 1,
    "ord": 43,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -1806,8 +1806,8 @@
    "srv": 1,
    "ord": 3,
    "pr": 25000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 2
   },
   {
@@ -1843,8 +1843,8 @@
    "srv": 1,
    "ord": 10,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -1880,8 +1880,8 @@
    "srv": 1,
    "ord": 22,
    "pr": 53000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   {
@@ -1917,8 +1917,8 @@
    "srv": 1,
    "ord": 34,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   {
@@ -1954,8 +1954,8 @@
    "srv": 1,
    "ord": 28,
    "pr": 58000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -1991,8 +1991,8 @@
    "srv": 1,
    "ord": 27,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -2028,8 +2028,8 @@
    "srv": 1,
    "ord": 12,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -2065,8 +2065,8 @@
    "srv": 1,
    "ord": 19,
    "pr": 75000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -2102,8 +2102,8 @@
    "srv": 1,
    "ord": 42,
    "pr": 55000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -2139,8 +2139,8 @@
    "srv": 1,
    "ord": 41,
    "pr": 68000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -2176,8 +2176,8 @@
    "srv": 1,
    "ord": 29,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -2211,8 +2211,8 @@
    "srv": 1,
    "ord": 45,
    "pr": 75000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -2248,8 +2248,8 @@
    "srv": 1,
    "ord": 11,
    "pr": 60000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -2285,8 +2285,8 @@
    "srv": 1,
    "ord": 33,
    "pr": 80000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 7
   },
   {
@@ -2322,8 +2322,8 @@
    "srv": 1,
    "ord": 21,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -2357,8 +2357,8 @@
    "srv": 1,
    "ord": 2,
    "pr": 70000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -2394,8 +2394,8 @@
    "srv": 1,
    "ord": 20,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -2431,8 +2431,8 @@
    "srv": 1,
    "ord": 0,
    "pr": 75000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -2467,8 +2467,8 @@
    "shop": "overlay-controller-xbox-series-x-toxic-lime-weave-edition",
    "srv": 1,
    "pr": 93000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 8
   },
   {
@@ -2501,8 +2501,8 @@
    "shop": "overlay-controller-xbox-series-x-violet-carbon-fang-v5-edition",
    "srv": 1,
    "pr": 75000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -2537,8 +2537,8 @@
    "shop": "overlay-controller-xbox-series-x-lime-drip-lines-edition",
    "srv": 1,
    "pr": 75000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -2573,8 +2573,8 @@
    "shop": "overlay-controller-xbox-series-x-sunny-triangle-shards-v2-edition",
    "srv": 1,
    "pr": 70000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -2604,8 +2604,8 @@
    "shop": "overlay-controller-xbox-series-x-blueprint-teknis-edition",
    "srv": 1,
    "pr": 70000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -2641,8 +2641,8 @@
    "shop": "overlay-controller-xbox-series-x-anime-kawaii-pastel-edition",
    "srv": 1,
    "pr": 75000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -2672,8 +2672,8 @@
    "shop": "overlay-controller-xbox-series-x-synthwave-outrun-edition",
    "srv": 1,
    "pr": 55000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -2709,8 +2709,8 @@
    "shop": "overlay-controller-xbox-series-x-y2k-bubble-edition",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   {
@@ -2740,8 +2740,8 @@
    "shop": "overlay-controller-xbox-series-x-glitch-error-edition",
    "srv": 1,
    "pr": 75000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -2771,8 +2771,8 @@
    "shop": "overlay-controller-xbox-series-x-scifi-space-hud-edition",
    "srv": 1,
    "pr": 75000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -2806,8 +2806,8 @@
    "shop": "overlay-controller-xbox-series-x-esports-team-banner-edition",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   {
@@ -2843,8 +2843,8 @@
    "shop": "overlay-controller-xbox-series-x-esports-rank-badge-edition",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   {
@@ -2876,8 +2876,8 @@
    "shop": "overlay-controller-xbox-series-x-lava-volcano-edition",
    "srv": 1,
    "pr": 43000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   {
@@ -2913,8 +2913,8 @@
    "shop": "overlay-controller-xbox-series-x-autumn-maple-edition",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   {
@@ -2950,8 +2950,8 @@
    "shop": "overlay-controller-xbox-series-x-thunder-storm-edition",
    "srv": 1,
    "pr": 60000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -2987,8 +2987,8 @@
    "shop": "overlay-controller-xbox-series-x-red-flame-squad-v1-edition",
    "srv": 1,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -3024,8 +3024,8 @@
    "shop": "overlay-controller-xbox-series-x-snowy-mountain-cabin-edition",
    "srv": 1,
    "pr": 75000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -3061,8 +3061,8 @@
    "shop": "overlay-controller-xbox-series-x-quantum-circuit-edition",
    "srv": 1,
    "pr": 55000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -3098,8 +3098,8 @@
    "shop": "overlay-controller-xbox-series-x-esports-arena-stage-edition",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   {
@@ -3135,8 +3135,8 @@
    "shop": "overlay-controller-xbox-series-x-egyptian-pharaoh-gold-edition",
    "srv": 1,
    "pr": 55000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -3172,8 +3172,8 @@
    "shop": "overlay-controller-xbox-series-x-astronaut-floating-edition",
    "srv": 1,
    "pr": 60000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -3209,8 +3209,8 @@
    "shop": "overlay-controller-xbox-series-x-space-station-airlock-2-edition",
    "srv": 1,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -3244,8 +3244,8 @@
    "shop": "overlay-controller-xbox-series-x-alien-biotech-edition",
    "srv": 1,
    "pr": 55000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -3279,8 +3279,8 @@
    "shop": "overlay-controller-xbox-series-x-nuclear-hazard-edition",
    "srv": 1,
    "pr": 70000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 6
   },
   {
@@ -3316,8 +3316,8 @@
    "shop": "overlay-controller-xbox-series-x-matsuri-lantern-edition",
    "srv": 1,
    "pr": 30000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 3
   },
   {
@@ -3353,8 +3353,8 @@
    "shop": "overlay-controller-xbox-series-x-vinyl-record-dj-edition",
    "srv": 1,
    "pr": 45000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   {
@@ -3388,8 +3388,8 @@
    "shop": "overlay-controller-xbox-series-x-tin-robot-toy-edition",
    "srv": 1,
    "pr": 55000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -3423,8 +3423,8 @@
    "shop": "overlay-controller-xbox-series-x-skate-punk-sticker-4-edition",
    "srv": 1,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
@@ -3460,8 +3460,8 @@
    "shop": "overlay-controller-xbox-series-x-desert-dune-edition",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   {
@@ -3530,8 +3530,8 @@
    "shop": "overlay-controller-xbox-series-x-neo-brutalism-edition",
    "srv": 1,
    "pr": 50000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 4
   },
   {
@@ -3568,8 +3568,8 @@
    "srv": 1,
    "pr": 40000,
    "pru": 3,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04"
+   "ps": "2026-11-05",
+   "pe": "2026-11-07"
   }
  ],
  "rate": 12500,
@@ -4277,8 +4277,8 @@
  },
  "dkA": {
   "p": 50,
-  "s": "2026-11-02",
-  "e": "2026-11-04",
+  "s": "2026-11-05",
+  "e": "2026-11-07",
   "t": "all"
  },
  "t": {
