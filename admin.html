@@ -483,7 +483,6 @@ body.vm .vd .vsc{padding-bottom:calc(150px + env(safe-area-inset-bottom,0px))}
 .vd canvas{max-height:38vh!important}
 .vd .vpv .vr.vc1 .b{height:44px;min-height:44px;font-size:13px;line-height:1.15;white-space:normal;padding:0 4px}
 .vd .vpv .vr.vc1 .rsb{grid-column:3/5;display:flex;flex-wrap:nowrap;gap:6px;margin:0}
-.vd .vpv .vr.vc1 .rsb:has(.rsh){grid-column:1/-1;flex-wrap:wrap}
 .vd .vpv .vr.vc1 .rsb .b{flex:1 1 0;min-width:0;height:44px;min-height:44px;font-size:12px;padding:0 4px;border-radius:10px}
 .vd .vpv .vr.vc1 .rsb .rsh .b{flex:0 0 auto;height:32px;min-height:32px;padding:0 14px}
 .vd .vpv .tlw{margin-top:6px}
@@ -494,13 +493,7 @@ body.vm .vd .vsc{padding-bottom:calc(150px + env(safe-area-inset-bottom,0px))}
 .vd .vsc .gh[aria-expanded="true"]{border-color:var(--ac)}
 .vd .vsc .vp{margin:8px 0;padding:10px 12px;border:1px solid var(--ln);border-radius:12px;background:var(--so)}
 .vd .vsc .vp>b:first-child{display:block;margin-bottom:6px;font-size:13.5px}
-.vd .vsc details:not(.vfd){margin:8px 0;border:1px solid var(--ln);border-radius:12px;background:var(--so);overflow:hidden}
-.vd .vsc details:not(.vfd)>summary{padding:12px;font-size:13.5px;font-weight:700;cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center}
-.vd .vsc details:not(.vfd)>summary::-webkit-details-marker{display:none}
-.vd .vsc details:not(.vfd)>summary::after{content:'\25BE';color:var(--mu)}
 .vd .vsc details[open]:not(.vfd)>summary::after{content:'\25B4'}
-.vd .vsc details:not(.vfd)>*:not(summary){margin-left:12px;margin-right:12px}
-.vd .vsc details:not(.vfd)>*:last-child{margin-bottom:12px}
 .vd .vsc .vr .b,.vd .vsc .pjb .b{min-height:42px;border-radius:10px;font-size:13px}
 .vd .vsc .vlb{margin:14px 2px 4px}
 .vd .vsc .vs{margin:8px 0}
@@ -512,7 +505,6 @@ body.vm .vd .vsc{padding-bottom:calc(150px + env(safe-area-inset-bottom,0px))}
 .vd .vpv .vr.vc1 #vdT{grid-column:2/4;order:-1}
 .vd .vpv .vr.vc1 [data-a="pvz"],.vd .vpv .vr.vc1 [data-a="lay"]{order:-1;height:36px;min-height:36px;font-size:12px}
 body.vm .vd .vpv{max-height:76dvh;overflow-y:auto;overscroll-behavior:contain}
-.vd .vpv:has(.vfd[open]){padding-bottom:96px}
 .vd .fgw{max-height:none;overflow:visible}
 
 /* ===== Rapih video v9: Alat lain jadi halaman geser kanan, marker kotak kecil, waktu di kiri ===== */
@@ -539,6 +531,16 @@ body.vm .vd .vpv{max-height:76dvh;overflow-y:auto;overscroll-behavior:contain}
 .vd *::-webkit-scrollbar{display:none;width:0;height:0}
 .vd .vpg{height:auto}
 .vd .vpg>.pg{overflow:visible}
+
+/* v12: tab Klip rapi, bar proyek tidak tertimpa, tanpa :has berat */
+.vd .vpv .vr.vc1 .rsb.sel{grid-column:1/-1;flex-wrap:wrap}
+.vd .pjb{display:flex;align-items:center;gap:10px;margin:0 0 8px}
+.vd .pjb>div{flex:1 1 auto;min-width:0}
+.vd .pjb .b{width:auto;flex:0 0 auto;padding:0 18px;min-height:40px}
+.vd .vsc .vgp{margin:8px 0;border:1px solid var(--ln);border-radius:12px;background:var(--so)}
+.vd .vsc .vgp>summary{min-height:44px;padding:0 12px;font-size:13.5px}
+.vd .vsc .vgp>.vgb{padding:0 12px 12px}
+.vd .vsc .vp .gh{background:var(--sf)}
 </style></head><body>
 <header><button class="b g" id="bExit" type="button" aria-label="Kembali">←</button><h1><span class="lg">Pressure's </span>Admin</h1><button class="b g" id="bBulk" type="button" aria-label="Bulk price change">%</button><button class="b g" id="bUn" type="button" aria-label="Undo">↶</button><button class="b g" id="bRe" type="button" aria-label="Redo">↷</button><button class="b g" id="bHelp" type="button" aria-label="Peta fitur" title="Peta fitur">?</button><button class="b g" id="bFull" type="button" aria-label="Layar penuh editor" title="Layar penuh editor">⛶</button><button class="b" id="bAdd" type="button">+ Overlay</button><button class="b" id="bPub" type="button" aria-label="Publish" disabled><span class="pl">Publish </span>⬆</button><button class="b g" id="bSet" type="button" aria-label="Settings">⚙</button></header>
 <div id="pmHelp" role="dialog" aria-label="Peta fitur promosi"><div class="hp"><div class="hh"><b>Peta fitur promosi</b><button type="button" id="hpX" aria-label="Tutup">✕</button></div>
@@ -2630,7 +2632,7 @@ h='';X.forEach(function(x,i){h+='<button type="button" class="vc'+(i===xs?' on':
 if(M)h+='<div class="vc" style="flex:1 0 220px">Musik: '+E(M.n)+'<div class="wf">'+(M.pk||[]).map(function(q){return '<i style="height:'+Math.max(8,q*100)+'%"></i>'}).join('')+'</div></div>';
 VO.forEach(function(o,i){h+='<button type="button" class="vc'+(i===vsi?' on':'')+'" data-a="pvo" data-i="'+i+'" style="flex:0 0 '+Math.min(4000,Math.max(40,o.l*TZ))+'px"><b>Voice-over '+(i+1)+'</b><small>'+o.s.toFixed(1)+' → '+(o.s+o.l).toFixed(1)+' dtk</small></button>'});
 $('vdA').innerHTML=h||'<p class="note">Belum ada audio.</p>'}
-function upE(){upE0();if(window.__enhS)__enhS($('vdE'))}function upE0(){var h='',c=C[s],x=X[xs];
+function upE(){var sc0=$('vdSc'),y0=sc0?sc0.scrollTop:0;upE0();if(window.__enhS)__enhS($('vdE'));if(sc0&&Math.abs(sc0.scrollTop-y0)>2)sc0.scrollTop=y0}function upE0(){var h='',c=C[s],x=X[xs];
 if(c){h='<div class="vp"><b>Klip '+(s+1)+'</b>'+(c.k==='v'?sl('a','Awal (dtk)',0,c.d,c.a)+sl('b','Akhir (dtk)',0,c.d,c.b):sl('l','Durasi (dtk)',0.5,15,L(c)))+(c.k==='v'?spH(c):'')+tfH(c)+gH(c)+trH(c)+'<p class="vlb">Edit</p><div class="vr"><button class="b g" data-a="spl">Pisah di playhead</button><button class="b g" data-a="dup">Gandakan</button><button class="b d" data-a="del">Hapus</button></div>'+(c.k==='v'?'<p class="vlb">Efek waktu</p><div class="vr"><button class="b g" data-a="frz">Freeze frame</button><button class="b g" data-a="rvs">'+(c.rv?'Reverse \u2713':'Reverse')+'</button></div>':'')+'<p class="vlb">Posisi</p><div class="vr"><button class="b g" data-a="ml">Geser kiri</button><button class="b g" data-a="mr">Geser kanan</button><button class="b g" data-a="lktog" data-i="'+s+'">'+(c.lk?'Buka kunci':'Kunci posisi')+'</button></div><p class="vlb">Tampilan</p><div class="vr"><button class="b g" data-a="fit">'+(c.f?'Mode penuh':'Mode pas')+'</button>'+(rkFr()?'<button class="b g" data-a="fil" data-i="'+s+'">'+(c.fi?'Pas bingkai':'Isi bingkai')+'</button>':'')+'</div></div>'}
 else if(x){var m=Math.max(TT(),x.s+x.d,1);h='<div class="vp"><b>Teks</b><textarea data-k="t" rows="2" style="width:100%">'+E(x.t)+'</textarea>'+sl('s','Mulai (dtk)',0,m,x.s)+sl('d','Durasi (dtk)',0.5,m,x.d)+sl('z','Ukuran',24,220,x.z)+sl('y','Posisi vertikal %',5,95,x.y*100)+'<div class="vr">'+opts('an',[['','Tanpa animasi'],['fade','Fade'],['naik','Naik'],['zoom','Zoom'],['pop','Pop'],['ketik','Ketik'],['stag','Huruf bergantian'],['slide','Geser dari kiri'],['slider','Geser dari kanan'],['drop','Jatuh memantul'],['rot','Putar masuk'],['mask','Tersingkap']],x.an||'')+opts('ff',[['','Font bawaan'],['Anton','Anton'],['Bebas Neue','Bebas Neue'],['Orbitron','Orbitron'],['Chakra Petch','Chakra Petch'],['Bungee','Bungee'],['Russo One','Russo One'],['Press Start 2P','Press Start 2P'],['Archivo Black','Archivo Black']],x.ff||'')+'</div>'+(x.an?sl('ad','Durasi animasi (dtk)',0.1,2,x.ad||.5):'')+'<div class="vr"><input type="color" data-k="c" value="'+x.c+'"><button class="b d" data-a="delx">Hapus teks</button></div></div>'}
 if(!c&&!x&&O[os]){var o=O[os],k=o['k'+(kf+1)];h='<div class="vp"><b>Overlay '+(os+1)+'</b><p class="note">Seret, cubit, dan putar langsung di pratinjau (keyframe yang aktif).</p>'+sl('os','Mulai (dtk)',0,Math.max(TT(),1),o.s)+sl('ol','Durasi (dtk)',0.5,o.k==='v'?o.d:15,o.l)+'<div class="vr"><button class="b'+(kf?' g':'')+'" type="button" data-a="kf0">Keyframe awal</button><button class="b'+(kf?'':' g')+'" type="button" data-a="kf1">Keyframe akhir</button></div>'+sl('kx','Posisi X %',0,100,k.x*100)+sl('ky','Posisi Y %',0,100,k.y*100)+sl('kz','Skala %',5,200,k.z*100)+sl('kr','Rotasi (derajat)',-180,180,k.r)+sl('ko','Opasitas %',0,100,k.o*100)+sl('ou','Volume overlay %',0,100,(o.vol||0)*100)+bmH(o)+'<label class="vs"><span><input type="checkbox" data-k="ck"'+(o.ck?' checked':'')+'> Chroma key (hapus warna)</span></label>'+(o.ck?'<div class="vr"><input type="color" data-k="kc" value="'+(o.kc||'#00ff00')+'"></div>'+sl('kt','Toleransi %',5,80,o.kt||35):'')+'<div class="vr"><button class="b d" data-a="delo">Hapus overlay</button></div></div>'}
@@ -3179,7 +3181,7 @@ vn.pause();vn._sk.reset();vn.src=u;vn.onloadeddata=function(){var cc=C[i];if(cc&
 function vprepN(i){vprep(i+(bkw?-1:1))}
 function fullRes(){FR=1;PXB=null;pxGen++;if(PSC!==1){PSC=1;rsz();dr=1}}
 function layApply(){var pv=$('vdPv'),tl=$('vdTl'),tp=$('vdTop'),sc=$('vdTs');if(!pv||!tl||!tp)return;VT=LY!=='a'?1:0;
-if(VT){if(tl.parentNode!==tp)tp.appendChild(tl)}else if(tl.parentNode!==pv||tl.nextSibling!==pv.querySelector('.vc1')){pv.insertBefore(tl,pv.querySelector('.vc1'))};
+if(VT){if(tl.parentNode!==tp)tp.appendChild(tl)}else{var rf=pv.querySelector(':scope>.vh');if(rf&&(tl.parentNode!==pv||tl.nextSibling!==rf))pv.insertBefore(tl,rf);else if(!rf&&tl.parentNode!==pv)pv.appendChild(tl)};
 pv.className='vpv'+(VT?' sd'+(LY==='l'?' lf':''):'');tl.className='tlw'+(VT?' vt':'');
 pvA();if(sc){sc.scrollLeft=0;sc.scrollTop=0}tlLay();tlSync(1)}
 /*sesiG-akhir*/
@@ -3397,7 +3399,7 @@ q+='<div class="vr"><button class="b g" type="button" data-a="rgsc">Track: '+(SC
 var rb=$('vdRb');if(rb){var u='';
 if(SEL)u='<div class="rsh"><span>'+(SEL.k==='b'?'Belakang sampai '+fm(SEL.b):'Depan dari '+fm(SEL.a))+'</span><button class="b g" type="button" data-a="rgsn">Batal</button></div><div id="vdGs" class="vgs"><span id="vdGt">\u2039 seret: kiri = dekatkan, kanan = jauhkan \u203A</span></div>';
 else u='<button class="b g" type="button" data-a="rgbw">\u2039 Ripple belakang</button><button class="b g" type="button" data-a="rgfw">Ripple depan \u203A</button>';
-if(rb.dataset.k!==u){rb.dataset.k=u;rb.innerHTML=u}}
+if(rb.dataset.k!==u){rb.dataset.k=u;rb.className='rsb'+(SEL?' sel':'');rb.innerHTML=u}}
 if(ex2){var q2='<p class="vlb">Ekspor per rentang</p>';if(!RG.length)q2+='<p class="note">Belum ada rentang. Buat dengan Tandai In dan Out di tab Klip.</p>';
 RG.forEach(function(g,i){q2+='<div class="vr"><label class="vs" style="flex:1;min-width:0"><span><input type="checkbox" data-a="rgck" data-n="'+i+'"'+(g.ck?' checked':'')+'> '+E(g.n)+' ('+fm(g.b-g.a)+')</span></label><button class="b g" type="button" data-a="rgx1" data-n="'+i+'">Ekspor</button></div>'});
 if(RG.length)q2+='<div class="vr"><button class="b" type="button" data-a="rgxk">Ekspor yang dicentang (file terpisah)</button></div>';ex2.innerHTML=q2}}
