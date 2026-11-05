@@ -3807,6 +3807,96 @@ document.addEventListener('pointermove',function(e){if(lpT&&(Math.abs(e.clientX-
 document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-a]');if(b){HLA.a=HLN[b.dataset.a]||'';HLA.t=Date.now()}},true);
 document.addEventListener('input',function(e){if(e.target.dataset&&e.target.dataset.k){HLA.a='Ubah pengaturan';HLA.t=Date.now()}},true)}
 /*sesiS1-akhir*/
+/*sesiS1k-awal*/
+var vsmL=[],vsmM=0,vsmA=null,vsmC=null,vfsOn=(function(){try{return localStorage.getItem('vfs')!=='0'}catch(e){return true}})(),vfsR={},vfsQ=[],vfsBz=0,vfsV=null,vfsWt=0,vfsRaf=0,vfsRt=0,vfsRn=0,vfsIM=new WeakMap(),vfsIds=new WeakMap(),vfsN=0,
+vsmK=['zm','tx','ty','rt','tr','td','fi','fo','cpz','cpx','cpy','cpl','cpr','cpt','cpb','cpm','sbS','sbZ','sbOn','vg','vz','sh','gr','gz','ck','kc','kb','kt','kf','ks','vol','gn','g','fx','stb'];
+function vsmClean(){vsmL=vsmL.filter(function(c){return C.indexOf(c)>=0});if(vsmA&&C.indexOf(vsmA)<0)vsmA=null}
+function vsmPaint(){var w=$('vdTi');if(!w)return;Array.prototype.forEach.call(w.querySelectorAll('.tb.c[data-ty="c"]'),function(e){var c=C[+e.dataset.n];e.classList.toggle('msel',!!c&&vsmL.indexOf(c)>=0)})}
+function vsmUi(){vsmClean();var a=$('vdMsT'),b=$('vdMsM'),f=$('vdFsB'),x;
+if(a){x=vsmL.length+' klip dipilih'+(vsmC?'. Atribut tersalin dari '+vsmC.n:'');if(a.textContent!==x)a.textContent=x}
+if(b){b.textContent='Mode pilih banyak: '+(vsmM?'aktif':'mati');b.classList.toggle('g',!vsmM)}
+if(f){f.textContent='Filmstrip: '+(vfsOn?'aktif':'mati');f.classList.toggle('g',!vfsOn)}
+vsmPaint()}
+function vsmAct(a){var c,n,sk,ix,j,i,q,nx,src,d,cnt;
+if(a==='vsmm'){vsmM=vsmM?0:1;if(!vsmM){vsmL=[];vsmA=null}else msg('Pilih banyak aktif. Ketuk klip di timeline.',2600);vsmUi();return}
+if(a==='vsmfs'){vfsOn=!vfsOn;try{localStorage.setItem('vfs',vfsOn?'1':'0')}catch(e){}if(!vfsOn)vfsClear();else{vfsRn=0;vfsQs();vfsWork()}vsmUi();return}
+if(a==='vsmall'){vsmM=1;vsmL=C.slice();vsmUi();return}
+if(a==='vsminv'){vsmM=1;vsmClean();vsmL=C.filter(function(z){return vsmL.indexOf(z)<0});vsmUi();return}
+if(a==='vsmclr'){vsmL=[];vsmA=null;vsmUi();return}
+if(a==='vsmcp'){src=(vsmA&&C.indexOf(vsmA)>=0)?vsmA:C[s];if(!src){msg('Ketuk satu klip dulu sebagai sumber atribut.',2600);return}
+d={};cnt=0;vsmK.forEach(function(k){if(src[k]!==undefined){d[k]=JSON.parse(JSON.stringify(src[k]));cnt++}});
+vsmC={n:(src.k==='v'?'V':'F')+(C.indexOf(src)+1),d:d};msg('Atribut disalin dari '+vsmC.n+' ('+cnt+' pengaturan)',2400);vsmUi();return}
+if(xb||rec){msg('Tunggu ekspor atau rekaman selesai.',2200);return}
+if(a==='vsmpa'){if(!vsmC){msg('Salin atribut dulu.',2200);return}
+vsmClean();q=vsmL.length?vsmL.slice():(C[s]?[C[s]]:[]);if(!q.length){msg('Pilih klip tujuan.',2200);return}
+pa();HLA={a:'Tempel atribut',t:Date.now()};sv();n=0;sk=0;
+q.forEach(function(z){if(z.lk){sk++;return}Object.keys(vsmC.d).forEach(function(k){z[k]=JSON.parse(JSON.stringify(vsmC.d[k]))});n++});
+ci=-1;dr=1;all();asvQ();msg('Atribut ditempel ke '+n+' klip'+(sk?' ('+sk+' terkunci dilewati)':''),2800);return}
+if(a==='vsmdel'){vsmClean();if(!vsmL.length){msg('Belum ada klip dipilih.',2200);return}
+pa();HLA={a:'Hapus klip terpilih',t:Date.now()};sv();
+ix=vsmL.map(function(z){return C.indexOf(z)}).sort(function(p,r){return p-r});n=0;sk=0;
+for(j=ix.length-1;j>=0;j--){i=ix[j];c=C[i];if(!c)continue;if(c.lk){sk++;continue}nx=C[i+1];if(RP)rpl(off(i)+L(c),-L(c));if(nx)nx.gp=Gp(nx)+Gp(c)+(RP?0:L(c));C.splice(i,1);n++}
+vsmL=[];vsmA=null;s=-1;ci=-1;t=Math.min(t,TT());dr=1;all();asvQ();msg('Dihapus '+n+' klip'+(sk?' ('+sk+' terkunci dilewati)':''),2800)}}
+function vsmClick(e){var tg=e.target;if(!tg||!tg.closest)return;
+var bt=tg.closest('[data-a^="vsm"]');if(bt){e.stopImmediatePropagation();e.preventDefault();vsmAct(bt.dataset.a);return}
+var b=tg.closest('#vdTi .tb.c[data-ty="c"]');if(!b||tg.closest('.th'))return;
+var i=+b.dataset.n,c=C[i],mod=e.shiftKey||e.ctrlKey||e.metaKey;if(!c||(!vsmM&&!mod))return;
+e.stopImmediatePropagation();e.preventDefault();vsmM=1;
+if(e.shiftKey&&vsmA&&C.indexOf(vsmA)>=0){var a0=C.indexOf(vsmA),lo=Math.min(a0,i),hi=Math.max(a0,i),j;for(j=lo;j<=hi;j++)if(vsmL.indexOf(C[j])<0)vsmL.push(C[j])}
+else{var p=vsmL.indexOf(c);if(p>=0)vsmL.splice(p,1);else vsmL.push(c);vsmA=c}
+vib(8);vsmUi()}
+function vsmDown(e){if(!vsmM||!e.target||!e.target.closest)return;if(e.target.closest('.th'))return;if(e.target.closest('#vdTi .tb.c[data-ty="c"]'))e.stopImmediatePropagation()}
+function vfsClear(){var w=$('vdTi');if(!w)return;Array.prototype.forEach.call(w.querySelectorAll('canvas.fs'),function(n){var p=n.parentNode;p.removeChild(n);p.classList.remove('hfs')})}
+function vfsStep(d){return Math.max(.5,Math.round(d/80*4)/4)}
+function vfsId(o){var i=vfsIds.get(o);if(!i){i=++vfsN;vfsIds.set(o,i)}return i}
+function vfsPh(c){var im=c.im;if(!im)return null;var w0=im.naturalWidth||im.width,h0=im.naturalHeight||im.height;if(!w0||!h0)return null;var r=vfsIM.get(im);if(r)return r;var h=64,cn=document.createElement('canvas');cn.height=h;cn.width=Math.max(16,Math.round(h*w0/h0));try{cn.getContext('2d').drawImage(im,0,0,cn.width,cn.height)}catch(x){return null}vfsIM.set(im,cn);return cn}
+function vfsNear(en,k){var f=en.f[k],j;if(f)return f;for(j=1;j<=4;j++){f=en.f[k-j]||en.f[k+j];if(f)return f}return null}
+function vfsClip(e,c){var vt=VT?1:0,len=Math.max(6,L(c)*TZ),cl=Math.min(len,2800),en=null,ph=null,ids,ar,tw,th,cw,ch,n,cn,g,j,k,st,fa,fr,key,x,y,sc,qw,qh,d0;
+if(c.k==='v'){if(!c.u)return;en=vfsR[c.u];if(!en){d0=c.d||c.b||10;en=vfsR[c.u]={f:{},q:{},d:d0,st:vfsStep(d0),cnt:0,bad:0,fl:0,vw:0,vh:0}}ids=c.u}
+else if(c.k==='i'){ph=vfsPh(c);if(!ph){vfsRt=1;return}ids='i'+vfsId(c.im)}
+else return;
+ar=ph?ph.width/ph.height:(en.vw&&en.vh?en.vw/en.vh:W/H);
+if(!vt){ch=32;cw=Math.round(cl);th=ch;tw=Math.max(14,Math.min(56,Math.round(th*ar)));n=Math.max(1,Math.ceil(cw/tw))}
+else{cw=36;ch=Math.round(cl);tw=cw;th=Math.max(14,Math.min(64,Math.round(tw/ar)));n=Math.max(1,Math.ceil(ch/th))}
+key=ids+'|'+(c.a||0)+'|'+(c.b||0)+'|'+(c.rv?1:0)+'|'+cw+'x'+ch+'|'+vt+'|'+(en?en.cnt:0);
+cn=e.querySelector('canvas.fs');if(cn&&cn.__k===key)return;
+if(!cn){cn=document.createElement('canvas');cn.className='fs';e.insertBefore(cn,e.firstChild);e.classList.add('hfs')}
+if(cn.width!==cw)cn.width=cw;if(cn.height!==ch)cn.height=ch;cn.__k=key;
+g=cn.getContext('2d');g.clearRect(0,0,cw,ch);
+for(j=0;j<n;j++){
+if(ph)fr=ph;else{fa=(j+.5)/n;st=c.rv?c.b-fa*(c.b-c.a):c.a+fa*(c.b-c.a);k=Math.max(0,Math.min(Math.floor(en.d/en.st),Math.round(st/en.st)));fr=vfsNear(en,k);
+if(en.f[k]===undefined&&!en.q[k]&&!en.bad){en.q[k]=1;vfsQ.push({u:c.u,k:k})}}
+if(!fr)continue;
+x=vt?0:j*tw;y=vt?ch-(j+1)*th:0;
+sc=Math.max(tw/fr.width,th/fr.height);qw=tw/sc;qh=th/sc;
+g.drawImage(fr,(fr.width-qw)/2,(fr.height-qh)/2,qw,qh,x,y,tw,th)}}
+function vfsDraw(){var w=$('vdTi'),tl=$('vdTl');if(!w||!vfsOn)return;if(tl&&tl.classList.contains('rl'))return;
+Array.prototype.forEach.call(w.querySelectorAll('.tb.c[data-ty="c"]'),function(e){var c=C[+e.dataset.n];if(c)vfsClip(e,c)});
+if(vfsQ.length)vfsWork();if(vfsRt){vfsRt=0;if(vfsRn++<12)setTimeout(vfsQs,600)}}
+function vfsQs(){if(vfsRaf||!vfsOn)return;vfsRaf=requestAnimationFrame(function(){vfsRaf=0;vfsDraw()})}
+function vfsWork(){if(vfsBz||vfsWt||!vfsOn||!vfsQ.length)return;
+if(pl||xb||rec||tlD){vfsWt=setTimeout(function(){vfsWt=0;vfsWork()},800);return}
+var job=vfsQ.shift(),en=vfsR[job.u],v,done=0,to=0;
+if(!en||en.bad||en.f[job.k]!==undefined){vfsWt=setTimeout(function(){vfsWt=0;vfsWork()},0);return}
+vfsBz=1;v=vfsV;
+if(!v){v=vfsV=document.createElement('video');v.muted=true;v.defaultMuted=true;v.preload='auto';v.setAttribute('playsinline','');v.setAttribute('muted','');v.style.cssText='position:fixed;left:-9999px;top:0;width:2px;height:2px;opacity:0;pointer-events:none';document.body.appendChild(v)}
+function fin(ok){if(done)return;done=1;clearTimeout(to);v.onseeked=null;v.onloadedmetadata=null;v.onerror=null;delete en.q[job.k];
+if(ok){try{var fh=64,vw=v.videoWidth||0,vh=v.videoHeight||0;if(!vw||!vh)throw 0;var cn=document.createElement('canvas');cn.height=fh;cn.width=Math.max(16,Math.round(fh*vw/vh));cn.getContext('2d').drawImage(v,0,0,cn.width,cn.height);en.f[job.k]=cn;en.cnt++;en.vw=vw;en.vh=vh;en.fl=0}catch(x){en.f[job.k]=null;en.fl++}}
+else{en.f[job.k]=null;en.fl++;if(v.readyState<1)v.__u=null}
+if(en.fl>=4)en.bad=1;
+vfsBz=0;vfsQs();vfsWt=setTimeout(function(){vfsWt=0;vfsWork()},120)}
+function seek(){var du=isFinite(v.duration)&&v.duration>0?v.duration:en.d,tm=Math.max(0,Math.min(job.k*en.st,du-.05));
+if(Math.abs(v.currentTime-tm)<.02&&v.readyState>=2){fin(1);return}
+clearTimeout(to);v.onseeked=function(){fin(1)};to=setTimeout(function(){fin(0)},2000);
+try{v.currentTime=tm}catch(x){fin(0)}}
+if(v.__u!==job.u){v.__u=job.u;v.onloadedmetadata=function(){v.onloadedmetadata=null;if(isFinite(v.duration)&&v.duration>0)en.d=v.duration;seek()};v.onerror=function(){fin(0)};to=setTimeout(function(){fin(0)},5000);v.src=job.u;try{v.load()}catch(x){}}
+else seek()}
+var vsmTL=tlLay;tlLay=function(){vsmTL.apply(this,arguments);vsmPaint();vfsQs()};
+var vsmUT=upTl;upTl=function(){vsmUT.apply(this,arguments);vsmUi()};
+window.__vsmh={click:vsmClick,down:vsmDown};
+if(!window.__vsm){window.__vsm=1;window.addEventListener('click',function(e){window.__vsmh.click(e)},true);window.addEventListener('pointerdown',function(e){window.__vsmh.down(e)},true);
+var vsmSt=document.createElement('style');vsmSt.textContent='.tb .fs{position:absolute;left:0;top:0;width:100%;height:100%;opacity:.6;pointer-events:none;z-index:0}.tb.hfs span{position:relative;z-index:1;color:#fff;text-shadow:0 0 3px #000,0 1px 2px #000}.tb.c.msel{outline:2px dashed var(--ac);outline-offset:-2px;box-shadow:inset 0 0 0 999px rgba(120,160,255,.24)}';document.head.appendChild(vsmSt)}
+/*sesiS1k-akhir*/
 function clk(e){var b=e.target.closest('[data-a]');if(!b)return;var a=b.dataset.a,i=+b.dataset.i,c=C[s];
 if(xb&&a!=='xcancel')return;if(a==='xcancel'){xc=1;return}if(a.indexOf('rkq_')===0){rkqAct(a,b);return}if(a==='play'){if(pl){pa();return}if(LP===2&&LPG){pa();if(t<LPG.a-.05||t>=LPG.b-.05)t=LPG.a;window.__avSA=LPG.b;dr=1}go();return}if(a==='lpp'){lpTog();return}if(a==='hst'){hsOpen();return}if(a==='auto'){avRun();return}if(a==='autot'){avRun(1);return}if(a==='automus'){avMus();return}if(a==='avapply'){avApply();return}if(a==='avdemo'){avDemo();return}if(a==='avfavs'){avFavS();return}if(a==='avfavl'){avFavL();return}if(a==='autoctl'){var cf=$('avctf');if(cf)cf.click();return}if(a==='autoctl0'){avCtl0();return}if(a==='autheme'){var tf=$('avthf');if(tf)tf.click();return}if(a==='pvz'){pvZ();return}if(a==='vexit'){var be=$('bExit');if(be)be.click();return}if(a==='lay'){LY=LY==='a'?'r':LY==='r'?'l':'a';try{localStorage.setItem('vid_lay',LY)}catch(e){}layApply();msg(['Timeline di bawah preview','Preview kiri, timeline kanan','Preview kanan, timeline kiri'][['a','r','l'].indexOf(LY)],2000);return}if(a==='gtog'){gOpen=!gOpen;upE();return}if(a==='atog'){AC[b.dataset.i]=!AC[b.dataset.i];upE();return}
 if(a==='spd'){var cs=C[s];if(cs&&cs.k==='v'){sv();cs.v1=+b.dataset.x/100;cs.v2=+b.dataset.y/100;t=off(s);pa();ci=-1;all()}return}
@@ -3897,7 +3987,7 @@ function shell(){return '<div class="vd" data-t="'+vt+'"><div class="vfl"><div c
 '<div class="vn">'+[['k','Klip','\u25AD'],['o','Overlay','\u25E7'],['t','Teks','T'],['a','Audio','\u266A'],['e','Ekspor','\u21E9']].map(function(a,i){return '<button type="button" data-a="tab" data-i="'+a[0]+'" class="'+(a[0]===vt?'on':'')+'"><em>'+a[2]+'</em>'+a[1]+'</button>'}).join('')+'</div>'+
 '<div class="vsc" id="vdSc">'+
 '<section data-q="k"><div id="vdPj"></div><div class="vr"><button class="b g" type="button" data-a="addv">Tambah video/foto</button></div><p class="vlb">Track video</p><div id="vdL" class="vl"></div>'
-+'<details class="vgp" open><summary>Potong &amp; seleksi</summary><div class="vgb"><p class="vlb">Pilih sebelum / sesudah playhead</p><div id="vdRs"></div><p class="vlb">Rentang In/Out</p><div id="vdRg"></div></div></details>'
++'<details class="vgp" open><summary>Potong &amp; seleksi</summary><div class="vgb"><p class="vlb">Pilih sebelum / sesudah playhead</p><div id="vdRs"></div><p class="vlb">Rentang In/Out</p><div id="vdRg"></div></div></details><details class="vgp" open><summary>Pilih banyak klip</summary><div class="vgb"><p class="note" id="vdMsT">0 klip dipilih</p><div class="vr"><button class="b g" type="button" data-a="vsmm" id="vdMsM">Mode pilih banyak: mati</button><button class="b g" type="button" data-a="vsmall">Semua</button><button class="b g" type="button" data-a="vsminv">Balik</button><button class="b g" type="button" data-a="vsmclr">Kosong</button></div><div class="vr"><button class="b g" type="button" data-a="vsmcp">Salin atribut</button><button class="b g" type="button" data-a="vsmpa">Tempel atribut</button><button class="b d" type="button" data-a="vsmdel">Hapus terpilih</button></div><div class="vr"><button class="b g" type="button" data-a="vsmfs" id="vdFsB">Filmstrip: aktif</button></div><p class="note">Aktifkan mode, lalu ketuk klip di timeline. Dengan keyboard: Shift-klik untuk rentang.</p></div></details>'
 +'<details class="vgp"><summary>Marker &amp; snapping</summary><div class="vgb"><div class="vr"><button class="b g" type="button" data-a="mkp">\u2039 Marker</button><button class="b g" type="button" data-a="mka">+ Marker di playhead</button><button class="b g" type="button" data-a="mkn">Marker \u203A</button></div><div class="vr"><button class="b g" type="button" data-a="mkc">Hapus semua marker</button></div><p class="note">Marker tampil sebagai garis kuning di timeline. Ketuk \u25C6 di posisi marker yang sama untuk menghapusnya. Saat Snap aktif, playhead dan ujung klip, teks, atau overlay menempel ke tepi klip, marker, dan rentang.</p></div></details>'
 +'<details class="vgp"><summary>Tempel &amp; pustaka klip</summary><div class="vgb">'+lbUi()+'</div></details>'
 +'<details class="vgp"><summary>Template otomatis</summary><div class="vgb">'+avUi()+'</div></details>'
@@ -4298,7 +4388,7 @@ if(AV.ct)P({t:avWrap(AV.ct,24),s:T-ce+.9,d:Math.max(.6,ce-.9),z:zz(40),y:(AV.hg&
 if(AV.sy&&M&&M.bt&&M.bt.length>2)avSnap(M.bt);avFade();
 s=-1;xs=-1;os=-1;t=0;ci=-1;dr=1;all();pa();
 msg('Auto-Edit selesai: '+C.length+' klip, '+X.filter(function(x){return x.au}).length+' teks. Tambah musik di tab Audio.',5000)}
-return function(){msg('Editor video versi S1 aktif',2200);mk();cancelAnimationFrame(raf);try{snp()}catch(e){}cmpOn=0;var l=$('list');l.innerHTML=shell();cv=$('vdc');cx=cv.getContext('2d',{alpha:false});cv.addEventListener('pointerdown',kpPick,true);pnt=0;lbC='';svC=-9;phd();
+return function(){msg('Editor video versi S1k aktif',2200);mk();cancelAnimationFrame(raf);try{snp()}catch(e){}cmpOn=0;var l=$('list');l.innerHTML=shell();cv=$('vdc');cx=cv.getContext('2d',{alpha:false});cv.addEventListener('pointerdown',kpPick,true);pnt=0;lbC='';svC=-9;phd();
 l.onclick=clk;l.oninput=inp;gest();pjStart();pbK='';pjBar(1);cmpW(l);layApply();tlW();jogW();if(window.__enhS)__enhS(l);
 $('vdF1').onchange=function(e){var fl=Array.prototype.slice.call(e.target.files);addF(fl,'v');lbAuto(fl,'Galeri');e.target.value=''};lbInit();
 $('vdF2').onchange=function(e){addF(e.target.files,'a');e.target.value='';if(avMusP){avMusP=0;setTimeout(avSync,60)}};
