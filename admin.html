@@ -2676,7 +2676,7 @@ X.forEach(function(x){if(t>=x.s&&t<x.s+x.d){if(x.rf)return;if(x.ff||x.ao||x.aw){
 window.__avGo=function(a,b){pa();t=a;window.__avSA=b;dr=1;go()};
 function tick(){if(!cv||!document.body.contains(cv)){pa();return}raf=requestAnimationFrame(tick);
 if(pl){t=Math.max(tb,tb+(performance.now()-t0)/1000);if(t>=TT()){if(!lpEnd())fin()}else if(window.__avSA>0&&t>=window.__avSA){if(!lpEnd()){window.__avSA=0;pa();dr=1}}else{sync(0);abTick();if(M){setM();msync();if(bsrc&&performance.now()>t0+400&&Math.abs(boff+ac.currentTime-bst-blat-t)>.15)bGo(t)}rlc()}dr=1}
-if(dr){if(pl&&!xb&&(vfcOn()||!nfOK())){}else if(pxBusy&&scrB()&&!pl&&!xb){}else{dr=0;lastDw=performance.now();if(vv)vv._nf=0;if(!xb)draw()}}
+dvEval();if(dr){if(pl&&!xb&&(vfcOn()||!nfOK())){}else if(pxBusy&&scrB()&&!pl&&!xb){}else{dr=0;lastDw=performance.now();if(vv)vv._nf=0;if(!xb)draw()}}
 var e=TT(),a=$('vdT'),b=$('vdS');
 if(a){var lb=fm(t)+' / '+fm(e)+(snF&&!pl?' \u25C6':'');if(lb!==lbC){lbC=lb;a.textContent=lb}}
 if(b&&document.activeElement!==b){var sv2=e?t/e*1000:0;if(Math.abs(sv2-svC)>.3){svC=sv2;b.value=sv2;if(b._pt)b._pt()}}
@@ -4334,7 +4334,7 @@ var mtG=null,mtA=null,mtV=[0,0],BTV=(function(){try{return localStorage.getItem(
 function mtIn(){if(!mtG){mtG=ac.createGain();mtG.channelCount=2;mtG.channelCountMode='explicit';var sp=ac.createChannelSplitter(2),z=ac.createGain();mtA=[ac.createAnalyser(),ac.createAnalyser()];mtA.forEach(function(a){a.fftSize=1024});mtG.connect(sp);sp.connect(mtA[0],0);sp.connect(mtA[1],1);z.gain.value=0;mtA[0].connect(z);mtA[1].connect(z);z.connect(ac.destination)}return mtG}
 function pnTx(v){return v?(v>0?'Kanan '+v:'Kiri '+(-v)):'Tengah'}
 function pnH(c){return acc('pn','Pan stereo',pnTx(c.pn||0),'<div class="pr pr-s"><span>Kiri \u2194 kanan</span><b id="pnl_c">'+pnTx(c.pn||0)+'</b><input type="range" data-pn="c" min="-100" max="100" step="5" value="'+(c.pn||0)+'"></div><div class="vr"><button class="b g" type="button" data-a="zpc">Tengah</button><button class="b g" type="button" data-a="zpa">Terapkan ke semua klip video</button></div>')}
-function mtUi(){var v=(M&&M.pn)||0;return '<details class="vgp" id="vdMt" open><summary>Meter, pan & offset audio</summary><div class="vgb"><p class="vlb">Meter L / R (saat preview)</p><div class="mtb"><i id="vdMtL"></i></div><div class="mtb"><i id="vdMtR"></i></div><div class="pr pr-s"><span>Pan musik</span><b id="pnl_m">'+pnTx(v)+'</b><input type="range" data-pn="m" min="-100" max="100" step="5" value="'+v+'"></div><div class="vr"><button class="b g" type="button" data-a="zmc">Tengah</button></div><div class="pr pr-s"><span>Offset audio</span><b id="aofl">'+aofTx()+'</b><input type="range" data-aof="1" min="-200" max="200" step="5" value="'+AOF+'"></div><div class="vr"><button class="b g" type="button" data-aofz="1">Offset nol</button></div><p class="vlb">Plus = musik dan voice-over keluar lebih awal (pakai bila terasa telat). Tidak mengubah ekspor.</p><label class="vs"><span><input type="checkbox" data-nf="1"'+(NFON?' checked':'')+'> Gambar mengikuti frame video</span></label><label class="vs"><span><input type="checkbox" data-dg="1"'+(DGON?' checked':'')+'> Tampilkan info performa preview</span></label><label class="vs"><span><input type="checkbox" data-ca="1"'+(CAMODE?' checked':'')+'> Mode ringan: suara klip lewat WebAudio (muat ulang halaman)</span></label><label class="vs"><span><input type="checkbox" data-pp="1"'+(PPON?' checked':'')+'> Pra-putar klip berikutnya</span></label><label class="vs"><span><input type="checkbox" data-bt="1"'+(BTV?' checked':'')+'> Tampilkan beat di timeline</span></label></div></details>'}
+function mtUi(){var v=(M&&M.pn)||0;return '<details class="vgp" id="vdMt" open><summary>Meter, pan & offset audio</summary><div class="vgb"><p class="vlb">Meter L / R (saat preview)</p><div class="mtb"><i id="vdMtL"></i></div><div class="mtb"><i id="vdMtR"></i></div><div class="pr pr-s"><span>Pan musik</span><b id="pnl_m">'+pnTx(v)+'</b><input type="range" data-pn="m" min="-100" max="100" step="5" value="'+v+'"></div><div class="vr"><button class="b g" type="button" data-a="zmc">Tengah</button></div><div class="pr pr-s"><span>Offset audio</span><b id="aofl">'+aofTx()+'</b><input type="range" data-aof="1" min="-200" max="200" step="5" value="'+AOF+'"></div><div class="vr"><button class="b g" type="button" data-aofz="1">Offset nol</button></div><p class="vlb">Plus = musik dan voice-over keluar lebih awal (pakai bila terasa telat). Tidak mengubah ekspor.</p><label class="vs"><span><input type="checkbox" data-nf="1"'+(NFON?' checked':'')+'> Gambar mengikuti frame video</span></label><label class="vs"><span><input type="checkbox" data-dv="1"'+(DVEN?' checked':'')+'> Preview langsung seperti Source (klip polos tanpa efek/teks)</span></label><label class="vs"><span><input type="checkbox" data-dg="1"'+(DGON?' checked':'')+'> Tampilkan info performa preview</span></label><label class="vs"><span><input type="checkbox" data-ca="1"'+(CAMODE?' checked':'')+'> Mode ringan: suara klip lewat WebAudio (muat ulang halaman)</span></label><label class="vs"><span><input type="checkbox" data-pp="1"'+(PPON?' checked':'')+'> Pra-putar klip berikutnya</span></label><label class="vs"><span><input type="checkbox" data-bt="1"'+(BTV?' checked':'')+'> Tampilkan beat di timeline</span></label></div></details>'}
 function pnSet(){try{var p=vv&&vv._p,c=C[s];if(p)p.pan.value=Math.max(-1,Math.min(1,((c&&c.pn)||0)/100));p=au&&au._p;if(p)p.pan.value=Math.max(-1,Math.min(1,((M&&M.pn)||0)/100))}catch(e){}}
 var pnSV0=setV;setV=function(c,l){pnSV0(c,l);try{if(vv&&vv._p&&c)vv._p.pan.value=Math.max(-1,Math.min(1,(c.pn||0)/100))}catch(e){}};
 var pnSM0=setM;setM=function(){pnSM0.apply(this,arguments);try{if(au&&au._p)au._p.pan.value=Math.max(-1,Math.min(1,((M&&M.pn)||0)/100))}catch(e){}};
@@ -4403,8 +4403,29 @@ document.addEventListener('change',function(e){var el=e.target;if(!el||!el.datas
 var LVB=null,lvT=0;
 function vfcOn(){if(!pl||xb||!vv||vv.paused||!vv.requestVideoFrameCallback)return false;var p=at(t);if(!p)return false;var c=C[p.i];return c.k==='v'&&!c.rv&&ci===p.i&&vv.getAttribute('src')===c.u}
 function vfcDraw(){if(!vfcOn())return;var n=performance.now();t=Math.max(tb,tb+(n-t0)/1000);if(t>=TT())return;if(!rdy(at(t))){return}dr=0;lastDw=n;vv._nf=0;draw();lvbGet(n)}
-function lvbGet(n){if(n-lvT<250||!cv||!window.createImageBitmap)return;lvT=n;try{createImageBitmap(cv).then(function(b){var o=LVB;LVB=b;if(o)try{o.close()}catch(e){}}).catch(function(){})}catch(e){}}
+function lvbGet(n){if(DVon||n-lvT<250||!cv||!window.createImageBitmap)return;lvT=n;try{createImageBitmap(cv).then(function(b){var o=LVB;LVB=b;if(o)try{o.close()}catch(e){}}).catch(function(){})}catch(e){}}
 function lvbPut(){if(pnt||!LVB||!cv)return;try{cx.setTransform(1,0,0,1,0,0);cx.drawImage(LVB,0,0,cv.width,cv.height);pnt=1}catch(e){}}
+/*sesiDV-awal: preview utama memutar video asli (seperti Source) untuk klip polos*/
+var DVEN=(function(){try{return localStorage.getItem('vid_dv')!=='0'}catch(e){return true}})(),DVon=0;
+function dvMount(){if(!cv||!vv||!vn||!cv.parentNode)return;var f=cv.parentNode;[vv,vn].forEach(function(e){if(e.parentNode!==f)f.appendChild(e);e.setAttribute('playsinline','');e.setAttribute('webkit-playsinline','');e.disablePictureInPicture=true;e.controls=false;e.style.cssText='position:absolute;left:0;top:0;width:100%;height:100%;opacity:0;pointer-events:none;background:#000;border-radius:10px;z-index:0;object-position:center';e._dvs=0;e._dvf=''});cv.style.position='relative';cv.style.zIndex='1';cv.style.opacity='';cv._dvo='';DVon=0}
+function dvWant(){try{if(!DVEN||!pl||xb||FR||rec||cmpOn||!vv||!cv||!vfcOn())return 0;if(vv.readyState<2||!(vv.videoWidth>0)||vv.seeking)return 0;
+if(typeof tkEff==='function'&&(tkEff('c')||tkEff('x')||tkEff('o')))return 0;
+var p=at(t);if(!p)return 0;var c=C[p.i];if(!c||c.k!=='v'||c.rv||c.gen||c.ck||c.cpm||c.bz||c.g||c.sh>0||c.vg>0||c.gr>0||c.fh||c.fv||c.tx||c.ty||c.rt||(c.zm||1)!==1||(c.fx&&c.fx.length)||(c.stb&&c.sbOn))return 0;
+if(c.kfs&&kzC(c,p.l))return 0;if(rkFr())return 0;
+var nx=C[p.i+1];if(c.tr&&p.l<(c.td||.5)+.08)return 0;if(nx&&nx.tr&&L(c)-p.l<(nx.td||.5)+.08)return 0;
+if(act().length)return 0;for(var i=0;i<X.length;i++)if(t>=X[i].s-.05&&t<X[i].s+X[i].d)return 0;
+if(Math.abs(vv.currentTime-sw(c,p.l))>.3)return 0;return 1}catch(e){return 0}}
+function dvEval(){if(!cv||!vv||!vn||vv.parentNode!==cv.parentNode){if(DVon){DVon=0}return}
+var w=dvWant();
+if(w){if(!DVon){DVon=1;LVB=null}}
+else if(DVon){if(!pl||xb||FR||rec||cmpOn||!DVEN){DVon=0;try{draw0()}catch(e){}dr=1}
+else{var ok=0;try{ok=!!rdy(at(t))}catch(e){}if(ok){DVon=0;try{draw0()}catch(e){}}else return}}
+var wv=DVon?vv:null;[vv,vn].forEach(function(e){var q=e===wv?1:0;if(e._dvs!==q){e._dvs=q;e.style.opacity=q?'1':'0'}});
+if(wv){var p=at(t),c=p&&C[p.i],ft=c&&c.f?'contain':'cover';if(wv._dvf!==ft){wv._dvf=ft;wv.style.objectFit=ft}}
+var co=DVon?'0':'';if(cv._dvo!==co){cv._dvo=co;cv.style.opacity=co}}
+var dvD0=draw0;draw0=function(){if(DVon&&pl&&!xb)return;return dvD0.apply(this,arguments)};
+document.addEventListener('change',function(e){var el=e.target;if(!el||!el.dataset||!el.dataset.dv)return;e.stopPropagation();DVEN=!!el.checked;try{localStorage.setItem('vid_dv',DVEN?'1':'0')}catch(x){}if(!DVEN&&DVon){DVon=0;dvEval();dr=1}},true);
+/*sesiDV-akhir*/
 function cssGoff(){if(cv&&cv.style.filter)cv.style.filter=''}
 function cssG(c,p){var on=pl&&!xb&&c&&c.g&&!pvBusyFx(c,p),f=on?gf(c.g):'';if(cv&&cv.style.filter!==f)cv.style.filter=f;return on}
 function pvBusyFx(c,p){if(c.tr&&p.l<(c.td||.5))return true;var nx=C[p.i+1];if(nx&&nx.tr==='fade'&&L(c)-p.l<(nx.td||.5))return true;if(act().length)return true;for(var i=0;i<X.length;i++){if(t>=X[i].s&&t<X[i].s+X[i].d)return true}return false}
@@ -4827,7 +4848,7 @@ if(AV.ct)P({t:avWrap(AV.ct,24),s:T-ce+.9,d:Math.max(.6,ce-.9),z:zz(40),y:(AV.hg&
 if(AV.sy&&M&&M.bt&&M.bt.length>2)avSnap(M.bt);avFade();
 s=-1;xs=-1;os=-1;t=0;ci=-1;dr=1;all();pa();
 msg('Auto-Edit selesai: '+C.length+' klip, '+X.filter(function(x){return x.au}).length+' teks. Tambah musik di tab Audio.',5000)}
-return function(){msg('Editor video versi S4a aktif',2200);mk();cancelAnimationFrame(raf);try{snp()}catch(e){}cmpOn=0;var l=$('list');l.innerHTML=shell();cv=$('vdc');cx=cv.getContext('2d',{alpha:false});cv.addEventListener('pointerdown',kpPick,true);pnt=0;lbC='';svC=-9;phd();
+return function(){msg('Editor video versi S4a aktif',2200);mk();cancelAnimationFrame(raf);try{snp()}catch(e){}cmpOn=0;var l=$('list');l.innerHTML=shell();cv=$('vdc');cx=cv.getContext('2d',{alpha:false});cv.addEventListener('pointerdown',kpPick,true);try{dvMount()}catch(e){}pnt=0;lbC='';svC=-9;phd();
 l.onclick=clk;l.oninput=inp;gest();pjStart();pbK='';pjBar(1);cmpW(l);layApply();tlW();jogW();if(window.__enhS)__enhS(l);
 $('vdF1').onchange=function(e){var fl=Array.prototype.slice.call(e.target.files);addF(fl,'v');lbAuto(fl,'Galeri');e.target.value=''};lbInit();
 $('vdF2').onchange=function(e){addF(e.target.files,'a');e.target.value='';if(avMusP){avMusP=0;setTimeout(avSync,60)}};
