@@ -232,8 +232,8 @@
   "other|Overlay Controller Xbox Series X - Pixel Arcade Edition": {
    "n": "Overlay Controller Xbox Series X - Pixel Arcade Edition",
    "ne": "Xbox Series X Controller Overlay - Pixel Arcade Edition",
-   "d": "Edisi khusus overlay controller Xbox Series X bertema Pixel Arcade yang bergerak mengikuti gamepad. Sekali beli dapat 3 pilihan desain: Dino Atas, Dino Tengah, dan Tanpa Dino.",
-   "de": "A special-edition Pixel Arcade Xbox Series X controller overlay that follows your gamepad. One purchase includes 3 design options: Dino Top, Dino Center, and No Dino.",
+   "d": "Overlay controller Xbox Series X bertema Pixel Arcade yang bergerak mengikuti gamepad kamu. Sekali beli dapat 3 pilihan desain: Dino Atas, Dino Tengah, dan Tanpa Dino. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Pixel Arcade theme that follows your gamepad live. One purchase includes 3 design options: Dino Top, Dino Center, and No Dino. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 259000,
    "usd": 23,
    "overlay": true,
@@ -245,12 +245,10 @@
    "sub": "xbox-series-x",
    "ord": 32,
    "ft": [
-    "3 pilihan desain dalam sekali beli: Dino Atas, Dino Tengah, Tanpa Dino",
-    "Bergerak real-time mengikuti gamepad"
+    "3 desain dalam sekali beli: Dino Atas, Dino Tengah, Tanpa Dino"
    ],
    "fte": [
-    "3 design options in one purchase: Dino Top, Dino Center, No Dino",
-    "Moves in real time with your gamepad"
+    "3 designs in one purchase: Dino Top, Dino Center, No Dino"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-pixel-arcade-edition.html",
    "pv": "demo",
@@ -265,8 +263,8 @@
   "other|Overlay Controller Xbox Series X - Water Ring Edition": {
    "n": "Overlay Controller Xbox Series X - Water Ring Edition",
    "ne": "Xbox Series X Controller Overlay - Water Ring Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Water Ring yang bergerak mengikuti gamepad. Trigger LT dan RT jadi pompa air: tekan untuk menyemprot dan mengangkat ring ke tiang, seperti mainan ring air klasik. Tombol, stik, dan bumper ikut menyala saat ditekan, dengan tampilan kaca bernuansa ungu dan pink.",
-   "de": "A Water Ring Edition Xbox Series X controller overlay that follows your gamepad. LT and RT become water pumps: press them to spray water and lift the rings onto the pegs, like the classic water ring toy. Buttons, sticks, and bumpers light up as you press them, in a glassy purple and pink look.",
+   "d": "Overlay controller Xbox Series X bertema Water Ring yang bergerak mengikuti gamepad kamu. LT dan RT jadi pompa air untuk mengangkat ring ke tiang, seperti mainan ring air klasik. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Water Ring theme that follows your gamepad live. LT and RT work as water pumps that lift the rings onto the pegs, like the classic water ring toy. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 225000,
    "usd": 20,
    "overlay": true,
@@ -280,12 +278,10 @@
    "ord": 47,
    "ft": [
     "LT dan RT jadi pompa air: tekan untuk menyemprot dan mengangkat ring ke tiang",
-    "Tombol, stik, dan bumper menyala saat ditekan",
     "Tampilan kaca bernuansa ungu dan pink"
    ],
    "fte": [
     "LT and RT become water pumps: press to spray water and lift the rings onto the pegs",
-    "Buttons, sticks, and bumpers light up when pressed",
     "Glassy purple and pink look"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-water-ring-edition.html",
@@ -300,8 +296,8 @@
   "other|Overlay Controller Xbox Series X - Silk Classic": {
    "n": "Overlay Controller Xbox Series X - Silk Classic",
    "ne": "Xbox Series X Controller Overlay - Silk Classic",
-   "d": "Edisi overlay controller Xbox Series X bertema Silk yang bergerak mengikuti gamepad. Tampilan putih mulus dengan aksen coral. Trigger LT dan RT berupa meter isi yang menampilkan persentase hingga MAX, stik ikut bergeser, dan setiap tombol yang ditekan muncul sebagai riwayat dengan hitungan kombo. Warna aksen bisa disesuaikan.",
-   "de": "A Silk Classic Xbox Series X controller overlay that follows your gamepad, with a smooth white body and coral accents. LT and RT are fill meters that show a percentage up to MAX, the sticks shift as you move them, and each button press appears in a history with a combo counter. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Silk yang bergerak mengikuti gamepad kamu. Tampilan putih mulus dengan aksen coral, dan setiap tombol yang ditekan tercatat lengkap dengan hitungan kombo. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Silk theme that follows your gamepad live. A smooth white look with coral accents, and every button press is logged with a combo count. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "overlay": true,
@@ -315,17 +311,13 @@
    "ord": 38,
    "ft": [
     "Tampilan putih mulus dengan aksen coral",
-    "Trigger LT dan RT berupa meter isi dengan persentase hingga MAX",
-    "Stik bergeser mengikuti gerakan",
-    "Riwayat tombol yang ditekan lengkap dengan hitungan kombo",
-    "Warna aksen bisa disesuaikan"
+    "Trigger LT dan RT berupa meter isi hingga MAX",
+    "Riwayat tombol lengkap dengan hitungan kombo"
    ],
    "fte": [
     "Smooth white look with coral accents",
-    "LT and RT are fill meters showing a percentage up to MAX",
-    "Sticks shift as you move them",
-    "Button press history with a combo counter",
-    "Adjustable accent color"
+    "LT and RT are fill meters up to MAX",
+    "Button history with a combo counter"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-silk-classic.html",
    "hide": false,
@@ -339,8 +331,8 @@
   "other|Overlay Controller Xbox Series X - Fantasy RPG Gold Edition": {
    "n": "Overlay Controller Xbox Series X - Fantasy RPG Gold Edition",
    "ne": "Xbox Series X Controller Overlay - Fantasy RPG Gold Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Fantasy RPG Gold yang bergerak mengikuti gamepad. Badan bernuansa emas dengan tombol A, B, X, Y berbentuk permata. Trigger LT dan RT terisi sesuai tekanan, dan stik bergeser mengikuti gerakan. Empat input terakhir muncul di gulungan mantra, dan setelah 8 input beruntun aktif Mode Ultimate lengkap dengan hitung mundur. Warna aksen dan tulisan Ultimate bisa disesuaikan.",
-   "de": "A Fantasy RPG Gold Edition Xbox Series X controller overlay that follows your gamepad. A golden body with gem-shaped A, B, X, and Y buttons. LT and RT fill according to how far you press, and the sticks shift as you move them. Your last four inputs appear on a spell scroll, and after 8 inputs in a row Ultimate Mode kicks in with a countdown. The accent color and the Ultimate text are adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Fantasy RPG Gold yang bergerak mengikuti gamepad kamu. Badan emas dengan tombol berbentuk permata, dan Mode Ultimate aktif setelah 8 input beruntun. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Fantasy RPG Gold theme that follows your gamepad live. A golden body with gem-shaped buttons, and Ultimate Mode kicks in after 8 inputs in a row. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 299000,
    "usd": 23,
    "overlay": true,
@@ -354,19 +346,15 @@
    "ord": 17,
    "ft": [
     "Badan emas dengan tombol A, B, X, Y berbentuk permata",
-    "Trigger LT dan RT terisi sesuai tekanan, stik bergeser mengikuti gerakan",
     "Gulungan mantra menampilkan 4 input terakhir",
     "Mode Ultimate aktif setelah 8 input beruntun, lengkap dengan hitung mundur",
-    "Tulisan Ultimate bisa disesuaikan",
-    "Warna aksen bisa disesuaikan"
+    "Tulisan Ultimate bisa diganti sesukamu"
    ],
    "fte": [
-    "Golden body with gem-shaped A, B, X, and Y buttons",
-    "LT and RT fill with how far you press, sticks shift as you move them",
-    "Spell scroll shows your last 4 inputs",
+    "Golden body with gem-shaped A, B, X, Y buttons",
+    "A spell scroll shows your last 4 inputs",
     "Ultimate Mode kicks in after 8 inputs in a row, with a countdown",
-    "Adjustable Ultimate text",
-    "Adjustable accent color"
+    "The Ultimate text can be changed to whatever you like"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-fantasy-rpg-gold-edition.html",
    "hide": false,
@@ -380,8 +368,8 @@
   "other|Overlay Controller PS5 DualSense - Shadow Fight 2 Classic": {
    "n": "Overlay Controller PS5 DualSense - Shadow Fight 2 Classic",
    "ne": "PS5 DualSense Controller Overlay - Shadow Fight 2 Edition",
-   "d": "Edisi overlay controller PS5 DualSense bertema Shadow Fight 2 yang bergerak mengikuti gamepad. Body 3D dua nada coklat gelap dan coklat terang dengan sambungan yang halus. Trigger L2 dan R2 bergerak sesuai tekanan, stik bergeser mengikuti gerakan, dan tombol, bumper, serta touchpad menyala saat ditekan. Warna aksen bisa disesuaikan.",
-   "de": "A Shadow Fight 2 Edition PS5 DualSense controller overlay that follows your gamepad. A 3D two-tone body in dark and light brown with a smooth seam. L2 and R2 move with how far you press, the sticks shift as you move them, and the buttons, bumpers, and touchpad light up when pressed. The accent color is adjustable.",
+   "d": "Overlay controller PS5 DualSense bertema Shadow Fight 2 yang bergerak mengikuti gamepad kamu. Body 3D dua nada coklat, dan touchpad ikut menyala saat disentuh. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "PS5 DualSense controller overlay with a Shadow Fight 2 theme that follows your gamepad live. A 3D two-tone brown body, and the touchpad lights up when pressed. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 150000,
    "usd": 9,
    "overlay": true,
@@ -394,16 +382,12 @@
    "sub": "ps5-dualsense",
    "ord": 58,
    "ft": [
-    "Body 3D dua nada coklat dengan sambungan halus",
-    "Trigger L2 dan R2 bergerak sesuai tekanan",
-    "Stik bergeser, tombol, bumper, dan touchpad menyala saat ditekan",
-    "Warna aksen bisa disesuaikan"
+    "Body 3D dua nada coklat gelap dan terang",
+    "Touchpad, tombol, dan bumper menyala saat ditekan"
    ],
    "fte": [
-    "3D two-tone brown body with a smooth seam",
-    "L2 and R2 move with how far you press",
-    "Sticks shift, buttons, bumpers, and touchpad light up when pressed",
-    "Adjustable accent color"
+    "3D two-tone body in dark and light brown",
+    "Touchpad, buttons, and bumpers light up when pressed"
    ],
    "file": "overlays/ps5-dualsense-controller-overlay-shadow-fight-2-edition.html",
    "hide": false,
@@ -417,8 +401,8 @@
   "other|Overlay Controller Xbox Series X - Dark Glass Classic": {
    "n": "Overlay Controller Xbox Series X - Dark Glass Classic",
    "ne": "Xbox Series X Controller Overlay - Dark Glass Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Dark Glass yang bergerak mengikuti gamepad. Body kaca gelap dengan aksen biru es. Trigger LT dan RT berupa meter isi, stik bergeser mengikuti gerakan, dan tiga input terakhir muncul sebagai riwayat singkat. Warna aksen bisa disesuaikan.",
-   "de": "A Dark Glass Edition Xbox Series X controller overlay that follows your gamepad. A dark glass body with an icy blue accent. LT and RT are fill meters, the sticks shift as you move them, and your last three inputs appear as a short history. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Dark Glass yang bergerak mengikuti gamepad kamu. Body kaca gelap dengan aksen biru es, plus riwayat singkat 3 input terakhir. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Dark Glass theme that follows your gamepad live. A dark glass body with icy blue accents, plus a short history of your last 3 inputs. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 9,
    "overlay": true,
@@ -433,16 +417,12 @@
    "ft": [
     "Body kaca gelap dengan aksen biru es",
     "Trigger LT dan RT berupa meter isi",
-    "Stik bergeser mengikuti gerakan",
-    "Tiga input terakhir muncul sebagai riwayat singkat",
-    "Warna aksen bisa disesuaikan"
+    "3 input terakhir tampil sebagai riwayat singkat"
    ],
    "fte": [
-    "Dark glass body with an icy blue accent",
+    "Dark glass body with icy blue accents",
     "LT and RT are fill meters",
-    "Sticks shift as you move them",
-    "Your last three inputs appear as a short history",
-    "Adjustable accent color"
+    "Last 3 inputs shown as a short history"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-dark-glass-edition.html",
    "hide": false,
@@ -456,8 +436,8 @@
   "other|Overlay Controller Xbox Series X - Esports Angular Classic": {
    "n": "Overlay Controller Xbox Series X - Esports Angular Classic",
    "ne": "Xbox Series X Controller Overlay - Esports Angular Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Esports dengan bentuk bersudut tegas dan aksen cyan. Setiap tombol yang ditekan disapu kilatan cahaya, trigger LT dan RT terisi sesuai tekanan, dan stik menampilkan penunjuk arah delapan sektor. Warna aksen bisa disesuaikan.",
-   "de": "An Esports Angular Edition Xbox Series X controller overlay that follows your gamepad, with sharp angular shapes and a cyan accent. A light sweep crosses every button you press, LT and RT fill with how far you press, and each stick shows an eight-sector direction indicator. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Esports Angular yang bergerak mengikuti gamepad kamu. Bentuk bersudut tegas dengan aksen cyan, dan kilatan cahaya menyapu tombol yang ditekan. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Esports Angular theme that follows your gamepad live. Sharp angular shapes with cyan accents, and a flash of light sweeps across every button you press. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 9,
    "overlay": true,
@@ -472,16 +452,12 @@
    "ft": [
     "Bentuk bersudut tegas dengan aksen cyan",
     "Kilatan cahaya menyapu setiap tombol yang ditekan",
-    "Trigger LT dan RT terisi sesuai tekanan",
-    "Stik punya penunjuk arah delapan sektor",
-    "Warna aksen bisa disesuaikan"
+    "Stik punya penunjuk arah 8 sektor"
    ],
    "fte": [
-    "Sharp angular shapes with a cyan accent",
-    "A light sweep crosses every button you press",
-    "LT and RT fill with how far you press",
-    "Sticks show an eight-sector direction indicator",
-    "Adjustable accent color"
+    "Sharp angular shapes with cyan accents",
+    "A flash of light sweeps across every pressed button",
+    "The stick has an 8-sector direction indicator"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-esports-angular-edition.html",
    "hide": false,
@@ -495,8 +471,8 @@
   "other|Overlay Controller Xbox Series X - Comic Pop Art Classic": {
    "n": "Overlay Controller Xbox Series X - Comic Pop Art Classic",
    "ne": "Xbox Series X Controller Overlay - Comic Pop Art Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Comic Pop Art dengan titik halftone dan aksen kuning mencolok. Tekan LT atau RT sampai penuh untuk memompa balon di dalam body, dan setelah lima pompaan balon meledak lalu warna body berganti di antara tujuh palet. Stik ikut bergeser, dan tombol menyala saat ditekan.",
-   "de": "A Comic Pop Art Edition Xbox Series X controller overlay that follows your gamepad, with halftone dots and a bold yellow accent. Press LT or RT all the way to pump a balloon inside the body, and after five pumps it bursts and the body switches between seven color palettes. The sticks shift as you move them, and buttons light up when pressed.",
+   "d": "Overlay controller Xbox Series X bertema Comic Pop Art yang bergerak mengikuti gamepad kamu. Gaya komik dengan titik halftone dan aksen kuning, lengkap dengan balon yang bisa dipompa lewat trigger. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Comic Pop Art theme that follows your gamepad live. A comic look with halftone dots and yellow accents, with a balloon you can pump using the triggers. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 85000,
    "usd": 8,
    "overlay": true,
@@ -510,15 +486,13 @@
    "ord": 7,
    "ft": [
     "Titik halftone dengan aksen kuning mencolok",
-    "Tekan LT atau RT sampai penuh untuk memompa balon di dalam body",
-    "Setelah lima pompaan balon meledak dan warna body berganti di antara tujuh palet",
-    "Stik bergeser, tombol menyala saat ditekan"
+    "Pompa balon dengan LT atau RT sampai penuh",
+    "Setelah 5 pompaan balon meledak dan warna body berganti (7 palet)"
    ],
    "fte": [
-    "Halftone dots with a bold yellow accent",
-    "Press LT or RT all the way to pump a balloon inside the body",
-    "After five pumps the balloon bursts and the body switches between seven palettes",
-    "Sticks shift, buttons light up when pressed"
+    "Halftone dots with bold yellow accents",
+    "Pump the balloon by pulling LT or RT all the way",
+    "After 5 pumps the balloon pops and the body color changes (7 palettes)"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-comic-pop-art-edition.html",
    "hide": false,
@@ -532,8 +506,8 @@
   "other|Overlay Controller Xbox Series X - Manga Ink Edition": {
    "n": "Overlay Controller Xbox Series X - Manga Ink Edition",
    "ne": "Xbox Series X Controller Overlay - Manga Ink Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema manga hitam-putih yang bergerak mengikuti gamepad. Setiap tombol yang ditekan memunculkan efek garis ledakan, dan tekan beruntun untuk memunculkan garis kecepatan. Tekan L3 dan R3 hampir bersamaan untuk berpindah ke mode bertekstur dengan efek lingkaran yang menyapu. Trigger LT dan RT terisi sesuai tekanan.",
-   "de": "A black-and-white manga Xbox Series X controller overlay that follows your gamepad. Each button press triggers a burst-line effect, and pressing in quick succession brings up speed lines. Press L3 and R3 almost together to switch to a textured mode with a sweeping circle effect. LT and RT fill with how far you press.",
+   "d": "Overlay controller Xbox Series X bertema Manga Ink yang bergerak mengikuti gamepad kamu. Tampilan manga hitam-putih dengan efek garis ledakan di setiap tombol yang ditekan. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Manga Ink theme that follows your gamepad live. A black-and-white manga look with burst-line effects on every button you press. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 195000,
    "usd": 15,
    "overlay": true,
@@ -547,17 +521,13 @@
    "ord": 23,
    "ft": [
     "Tampilan manga hitam-putih",
-    "Efek garis ledakan di setiap tombol yang ditekan",
-    "Garis kecepatan muncul saat menekan beruntun",
-    "Tekan L3 dan R3 hampir bersamaan untuk pindah ke mode bertekstur dengan efek lingkaran menyapu",
-    "Trigger LT dan RT terisi sesuai tekanan"
+    "Efek garis ledakan di setiap tombol, garis kecepatan saat menekan beruntun",
+    "Tekan L3 dan R3 bersamaan untuk pindah ke mode bertekstur"
    ],
    "fte": [
     "Black-and-white manga look",
-    "Burst-line effect on every button press",
-    "Speed lines appear when you press in quick succession",
-    "Press L3 and R3 almost together to switch to a textured mode with a sweeping circle effect",
-    "LT and RT fill with how far you press"
+    "Burst lines on every button, speed lines when you press rapidly",
+    "Press L3 and R3 together to switch to a textured mode"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-manga-ink-edition.html",
    "hide": false,
@@ -571,8 +541,8 @@
   "other|Overlay Controller Xbox Series X - Pirate Ship Edition": {
    "n": "Overlay Controller Xbox Series X - Pirate Ship Edition",
    "ne": "Xbox Series X Controller Overlay - Pirate Ship Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema bajak laut yang bergerak mengikuti gamepad. Trigger LT dan RT mengisi air, tombol A, B, X, Y memunculkan riak dan koin, dan peti harta terisi seiring kamu menekan tombol. Di tengah body, kapal berlayar di peta antara pulau dan tanda X. Warna aksen bisa disesuaikan.",
-   "de": "A pirate-themed Xbox Series X controller overlay that follows your gamepad. LT and RT fill with water, the A, B, X, and Y buttons make ripples and coins, and a treasure chest fills up as you press. In the middle of the body, a ship sails across a map between an island and an X. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Pirate Ship yang bergerak mengikuti gamepad kamu. Kapal berlayar di peta di tengah body, dan peti harta terisi seiring tombol ditekan. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Pirate Ship theme that follows your gamepad live. A ship sails across a map in the middle of the body, and the treasure chest fills up as you press buttons. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 199000,
    "usd": 15,
    "overlay": true,
@@ -587,16 +557,14 @@
    "ft": [
     "Trigger LT dan RT mengisi air",
     "Tombol A, B, X, Y memunculkan riak dan koin",
-    "Peti harta terisi seiring kamu menekan tombol",
-    "Kapal berlayar di peta antara pulau dan tanda X di tengah body",
-    "Warna aksen bisa disesuaikan"
+    "Peti harta terisi seiring tombol ditekan",
+    "Kapal berlayar di peta di tengah body"
    ],
    "fte": [
     "LT and RT fill with water",
-    "A, B, X, and Y make ripples and coins",
-    "A treasure chest fills up as you press",
-    "A ship sails across a map between an island and an X in the middle of the body",
-    "Adjustable accent color"
+    "A, B, X, Y buttons create ripples and coins",
+    "The treasure chest fills up as you press buttons",
+    "A ship sails across a map in the middle of the body"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-pirate-ship-edition.html",
    "hide": false,
@@ -610,8 +578,8 @@
   "other|Overlay Controller Xbox Series X - Street Graffiti 3D Classic": {
    "n": "Overlay Controller Xbox Series X - Street Graffiti 3D Classic",
    "ne": "Xbox Series X Controller Overlay - Street Graffiti 3D Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema graffiti jalanan 3D yang bergerak mengikuti gamepad. Setiap tombol yang ditekan menuliskan hurufnya sebagai coretan di tembok dengan warna tombol itu, lengkap dengan cipratan cat, kabut, dan tetesan. Trigger LT dan RT terisi sesuai tekanan, dan stik bergeser mengikuti gerakan.",
-   "de": "A 3D street graffiti Xbox Series X controller overlay that follows your gamepad. Each button you press scrawls its letter on the wall in that button's color, with paint splashes, mist, and drips. LT and RT fill with how far you press, and the sticks shift as you move them.",
+   "d": "Overlay controller Xbox Series X bertema Street Graffiti 3D yang bergerak mengikuti gamepad kamu. Setiap tombol yang ditekan menuliskan hurufnya sebagai coretan graffiti di tembok. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Street Graffiti 3D theme that follows your gamepad live. Every button you press writes its letter as graffiti on the wall. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 12,
    "overlay": true,
@@ -624,16 +592,12 @@
    "sub": "xbox-series-x",
    "ord": 40,
    "ft": [
-    "Tombol yang ditekan menuliskan hurufnya sebagai coretan di tembok dengan warna tombol itu",
-    "Cipratan cat, kabut, dan tetesan",
-    "Trigger LT dan RT terisi sesuai tekanan",
-    "Stik bergeser mengikuti gerakan"
+    "Tombol yang ditekan menuliskan hurufnya di tembok, sesuai warna tombol",
+    "Cipratan cat, kabut, dan tetesan"
    ],
    "fte": [
-    "Each button you press scrawls its letter on the wall in that button's color",
-    "Paint splashes, mist, and drips",
-    "LT and RT fill with how far you press",
-    "Sticks shift as you move them"
+    "Pressed buttons write their letter on the wall in the button's color",
+    "Paint splatter, mist, and drips"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-street-graffiti-3d-edition.html",
    "hide": false,
@@ -647,8 +611,8 @@
   "other|Overlay Controller PS5 DualSense - Art Deco Classic": {
    "n": "Overlay Controller PS5 DualSense - Art Deco Classic",
    "ne": "PS5 DualSense Controller Overlay - Art Deco Edition",
-   "d": "Edisi overlay controller PS5 DualSense bertema Art Deco yang bergerak mengikuti gamepad. Body 3D hitam dengan ornamen geometris emas. Trigger L2 dan R2 bergerak sesuai tekanan, stik bergeser mengikuti gerakan, dan tombol menyala saat ditekan. Warna aksen bisa disesuaikan.",
-   "de": "An Art Deco Edition PS5 DualSense controller overlay that follows your gamepad. A black 3D body with gold geometric ornaments. L2 and R2 move with how far you press, the sticks shift as you move them, and buttons light up when pressed. The accent color is adjustable.",
+   "d": "Overlay controller PS5 DualSense bertema Art Deco yang bergerak mengikuti gamepad kamu. Body 3D hitam dengan ornamen geometris emas. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "PS5 DualSense controller overlay with a Art Deco theme that follows your gamepad live. A black 3D body with gold geometric ornaments. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 105000,
    "usd": 9,
    "overlay": true,
@@ -661,16 +625,10 @@
    "sub": "ps5-dualsense",
    "ord": 57,
    "ft": [
-    "Body 3D hitam dengan ornamen geometris emas",
-    "Trigger L2 dan R2 bergerak sesuai tekanan",
-    "Stik bergeser mengikuti gerakan, tombol menyala saat ditekan",
-    "Warna aksen bisa disesuaikan"
+    "Body 3D hitam dengan ornamen geometris emas"
    ],
    "fte": [
-    "Black 3D body with gold geometric ornaments",
-    "L2 and R2 move with how far you press",
-    "Sticks shift as you move them, buttons light up when pressed",
-    "Adjustable accent color"
+    "Black 3D body with gold geometric ornaments"
    ],
    "file": "overlays/ps5-dualsense-controller-overlay-art-deco-edition.html",
    "hide": false,
@@ -684,8 +642,8 @@
   "other|Overlay Controller Xbox Series X - Watercolor Classic": {
    "n": "Overlay Controller Xbox Series X - Watercolor Classic",
    "ne": "Xbox Series X Controller Overlay - Watercolor Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Watercolor yang bergerak mengikuti gamepad. Body biru keunguan dengan noda cat air lembut. Setiap tombol yang ditekan memercikkan tinta, dan enam input terakhir muncul sebagai tetesan warna di palet atas. Trigger LT dan RT berupa meter isi dengan penanda puncak, dan stik bergeser mengikuti gerakan. Warna aksen bisa disesuaikan.",
-   "de": "A Watercolor Edition Xbox Series X controller overlay that follows your gamepad. A soft indigo body with gentle watercolor washes. Every button you press splashes ink, and your last six inputs appear as paint drops on the palette strip above. LT and RT are fill meters with a peak marker, and the sticks shift as you move them. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Watercolor yang bergerak mengikuti gamepad kamu. Body biru keunguan dengan noda cat air lembut, dan setiap tombol memercikkan tinta. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Watercolor theme that follows your gamepad live. A bluish-purple body with soft watercolor stains, and every button splashes ink. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "overlay": true,
@@ -700,18 +658,14 @@
    "ft": [
     "Body biru keunguan dengan noda cat air lembut",
     "Setiap tombol yang ditekan memercikkan tinta",
-    "Enam input terakhir muncul sebagai tetesan warna di palet atas",
-    "Trigger LT dan RT berupa meter isi dengan penanda puncak",
-    "Stik bergeser mengikuti gerakan",
-    "Warna aksen bisa disesuaikan"
+    "6 input terakhir tampil sebagai tetesan warna di palet atas",
+    "Trigger berupa meter isi dengan penanda puncak"
    ],
    "fte": [
-    "Soft indigo body with gentle watercolor washes",
-    "Every button press splashes ink",
-    "Your last six inputs appear as paint drops on the palette strip",
-    "LT and RT are fill meters with a peak marker",
-    "Sticks shift as you move them",
-    "Adjustable accent color"
+    "Bluish-purple body with soft watercolor stains",
+    "Every pressed button splashes ink",
+    "The last 6 inputs appear as color drops on the top palette",
+    "Triggers are fill meters with a peak marker"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-watercolor-edition.html",
    "hide": false,
@@ -725,8 +679,8 @@
   "other|Overlay Controller Xbox Series X - Military Tactical Classic": {
    "n": "Overlay Controller Xbox Series X - Military Tactical Classic",
    "ne": "Xbox Series X Controller Overlay - Military Tactical Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Military Tactical yang bergerak mengikuti gamepad. Body hijau army dengan garis kontur peta, huruf stensil pada tombol A, B, X, dan Y, dan display Home berupa radar yang terus menyapu. Trigger LT dan RT terisi oranye sesuai tekanan, dan stik bergeser mengikuti gerakan. Warna aksen bisa disesuaikan.",
-   "de": "A Military Tactical Edition Xbox Series X controller overlay that follows your gamepad. An army-green body with map contour lines, stencil lettering on the A, B, X, and Y buttons, and a Home display shaped like a constantly sweeping radar. LT and RT fill in orange as you press, and the sticks shift as you move them. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Military Tactical yang bergerak mengikuti gamepad kamu. Body hijau army dengan garis kontur peta, dan display Home berupa radar yang terus menyapu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Military Tactical theme that follows your gamepad live. An army-green body with map contour lines, and a Home display that works as a sweeping radar. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "overlay": true,
@@ -740,19 +694,13 @@
    "ord": 25,
    "ft": [
     "Body hijau army dengan garis kontur peta",
-    "Huruf stensil pada tombol A, B, X, dan Y",
-    "Display Home berupa radar yang terus menyapu",
-    "Trigger LT dan RT terisi oranye sesuai tekanan",
-    "Stik bergeser mengikuti gerakan",
-    "Warna aksen bisa disesuaikan"
+    "Huruf stensil pada tombol A, B, X, Y",
+    "Display Home berupa radar yang terus menyapu"
    ],
    "fte": [
     "Army-green body with map contour lines",
-    "Stencil lettering on A, B, X, and Y",
-    "Home display is a constantly sweeping radar",
-    "LT and RT fill in orange as you press",
-    "Sticks shift as you move them",
-    "Adjustable accent color"
+    "Stencil lettering on the A, B, X, Y buttons",
+    "The Home display is a continuously sweeping radar"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-military-tactical-edition.html",
    "hide": false,
@@ -766,8 +714,8 @@
   "other|Overlay Controller Xbox Series X - Arcade Cabinet Edition": {
    "n": "Overlay Controller Xbox Series X - Arcade Cabinet Edition",
    "ne": "Xbox Series X Controller Overlay - Arcade Cabinet Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Arcade Cabinet yang bergerak mengikuti gamepad. Stik berbentuk joystick merah ala mesin arcade, dan panel atas menampilkan hitungan CREDIT yang bertambah setiap tombol ditekan, lengkap dengan koin yang jatuh ke slot. Display Home menampilkan INSERT COIN, trigger LT dan RT terisi hingga tulisan MAX, dan tombol menyala saat ditekan.",
-   "de": "An Arcade Cabinet Edition Xbox Series X controller overlay that follows your gamepad. The sticks look like red arcade joysticks, and the top panel shows a CREDIT counter that goes up with every button press, complete with a coin dropping into the slot. The Home display reads INSERT COIN, LT and RT fill up to a MAX label, and the buttons light up as you press them.",
+   "d": "Overlay controller Xbox Series X bertema Arcade Cabinet yang bergerak mengikuti gamepad kamu. Stik berbentuk joystick merah ala mesin arcade, dengan hitungan CREDIT yang bertambah tiap tombol ditekan. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Arcade Cabinet theme that follows your gamepad live. A red arcade-style joystick, with a CREDIT counter that goes up with every button press. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 220000,
    "usd": 18,
    "overlay": true,
@@ -781,17 +729,13 @@
    "ord": 1,
    "ft": [
     "Stik berbentuk joystick merah ala mesin arcade",
-    "Hitungan CREDIT bertambah setiap tombol ditekan, lengkap dengan koin jatuh ke slot",
-    "Display Home menampilkan INSERT COIN",
-    "Trigger LT dan RT terisi hingga tulisan MAX",
-    "Tombol menyala saat ditekan"
+    "Hitungan CREDIT bertambah tiap tombol ditekan, lengkap dengan koin jatuh ke slot",
+    "Display Home menampilkan INSERT COIN"
    ],
    "fte": [
-    "Sticks look like red arcade joysticks",
-    "CREDIT counter goes up with every button press, with a coin dropping into the slot",
-    "Home display reads INSERT COIN",
-    "LT and RT fill up to a MAX label",
-    "Buttons light up when pressed"
+    "Red arcade-style joystick",
+    "CREDIT counter goes up on every press, with coins dropping into the slot",
+    "The Home display shows INSERT COIN"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-arcade-cabinet-edition.html",
    "hide": false,
@@ -805,8 +749,8 @@
   "other|Overlay Controller Xbox Series X - VHS Analog Edition": {
    "n": "Overlay Controller Xbox Series X - VHS Analog Edition",
    "ne": "Xbox Series X Controller Overlay - VHS Analog Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema VHS Analog yang bergerak mengikuti gamepad. Body bergaris scanline dengan stiker kaset VHS T-120 dan stik berbentuk roda kaset. Display Home jadi counter VCR dengan mode PLAY, FF, REW, dan PAUSE lengkap dengan hitungan waktu. Trigger LT dan RT terisi bergaris cyan, dan sesekali garis tracking glitch lewat di body. Warna aksen bisa disesuaikan.",
-   "de": "A VHS Analog Edition Xbox Series X controller overlay that follows your gamepad. A scanlined body with a VHS T-120 tape sticker and sticks shaped like tape reels. The Home display becomes a VCR counter with PLAY, FF, REW, and PAUSE modes and a running timecode. LT and RT fill with cyan scanlines, and a tracking glitch line occasionally sweeps across the body. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema VHS Analog yang bergerak mengikuti gamepad kamu. Body bergaris scanline dengan stiker kaset VHS, dan display Home berupa counter VCR. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a VHS Analog theme that follows your gamepad live. A scanline-striped body with a VHS tape sticker, and a Home display that works as a VCR counter. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 245000,
    "usd": 20,
    "overlay": true,
@@ -821,18 +765,14 @@
    "ft": [
     "Body bergaris scanline dengan stiker kaset VHS T-120",
     "Stik berbentuk roda kaset",
-    "Display Home jadi counter VCR dengan mode PLAY, FF, REW, PAUSE, dan hitungan waktu",
-    "Trigger LT dan RT terisi bergaris cyan",
-    "Garis tracking glitch sesekali lewat di body",
-    "Warna aksen bisa disesuaikan"
+    "Display Home jadi counter VCR: PLAY, FF, REW, PAUSE, dan hitungan waktu",
+    "Garis tracking glitch sesekali lewat di body"
    ],
    "fte": [
-    "Scanlined body with a VHS T-120 tape sticker",
-    "Sticks shaped like tape reels",
-    "Home display becomes a VCR counter with PLAY, FF, REW, PAUSE modes and a timecode",
-    "LT and RT fill with cyan scanlines",
-    "A tracking glitch line occasionally sweeps across the body",
-    "Adjustable accent color"
+    "Scanline-striped body with a VHS T-120 tape sticker",
+    "Stick shaped like a tape reel",
+    "The Home display becomes a VCR counter: PLAY, FF, REW, PAUSE, and a timer",
+    "Tracking glitch lines pass over the body now and then"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-vhs-analog-edition.html",
    "hide": false,
@@ -846,8 +786,8 @@
   "other|Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition": {
    "n": "Overlay Controller Xbox Series X - Samurai Ukiyo-e Edition",
    "ne": "Xbox Series X Controller Overlay - Samurai Ukiyo-e Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Samurai Ukiyo-e yang bergerak mengikuti gamepad. Body biru indigo dengan gulungan di plat atas yang mencatat riwayat input, serta panji matahari merah dan ombak besar di bawah. Setelah tiga input beruntun, display Home menampilkan tebasan dan kanji kombo yang berubah menjadi 極 saat kombo makin panjang. Cincin merah menyala di stik yang ditekan, dan trigger terisi sesuai tekanan. Warna aksen bisa disesuaikan.",
-   "de": "A Samurai Ukiyo-e Edition Xbox Series X controller overlay that follows your gamepad. An indigo body with a scroll on the top plate that records your input history, and a banner with a red sun and a great wave below. After three inputs in a row, the Home display shows a slash and a combo kanji that turns into 極 as the combo grows. A red ring lights up on the stick you press, and the triggers fill with how far you press. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Samurai Ukiyo-e yang bergerak mengikuti gamepad kamu. Body biru indigo ala lukisan ukiyo-e, dengan tebasan dan kanji kombo setelah 3 input beruntun. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Samurai Ukiyo-e theme that follows your gamepad live. An indigo ukiyo-e style body, with slash effects and a combo kanji after 3 inputs in a row. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 199000,
    "usd": 18,
    "overlay": true,
@@ -862,18 +802,14 @@
    "ft": [
     "Body biru indigo dengan panji matahari merah dan ombak besar",
     "Gulungan di plat atas mencatat riwayat input",
-    "Setelah tiga input beruntun, display Home menampilkan tebasan dan kanji kombo yang berubah menjadi 極",
-    "Cincin merah menyala di stik yang ditekan",
-    "Trigger terisi sesuai tekanan",
-    "Warna aksen bisa disesuaikan"
+    "Setelah 3 input beruntun muncul tebasan dan kanji kombo (berubah jadi 極 saat kombo makin panjang)",
+    "Cincin merah menyala di stik yang ditekan"
    ],
    "fte": [
     "Indigo body with a red sun banner and a great wave",
-    "Scroll on the top plate records your input history",
-    "After three inputs in a row, the Home display shows a slash and a combo kanji that turns into 極",
-    "A red ring lights up on the stick you press",
-    "Triggers fill with how far you press",
-    "Adjustable accent color"
+    "A scroll on the top plate logs your inputs",
+    "After 3 inputs in a row, a slash and a combo kanji appear (turning into 極 as the combo grows)",
+    "A red ring lights up on the pressed stick"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-samurai-ukiyo-e-edition.html",
    "hide": false,
@@ -887,8 +823,8 @@
   "other|Overlay Controller Xbox Series X - Pixel 8-bit Classic": {
    "n": "Overlay Controller Xbox Series X - Pixel 8-bit Classic",
    "ne": "Xbox Series X Controller Overlay - Pixel 8-bit Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Pixel 8-bit yang bergerak mengikuti gamepad. Body ungu bertekstur dither dengan tombol segi delapan ala piksel dan stik bermata. Display Home adalah mini game: setiap tombol yang ditekan memunculkan duri, kena duri mengurangi satu dari tiga hati, dan saat hati habis muncul GAME OVER sebelum game mengulang. Trigger LT dan RT terisi bergaris. Warna aksen bisa disesuaikan.",
-   "de": "A Pixel 8-bit Edition Xbox Series X controller overlay that follows your gamepad. A purple dithered body with octagonal pixel buttons and sticks with little eyes. The Home display is a mini game: every button press spawns a spike, a hit costs one of three hearts, and when the hearts run out GAME OVER appears before the game restarts. LT and RT fill with stripes. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Pixel 8-bit yang bergerak mengikuti gamepad kamu. Body ungu bertekstur dither dan mini game di display Home. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Pixel 8-bit theme that follows your gamepad live. A purple dithered body and a mini game on the Home display. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "overlay": true,
@@ -901,16 +837,12 @@
    "sub": "xbox-series-x",
    "ord": 31,
    "ft": [
-    "Body ungu bertekstur dither, tombol segi delapan, dan stik bermata",
-    "Mini game di display Home: tombol yang ditekan memunculkan duri, tiga hati, lalu GAME OVER dan mengulang",
-    "Trigger LT dan RT terisi bergaris",
-    "Warna aksen bisa disesuaikan"
+    "Body ungu bertekstur dither dengan tombol segi delapan dan stik bermata",
+    "Mini game di display Home: tombol memunculkan duri, 3 hati, lalu GAME OVER dan mengulang"
    ],
    "fte": [
-    "Purple dithered body, octagonal buttons, and sticks with little eyes",
-    "Mini game on the Home display: button presses spawn spikes, three hearts, then GAME OVER and restart",
-    "LT and RT fill with stripes",
-    "Adjustable accent color"
+    "Purple dithered body with octagon buttons and an eyed stick",
+    "Mini game on the Home display: buttons spawn spikes, 3 hearts, then GAME OVER and restart"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-pixel-8-bit-edition.html",
    "hide": false,
@@ -924,8 +856,8 @@
   "other|Overlay Controller Xbox Series X - Steampunk Brass Edition": {
    "n": "Overlay Controller Xbox Series X - Steampunk Brass Edition",
    "ne": "Xbox Series X Controller Overlay - Steampunk Brass Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Steampunk Brass yang bergerak mengikuti gamepad. Body kuningan dan kayu dengan roda gigi berputar serta kereta mainan yang berjalan di rel mengelilingi body. Display Home berupa speedometer berjarum: makin banyak tombol ditekan jarum makin naik, RT penuh membawanya ke batas dengan asap yang terus keluar, dan jarum turun mengikuti tekanan RT. Trigger LT dan RT terisi sesuai tekanan. Warna aksen bisa disesuaikan.",
-   "de": "A Steampunk Brass Edition Xbox Series X controller overlay that follows your gamepad. A brass and wood body with spinning gears and a toy train that runs on rails around the body. The Home display is a needle speedometer: the more buttons you press, the higher the needle climbs, a full RT pushes it to the limit with steam that keeps coming, and the needle drops as you ease off RT. LT and RT fill with how far you press. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Steampunk Brass yang bergerak mengikuti gamepad kamu. Body kuningan dan kayu dengan roda gigi berputar, plus kereta mainan yang berjalan di rel mengelilingi body. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Steampunk Brass theme that follows your gamepad live. A brass and wood body with spinning gears, plus a toy train running on a track around the body. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 220000,
    "usd": 19,
    "overlay": true,
@@ -940,18 +872,14 @@
    "ft": [
     "Body kuningan dan kayu dengan roda gigi berputar",
     "Kereta mainan berjalan di rel mengelilingi body",
-    "Display Home berupa speedometer berjarum: makin banyak tombol ditekan, jarum makin naik",
-    "RT penuh membawa jarum ke batas dengan asap, lalu turun saat RT dilepas",
-    "Trigger LT dan RT terisi sesuai tekanan",
-    "Warna aksen bisa disesuaikan"
+    "Speedometer di display Home: makin banyak tombol ditekan, jarum makin naik",
+    "RT penuh membawa jarum ke batas dengan asap, lalu turun saat RT dilepas"
    ],
    "fte": [
     "Brass and wood body with spinning gears",
-    "A toy train runs on rails around the body",
-    "Home display is a needle speedometer: the more buttons you press, the higher it climbs",
-    "A full RT pushes the needle to the limit with steam, then it drops as you ease off",
-    "LT and RT fill with how far you press",
-    "Adjustable accent color"
+    "A toy train runs on a track around the body",
+    "Speedometer on the Home display: the more buttons you press, the higher the needle goes",
+    "A full RT sends the needle to the limit with smoke, then it drops when you release RT"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-steampunk-brass-edition.html",
    "hide": false,
@@ -965,8 +893,8 @@
   "other|Overlay Controller Xbox Series X - Western Saloon Edition": {
    "n": "Overlay Controller Xbox Series X - Western Saloon Edition",
    "ne": "Xbox Series X Controller Overlay - Western Saloon Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Western Saloon yang bergerak mengikuti gamepad. Body papan kayu dengan lencana sheriff di display Home dan poster buron di plat atas yang berganti-ganti: WANTED $5000, DEAD OR ALIVE, REWARD $9999, lengkap dengan cap BUSTED!. Setiap tombol yang ditekan meninggalkan lubang peluru, dan tombol menyala keemasan. Trigger LT dan RT terisi sesuai tekanan. Warna aksen bisa disesuaikan.",
-   "de": "A Western Saloon Edition Xbox Series X controller overlay that follows your gamepad. A wooden plank body with a sheriff badge on the Home display and a wanted poster on the top plate that cycles through WANTED $5000, DEAD OR ALIVE, and REWARD $9999, plus a BUSTED! stamp. Every button you press leaves a bullet hole, and the buttons glow gold. LT and RT fill with how far you press. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Western Saloon yang bergerak mengikuti gamepad kamu. Body papan kayu dengan lencana sheriff, dan lubang peluru muncul setiap tombol ditekan. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Western Saloon theme that follows your gamepad live. A wooden plank body with a sheriff badge, and a bullet hole appears with every button press. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 185000,
    "usd": 17,
    "overlay": true,
@@ -980,19 +908,13 @@
    "ord": 49,
    "ft": [
     "Body papan kayu dengan lencana sheriff di display Home",
-    "Poster buron berganti-ganti: WANTED $5000, DEAD OR ALIVE, REWARD $9999, plus cap BUSTED!",
-    "Lubang peluru muncul setiap tombol ditekan",
-    "Tombol menyala keemasan",
-    "Trigger LT dan RT terisi sesuai tekanan",
-    "Warna aksen bisa disesuaikan"
+    "Poster buron berganti-ganti: WANTED, DEAD OR ALIVE, REWARD, plus cap BUSTED!",
+    "Lubang peluru muncul setiap tombol ditekan"
    ],
    "fte": [
     "Wooden plank body with a sheriff badge on the Home display",
-    "Wanted poster cycles through WANTED $5000, DEAD OR ALIVE, REWARD $9999, plus a BUSTED! stamp",
-    "A bullet hole appears with every button press",
-    "Buttons glow gold",
-    "LT and RT fill with how far you press",
-    "Adjustable accent color"
+    "Wanted posters rotate: WANTED, DEAD OR ALIVE, REWARD, plus a BUSTED! stamp",
+    "A bullet hole appears with every button press"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-western-saloon-edition.html",
    "hide": false,
@@ -1006,8 +928,8 @@
   "other|Overlay Controller Xbox Series X - Tropical Summer Beach Classic": {
    "n": "Overlay Controller Xbox Series X - Tropical Summer Beach Classic",
    "ne": "Xbox Series X Controller Overlay - Tropical Summer Beach Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Tropical Summer Beach yang bergerak mengikuti gamepad. Body memakai tekstur foto pantai tropis dengan pasir, laut, dan daun palem, dan display Home berupa matahari. Setiap tombol yang ditekan menambah meter Ombak Combo: makin tinggi meter, makin tinggi ombak bergulung di body, dan ombak surut setelah 2,5 detik tanpa input. Trigger LT dan RT terisi sesuai tekanan. Warna aksen bisa disesuaikan.",
-   "de": "A Tropical Summer Beach Edition Xbox Series X controller overlay that follows your gamepad. The body uses a tropical beach photo texture with sand, sea, and palm leaves, and the Home display is a sun. Every button press raises the Wave Combo meter: the higher the meter, the higher the waves rolling across the body, and they recede after 2.5 seconds without input. LT and RT fill with how far you press. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Tropical Summer Beach yang bergerak mengikuti gamepad kamu. Tekstur foto pantai tropis, dengan ombak di body yang makin tinggi saat kamu menekan tombol makin sering. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Tropical Summer Beach theme that follows your gamepad live. A tropical beach photo texture, with a wave on the body that gets taller the more you press. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "overlay": true,
@@ -1022,16 +944,12 @@
    "ft": [
     "Tekstur foto pantai tropis dengan pasir, laut, dan daun palem",
     "Display Home berupa matahari",
-    "Meter Ombak Combo: makin banyak tombol ditekan, makin tinggi ombak di body, surut setelah 2,5 detik tanpa input",
-    "Trigger LT dan RT terisi sesuai tekanan",
-    "Warna aksen bisa disesuaikan"
+    "Meter Ombak Combo: makin banyak tombol ditekan, makin tinggi ombak, surut setelah 2,5 detik tanpa input"
    ],
    "fte": [
     "Tropical beach photo texture with sand, sea, and palm leaves",
-    "Home display is a sun",
-    "Wave Combo meter: the more you press, the higher the waves on the body, receding after 2.5 seconds without input",
-    "LT and RT fill with how far you press",
-    "Adjustable accent color"
+    "The Home display is a sun",
+    "Wave Combo meter: the more you press, the higher the wave, and it recedes after 2.5 seconds without input"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-tropical-summer-beach-edition.html",
    "hide": false,
@@ -1045,8 +963,8 @@
   "other|Overlay Controller Xbox Series X - Mecha Edition": {
    "n": "Overlay Controller Xbox Series X - Mecha Edition",
    "ne": "Xbox Series X Controller Overlay - Mecha Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Mecha yang bergerak mengikuti gamepad. Body baja abu-abu dengan baut, pelat UNIT-X, dan strip peringatan kuning-hitam di plat atas. Display Home berupa inti reaktor cyan dengan cincin yang terus berputar. Trigger LT dan RT terisi bergaris kuning sesuai tekanan, stik bergeser mengikuti gerakan, dan tombol menyala saat ditekan. Warna aksen bisa disesuaikan.",
-   "de": "A Mecha Edition Xbox Series X controller overlay that follows your gamepad. A steel-gray body with bolts, a UNIT-X plate, and a yellow-black warning strip on the top plate. The Home display is a cyan reactor core with a ring that keeps spinning. LT and RT fill with yellow stripes as you press, the sticks shift as you move them, and the buttons light up when pressed. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Mecha yang bergerak mengikuti gamepad kamu. Body baja abu-abu dengan baut dan strip peringatan, dan display Home berupa inti reaktor yang berputar. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Mecha theme that follows your gamepad live. A grey steel body with bolts and warning stripes, and a Home display that works as a spinning reactor core. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 199000,
    "usd": 17,
    "overlay": true,
@@ -1060,17 +978,11 @@
    "ord": 24,
    "ft": [
     "Body baja abu-abu dengan baut, pelat UNIT-X, dan strip peringatan kuning-hitam",
-    "Display Home berupa inti reaktor cyan dengan cincin berputar",
-    "Trigger LT dan RT terisi bergaris kuning",
-    "Stik bergeser, tombol menyala saat ditekan",
-    "Warna aksen bisa disesuaikan"
+    "Display Home berupa inti reaktor cyan dengan cincin berputar"
    ],
    "fte": [
-    "Steel-gray body with bolts, a UNIT-X plate, and a yellow-black warning strip",
-    "Home display is a cyan reactor core with a spinning ring",
-    "LT and RT fill with yellow stripes",
-    "Sticks shift, buttons light up when pressed",
-    "Adjustable accent color"
+    "Grey steel body with bolts, a UNIT-X plate, and yellow-black warning stripes",
+    "The Home display is a cyan reactor core with spinning rings"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-mecha-edition.html",
    "hide": false,
@@ -1084,8 +996,8 @@
   "other|Overlay Controller Xbox Series X - Retro 90s CRT Edition": {
    "n": "Overlay Controller Xbox Series X - Retro 90s CRT Edition",
    "ne": "Xbox Series X Controller Overlay - Retro 90s CRT Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Retro 90s ala komputer Windows jadul yang bergerak mengikuti gamepad. Body krem hangat dengan jendela XBOX.EXE di plat atas lengkap dengan tombol minimize, maximize, dan close, serta ikon bendera warna-warni di display Home. Setiap tombol yang ditekan memunculkan kursor klik di tombol itu, trigger LT dan RT terisi sesuai tekanan, dan stik bergeser mengikuti gerakan.",
-   "de": "A Retro 90s Edition Xbox Series X controller overlay styled like an old Windows PC that follows your gamepad. A warm cream body with an XBOX.EXE window on the top plate, complete with minimize, maximize, and close buttons, and a colorful flag icon on the Home display. Every button you press shows a click cursor on it, LT and RT fill with how far you press, and the sticks shift as you move them.",
+   "d": "Overlay controller Xbox Series X bertema Retro 90s CRT yang bergerak mengikuti gamepad kamu. Gaya komputer Windows jadul dengan jendela XBOX.EXE, dan kursor klik muncul di tombol yang ditekan. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Retro 90s CRT theme that follows your gamepad live. An old-school Windows computer style with an XBOX.EXE window, and a click cursor appears on the pressed button. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 245000,
    "usd": 20,
    "overlay": true,
@@ -1100,14 +1012,12 @@
    "ft": [
     "Gaya komputer Windows jadul dengan jendela XBOX.EXE di plat atas",
     "Tombol minimize, maximize, close, dan ikon bendera warna-warni di display Home",
-    "Kursor klik muncul di tombol yang ditekan",
-    "Trigger LT dan RT terisi sesuai tekanan, stik bergeser"
+    "Kursor klik muncul di tombol yang ditekan"
    ],
    "fte": [
-    "Old Windows PC style with an XBOX.EXE window on the top plate",
-    "Minimize, maximize, close buttons and a colorful flag icon on the Home display",
-    "A click cursor shows on the button you press",
-    "LT and RT fill with how far you press, sticks shift"
+    "Old-school Windows computer style with an XBOX.EXE window on the top plate",
+    "Minimize, maximize, and close buttons and a colorful flag icon on the Home display",
+    "A click cursor appears on the pressed button"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-retro-90s-crt-edition.html",
    "hide": false,
@@ -1121,8 +1031,8 @@
   "other|Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition": {
    "n": "Overlay Controller Xbox Series X - Cozy Lo-fi Laundromat Edition",
    "ne": "Xbox Series X Controller Overlay - Cozy Lo-fi Laundromat Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Cozy Lo-fi Laundromat Night yang bergerak mengikuti gamepad. Body bergambar suasana laundromat malam yang hangat: papan neon LAUNDRY NIGHT, deretan mesin cuci, jadwal laundry, lampu gantung, dan jendela kota malam di display Home. Stik berwarna lavender, trigger LT dan RT terisi bergaris, dan tombol menyala saat ditekan. Warna aksen bisa disesuaikan.",
-   "de": "A Cozy Lo-fi Laundromat Night Edition Xbox Series X controller overlay that follows your gamepad. The body is illustrated as a warm night laundromat: a LAUNDRY NIGHT neon sign, a row of washing machines, a laundry schedule, a hanging lamp, and a night city window on the Home display. Lavender sticks, LT and RT fill with stripes, and the buttons light up when pressed. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Cozy Lo-fi Laundromat yang bergerak mengikuti gamepad kamu. Suasana laundromat malam yang hangat dengan papan neon LAUNDRY NIGHT dan jendela kota malam. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Cozy Lo-fi Laundromat theme that follows your gamepad live. A warm night laundromat scene with a LAUNDRY NIGHT neon sign and a night city window. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 159000,
    "usd": 10,
    "overlay": true,
@@ -1135,18 +1045,14 @@
    "sub": "xbox-series-x",
    "ord": 8,
    "ft": [
-    "Body bergambar laundromat malam: papan neon LAUNDRY NIGHT, deretan mesin cuci, jadwal laundry, lampu gantung",
+    "Body bergambar laundromat malam: papan neon LAUNDRY NIGHT, deretan mesin cuci, lampu gantung",
     "Jendela kota malam di display Home",
-    "Stik berwarna lavender",
-    "Trigger LT dan RT terisi bergaris, tombol menyala saat ditekan",
-    "Warna aksen bisa disesuaikan"
+    "Stik berwarna lavender"
    ],
    "fte": [
-    "Body illustrated as a night laundromat: LAUNDRY NIGHT neon sign, row of washing machines, laundry schedule, hanging lamp",
-    "Night city window on the Home display",
-    "Lavender sticks",
-    "LT and RT fill with stripes, buttons light up when pressed",
-    "Adjustable accent color"
+    "Body shows a night laundromat: LAUNDRY NIGHT neon sign, rows of washing machines, hanging lamps",
+    "A night city window on the Home display",
+    "Lavender stick"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-cozy-lo-fi-laundromat-edition.html",
    "hide": false,
@@ -1160,8 +1066,8 @@
   "other|Overlay Controller Xbox Series X - Cyber Tokyo Night Classic": {
    "n": "Overlay Controller Xbox Series X - Cyber Tokyo Night Classic",
    "ne": "Xbox Series X Controller Overlay - Cyber Tokyo Night Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Cyber Tokyo Night yang bergerak mengikuti gamepad. Body semi-transparan berlatar gedung-gedung Tokyo malam dengan garis neon pink dan cyan. Setiap input muncul sebagai label katakana di bawah controller, misalnya アールティー untuk RT, dan riak cahaya cyan menyebar saat stik ditekan. Trigger LT dan RT terisi sesuai tekanan. Warna aksen bisa disesuaikan.",
-   "de": "A Cyber Tokyo Night Edition Xbox Series X controller overlay that follows your gamepad. A semi-transparent body over a Tokyo night skyline with pink and cyan neon edges. Every input shows up as a katakana label below the controller, for example アールティー for RT, and a cyan ripple of light spreads when you press a stick. LT and RT fill with how far you press. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Cyber Tokyo Night yang bergerak mengikuti gamepad kamu. Body semi-transparan berlatar gedung Tokyo malam, dan setiap input muncul sebagai label katakana. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Cyber Tokyo Night theme that follows your gamepad live. A semi-transparent body over a Tokyo night skyline, and every input shows up as a katakana label. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "overlay": true,
@@ -1175,17 +1081,13 @@
    "ord": 13,
    "ft": [
     "Body semi-transparan berlatar gedung Tokyo malam dengan neon pink dan cyan",
-    "Setiap input muncul sebagai label katakana di bawah controller, misalnya アールティー untuk RT",
-    "Riak cahaya cyan menyebar saat stik ditekan",
-    "Trigger LT dan RT terisi sesuai tekanan",
-    "Warna aksen bisa disesuaikan"
+    "Setiap input muncul sebagai label katakana di bawah controller",
+    "Riak cahaya cyan menyebar saat stik ditekan"
    ],
    "fte": [
     "Semi-transparent body over a Tokyo night skyline with pink and cyan neon",
-    "Every input shows as a katakana label below the controller, for example アールティー for RT",
-    "A cyan ripple of light spreads when you press a stick",
-    "LT and RT fill with how far you press",
-    "Adjustable accent color"
+    "Every input appears as a katakana label below the controller",
+    "A cyan light ripple spreads when you press the stick"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-cyber-tokyo-night-edition.html",
    "hide": false,
@@ -1199,8 +1101,8 @@
   "other|Overlay Controller Xbox Series X - Sakura Edition": {
    "n": "Overlay Controller Xbox Series X - Sakura Edition",
    "ne": "Xbox Series X Controller Overlay - Sakura Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Sakura Jepang yang bergerak mengikuti gamepad. Body merah muda dengan ranting bunga sakura dan kelopak yang berguguran, stik dan D-pad berlambang bunga di tengah, serta display Home berupa pohon sakura. Trigger LT dan RT terisi sesuai tekanan, dan stik bergeser mengikuti gerakan. Warna aksen bisa disesuaikan.",
-   "de": "A Sakura Edition Xbox Series X controller overlay that follows your gamepad. A pink body with cherry blossom branches and falling petals, sticks and a D-pad with a flower at the center, and a cherry tree on the Home display. LT and RT fill with how far you press, and the sticks shift as you move them. The accent color is adjustable.",
+   "d": "Overlay controller Xbox Series X bertema Sakura yang bergerak mengikuti gamepad kamu. Body merah muda dengan ranting sakura dan kelopak yang berguguran. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Sakura theme that follows your gamepad live. A pink body with sakura branches and falling petals. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 145000,
    "usd": 10,
    "overlay": true,
@@ -1214,17 +1116,13 @@
    "ord": 36,
    "ft": [
     "Body merah muda dengan ranting sakura dan kelopak berguguran",
-    "Stik dan D-pad berlambang bunga di tengah",
-    "Display Home berupa pohon sakura",
-    "Trigger LT dan RT terisi sesuai tekanan, stik bergeser",
-    "Warna aksen bisa disesuaikan"
+    "Stik dan D-pad berlambang bunga",
+    "Display Home berupa pohon sakura"
    ],
    "fte": [
-    "Pink body with cherry blossom branches and falling petals",
-    "Sticks and D-pad with a flower at the center",
-    "Home display is a cherry tree",
-    "LT and RT fill with how far you press, sticks shift",
-    "Adjustable accent color"
+    "Pink body with sakura branches and falling petals",
+    "Flower-emblem stick and D-pad",
+    "The Home display is a sakura tree"
    ],
    "file": "overlays/xbox-series-x-controller-overlay-sakura-edition.html",
    "hide": false,
@@ -1238,8 +1136,8 @@
   "other|Overlay Controller Xbox Series X (Custom)": {
    "n": "Overlay Controller Xbox Series X (Custom)",
    "ne": "Xbox Series X Controller Overlay (Custom)",
-   "d": "Overlay controller Xbox Series X 3D yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Tampilan bisa disesuaikan dengan permintaanmu.",
-   "de": "A 3D Xbox Series X controller overlay that follows your gamepad. Buttons, sticks, and triggers react as you press them. The look can be tailored to your request.",
+   "d": "Overlay controller Xbox Series X 3D dengan tampilan sesuai permintaanmu, bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "A 3D Xbox Series X controller overlay designed to your request, following your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": null,
    "custom": true,
    "overlay": true,
@@ -1250,14 +1148,10 @@
    "sub": "xbox-series-x",
    "ord": 50,
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Tampilan disesuaikan dengan permintaanmu"
+    "Tampilan dirancang sesuai permintaanmu"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Look tailored to your request"
+    "Look designed to your request"
    ]
   }
  },
@@ -1265,8 +1159,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Cloud Pastel Edition",
    "ne": "Xbox Series X Controller Overlay - Cloud Pastel Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Cloud Pastel yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs etc.",
-   "de": "Xbox Series X controller overlay, Cloud Pastel theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs etc.",
+   "d": "Overlay controller Xbox Series X bertema Cloud Pastel yang bergerak mengikuti gamepad kamu. Ada maskot Kumo yang senang saat kamu bermain dan tidur saat controller didiamkan. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Cloud Pastel theme that follows your gamepad live. A mascot named Kumo is happy while you play and falls asleep when the controller is idle. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -1274,22 +1168,18 @@
    "hide": false,
    "sub": "xbox-series-x",
    "tag": "Baru",
-   "old": 199000,
    "tage": "New",
-   "oldu": 16,
    "ord": 5,
    "file": "overlays/xbox-series-x-controller-overlay-cloud-pastel-edition.html",
    "ctl": true,
    "pv": "demo",
    "ft": [
     "Maskot Kumo bereaksi: senang saat input, tidur saat idle",
-    "Chip awan di plat atas tiap tombol ditekan",
-    "Tombol, stik, dan trigger bereaksi real-time"
+    "Chip awan muncul di plat atas tiap tombol ditekan"
    ],
    "fte": [
-    "Kumo mascot reacts: happy on input, asleep when idle",
-    "Cloud chip on the top plate on every press",
-    "Buttons, sticks, and triggers react in real time"
+    "Kumo the mascot reacts: happy on input, asleep when idle",
+    "A cloud chip appears on the top plate on every press"
    ],
    "nd": "2026-10-19",
    "shop": "overlay-controller-xbox-series-x-cloud-pastel-edition",
@@ -1302,8 +1192,8 @@
   {
    "n": "Overlay Controller Xbox One OG - Ice Crystal Edition",
    "ne": "Xbox One OG Controller Overlay - Ice Crystal Edition",
-   "d": "Edisi overlay controller Xbox One OG bertema Ice Crystal yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox One OG controller overlay, Ice Crystal theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox One OG bertema Ice Crystal yang bergerak mengikuti gamepad kamu. Trigger terisi seperti kristal es, dan urutan tombol rahasia bisa memecahkan kristalnya. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox One OG controller overlay with a Ice Crystal theme that follows your gamepad live. The triggers fill up like ice crystals, and a secret button sequence shatters them. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 50000,
    "g": "other",
    "os": "controller",
@@ -1313,22 +1203,18 @@
    "pv": "demo",
    "sub": "xbox-one-og",
    "tag": "Baru",
-   "old": 150000,
    "tage": "New",
-   "oldu": 12,
    "usd": 4,
    "ord": 54,
    "ft": [
     "Trigger terisi seperti kristal es",
     "Efek khusus tiap 100 tekanan",
-    "Urutan tombol rahasia memecahkan kristal",
-    "Tombol, stik, dan trigger bereaksi real-time"
+    "Urutan tombol rahasia memecahkan kristal"
    ],
    "fte": [
-    "Triggers fill like ice crystal",
-    "Special effect every 100 presses",
-    "Secret button sequence shatters the crystal",
-    "Buttons, sticks, and triggers react in real time"
+    "Triggers fill up like ice crystals",
+    "A special effect every 100 presses",
+    "A secret button sequence shatters the crystal"
    ],
    "nd": "2026-10-19",
    "shop": "overlay-controller-xbox-one-og-ice-crystal-edition",
@@ -1341,8 +1227,8 @@
   {
    "n": "Overlay Controller Xbox One S - Sunset Galaxy Edition",
    "ne": "Xbox One S Controller Overlay - Sunset Galaxy Edition",
-   "d": "Edisi overlay controller Xbox One S bertema Sunset Galaxy yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox One S controller overlay, Sunset Galaxy theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox One S bertema Sunset Galaxy yang bergerak mengikuti gamepad kamu. Spiral galaksi berputar makin cepat saat kamu menekan tombol makin cepat. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox One S controller overlay with a Sunset Galaxy theme that follows your gamepad live. A galaxy spiral spins faster the faster you press. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 50000,
    "usd": 4,
    "g": "other",
@@ -1352,22 +1238,18 @@
    "ctl": true,
    "pv": "demo",
    "tag": "Baru",
-   "old": 120000,
    "tage": "New",
-   "oldu": 10,
    "ord": 53,
    "sub": "xbox-one-s",
    "ft": [
     "Spiral galaksi makin cepat saat tombol ditekan cepat",
     "Meter langit mengikuti jam nyata",
-    "Hack Terminal: segmen terisi tiap input",
-    "Kode Konami memicu efek spesial"
+    "Hack Terminal: segmen terisi tiap input"
    ],
    "fte": [
-    "Galaxy spiral speeds up as you press faster",
-    "Sky meter follows the real clock",
-    "Hack Terminal: segments fill with each input",
-    "Konami code triggers a special effect"
+    "The galaxy spiral speeds up as you press faster",
+    "A sky meter follows the real clock",
+    "Hack Terminal: a segment fills with every input"
    ],
    "nd": "2026-10-19",
    "shop": "overlay-controller-xbox-one-s-sunset-galaxy-edition",
@@ -1380,8 +1262,8 @@
   {
    "n": "Overlay Controller Xbox One OG - Retro Arcade One OG Edition",
    "ne": "Xbox One OG Controller Overlay - Retro Arcade One OG Edition",
-   "d": "Edisi overlay controller Xbox One OG bertema Retro Arcade One OG yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Dilengkapi animasi bertema. Untuk OBS atau Streamlabs.",
-   "de": "Xbox One OG controller overlay, Retro Arcade One OG theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. Includes themed animations. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox One OG bertema Retro Arcade yang bergerak mengikuti gamepad kamu. Meter combo naik saat kamu menekan cepat, dan level naik tiap 100 tekanan. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox One OG controller overlay with a Retro Arcade theme that follows your gamepad live. A combo meter rises as you press fast, and you level up every 100 presses. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 199000,
    "usd": 16,
    "g": "other",
@@ -1395,14 +1277,14 @@
    "ft": [
     "Meter combo naik saat menekan cepat",
     "Level up tiap 100 tekanan",
-    "Kode Konami: hujan koin 4 detik",
-    "Mode tidur saat idle"
+    "Mode tidur saat idle",
+    "Kode Konami memicu hujan koin 4 detik"
    ],
    "fte": [
-    "Combo meter rises as you press fast",
+    "The combo meter rises as you press fast",
     "Level up every 100 presses",
-    "Konami code: 4-second coin rain",
-    "Sleep mode when idle"
+    "Sleep mode when idle",
+    "The Konami code triggers a 4-second coin rain"
    ],
    "shop": "overlay-controller-xbox-one-og-retro-arcade-one-og-edition",
    "srv": 1,
@@ -1414,8 +1296,8 @@
   {
    "n": "Overlay Controller Xbox One OG - Pastel Rocket Launch One OG Edition",
    "ne": "Xbox One OG Controller Overlay - Pastel Rocket Launch One OG Edition",
-   "d": "Edisi overlay controller Xbox One OG bertema Pastel Rocket Launch One OG yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Dilengkapi animasi bertema. Untuk OBS atau Streamlabs.",
-   "de": "Xbox One OG controller overlay, Pastel Rocket Launch One OG theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. Includes themed animations. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox One OG bertema Pastel Rocket Launch yang bergerak mengikuti gamepad kamu. Roket naik tiap 25 tekanan dan meluncur tiap 100 tekanan. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox One OG controller overlay with a Pastel Rocket Launch theme that follows your gamepad live. A rocket rises every 25 presses and launches every 100 presses. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 199000,
    "usd": 16,
    "g": "other",
@@ -1433,9 +1315,9 @@
     "Baterai naik saat aktif, turun saat idle"
    ],
    "fte": [
-    "Rocket climbs every 25 presses, launches every 100",
-    "Hype mode: flames ignite when you press fast",
-    "Battery charges when active, drains when idle"
+    "The rocket rises every 25 presses and launches every 100",
+    "Hype mode: flames light up when you press fast",
+    "The battery goes up when active and down when idle"
    ],
    "shop": "overlay-controller-xbox-one-og-pastel-rocket-launch-one-og-edition",
    "srv": 1,
@@ -1447,8 +1329,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Crimson Jellyfish Drift Edition",
    "ne": "Xbox Series X Controller Overlay - Crimson Jellyfish Drift Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Crimson Jellyfish Drift yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Dilengkapi animasi bertema. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Crimson Jellyfish Drift theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. Includes themed animations. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Crimson Jellyfish Drift yang bergerak mengikuti gamepad kamu. Gelembung naik tiap tombol ditekan, dan memutar stik 360 derajat memicu pusaran air. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Crimson Jellyfish Drift theme that follows your gamepad live. Bubbles rise with every press, and spinning the stick 360 degrees triggers a whirlpool. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 199000,
    "usd": 16,
    "g": "other",
@@ -1460,16 +1342,16 @@
    "ord": 9,
    "sub": "xbox-series-x",
    "ft": [
-    "Suasana siang, senja, atau malam lewat ?theme=",
+    "Pilihan suasana siang, senja, atau malam",
     "Gelembung naik tiap tombol ditekan",
     "Meter arus laut dan jejak gelembung di stik",
     "Putar stik 360 derajat memicu pusaran air"
    ],
    "fte": [
-    "Day, dusk, or night mood via ?theme=",
+    "Choose a day, dusk, or night mood",
     "Bubbles rise with every press",
-    "Current meter and bubble trail on the stick",
-    "Spin the stick 360 degrees for a whirlpool"
+    "An ocean current meter and a bubble trail on the stick",
+    "Spin the stick 360 degrees to trigger a whirlpool"
    ],
    "shop": "overlay-controller-xbox-series-x-crimson-jellyfish-drift-edition",
    "srv": 1,
@@ -1481,8 +1363,8 @@
   {
    "n": "Overlay Controller Xbox One S - Holo Planet Rings One S Edition",
    "ne": "Xbox One S Controller Overlay - Holo Planet Rings One S Edition",
-   "d": "Edisi overlay controller Xbox One S bertema Holo Planet Rings One S yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Dilengkapi animasi bertema. Untuk OBS atau Streamlabs.",
-   "de": "Xbox One S controller overlay, Holo Planet Rings One S theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. Includes themed animations. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox One S bertema Holo Planet Rings yang bergerak mengikuti gamepad kamu. Pendamping kecil mengorbit mengikuti stik, dan masuk mode BOOST saat stik didorong penuh. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox One S controller overlay with a Holo Planet Rings theme that follows your gamepad live. A little companion orbits along with the stick and enters BOOST mode when the stick is pushed all the way. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 199000,
    "usd": 16,
    "g": "other",
@@ -1496,13 +1378,11 @@
    "ord": 51,
    "ft": [
     "Pendamping mengorbit mengikuti stik, mode BOOST saat stik penuh",
-    "Meter mood dan level cincin planet",
-    "Tombol, stik, dan trigger bereaksi real-time"
+    "Meter mood dan level cincin planet"
    ],
    "fte": [
-    "Companion orbits with the stick, BOOST mode at full tilt",
-    "Mood meter and planet ring level",
-    "Buttons, sticks, and triggers react in real time"
+    "A companion orbits along with the stick, BOOST mode at full tilt",
+    "A mood meter and planet ring levels"
    ],
    "shop": "overlay-controller-xbox-one-s-holo-planet-rings-one-s-edition",
    "srv": 1,
@@ -1514,8 +1394,8 @@
   {
    "n": "Overlay Controller Xbox One S - Neon Phoenix Wings One S Edition",
    "ne": "Xbox One S Controller Overlay - Neon Phoenix Wings One S Edition",
-   "d": "Edisi overlay controller Xbox One S bertema Neon Phoenix Wings One S yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Dilengkapi animasi bertema. Untuk OBS atau Streamlabs.",
-   "de": "Xbox One S controller overlay, Neon Phoenix Wings One S theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. Includes themed animations. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox One S bertema Neon Phoenix Wings yang bergerak mengikuti gamepad kamu. Sayap api bereaksi saat tombol ditekan, lengkap dengan slot spinner berhadiah jackpot. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox One S controller overlay with a Neon Phoenix Wings theme that follows your gamepad live. Fire wings react when you press buttons, along with a slot spinner that pays out a jackpot. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 139000,
    "usd": 11,
    "g": "other",
@@ -1528,20 +1408,18 @@
    "hide": false,
    "ord": 52,
    "tag": "Baru",
-   "old": 199000,
    "tage": "New",
-   "oldu": 16,
    "ft": [
-    "Hitung total tekan dan combo langsung",
+    "Hitungan total tekan dan combo langsung",
     "Slot spinner 3 gulungan, jackpot tiap 7 putaran",
     "Efek khusus tiap 100 tekanan",
     "Sayap api bereaksi saat tombol ditekan"
    ],
    "fte": [
-    "Live total press and combo counter",
+    "Live total press and combo count",
     "3-reel slot spinner, jackpot every 7 spins",
-    "Special effect every 100 presses",
-    "Flame wings react to button presses"
+    "A special effect every 100 presses",
+    "Fire wings react when buttons are pressed"
    ],
    "nd": "2026-10-19",
    "shop": "overlay-controller-xbox-one-s-neon-phoenix-wings-one-s-edition",
@@ -1554,8 +1432,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Classic Gray Edition",
    "ne": "Xbox Series X Controller Overlay - Classic Gray Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Classic Gray yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Classic Gray theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Classic Gray yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Classic Gray theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -1569,16 +1447,10 @@
    "tage": "New",
    "nd": "2026-10-19",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-classic-gray-edition",
    "srv": 1,
@@ -1591,8 +1463,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Mint Pixel Sword Edition",
    "ne": "Xbox Series X Controller Overlay - Mint Pixel Sword Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Mint Pixel Sword yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Mint Pixel Sword theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Mint Pixel Sword yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Mint Pixel Sword theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -1606,16 +1478,10 @@
    "tage": "New",
    "nd": "2026-10-19",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-mint-pixel-sword-edition",
    "srv": 1,
@@ -1628,8 +1494,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Gold Cyber City Edition",
    "ne": "Xbox Series X Controller Overlay - Gold Cyber City Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Gold Cyber City yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Gold Cyber City theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Gold Cyber City yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Gold Cyber City theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -1643,16 +1509,10 @@
    "tage": "New",
    "nd": "2026-10-19",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-gold-cyber-city-edition",
    "srv": 1,
@@ -1665,8 +1525,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Cobalt Carbon Strike Edition",
    "ne": "Xbox Series X Controller Overlay - Cobalt Carbon Strike Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Cobalt Carbon Strike yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Cobalt Carbon Strike theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Cobalt Carbon Strike yang bergerak mengikuti gamepad kamu. Riwayat 5 input terakhir tampil sebagai ikon, lengkap dengan hitungan combo dan rekor combo. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Cobalt Carbon Strike theme that follows your gamepad live. Your last 5 inputs show up as icons, along with a combo count and a combo record. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -1687,9 +1547,9 @@
    ],
    "fte": [
     "Last 5 inputs shown as icons",
-    "Combo, best combo, and total press counters",
-    "Triggers fill solid blue with level lines",
-    "Sleep mode when idle, hype mode when playing fast"
+    "Combo count, combo record, and total presses",
+    "Triggers fill up in blue with measurement lines",
+    "Sleep mode when idle, hype mode when you play fast"
    ],
    "shop": "overlay-controller-xbox-series-x-cobalt-carbon-strike-edition",
    "srv": 1,
@@ -1702,8 +1562,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Ember Carbon Veins Edition",
    "ne": "Xbox Series X Controller Overlay - Ember Carbon Veins Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Ember Carbon Veins yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Ember Carbon Veins theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Ember Carbon Veins yang bergerak mengikuti gamepad kamu. Tekan cepat untuk memicu Mode Rage: retakan merah menyebar di body. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Ember Carbon Veins theme that follows your gamepad live. Press fast to trigger Rage Mode: red cracks spread across the body. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -1718,15 +1578,13 @@
    "nd": "2026-10-21",
    "ft": [
     "Mode Rage: tekan cepat, retakan merah menyebar di body",
-    "Meter combo, kilat urat tiap 100 tekan",
-    "Trigger terisi lava, percikan bara di tombol dan stik",
-    "Warna efek bisa diganti"
+    "Meter combo dan kilat urat tiap 100 tekan",
+    "Trigger terisi lava, percikan bara di tombol dan stik"
    ],
    "fte": [
     "Rage Mode: press fast and red cracks spread across the body",
-    "Combo meter, vein flash every 100 presses",
-    "Lava-filled triggers, embers on buttons and sticks",
-    "Effect colors can be changed"
+    "A combo meter and a vein flash every 100 presses",
+    "Triggers fill with lava, with ember sparks on the buttons and sticks"
    ],
    "shop": "overlay-controller-xbox-series-x-ember-carbon-veins-edition",
    "srv": 1,
@@ -1739,8 +1597,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Torn Paper Red Edition",
    "ne": "Xbox Series X Controller Overlay - Torn Paper Red Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Torn Paper Red yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Torn Paper Red theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Torn Paper Red yang bergerak mengikuti gamepad kamu. Layaknya halaman cerita: nomor bab naik tiap 100 tekan, dan setelah 500 tekan body perlahan terisi darah. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Torn Paper Red theme that follows your gamepad live. Like pages of a story: the chapter number goes up every 100 presses, and after 500 presses the body slowly fills with blood. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -1756,14 +1614,12 @@
    "ft": [
     "Setelah 500 tekan, darah perlahan memenuhi body",
     "Nomor bab di Home naik tiap 100 tekan",
-    "Judul bab dan progres tekan di plat atas",
-    "Kode Konami dan kombo LB+RB+Y memicu kejutan"
+    "Judul bab dan progres tekan di plat atas"
    ],
    "fte": [
     "After 500 presses, blood slowly fills the body",
-    "Chapter number on Home rises every 100 presses",
-    "Chapter title and press progress on the top plate",
-    "Konami code and LB+RB+Y combo trigger surprises"
+    "The chapter number on Home goes up every 100 presses",
+    "Chapter title and press progress on the top plate"
    ],
    "shop": "overlay-controller-xbox-series-x-torn-paper-red-edition",
    "srv": 1,
@@ -1776,8 +1632,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Brushed Copper Edition",
    "ne": "Xbox Series X Controller Overlay - Brushed Copper Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Brushed Copper yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Brushed Copper theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Brushed Copper yang bergerak mengikuti gamepad kamu. Peta panas menandai tombol yang paling sering kamu tekan. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Brushed Copper theme that follows your gamepad live. A heat map highlights the buttons you press the most. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 50000,
    "usd": 4,
    "g": "other",
@@ -1797,10 +1653,10 @@
     "Tungku di layar Home makin terang sesuai tekanan"
    ],
    "fte": [
-    "Heat map: frequently pressed buttons get more colored",
-    "5-segment steam meter rises with how busy you play",
+    "Heat map: the more a button is pressed, the more colored it gets",
+    "A 5-segment steam meter rises with how busy your play is",
     "Triggers fill with molten copper",
-    "Furnace on the Home display glows brighter as you press"
+    "The furnace on the Home screen glows brighter as you press"
    ],
    "shop": "overlay-controller-xbox-series-x-brushed-copper-edition",
    "srv": 1,
@@ -1813,8 +1669,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Crimson Stripe Club Edition",
    "ne": "Xbox Series X Controller Overlay - Crimson Stripe Club Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Crimson Stripe Club yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Crimson Stripe Club theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Crimson Stripe Club yang bergerak mengikuti gamepad kamu. Layar Home berganti siang, senja, dan malam mengikuti jam, dan suasananya berubah saat permainan makin ramai. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Crimson Stripe Club theme that follows your gamepad live. The Home screen shifts between day, dusk, and night with the clock, and the mood changes as play gets busier. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -1830,14 +1686,12 @@
    "ft": [
     "Layar Home berganti siang, senja, malam sesuai jam",
     "Suasana Home berubah saat permainan makin ramai",
-    "Trigger terisi merah, riak di stik saat diklik",
-    "L3+R3 menukar warna merah dan krem"
+    "Trigger terisi merah, riak di stik saat diklik"
    ],
    "fte": [
-    "Home display switches day, dusk, night with the clock",
-    "Home mood changes as the action picks up",
-    "Red-filled triggers, ripple on stick click",
-    "L3+R3 swaps red and cream"
+    "The Home screen shifts between day, dusk, and night with the clock",
+    "The Home mood changes as play gets busier",
+    "Triggers fill with red, and the stick ripples when clicked"
    ],
    "shop": "overlay-controller-xbox-series-x-crimson-stripe-club-edition",
    "srv": 1,
@@ -1850,8 +1704,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Magenta Carbon Pulse Edition",
    "ne": "Xbox Series X Controller Overlay - Magenta Carbon Pulse Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Magenta Carbon Pulse yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Magenta Carbon Pulse theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Magenta Carbon Pulse yang bergerak mengikuti gamepad kamu. Penghitung tekan dan meter mood naik saat bermain, dengan detak berjalan di layar Home. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Magenta Carbon Pulse theme that follows your gamepad live. A press counter and a mood meter rise as you play, with a pulse running across the Home screen. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 105000,
    "usd": 8,
    "g": "other",
@@ -1871,10 +1725,10 @@
     "Napas pelan magenta saat controller didiamkan"
    ],
    "fte": [
-    "Press counters: total on Home, A B X Y on the top plate",
-    "Tiered mood meter rises as you play",
-    "Pulse runs across the Home display on each press",
-    "Slow magenta breathing when idle"
+    "Press counter: total on Home, A B X Y on the top plate",
+    "A tiered mood meter rises as you play",
+    "A pulse runs across the Home screen on every press",
+    "A slow magenta breathing glow when the controller is idle"
    ],
    "shop": "overlay-controller-xbox-series-x-magenta-carbon-pulse-edition",
    "srv": 1,
@@ -1887,8 +1741,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Rescue Unit Safety Edition",
    "ne": "Xbox Series X Controller Overlay - Rescue Unit Safety Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Rescue Unit Safety yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Rescue Unit Safety theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Rescue Unit Safety yang bergerak mengikuti gamepad kamu. Inti energi menyala per tombol, dan tahan LB+RB+A untuk membunyikan sirene darurat. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Rescue Unit Safety theme that follows your gamepad live. The energy core lights up per button, and holding LB+RB+A sounds an emergency siren. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "g": "other",
@@ -1908,9 +1762,9 @@
     "Tahan LB+RB+A untuk sirene darurat 3 detik"
    ],
    "fte": [
-    "4-segment energy core lights up per A B X Y press",
-    "Alert level meter rises as you press often",
-    "Hype mode: center light spins fast",
+    "A 4-segment energy core lights up per A B X Y button",
+    "An alert level meter rises as you press often",
+    "Hype mode: the center light spins fast",
     "Hold LB+RB+A for a 3-second emergency siren"
    ],
    "shop": "overlay-controller-xbox-series-x-rescue-unit-safety-edition",
@@ -1924,8 +1778,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Orange Black Stripe Edition",
    "ne": "Xbox Series X Controller Overlay - Orange Black Stripe Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Orange Black Stripe yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Orange Black Stripe theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Orange Black Stripe yang bergerak mengikuti gamepad kamu. Mata harimau di layar Home berkedip, tidur saat diam, dan memerah saat Rage. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Orange Black Stripe theme that follows your gamepad live. A tiger eye on the Home screen blinks, sleeps when idle, and turns red during Rage. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 115000,
    "usd": 9,
    "g": "other",
@@ -1940,15 +1794,13 @@
    "nd": "2026-10-22",
    "ft": [
     "Mata harimau di Home: berkedip, tidur saat diam, merah saat Rage",
-    "Meter mood Jinak ke Buas mengikuti kecepatan tekan",
-    "Milestone tiap 100 tekan dan mode Hype",
-    "Kode Konami dan kombo LB RB LT RT"
+    "Meter mood dari Jinak ke Buas mengikuti kecepatan tekan",
+    "Milestone tiap 100 tekan dan mode Hype"
    ],
    "fte": [
-    "Tiger eye on Home: blinks, sleeps when idle, turns red in Rage",
-    "Tame-to-Wild mood meter follows your press speed",
-    "Milestone every 100 presses and Hype mode",
-    "Konami code and LB RB LT RT combo"
+    "Tiger eye on Home: blinks, sleeps when idle, red during Rage",
+    "A mood meter from Tame to Feral follows your press speed",
+    "A milestone every 100 presses and a Hype mode"
    ],
    "shop": "overlay-controller-xbox-series-x-orange-black-stripe-edition",
    "srv": 1,
@@ -1961,8 +1813,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Neon Fox Tail Edition",
    "ne": "Xbox Series X Controller Overlay - Neon Fox Tail Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Neon Fox Tail yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Neon Fox Tail theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Neon Fox Tail yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Neon Fox Tail theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 130000,
    "usd": 10,
    "g": "other",
@@ -1976,16 +1828,10 @@
    "tage": "New",
    "nd": "2026-10-22",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-neon-fox-tail-edition",
    "srv": 1,
@@ -1998,8 +1844,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Cyan Radial Burst Edition",
    "ne": "Xbox Series X Controller Overlay - Cyan Radial Burst Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Cyan Radial Burst yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Cyan Radial Burst theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Cyan Radial Burst yang bergerak mengikuti gamepad kamu. Orb di layar Home terisi saat trigger ditahan, lalu lepas jadi gelombang. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Cyan Radial Burst theme that follows your gamepad live. An orb on the Home screen charges while you hold a trigger, then releases as a wave. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -2015,14 +1861,12 @@
    "ft": [
     "Orb di Home: tahan trigger untuk mengisi, lepas jadi gelombang",
     "Penghitung tekan, combo, dan meter mood di plat atas",
-    "Sinar di grip menyala saat tombol sisi itu ditekan",
-    "Warna aksen bisa diganti lewat ?accent"
+    "Sinar di grip menyala saat tombol sisi itu ditekan"
    ],
    "fte": [
-    "Orb on Home: hold a trigger to charge, release for a wave",
+    "Orb on Home: hold a trigger to charge, release it as a wave",
     "Press counter, combo, and mood meter on the top plate",
-    "Grip rays light up when that side is pressed",
-    "Accent color via ?accent"
+    "Grip lights glow when the button on that side is pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-cyan-radial-burst-edition",
    "srv": 1,
@@ -2035,8 +1879,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Holo Solar Eclipse Edition",
    "ne": "Xbox Series X Controller Overlay - Holo Solar Eclipse Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Holo Solar Eclipse yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Holo Solar Eclipse theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Holo Solar Eclipse yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Holo Solar Eclipse theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 150000,
    "usd": 12,
    "g": "other",
@@ -2050,16 +1894,10 @@
    "tage": "New",
    "nd": "2026-10-22",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-holo-solar-eclipse-edition",
    "srv": 1,
@@ -2072,8 +1910,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Sunny Perforated Mesh Edition",
    "ne": "Xbox Series X Controller Overlay - Sunny Perforated Mesh Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Sunny Perforated Mesh yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Sunny Perforated Mesh theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Sunny Perforated Mesh yang bergerak mengikuti gamepad kamu. Energy Core menyala per tombol, dan lubang mesh berkedip cepat saat menekan cepat. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Sunny Perforated Mesh theme that follows your gamepad live. The Energy Core lights up per button, and the mesh holes blink fast when you press fast. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 110000,
    "usd": 9,
    "g": "other",
@@ -2089,14 +1927,12 @@
    "ft": [
     "Energy Core 4 segmen menyala per tombol A B X Y",
     "Mode hype: lubang berkedip cepat saat menekan cepat",
-    "Trigger terisi kuning penuh",
-    "Warna aksen bisa diganti lewat link"
+    "Trigger terisi kuning penuh"
    ],
    "fte": [
-    "4-segment Energy Core lights up per A B X Y press",
+    "A 4-segment Energy Core lights up per A B X Y button",
     "Hype mode: holes blink fast when you press fast",
-    "Triggers fill solid yellow",
-    "Accent color can be changed via link"
+    "Triggers fill up fully in yellow"
    ],
    "shop": "overlay-controller-xbox-series-x-sunny-perforated-mesh-edition",
    "srv": 1,
@@ -2109,8 +1945,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Sumi Stroke Mono Edition",
    "ne": "Xbox Series X Controller Overlay - Sumi Stroke Mono Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Sumi Stroke Mono yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Sumi Stroke Mono theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Sumi Stroke Mono yang bergerak mengikuti gamepad kamu. Gaya tinta sumi hitam-putih, dengan Rage Mode setelah 8 kali tekan yang mengubah body jadi merah emas. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Sumi Stroke Mono theme that follows your gamepad live. A black-and-white sumi ink style, with a Rage Mode after 8 presses that turns the body red and gold. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 135000,
    "usd": 11,
    "g": "other",
@@ -2125,15 +1961,15 @@
    "nd": "2026-10-22",
    "ft": [
     "Rage Mode setelah 8 kali tekan: body jadi merah emas",
-    "Duel Spark: tekan A dan B, skor titik tinta",
+    "Duel Spark: tekan A dan B, skor berupa titik tinta",
     "Isi tinta naik di trigger, sapuan kuas di bumper",
     "Kode Konami memicu ledakan tinta"
    ],
    "fte": [
-    "Rage Mode after 8 presses: body turns red and gold",
-    "Duel Spark: press A and B, ink-dot score",
-    "Ink fills the triggers, brush sweep on bumpers",
-    "Konami code triggers an ink burst"
+    "Rage Mode after 8 presses: the body turns red and gold",
+    "Duel Spark: press A and B, the score is ink dots",
+    "Ink fills up in the triggers, brush strokes on the bumpers",
+    "The Konami code triggers an ink explosion"
    ],
    "shop": "overlay-controller-xbox-series-x-sumi-stroke-mono-edition",
    "srv": 1,
@@ -2146,8 +1982,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Phoenix Amber Edition",
    "ne": "Xbox Series X Controller Overlay - Phoenix Amber Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Phoenix Amber yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Phoenix Amber theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Phoenix Amber yang bergerak mengikuti gamepad kamu. Bar bulu terisi per jumlah tekan, dan kombinasi LB+RB+LT+RT membuka bentuk akhir feniks. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Phoenix Amber theme that follows your gamepad live. A feather bar fills with your press count, and pressing LB+RB+LT+RT unlocks the phoenix's final form. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -2167,10 +2003,10 @@
     "Cincin bara di stik dan tombol ABXY"
    ],
    "fte": [
-    "Feather bar fills with presses, celebration every 100",
-    "Awakening Form: LB+RB+LT+RT unlocks the final phoenix",
+    "A feather bar fills with your press count, with a celebration every 100 presses",
+    "Awakening Form: LB+RB+LT+RT unlocks the phoenix's final form",
     "Trigger fill rises like embers",
-    "Ember rings on sticks and ABXY"
+    "Ember rings on the stick and the ABXY buttons"
    ],
    "shop": "overlay-controller-xbox-series-x-phoenix-amber-edition",
    "srv": 1,
@@ -2183,8 +2019,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Venom Coil Carbon Edition",
    "ne": "Xbox Series X Controller Overlay - Venom Coil Carbon Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Venom Coil Carbon yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Venom Coil Carbon theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Venom Coil Carbon yang bergerak mengikuti gamepad kamu. Mata ular di layar Home berkedip dan tidur saat diam, dengan combo meter yang makin terang. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Venom Coil Carbon theme that follows your gamepad live. A snake eye on the Home screen blinks and sleeps when idle, with a combo meter that gets brighter. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 150000,
    "usd": 12,
    "g": "other",
@@ -2203,9 +2039,9 @@
     "Kode Konami memunculkan ular melintas di body"
    ],
    "fte": [
-    "Combo Meter on the top plate brightens on streaks",
+    "The Combo Meter on the top plate gets brighter as you press in a row",
     "Snake eye on Home: blinks, sleeps when idle",
-    "Konami code sends a snake across the body"
+    "The Konami code makes a snake slither across the body"
    ],
    "shop": "overlay-controller-xbox-series-x-venom-coil-carbon-edition",
    "srv": 1,
@@ -2218,8 +2054,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Cyan Chevron Run Edition",
    "ne": "Xbox Series X Controller Overlay - Cyan Chevron Run Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Cyan Chevron Run yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Cyan Chevron Run theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Cyan Chevron Run yang bergerak mengikuti gamepad kamu. Speedometer di layar Home yang jarumnya mengikuti tarikan RT, dengan api nitro saat RT ditarik penuh. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Cyan Chevron Run theme that follows your gamepad live. A speedometer on the Home screen whose needle follows your RT pull, with nitro flames when RT is fully pulled. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 120000,
    "usd": 10,
    "g": "other",
@@ -2239,10 +2075,10 @@
     "Kode Konami memicu sapuan panah ke seluruh body"
    ],
    "fte": [
-    "Speedometer on Home, needle follows RT pull",
-    "Nitro flame ignites at full RT",
-    "Arrow row on the top plate follows RT pull",
-    "Konami code sweeps arrows across the body"
+    "Speedometer on Home, the needle follows your RT pull",
+    "Nitro flames light up when RT is fully pulled",
+    "A row of arrows on the top plate follows your RT pull",
+    "The Konami code sweeps arrows across the whole body"
    ],
    "shop": "overlay-controller-xbox-series-x-cyan-chevron-run-edition",
    "srv": 1,
@@ -2255,8 +2091,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Raven Wing Indigo Edition",
    "ne": "Xbox Series X Controller Overlay - Raven Wing Indigo Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Raven Wing Indigo yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Raven Wing Indigo theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Raven Wing Indigo yang bergerak mengikuti gamepad kamu. Bola energi terisi tiap tombol ditekan, dan saat penuh memicu aksi ultimate. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Raven Wing Indigo theme that follows your gamepad live. An energy orb fills with every press, and triggers an ultimate move when full. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 159000,
    "usd": 13,
    "g": "other",
@@ -2272,14 +2108,12 @@
    "ft": [
     "Bola energi terisi tiap tekan, penuh memicu aksi ultimate",
     "Penghitung tekan dan lencana peringkat",
-    "Bulan menampilkan fase sesuai tanggal",
-    "Warna aksen bisa diganti lewat pengaturan"
+    "Bulan menampilkan fase sesuai tanggal"
    ],
    "fte": [
-    "Energy orb fills with each press, full triggers an ultimate",
-    "Press counter and rank badge",
-    "Moon shows the phase of the current date",
-    "Accent color can be changed in settings"
+    "An energy orb fills with every press, a full orb triggers an ultimate move",
+    "Press counter and a rank badge",
+    "The moon shows the phase for the current date"
    ],
    "shop": "overlay-controller-xbox-series-x-raven-wing-indigo-edition",
    "srv": 1,
@@ -2292,8 +2126,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Lime Claw Scratch Edition",
    "ne": "Xbox Series X Controller Overlay - Lime Claw Scratch Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Lime Claw Scratch yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Lime Claw Scratch theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Lime Claw Scratch yang bergerak mengikuti gamepad kamu. Goresan cakar muncul saat tombol ditekan, dengan level yang naik tiap 500 tekan. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Lime Claw Scratch theme that follows your gamepad live. Claw scratches appear when you press buttons, with a level that goes up every 500 presses. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -2314,9 +2148,9 @@
    ],
    "fte": [
     "Claw scratches appear when buttons are pressed",
-    "Top plate: press count, 10 segments, and level (up every 500 presses)",
-    "Session timer on the Home display",
-    "Konami code triggers a claw sweep"
+    "Top plate: press count, 10 segments, and a level (up every 500 presses)",
+    "A session timer on the Home screen",
+    "The Konami code triggers a claw sweep"
    ],
    "shop": "overlay-controller-xbox-series-x-lime-claw-scratch-edition",
    "srv": 1,
@@ -2329,8 +2163,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Atomic Teal Retro Edition",
    "ne": "Xbox Series X Controller Overlay - Atomic Teal Retro Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Atomic Teal Retro yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Atomic Teal Retro theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Atomic Teal Retro yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Atomic Teal Retro theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 139000,
    "usd": 11,
    "g": "other",
@@ -2344,14 +2178,10 @@
    "tage": "New",
    "nd": "2026-10-24",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-atomic-teal-retro-edition",
    "srv": 1,
@@ -2364,8 +2194,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Leather Stitch Tan Edition",
    "ne": "Xbox Series X Controller Overlay - Leather Stitch Tan Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Leather Stitch Tan yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Leather Stitch Tan theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Leather Stitch Tan yang bergerak mengikuti gamepad kamu. Uang dolar jatuh dari plat atas seperti mesin ATM, dan jahitan kulit menyala lewat kode Konami. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Leather Stitch Tan theme that follows your gamepad live. Dollar bills drop from the top plate like an ATM, and the leather stitching lights up via the Konami code. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -2385,10 +2215,10 @@
     "Kode Konami menyalakan semua jahitan"
    ],
    "fte": [
-    "Thread meter fills with each press",
-    "Dollar bills fall from the top plate like an ATM",
-    "Leather warms up and the keychain swings harder when you press fast",
-    "Konami code lights up all stitches"
+    "A thread meter fills with every press",
+    "Dollar bills drop from the top plate like an ATM",
+    "The leather warms up and the keychain swings harder as you press faster",
+    "The Konami code lights up all the stitching"
    ],
    "shop": "overlay-controller-xbox-series-x-leather-stitch-tan-edition",
    "srv": 1,
@@ -2401,8 +2231,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Anodized Violet Edition",
    "ne": "Xbox Series X Controller Overlay - Anodized Violet Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Anodized Violet yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Anodized Violet theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Anodized Violet yang bergerak mengikuti gamepad kamu. Hologram controller mini yang miring mengikuti stik, dengan papan hitungan tekan dan combo. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Anodized Violet theme that follows your gamepad live. A mini hologram controller tilts with the stick, with a board that counts presses and combos. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 150000,
    "usd": 12,
    "g": "other",
@@ -2417,15 +2247,11 @@
    "nd": "2026-10-24",
    "ft": [
     "Hologram controller mini miring mengikuti stik",
-    "Papan hitungan tekan dan combo di atas controller",
-    "Trigger terisi penuh, label tetap terlihat",
-    "Warna aksen bisa diganti lewat ?accent"
+    "Papan hitungan tekan dan combo di atas controller"
    ],
    "fte": [
-    "Mini controller hologram tilts with the stick",
-    "Press and combo board above the controller",
-    "Triggers fill fully, labels stay visible",
-    "Accent color via ?accent"
+    "A mini hologram controller tilts with the stick",
+    "A press and combo counter board above the controller"
    ],
    "shop": "overlay-controller-xbox-series-x-anodized-violet-edition",
    "srv": 1,
@@ -2438,8 +2264,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Toxic Lime Weave Edition",
    "ne": "Xbox Series X Controller Overlay - Toxic Lime Weave Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Toxic Lime Weave yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Toxic Lime Weave theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Toxic Lime Weave yang bergerak mengikuti gamepad kamu. Speedometer APM di layar Home, dengan jarum yang naik saat kamu menekan cepat. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Toxic Lime Weave theme that follows your gamepad live. An APM speedometer on the Home screen, with a needle that rises when you press fast. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 185000,
    "usd": 15,
    "g": "other",
@@ -2459,8 +2285,8 @@
     "Trigger terisi cairan lime"
    ],
    "fte": [
-    "APM speedometer on Home, needle rises as you press fast",
-    "5-segment meter on the top plate",
+    "APM speedometer on Home, the needle rises when you press fast",
+    "A 5-segment meter on the top plate",
     "Hold L3+R3 for a surprise glitch",
     "Triggers fill with lime liquid"
    ],
@@ -2474,8 +2300,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Violet Carbon Fang V5 Edition",
    "ne": "Xbox Series X Controller Overlay - Violet Carbon Fang V5 Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Violet Carbon Fang V5 yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Violet Carbon Fang V5 theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Violet Carbon Fang yang bergerak mengikuti gamepad kamu. Boss Bar yang nyawanya turun tiap tombol ditekan dan pulih saat kamu diam. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Violet Carbon Fang theme that follows your gamepad live. A Boss Bar whose health drops with every press and recovers when you stop. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 149000,
    "usd": 12,
    "g": "other",
@@ -2494,9 +2320,9 @@
     "Taring makin terang saat menekan makin cepat"
    ],
    "fte": [
-    "Boss Bar: boss health drops with each press, recovers when idle",
-    "Boss eye in the center follows the stick and changes with remaining health",
-    "Fangs glow brighter the faster you press"
+    "Boss Bar: boss health drops with every press and recovers when idle",
+    "The boss eye in the middle follows the stick and changes expression with the remaining health",
+    "The fangs glow brighter the faster you press"
    ],
    "shop": "overlay-controller-xbox-series-x-violet-carbon-fang-v5-edition",
    "srv": 1,
@@ -2508,8 +2334,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Lime Drip Lines Edition",
    "ne": "Xbox Series X Controller Overlay - Lime Drip Lines Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Lime Drip Lines yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Lime Drip Lines theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Lime Drip Lines yang bergerak mengikuti gamepad kamu. Daily Streak menghitung hari main berturut-turut, dan suasana body makin terang saat permainan makin seru. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Lime Drip Lines theme that follows your gamepad live. A Daily Streak counts your consecutive days of play, and the body gets brighter as play gets more intense. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 149000,
    "usd": 12,
    "g": "other",
@@ -2525,14 +2351,12 @@
    "ft": [
     "Daily Streak: hitungan hari main berturut-turut",
     "Suasana body makin terang mengikuti intensitas permainan",
-    "Trigger terisi cat lime",
-    "Warna aksen tombol dan stik bisa diganti"
+    "Trigger terisi cat lime"
    ],
    "fte": [
-    "Daily Streak: consecutive days played",
-    "Body mood brightens with play intensity",
-    "Triggers fill like pouring lime paint",
-    "Button and stick accent color can be changed"
+    "Daily Streak: counts consecutive days played",
+    "The body gets brighter with the intensity of play",
+    "Triggers fill with lime paint"
    ],
    "shop": "overlay-controller-xbox-series-x-lime-drip-lines-edition",
    "srv": 1,
@@ -2544,8 +2368,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Sunny Triangle Shards V2 Edition",
    "ne": "Xbox Series X Controller Overlay - Sunny Triangle Shards V2 Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Sunny Triangle Shards V2 yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Sunny Triangle Shards V2 theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Sunny Triangle Shards yang bergerak mengikuti gamepad kamu. Tekan cepat untuk memicu Rage Mode, dan namamu bisa tampil di plat atas. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Sunny Triangle Shards theme that follows your gamepad live. Press fast to trigger Rage Mode, and your name can be shown on the top plate. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 139000,
    "usd": 11,
    "g": "other",
@@ -2560,15 +2384,15 @@
    "nd": "2026-10-27",
    "ft": [
     "Rage Mode: tekan cepat memicu retakan merah menyebar",
-    "Nama sendiri tampil di plat atas (?name=)",
+    "Nama kamu bisa tampil di plat atas",
     "Meter Heat muncul saat tombol ditekan beruntun",
     "Easter egg: tahan LB RB View untuk Sunburst"
    ],
    "fte": [
     "Rage Mode: press fast and red cracks spread",
-    "Your own name on the top plate (?name=)",
-    "Heat meter appears on button streaks",
-    "Easter egg: hold LB RB View for Sunburst"
+    "Your name can be shown on the top plate",
+    "A Heat meter appears when you press buttons in a row",
+    "Easter egg: hold LB RB View for a Sunburst"
    ],
    "shop": "overlay-controller-xbox-series-x-sunny-triangle-shards-v2-edition",
    "srv": 1,
@@ -2580,8 +2404,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Blueprint Teknis Edition",
    "ne": "Xbox Series X Controller Overlay - Blueprint Teknis Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Blueprint Teknis yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Blueprint Teknis theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Blueprint yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Blueprint theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 139000,
    "usd": 11,
    "g": "other",
@@ -2611,8 +2435,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Anime Kawaii Pastel Edition",
    "ne": "Xbox Series X Controller Overlay - Anime Kawaii Pastel Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Anime Kawaii Pastel yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Anime Kawaii Pastel theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Anime Kawaii Pastel yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Anime Kawaii Pastel theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 149000,
    "usd": 12,
    "g": "other",
@@ -2627,16 +2451,10 @@
    "nd": "2026-10-28",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-anime-kawaii-pastel-edition",
    "srv": 1,
@@ -2648,8 +2466,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Synthwave Outrun Edition",
    "ne": "Xbox Series X Controller Overlay - Synthwave Outrun Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Synthwave Outrun yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Synthwave Outrun theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Synthwave Outrun yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Synthwave Outrun theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 110000,
    "usd": 9,
    "g": "other",
@@ -2679,8 +2497,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Y2k Bubble Edition",
    "ne": "Xbox Series X Controller Overlay - Y2k Bubble Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Y2k Bubble yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Y2k Bubble theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Y2K Bubble yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Y2K Bubble theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "g": "other",
@@ -2695,16 +2513,10 @@
    "nd": "2026-10-28",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-y2k-bubble-edition",
    "srv": 1,
@@ -2716,8 +2528,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Glitch Error Edition",
    "ne": "Xbox Series X Controller Overlay - Glitch Error Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Glitch Error yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Glitch Error theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Glitch Error yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Glitch Error theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 149000,
    "usd": 12,
    "g": "other",
@@ -2747,8 +2559,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Scifi Space Hud Edition",
    "ne": "Xbox Series X Controller Overlay - Scifi Space Hud Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Scifi Space Hud yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Scifi Space Hud theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Sci-Fi Space HUD yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Sci-Fi Space HUD theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 149000,
    "usd": 12,
    "g": "other",
@@ -2778,8 +2590,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Esports Team Banner Edition",
    "ne": "Xbox Series X Controller Overlay - Esports Team Banner Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Esports Team Banner yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Esports Team Banner theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Esports Team Banner yang bergerak mengikuti gamepad kamu. Nama pemain dan lambang tim tampil di panel, dengan banner input yang meluncur masuk. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Esports Team Banner theme that follows your gamepad live. Your player name and team emblem show on the panel, with input banners that slide in. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "g": "other",
@@ -2813,8 +2625,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Esports Rank Badge Edition",
    "ne": "Xbox Series X Controller Overlay - Esports Rank Badge Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Esports Rank Badge yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Esports Rank Badge theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Esports Rank Badge yang bergerak mengikuti gamepad kamu. Input kamu jadi XP yang menaikkan tier dari Perunggu sampai Berlian. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Esports Rank Badge theme that follows your gamepad live. Your inputs turn into XP that raises your tier from Bronze to Diamond. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "g": "other",
@@ -2829,16 +2641,16 @@
    "nd": "2026-10-29",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share+mash",
    "ft": [
-    "Rank Ladder: XP dari input menaikkan tier Perunggu sampai Berlian",
+    "Rank Ladder: XP dari input menaikkan tier dari Perunggu sampai Berlian",
     "Lencana rank di Home, chevron tier di plat atas",
-    "Season Reset saat Berlian penuh: tier turun, lahir kembali di Perunggu",
+    "Season Reset saat Berlian penuh: tier turun dan mulai lagi dari Perunggu",
     "Tombol Menu mengatur ulang XP"
    ],
    "fte": [
-    "Rank Ladder: input XP raises tier from Bronze to Diamond",
+    "Rank Ladder: XP from inputs raises your tier from Bronze to Diamond",
     "Rank badge on Home, tier chevrons on the top plate",
-    "Season Reset at full Diamond: tiers drop, reborn at Bronze",
-    "Menu button resets XP"
+    "Season Reset when Diamond is full: your tier drops and you start again from Bronze",
+    "The Menu button resets your XP"
    ],
    "shop": "overlay-controller-xbox-series-x-esports-rank-badge-edition",
    "srv": 1,
@@ -2850,8 +2662,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Lava Volcano Edition",
    "ne": "Xbox Series X Controller Overlay - Lava Volcano Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Lava Volcano yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Lava Volcano theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Lava Volcano yang bergerak mengikuti gamepad kamu. Eruption Meter terisi saat kamu bermain, dan saat penuh gunung meletus di layar Home. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Lava Volcano theme that follows your gamepad live. An Eruption Meter fills as you play, and when it is full the volcano erupts on the Home screen. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 85000,
    "usd": 7,
    "g": "other",
@@ -2870,7 +2682,7 @@
     "Trigger terisi lava dengan percikan bara"
    ],
    "fte": [
-    "10-segment Eruption Meter on the top plate, full = eruption on the Home display",
+    "A 10-segment Eruption Meter on the top plate, full = eruption on the Home display",
     "Triggers fill with lava and ember sparks"
    ],
    "shop": "overlay-controller-xbox-series-x-lava-volcano-edition",
@@ -2883,8 +2695,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Autumn Maple Edition",
    "ne": "Xbox Series X Controller Overlay - Autumn Maple Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Autumn Maple yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Autumn Maple theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Autumn Maple yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Autumn Maple theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "g": "other",
@@ -2899,16 +2711,10 @@
    "nd": "2026-10-29",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-autumn-maple-edition",
    "srv": 1,
@@ -2920,8 +2726,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Thunder Storm Edition",
    "ne": "Xbox Series X Controller Overlay - Thunder Storm Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Thunder Storm yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Thunder Storm theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Thunder Storm yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Thunder Storm theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 119000,
    "usd": 10,
    "g": "other",
@@ -2936,16 +2742,10 @@
    "nd": "2026-10-29",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-thunder-storm-edition",
    "srv": 1,
@@ -2957,8 +2757,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Red Flame Squad V1 Edition",
    "ne": "Xbox Series X Controller Overlay - Red Flame Squad V1 Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Red Flame Squad V1 yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Red Flame Squad V1 theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Red Flame Squad yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Red Flame Squad theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -2973,16 +2773,10 @@
    "nd": "2026-10-29",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-red-flame-squad-v1-edition",
    "srv": 1,
@@ -2994,8 +2788,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Snowy Mountain Cabin Edition",
    "ne": "Xbox Series X Controller Overlay - Snowy Mountain Cabin Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Snowy Mountain Cabin yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Snowy Mountain Cabin theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Snowy Mountain Cabin yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Snowy Mountain Cabin theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 149000,
    "usd": 12,
    "g": "other",
@@ -3010,16 +2804,10 @@
    "nd": "2026-10-29",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-snowy-mountain-cabin-edition",
    "srv": 1,
@@ -3031,8 +2819,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Quantum Circuit Edition",
    "ne": "Xbox Series X Controller Overlay - Quantum Circuit Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Quantum Circuit yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Quantum Circuit theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Quantum Circuit yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Quantum Circuit theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 110000,
    "usd": 9,
    "g": "other",
@@ -3047,16 +2835,10 @@
    "nd": "2026-10-30",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-quantum-circuit-edition",
    "srv": 1,
@@ -3068,8 +2850,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Esports Arena Stage Edition",
    "ne": "Xbox Series X Controller Overlay - Esports Arena Stage Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Esports Arena Stage yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Esports Arena Stage theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Esports Arena Stage yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Esports Arena Stage theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "g": "other",
@@ -3084,16 +2866,10 @@
    "nd": "2026-10-31",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-esports-arena-stage-edition",
    "srv": 1,
@@ -3105,8 +2881,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Egyptian Pharaoh Gold Edition",
    "ne": "Xbox Series X Controller Overlay - Egyptian Pharaoh Gold Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Egyptian Pharaoh Gold yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Egyptian Pharaoh Gold theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Egyptian Pharaoh Gold yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Egyptian Pharaoh Gold theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 110000,
    "usd": 9,
    "g": "other",
@@ -3121,16 +2897,10 @@
    "nd": "2026-10-31",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-egyptian-pharaoh-gold-edition",
    "srv": 1,
@@ -3142,8 +2912,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Astronaut Floating Edition",
    "ne": "Xbox Series X Controller Overlay - Astronaut Floating Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Astronaut Floating yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Astronaut Floating theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Astronaut Floating yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Astronaut Floating theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 120000,
    "usd": 10,
    "g": "other",
@@ -3158,16 +2928,10 @@
    "nd": "2026-10-31",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-astronaut-floating-edition",
    "srv": 1,
@@ -3179,8 +2943,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Space Station Airlock 2 Edition",
    "ne": "Xbox Series X Controller Overlay - Space Station Airlock 2 Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Space Station Airlock 2 yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Space Station Airlock 2 theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Space Station Airlock yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Space Station Airlock theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -3195,16 +2959,10 @@
    "nd": "2026-11-01",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share+mash",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-space-station-airlock-2-edition",
    "srv": 1,
@@ -3216,8 +2974,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Alien Biotech Edition",
    "ne": "Xbox Series X Controller Overlay - Alien Biotech Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Alien Biotech yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Alien Biotech theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Alien Biotech yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Alien Biotech theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 110000,
    "usd": 9,
    "g": "other",
@@ -3232,14 +2990,10 @@
    "nd": "2026-11-01",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-alien-biotech-edition",
    "srv": 1,
@@ -3251,8 +3005,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Nuclear Hazard Edition",
    "ne": "Xbox Series X Controller Overlay - Nuclear Hazard Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Nuclear Hazard yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Nuclear Hazard theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Nuclear Hazard yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Nuclear Hazard theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 139000,
    "usd": 11,
    "g": "other",
@@ -3267,14 +3021,10 @@
    "nd": "2026-11-01",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-nuclear-hazard-edition",
    "srv": 1,
@@ -3286,8 +3036,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Matsuri Lantern Edition",
    "ne": "Xbox Series X Controller Overlay - Matsuri Lantern Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Matsuri Lantern yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Matsuri Lantern theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Matsuri Lantern yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Matsuri Lantern theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 59000,
    "usd": 5,
    "g": "other",
@@ -3302,16 +3052,10 @@
    "nd": "2026-11-02",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-matsuri-lantern-edition",
    "srv": 1,
@@ -3323,8 +3067,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Vinyl Record Dj Edition",
    "ne": "Xbox Series X Controller Overlay - Vinyl Record Dj Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Vinyl Record Dj yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Vinyl Record Dj theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Vinyl Record DJ yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Vinyl Record DJ theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 89000,
    "usd": 7,
    "g": "other",
@@ -3339,16 +3083,10 @@
    "nd": "2026-11-02",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-vinyl-record-dj-edition",
    "srv": 1,
@@ -3360,8 +3098,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Tin Robot Toy Edition",
    "ne": "Xbox Series X Controller Overlay - Tin Robot Toy Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Tin Robot Toy yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Tin Robot Toy theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Tin Robot Toy yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Tin Robot Toy theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 110000,
    "usd": 9,
    "g": "other",
@@ -3376,14 +3114,10 @@
    "nd": "2026-11-02",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-tin-robot-toy-edition",
    "srv": 1,
@@ -3395,8 +3129,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Skate Punk Sticker 4 Edition",
    "ne": "Xbox Series X Controller Overlay - Skate Punk Sticker 4 Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Skate Punk Sticker 4 yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Skate Punk Sticker 4 theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Skate Punk Sticker yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Skate Punk Sticker theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -3411,14 +3145,10 @@
    "nd": "2026-11-02",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-skate-punk-sticker-4-edition",
    "srv": 1,
@@ -3430,8 +3160,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Desert Dune Edition",
    "ne": "Xbox Series X Controller Overlay - Desert Dune Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Desert Dune yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Desert Dune theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Desert Dune yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Desert Dune theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "g": "other",
@@ -3446,16 +3176,10 @@
    "nd": "2026-11-02",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-desert-dune-edition",
    "srv": 1,
@@ -3467,8 +3191,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Viking Rune Nordic Edition",
    "ne": "Xbox Series X Controller Overlay - Viking Rune Nordic Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Viking Rune Nordic yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Viking Rune Nordic theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Viking Rune Nordic yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Viking Rune Nordic theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 129000,
    "usd": 10,
    "g": "other",
@@ -3483,27 +3207,23 @@
    "nd": "2026-11-02",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-viking-rune-nordic-edition",
    "srv": 1,
    "pr": 65000,
-   "ps": "2026-11-02",
-   "pe": "2026-11-04",
+   "ps": "2026-11-05",
+   "pe": "2026-11-07",
    "pru": 5
   },
   {
    "n": "Overlay Controller Xbox Series X - Neo Brutalism Edition",
    "ne": "Xbox Series X Controller Overlay - Neo Brutalism Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Neo Brutalism yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Neo Brutalism theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Neo Brutalism yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Neo Brutalism theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 99000,
    "usd": 8,
    "g": "other",
@@ -3518,14 +3238,10 @@
    "nd": "2026-11-02",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-neo-brutalism-edition",
    "srv": 1,
@@ -3537,8 +3253,8 @@
   {
    "n": "Overlay Controller Xbox Series X - Esports Scoreboard Edition",
    "ne": "Xbox Series X Controller Overlay - Esports Scoreboard Edition",
-   "d": "Edisi overlay controller Xbox Series X bertema Esports Scoreboard yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox Series X controller overlay, Esports Scoreboard theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox Series X bertema Esports Scoreboard yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox Series X controller overlay with a Esports Scoreboard theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 79000,
    "usd": 6,
    "g": "other",
@@ -3553,16 +3269,10 @@
    "nd": "2026-11-02",
    "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
    "ft": [
-    "Bergerak real-time mengikuti gamepad",
-    "Tombol, stik, dan trigger ikut bereaksi saat ditekan",
-    "Warna aksen bisa disesuaikan",
-    "Siap dipakai di OBS dan Streamlabs"
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
    ],
    "fte": [
-    "Moves in real time with your gamepad",
-    "Buttons, sticks, and triggers react as you press them",
-    "Adjustable accent color",
-    "Ready for OBS and Streamlabs"
+    "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-xbox-series-x-esports-scoreboard-1-edition",
    "srv": 1,
@@ -4242,8 +3952,8 @@
    "l": "Overlay Controller • Xbox One S",
    "n": "Overlay Controller Xbox One S Sunset Galaxy Edition",
    "ne": "Xbox One S Controller Overlay - Sunset Galaxy Edition",
-   "d": "Edisi overlay controller Xbox One S bertema Sunset Galaxy yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox One S controller overlay, Sunset Galaxy theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox One S bertema Sunset Galaxy yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox One S controller overlay with a Sunset Galaxy theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 50000,
    "usd": 4,
    "g": "other",
@@ -4253,8 +3963,8 @@
    "l": "Overlay Controller • Xbox One OG",
    "n": "Overlay Controller Xbox One OG - Ice Crystal Edition",
    "ne": "Xbox One OG Controller Overlay - Ice Crystal Edition",
-   "d": "Edisi overlay controller Xbox One OG bertema Ice Crystal yang bergerak mengikuti gamepad. Tombol, stik, dan trigger ikut bereaksi saat ditekan. Untuk OBS atau Streamlabs.",
-   "de": "Xbox One OG controller overlay, Ice Crystal theme, that moves along with your gamepad. Buttons, sticks and triggers react when pressed. For OBS or Streamlabs.",
+   "d": "Overlay controller Xbox One OG bertema Ice Crystal yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "Xbox One OG controller overlay with a Ice Crystal theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
    "h": 50000,
    "usd": 4,
    "g": "other",
