@@ -214,7 +214,8 @@
    "show": true,
    "cv": true,
    "g": "other",
-   "os": "stream"
+   "os": "stream",
+   "hide": true
   },
   "other|Overlay Still Pond (Paket Lengkap)": {
    "n": "Overlay Still Pond (Paket Lengkap)",
@@ -227,7 +228,8 @@
    "show": true,
    "cv": 2,
    "g": "other",
-   "os": "stream"
+   "os": "stream",
+   "hide": true
   },
   "other|Overlay Controller Xbox Series X - Pixel Arcade Edition": {
    "n": "Overlay Controller Xbox Series X - Pixel Arcade Edition",
@@ -3503,12 +3505,12 @@
    "Overlay"
   ],
   "cat_oth_s": [
-   "Other · Overlay · Stream",
-   "Other · Overlay · Stream"
+   "Overlay",
+   "Overlay"
   ],
   "cat_oth_c": [
-   "Other · Overlay · Controller",
-   "Other · Overlay · Controller"
+   "Overlay",
+   "Overlay"
   ],
   "sl_ctl": [
    "Pilih Edition siap pakai, atau chat admin untuk controller custom.",
@@ -3759,8 +3761,8 @@
    "Any"
   ],
   "cat_oth": [
-   "Other · Overlay",
-   "Other · Overlay"
+   "Overlay",
+   "Overlay"
   ],
   "f_btn_ask": [
    "Kirim permintaan harga lewat WhatsApp",
