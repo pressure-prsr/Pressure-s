@@ -678,7 +678,7 @@ body.vm .vd .vpv{max-height:76dvh;overflow-y:auto;overscroll-behavior:contain}
 var $=function(i){return document.getElementById(i)};
 var GN={"nfs-heat":"NFS Heat","crew-motorfest":"Crew Motorfest","other|stream":"Other · Stream","other|controller":"Other · Controller"};
 var S={};try{S=JSON.parse(localStorage.getItem("adm")||"{}")}catch(e){}
-var C={v:1,items:{},added:[]},pend={},dirty=false,flt="all",cur=null,hist=[],redoHist=[],baseSha=null;
+var CATN=0,CATOK=0,CATUP=0,C={v:1,items:{},added:[]},pend={},dirty=false,flt="all",cur=null,hist=[],redoHist=[],baseSha=null;
 function ck(o){return o.g==="other"?"other|"+(o.os||"stream"):o.g}
 function rp(n){return n===null||n===undefined?"Ask":"Rp"+Number(n).toLocaleString("id-ID")}
 function msg(t,ms){var m=$("msg");m.textContent=t;m.classList.add("on");clearTimeout(msg.t);if(ms!==0)msg.t=setTimeout(function(){m.classList.remove("on")},ms||3500)}
@@ -687,7 +687,7 @@ function cat(c){var a=all().filter(function(e){return !e.o.del&&ck(e.o)===c});a.
 function move(d){var a=cat(ck(cur.o)),i=a.findIndex(function(e){return e.o===cur.o}),j=i+d,t;if(i<0||j<0||j>=a.length)return;t=a[i];a[i]=a[j];a[j]=t;a.forEach(function(e,n){e.o.ord=n});mark()}
 
 function all(){var a=[],k;for(k in C.items)a.push({k:k,o:C.items[k],add:0});C.added.forEach(function(o,i){a.push({k:"+"+i,o:o,add:1,i:i})});return a}
-function render(){syncGN();tabsR();$("q").style.display=(view==="pr"||view==="pw"||view==="bd"||view==="bse"||view==="vid"||view==="ai"||view==="so"||view==="sl"||view==="lk"||view==="sp"||view==="up"||view==="rw"||view==="ck"||view==="dk"||view==="ex")?"none":"";if(view!=="p"){$("chips").innerHTML="";return {j:rj,g:rg,i:ri,s:rs,bd:rbd,ai:rai,pr:rpr,pw:rpw,promo:rpromo,vid:rvid,bse:rbse,so:rso,sl:rsl,lk:rlk,sp:rsp,up:rup,rw:rrw,ck:rck,dk:rdk,ex:function(){return window.rex()}}[view]()}
+function render(){syncGN();tabsR();$("q").style.display=(view==="pr"||view==="pw"||view==="bd"||view==="bse"||view==="vid"||view==="ai"||view==="so"||view==="sl"||view==="lk"||view==="ly"||view==="sp"||view==="up"||view==="rw"||view==="ck"||view==="dk"||view==="ex")?"none":"";if(view!=="p"){$("chips").innerHTML="";return {j:rj,g:rg,i:ri,s:rs,bd:rbd,ai:rai,pr:rpr,pw:rpw,promo:rpromo,vid:rvid,bse:rbse,so:rso,sl:rsl,ly:rly,lk:rlk,sp:rsp,up:rup,rw:rrw,ck:rck,dk:rdk,ex:function(){return window.rex()}}[view]()}
  var keys=["all"].concat(Object.keys(GN));
  $("chips").innerHTML=keys.map(function(k){return '<button type="button" data-f="'+k+'" class="'+(k===flt?"on":"")+'">'+(k==="all"?"All":GN[k])+'</button>'}).join("");
  var q=$("q").value.trim().toLowerCase(),h="";
@@ -1369,7 +1369,7 @@ return {render:render,gen:gen,S:function(){return S},trace:trace,setImg:setImg,p
 function rbse(){BSE.render()}
 /*BSE-END*/
 
-var TG=[["Katalog",[["up","Upload"],["rw","Riwayat"],["p","Packages"],["dk","Diskon"],["j","Boosters"],["g","Categories"]]],["Konten",[["i","Steps & Info"],["s","Site texts"],["ex","Ekspor"]]],["Studio",[["bd","Builder"],["pr","Prompt"],["pw","Preview web"],["promo","Promosi"],["vid","Video"],["bse","Base"]]],["Penjualan",[["sl","Kirim link"],["lk","Paket Lynk"],["sp","Produk"],["so","Order"],["ck","Cek produk"]]]];
+var TG=[["Katalog",[["up","Upload"],["rw","Riwayat"],["p","Packages"],["ly","Link Lynk"],["dk","Diskon"],["j","Boosters"],["g","Categories"]]],["Konten",[["i","Steps & Info"],["s","Site texts"],["ex","Ekspor"]]],["Studio",[["bd","Builder"],["pr","Prompt"],["pw","Preview web"],["promo","Promosi"],["vid","Video"],["bse","Base"]]],["Penjualan",[["sl","Kirim link"],["lk","Paket Lynk"],["sp","Produk"],["so","Order"],["ck","Cek produk"]]]];
 
 var rpromo=(function(){
 var $=function(i){return document.getElementById(i)};
@@ -5060,7 +5060,7 @@ function cfg(){return S.repo&&S.token}
 function load(){var dr=null;try{dr=JSON.parse(localStorage.getItem("adm_draft")||"null")}catch(e){}
  var p=cfg()?gh("catalog.json","GET").then(function(j){if(!j)throw new Error("catalog.json not found in repo");baseSha=j.sha;if(j.content&&j.encoding==="base64")return JSON.parse(dec(j.content));return ghx("git/blobs/"+j.sha,"GET").then(function(b){return JSON.parse(dec(b.content))})}):fetch("catalog.json?t="+Date.now()).then(function(r){if(!r.ok)throw new Error("catalog.json not found");return r.json()});
  p=p.then(function(c){if(c.texts&&c.steps&&c.site)return c;return fetch("catalog-base.json").then(function(r){return r.json()}).then(function(b){["wa","joki","jokiAdded","texts","steps","info","gamesAdded","gameNames","site"].forEach(function(k){if(c[k]==null)c[k]=b[k]});return c}).catch(function(){return c})});
- p.then(function(c){C=c;C.items=C.items||{};C.added=C.added||[];hist=[JSON.stringify(C)];if(dr&&dr.C&&confirm("There is an unpublished draft on this device. Restore it?")){C=dr.C;pend=dr.pend||{};hist=[JSON.stringify(C)];redoHist=[];dirty=true;$("bPub").disabled=false}render();if(!expWarn())msg(cfg()?"Loaded from GitHub.":(S.enc?"Token terkunci. Muat ulang dan masukkan PIN untuk Publish.":"Loaded (read-only until you add publish settings)."))}).catch(function(e){msg("Load failed: "+e.message,6000)})}
+ p.then(function(c){CATN=catN(c);CATOK=1;if(CATUP){render();return}C=c;C.items=C.items||{};C.added=C.added||[];hist=[JSON.stringify(C)];if(dr&&dr.C&&confirm("There is an unpublished draft on this device. Restore it?")){C=dr.C;pend=dr.pend||{};hist=[JSON.stringify(C)];redoHist=[];dirty=true;$("bPub").disabled=false}render();if(!expWarn())msg(cfg()?"Loaded from GitHub.":(S.enc?"Token terkunci. Muat ulang dan masukkan PIN untuk Publish.":"Loaded (read-only until you add publish settings)."))}).catch(function(e){msg("Load failed: "+e.message,6000)})}
 function put(path,text){return gh(path,"GET").then(function(j){return gh(path,"PUT",{message:"admin: update "+path,content:(typeof text==="object"?text.b:enc(text)),branch:S.branch||"main",sha:j?j.sha:undefined})})}
 function ghx(path,method,body){return fetch("https://api.github.com/repos/"+S.repo+"/"+path,{method:method,headers:{Authorization:"Bearer "+S.token,Accept:"application/vnd.github+json"},body:body?JSON.stringify(body):undefined}).then(function(r){if(!r.ok)return r.text().then(function(t){throw new Error(r.status+" "+t.slice(0,140))});return r.json()})}
 /* ---- Satu alur: unggah HTML controller sekali -> repo privat -> produk, harga & link di toko ---- */
@@ -5335,6 +5335,10 @@ function publish(){if(!cfg()){$("shS").classList.add("on");msg("Add repo and tok
  PWARN="";sellFlow().then(syncPromos).then(publish0).catch(function(e){b.disabled=false;SD=null;msg("Publish failed: "+(e&&e.auth?"password penjualan salah":e.message)+(/\b(401|403|404)\b/.test(e.message)?" — token harus punya akses tulis ke repo privat.":""),9000)})}
 function publish0(){
  if(!cfg()){$("shS").classList.add("on");msg("Add repo and token first.");return}
+ var n0=catN(C),bp=$("bPub");
+ if(!CATOK){bp.disabled=false;msg("Publish dibatalkan: katalog belum berhasil dimuat dari GitHub, jadi bisa menimpa katalog dengan yang kosong. Muat ulang halaman admin dulu.",10000);return}
+ if(!n0){bp.disabled=false;msg("Publish dibatalkan: katalog kosong (0 produk). Muat ulang admin atau unggah catalog.json yang benar.",10000);return}
+ if(CATN>10&&n0<CATN*0.6&&!confirm("PERINGATAN: katalog yang akan dipublish hanya berisi "+n0+" produk, padahal di GitHub ada "+CATN+". Kalau ini tidak disengaja, tekan Batal.\n\nTetap publish?")){bp.disabled=false;msg("Publish dibatalkan.",6000);return}
  rwStamp();var ps=Object.keys(pend),b=$("bPub"),br=S.branch||"main",head,done=0,ns=null,
  files=ps.map(function(p){return {p:p,c:typeof pend[p]==="object"?pend[p].b:enc(pend[p])}}).concat([{p:"catalog.json",c:enc(JSON.stringify(C,null,1))}]);
  b.disabled=true;msg("Memeriksa GitHub…",0);
@@ -5344,7 +5348,7 @@ function publish0(){
  .then(function(c){return files.reduce(function(pr,f){return pr.then(function(a){msg("Mengunggah "+(++done)+"/"+files.length+"…",0);return ghx("git/blobs","POST",{content:f.c,encoding:"base64"}).then(function(bl){if(f.p==="catalog.json")ns=bl.sha;a.push({path:f.p,mode:"100644",type:"blob",sha:bl.sha});return a})})},Promise.resolve([])).then(function(tr){return ghx("git/trees","POST",{base_tree:c.tree.sha,tree:tr})})})
  .then(function(t){return ghx("git/commits","POST",{message:"admin: update katalog ("+files.length+" file)",tree:t.sha,parents:[head]})})
  .then(function(cm){return ghx("git/refs/heads/"+br,"PATCH",{sha:cm.sha})})
- .then(function(){baseSha=ns;pend={};dirty=false;try{localStorage.removeItem("adm_draft")}catch(e){}msg("Published. The site updates in about a minute."+PWARN,PWARN?10000:6000);sAutoDone=false;if(SPW){sApi("/admin/api/data").then(function(r){return r.json()}).then(function(d){SD=d;return sSync()}).then(function(r){SD=null;if(r&&r.ok)msg(r.ok+" produk baru masuk ke Penjualan (nonaktif)",6000)}).catch(function(){SD=null})}})
+ .then(function(){return gh("catalog.json","GET").then(function(j){var ex=new Blob([JSON.stringify(C,null,1)]).size;if(j&&j.size&&j.size!==ex)PWARN+=" PERINGATAN: ukuran catalog.json di GitHub "+j.size+" B, seharusnya "+ex+" B. Cek riwayat commit."},function(){})}).then(function(){baseSha=ns;CATN=catN(C);CATUP=0;pend={};dirty=false;try{localStorage.removeItem("adm_draft")}catch(e){}msg("Published ("+catN(C)+" produk di katalog). The site updates in about a minute."+PWARN,PWARN?10000:6000);sAutoDone=false;if(SPW){sApi("/admin/api/data").then(function(r){return r.json()}).then(function(d){SD=d;return sSync()}).then(function(r){SD=null;if(r&&r.ok)msg(r.ok+" produk baru masuk ke Penjualan (nonaktif)",6000)}).catch(function(){SD=null})}})
  .catch(function(e){b.disabled=false;msg("Publish failed: "+e.message+(/\b(401|403)\b/.test(e.message)?" — token mungkin kedaluwarsa atau tidak punya izin.":""),9000)})}
 function dl(){var a=document.createElement("a");a.href=URL.createObjectURL(new Blob([JSON.stringify(C,null,1)],{type:"application/json"}));a.download="catalog.json";a.click();setTimeout(function(){URL.revokeObjectURL(a.href)},2000);
  if(Object.keys(pend).length)msg("JSON downloaded. New overlay files are only uploaded when you Publish.",6000)}
@@ -5453,7 +5457,7 @@ function redo(){if(!redoHist.length){msg("Tidak ada perubahan untuk dipulihkan."
 $("bUn").addEventListener("click",function(){if(view==="promo"&&window.prmUR)window.prmUR(-1);else undo()});$("bRe").addEventListener("click",function(){if(view==="promo"&&window.prmUR)window.prmUR(1);else redo()});
 $("eL").addEventListener("click",function(){var u=new URL(cur.o.file,location.href).href;(navigator.clipboard?navigator.clipboard.writeText(u):Promise.reject()).then(function(){msg("Link disalin: "+u,5000)}).catch(function(){prompt("Salin link ini:",u)})});
 $("bIm").addEventListener("click",function(){$("jsonin").click()});
-$("jsonin").addEventListener("change",function(){var f=this.files[0],r=new FileReader();this.value="";if(!f)return;r.onload=function(){var j;try{j=JSON.parse(r.result)}catch(e){msg("File JSON tidak valid.");return}if(!j||typeof j!=="object"||!j.items){msg("Ini bukan catalog.json.");return}if(!confirm("Ganti katalog yang sedang dibuka dengan isi file ini? (Bisa dibatalkan dengan tombol undo)"))return;C=j;C.items=C.items||{};C.added=C.added||[];mark();msg("Katalog diimpor. Tekan Publish untuk menayangkan.",6000)};r.readAsText(f)});
+$("jsonin").addEventListener("change",function(){var f=this.files[0],r=new FileReader();this.value="";if(!f)return;r.onload=function(){var j;try{j=JSON.parse(r.result)}catch(e){msg("File JSON tidak valid.");return}if(!j||typeof j!=="object"||!j.items){msg("Ini bukan catalog.json.");return}if(!confirm("Ganti katalog yang sedang dibuka dengan isi file ini? (Bisa dibatalkan dengan tombol undo)"))return;C=j;CATUP=1;CATOK=1;C.items=C.items||{};C.added=C.added||[];mark();msg("Katalog diimpor. Tekan Publish untuk menayangkan.",6000)};r.readAsText(f)});
 /* ---- Upload file situs (index.html, admin.html, catalog.json) -> antrean Publish ---- */
 function siteName(n,t){var b=String(n||"").toLowerCase();
  if(b==="index.html"||b==="admin.html"||b==="catalog.json")return b;
@@ -5464,7 +5468,7 @@ function siteName(n,t){var b=String(n||"").toLowerCase();
  return ""}
 function siteCheck(n,t){
  if(t===null)return "gagal dibaca";
- if(n==="catalog.json"){var j;try{j=JSON.parse(t)}catch(e){return "JSON tidak valid"}if(!j||typeof j!=="object"||!j.items)return "bukan catalog.json";return ""}
+ if(n==="catalog.json"){var j;try{j=JSON.parse(t)}catch(e){return "JSON tidak valid"}if(!j||typeof j!=="object"||!j.items)return "bukan catalog.json";return catN(j)?"":"katalog kosong, tidak ada produk"}
  if(!/<html|<!doctype/i.test(t))return "bukan file HTML";
  if(t.length<2000)return "terlalu kecil, kemungkinan file kosong atau rusak";
  if(n==="admin.html"&&(t.indexOf('id="bPub"')<0||t.indexOf("api.github.com")<0))return "ini bukan admin.html";
@@ -5488,8 +5492,9 @@ $("sitein").addEventListener("change",function(){
   L.forEach(function(x){var e=siteCheck(x.n,x.t);if(e)er.push(x.n+": "+e);if(x.n==="admin.html")hasA=true});
   if(er.length){msg("Dibatalkan, tidak ada yang diantrekan. "+er.join(" | "),10000);return}
   names=L.map(function(x){return x.o!==x.n?x.o+" \u2192 "+x.n:x.n}).join(", ");
-  if(!confirm("Antrekan file ini untuk Publish?\n\n"+names+(hasA?"\n\nPERINGATAN: admin.html akan menggantikan halaman admin ini. Kalau file-nya salah, kamu bisa terkunci dari admin dan harus memperbaikinya lewat GitHub. Pastikan ini versi yang benar.":"")))return;
-  L.forEach(function(x){if(x.n==="catalog.json"){C=JSON.parse(x.t);C.items=C.items||{};C.added=C.added||[]}else pend[x.n]=x.t});
+  var cx=L.filter(function(x){return x.n==="catalog.json"})[0],cn=cx?catN(JSON.parse(cx.t)):0,cw=cx?"\n\ncatalog.json berisi "+cn+" produk"+(CATOK?" (katalog di GitHub sekarang: "+CATN+")":"")+(CATOK&&CATN>10&&cn<CATN*0.6?"\n\nPERINGATAN: jauh lebih sedikit dari katalog di GitHub. Pastikan ini file yang benar.":""):"";
+  if(!confirm("Antrekan file ini untuk Publish?\n\n"+names+cw+(hasA?"\n\nPERINGATAN: admin.html akan menggantikan halaman admin ini. Kalau file-nya salah, kamu bisa terkunci dari admin dan harus memperbaikinya lewat GitHub. Pastikan ini versi yang benar.":"")))return;
+  L.forEach(function(x){if(x.n==="catalog.json"){C=JSON.parse(x.t);C.items=C.items||{};C.added=C.added||[];CATUP=1;CATOK=1}else pend[x.n]=x.t});
   mark();
   msg(L.length+" file diantrekan ("+names+"). Tekan Publish untuk menayangkan."+(hasA?" Setelah Publish, muat ulang halaman admin.":""),9000)})});
 /* ---- Penjualan: dobel, link pembeli, tampilan ---- */
@@ -5746,6 +5751,28 @@ $("list").addEventListener("change",function(e){if(view!=="lk")return;var t=e.ta
  if(t.dataset.lk==="x"){var row=t.closest(".lkr"),p=LD[+row.dataset.li];if(t.checked)LS.done[p.n]=1;else delete LS.done[p.n];lsave();if(LS.hide)drawRows();else{row.classList.toggle("done",t.checked);progress()}}});
 $("list").addEventListener("input",function(e){if(view==="lk"&&e.target.id==="lkQ"){LS.q=e.target.value;drawRows()}});
 return rlk})();
+
+function catN(c){return Object.keys((c&&c.items)||{}).length+(((c&&c.added)||[]).length)}
+/* ===== Link Lynk: isi link beli per produk ===== */
+var LYS={q:"",f:"all"};
+function lyEsc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function lyItems(){var a=[].concat(cat("other|controller"),cat("other|stream")),seen={};a.forEach(function(e){seen[e.k]=1});all().forEach(function(e){if(!e.o.del&&ck(e.o).indexOf("other")===0&&!seen[e.k])a.push(e)});return a}
+function lyDraw(){var L=lyItems(),q=LYS.q.trim().toLowerCase(),h="";
+ L.forEach(function(e){var o=e.o,has=!!o.lynk;if(LYS.f==="no"&&has)return;if(LYS.f==="yes"&&!has)return;if(q&&((o.n||"")+" "+(o.ne||"")).toLowerCase().indexOf(q)<0)return;
+  h+='<div class="lyr" data-k="'+lyEsc(e.k)+'" style="background:var(--sf);border:1px solid var(--ln);border-radius:12px;padding:12px 14px;margin-bottom:8px"><b style="display:block;margin-bottom:2px">'+lyEsc((o.n||"").replace(/^Overlay Controller /,""))+'</b><small style="color:var(--mu);display:block;margin-bottom:8px">'+rp(o.h)+(o.hide?" · disembunyikan":"")+(has?' · <span style="color:var(--ok)">link terisi</span>':' · belum ada link')+'</small>'
+  +'<input class="lyi" type="url" inputmode="url" placeholder="https://lynk.id/prsr/..." value="'+lyEsc(o.lynk||"")+'" style="margin-bottom:8px"><div style="display:flex;gap:8px"><button type="button" class="b g" data-ly="p" style="flex:1">Tempel</button><button type="button" class="b g" data-ly="o" style="flex:1">Tes link</button></div></div>'});
+ $("lyL").innerHTML=h||'<p class="note">Tidak ada produk yang cocok.</p>'}
+function rly(){var L=lyItems(),n=L.filter(function(e){return e.o.lynk}).length;
+ $("list").innerHTML='<p class="note">Tempel link halaman produk di lynk.id untuk tiap overlay. Tombol Bayar di web langsung membuka link ini. Setelah selesai, tekan Publish.</p>'
+ +'<p class="note"><b>'+n+' / '+L.length+'</b> produk sudah punya link</p>'
+ +'<input type="search" id="lyQ" placeholder="Cari produk" value="'+lyEsc(LYS.q)+'" style="margin-bottom:10px"><select id="lyF" style="margin-bottom:10px"><option value="all">Semua</option><option value="no">Belum ada link</option><option value="yes">Sudah ada link</option></select><div id="lyL"></div>';
+ $("lyF").value=LYS.f;lyDraw()}
+function lySet(row,inp){var v=inp.value.trim(),o=find(row.dataset.k).o;if(v&&!/^https:\/\/\S+$/.test(v)){inp.style.borderColor="#e5484d";msg("Link harus diawali https://");return}inp.style.borderColor="";if(v)o.lynk=v;else delete o.lynk;mark()}
+$("list").addEventListener("input",function(e){if(view==="ly"&&e.target.id==="lyQ"){LYS.q=e.target.value;lyDraw()}});
+$("list").addEventListener("change",function(e){if(view!=="ly")return;var t=e.target;if(t.id==="lyF"){LYS.f=t.value;lyDraw();return}if(t.classList.contains("lyi"))lySet(t.closest(".lyr"),t)});
+$("list").addEventListener("click",function(e){if(view!=="ly")return;var b=e.target.closest("[data-ly]");if(!b)return;var row=b.closest(".lyr"),inp=row.querySelector(".lyi");
+ if(b.dataset.ly==="p"){if(!navigator.clipboard||!navigator.clipboard.readText){msg("Tempel manual di kolom link.");return}navigator.clipboard.readText().then(function(t){inp.value=(t||"").trim();lySet(row,inp)}).catch(function(){msg("Tidak bisa membaca clipboard. Tempel manual di kolom link.")})}
+ else if(b.dataset.ly==="o"){var u=inp.value.trim();if(!/^https:\/\/\S+$/.test(u)){msg("Isi link dulu.");return}window.open(u,"_blank","noopener")}});
 
 render();unlock().then(load);
 </script><script>/* ---- preview acuan (index) ---- */
