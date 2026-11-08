@@ -676,7 +676,7 @@ body.vm .vd .vpv{max-height:76dvh;overflow-y:auto;overscroll-behavior:contain}
 
 <script>
 var $=function(i){return document.getElementById(i)};
-var GN={"nfs-heat":"NFS Heat","crew-motorfest":"Crew Motorfest","other|stream":"Other · Stream","other|controller":"Other · Controller"};
+var GN={"nfs-heat":"NFS Heat","crew-motorfest":"Crew Motorfest","other|stream":"Overlay Stream (tidak tampil)","other|controller":"Overlay Controller"};
 var S={};try{S=JSON.parse(localStorage.getItem("adm")||"{}")}catch(e){}
 var CATN=0,CATOK=0,CATUP=0,C={v:1,items:{},added:[]},pend={},dirty=false,flt="all",cur=null,hist=[],redoHist=[],baseSha=null;
 function ck(o){return o.g==="other"?"other|"+(o.os||"stream"):o.g}
@@ -4896,7 +4896,7 @@ function openT(k){ctk=k;var v=C.texts[k];$("tk").textContent=LBL[k]||k;$("ti").v
 function saveT(){C.texts[ctk]=[$("ti").value,$("te").value];$("shT").classList.remove("on");mark()}
 var cg=null,im="joki",ci=null,cjFoto=null;
 var IM={joki:"Boosting",livery:"Livery",other:"Overlay · Stream",ctl:"Overlay · Controller"};
-function syncGN(){var n=C.gameNames||{};GN={"nfs-heat":n["nfs-heat"]||"NFS Heat","crew-motorfest":n["crew-motorfest"]||"Crew Motorfest"};(C.gamesAdded||[]).forEach(function(g){GN[g.id]=g.nama});GN["other|stream"]="Other · Stream";GN["other|controller"]="Other · Controller"}
+function syncGN(){var n=C.gameNames||{};GN={"nfs-heat":n["nfs-heat"]||"NFS Heat","crew-motorfest":n["crew-motorfest"]||"Crew Motorfest"};(C.gamesAdded||[]).forEach(function(g){GN[g.id]=g.nama});GN["other|stream"]="Overlay Stream (tidak tampil)";GN["other|controller"]="Overlay Controller"}
 function gall(){var n=C.gameNames||{},a=[["nfs-heat","NFS Heat"],["crew-motorfest","Crew Motorfest"],["other","Other"]].map(function(x){return {id:x[0],nama:n[x[0]]||x[1],base:1}});(C.gamesAdded||[]).forEach(function(g,i){a.push({id:g.id,nama:g.nama,i:i})});return a}
 function rg(){var h='<button class="b" id="gNew" type="button" style="width:100%;margin-bottom:10px">+ Add category</button>';gall().forEach(function(g,i){h+='<button type="button" class="it" data-g="'+i+'"><div><b>'+esc(g.nama)+'</b><small>'+(g.base?"Built-in":"Custom")+'</small></div></button>'});$("list").innerHTML=h}
 function openG(i){cg=i<0?{isNew:1}:gall()[i];$("gT").textContent=cg.isNew?"New category":"Edit category";$("gn").value=cg.nama||"";$("gD").style.display=(cg.base||cg.isNew)?"none":"";gSubR();$("shG").classList.add("on")}

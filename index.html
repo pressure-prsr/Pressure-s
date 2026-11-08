@@ -19,7 +19,7 @@ header .wrap{display:flex;align-items:center;justify-content:space-between;heigh
 .brand{font-size:24px;text-decoration:none;color:inherit}
 nav a{margin-left:16px;text-decoration:none;color:var(--muted);font-size:15px}
 nav a:hover{color:var(--ink)}
-#lbtn[hidden]{display:none}#lbtn{margin:0 8px 8px 0}
+#lbtn[hidden]{display:none}#lbtn{display:block;width:100%;margin:10px 0 0}
 .btn{display:inline-block;border:0;border-radius:10px;background:var(--accent);color:var(--accent-ink);font:inherit;font-weight:600;padding:11px 20px;cursor:pointer;text-decoration:none;text-align:center}
 .btn.ghost{background:transparent;color:var(--ink);border:1px solid var(--line)}
 :focus-visible{outline:2px solid var(--accent);outline-offset:2px}
@@ -409,7 +409,7 @@ var GAMES=[
   {n:"Summit sampai Platinum",ne:"Summit to Platinum",d:"Mencapai rank Platinum di Summit. Tersedia selama periode Summit aktif.",de:"Reach Platinum rank in the Summit. Available while the Summit is active.",h:190000,usd:21},
   {n:"Sesi Foto Bareng Penjoki",ne:"Photo Session with a Booster",d:"Foto sepuasnya di dalam game bersama penjoki, di lokasi pilihanmu. Satu sesi maksimal 1,5 jam.",de:"Unlimited in-game photos with a booster at a location of your choice. One session lasts up to 1.5 hours.",h:25000,usd:12,sesi:true,hide:true,star:true,nb:true,except:["Say_CheeseXX3"]},
   {n:"Sesi Foto Bareng Say_CheeseXX3",ne:"Photo Session with Say_CheeseXX3",d:"Foto sepuasnya di dalam game bersama penjoki eksklusif Say_CheeseXX3. Satu sesi maksimal 1,5 jam.",de:"Unlimited in-game photos with our exclusive booster Say_CheeseXX3. One session lasts up to 1.5 hours.",h:50000,usd:13,sesi:true,hide:true,star:true,nb:true,only:["Say_CheeseXX3"]}]},
- {id:"other",nama:"Other",other:true,paket:[
+ {id:"other",nama:"Overlay",other:true,paket:[
   {n:"Overlay Lantern & Moss Terrarium (Paket Lengkap)",ne:"Overlay: Lantern & Moss Terrarium (Full Package)",d:"Paket lengkap bertema hutan malam: 4 screen animasi, 6 overlay, 28 alert, 114 panel, 14 frame kamera, 13 chat box, 7 background, dan 46 elemen dekorasi. Untuk OBS atau Streamlabs.",de:"A complete night-forest package: 4 animated screens, 6 overlays, 28 alerts, 114 panels, 14 camera frames, 13 chat boxes, 7 backgrounds, and 46 decorative elements. For OBS or Streamlabs.",h:199000,usd:17,overlay:true,show:true,cv:true},
   {n:"Overlay Still Pond (Paket Lengkap)",ne:"Overlay: Still Pond (Full Package)",d:"Paket lengkap bertema kolam tenang: 5 scene animasi (Starting Soon, BRB, Ending, Offline, Just Chatting), 26 frame gaming, 25 kartu vtuber, 10 kartu webcam, 8 event bar, 32 panel, 10 aksesori panel, 2 stat slider, 4 elemen animasi, 10 ikon, chat widget, dan partikel. Untuk OBS atau TikTok LIVE Studio, lengkap dengan panduan pasang.",de:"A complete still-pond package: 5 animated scenes (Starting Soon, BRB, Ending, Offline, Just Chatting), 26 gaming frames, 25 vtuber cards, 10 webcam cards, 8 event bars, 32 panels, 10 panel accessories, 2 stat sliders, 4 animated elements, 10 icons, a chat widget, and particles. For OBS or TikTok LIVE Studio, with a setup guide.",h:199000,usd:17,overlay:true,show:true,cv:2}]}
 ];
@@ -479,7 +479,7 @@ var T={
  l1:["Pilih game dan jenis layanan.","Choose a game and a service."],
  sl_joki:["Paket bertanda bintang dikerjakan langsung oleh pro player.","Starred packages are done directly by a pro player."],
  sl_liv:["Pilih paket, lalu tanya harga ke admin.","Choose a package, then ask the admin for a price."],
- tab_stream:["Stream","Stream"],tab_ctl:["Controller","Controller"],custom:["Custom","Custom"],custom_s:["Chat admin dulu sebelum membeli","Chat the admin first before buying"],tab_ov:["Overlay","Overlay"],cat_oth_s:["Other · Overlay · Stream","Other · Overlay · Stream"],cat_oth_c:["Other · Overlay · Controller","Other · Overlay · Controller"],sl_ctl:["Pilih Edition siap pakai, atau chat admin untuk controller custom.","Pick a ready-made Edition, or chat the admin for a custom controller."],sl_oth:["Pilih overlay, lalu pesan lewat form di bawah.","Choose an overlay, then order through the form below."],
+ tab_stream:["Stream","Stream"],tab_ctl:["Controller","Controller"],custom:["Custom","Custom"],custom_s:["Chat admin dulu sebelum membeli","Chat the admin first before buying"],tab_ov:["Overlay","Overlay"],cat_oth_s:["Overlay","Overlay"],cat_oth_c:["Overlay","Overlay"],sl_ctl:["Pilih Edition siap pakai, atau chat admin untuk controller custom.","Pick a ready-made Edition, or chat the admin for a custom controller."],sl_oth:["Pilih overlay, lalu pesan lewat form di bawah.","Choose an overlay, then order through the form below."],
  foto_h:["Sesi Foto Bareng","Photo Sessions"],
  foto_p:["Foto bareng penjoki di dalam game. Foto tidak dibatasi, satu sesi maksimal 1,5 jam.","In-game photos with your booster. Unlimited photos, up to 1.5 hours per session."],
  jt_j:["Penjoki","Boosters"],jt_l:["Pembuat livery","Livery creators"],
@@ -489,7 +489,7 @@ var T={
  stat_h:["Cek status pesanan","Check order status"],stat_p:["Masukkan kode order dari admin untuk melihat status pesananmu.","Enter the order code from the admin to see your order status."],stat_ph:["Kode order","Order code"],stat_b:["Cek status","Check status"],
  s3:["3. Form pesanan","3. Order form"],f_p:["Setelah dikirim, kamu diarahkan ke WhatsApp admin.","After sending, you will be taken to the admin's WhatsApp."],
  f_n:["Nama","Name"],f_game:["Kategori","Category"],f_paket:["Paket","Package"],f_joki:["Penjoki","Booster"],f_liv:["Pembuat livery","Livery creator"],
- f_cat:["Catatan","Notes"],f_catph:["Target, jadwal, atau permintaan lain","Goals, schedule, or any other request"],f_btn:["Pesan lewat WhatsApp","Order via WhatsApp"],f_btn_lynk:["Bayar","Pay"],f_btn_wa2:["Tanya admin lewat WhatsApp","Ask the admin on WhatsApp"],
+ f_cat:["Catatan","Notes"],f_catph:["Target, jadwal, atau permintaan lain","Goals, schedule, or any other request"],f_btn:["Pesan lewat WhatsApp","Order via WhatsApp"],f_btn_lynk:["Bayar","Pay"],f_p_lynk:["Tekan Bayar untuk menyelesaikan pembayaran di Lynk. Nama dan catatan hanya diisi kalau mau tanya admin lewat WhatsApp.","Press Pay to complete payment on Lynk. Fill in name and note only if you want to ask the admin on WhatsApp."],f_btn_wa2:["Tanya admin lewat WhatsApp","Ask the admin on WhatsApp"],
  f_note:["Jangan kirim kata sandi lewat form ini.","Never send your password through this form."],f_err:["Pilih penjoki dulu.","Please choose a booster first."],
  m_game:["Game","Game"],m_info:["Informasi","Information"],m_stat:["Cek status","Check status"],m_pesan:["Pesan","Order"],
  tab_joki:["Joki","Boosting"],tab_liv:["Livery","Livery"],
@@ -502,7 +502,7 @@ var T={
  wa_hi:["Halo Pressure's, saya mau pesan.","Hello Pressure's, I'd like to place an order."],wa_tanya:["Halo Pressure's, saya mau tanya harga paket ","Hello Pressure's, I'd like to ask the price for "],
  wa_stat:["Halo Pressure's, saya mau cek status pesanan dengan kode: ","Hello Pressure's, I'd like to check my order status. Code: "],
  wa_cat:["Kategori","Category"],wa_nama:["Nama","Name"],wa_game:["Game","Game"],wa_paket:["Paket","Package"],wa_joki:["Penjoki","Booster"],wa_bebas:["Bebas","Any"],
- cat_oth:["Other · Overlay","Other · Overlay"],f_btn_ask:["Kirim permintaan harga lewat WhatsApp","Request a price via WhatsApp"],
+ cat_oth:["Overlay","Overlay"],f_btn_ask:["Kirim permintaan harga lewat WhatsApp","Request a price via WhatsApp"],
  cat_joki:["Joki","Boosting"],cat_liv:["Livery","Livery"],cat_ov:["Overlay","Overlay"],gv_l:["Tampilan","View"],gv_1:["1 kolom","1 column"],gv_2:["2 kolom","2 columns"],gv_3:["3 kolom","3 columns"]
 };
 T.tg_a=["Animasi","Animated"];T.tg_s=["Statis","Static"];T.cvp=["Sebelumnya","Previous"];T.cvn=["Berikutnya","Next"];
@@ -516,7 +516,7 @@ var INFO={
  livery:[["Pembayaran","Payment","Bayar instan lewat <b>QRIS</b> dengan DANA, OVO, GoPay, ShopeePay, atau m-banking ke admin. Setelah pembayaran dikonfirmasi, admin memberikan kontak pembuat livery.","Pay the admin with <b>PayPal</b>. Once payment is confirmed, the admin shares the livery creator's contact."],["Garansi","Guarantee","Revisi maksimal 2 kali sampai livery sesuai desain yang disepakati.","Up to 2 revisions until the livery matches the agreed design."],["Syarat dan ketentuan","Terms",["Pelanggan memberikan referensi desain yang jelas.","Seluruh pembayaran dilakukan lewat admin.","Transaksi langsung di luar admin tidak mendapat perlindungan."],["You provide a clear design reference.","All payments are made through the admin.","Deals made directly outside the admin are not protected."]]],
  other:[["Pembayaran","Payment","Bayar lewat <b>Lynk</b> setelah menekan tombol Bayar. Tautan unduhan overlay diberikan setelah pembayaran berhasil. Kalau ada kendala, hubungi admin lewat WhatsApp.","Pay through <b>Lynk</b> after pressing Pay. The overlay download link is given once payment succeeds. If anything goes wrong, contact the admin on WhatsApp."],["Garansi","Guarantee","Jika file tidak bisa dibuka, kami bantu sampai overlay berjalan di OBS atau Streamlabs.","If the files do not work, we help until the overlay runs in OBS or Streamlabs."],["Syarat dan ketentuan","Terms",["Lisensi untuk dipakai di channel milikmu sendiri.","Overlay tidak boleh dijual ulang atau dibagikan.","Pembayaran dilakukan lewat Lynk."],["Licensed for use on your own channel.","The overlay may not be resold or shared.","Payment is made through Lynk."]]]};
 STEPS.ctl=[["Pilih controller","Pick a controller","Pilih Edition siap pakai, atau Custom kalau ingin tampilan sendiri.","Pick a ready-made Edition, or Custom if you want your own look."],["Tekan Bayar","Press Pay","Edition siap pakai langsung diarahkan ke halaman pemesanan di Lynk. Untuk Custom, chat admin dulu dan sepakati tampilan dan total.","Ready-made Editions take you straight to the order page on Lynk. For Custom, chat the admin first and agree on the look and total."],["Bayar di Lynk","Pay on Lynk","Pilih metode pembayaran yang tersedia di Lynk, lalu selesaikan.","Choose a payment method offered on Lynk and complete it."],["Terima file","Get your files","Tautan unduhan diberikan setelah pembayaran berhasil.","The download link is given once payment succeeds."]];INFO.ctl=INFO.other;
-var cur=GAMES[0].id,sub="joki",osub="stream",ocat="overlay",lastG="",lastS="";
+var cur=GAMES[0].id,sub="joki",osub="controller",ocat="overlay",lastG="",lastS="";
 function $(i){return document.getElementById(i)}
 function rp(x){return "Rp"+x.toLocaleString("id-ID")}
 function pn_(p){return LANG==="en"?p.ne:p.n}
@@ -534,7 +534,7 @@ function jopts(pk){var l=pk.overlay?[]:JOKI.filter(function(j){return ok(j,pk)})
 function fillJ(){var n=pn(),cv=$("fj").value,pk=game().paket.filter(function(p){return p.n===n})[0]||{},o=jopts(pk);$("fj").innerHTML=o.h;$("fj").dataset.req=o.req?"1":"";$("fjerr").hidden=true;$("ddfj").classList.remove("err");if(!o.req&&cv&&Array.prototype.some.call($("fj").options,function(x){return x.text===cv}))$("fj").value=cv;ddAll();updBtn()}
 var LYNK="https://lynk.id/prsr";
 function lynkOf(sp){var u=sp&&sp.h!==null?(sp.lynk||(sp.overlay?LYNK:"")):"";return /^https:\/\/\S+$/.test(u)?u:""}
-function updBtn(){var n=pn(),sp=game().paket.filter(function(p){return p.n===n})[0]||{},ly=lynkOf(sp),lb=$("lbtn");if(ly){lb.href=ly;lb.textContent=t("f_btn_lynk");lb.hidden=false}else{lb.hidden=true;lb.removeAttribute("href")}$("sbtn").classList.toggle("ghost",!!ly);$("sbtn").textContent=t(sp.h===null?"f_btn_ask":ly?"f_btn_wa2":"f_btn")}
+function updBtn(){var n=pn(),sp=game().paket.filter(function(p){return p.n===n})[0]||{},ly=lynkOf(sp),lb=$("lbtn");if(ly){lb.href=ly;lb.textContent=t("f_btn_lynk");lb.hidden=false}else{lb.hidden=true;lb.removeAttribute("href")}$("sbtn").classList.toggle("ghost",!!ly);var fl=document.querySelector("#pesan p.lead");if(fl){fl.setAttribute("data-t",ly?"f_p_lynk":"f_p");fl.innerHTML=t(ly?"f_p_lynk":"f_p")}$("sbtn").textContent=t(sp.h===null?"f_btn_ask":ly?"f_btn_wa2":"f_btn")}
 /* dropdown di dalam web */
 var DDS=["fg","fp","fj"];
 function dparts(s){var i=s.lastIndexOf(" - ");return i>0?[s.slice(0,i),s.slice(i+3)]:[s,""]}
@@ -554,7 +554,7 @@ function setTabs(box,items,sel,cls,attr){var sig=items.map(function(i){return i[
 function scrollSel(box){var b=box.querySelector('[aria-selected="true"]');if(!b||box.scrollWidth<=box.clientWidth+2)return;box.scrollTo({left:Math.max(0,b.offsetLeft-(box.clientWidth-b.offsetWidth)/2),behavior:reduced?"auto":"smooth"})}
 function hint(){var bx=$("tabs"),tl=$("tl"),th=tl.firstElementChild,more=bx.scrollWidth-bx.clientWidth,x=bx.scrollLeft;$("tw").setAttribute("data-r",more-x>2?"1":"0");$("tw").setAttribute("data-l",x>2?"1":"0");tl.classList.toggle("on",more>2);if(more>2){var W=tl.clientWidth,tW=Math.max(28,W*bx.clientWidth/bx.scrollWidth);th.style.width=tW+"px";th.style.transform="translate3d("+((W-tW)*(x/more))+"px,0,0)"}}
 var hr=0;
-function tabsNow(subsToo){var g=game();setTabs($("tabs"),GAMES.map(function(x){return [x.id,x.nama]}),cur,"tab","data-g");if(subsToo){setTabs($("stabs"),g.subs?[["joki",t("tab_joki")],["livery",t("tab_liv")]]:g.other?[["overlay",t("tab_ov")]]:[],g.other?ocat:sub,"tab sm","data-s");setTabs($("otabs"),g.other&&ocat==="overlay"?[["stream",t("tab_stream")],["controller",t("tab_ctl")]]:[],osub,"tab sm","data-o");setTabs($("ktabs"),subList(),ksub||"_all","tab sm","data-k")}}
+function tabsNow(subsToo){var g=game();setTabs($("tabs"),GAMES.map(function(x){return [x.id,x.nama]}),cur,"tab","data-g");if(subsToo){setTabs($("stabs"),g.subs?[["joki",t("tab_joki")],["livery",t("tab_liv")]]:[],g.other?ocat:sub,"tab sm","data-s");setTabs($("otabs"),[],osub,"tab sm","data-o");setTabs($("ktabs"),subList(),ksub||"_all","tab sm","data-k")}}
 function gi(id){for(var i=0;i<GAMES.length;i++)if(GAMES[i].id===id)return i;return 0}
 var RV=!!(window.IntersectionObserver&&!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches));
 var swT=[],reduced=!!(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches);
@@ -625,7 +625,7 @@ function render(){
  $("foto").innerHTML=(lv||oth)?"":g.paket.map(function(p){return p.sesi&&avail(p)?cf(p):""}).join("");$("fw").hidden=!$("foto").innerHTML;
  var js=oth?[]:JOKI.filter(function(j){return j.games.indexOf(cur)>-1&&((j.tipe==="livery")===lv)});
  $("jokilist").innerHTML=js.map(jc).join("");
- $("fg").innerHTML=GAMES.map(function(x){function op(v,s,l,sp){return '<option value="'+v+'"'+(s?' selected':'')+(sp?' data-sep="1"':'')+'>'+l+'</option>'}return x.other?op(x.id,x.id===cur&&osub==="stream",t("cat_oth_s"),1)+op(x.id+":controller",x.id===cur&&osub==="controller",t("cat_oth_c")):op(x.id,x.id===cur,x.nama)}).join("");
+ $("fg").innerHTML=GAMES.map(function(x){function op(v,s,l,sp){return '<option value="'+v+'"'+(s?' selected':'')+(sp?' data-sep="1"':'')+'>'+l+'</option>'}return x.other?op(x.id,x.id===cur,t("cat_oth")):op(x.id,x.id===cur,x.nama)}).join("");
  $("fp").innerHTML=g.paket.filter(function(p){return avail(p)&&(!!p.livery===lv)&&(!oth||((p.cat||"overlay")===ocat&&(p.os||"stream")===osub))}).map(function(p){return '<option data-n="'+p.n+'">'+pn_(p)+' - '+(pprice(p)||t(p.custom?"custom":"harga_s2"))+'</option>'}).join("");
  if(pP&&lastG===cur&&lastS===m)selP(pP);
  fillJ();ctx(oth&&osub==="controller"?"ctl":m);ddAll();
@@ -646,7 +646,7 @@ document.addEventListener("click",function(e){
  closeDD();
  var gb=el.closest?el.closest("[data-gv]"):null;if(gb){setGV(gb.getAttribute("data-gv"));return}
  var d=el.dataset||{};
- if(d.g){var nid=d.g;if(nid!==cur)go(function(){cur=nid;sub="joki";osub="stream";ocat="overlay";ksub=""},gi(nid)>gi(cur)?1:-1,true)}
+ if(d.g){var nid=d.g;if(nid!==cur)go(function(){cur=nid;sub="joki";osub="controller";ocat="overlay";ksub=""},gi(nid)>gi(cur)?1:-1,true)}
  else if(d.s){var ns=d.s,oo=game().other;if(oo?ns!==ocat:ns!==sub)go(function(){ksub="";if(oo)ocat=ns;else sub=ns},1,false)}
  else if(d.o){var no=d.o;if(no!==osub)go(function(){osub=no;ksub=""},no==="controller"?1:-1,false)}
  else if(d.k){var nk=d.k==="_all"?"":d.k;if(nk!==ksub)go(function(){ksub=nk},1,false)}
@@ -657,7 +657,7 @@ document.addEventListener("click",function(e){
  else if(d.lb){$("lbi").src=el.src;$("lb").hidden=false}
 });
 $("fp").addEventListener("change",fillJ);
-$("fg").addEventListener("change",function(){var v=this.value.split(":"),n=v[0];if(n!==cur)sub="joki";osub=v[1]||"stream";cur=n;ksub="";render()});
+$("fg").addEventListener("change",function(){var v=this.value.split(":"),n=v[0];if(n!==cur)sub="joki";osub="controller";cur=n;ksub="";render()});
 $("lb").addEventListener("click",function(){this.hidden=true});
 window.addEventListener("resize",function(){applyGV();placeInd($("tabs"),false);placeInd($("stabs"),false);placeInd($("otabs"),false);hint()});
 $("tabs").addEventListener("scroll",function(){if(hr)return;hr=requestAnimationFrame(function(){hr=0;hint()})},{passive:true});
@@ -671,7 +671,7 @@ var PAY_API="https://pressures-shop.rizkysaputra7665.workers.dev";
 $("f").addEventListener("submit",function(e){
  e.preventDefault();
  if($("fj").dataset.req&&!$("fj").value){var d=$("ddfj");d.classList.remove("err");void d.offsetWidth;d.classList.add("err");$("fjerr").hidden=false;return}
- var m=mode(),sp=game().paket.filter(function(p){return p.n===pn()})[0]||{},gl=m==="other"?"Overlay › "+t(osub==="controller"?"tab_ctl":"tab_stream"):game().nama,ask=sp.h===null,L=[ask?t("wa_tanya")+pn_(sp)+" ("+gl+").":t("wa_hi"),t("wa_cat")+": "+(m==="other"?"Other › "+gl:t(m==="livery"?"cat_liv":"cat_joki")),t("wa_nama")+": "+$("n").value];
+ var m=mode(),sp=game().paket.filter(function(p){return p.n===pn()})[0]||{},gl=m==="other"?"Overlay Controller":game().nama,ask=sp.h===null,L=[ask?t("wa_tanya")+pn_(sp)+" ("+gl+").":t("wa_hi"),t("wa_cat")+": "+(m==="other"?"Overlay":t(m==="livery"?"cat_liv":"cat_joki")),t("wa_nama")+": "+$("n").value];
  if(m!=="other")L.push(t("wa_game")+": "+game().nama);
  L.push(t("wa_paket")+": "+$("fp").value);
  if(m!=="other")L.push(t(m==="livery"?"f_liv":"wa_joki")+": "+($("fj").value||t("wa_bebas")));
@@ -910,7 +910,7 @@ adm.addEventListener("click",function(e){
  if(a==="pup")mv(ps,pi,-1);else if(a==="pdn")mv(ps,pi,1);
  else if(a==="pdup"){var c=cp(ps[pi]);c.n+=" (Salinan)";c.ne+=" (Copy)";ps.splice(pi+1,0,c)}
  else if(a==="pdel"){if(!confirm("Hapus paket ini?"))return;ps.splice(pi,1)}
- else if(a==="addp"){var n="Paket Baru",k=1;while(ps.some(function(p){return p.n===n}))n="Paket Baru "+(++k);var q={n:n,ne:"New Package",d:"",de:"",h:100000,usd:9};if(g.other){q.overlay=true;q.show=true;q.os="stream"}ps.push(q)}
+ else if(a==="addp"){var n="Paket Baru",k=1;while(ps.some(function(p){return p.n===n}))n="Paket Baru "+(++k);var q={n:n,ne:"New Package",d:"",de:"",h:100000,usd:9};if(g.other){q.overlay=true;q.show=true;q.os="controller"}ps.push(q)}
  else if(a==="gup")mv(D.games,gi,-1);else if(a==="gdn")mv(D.games,gi,1);
  else if(a==="gdel"){if(!confirm("Hapus kategori beserta semua paketnya?"))return;var id=D.games[gi].id;D.games.splice(gi,1);jnames().forEach(function(n){var jj=J(n);jj.games=(jj.games||[]).filter(function(x){return x!==id})});S.g=0}
  else if(a==="addg"){var nm=A("newg").value.trim();if(!nm){toast("Isi nama kategori");return}var id=slug(nm),base=id,k=1;while(D.games.some(function(x){return x.id===id}))id=base+"-"+(++k);var at=D.games.findIndex(function(x){return x.other});if(at<0)at=D.games.length;D.games.splice(at,0,{id:id,nama:nm,paket:[{n:"Paket Baru",ne:"New Package",d:"",de:"",h:100000,usd:9}]});S.g=at}
