@@ -3778,26 +3778,26 @@
    [
     "Pilih overlay",
     "Choose an overlay",
-    "Pilih overlay dan isi form pesanan.",
-    "Pick an overlay and fill in the order form."
+    "Pilih overlay yang kamu mau, lalu cek paket di formulir.",
+    "Pick the overlay you want and check the package in the form."
    ],
    [
-    "Konfirmasi admin",
-    "Admin confirms",
-    "Admin mengecek pesanan dan mengirim total bayar.",
-    "The admin checks the order and sends the total."
+    "Tekan Bayar",
+    "Press Pay",
+    "Kamu langsung diarahkan ke halaman pemesanan produk itu di Lynk.",
+    "You are taken straight to that product's order page on Lynk."
    ],
    [
-    "Bayar lewat QRIS",
-    "Pay via PayPal",
-    "Bayar ke admin lewat QRIS.",
-    "Pay the admin via PayPal."
+    "Bayar di Lynk",
+    "Pay on Lynk",
+    "Pilih metode pembayaran yang tersedia di Lynk, lalu selesaikan.",
+    "Choose a payment method offered on Lynk and complete it."
    ],
    [
     "Terima file",
     "Get your files",
-    "Tautan unduhan dikirim setelah pembayaran dikonfirmasi.",
-    "The download link is sent after payment is confirmed."
+    "Tautan unduhan diberikan setelah pembayaran berhasil.",
+    "The download link is given once payment succeeds."
    ]
   ],
   "ctl": [
@@ -3808,22 +3808,22 @@
     "Pick a ready-made Edition, or Custom if you want your own look."
    ],
    [
-    "Kirim pesanan",
-    "Send your order",
-    "Isi form di bawah, lalu lanjut ke WhatsApp admin. Untuk Custom, sepakati tampilan dan total dulu.",
-    "Fill in the form below and continue to the admin on WhatsApp. For Custom, agree on the look and total first."
+    "Tekan Bayar",
+    "Press Pay",
+    "Edition siap pakai langsung diarahkan ke halaman pemesanan di Lynk. Untuk Custom, chat admin dulu dan sepakati tampilan dan total.",
+    "Ready-made Editions take you straight to the order page on Lynk. For Custom, chat the admin first and agree on the look and total."
    ],
    [
-    "Bayar lewat QRIS",
-    "Pay via PayPal",
-    "Bayar ke admin lewat QRIS setelah total disetujui.",
-    "Pay the admin via PayPal once the total is agreed."
+    "Bayar di Lynk",
+    "Pay on Lynk",
+    "Pilih metode pembayaran yang tersedia di Lynk, lalu selesaikan.",
+    "Choose a payment method offered on Lynk and complete it."
    ],
    [
     "Terima file",
     "Get your files",
-    "Tautan unduhan dikirim setelah pembayaran dikonfirmasi.",
-    "The download link is sent after payment is confirmed."
+    "Tautan unduhan diberikan setelah pembayaran berhasil.",
+    "The download link is given once payment succeeds."
    ]
   ]
  },
@@ -3888,8 +3888,8 @@
    [
     "Pembayaran",
     "Payment",
-    "Bayar lewat <b>QRIS</b> ke admin. Setelah pembayaran dikonfirmasi, tautan unduhan overlay dikirim.",
-    "Pay the admin with <b>PayPal</b>. Once payment is confirmed, the overlay download link is sent."
+    "Bayar lewat <b>Lynk</b> setelah menekan tombol Bayar. Tautan unduhan overlay diberikan setelah pembayaran berhasil. Kalau ada kendala, hubungi admin lewat WhatsApp.",
+    "Pay through <b>Lynk</b> after pressing Pay. The overlay download link is given once payment succeeds. If anything goes wrong, contact the admin on WhatsApp."
    ],
    [
     "Garansi",
@@ -3903,12 +3903,12 @@
     [
      "Lisensi untuk dipakai di channel milikmu sendiri.",
      "Overlay tidak boleh dijual ulang atau dibagikan.",
-     "Pembayaran dilakukan lewat admin."
+     "Pembayaran dilakukan lewat Lynk."
     ],
     [
      "Licensed for use on your own channel.",
      "The overlay may not be resold or shared.",
-     "All payments are made through the admin."
+     "Payment is made through Lynk."
     ]
    ]
   ],
@@ -3916,8 +3916,8 @@
    [
     "Pembayaran",
     "Payment",
-    "Bayar lewat <b>QRIS</b> ke admin. Setelah pembayaran dikonfirmasi, tautan unduhan overlay dikirim.",
-    "Pay the admin with <b>PayPal</b>. Once payment is confirmed, the overlay download link is sent."
+    "Bayar lewat <b>Lynk</b> setelah menekan tombol Bayar. Tautan unduhan overlay diberikan setelah pembayaran berhasil. Kalau ada kendala, hubungi admin lewat WhatsApp.",
+    "Pay through <b>Lynk</b> after pressing Pay. The overlay download link is given once payment succeeds. If anything goes wrong, contact the admin on WhatsApp."
    ],
    [
     "Garansi",
@@ -3931,12 +3931,12 @@
     [
      "Lisensi untuk dipakai di channel milikmu sendiri.",
      "Overlay tidak boleh dijual ulang atau dibagikan.",
-     "Pembayaran dilakukan lewat admin."
+     "Pembayaran dilakukan lewat Lynk."
     ],
     [
      "Licensed for use on your own channel.",
      "The overlay may not be resold or shared.",
-     "All payments are made through the admin."
+     "Payment is made through Lynk."
     ]
    ]
   ]
@@ -3945,7 +3945,8 @@
   "brand": "Pressure's",
   "footer": "© 2026 Pressure's",
   "discord": "https://discord.gg/ycBBCmmGf",
-  "instagram": "https://www.instagram.com/prsr.id"
+  "instagram": "https://www.instagram.com/prsr.id",
+  "lynk": "https://lynk.id/prsr"
  },
  "templates": [
   {
