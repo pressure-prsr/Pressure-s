@@ -715,10 +715,10 @@ function rso(){sGet("so",function(){var h=sRe();
  SD.orders.forEach(function(o){h+='<div class="it" style="cursor:default"><div><b>'+esc(o.product_name||"-")+'</b><small>'+esc(o.name)+' · '+esc(o.email)+'</small><br><small>'+sDt(o.created_at)+' · '+esc(o.order_id)+'</small></div><i style="text-align:right">'+sRp(o.amount)+'<br><small>'+(o.status==="paid"?"✓ lunas":esc(o.status))+'</small></i></div>'});
  $("list").innerHTML=h+(SD.orders.length?"":'<p class="note">Belum ada order.</p>')})}
 function rsl(){sGet("sl",function(){
- var h=sRe()+'<div class="fs" style="padding:12px 14px"><p class="note" style="margin:0 0 10px"><b>Kirim link ke pembeli</b><br>Pilih produk, tekan tombol, lalu tempel pesannya ke WhatsApp.</p><label>Cari produk<input id="slQ" placeholder="ketik nama produk" autocomplete="off"></label><label>Produk<select id="slP">'+slOpts("")+'</select></label><label>Catatan pembeli (opsional)<input id="slN" placeholder="nama atau nomor WA"></label><details style="margin:0 0 10px"><summary class="note" style="cursor:pointer">Pengaturan link (opsional)</summary><div class="two" style="margin-top:8px"><label>Masa aktif hari (kosong = otomatis, 0 = bebas)<input id="slD" type="number"></label><label>Maks unduhan zip (kosong = otomatis)<input id="slM" type="number"></label></div></details><button class="b" data-sa="bk" type="button" style="width:100%">Buat link dan salin pesan</button><div id="slO" class="bkO"></div></div>';
+ var h=sRe()+slGlob()+'<div class="fs" style="padding:12px 14px"><p class="note" style="margin:0 0 10px"><b>Kirim link ke pembeli</b><br>Pilih produk, tekan tombol, lalu tempel pesannya ke WhatsApp.</p><label>Cari produk<input id="slQ" placeholder="ketik nama produk" autocomplete="off"></label><label>Produk<select id="slP">'+slOpts("")+'</select></label><label>Catatan pembeli (opsional)<input id="slN" placeholder="nama atau nomor WA"></label><details style="margin:0 0 10px"><summary class="note" style="cursor:pointer">Pengaturan link (opsional)</summary><div class="two" style="margin-top:8px"><label>Masa aktif hari (kosong = otomatis, 0 = bebas)<input id="slD" type="number"></label><label>Maks unduhan zip (kosong = otomatis)<input id="slM" type="number"></label></div></details>'+slLim()+'<button class="b" data-sa="bk" type="button" style="width:100%">Buat link dan salin pesan</button><div id="slO" class="bkO"></div></div>';
  h+='<p style="margin:18px 0 8px;padding:5px 10px;border-left:3px solid var(--ac,#e8590c);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.9">Link yang sudah dibuat ('+SD.links.length+')</p>';
  var LL=SD.links.slice();if(LL.length&&LL[0].created_at!==undefined)LL.sort(function(a,b){return (b.created_at||0)-(a.created_at||0)});
- LL.forEach(function(l){var hm=(SD.hosted||{})[l.product_id]!==undefined,u=SD.origin+(hm?"/o/":"/d/")+l.token;h+='<div class="it lk" style="cursor:default;flex-wrap:wrap"><div><b>'+esc(sShort(l.pname||"-"))+'</b><small>'+(l.note?esc(l.note)+' · ':'')+(l.email?esc(l.email)+' · ':'')+(hm?"overlay":"zip")+' · '+esc(l.source||"")+'</small><br><small>'+(hm?"Dibuka "+l.downloads+"× · IP "+((SD.ips||{})[l.token]||0)+"/"+(SD.maxips||5):"Unduh "+l.downloads+"/"+(l.max_downloads||"∞"))+' · exp '+sDt(l.expires_at)+(l.active?"":" · nonaktif")+'</small></div><button class="b" data-sa="cl" data-u="'+esc(u)+'" data-p="'+esc(l.product_id)+'" type="button">Salin pesan</button><button class="b g" data-sa="cp" data-u="'+esc(u)+'" type="button">Salin link</button><button class="b g" data-sa="tg" data-t="'+esc(l.token)+'" data-v="'+(l.active?0:1)+'" type="button">'+(l.active?"Matikan":"Aktifkan")+'</button>'+(hm?'<button class="b g" data-sa="ri" data-t="'+esc(l.token)+'" type="button">Reset IP</button>':"")+'</div>'});
+ LL.forEach(function(l){var hm=(SD.hosted||{})[l.product_id]!==undefined,u=SD.origin+(hm?"/o/":"/d/")+l.token;h+='<div class="it lk" style="cursor:default;flex-wrap:wrap"><div><b>'+esc(sShort(l.pname||"-"))+'</b><small>'+(l.note?esc(l.note)+' · ':'')+(l.email?esc(l.email)+' · ':'')+(hm?"overlay":"zip")+' · '+esc(l.source||"")+'</small><br><small>'+(hm?"Dibuka "+l.downloads+"× · IP "+((SD.ips||{})[l.token]||0)+"/"+(SD.nolimit||l.unlimited?"\u221e":(SD.maxips||5)):"Unduh "+l.downloads+"/"+(l.max_downloads||"∞"))+' · exp '+sDt(l.expires_at)+(l.active?"":" · nonaktif")+'</small></div><button class="b" data-sa="cl" data-u="'+esc(u)+'" data-p="'+esc(l.product_id)+'" type="button">Salin pesan</button><button class="b g" data-sa="cp" data-u="'+esc(u)+'" type="button">Salin link</button><button class="b g" data-sa="tg" data-t="'+esc(l.token)+'" data-v="'+(l.active?0:1)+'" type="button">'+(l.active?"Matikan":"Aktifkan")+'</button>'+(hm?'<button class="b g" data-sa="ri" data-t="'+esc(l.token)+'" type="button">Reset IP</button>':"")+'</div>'});
  $("list").innerHTML=h+(SD.links.length?"":'<p class="note">Belum ada link.</p>')})}
 function sSlug(n){return String(n).toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"")}
 function scats(){var m={},o=[];SCATS.forEach(function(c){if(c[0]!=="stream"){m[c[0]]=1;o.push(c)}});
@@ -5534,17 +5534,17 @@ function sSellOne(o,c,src){return sApi("/admin/api/data").then(function(r){retur
 function sBuy(pid,note,days,max,out,btn){var p=SD&&SD.products.filter(function(x){return x.id===pid})[0];if(!p){msg("Produk tidak ditemukan, tekan Muat ulang");return}
  if(!sRdy(p)){out.innerHTML='<p class="note">Produk ini belum punya file atau overlay, jadi link belum bisa dibuat. Upload dulu.</p>';return}
  btn.disabled=true;out.innerHTML='<p class="note">Membuat link…</p>';
- sApi("/admin/api/link",{product_id:pid,email:"",note:note||"",days:days||"",max:max||""}).then(function(r){return r.json()}).then(function(j){btn.disabled=false;
+ sApi("/admin/api/link",SUB({product_id:pid,email:"",note:note||"",days:days||"",max:max||""})).then(function(r){return r.json()}).then(function(j){btn.disabled=false;
   if(!j.url){out.innerHTML='<p class="note">'+esc(j.error||"Gagal membuat link")+'</p>';return}
-  var m=sMsg(p,j.url);
+  if(SUL&&!j.unlimited)msg("Worker belum mendukung tanpa batas IP. Kirim index.js ke Claude agar ditambahkan.",9000);var m=sMsg(p,j.url);
   out.innerHTML='<p class="note" style="margin:10px 0 6px">Link dibuat. Pesan untuk pembeli:</p><textarea class="bkT" readonly rows="13">'+esc(m)+'</textarea><div class="two" style="margin-top:8px"><button class="b" data-sa="cm" type="button">Salin pesan</button><button class="b g" data-sa="cp" data-u="'+esc(j.url)+'" type="button">Salin link saja</button></div>';
   try{navigator.clipboard.writeText(m).then(function(){msg("Pesan disalin. Tinggal tempel ke WhatsApp.",4000)},function(){msg("Link dibuat. Tekan Salin pesan.",4000)})}catch(x){}
   sApi("/admin/api/data").then(function(r){return r.json()}).then(function(d){SD=d}).catch(function(){})
  }).catch(function(x){btn.disabled=false;out.innerHTML="";sErr(x)})}
 $("list").addEventListener("input",function(e){if(e.target.id==="slQ"&&SD){var q=$("slP");if(q)q.innerHTML=slOpts(e.target.value)}});
 $("list").addEventListener("click",function(e){var b=e.target.closest("[data-sa]");if(!b)return;var a=b.dataset.sa,d,p,t,o;
- if(a==="bk"){if(!$("slP").value){msg("Pilih produk dulu");return}sBuy($("slP").value,$("slN").value,$("slD").value,$("slM").value,$("slO"),b);return}
- if(a==="bl"){d=b.closest("details");sBuy(d.dataset.id,d.querySelector(".bkN").value,"","",d.querySelector(".bkO"),b);return}
+ if(a==="bk"){if(!$("slP").value){msg("Pilih produk dulu");return}SUL=!!($("slU")&&$("slU").checked);sBuy($("slP").value,$("slN").value,$("slD").value,$("slM").value,$("slO"),b);return}
+ if(a==="bl"){d=b.closest("details");SUL=false;sBuy(d.dataset.id,d.querySelector(".bkN").value,"","",d.querySelector(".bkO"),b);return}
  if(a==="cm"){o=b.closest(".bkO");t=o&&o.querySelector(".bkT");if(!t)return;navigator.clipboard.writeText(t.value).then(function(){msg("Pesan disalin")},function(){t.focus();t.select();msg("Tahan lalu pilih Salin",5000)});return}
  if(a==="cl"){p=SD.products.filter(function(x){return x.id===b.dataset.p})[0]||{id:b.dataset.p,name:"produk"};t=sMsg(p,b.dataset.u);navigator.clipboard.writeText(t).then(function(){msg("Pesan disalin")},function(){msg(t,9000)});return}
  if(a==="dd"){var I=sDup(),L=SD.products.filter(function(x){return I.dup[x.id]&&x.active});if(!L.length)return;
@@ -6399,6 +6399,20 @@ dec(pw,c).then(function(o){apply(o);st('Berhasil masuk. Memuat ulang…');setTim
 $('mOut').onclick=function(){if(!confirm('Hapus setelan masuk (token, password penjualan, key AI) dari perangkat ini?'))return;OUT.forEach(function(k){try{localStorage.removeItem(k)}catch(e){}});st('Sudah keluar. Memuat ulang…');setTimeout(function(){location.reload()},500)};
 if(/^#masuk=/.test(location.hash)){$('mCode').value=pure(location.hash);try{history.replaceState(null,'',location.pathname+location.search)}catch(e){}sh.classList.add('on');st('Kode dari link sudah terisi. Tekan Masuk dengan kode, lalu ketik sandinya.')}
 })();
+
+</script>
+<script>
+/* ===== Opsi batas pakai link (butuh dukungan Worker) ===== */
+var SUL=false;
+function SUB(o){if(SUL)o.unlimited=true;return o}
+function slLim(){return '<label class="ck" style="margin:0 0 10px"><input type="checkbox" id="slU"><span>Tanpa batas IP (link ini bisa dipakai tak terbatas)</span></label>'}
+function slGlob(){var off=!!(SD&&SD.nolimit);return '<div class="fs" style="padding:12px 14px;margin-bottom:10px"><p class="note" style="margin:0 0 8px"><b>Batas pakai link</b><br>'+(off?'Semua batas dimatikan: link overlay bisa dipakai tak terbatas.':'Batas aktif: link overlay maksimal '+((SD&&SD.maxips)||5)+' IP.')+'</p><button class="b g" data-sa="lm" type="button" style="width:100%">'+(off?'Aktifkan lagi batas pakai':'Matikan semua batas pakai link')+'</button></div>'}
+document.addEventListener('click',function(e){var b=e.target.closest&&e.target.closest('[data-sa="lm"]');if(!b)return;var off=!(SD&&SD.nolimit);
+if(off&&!confirm('Matikan batas pakai untuk SEMUA link? Link bisa dibagikan dan dipakai tak terbatas.'))return;b.disabled=true;
+sApi('/admin/api/limit',{nolimit:off}).then(function(r){return r.text().then(function(t){var j=null;try{j=JSON.parse(t)}catch(x){}
+if((r.status===404||r.status===405)&&!j){msg('Worker belum mendukung. Kirim index.js ke Claude agar ditambahkan.',9000);return}
+if(!r.ok||(j&&j.error)){msg((j&&j.error)||'Gagal',6000);return}
+SD=null;msg(off?'Semua batas dimatikan.':'Batas diaktifkan lagi.',4000);render()})}).catch(function(x){sErr(x)}).then(function(){b.disabled=false})});
 
 </script>
 </body></html>
