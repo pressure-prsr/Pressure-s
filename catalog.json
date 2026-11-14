@@ -245,7 +245,7 @@
    "os": "controller",
    "g": "other",
    "sub": "xbox-series-x",
-   "ord": 32,
+   "ord": 49,
    "ft": [
     "3 desain dalam sekali beli: Dino Atas, Dino Tengah, Tanpa Dino"
    ],
@@ -278,7 +278,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 47,
+   "ord": 78,
    "ft": [
     "LT dan RT jadi pompa air: tekan untuk menyemprot dan mengangkat ring ke tiang",
     "Tampilan kaca bernuansa ungu dan pink"
@@ -312,7 +312,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 38,
+   "ord": 58,
    "ft": [
     "Tampilan putih mulus dengan aksen coral",
     "Trigger LT dan RT berupa meter isi hingga MAX",
@@ -348,7 +348,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 17,
+   "ord": 28,
    "ft": [
     "Badan emas dengan tombol A, B, X, Y berbentuk permata",
     "Gulungan mantra menampilkan 4 input terakhir",
@@ -386,7 +386,7 @@
    "g": "other",
    "pv": "key",
    "sub": "ps5-dualsense",
-   "ord": 58,
+   "ord": 90,
    "ft": [
     "Body 3D dua nada coklat gelap dan terang",
     "Touchpad, tombol, dan bumper menyala saat ditekan"
@@ -420,7 +420,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 14,
+   "ord": 19,
    "ft": [
     "Body kaca gelap dengan aksen biru es",
     "Trigger LT dan RT berupa meter isi",
@@ -456,7 +456,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 16,
+   "ord": 23,
    "ft": [
     "Bentuk bersudut tegas dengan aksen cyan",
     "Kilatan cahaya menyapu setiap tombol yang ditekan",
@@ -492,7 +492,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 7,
+   "ord": 12,
    "ft": [
     "Titik halftone dengan aksen kuning mencolok",
     "Pompa balon dengan LT atau RT sampai penuh",
@@ -528,7 +528,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 23,
+   "ord": 37,
    "ft": [
     "Tampilan manga hitam-putih",
     "Efek garis ledakan di setiap tombol, garis kecepatan saat menekan beruntun",
@@ -564,7 +564,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 30,
+   "ord": 47,
    "ft": [
     "Trigger LT dan RT mengisi air",
     "Tombol A, B, X, Y memunculkan riak dan koin",
@@ -602,7 +602,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 40,
+   "ord": 63,
    "ft": [
     "Tombol yang ditekan menuliskan hurufnya di tembok, sesuai warna tombol",
     "Cipratan cat, kabut, dan tetesan"
@@ -636,7 +636,7 @@
    "g": "other",
    "pv": "key",
    "sub": "ps5-dualsense",
-   "ord": 57,
+   "ord": 89,
    "ft": [
     "Body 3D hitam dengan ornamen geometris emas"
    ],
@@ -668,7 +668,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 48,
+   "ord": 79,
    "ft": [
     "Body biru keunguan dengan noda cat air lembut",
     "Setiap tombol yang ditekan memercikkan tinta",
@@ -706,7 +706,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 25,
+   "ord": 40,
    "ft": [
     "Body hijau army dengan garis kontur peta",
     "Huruf stensil pada tombol A, B, X, Y",
@@ -742,7 +742,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 1,
+   "ord": 3,
    "ft": [
     "Stik berbentuk joystick merah ala mesin arcade",
     "Hitungan CREDIT bertambah tiap tombol ditekan, lengkap dengan koin jatuh ke slot",
@@ -778,7 +778,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 46,
+   "ord": 74,
    "ft": [
     "Body bergaris scanline dengan stiker kaset VHS T-120",
     "Stik berbentuk roda kaset",
@@ -816,7 +816,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 37,
+   "ord": 56,
    "ft": [
     "Body biru indigo dengan panji matahari merah dan ombak besar",
     "Gulungan di plat atas mencatat riwayat input",
@@ -854,7 +854,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 31,
+   "ord": 48,
    "ft": [
     "Body ungu bertekstur dither dengan tombol segi delapan dan stik bermata",
     "Mini game di display Home: tombol memunculkan duri, 3 hati, lalu GAME OVER dan mengulang"
@@ -888,7 +888,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 39,
+   "ord": 62,
    "ft": [
     "Body kuningan dan kayu dengan roda gigi berputar",
     "Kereta mainan berjalan di rel mengelilingi body",
@@ -926,7 +926,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 49,
+   "ord": 80,
    "ft": [
     "Body papan kayu dengan lencana sheriff di display Home",
     "Poster buron berganti-ganti: WANTED, DEAD OR ALIVE, REWARD, plus cap BUSTED!",
@@ -962,7 +962,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 44,
+   "ord": 72,
    "ft": [
     "Tekstur foto pantai tropis dengan pasir, laut, dan daun palem",
     "Display Home berupa matahari",
@@ -998,7 +998,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 24,
+   "ord": 39,
    "ft": [
     "Body baja abu-abu dengan baut, pelat UNIT-X, dan strip peringatan kuning-hitam",
     "Display Home berupa inti reaktor cyan dengan cincin berputar"
@@ -1032,7 +1032,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 35,
+   "ord": 54,
    "ft": [
     "Gaya komputer Windows jadul dengan jendela XBOX.EXE di plat atas",
     "Tombol minimize, maximize, close, dan ikon bendera warna-warni di display Home",
@@ -1068,7 +1068,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 8,
+   "ord": 13,
    "ft": [
     "Body bergambar laundromat malam: papan neon LAUNDRY NIGHT, deretan mesin cuci, lampu gantung",
     "Jendela kota malam di display Home",
@@ -1104,7 +1104,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 13,
+   "ord": 18,
    "ft": [
     "Body semi-transparan berlatar gedung Tokyo malam dengan neon pink dan cyan",
     "Setiap input muncul sebagai label katakana di bawah controller",
@@ -1140,7 +1140,7 @@
    "g": "other",
    "pv": "key",
    "sub": "xbox-series-x",
-   "ord": 36,
+   "ord": 55,
    "ft": [
     "Body merah muda dengan ranting sakura dan kelopak berguguran",
     "Stik dan D-pad berlambang bunga",
@@ -1174,7 +1174,7 @@
    "os": "controller",
    "g": "other",
    "sub": "xbox-series-x",
-   "ord": 50,
+   "ord": 82,
    "ft": [
     "Tampilan dirancang sesuai permintaanmu"
    ],
@@ -1197,7 +1197,7 @@
    "sub": "xbox-series-x",
    "tag": "Baru",
    "tage": "New",
-   "ord": 5,
+   "ord": 10,
    "file": "overlays/xbox-series-x-controller-overlay-cloud-pastel-edition.html",
    "ctl": true,
    "pv": "demo",
@@ -1234,7 +1234,7 @@
    "tag": "Baru",
    "tage": "New",
    "usd": 4,
-   "ord": 54,
+   "ord": 86,
    "ft": [
     "Trigger terisi seperti kristal es",
     "Efek khusus tiap 100 tekanan",
@@ -1269,7 +1269,7 @@
    "pv": "demo",
    "tag": "Baru",
    "tage": "New",
-   "ord": 53,
+   "ord": 85,
    "sub": "xbox-one-s",
    "ft": [
     "Spiral galaksi makin cepat saat tombol ditekan cepat",
@@ -1304,7 +1304,7 @@
    "file": "overlays/retro-arcade-one-og.html",
    "pv": "demo",
    "hide": false,
-   "ord": 56,
+   "ord": 88,
    "ft": [
     "Meter combo naik saat menekan cepat",
     "Level up tiap 100 tekanan",
@@ -1340,7 +1340,7 @@
    "file": "overlays/pastel-rocket-launch-one-og.html",
    "pv": "demo",
    "hide": false,
-   "ord": 55,
+   "ord": 87,
    "ft": [
     "Roket naik tiap 25 tekanan, meluncur tiap 100",
     "Mode hype: api menyala saat menekan cepat",
@@ -1372,7 +1372,7 @@
    "file": "overlays/crimson-jellyfish-drift.html",
    "pv": "demo",
    "hide": false,
-   "ord": 9,
+   "ord": 14,
    "sub": "xbox-series-x",
    "ft": [
     "Pilihan suasana siang, senja, atau malam",
@@ -1409,7 +1409,7 @@
    "file": "overlays/holo-planet-rings-one-s.html",
    "pv": "demo",
    "hide": false,
-   "ord": 51,
+   "ord": 83,
    "ft": [
     "Pendamping mengorbit mengikuti stik, mode BOOST saat stik penuh",
     "Meter mood dan level cincin planet"
@@ -1441,7 +1441,7 @@
    "file": "overlays/neon-phoenix-wings-one-s.html",
    "pv": "demo",
    "hide": false,
-   "ord": 52,
+   "ord": 84,
    "tag": "Baru",
    "tage": "New",
    "ft": [
@@ -1490,7 +1490,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-classic-gray-edition",
    "srv": 1,
-   "ord": 4,
+   "ord": 9,
    "pr": 65000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1522,7 +1522,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-mint-pixel-sword-edition",
    "srv": 1,
-   "ord": 26,
+   "ord": 41,
    "pr": 65000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1554,7 +1554,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-gold-cyber-city-edition",
    "srv": 1,
-   "ord": 18,
+   "ord": 30,
    "pr": 65000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1592,7 +1592,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-cobalt-carbon-strike-edition",
    "srv": 1,
-   "ord": 6,
+   "ord": 11,
    "pr": 65000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1628,7 +1628,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-ember-carbon-veins-edition",
    "srv": 1,
-   "ord": 15,
+   "ord": 22,
    "pr": 65000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1664,7 +1664,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-torn-paper-red-edition",
    "srv": 1,
-   "ord": 43,
+   "ord": 70,
    "pr": 65000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1702,7 +1702,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-brushed-copper-edition",
    "srv": 1,
-   "ord": 3,
+   "ord": 8,
    "pr": 25000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1738,7 +1738,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-crimson-stripe-club-edition",
    "srv": 1,
-   "ord": 10,
+   "ord": 15,
    "pr": 65000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1776,7 +1776,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-magenta-carbon-pulse-edition",
    "srv": 1,
-   "ord": 22,
+   "ord": 36,
    "pr": 53000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1814,7 +1814,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-rescue-unit-safety-edition",
    "srv": 1,
-   "ord": 34,
+   "ord": 53,
    "pr": 50000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1850,7 +1850,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-orange-black-stripe-edition",
    "srv": 1,
-   "ord": 28,
+   "ord": 45,
    "pr": 58000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1882,7 +1882,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-neon-fox-tail-edition",
    "srv": 1,
-   "ord": 27,
+   "ord": 43,
    "pr": 65000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1918,7 +1918,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-cyan-radial-burst-edition",
    "srv": 1,
-   "ord": 12,
+   "ord": 17,
    "pr": 65000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1950,7 +1950,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-holo-solar-eclipse-edition",
    "srv": 1,
-   "ord": 19,
+   "ord": 31,
    "pr": 75000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -1986,7 +1986,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-sunny-perforated-mesh-edition",
    "srv": 1,
-   "ord": 42,
+   "ord": 65,
    "pr": 55000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -2024,7 +2024,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-sumi-stroke-mono-edition",
    "srv": 1,
-   "ord": 41,
+   "ord": 64,
    "pr": 68000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -2062,7 +2062,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-phoenix-amber-edition",
    "srv": 1,
-   "ord": 29,
+   "ord": 46,
    "pr": 65000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -2098,7 +2098,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-venom-coil-carbon-edition",
    "srv": 1,
-   "ord": 45,
+   "ord": 73,
    "pr": 75000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -2136,7 +2136,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-cyan-chevron-run-edition",
    "srv": 1,
-   "ord": 11,
+   "ord": 16,
    "pr": 60000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -2172,7 +2172,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-raven-wing-indigo-edition",
    "srv": 1,
-   "ord": 33,
+   "ord": 51,
    "pr": 80000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -2210,7 +2210,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-lime-claw-scratch-edition",
    "srv": 1,
-   "ord": 21,
+   "ord": 34,
    "pr": 65000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -2242,7 +2242,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-atomic-teal-retro-edition",
    "srv": 1,
-   "ord": 2,
+   "ord": 5,
    "pr": 70000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -2280,7 +2280,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-leather-stitch-tan-edition",
    "srv": 1,
-   "ord": 20,
+   "ord": 33,
    "pr": 65000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -2314,7 +2314,7 @@
    ],
    "shop": "overlay-controller-xbox-series-x-anodized-violet-edition",
    "srv": 1,
-   "ord": 0,
+   "ord": 2,
    "pr": 75000,
    "ps": "2026-11-11",
    "pe": "2026-12-11",
@@ -2357,7 +2357,7 @@
    "pe": "2026-12-11",
    "pru": 8,
    "lynk": "https://lynk.id/prsr/ej96z5qko5n3/checkout",
-   "ord": 59
+   "ord": 71
   },
   {
    "n": "Overlay Controller Xbox Series X - Violet Carbon Fang V5 Edition",
@@ -2393,7 +2393,7 @@
    "pe": "2026-12-11",
    "pru": 6,
    "lynk": "https://lynk.id/prsr/3mpz7vk20z98/checkout",
-   "ord": 60
+   "ord": 77
   },
   {
    "n": "Overlay Controller Xbox Series X - Lime Drip Lines Edition",
@@ -2429,7 +2429,7 @@
    "pe": "2026-12-11",
    "pru": 6,
    "lynk": "https://lynk.id/prsr/l3yq287pq8y9/checkout",
-   "ord": 61
+   "ord": 35
   },
   {
    "n": "Overlay Controller Xbox Series X - Sunny Triangle Shards V2 Edition",
@@ -2467,7 +2467,7 @@
    "pe": "2026-12-11",
    "pru": 6,
    "lynk": "https://lynk.id/prsr/5dx569nlde65/checkout",
-   "ord": 62
+   "ord": 66
   },
   {
    "n": "Overlay Controller Xbox Series X - Blueprint Teknis Edition",
@@ -2500,7 +2500,7 @@
    "pe": "2026-12-11",
    "pru": 6,
    "lynk": "https://lynk.id/prsr/3w59ezryyrzg/checkout",
-   "ord": 63
+   "ord": 7
   },
   {
    "n": "Overlay Controller Xbox Series X - Anime Kawaii Pastel Edition",
@@ -2533,7 +2533,7 @@
    "pe": "2026-12-11",
    "pru": 6,
    "lynk": "https://lynk.id/prsr/8841w9jgver8/checkout",
-   "ord": 64
+   "ord": 1
   },
   {
    "n": "Overlay Controller Xbox Series X - Synthwave Outrun Edition",
@@ -2566,7 +2566,7 @@
    "pe": "2026-12-11",
    "pru": 5,
    "lynk": "https://lynk.id/prsr/dv7we0mv3yqy/checkout",
-   "ord": 65
+   "ord": 67
   },
   {
    "n": "Overlay Controller Xbox Series X - Y2k Bubble Edition",
@@ -2599,7 +2599,7 @@
    "pe": "2026-12-11",
    "pru": 4,
    "lynk": "https://lynk.id/prsr/qogz4j6p8ge6/checkout",
-   "ord": 66
+   "ord": 81
   },
   {
    "n": "Overlay Controller Xbox Series X - Glitch Error Edition",
@@ -2632,7 +2632,7 @@
    "pe": "2026-12-11",
    "pru": 6,
    "lynk": "https://lynk.id/prsr/g2vo50v70v60/checkout",
-   "ord": 67
+   "ord": 29
   },
   {
    "n": "Overlay Controller Xbox Series X - Scifi Space Hud Edition",
@@ -2665,7 +2665,7 @@
    "pe": "2026-12-11",
    "pru": 6,
    "lynk": "https://lynk.id/prsr/y1ep0kqx1opd/checkout",
-   "ord": 68
+   "ord": 57
   },
   {
    "n": "Overlay Controller Xbox Series X - Esports Team Banner Edition",
@@ -2702,7 +2702,7 @@
    "pe": "2026-12-11",
    "pru": 4,
    "lynk": "https://lynk.id/prsr/99gxzl7zd5p8/checkout",
-   "ord": 69
+   "ord": 27
   },
   {
    "n": "Overlay Controller Xbox Series X - Esports Rank Badge Edition",
@@ -2741,7 +2741,7 @@
    "pe": "2026-12-11",
    "pru": 4,
    "lynk": "https://lynk.id/prsr/gwql5kojd0x0/checkout",
-   "ord": 70
+   "ord": 25
   },
   {
    "n": "Overlay Controller Xbox Series X - Lava Volcano Edition",
@@ -2776,7 +2776,7 @@
    "pe": "2026-12-11",
    "pru": 4,
    "lynk": "https://lynk.id/prsr/jql2dk7vylmk/checkout",
-   "ord": 71
+   "ord": 32
   },
   {
    "n": "Overlay Controller Xbox Series X - Autumn Maple Edition",
@@ -2809,7 +2809,7 @@
    "pe": "2026-12-11",
    "pru": 4,
    "lynk": "https://lynk.id/prsr/5zlo1706l1o5/checkout",
-   "ord": 72
+   "ord": 6
   },
   {
    "n": "Overlay Controller Xbox Series X - Thunder Storm Edition",
@@ -2842,7 +2842,7 @@
    "pe": "2026-12-11",
    "pru": 5,
    "lynk": "https://lynk.id/prsr/5kwg52o3e7vv/checkout",
-   "ord": 73
+   "ord": 68
   },
   {
    "n": "Overlay Controller Xbox Series X - Red Flame Squad V1 Edition",
@@ -2875,7 +2875,7 @@
    "pe": "2026-12-11",
    "pru": 5,
    "lynk": "https://lynk.id/prsr/nx5rge76wk78/checkout",
-   "ord": 75
+   "ord": 52
   },
   {
    "n": "Overlay Controller Xbox Series X - Snowy Mountain Cabin Edition",
@@ -2908,7 +2908,7 @@
    "pe": "2026-12-11",
    "pru": 6,
    "lynk": "https://lynk.id/prsr/4gleqd63ogez/checkout",
-   "ord": 74
+   "ord": 60
   },
   {
    "n": "Overlay Controller Xbox Series X - Quantum Circuit Edition",
@@ -2941,7 +2941,7 @@
    "pe": "2026-12-11",
    "pru": 5,
    "lynk": "https://lynk.id/prsr/ox1936m5p22g/checkout",
-   "ord": 76
+   "ord": 50
   },
   {
    "n": "Overlay Controller Xbox Series X - Esports Arena Stage Edition",
@@ -2974,7 +2974,7 @@
    "pe": "2026-12-11",
    "pru": 4,
    "lynk": "https://lynk.id/prsr/6rk4vdxnyp47/checkout",
-   "ord": 77
+   "ord": 24
   },
   {
    "n": "Overlay Controller Xbox Series X - Egyptian Pharaoh Gold Edition",
@@ -3007,7 +3007,7 @@
    "pe": "2026-12-11",
    "pru": 5,
    "lynk": "https://lynk.id/prsr/j5m26nlpo8d6/checkout",
-   "ord": 78
+   "ord": 21
   },
   {
    "n": "Overlay Controller Xbox Series X - Astronaut Floating Edition",
@@ -3040,7 +3040,7 @@
    "pe": "2026-12-11",
    "pru": 5,
    "lynk": "https://lynk.id/prsr/p69dz0m3jdy9/checkout",
-   "ord": 79
+   "ord": 4
   },
   {
    "n": "Overlay Controller Xbox Series X - Space Station Airlock 2 Edition",
@@ -3073,7 +3073,7 @@
    "pe": "2026-12-11",
    "pru": 5,
    "lynk": "https://lynk.id/prsr/pzkpg84k7o8p/checkout",
-   "ord": 80
+   "ord": 61
   },
   {
    "n": "Overlay Controller Xbox Series X - Alien Biotech Edition",
@@ -3106,7 +3106,7 @@
    "pe": "2026-12-11",
    "pru": 5,
    "lynk": "https://lynk.id/prsr/ymden6evlzyr/checkout",
-   "ord": 81
+   "ord": 0
   },
   {
    "n": "Overlay Controller Xbox Series X - Nuclear Hazard Edition",
@@ -3139,7 +3139,7 @@
    "pe": "2026-12-11",
    "pru": 6,
    "lynk": "https://lynk.id/prsr/zv1n30202m01/checkout",
-   "ord": 82
+   "ord": 44
   },
   {
    "n": "Overlay Controller Xbox Series X - Matsuri Lantern Edition",
@@ -3172,7 +3172,7 @@
    "pe": "2026-12-11",
    "pru": 3,
    "lynk": "https://lynk.id/prsr/4g7meqzzklv7/checkout",
-   "ord": 83
+   "ord": 38
   },
   {
    "n": "Overlay Controller Xbox Series X - Vinyl Record Dj Edition",
@@ -3205,7 +3205,7 @@
    "pe": "2026-12-11",
    "pru": 4,
    "lynk": "https://lynk.id/prsr/ddjg9lelvwqe/checkout",
-   "ord": 84
+   "ord": 76
   },
   {
    "n": "Overlay Controller Xbox Series X - Tin Robot Toy Edition",
@@ -3238,7 +3238,7 @@
    "pe": "2026-12-11",
    "pru": 5,
    "lynk": "https://lynk.id/prsr/mzjomvl3n06p/checkout",
-   "ord": 85
+   "ord": 69
   },
   {
    "n": "Overlay Controller Xbox Series X - Skate Punk Sticker 4 Edition",
@@ -3271,7 +3271,7 @@
    "pe": "2026-12-11",
    "pru": 5,
    "lynk": "https://lynk.id/prsr/2rj9qkw8oze4/checkout",
-   "ord": 86
+   "ord": 59
   },
   {
    "n": "Overlay Controller Xbox Series X - Desert Dune Edition",
@@ -3304,7 +3304,7 @@
    "pe": "2026-12-11",
    "pru": 4,
    "lynk": "https://lynk.id/prsr/8elovx2k67dq/checkout",
-   "ord": 87
+   "ord": 20
   },
   {
    "n": "Overlay Controller Xbox Series X - Viking Rune Nordic Edition",
@@ -3337,7 +3337,7 @@
    "pe": "2026-11-07",
    "pru": 5,
    "lynk": "https://lynk.id/prsr/0o0k9463prm9/checkout",
-   "ord": 88
+   "ord": 75
   },
   {
    "n": "Overlay Controller Xbox Series X - Neo Brutalism Edition",
@@ -3370,7 +3370,7 @@
    "pe": "2026-12-11",
    "pru": 4,
    "lynk": "https://lynk.id/prsr/g1ljkxd4d2z9/checkout",
-   "ord": 89
+   "ord": 42
   },
   {
    "n": "Overlay Controller Xbox Series X - Esports Scoreboard Edition",
@@ -3403,7 +3403,7 @@
    "ps": "2026-11-11",
    "pe": "2026-12-11",
    "lynk": "https://lynk.id/prsr/0zlkopqdo9rq/checkout",
-   "ord": 90
+   "ord": 26
   }
  ],
  "rate": 12500,
