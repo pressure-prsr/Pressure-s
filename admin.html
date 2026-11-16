@@ -367,6 +367,8 @@ header #bAdd,header #bPub{padding-left:13px;padding-right:13px}
 #tabs .tr.ts{margin-top:8px;scroll-snap-type:x proximity}
 #tabs .tr.ts button{scroll-snap-align:start;min-height:36px}
 #tabs .tr.ts button.on{box-shadow:0 2px 8px color-mix(in srgb,var(--ac) 35%,transparent)}
+.plw .plr{display:flex;align-items:center;gap:10px;padding:9px 0;border-bottom:1px solid var(--ln)}.plw .plr:last-child{border-bottom:0}.plw .plt{flex:1;min-width:0;display:flex;flex-direction:column;gap:2px}.plw .plt b{font-size:14px}.plw .plt span{font-size:12.5px;color:var(--mu);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.plw .plr>.b{flex:none;min-width:84px}.plw .plg{display:flex;gap:10px;align-items:center;margin:0 0 8px}.plw .plg img{width:84px;height:84px;object-fit:cover;border-radius:10px;border:1px solid var(--ln);flex:none}.plw .plg>div{flex:1;min-width:0;display:flex;flex-direction:column;gap:6px}.plw .plg b{font-size:13.5px}
+#tabs .tr.sg{margin-top:6px}#tabs .tr.sg button{min-height:32px;font-size:13px;background:transparent;border-color:transparent;color:var(--mu)}#tabs .tr.sg button.on{background:var(--sf);border-color:var(--ln);color:var(--ink);box-shadow:none}
 /* cari + chip filter */
 #q{border-radius:12px;background:var(--sf);margin:10px 0 0}
 .chips{scroll-snap-type:x proximity;-webkit-overflow-scrolling:touch}
@@ -583,7 +585,7 @@ body.vm .vd .vpv{max-height:76dvh;overflow-y:auto;overscroll-behavior:contain}
 .vd .vsc .vgp>.vgb{padding:0 12px 12px}
 .vd .vsc .vp .gh{background:var(--sf)}
 </style></head><body>
-<header><button class="b g" id="bExit" type="button" aria-label="Kembali">←</button><h1><span class="lg">Pressure's </span>Admin</h1><button class="b g" id="bBulk" type="button" aria-label="Bulk price change">%</button><button class="b g" id="bUn" type="button" aria-label="Undo">↶</button><button class="b g" id="bRe" type="button" aria-label="Redo">↷</button><button class="b g" id="bHelp" type="button" aria-label="Peta fitur" title="Peta fitur">?</button><button class="b g" id="bFull" type="button" aria-label="Layar penuh editor" title="Layar penuh editor">⛶</button><button class="b" id="bAdd" type="button">+ Overlay</button><button class="b" id="bPub" type="button" aria-label="Publish" disabled><span class="pl">Publish </span>⬆</button><button class="b g" id="bSet" type="button" aria-label="Settings">⚙</button></header>
+<header><button class="b g" id="bExit" type="button" aria-label="Kembali">←</button><h1><span class="lg">Pressure's </span>Admin</h1><button class="b g" id="bBulk" type="button" aria-label="Ubah harga massal">%</button><button class="b g" id="bUn" type="button" aria-label="Undo">↶</button><button class="b g" id="bRe" type="button" aria-label="Redo">↷</button><button class="b g" id="bHelp" type="button" aria-label="Peta fitur" title="Peta fitur">?</button><button class="b g" id="bFull" type="button" aria-label="Layar penuh editor" title="Layar penuh editor">⛶</button><button class="b" id="bAdd" type="button">+ Overlay</button><button class="b" id="bPub" type="button" aria-label="Publish" disabled><span class="pl">Publish </span>⬆</button><button class="b g" id="bSet" type="button" aria-label="Settings">⚙</button></header>
 <div id="pmHelp" role="dialog" aria-label="Peta fitur promosi"><div class="hp"><div class="hh"><b>Peta fitur promosi</b><button type="button" id="hpX" aria-label="Tutup">✕</button></div>
 <div class="st"><i>1</i><div><b>1 · Mulai</b><p><strong>Template</strong>: cover, slide galeri, banner, video demo siap pakai. <strong>Produk</strong>: pilih produk / pasang controller, mode demo, warna aksen otomatis.</p></div></div>
 <div class="st"><i>2</i><div><b>2 · Isi</b><p><strong>Teks</strong>: tambah &amp; ubah semua teks. <strong>Elemen</strong>: bentuk, stiker, logo, foto.</p></div></div>
@@ -596,7 +598,7 @@ body.vm .vd .vpv{max-height:76dvh;overflow-y:auto;overscroll-behavior:contain}
 <main>
 <div class="chips" id="tabs"></div>
 <div id="pnav" aria-label="Langkah promosi"></div>
-<input id="q" type="search" placeholder="Search…" autocomplete="off">
+<input id="q" type="search" placeholder="Cari…" autocomplete="off">
 <div class="chips" id="chips"></div>
 <div id="list"></div>
 </main>
@@ -605,28 +607,28 @@ body.vm .vd .vpv{max-height:76dvh;overflow-y:auto;overscroll-behavior:contain}
 <input id="file" type="file" accept=".html,text/html" multiple hidden><input id="file2" type="file" accept=".html,text/html" hidden>
 
 <div class="sh" id="shE"><div>
-<h2 id="eT">Edit package</h2><div id="pv"></div><details class="fs" open><summary>Nama &amp; deskripsi</summary><div class="fb"><label>Name (ID)<input id="fn"></label><label>Name (EN)<input id="fne"></label><label>Description (ID)<textarea id="fd"></textarea></label><label>Description (EN)<textarea id="fde"></textarea></label></div></details><details class="fs" id="ffw"><summary>Fitur gamepad</summary><div class="fb"><label>Fitur (ID), satu per baris<textarea id="ffi" rows="6"></textarea></label><label>Features (EN), one per line<textarea id="ffe" rows="6"></textarea></label><p class="note">Tampil di kartu produk web sebagai daftar fitur.</p></div></details><details class="fs" open><summary>Harga</summary><div class="fb"><div class="two"><label>Price (Rp)<input id="fh" type="number" inputmode="numeric" min="0"></label><label>Price (USD)<input id="fu" type="number" inputmode="numeric" min="0"></label></div><label class="ck"><input type="checkbox" id="fa"> Price agreed at order (no fixed price)</label><div class="two"><label>Strikethrough (Rp)<input id="fo" type="number" inputmode="numeric" min="0"></label><label>Strikethrough (USD)<input id="fou" type="number" inputmode="numeric" min="0"></label></div></div></details><details class="fs"><summary>Lynk</summary><div class="fb"><label>Link produk di lynk.id<input id="fly" type="url" inputmode="url" placeholder="https://lynk.id/..."></label><p class="note">Alamat halaman produk ini di lynk.id (boleh dikosongkan). Ikut tersimpan di catalog.json saat Publish.</p></div></details><details class="fs"><summary>Diskon terjadwal</summary><div class="fb"><p class="note" id="fpst"></p><div class="two"><label>Harga promo (Rp)<input id="fpr" type="number" inputmode="numeric" min="0"></label><label>Harga promo (USD)<input id="fpru" type="number" inputmode="numeric" min="0"></label></div><div class="two"><label>Mulai<input id="fps" type="date"></label><label>Selesai<input id="fpe" type="date"></label></div><p class="note">Kosongkan harga promo = tanpa diskon. Mulai kosong = langsung berlaku. Setelah tanggal selesai harga kembali normal sendiri.</p></div></details><details class="fs"><summary>Kategori &amp; label</summary><div class="fb"><label>Category<select id="fc"></select></label><label>Sub kategori<select id="fsb"></select></label><button class="b g" id="fsbN" type="button" style="width:100%;margin:-4px 0 12px">+ Sub kategori baru</button><div class="two"><label>Label (ID)<input id="ft"></label><label>Label (EN)<input id="fte"></label></div><label>Tanggal rilis (tanda Baru otomatis)<input id="fdt" type="date"></label></div></details><details class="fs" open><summary>Tampil &amp; preview</summary><div class="fb"><label class="ck"><input type="checkbox" id="fv"> Visible on the site</label><label class="ck"><input type="checkbox" id="fpin"> Sematkan di atas (unggulan)</label><label id="fpvl">Mode preview<select id="fpv"></select></label></div></details><details class="fs"><summary>Aksi</summary><div class="fb"><div class="row"><button class="b g" id="eU" type="button">▲ Up</button><button class="b g" id="eW" type="button">▼ Down</button><button class="b g" id="eR" type="button">Replace file</button><button class="b g" id="eL" type="button">Copy link</button></div><p></p><div class="row"><button class="b g" id="eC" type="button">Duplicate</button><button class="b g" id="eT2" type="button">Save as template</button></div></div></details><div class="row"><button class="b g" id="eX" type="button">Cancel</button><button class="b d" id="eD" type="button">Delete</button><button class="b " id="eS" type="button">Done</button></div></div></div>
+<h2 id="eT">Edit paket</h2><div id="pv"></div><details class="fs" open><summary>Nama &amp; deskripsi</summary><div class="fb"><label>Nama (ID)<input id="fn"></label><label>Nama (EN)<input id="fne"></label><label>Deskripsi (ID)<textarea id="fd"></textarea></label><label>Deskripsi (EN)<textarea id="fde"></textarea></label></div></details><details class="fs" id="ffw"><summary>Fitur gamepad</summary><div class="fb"><label>Fitur (ID), satu per baris<textarea id="ffi" rows="6"></textarea></label><label>Fitur (EN), satu per baris<textarea id="ffe" rows="6"></textarea></label><p class="note">Tampil di kartu produk web sebagai daftar fitur.</p></div></details><details class="fs" open><summary>Harga</summary><div class="fb"><div class="two"><label>Harga (Rp)<input id="fh" type="number" inputmode="numeric" min="0"></label><label>Harga (USD)<input id="fu" type="number" inputmode="numeric" min="0"></label></div><label class="ck"><input type="checkbox" id="fa"> Harga disepakati saat order (tanpa harga tetap)</label><div class="two"><label>Harga coret (Rp)<input id="fo" type="number" inputmode="numeric" min="0"></label><label>Harga coret (USD)<input id="fou" type="number" inputmode="numeric" min="0"></label></div></div></details><details class="fs"><summary>Lynk</summary><div class="fb"><label>Link produk di lynk.id<input id="fly" type="url" inputmode="url" placeholder="https://lynk.id/..."></label><p class="note">Alamat halaman produk ini di lynk.id (boleh dikosongkan). Ikut tersimpan di catalog.json saat Publish.</p></div></details><details class="fs"><summary>Diskon terjadwal</summary><div class="fb"><p class="note" id="fpst"></p><div class="two"><label>Harga promo (Rp)<input id="fpr" type="number" inputmode="numeric" min="0"></label><label>Harga promo (USD)<input id="fpru" type="number" inputmode="numeric" min="0"></label></div><div class="two"><label>Mulai<input id="fps" type="date"></label><label>Selesai<input id="fpe" type="date"></label></div><p class="note">Kosongkan harga promo = tanpa diskon. Mulai kosong = langsung berlaku. Setelah tanggal selesai harga kembali normal sendiri.</p></div></details><details class="fs"><summary>Kategori &amp; label</summary><div class="fb"><label>Category<select id="fc"></select></label><label>Sub kategori<select id="fsb"></select></label><button class="b g" id="fsbN" type="button" style="width:100%;margin:-4px 0 12px">+ Sub kategori baru</button><div class="two"><label>Label (ID)<input id="ft"></label><label>Label (EN)<input id="fte"></label></div><label>Tanggal rilis (tanda Baru otomatis)<input id="fdt" type="date"></label></div></details><details class="fs" open><summary>Tampil &amp; preview</summary><div class="fb"><label class="ck"><input type="checkbox" id="fv"> Tampil di situs</label><label class="ck"><input type="checkbox" id="fpin"> Sematkan di atas (unggulan)</label><label id="fpvl">Mode preview<select id="fpv"></select></label></div></details><details class="fs"><summary>Aksi</summary><div class="fb"><div class="row"><button class="b g" id="eU" type="button">▲ Up</button><button class="b g" id="eW" type="button">▼ Down</button><button class="b g" id="eR" type="button">Replace file</button><button class="b g" id="eL" type="button">Copy link</button></div><p></p><div class="row"><button class="b g" id="eC" type="button">Duplicate</button><button class="b g" id="eT2" type="button">Save as template</button></div></div></details><div class="row"><button class="b g" id="eX" type="button">Batal</button><button class="b d" id="eD" type="button">Hapus</button><button class="b " id="eS" type="button">Selesai</button></div></div></div>
 
 <div class="sh" id="shJ"><div>
 <h2 id="jT">Edit booster</h2>
-<details class="fs" open><summary>Profil</summary><div class="fb"><label>Name<input id="jn"></label>
-<div class="two"><label>Platform<select id="jp"><option>PC</option><option>PS</option><option>Xbox</option></select></label><label>Type<select id="jy"><option value="">Booster</option><option value="livery">Livery creator</option></select></label></div>
-<div class="two"><label>Rating (0-5)<input id="jr" type="number" step="0.1" min="0" max="5" inputmode="decimal"></label><label>Orders done<input id="jo" type="number" min="0" inputmode="numeric"></label></div>
+<details class="fs" open><summary>Profil</summary><div class="fb"><label>Nama<input id="jn"></label>
+<div class="two"><label>Platform<select id="jp"><option>PC</option><option>PS</option><option>Xbox</option></select></label><label>Tipe<select id="jy"><option value="">Booster</option><option value="livery">Livery creator</option></select></label></div>
+<div class="two"><label>Rating (0-5)<input id="jr" type="number" step="0.1" min="0" max="5" inputmode="decimal"></label><label>Order selesai<input id="jo" type="number" min="0" inputmode="numeric"></label></div>
 </div></details><details class="fs"><summary>Game &amp; paket</summary><div class="fb"><div id="jgs"></div>
-<label>Only for these packages (optional, leave empty for all)<select id="jpk" multiple size="4"></select></label>
-</div></details><details class="fs"><summary>Foto &amp; galeri</summary><div class="fb"><div class="ck"><img id="jph" alt="" style="width:56px;height:56px;border-radius:50%;object-fit:cover;display:none"><button class="b g" id="jPh" type="button">Photo</button></div><input id="jfile" type="file" accept="image/*" hidden>
-<label>Gallery photos (livery examples)<div id="jgal" style="display:flex;flex-wrap:wrap;gap:6px"></div></label>
-<div class="row" style="margin-bottom:12px"><button class="b g" id="jGa" type="button">+ Add photos</button></div><input id="jgfile" type="file" accept="image/*" multiple hidden>
+<label>Hanya untuk paket ini (opsional, kosong = semua paket)<select id="jpk" multiple size="4"></select></label>
+</div></details><details class="fs"><summary>Foto &amp; galeri</summary><div class="fb"><div class="ck"><img id="jph" alt="" style="width:56px;height:56px;border-radius:50%;object-fit:cover;display:none"><button class="b g" id="jPh" type="button">Foto</button></div><input id="jfile" type="file" accept="image/*" hidden>
+<label>Foto galeri (contoh livery)<div id="jgal" style="display:flex;flex-wrap:wrap;gap:6px"></div></label>
+<div class="row" style="margin-bottom:12px"><button class="b g" id="jGa" type="button">+ Tambah foto</button></div><input id="jgfile" type="file" accept="image/*" multiple hidden>
 </div></details><details class="fs" open><summary>Status</summary><div class="fb"><label class="ck"><input type="checkbox" id="jon"> Online</label>
-<label class="ck"><input type="checkbox" id="jek"> Exclusive booster</label>
-<label class="ck"><input type="checkbox" id="jv"> Visible on the site</label>
-</div></details><div class="row"><button class="b g" id="jX" type="button">Cancel</button><button class="b d" id="jD" type="button">Delete</button><button class="b" id="jS" type="button">Done</button></div>
+<label class="ck"><input type="checkbox" id="jek"> Booster eksklusif</label>
+<label class="ck"><input type="checkbox" id="jv"> Tampil di situs</label>
+</div></details><div class="row"><button class="b g" id="jX" type="button">Batal</button><button class="b d" id="jD" type="button">Hapus</button><button class="b" id="jS" type="button">Selesai</button></div>
 </div></div>
 <div class="sh" id="shT"><div>
-<h2>Edit text</h2><p class="note" id="tk"></p>
+<h2>Edit teks</h2><p class="note" id="tk"></p>
 <label>Indonesian<textarea id="ti"></textarea></label>
 <label>English<textarea id="te"></textarea></label>
-<div class="row"><button class="b g" id="tX" type="button">Cancel</button><button class="b" id="tS" type="button">Done</button></div>
+<div class="row"><button class="b g" id="tX" type="button">Batal</button><button class="b" id="tS" type="button">Selesai</button></div>
 </div></div>
 
 <div class="sh" id="shB"><div>
@@ -641,37 +643,37 @@ body.vm .vd .vpv{max-height:76dvh;overflow-y:auto;overscroll-behavior:contain}
 <div class="row"><button class="b g" id="uX" type="button">Batal</button><button class="b" id="uS" type="button">Simpan</button></div>
 </div></div>
 <div class="sh" id="shP"><div>
-<h2>New package</h2><p class="note">Pick a template. Names, descriptions and price are filled in for you, and you can edit everything afterwards.</p>
+<h2>Paket baru</h2><p class="note">Pilih template. Nama, deskripsi, dan harga terisi otomatis, semuanya bisa diedit setelahnya.</p>
 <div id="tpl"></div>
-<div class="row"><button class="b g" id="pX" type="button">Cancel</button></div>
+<div class="row"><button class="b g" id="pX" type="button">Batal</button></div>
 </div></div>
 <div class="sh" id="shG"><div>
-<h2 id="gT">Category</h2>
-<label>Name<input id="gn"></label>
-<p class="note">A new category becomes its own tab on the site. Add its packages from the Packages tab.</p>
+<h2 id="gT">Kategori</h2>
+<label>Nama<input id="gn"></label>
+<p class="note">Kategori baru menjadi tab sendiri di situs. Tambahkan paketnya dari tab Daftar.</p>
 <div id="gSub"></div>
-<div class="row"><button class="b g" id="gX" type="button">Cancel</button><button class="b d" id="gD" type="button">Delete</button><button class="b" id="gS" type="button">Done</button></div>
+<div class="row"><button class="b g" id="gX" type="button">Batal</button><button class="b d" id="gD" type="button">Hapus</button><button class="b" id="gS" type="button">Selesai</button></div>
 </div></div>
 <div class="sh" id="shI"><div>
 <h2>Edit item</h2><p class="note" id="iN"></p>
-<label>Title (ID)<input id="i1"></label>
-<label>Title (EN)<input id="i2"></label>
-<label>Text (ID)<textarea id="i3"></textarea></label>
-<label>Text (EN)<textarea id="i4"></textarea></label>
-<div class="row"><button class="b g" id="iX" type="button">Cancel</button><button class="b d" id="iD" type="button">Delete</button><button class="b" id="iS" type="button">Done</button></div>
+<label>Judul (ID)<input id="i1"></label>
+<label>Judul (EN)<input id="i2"></label>
+<label>Teks (ID)<textarea id="i3"></textarea></label>
+<label>Teks (EN)<textarea id="i4"></textarea></label>
+<div class="row"><button class="b g" id="iX" type="button">Batal</button><button class="b d" id="iD" type="button">Hapus</button><button class="b" id="iS" type="button">Selesai</button></div>
 </div></div>
 <div class="sh" id="shS"><div>
-<h2>Publish settings</h2>
+<h2>Pengaturan Publish</h2>
 <p class="note">Changes are saved by committing to your GitHub repo, so Pages / Netlify / Vercel redeploy by themselves. Create a fine-grained token limited to this one repo with "Contents: Read and write". It stays on this device only.</p>
-<label>Repository (owner/name)<input id="sr" placeholder="yourname/your-site" autocapitalize="off"></label>
+<label>Repositori (pemilik/nama)<input id="sr" placeholder="yourname/your-site" autocapitalize="off"></label>
 <label>Repo privat file dijual (owner/nama)<input id="sq" placeholder="namamu/pressure-overlays" autocapitalize="off"></label>
 <label>Branch<input id="sb" placeholder="main" autocapitalize="off"></label>
 <label>Token<input id="st" type="password" placeholder="github_pat_…" autocomplete="off"></label>
 <label>PIN untuk mengunci token (opsional)<input id="sp" type="password" inputmode="numeric" autocomplete="new-password" placeholder="kosong = tidak berubah, - = hapus PIN"></label>
 <label>Token kedaluwarsa pada<input id="se" type="date"></label><p class="note" id="sn"></p>
-<p class="note"><a id="hl" target="_blank" rel="noopener" style="color:var(--ac)">Publish history on GitHub</a> (see or copy an older catalog.json)</p>
+<p class="note"><a id="hl" target="_blank" rel="noopener" style="color:var(--ac)">Riwayat Publish di GitHub</a> (see or copy an older catalog.json)</p>
 <p class="note"><a href="index.html" target="_blank" rel="noopener" style="color:var(--ac)">View the site</a> · <a href="katalog.html" target="_blank" rel="noopener" style="color:var(--ac)">Katalog</a> · <a href="#" id="dc" style="color:var(--er)">Discard unpublished changes</a></p>
-<div class="row" style="margin:0 0 10px"><button class="b g" id="bIm" type="button">Import JSON</button><input id="jsonin" type="file" accept=".json,application/json" hidden><button class="b g" id="bDl" type="button">Download JSON</button></div><div class="row" style="margin:0 0 4px"><button class="b g" id="bSite" type="button">Upload file situs</button><input id="sitein" type="file" accept=".html,.json,text/html,application/json" multiple hidden></div><p class="note" style="margin:0 0 10px">Pilih index.html, admin.html, dan/atau catalog.json sekaligus. File masuk ke antrean, lalu ikut ter-commit saat Publish.</p><p class="note" style="margin:0 0 6px;font-weight:600">Tema tampilan</p><div class="sg" id="thSeg"><button type="button" data-th="">Otomatis</button><button type="button" data-th="light">Terang</button><button type="button" data-th="dark">Gelap</button></div><div class="row" style="margin:0 0 10px"><button class="b g" id="bMv" type="button">Pindah perangkat / login di PC</button></div><div class="row"><button class="b g" id="sX" type="button">Close</button><button class="b" id="sS" type="button">Save &amp; load</button></div>
+<div class="row" style="margin:0 0 10px"><button class="b g" id="bIm" type="button">Impor JSON</button><input id="jsonin" type="file" accept=".json,application/json" hidden><button class="b g" id="bDl" type="button">Unduh JSON</button></div><div class="row" style="margin:0 0 4px"><button class="b g" id="bSite" type="button">Upload file situs</button><input id="sitein" type="file" accept=".html,.json,text/html,application/json" multiple hidden></div><p class="note" style="margin:0 0 10px">Pilih index.html, admin.html, dan/atau catalog.json sekaligus. File masuk ke antrean, lalu ikut ter-commit saat Publish.</p><p class="note" style="margin:0 0 6px;font-weight:600">Tema tampilan</p><div class="sg" id="thSeg"><button type="button" data-th="">Otomatis</button><button type="button" data-th="light">Terang</button><button type="button" data-th="dark">Gelap</button></div><div class="row" style="margin:0 0 10px"><button class="b g" id="bMv" type="button">Pindah perangkat / login di PC</button></div><div class="row"><button class="b g" id="sX" type="button">Close</button><button class="b" id="sS" type="button">Save &amp; load</button></div>
 </div></div>
 
 <script>
@@ -687,13 +689,16 @@ function cat(c){var a=all().filter(function(e){return !e.o.del&&ck(e.o)===c});a.
 function move(d){var a=cat(ck(cur.o)),i=a.findIndex(function(e){return e.o===cur.o}),j=i+d,t;if(i<0||j<0||j>=a.length)return;t=a[i];a[i]=a[j];a[j]=t;a.forEach(function(e,n){e.o.ord=n});mark()}
 
 function all(){var a=[],k;for(k in C.items)a.push({k:k,o:C.items[k],add:0});C.added.forEach(function(o,i){a.push({k:"+"+i,o:o,add:1,i:i})});return a}
-function render(){syncGN();tabsR();$("q").style.display=(view==="pr"||view==="pw"||view==="bd"||view==="bse"||view==="vid"||view==="v2p"||view==="ai"||view==="so"||view==="sl"||view==="lk"||view==="ly"||view==="gr"||view==="sp"||view==="up"||view==="rw"||view==="ck"||view==="dk"||view==="ex")?"none":"";if(view!=="p"){$("chips").innerHTML="";return {j:rj,g:rg,i:ri,s:rs,bd:rbd,ai:rai,pr:rpr,pw:rpw,promo:rpromo,vid:rvid,v2p:rv2p,bse:rbse,so:rso,sl:rsl,ly:rly,gr:rgr,lk:rlk,sp:rsp,up:rup,rw:rrw,ck:rck,dk:rdk,ex:function(){return window.rex()}}[view]()}
+var PF="all";
+function pfBar(){var L=lyItems(),n=L.length,ly=L.filter(function(e){return e.o.lynk}).length,gr=L.filter(function(e){return e.o.gumroad}).length;return '<p class="note" style="margin:0 0 8px">Lynk <b>'+ly+' / '+n+'</b> · Gumroad <b>'+gr+' / '+n+'</b></p><div class="chips" style="margin-bottom:8px">'+[["all","Semua"],["nl","Belum Lynk"],["ng","Belum Gumroad"],["hd","Tersembunyi"]].map(function(c){return '<button type="button" data-pf="'+c[0]+'" class="'+(PF===c[0]?"on":"")+'">'+c[1]+'</button>'}).join("")+'</div>'}
+function render(){syncGN();tabsR();$("q").style.display=(view==="pr"||view==="pw"||view==="bd"||view==="bse"||view==="vid"||view==="v2p"||view==="pl"||view==="sm"||view==="so"||view==="sl"||view==="lk"||view==="ly"||view==="gr"||view==="sp"||view==="up"||view==="rw"||view==="ck"||view==="dk"||view==="ex")?"none":"";if(view!=="p"){$("chips").innerHTML="";return {pl:rpl,sm:rsm,j:rj,g:rg,i:ri,s:rs,bd:rbd,pr:rpr,pw:rpw,promo:rpromo,vid:rvid,v2p:rv2p,bse:rbse,so:rso,sl:rsl,ly:rly,gr:rgr,lk:rlk,sp:rsp,up:rup,rw:rrw,ck:rck,dk:rdk,ex:function(){return window.rex()}}[view]()}
  var keys=["all"].concat(Object.keys(GN));
- $("chips").innerHTML=keys.map(function(k){return '<button type="button" data-f="'+k+'" class="'+(k===flt?"on":"")+'">'+(k==="all"?"All":GN[k])+'</button>'}).join("");
+ $("chips").innerHTML=keys.map(function(k){return '<button type="button" data-f="'+k+'" class="'+(k===flt?"on":"")+'">'+(k==="all"?"Semua":GN[k])+'</button>'}).join("");
  var q=$("q").value.trim().toLowerCase(),h="";
- var L=[];(flt==="all"?Object.keys(GN):[flt]).forEach(function(c){L=L.concat(cat(c))});L.forEach(function(e){var o=e.o;if(q&&(o.n+" "+(o.ne||"")).toLowerCase().indexOf(q)<0)return;
-  h+='<button type="button" class="it'+(o.hide?" hid":"")+'" data-k="'+e.k+'"><div><b>'+esc(o.n)+'</b><small>'+(GN[ck(o)]||o.g)+subN(o)+(o.tag?" · "+esc(o.tag):"")+(o.hide?" · hidden":"")+(o.lynk?" · Lynk":"")+(o.gumroad?" · Gumroad":"")+(e.add?" · new":"")+'</small></div><i>'+rp(o.h)+'</i></button>'});
- $("list").innerHTML='<button class="b" id="pNew" type="button" style="width:100%;margin-bottom:10px">+ Add package</button>'+(flt!=="all"?'<button class="b g" id="sbMng" type="button" style="width:100%;margin-bottom:10px">Sub kategori · '+esc(GN[flt])+'</button>':"")+(h||'<p class="note">Nothing here yet.</p>')}
+ var L=[];(flt==="all"?Object.keys(GN):[flt]).forEach(function(c){L=L.concat(cat(c))});L.forEach(function(e){var o=e.o;if(q&&(o.n+" "+(o.ne||"")).toLowerCase().indexOf(q)<0)return;if(PF==="nl"&&(o.lynk||ck(o).indexOf("other")!==0))return;if(PF==="ng"&&(o.gumroad||ck(o).indexOf("other")!==0))return;if(PF==="hd"&&!o.hide)return;
+  h+='<button type="button" class="it'+(o.hide?" hid":"")+'" data-k="'+e.k+'"><div><b>'+esc(o.n)+'</b><small>'+(GN[ck(o)]||o.g)+subN(o)+(o.tag?" · "+esc(o.tag):"")+(o.hide?" · disembunyikan":"")+(o.lynk?" · Lynk":"")+(o.gumroad?" · Gumroad":"")+(e.add?" · baru":"")+'</small></div><i>'+rp(o.h)+'</i></button>'});
+ $("list").innerHTML='<button class="b" id="pNew" type="button" style="width:100%;margin-bottom:10px">+ Tambah paket</button>'+pfBar()+(flt!=="all"?'<button class="b g" id="sbMng" type="button" style="width:100%;margin-bottom:10px">Sub kategori · '+esc(GN[flt])+'</button>':"")+(h||'<p class="note">Belum ada isi.</p>')}
+$("list").addEventListener("click",function(e){if(view!=="p")return;var b=e.target.closest("[data-pf]");if(!b)return;PF=b.dataset.pf;render()});
 /* ---- Penjualan (Worker) ---- */
 var SW="https://pressures-shop.rizkysaputra7665.workers.dev",SPW="",SD=null,SCATS=[["xbox-series-x","Xbox Series X"],["xbox-one-s","Xbox One S"],["xbox-one-og","Xbox One OG"],["ps5-dualsense","PS5 DualSense"],["stream","Stream Overlay"]];
 try{SPW=localStorage.getItem("spw")||""}catch(e){}
@@ -714,6 +719,25 @@ function sRe(){return '<button class="b g" data-sa="re" type="button" style="wid
 function rso(){sGet("so",function(){var h=sRe();
  SD.orders.forEach(function(o){h+='<div class="it" style="cursor:default"><div><b>'+esc(o.product_name||"-")+'</b><small>'+esc(o.name)+' · '+esc(o.email)+'</small><br><small>'+sDt(o.created_at)+' · '+esc(o.order_id)+'</small></div><i style="text-align:right">'+sRp(o.amount)+'<br><small>'+(o.status==="paid"?"✓ lunas":esc(o.status))+'</small></i></div>'});
  $("list").innerHTML=h+(SD.orders.length?"":'<p class="note">Belum ada order.</p>')})}
+
+/* ===== Ringkasan penjualan (order web) ===== */
+var SMP="30";
+function smRp(n){return "Rp"+Number(n||0).toLocaleString("id-ID")}
+function smE(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function rsm(){sGet("sm",function(){
+ var od=SD.orders||[],now=Date.now()/1000,days=SMP==="all"?0:+SMP,from=days?now-days*86400:0,paid=[],np=0,tot=0,M={},sold={},h,R,none;
+ od.forEach(function(o){var ok=o.status==="paid";if(ok)sold[sNm(o.product_name||"")]=1;if((o.created_at||0)<from)return;if(!ok){np++;return}paid.push(o)});
+ paid.forEach(function(o){var k=sNm(o.product_name||"-"),m=M[k]||(M[k]={n:o.product_name||"-",c:0,t:0,l:0});m.c++;m.t+=+o.amount||0;if((o.created_at||0)>m.l)m.l=o.created_at;tot+=+o.amount||0});
+ R=Object.keys(M).map(function(k){return M[k]}).sort(function(a,b){return b.t-a.t||b.c-a.c});
+ none=lyItems().filter(function(e){return ck(e.o)==="other|controller"&&!e.o.hide&&!sold[sNm(e.o.n)]});
+ h=sRe()+'<label>Periode<select id="smP"><option value="7">7 hari terakhir</option><option value="30">30 hari terakhir</option><option value="all">Semua</option></select></label>'
+ +'<div class="fs" style="padding:12px 14px"><p class="note" style="margin:0 0 4px">Pendapatan order lunas</p><b style="font-size:22px">'+smRp(tot)+'</b><p class="note" style="margin:6px 0 0">'+paid.length+' order lunas · '+np+' belum lunas · '+R.length+' produk terjual</p></div>';
+ R.forEach(function(m,i){h+='<div class="it" style="cursor:default"><div><b>'+(i+1)+'. '+smE(m.n.replace(/^Overlay (Controller )?/,""))+'</b><small>'+m.c+' terjual · terakhir '+smE(sDt(m.l))+'</small></div><i>'+smRp(m.t)+'</i></div>'});
+ if(!R.length)h+='<p class="note">Belum ada order lunas di periode ini.</p>';
+ h+='<details class="fs"><summary>Belum pernah terjual ('+none.length+')</summary><div class="fb"><p class="note" style="margin:0">'+(none.length?none.map(function(e){return smE(e.o.n.replace(/^Overlay Controller /,""))}).join(" · "):"Semua produk aktif pernah terjual.")+'</p></div></details>'
+ +'<p class="note" style="margin-top:10px">Hanya order lewat web sendiri ('+od.length+' order terbaru yang dimuat). Penjualan di Lynk dan Gumroad belum ikut tercatat.</p>';
+ $("list").innerHTML=h;$("smP").value=SMP})}
+$("list").addEventListener("change",function(e){if(view==="sm"&&e.target.id==="smP"){SMP=e.target.value;rsm()}});
 function rsl(){sGet("sl",function(){
  var h=sRe()+slGlob()+'<div class="fs" style="padding:12px 14px"><p class="note" style="margin:0 0 10px"><b>Kirim link ke pembeli</b><br>Pilih produk, tekan tombol, lalu tempel pesannya ke WhatsApp.</p><label>Cari produk<input id="slQ" placeholder="ketik nama produk" autocomplete="off"></label><label>Produk<select id="slP">'+slOpts("")+'</select></label><label>Catatan pembeli (opsional)<input id="slN" placeholder="nama atau nomor WA"></label><details style="margin:0 0 10px"><summary class="note" style="cursor:pointer">Pengaturan link (opsional)</summary><div class="two" style="margin-top:8px"><label>Masa aktif hari (kosong = otomatis, 0 = bebas)<input id="slD" type="number"></label><label>Maks unduhan zip (kosong = otomatis)<input id="slM" type="number"></label></div></details>'+slLim()+'<button class="b" data-sa="bk" type="button" style="width:100%">Buat link dan salin pesan</button><div id="slO" class="bkO"></div></div>';
  h+='<p style="margin:18px 0 8px;padding:5px 10px;border-left:3px solid var(--ac,#e8590c);font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;opacity:.9">Link yang sudah dibuat ('+SD.links.length+')</p>';
@@ -1369,7 +1393,8 @@ return {render:render,gen:gen,S:function(){return S},trace:trace,setImg:setImg,p
 function rbse(){BSE.render()}
 /*BSE-END*/
 
-var TG=[["Katalog",[["up","Upload"],["rw","Riwayat"],["p","Packages"],["ly","Link Lynk"],["gr","Link Gumroad"],["dk","Diskon"],["j","Boosters"],["g","Categories"]]],["Konten",[["i","Steps & Info"],["s","Site texts"],["ex","Ekspor"]]],["Studio",[["bd","Builder"],["pr","Prompt"],["pw","Preview web"],["promo","Promosi"],["vid","Video"],["v2p","Video ke Prompt"],["ai","AI"],["bse","Base"]]],["Penjualan",[["sl","Kirim link"],["lk","Paket Lynk"],["sp","Produk"],["so","Order"],["ck","Cek produk"]]]];
+var TG=[["Produk",[["up","Upload"],["p","Daftar"],["pl","Link"]]],["Toko",[["sl","Penjualan"],["s","Teks situs"]]],["Studio",[["bd","Builder"],["promo","Promosi"],["vid","Video"],["pr","Prompt"]]],["Sistem",[["pw","Preview web"],["ex","Ekspor"],["j","Booster"],["g","Kategori"]]]];
+var SEG={"p":[["p","Paket"],["ck","Cek"],["rw","Riwayat"],["dk","Diskon"]],"pl":[["pl","Paket listing"],["ly","Lynk"],["gr","Gumroad"],["lk","Daftar kerja"]],"sl":[["sl","Kirim link"],["so","Order"],["sm","Ringkasan"],["sp","Produk"]],"s":[["s","Teks situs"],["i","Langkah & Info"]],"bd":[["bd","Builder"],["bse","Base"]],"pr":[["pr","Prompt"],["v2p","Video ke Prompt"]]};
 
 var rpromo=(function(){
 var $=function(i){return document.getElementById(i)};
@@ -4879,25 +4904,27 @@ $('vdR').onchange=function(){var q=this.value.split('x');W=+q[0];H=+q[1];rsz();d
 ci=oi=-1;upTl();upE();upM();pa();dr=1;pvA();tick();(window.__vq||[]).splice(0).forEach(function(q){addF([q.f],q.k)})}
 })();
 
-function tabsR(){var gi=0;TG.forEach(function(g,i){if(g[1].some(function(t){return t[0]===view}))gi=i});$("tabs").innerHTML='<div class="tr">'+TG.map(function(g,i){return '<button type="button" data-gr="'+i+'" class="'+(i===gi?"on":"")+'">'+g[0]+'</button>'}).join("")+'</div><div class="tr ts">'+TG[gi][1].map(function(t){return '<button type="button" data-t="'+t[0]+'" class="'+(view===t[0]?"on":"")+'">'+t[1]+'</button>'}).join("")+'</div>'}
+function segOf(v){for(var k in SEG)if(SEG[k].some(function(m){return m[0]===v}))return k;return v}
+function tabsR(){var gi=0,cur=segOf(view),sg=SEG[cur];TG.forEach(function(g,i){if(g[1].some(function(x){return x[0]===cur}))gi=i});
+ $("tabs").innerHTML='<div class="tr">'+TG.map(function(g,i){return '<button type="button" data-gr="'+i+'" class="'+(i===gi?"on":"")+'">'+g[0]+'</button>'}).join("")+'</div><div class="tr ts">'+TG[gi][1].map(function(x){return '<button type="button" data-t="'+x[0]+'" class="'+(cur===x[0]?"on":"")+'">'+x[1]+'</button>'}).join("")+'</div>'+(sg?'<div class="tr ts sg">'+sg.map(function(x){return '<button type="button" data-t="'+x[0]+'" class="'+(view===x[0]?"on":"")+'">'+x[1]+'</button>'}).join("")+'</div>':"")}
 function jall(){var a=[],k;for(k in (C.joki||{}))a.push({o:C.joki[k],nm:k,add:0});(C.jokiAdded||[]).forEach(function(o,i){a.push({o:o,nm:o.nama,add:1,i:i})});return a}
-function rj(){var q=$("q").value.trim().toLowerCase(),h='<button class="b" id="jNew" type="button" style="width:100%;margin-bottom:10px">+ Add booster</button>';
- jall().forEach(function(e,i){var o=e.o;if(o.del||(q&&e.nm.toLowerCase().indexOf(q)<0))return;h+='<button type="button" class="it'+(o.hide?" hid":"")+'" data-j="'+i+'"><div><b>'+esc(e.nm)+'</b><small>'+(o.tipe==="livery"?"Livery creator":"Booster")+" · "+esc(o.platform||"-")+(o.eks?" · exclusive":"")+(o.hide?" · hidden":"")+'</small></div><i>★ '+(o.rating==null?"-":o.rating)+'</i></button>'});
+function rj(){var q=$("q").value.trim().toLowerCase(),h='<button class="b" id="jNew" type="button" style="width:100%;margin-bottom:10px">+ Tambah booster</button>';
+ jall().forEach(function(e,i){var o=e.o;if(o.del||(q&&e.nm.toLowerCase().indexOf(q)<0))return;h+='<button type="button" class="it'+(o.hide?" hid":"")+'" data-j="'+i+'"><div><b>'+esc(e.nm)+'</b><small>'+(o.tipe==="livery"?"Livery creator":"Booster")+" · "+esc(o.platform||"-")+(o.eks?" · exclusive":"")+(o.hide?" · disembunyikan":"")+'</small></div><i>★ '+(o.rating==null?"-":o.rating)+'</i></button>'});
  $("list").innerHTML=h}
 function openJ(i){var e=i<0?{o:{nama:"",platform:"PC",games:["nfs-heat"],rating:5,order:0,online:true},add:1,isNew:1}:jall()[i],o=e.o,g=o.games||[];cj=e;
- $("jT").textContent=e.isNew?"New booster":"Edit booster";$("jn").value=o.nama||e.nm||"";$("jn").disabled=!e.add;
+ $("jT").textContent=e.isNew?"Booster baru":"Edit booster";$("jn").value=o.nama||e.nm||"";$("jn").disabled=!e.add;
  $("jp").value=o.platform||"PC";$("jy").value=o.tipe||"";$("jr").value=o.rating==null?"":o.rating;$("jo").value=o.order==null?"":o.order;
  jopts2(o);galR();$("jon").checked=!!o.online;$("jek").checked=!!o.eks;$("jv").checked=!o.hide;$("shJ").classList.add("on")}
-function saveJ(){var o=cj.o,n=$("jn").value.trim(),g=[];if(!n){msg("Name is required.");return}
+function saveJ(){var o=cj.o,n=$("jn").value.trim(),g=[];if(!n){msg("Nama wajib diisi.");return}
  [].forEach.call($("jgs").querySelectorAll("input:checked"),function(c){g.push(c.value)});var pk=[].filter.call($("jpk").options,function(x){return x.selected}).map(function(x){return x.value});
  if(cj.add)o.nama=n;o.platform=$("jp").value;o.tipe=$("jy").value;o.rating=parseFloat($("jr").value)||0;o.order=parseInt($("jo").value,10)||0;o.games=g;o.paketOnly=pk.length?pk:null;if(cjFoto)o.foto=cjFoto;o.online=$("jon").checked;o.eks=$("jek").checked;o.hide=!$("jv").checked;
  if(cj.isNew){C.jokiAdded=C.jokiAdded||[];C.jokiAdded.push(o)}
  $("shJ").classList.remove("on");mark()}
 function delJ(){if(cj.isNew){$("shJ").classList.remove("on");return}if(!confirm("Delete \""+(cj.o.nama||cj.nm)+"\"? You can also just hide them instead."))return;
  if(cj.add)C.jokiAdded.splice(cj.i,1);else cj.o.del=true;$("shJ").classList.remove("on");mark()}
-var LBL={ttl:"Browser tab title",hero_h:"Main headline",hero_p:"Subheadline",s1:"Step 1 title",l1:"Step 1 subtitle",sl_joki:"Boosting subtitle",sl_liv:"Livery subtitle",sl_ctl:"Controller subtitle",sl_oth:"Overlay subtitle",foto_h:"Photo sessions title",foto_p:"Photo sessions subtitle",jt_j:"Boosters title",jt_l:"Livery creators title",cara_h:"How to order title",info_h:"Information title",info_p:"Information subtitle",testi_h:"Testimonials title",testi_p:"Testimonials subtitle",testi_e:"No testimonials message",stat_h:"Order status title",stat_p:"Order status subtitle",stat_ph:"Order code placeholder",stat_b:"Order status button",s3:"Order form title",f_p:"Order form subtitle",f_btn:"Order button",f_btn_ask:"Price request button",f_note:"Order form warning",wa_hi:"WhatsApp message: order",wa_tanya:"WhatsApp message: price request",wa_stat:"WhatsApp message: order status"};
+var LBL={ttl:"Judul tab browser",hero_h:"Judul utama",hero_p:"Subjudul",s1:"Judul langkah 1",l1:"Subjudul langkah 1",sl_joki:"Subjudul joki",sl_liv:"Subjudul livery",sl_ctl:"Subjudul controller",sl_oth:"Subjudul overlay",foto_h:"Judul sesi foto",foto_p:"Subjudul sesi foto",jt_j:"Judul booster",jt_l:"Judul livery creator",cara_h:"Judul cara pesan",info_h:"Judul informasi",info_p:"Subjudul informasi",testi_h:"Judul testimoni",testi_p:"Subjudul testimoni",testi_e:"Pesan testimoni kosong",stat_h:"Judul status order",stat_p:"Subjudul status order",stat_ph:"Placeholder kode order",stat_b:"Tombol status order",s3:"Judul formulir order",f_p:"Subjudul formulir order",f_btn:"Tombol order",f_btn_ask:"Tombol tanya harga",f_note:"Peringatan formulir order",wa_hi:"Pesan WhatsApp: order",wa_tanya:"Pesan WhatsApp: tanya harga",wa_stat:"Pesan WhatsApp: status order"};
 function rs(){var q=$("q").value.trim().toLowerCase(),T=C.texts||{},S2=C.site||{},f=function(id,l,v){return '<label>'+l+'<input id="'+id+'" value="'+esc(v||"")+'"></label>'},
- h='<p class="note"><b>Brand, links and contact</b></p>'+f("xb","Brand name (header and menu)",S2.brand)+f("xf","Footer text",S2.footer)+f("xd","Discord link (empty hides the icon)",S2.discord)+f("xi","Instagram link (empty hides the icon)",S2.instagram)+f("xr","Rp per 1 USD (auto-fills the USD price)",C.rate||12500)+'<label>WhatsApp number (country code, digits only)<input id="wa" inputmode="numeric" value="'+esc(C.wa||"")+'"></label><p class="note"><b>Texts</b> · tap one to edit</p>',
+ h='<p class="note"><b>Brand, link, dan kontak</b></p>'+f("xb","Nama brand (header dan menu)",S2.brand)+f("xf","Teks footer",S2.footer)+f("xd","Link Discord (kosong = ikon disembunyikan)",S2.discord)+f("xi","Link Instagram (kosong = ikon disembunyikan)",S2.instagram)+f("xr","Rp per 1 USD (mengisi harga USD otomatis)",C.rate||12500)+'<label>Nomor WhatsApp (kode negara, angka saja)<input id="wa" inputmode="numeric" value="'+esc(C.wa||"")+'"></label><p class="note"><b>Teks</b> · ketuk untuk mengubah</p>',
  keys=Object.keys(LBL).filter(function(k){return T[k]}).concat(Object.keys(T).filter(function(k){return !LBL[k]}));
  keys.forEach(function(k){var v=T[k];if(q&&(k+" "+(LBL[k]||"")+" "+v.join(" ")).toLowerCase().indexOf(q)<0)return;h+='<button type="button" class="it" data-x="'+k+'"><div><b>'+esc(LBL[k]||v[0])+'</b><small>'+esc(LBL[k]?v[0]:(v[1]||""))+'</small></div></button>'});
  $("list").innerHTML=h}
@@ -4908,16 +4935,16 @@ var cg=null,im="joki",ci=null,cjFoto=null;
 var IM={joki:"Boosting",livery:"Livery",other:"Overlay · Stream",ctl:"Overlay · Controller"};
 function syncGN(){var n=C.gameNames||{};GN={"nfs-heat":n["nfs-heat"]||"NFS Heat","crew-motorfest":n["crew-motorfest"]||"Crew Motorfest"};(C.gamesAdded||[]).forEach(function(g){GN[g.id]=g.nama});GN["other|stream"]="Overlay Stream (tidak tampil)";GN["other|controller"]="Overlay Controller"}
 function gall(){var n=C.gameNames||{},a=[["nfs-heat","NFS Heat"],["crew-motorfest","Crew Motorfest"],["other","Other"]].map(function(x){return {id:x[0],nama:n[x[0]]||x[1],base:1}});(C.gamesAdded||[]).forEach(function(g,i){a.push({id:g.id,nama:g.nama,i:i})});return a}
-function rg(){var h='<button class="b" id="gNew" type="button" style="width:100%;margin-bottom:10px">+ Add category</button>';gall().forEach(function(g,i){h+='<button type="button" class="it" data-g="'+i+'"><div><b>'+esc(g.nama)+'</b><small>'+(g.base?"Built-in":"Custom")+'</small></div></button>'});$("list").innerHTML=h}
-function openG(i){cg=i<0?{isNew:1}:gall()[i];$("gT").textContent=cg.isNew?"New category":"Edit category";$("gn").value=cg.nama||"";$("gD").style.display=(cg.base||cg.isNew)?"none":"";gSubR();$("shG").classList.add("on")}
-function saveG(){var n=$("gn").value.trim(),id,b;if(!n){msg("Name is required.");return}
+function rg(){var h='<button class="b" id="gNew" type="button" style="width:100%;margin-bottom:10px">+ Tambah kategori</button>';gall().forEach(function(g,i){h+='<button type="button" class="it" data-g="'+i+'"><div><b>'+esc(g.nama)+'</b><small>'+(g.base?"Bawaan":"Kustom")+'</small></div></button>'});$("list").innerHTML=h}
+function openG(i){cg=i<0?{isNew:1}:gall()[i];$("gT").textContent=cg.isNew?"Kategori baru":"Edit kategori";$("gn").value=cg.nama||"";$("gD").style.display=(cg.base||cg.isNew)?"none":"";gSubR();$("shG").classList.add("on")}
+function saveG(){var n=$("gn").value.trim(),id,b;if(!n){msg("Nama wajib diisi.");return}
  if(cg.isNew){b=id=slug(n);while(GN[id]||id==="other")id=b+"-"+Math.floor(Math.random()*99);(C.gamesAdded=C.gamesAdded||[]).push({id:id,nama:n})}
  else if(cg.base){(C.gameNames=C.gameNames||{})[cg.id]=n}else C.gamesAdded[cg.i].nama=n;
  $("shG").classList.remove("on");mark()}
 function delG(){var id=cg.id;if(all().some(function(e){return !e.o.del&&e.o.g===id})){msg("Move or delete this category's packages first.",5000);return}C.gamesAdded.splice(cg.i,1);$("shG").classList.remove("on");mark()}
 function arr(k){C[k]=C[k]||{};C[k][im]=C[k][im]||[];return C[k][im]}
 function ri(){var h='<div class="chips">'+Object.keys(IM).map(function(m){return '<button type="button" data-m="'+m+'" class="'+(m===im?"on":"")+'">'+IM[m]+'</button>'}).join("")+'</div>';
- [["steps","How to order"],["info","Information"]].forEach(function(s){h+='<p class="note"><b>'+s[1]+'</b></p>';arr(s[0]).forEach(function(x,n){h+='<button type="button" class="it" data-i="'+s[0]+'|'+n+'"><div><b>'+esc(x[0])+'</b><small>'+esc(String(Array.isArray(x[2])?x[2].join(" / "):x[2]).replace(/<[^>]+>/g,"").slice(0,70))+'</small></div></button>'});h+='<button type="button" class="b g" data-ia="'+s[0]+'" style="width:100%;margin-bottom:14px">+ Add</button>'});
+ [["steps","Cara pesan"],["info","Informasi"]].forEach(function(s){h+='<p class="note"><b>'+s[1]+'</b></p>';arr(s[0]).forEach(function(x,n){h+='<button type="button" class="it" data-i="'+s[0]+'|'+n+'"><div><b>'+esc(x[0])+'</b><small>'+esc(String(Array.isArray(x[2])?x[2].join(" / "):x[2]).replace(/<[^>]+>/g,"").slice(0,70))+'</small></div></button>'});h+='<button type="button" class="b g" data-ia="'+s[0]+'" style="width:100%;margin-bottom:14px">+ Add</button>'});
  $("list").innerHTML=h}
 function openI(k,n){var a=arr(k),x=n<0?["","","",""]:a[n],r=Array.isArray(x[2]);ci={k:k,n:n,ar:r};$("i1").value=x[0];$("i2").value=x[1];$("i3").value=r?x[2].join("\n"):x[2];$("i4").value=r?x[3].join("\n"):x[3];
  $("iN").textContent=r?"This card is a list: one line per bullet.":"Simple HTML such as <b>bold</b> works.";$("iD").style.display=n<0?"none":"";$("shI").classList.add("on")}
@@ -4925,7 +4952,7 @@ function saveI(){var a=arr(ci.k),f=function(v){return ci.ar?v.split("\n").map(fu
  if(!x[0]){msg("Title (ID) is required.");return}if(!x[1])x[1]=x[0];if(ci.n<0)a.push(x);else a[ci.n]=x;$("shI").classList.remove("on");mark()}
 function delI(){if(!confirm("Delete this item?"))return;arr(ci.k).splice(ci.n,1);$("shI").classList.remove("on");mark()}
 function newP(){var g=Object.keys(GN)[0],os="stream";if(flt.indexOf("other")===0){g="other";os=flt.split("|")[1]}else if(flt!=="all")g=flt;
- C.added.push({n:"New package",ne:"New package",d:"",de:"",h:0,usd:0,g:g,os:os,bebas:true,hide:false});openE("+"+(C.added.length-1));cur.isNew=1}
+ C.added.push({n:"Paket baru",ne:"Paket baru",d:"",de:"",h:0,usd:0,g:g,os:os,bebas:true,hide:false});openE("+"+(C.added.length-1));cur.isNew=1}
 function jopts2(o){var g=o.games||[],pk=o.paketOnly||[],ns=all().filter(function(e){return !e.o.del&&e.o.g!=="other"}).map(function(e){return e.o.n});
  $("jgs").innerHTML=Object.keys(GN).filter(function(k){return k.indexOf("other")!==0}).map(function(k){return '<label class="ck"><input type="checkbox" value="'+k+'"'+(g.indexOf(k)>-1?" checked":"")+'> Works on '+esc(GN[k])+'</label>'}).join("");
  $("jpk").innerHTML=ns.map(function(n){return '<option value="'+esc(n)+'"'+(pk.indexOf(n)>-1?" selected":"")+'>'+esc(n)+'</option>'}).join("");
@@ -5019,7 +5046,7 @@ if(pend[o.file]!=null)go(pend[o.file]);else fetch(o.file).then(function(r){retur
 function esc(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return {"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
 function find(k){return k[0]==="+"?{o:C.added[+k.slice(1)],add:1,i:+k.slice(1)}:{o:C.items[k],add:0,k:k}}
 function openE(k){var e=find(k),o=e.o,fresh=autoNew;autoNew=0;cur=e;
- $("eT").textContent=e.add?"New overlay":"Edit package";
+ $("eT").textContent=e.add?"New overlay":"Edit paket";
  $("fn").value=o.n||"";$("fne").value=o.ne||"";$("fd").value=o.d||"";$("fde").value=o.de||"";$("ffi").value=(o.ft||[]).join("\n");$("ffe").value=(o.fte||[]).join("\n");$("ffw").style.display=ck(o)==="other|controller"?"":"none";$("fpin").checked=!!o.feat;$("fdt").value=o.nd||"";$("fpr").value=o.pr||"";$("fpru").value=o.pru||"";$("fps").value=o.ps||"";$("fpe").value=o.pe||"";$("fpst").textContent=promoStatus(o);
  $("fly").value=o.lynk||"";$("fh").value=o.h==null?"":o.h;$("fu").value=o.usd==null?"":o.usd;$("fa").checked=o.h==null;
  $("fc").innerHTML=Object.keys(GN).map(function(g){return '<option value="'+g+'"'+(g===ck(o)?" selected":"")+'>'+GN[g]+'</option>'}).join("");
@@ -5098,7 +5125,7 @@ function rup(){if(UPQ.length){rupQ();return}var S0=UPS,L=$("list"),cu=upCur(),ex
  h=upFx()+upNote(bk)+'<p class="note" style="margin-bottom:10px">Pilih file HTML, isi harga, lalu Simpan. File masuk ke repo privat dan produk langsung siap dijual.</p><label class="b g" style="display:block;text-align:center;margin-bottom:12px">'+(S0.t?"Ganti file":"Pilih file HTML")+'<input id="upF" type="file" accept=".html,text/html" style="display:none"></label>'+(S0.t||UPS.fx?"":'<label class="b g" style="display:block;text-align:center;margin-bottom:12px">Pilih banyak file sekaligus<input id="upM" type="file" accept=".html,text/html" multiple style="display:none"></label>');
  if(S0.t){
   h+=upLink(bk,ex);h+=ex?'<p class="note" style="margin-bottom:8px">Produk lama ditemukan: <b>'+esc(ex.o.n)+'</b>. Judul dan deskripsi dipertahankan, file & preview diperbarui.</p>':'<label>Nama tema<input id="upN" value="'+esc(S0.nm)+'"></label><label>Jenis controller<select id="upT">'+UPT.map(function(t){return '<option value="'+t[0]+'"'+(t[0]===S0.sub?" selected":"")+'>'+t[1]+'</option>'}).join("")+'</select></label>';
-  h+='<label>Harga (Rp)<input id="upH" inputmode="numeric" value="'+esc(S0.h)+'" placeholder="mis. 129000"></label><label>Harga USD (kosongkan = otomatis)<input id="upU" inputmode="numeric" value="'+esc(S0.u)+'"></label><label>Fitur (ID), satu per baris<textarea id="upFi" rows="5">'+esc(S0.fi)+'</textarea></label><label>Features (EN), one per line<textarea id="upFe" rows="5">'+esc(S0.fe)+'</textarea></label><p class="note" style="margin-bottom:8px">'+(S0.fsr==="file"?"Fitur diisi otomatis.":S0.fsr==="user"?"Fitur diubah manual.":"Fitur otomatis dari isi file. Ganti dengan fitur yang benar-benar bermanfaat, singkat saja."+(ex&&ex.o.ft?" Produk lama sudah punya fitur, daftar ini tidak menimpa kecuali kamu mengubahnya.":""))+'</p>';
+  h+='<label>Harga (Rp)<input id="upH" inputmode="numeric" value="'+esc(S0.h)+'" placeholder="mis. 129000"></label><label>Harga USD (kosongkan = otomatis)<input id="upU" inputmode="numeric" value="'+esc(S0.u)+'"></label><label>Fitur (ID), satu per baris<textarea id="upFi" rows="5">'+esc(S0.fi)+'</textarea></label><label>Fitur (EN), satu per baris<textarea id="upFe" rows="5">'+esc(S0.fe)+'</textarea></label><p class="note" style="margin-bottom:8px">'+(S0.fsr==="file"?"Fitur diisi otomatis.":S0.fsr==="user"?"Fitur diubah manual.":"Fitur otomatis dari isi file. Ganti dengan fitur yang benar-benar bermanfaat, singkat saja."+(ex&&ex.o.ft?" Produk lama sudah punya fitur, daftar ini tidak menimpa kecuali kamu mengubahnya.":""))+'</p>';
   h+='<p class="note" style="margin:10px 0 6px"><b>Preview demo</b> (sama seperti demo tombol di tab Video: satu tombol per giliran)</p><div style="margin-bottom:8px">'+UPPR.map(function(q){return '<button type="button" data-pr="'+q[1]+'" class="b'+(UPS.sq.join(",")===q[1]?"":" g")+'" style="width:auto;display:inline-block;padding:6px 11px;margin:0 6px 6px 0">'+q[0]+'</button>'}).join("")+'</div>'+upCtl()+'<p class="note" style="margin:10px 0 6px">Isi demo (ketuk sesuai urutan, ketuk lagi untuk melepas):</p><div>'+UPG.map(function(g){var i=S0.sq.indexOf(g[0]);return '<button type="button" data-g="'+g[0]+'" class="b'+(i<0?" g":"")+'" style="width:auto;display:inline-block;padding:6px 11px;margin:0 6px 6px 0">'+(i<0?"":(i+1)+" · ")+g[1]+'</button>'}).join("")+'</div><iframe id="upV" sandbox="allow-scripts" style="width:100%;height:210px;border:1px solid var(--ln);border-radius:12px;margin:8px 0 6px;background:#000"></iframe><p class="note" style="margin:0 0 8px;'+(upDur()>30?"color:#d33":"")+'">Perkiraan durasi demo: '+Math.round(upDur())+' detik'+(upDur()>30?". Cukup panjang, pilih Cepat atau kurangi isi demo.":".")+'</p><div class="row" style="margin-bottom:12px"><button type="button" class="b g" id="upRp">Putar ulang</button><button type="button" class="b g" id="upPz">Jeda</button></div>'+'<button type="button" class="b" id="upS" style="width:100%">Simpan & siap dijual</button>'}
  L.innerHTML=h;
  $("upF").onchange=function(){var fl=this.files[0];if(!fl)return;var r=new FileReader();r.onload=function(){var t=String(r.result);if(t.indexOf("getGamepads")<0)msg("File ini tidak memakai Gamepad API, preview demo mungkin diam.",6000);UPS.t=t;UPS.f=upSlug(fl.name);UPS.nm=upTheme(fl.name);UPS.sub=upDet(fl.name);UPS.h="";UPS.u="";var ff=upFt(t);UPS.fi=ff.id.join("\n");UPS.fe=ff.en.join("\n");UPS.fsr=ff.src;var m=upFind("overlays/"+UPS.f+".html");UPS.lk=UPS.fx||(m?m.k:"");UPS.fx="";rup()};r.readAsText(fl)};
@@ -5121,7 +5148,7 @@ function upApply(t,f,nm,sub,hv,uv,ex,pk,ft){var h=parseInt(String(hv).replace(/\
  if(ex&&o.pr>0&&o.pr>=o.h){delete o.pr;delete o.pru}
  dkAuto(o);
  if(ft&&ft.id&&ft.id.length&&(!ex||ft.src!=="auto"||!(o.ft&&o.ft.length))){o.ft=ft.id;o.fte=ft.en&&ft.en.length?ft.en:ft.id}
- pend[f]=t}
+ pend[f]=t;if(window.PLK)PLK.after(f,t)}
 function upSave(){upSync();var S0=UPS,cu=upCur(),f=cu.f,h=parseInt(String(S0.h).replace(/\D/g,""),10)||0,ex=cu.ex;
  if(!S0.t){msg("Pilih file HTML dulu.");return}
  if(h<=0){msg("Isi harga dulu.");return}
@@ -5129,7 +5156,8 @@ function upSave(){upSync();var S0=UPS,cu=upCur(),f=cu.f,h=parseInt(String(S0.h).
  mark();
  upApply(S0.t,f,S0.nm,S0.sub,h,S0.u,ex,upSeq(),{id:ftLines(S0.fi),en:ftLines(S0.fe),src:S0.fsr||"auto"});
  UPS.t="";UPS.f="";UPS.lk="";UPS.h="";UPS.u="";UPS.fi="";UPS.fe="";UPS.fsr="";
- rup();publish()}
+ var pk=all().filter(function(e){return e.o.file===f&&!e.o.del})[0];
+ rup();publish();if(pk&&window.PLK)PLK.go(pk.k)}
 
 
 /* ---- Fitur gamepad (daftar fitur di kartu web) ---- */
@@ -5340,11 +5368,11 @@ function sellFlow(){var L=sellList(),i=0,br;if(!L.length)return Promise.resolve(
   .then(function(j){if(!j.id)throw new Error(j.error||"Gagal mendaftarkan produk");o.shop=j.id;o.srv=1;if(!o.pv||(o.pv==="key"&&!o.cvk))o.pv="demo";delete pend[x.p];SD=null}).then(nx)};return nx()})}
 /* file yang dijual tidak ada di situs publik: pratinjau di admin diambil lewat Worker */
 var _fch=window.fetch;window.fetch=function(u){var s=typeof u==="string"?u:(u&&u.url)||"",e;if(SPW&&/^overlays\/[^?#]+\.html/.test(s)){e=all().filter(function(x){return x.o.shop&&x.o.file&&s.indexOf(x.o.file)===0})[0];if(e)return sApi("/admin/preview/"+encodeURIComponent(e.o.shop))}return _fch.apply(this,arguments)};
-function publish(){if(!cfg()){$("shS").classList.add("on");msg("Add repo and token first.");return}
+function publish(){if(!cfg()){$("shS").classList.add("on");msg("Isi repo dan token dulu.");return}
  var b=$("bPub");b.disabled=true;msg("Memeriksa file yang dijual…",0);
  PWARN="";sellFlow().then(syncPromos).then(publish0).catch(function(e){b.disabled=false;SD=null;msg("Publish failed: "+(e&&e.auth?"password penjualan salah":e.message)+(/\b(401|403|404)\b/.test(e.message)?" — token harus punya akses tulis ke repo privat.":""),9000)})}
 function publish0(){
- if(!cfg()){$("shS").classList.add("on");msg("Add repo and token first.");return}
+ if(!cfg()){$("shS").classList.add("on");msg("Isi repo dan token dulu.");return}
  var n0=catN(C),bp=$("bPub");
  if(!CATOK){bp.disabled=false;msg("Publish dibatalkan: katalog belum berhasil dimuat dari GitHub, jadi bisa menimpa katalog dengan yang kosong. Muat ulang halaman admin dulu.",10000);return}
  if(!n0){bp.disabled=false;msg("Publish dibatalkan: katalog kosong (0 produk). Muat ulang admin atau unggah catalog.json yang benar.",10000);return}
@@ -5759,7 +5787,115 @@ $("list").addEventListener("change",function(e){if(view!=="lk")return;var t=e.ta
  if(t.id==="lkOne"){var f=t.files[0];if(!f||!GWANT)return;var w=GWANT;GWANT=null;GP[w.i]=f;GFAIL[w.i]=0;drawRows();gambar(w.i,document.querySelector('.lkr[data-li="'+w.i+'"] [data-lk="g"]'));return}
  if(t.dataset.lk==="x"){var row=t.closest(".lkr"),p=LD[+row.dataset.li];if(t.checked)LS.done[p.n]=1;else delete LS.done[p.n];lsave();if(LS.hide)drawRows();else{row.classList.toggle("done",t.checked);progress()}}});
 $("list").addEventListener("input",function(e){if(view==="lk"&&e.target.id==="lkQ"){LS.q=e.target.value;drawRows()}});
+rlk.X={gsnap:gsnap,gcompose:gcompose,gsave:gsave,autoAcc:autoAcc,glow:glow,rgba:rgba,mixc:mixc,gtext:gtext,rnd:rnd,gslug:gslug,copy:copy,shopProduct:shopProduct,lkUrl:lkUrl,loginBox:loginBox};
 return rlk})();
+/* ===== Paket listing: satu layar untuk Lynk + Gumroad ===== */
+var PLK=(function(){
+var X=rlk.X,S={k:"",src:{},img:null,imgK:"",busy:0,man:null,w:0};
+function E(s){return String(s==null?"":s).replace(/[&<>"]/g,function(c){return{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]})}
+function items(){return lyItems().filter(function(e){return ck(e.o)==="other|controller"})}
+function catName(o){var cn=null;if(o.sub)scats().forEach(function(c){if(c[0]===o.sub)cn=c[1]});if(!cn){var cc=sCat(o.n);cn=cc?cc[1]:"Xbox Series X"}return cn}
+function slug(o){return X.gslug((o.n||"overlay").replace(/^Overlay Controller\s*/i,"")).replace(/ /g,"-")}
+function lyDesc(o){var d=o.d||("Overlay controller "+catName(o)+" yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs."),f=o.ft||[];return f.length?d+"\n\nFitur:\n"+f.map(function(x){return "- "+x}).join("\n"):d}
+function grDesc(o){var d=o.de||o.d||"",f=o.fte||o.ft||[];return f.length?d+"\n\nFeatures:\n"+f.map(function(x){return "- "+x}).join("\n"):d}
+function promoOn(o){return o.h>0&&o.pr>0&&+o.pr<o.h&&!(o.pe&&prToday()>o.pe)}
+function cur(){var L=items(),e=null;L.forEach(function(x){if(x.k===S.k)e=x});if(!e){e=L.filter(function(x){return !x.o.lynk||!x.o.gumroad})[0]||L[0]||null;S.k=e?e.k:""}return e}
+function srcOf(o){var f=o.file||"";
+ if(S.man&&S.man.k===S.k)return S.man.f.text();
+ if(S.src[f])return Promise.resolve(S.src[f]);
+ if(typeof pend[f]==="string")return Promise.resolve(pend[f]);
+ return fetch(f).then(function(r){if(!r.ok)throw 0;return r.text()}).catch(function(){throw new Error("File overlay tidak ditemukan. Pilih file HTML-nya di bagian Gambar.")})}
+function fonts(){return document.fonts&&document.fonts.load?Promise.all([document.fonts.load('700 40px "Chakra Petch"'),document.fonts.load('500 40px "Chakra Petch"')]).catch(function(){}):0}
+function gcover(im,label){var W=1280,H=720,c=document.createElement("canvas");c.width=W;c.height=H;var x=c.getContext("2d"),a=X.autoAcc(im)||"#46e628",i;
+ var g=x.createLinearGradient(0,0,W,H);g.addColorStop(0,"#04060a");g.addColorStop(.6,X.mixc("#04060a",a,.06));g.addColorStop(1,"#020305");x.fillStyle=g;x.fillRect(0,0,W,H);
+ X.glow(x,W*.71,H*.5,W*.42,a,.34);
+ x.fillStyle="rgba(255,255,255,.028)";for(i=0;i<H;i+=5)x.fillRect(0,i,W,1.4);
+ var v=x.createRadialGradient(W/2,H/2,H*.3,W/2,H/2,W*.62);v.addColorStop(0,"rgba(0,0,0,0)");v.addColorStop(1,"rgba(0,0,0,.6)");x.fillStyle=v;x.fillRect(0,0,W,H);
+ var bw=.52*W,bh=.74*H,r=Math.min(bw/im.width,bh/im.height),dw=im.width*r,dh=im.height*r;
+ x.save();x.shadowColor=a;x.shadowBlur=40;x.imageSmoothingQuality="high";x.drawImage(im,W*.71-dw/2,H*.5-dh/2,dw,dh);x.restore();
+ X.gtext(x,label,W*.25,H*.2,24,500,"#ebebeb",7);
+ X.gtext(x,"EVERY PRESS",W*.25,H*.46,74,700,"#f5f5f5",0);
+ X.gtext(x,"ON SCREEN",W*.25,H*.62,74,700,a,0);
+ X.gtext(x,"OBS READY",W*.25,H*.8,24,500,"#c8c8c8",6);
+ return c}
+function thumb(c){var t=document.createElement("canvas");t.width=t.height=600;var x=t.getContext("2d");x.imageSmoothingQuality="high";x.drawImage(c,0,0,600,600);return t}
+function build(){var e=cur();if(!e||S.busy)return;var o=e.o,k=S.k;S.busy=1;S.img=null;draw();
+ var lab=catName(o).toUpperCase(),sl=slug(o);
+ srcOf(o).then(function(t){return Promise.all([X.gsnap(t),fonts()])}).then(function(r){var c1=X.gcompose(r[0],lab),c2=gcover(r[0],lab),c3=thumb(c1);
+  S.img=[["lynk-"+sl+".png","Lynk · 1024×1024",c1],["gumroad-cover-"+sl+".png","Gumroad · cover 1280×720",c2],["gumroad-thumb-"+sl+".png","Gumroad · thumbnail 600×600",c3]];S.imgK=k;msg("Gambar siap. Ketuk Unduh, atau tahan gambar untuk menyimpan.",3500)})
+ .catch(function(x){msg("Gagal: "+(x&&x.message||x),6000)}).then(function(){S.busy=0;if(view==="pl")draw()})}
+var CT=null;
+function crc(u){if(!CT){CT=[];for(var n=0;n<256;n++){var c=n;for(var k=0;k<8;k++)c=c&1?0xEDB88320^(c>>>1):c>>>1;CT[n]=c>>>0}}var c2=0xFFFFFFFF;for(var i=0;i<u.length;i++)c2=CT[(c2^u[i])&255]^(c2>>>8);return(c2^0xFFFFFFFF)>>>0}
+function zipB(fs){var parts=[],cd=[],off=0,enc=new TextEncoder(),cs=0;
+ fs.forEach(function(f){var nm=enc.encode(f.n),cr=crc(f.d),h=new DataView(new ArrayBuffer(30)),c=new DataView(new ArrayBuffer(46));
+  h.setUint32(0,0x04034b50,true);h.setUint16(4,20,true);h.setUint16(6,0x0800,true);h.setUint16(12,0x21,true);h.setUint32(14,cr,true);h.setUint32(18,f.d.length,true);h.setUint32(22,f.d.length,true);h.setUint16(26,nm.length,true);
+  parts.push(new Uint8Array(h.buffer),nm,f.d);
+  c.setUint32(0,0x02014b50,true);c.setUint16(4,20,true);c.setUint16(6,20,true);c.setUint16(8,0x0800,true);c.setUint16(14,0x21,true);c.setUint32(16,cr,true);c.setUint32(20,f.d.length,true);c.setUint32(24,f.d.length,true);c.setUint16(28,nm.length,true);c.setUint32(42,off,true);
+  cd.push(new Uint8Array(c.buffer),nm);off+=30+nm.length+f.d.length});
+ cd.forEach(function(p){cs+=p.length});
+ var e=new DataView(new ArrayBuffer(22));e.setUint32(0,0x06054b50,true);e.setUint16(8,fs.length,true);e.setUint16(10,fs.length,true);e.setUint32(12,cs,true);e.setUint32(16,off,true);
+ return new Blob(parts.concat(cd,[new Uint8Array(e.buffer)]),{type:"application/zip"})}
+function blobOf(c){return new Promise(function(ok,no){c.toBlob(function(b){b?ok(b):no(new Error("gagal membuat PNG"))},"image/png")})}
+function dlOne(i){if(!S.img||!S.img[i])return;blobOf(S.img[i][2]).then(function(b){X.gsave(b,S.img[i][0])}).catch(function(x){msg("Gagal: "+x.message,4000)})}
+function dlZip(){if(!S.img)return;var fs=[];Promise.all(S.img.map(function(m){return blobOf(m[2]).then(function(b){return b.arrayBuffer()}).then(function(ab){fs.push({n:m[0],d:new Uint8Array(ab)})})})).then(function(){X.gsave(zipB(fs),"paket-listing-"+slug(find(S.k).o)+".zip");msg("ZIP siap ("+fs.length+" gambar)",3000)}).catch(function(x){msg("Gagal: "+x.message,4000)})}
+function linkFor(o,note,btn){
+ if(!SPW){msg("Masuk dulu dengan password penjualan (kolom di atas)",4500);return}
+ var go=function(){var e=X.shopProduct({n:o.n});
+  if(!e){msg("Produk ini belum ada di tab Penjualan › Produk. Tekan Sinkron di sana dulu.",5500);return}
+  if(!sRdy(e)){msg("Produk ini belum punya file atau overlay. Tunggu Publish selesai, lalu coba lagi.",5500);return}
+  var now=Date.now()/1000,ex=(SD.links||[]).filter(function(l){return l.product_id===e.id&&l.note===note&&l.active&&(!l.expires_at||l.expires_at>now)})[0];
+  if(ex){X.copy(X.lkUrl(ex),btn,"Link akses");return}
+  btn.disabled=true;var old=btn.textContent;btn.textContent="Membuat...";
+  sApi("/admin/api/link",{product_id:e.id,email:"",note:note,days:"",max:""}).then(function(r){return r.json()}).then(function(j){btn.disabled=false;btn.textContent=old;if(!j.url){msg(j.error||"Gagal membuat link",4000);return}
+   X.copy(j.url,btn,"Link akses");sApi("/admin/api/data").then(function(r){return r.json()}).then(function(d){SD=d}).catch(function(){})}).catch(function(x){btn.disabled=false;btn.textContent=old;sErr(x)})};
+ if(SD){go();return}
+ msg("Memuat data penjualan...",2500);
+ sApi("/admin/api/data").then(function(r){return r.json()}).then(function(d){SD=d;go()}).catch(sErr)}
+function row(lab,val,a,btn){return '<div class="plr"><div class="plt"><b>'+lab+'</b><span>'+E(String(val).replace(/\s+/g," ").slice(0,80))+'</span></div><button type="button" class="b g" data-pl="'+a+'">'+(btn||"Salin")+'</button></div>'}
+function lnk(o,key,ph,a){var has=!!o[key];return '<div class="plr" style="display:block"><div class="plt" style="margin-bottom:6px"><b>Link produk di '+(key==="lynk"?"Lynk":"Gumroad")+'</b><span style="color:'+(has?'var(--ok)':'var(--mu)')+'">'+(has?"terisi":"belum diisi")+'</span></div><input class="pli" data-key="'+key+'" type="url" inputmode="url" placeholder="'+ph+'" value="'+E(o[key]||"")+'" style="margin-bottom:8px"><div style="display:flex;gap:8px"><button type="button" class="b g" data-pl="'+a+'p" style="flex:1">Tempel</button><button type="button" class="b g" data-pl="'+a+'o" style="flex:1">Tes link</button></div></div>'}
+function draw(){var e=cur(),L=items(),h;
+ if(!e){$("list").innerHTML='<p class="note">Belum ada produk controller. Upload dulu di tab Upload.</p>';return}
+ var o=e.o,pr=promoOn(o);
+ h='<div class="plw"><p class="note" style="margin-bottom:10px">Satu layar untuk menyiapkan produk ini di Lynk dan Gumroad. Salin tiap bagian, tempel di halaman produk, lalu isi link-nya di sini dan tekan Publish.</p>'
+ +(SPW?'':X.loginBox())
+ +'<label>Produk<select id="plP">'+L.map(function(x){var q=x.o;return '<option value="'+E(x.k)+'"'+(x.k===S.k?" selected":"")+'>'+E((q.n||"").replace(/^Overlay Controller /,""))+' · L'+(q.lynk?"✓":"✗")+' G'+(q.gumroad?"✓":"✗")+'</option>'}).join("")+'</select></label>'
+ +'<p class="note" style="margin:0 0 10px"><b style="color:'+(o.lynk?'var(--ok)':'var(--mu)')+'">Lynk '+(o.lynk?"✓":"belum")+'</b> · <b style="color:'+(o.gumroad?'var(--ok)':'var(--mu)')+'">Gumroad '+(o.gumroad?"✓":"belum")+'</b>'+(o.hide?" · disembunyikan di web":"")+'</p>'
+ +'<details class="fs" open><summary>1 · Gambar (otomatis)</summary><div class="fb">'
+ +(S.img&&S.imgK===S.k?S.img.map(function(m,i){return '<div class="plg"><img alt="" src="'+m[2].toDataURL("image/jpeg",.7)+'"><div><b>'+m[1]+'</b><button type="button" class="b g" data-pl="d'+i+'">Unduh</button></div></div>'}).join("")+'<button type="button" class="b" data-pl="zip" style="width:100%;margin-bottom:8px">Unduh semua (ZIP)</button><button type="button" class="b g" data-pl="img" style="width:100%">Buat ulang</button>':'<p class="note">Dibuat dari file overlay yang baru diupload: gambar persegi untuk Lynk, serta cover dan thumbnail untuk Gumroad.</p><button type="button" class="b" data-pl="img" style="width:100%"'+(S.busy?" disabled":"")+'>'+(S.busy?"Membuat...":"Buat 3 gambar")+'</button>')
+ +'<p class="note" style="margin:10px 0 6px">File overlay tidak ketemu? Pilih manual:</p><button type="button" class="b g" data-pl="man" style="width:100%">Pilih file HTML overlay</button><input type="file" id="plF" accept=".html,.htm,text/html" hidden></div></details>'
+ +'<details class="fs" open><summary>2 · Lynk (Indonesia)</summary><div class="fb">'
+ +row("Judul",o.n||"","lt")+row("Deskripsi + fitur",lyDesc(o),"ld")+row("Harga",o.h>0?"Rp"+Number(o.h).toLocaleString("id-ID"):"belum ada harga","lh")+(pr?row("Harga diskon","Rp"+Number(o.pr).toLocaleString("id-ID"),"ldk"):"")
+ +row("Link akses pembeli","tempel di isi produk digital","la","Buat + salin")
+ +lnk(o,"lynk","https://lynk.id/prsr/...","lk")+'</div></details>'
+ +'<details class="fs" open><summary>3 · Gumroad (English)</summary><div class="fb">'
+ +row("Title",o.ne||o.n||"","gt")+row("Description + features",grDesc(o),"gd")+row("Price (USD)",o.usd!=null?"$"+o.usd:"harga USD kosong","gh")
+ +row("Link akses pembeli","tempel di Content produk","ga","Buat + salin")
+ +lnk(o,"gumroad","https://rizkywave4.gumroad.com/l/...","gk")+'</div></details></div>';
+ $("list").innerHTML=h}
+function setLnk(inp){var v=inp.value.trim(),o=find(S.k).o,key=inp.dataset.key;if(v&&!/^https:\/\/\S+$/.test(v)){inp.style.borderColor="#e5484d";msg("Link harus diawali https://");return}inp.style.borderColor="";if(v)o[key]=v;else delete o[key];mark()}
+function after(f,t){S.src[f]=t}
+function go(k){S.k=k;S.img=null;S.man=null;view="pl";render();scrollTo(0,0)}
+$("list").addEventListener("change",function(e){if(view!=="pl")return;var t=e.target;
+ if(t.id==="plP"){S.k=t.value;S.img=null;S.man=null;draw();return}
+ if(t.id==="plF"){var f=t.files[0];if(f){S.man={k:S.k,f:f};S.img=null;build()}return}
+ if(t.classList.contains("pli"))setLnk(t)});
+$("list").addEventListener("click",function(e){if(view!=="pl")return;var b=e.target.closest("[data-pl]");if(!b)return;var a=b.dataset.pl,ent=cur();if(!ent)return;var o=ent.o,i;
+ if(a==="img"){build();return}
+ if(a==="zip"){dlZip();return}
+ if(a==="man"){$("plF").value="";$("plF").click();return}
+ if(/^d\d$/.test(a)){dlOne(+a[1]);return}
+ if(a==="lt")X.copy(o.n||"",b,"Judul");else if(a==="ld")X.copy(lyDesc(o),b,"Deskripsi");
+ else if(a==="lh"){if(o.h>0)X.copy(String(o.h),b,"Harga")}else if(a==="ldk")X.copy(String(o.pr),b,"Harga diskon");
+ else if(a==="la")linkFor(o,"Lynk",b);else if(a==="ga")linkFor(o,"Gumroad",b);
+ else if(a==="gt")X.copy(o.ne||o.n||"",b,"Title");else if(a==="gd")X.copy(grDesc(o),b,"Description");
+ else if(a==="gh"){if(o.usd!=null)X.copy(String(o.usd),b,"Harga $"+o.usd)}
+ else if(a==="lkp"||a==="gkp"){var inp=b.closest(".plr").querySelector(".pli");
+  if(!navigator.clipboard||!navigator.clipboard.readText){msg("Tempel manual di kolom link.");return}
+  navigator.clipboard.readText().then(function(t){inp.value=(t||"").trim();setLnk(inp)}).catch(function(){msg("Tidak bisa membaca clipboard. Tempel manual di kolom link.")})}
+ else if(a==="lko"||a==="gko"){var u=b.closest(".plr").querySelector(".pli").value.trim();if(!/^https:\/\/\S+$/.test(u)){msg("Isi link dulu.");return}window.open(u,"_blank","noopener")}
+ });
+return {after:after,go:go,draw:draw}})();
+function rpl(){PLK.draw()}
 
 function catN(c){return Object.keys((c&&c.items)||{}).length+(((c&&c.added)||[]).length)}
 /* ===== Link Lynk: isi link beli per produk ===== */
@@ -6219,7 +6355,7 @@ new MutationObserver(function(){var b=L.querySelector(".vbk");if(b&&!b.getAttrib
 </script>
 <script>
 (function(){
-var KEY='adm_tabs',ALL=JSON.parse(JSON.stringify(TG)),$=function(i){return document.getElementById(i)};
+var KEY='adm_tabs4',ALL=JSON.parse(JSON.stringify(TG)),$=function(i){return document.getElementById(i)};
 function load(){try{return JSON.parse(localStorage.getItem(KEY)||'null')||{}}catch(e){return {}}}
 function save(S){try{localStorage.setItem(KEY,JSON.stringify(S))}catch(e){}}
 function rk(a,k){var i=a.indexOf(k);return i<0?999:i}
