@@ -3434,7 +3434,8 @@
     "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-ps5-dualsense-sakura-edition",
-   "srv": 1
+   "srv": 1,
+   "lynk": "https://lynk.id/prsr/pq8y1xx3j1vn/checkout"
   },
   {
    "n": "Overlay Controller PS5 DualSense - Sonic The Hedgehog Edition",
@@ -3456,7 +3457,8 @@
    "ps": "2026-11-11",
    "pe": "2026-12-11",
    "shop": "overlay-controller-ps5-dualsense-sonic-the-hedgehog-edition",
-   "srv": 1
+   "srv": 1,
+   "lynk": "https://lynk.id/prsr/q3p1g1n5yjw4/checkout"
   },
   {
    "n": "Overlay Controller PS5 DualSense - Hot Wheels Edition",
@@ -3511,7 +3513,8 @@
     "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-ps5-dualsense-spider-verse-edition",
-   "srv": 1
+   "srv": 1,
+   "lynk": "https://lynk.id/prsr/yyp4141wjky7/checkout"
   },
   {
    "n": "Overlay Controller PS5 DualSense - Star Wars Edition",
@@ -3543,7 +3546,8 @@
     "Buttons, sticks, and triggers react instantly when pressed"
    ],
    "shop": "overlay-controller-ps5-dualsense-star-wars-edition",
-   "srv": 1
+   "srv": 1,
+   "lynk": "https://lynk.id/prsr/q8o1j18rorny/checkout"
   }
  ],
  "rate": 12500,
