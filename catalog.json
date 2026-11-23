@@ -3499,6 +3499,24 @@
    "feat": 1,
    "shop": "overlay-controller-ps5-dualsense-undertale-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller PS5 DualSense - Popeye Edition",
+   "ne": "PS5 DualSense Controller Overlay - Popeye Edition",
+   "d": "Overlay controller PS5 DualSense bertema Popeye yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "PS5 DualSense controller overlay with a Popeye theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
+   "h": 275000,
+   "usd": 0,
+   "g": "other",
+   "os": "controller",
+   "ctl": true,
+   "base": "PS5 DualSense",
+   "sub": "ps5-dualsense",
+   "file": "overlays/popeye.html",
+   "pv": "demo",
+   "hide": false,
+   "shop": "overlay-controller-ps5-dualsense-popeye-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
