@@ -3529,6 +3529,38 @@
    ],
    "shop": "overlay-controller-ps5-dualsense-spider-verse-edition",
    "srv": 1
+  },
+  {
+   "n": "Overlay Controller PS5 DualSense - Star Wars Edition",
+   "ne": "PS5 DualSense Controller Overlay - Star Wars Edition",
+   "d": "Overlay controller PS5 DualSense bertema Star Wars yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "PS5 DualSense controller overlay with a Star Wars theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
+   "h": 250000,
+   "usd": 20,
+   "g": "other",
+   "os": "controller",
+   "hide": false,
+   "file": "overlays/star-wars.html",
+   "ctl": true,
+   "pv": "demo",
+   "sub": "ps5-dualsense",
+   "tag": "Baru",
+   "tage": "New",
+   "nd": "2026-11-23",
+   "pk": "ps5",
+   "pks": "av~1~1~1~ab+bump+trig+ls+rs+menu+dpad+share",
+   "pr": 125000,
+   "pru": 10,
+   "ps": "2026-11-11",
+   "pe": "2026-12-11",
+   "ft": [
+    "Tombol, stik, dan trigger bereaksi langsung saat ditekan"
+   ],
+   "fte": [
+    "Buttons, sticks, and triggers react instantly when pressed"
+   ],
+   "shop": "overlay-controller-ps5-dualsense-star-wars-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
