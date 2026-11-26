@@ -3548,6 +3548,28 @@
    "shop": "overlay-controller-ps5-dualsense-star-wars-edition",
    "srv": 1,
    "lynk": "https://lynk.id/prsr/q8o1j18rorny/checkout"
+  },
+  {
+   "n": "Overlay Controller PS5 DualSense - The Walking Dead Edition",
+   "ne": "PS5 DualSense Controller Overlay - The Walking Dead Edition",
+   "d": "Overlay controller PS5 DualSense bertema The Walking Dead yang bergerak mengikuti gamepad kamu. Dikirim sebagai link, tinggal tempel di OBS atau Streamlabs.",
+   "de": "PS5 DualSense controller overlay with a The Walking Dead theme that follows your gamepad live. Delivered as a link, just paste it into OBS or Streamlabs.",
+   "h": 255000,
+   "usd": 0,
+   "g": "other",
+   "os": "controller",
+   "ctl": true,
+   "base": "PS5 DualSense",
+   "sub": "ps5-dualsense",
+   "file": "overlays/the-walking-dead.html",
+   "pv": "demo",
+   "hide": false,
+   "pr": 88000,
+   "pru": 8,
+   "ps": "2026-11-11",
+   "pe": "2026-12-11",
+   "shop": "overlay-controller-ps5-dualsense-the-walking-dead-edition",
+   "srv": 1
   }
  ],
  "rate": 12500,
